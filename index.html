@@ -1,25 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Universal Internet of Things</title>
-    <meta name="description" content="The Universal Internet of Things Web Page">
-    <meta name="keywords" content="IoT,IoE,Internet of Things,Machine Learning,Big Data,Automation,Home Automation">
-    <meta name="author" content="Universal Internet of Things">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<link rel="stylesheet" type="text/css" href="css/normalize.css">
-<link rel="stylesheet" type="text/css" href="css/uiot.css">
-<link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
-<body>
+---
+layout: default
+title: Universal Internet of Things
+active: home
+---
 <section class="header-section">
     <div class="header">
         <img src="img/uiot.svg"/>
         <ul>
-            <li>Home</li>
-            <li>About</li>
+            {% if page.active == "home" %}
+					      <li class="active">Home</li>
+					  {% else %}
+					      <li>Home</li>
+					  {% endif %}
+					  {% if page.active == "about" %}
+					      <li class="active">About</li>
+					  {% else %}
+					      <li>About</li>
+					  {% endif %}
             <li>Blog</li>
-            <li>Get Started</li>
+					  {% if page.active == "started" %}
+					      <li class="active">Get Started</li>
+					  {% else %}
+					      <li>Get Started</li>
+					  {% endif %}
         </ul>
     </div>
     <div class="main">
@@ -182,7 +185,6 @@
         <p class="copyright">Copyright 2016 Universal Internet of Things, All Rights Reserved</p>
     </div>
 </section>
-<script src="js/jquery.js"></script>
 <script>
     jQuery(function () {
 
@@ -222,5 +224,3 @@
         });
     });
 </script>
-</body>
-</html>
