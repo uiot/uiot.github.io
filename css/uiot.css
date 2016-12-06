@@ -207,6 +207,11 @@ a {
     cursor: pointer;
 }
 
+.header-section .header ul > li a {
+    color: white;
+    text-decoration: none;
+}
+
 .header-section .header ul > li:before {
     content: "";
     position: absolute;
