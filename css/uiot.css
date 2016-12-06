@@ -1,0 +1,666 @@
+/** Fonts **/
+
+@font-face {
+    font-family: Museo Lighter;
+    src: url(../fonts/museosansrounded-100-webfont.woff)
+}
+
+@font-face {
+    font-family: Museo Light;
+    src: url(../fonts/museosansrounded-300-webfont.woff)
+}
+
+@font-face {
+    font-family: Museo Normal;
+    src: url(../fonts/museosansrounded-500-webfont.woff)
+}
+
+@font-face {
+    font-family: Museo Bold;
+    src: url(../fonts/museosansrounded-700-webfont.woff)
+}
+
+@font-face {
+    font-family: Museo Bolder;
+    src: url(../fonts/museosansrounded-900-webfont.woff)
+}
+
+@font-face {
+    font-family: Museo Hard;
+    src: url(../fonts/museosansrounded-1000-webfont.woff)
+}
+
+/** Body Elements **/
+
+body {
+    background: #f3f3f3;
+    font-family: Museo Light, serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, p, a, img, h2 {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+b {
+    font-family: Museo Bold, serif !important;
+}
+
+a {
+    cursor: pointer;
+}
+
+/** Buttons **/
+
+.button {
+    border-radius: 3px;
+    padding: 13px;
+    font-family: Museo Bold, serif;
+    transition: background 0.4s linear;
+}
+
+.white {
+    background: white;
+    color: #e95b64;
+}
+
+.white:hover {
+    background: #e95b64;
+    color: white;
+}
+
+.colored {
+    color: white;
+    background: linear-gradient(135deg, #e95b64 76%, #ff913f 99%);
+    font-family: Museo Normal, serif;
+    padding: 13px 24px 13px 24px;
+}
+
+.colored:hover {
+    background: #ff913f;
+}
+
+.white-blue {
+    color: #1d334a;
+    background: linear-gradient(135deg, white 76%, #adbdcd 99%);
+    font-family: Museo Normal, serif;
+    padding: 13px 24px 13px 24px;
+}
+
+.white-blue:hover {
+    background: #adbdcd;
+}
+
+/** Header Section **/
+
+.header-section {
+    background: url(../img/bolhas.png),
+    -webkit-linear-gradient(-56deg, #ff913f 0%,
+            #e95b64 100%);
+}
+
+/** Header Section - Right **/
+
+.header-section .right {
+    float: right;
+    margin: -60px 80px 0 0;
+}
+
+.header-section .right h1 {
+    font-family: Museo Hard, serif;
+    color: white;
+    font-size: 61px;
+    text-transform: uppercase;
+    max-width: 360px;
+    margin-bottom: 0;
+    line-height: 80px;
+}
+
+.header-section .right hr {
+    width: 100px;
+    background: white;
+    height: 4px;
+    margin-left: 0;
+    border: none;
+    border-radius: 2px;
+}
+
+.header-section .right p {
+    margin-top: 20px;
+    font-family: Museo Lighter, serif;
+    color: white;
+    max-width: 360px;
+    opacity: 0.9;
+}
+
+/** Header Section Main **/
+
+.header-section .main {
+    padding-top: 100px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.header-section .main img {
+    animation: hero-animation 1.5s ease forwards;
+}
+
+@keyframes notebook-intro {
+    10% {
+        transform: scale(1.0);
+    }
+    20% {
+        transform: scale(1.1);
+    }
+    30% {
+        transform: scale(1.0);
+    }
+}
+
+/** Header Section - Header **/
+
+.header-section .header {
+    padding-top: 40px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.header-section .header img:first-child {
+    width: 100px;
+    display: inline-block;
+    animation: hero-animation 1.5s forwards
+}
+
+@keyframes hero-animation {
+    0% {
+        opacity: 0;
+        transform: scale(0.96)
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+.header-section .header ul {
+    list-style: none;
+    display: inline-block;
+    float: right;
+    margin-right: 60px;
+}
+
+.header-section .header ul > li {
+    display: inline;
+    color: white;
+    font-family: Museo Bold, serif;
+    margin-right: 40px;
+    padding-bottom: 8px;
+    position: relative;
+    cursor: pointer;
+}
+
+.header-section .header ul > li:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.header-section .header ul > li:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+/** Supporting Section **/
+
+.supporting-section {
+    height: 60vh;
+    background: url(../img/map.gif) no-repeat 0 -40px;
+    background-size: cover;
+    padding: 100px 0 100px 0;
+}
+
+.supporting-section .main {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.supporting-section ul {
+    list-style: none;
+    float: right;
+    max-width: 360px;
+    margin-right: 60px;
+}
+
+.supporting-section li {
+    margin-bottom: 40px;
+}
+
+.supporting-section li h3 {
+    font-family: Museo Light, serif;
+    font-size: 28px;
+    color: #646464;
+    display: inline-block;
+    margin: 0;
+}
+
+.supporting-section li p {
+    font-family: Museo Lighter, serif;
+    color: #939393;
+    font-size: 16px;
+    line-height: 20px;
+    vertical-align: 40px;
+    max-width: 320px;
+}
+
+.supporting-section li h3:before {
+    color: #e26467;
+    content: "UIoT ";
+    font-family: Museo Normal, serif;
+}
+
+.supporting-section li:first-child img {
+    width: 45px;
+    margin: 0 10px -10px -60px;
+    display: inline;
+}
+
+.supporting-section li:last-child img {
+    width: 35px;
+    margin: 0 10px -10px -50px;
+    display: inline;
+}
+
+.supporting-section li a {
+    color: #08acb3;
+    font-family: Museo Normal, serif;
+}
+
+/** Supporting Section - Left **/
+
+.supporting-section .left {
+    float: left;
+    margin-left: 20px;
+}
+
+.supporting-section .left h1 {
+    font-family: Museo Hard, serif;
+    color: #626262;
+    font-size: 50px;
+    text-transform: uppercase;
+    max-width: 360px;
+    text-align: right;
+    line-height: 60px;
+    margin-bottom: 16px;
+}
+
+.supporting-section .left hr {
+    width: 100px;
+    background: #e56469;
+    height: 6px;
+    margin-right: 0;
+    border: none;
+    border-radius: 2px;
+}
+
+.supporting-section .left p {
+    color: #4c4c4c;
+    text-align: right;
+    font-family: Museo Lighter, serif;
+    max-width: 320px;
+    margin-left: 40px;
+}
+
+.supporting-section .left a {
+    float: right;
+}
+
+/** Discovering Section **/
+
+.discovering-section {
+    background: #163748 url(../img/mountains.png) no-repeat left bottom;
+    height: 57vh;
+    padding-top: 100px;
+}
+
+.discovering-section img {
+    float: left;
+}
+
+/** Discovering Section - Right **/
+
+.discovering-section .right {
+    float: right;
+    margin-right: 60px;
+}
+
+.discovering-section .right h1 {
+    font-family: Museo Hard, serif;
+    color: #f3f3f3;
+    font-size: 50px;
+    text-transform: uppercase;
+    max-width: 360px;
+    line-height: 60px;
+    margin-bottom: 0;
+}
+
+.discovering-section .right hr {
+    width: 100px;
+    background: white;
+    height: 6px;
+    margin-left: 0;
+    border: none;
+    border-radius: 2px;
+}
+
+.discovering-section .right p {
+    margin-top: 20px;
+    font-family: Museo Lighter, serif;
+    color: white;
+    max-width: 360px;
+    opacity: 0.65;
+}
+
+/** Discovering Section - Main **/
+
+.discovering-section .main {
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/** Smart Section **/
+
+.smart-section {
+    height: 60vh;
+    padding: 0 0 100px 0;
+    background: url(../img/lilcircuits.png) no-repeat left bottom;
+}
+
+.smart-section img {
+    float: right;
+    margin: 30px 60px 0 0;
+}
+
+/** Smart Section - Main **/
+
+.smart-section .main {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+    padding-top: 60px;
+}
+
+/** Smart Section - Left **/
+
+.smart-section .left {
+    float: left;
+    margin-left: 40px;
+}
+
+.smart-section .left h1 {
+    font-family: Museo Hard, serif;
+    color: #626262;
+    font-size: 50px;
+    text-transform: uppercase;
+    max-width: 360px;
+    text-align: right;
+    line-height: 60px;
+    margin-bottom: 16px;
+}
+
+.smart-section .left hr {
+    width: 100px;
+    background: #e56469;
+    height: 6px;
+    margin-right: 0;
+    border: none;
+    border-radius: 2px;
+}
+
+.smart-section .left p {
+    color: #4c4c4c;
+    text-align: right;
+    font-family: Museo Lighter, serif;
+    max-width: 320px;
+    margin-left: 40px;
+}
+
+.smart-section .left a {
+    float: right;
+}
+
+/** Blog Section **/
+
+.blog-section {
+    background: url(../img/circuits.png),
+    -webkit-linear-gradient(-56deg, #e95b64 0%,
+            #ff913f 100%);
+    height: 70vh;
+}
+
+/** Blog Section - Main **/
+
+.blog-section .main {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+    height: 100%;
+}
+
+/** Blog Section - Right **/
+
+.blog-section .right {
+    float: right;
+    margin: 120px 100px 0 0;
+}
+
+.blog-section .right h1 {
+    font-family: Museo Hard, serif;
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+    max-width: 320px;
+    line-height: 60px;
+    margin-bottom: 0;
+}
+
+.blog-section .right hr {
+    width: 100px;
+    background: white;
+    height: 6px;
+    margin-left: 0;
+    border: none;
+    border-radius: 2px;
+}
+
+.blog-section .right p {
+    margin-top: 20px;
+    font-family: Museo Lighter, serif;
+    color: white;
+    max-width: 320px;
+    opacity: 0.65;
+}
+
+/** Blog Section - Left **/
+
+.blog-section .left {
+    float: left;
+    background: white;
+    padding: 100px 30px;
+    height: 100%;
+    width: 450px;
+    box-sizing: border-box;
+}
+
+.blog-section .left h2 {
+    color: #6d6d6d;
+    font-family: Museo Normal, serif;
+    margin-bottom: 0;
+    font-size: 28px;
+}
+
+.blog-section .left p {
+    font-family: Museo Light, serif;
+    font-size: 14px;
+    color: #6d6d6d;
+}
+
+.blog-section .left a {
+    color: #e65861;
+    font-family: Museo Bold, serif;
+}
+
+.blog-section .left .blog-entry {
+    color: #999999;
+}
+
+/** Companies Section **/
+
+.companies-section {
+    height: 35vh;
+    margin: 0 auto;
+}
+
+.companies-section h2 {
+    color: #363636;
+    font-family: Museo Light, serif;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.companies-section b {
+    font-family: Museo Bold, serif;
+    color: #e3535f;
+}
+
+/** Companies Section - Companies List **/
+
+.companies-section .companies-list {
+    width: 1024px;
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.companies-section .companies-list .balls .active {
+    background-color: #c36767 !important;
+}
+
+.companies-section .companies-list .pos-active {
+    transition: all 0.4s ease;
+}
+
+.companies-section .companies-list .pos-hidden {
+    transition: all 0.4s ease;
+    visibility: hidden;
+    opacity: 0
+}
+
+.companies-section .companies-list .company-entry {
+    width: 100%;
+    max-width: 1024px;
+    height: 180px;
+    float: left;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.companies-section .companies-list .company-entry img {
+    max-height: 60px;
+    padding: 0 15px 60px;
+}
+
+.companies-section .companies-list .balls {
+    height: 20px;
+    position: absolute;
+    width: 100px;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.companies-section .companies-list .balls .ball {
+    width: 15px;
+    height: 15px;
+    background-color: #999;
+    float: left;
+    margin: 0 6px;
+    border-radius: 10px;
+}
+
+/** Footer Section **/
+
+.footer-section {
+    height: 45vh;
+    background: #1d334a url(../img/lilcircuits.png) no-repeat left bottom;
+}
+
+.footer-section ul {
+    list-style: none;
+    display: inline-table;
+}
+
+.footer-section ul li {
+    color: white;
+    font-family: Museo Bold, serif;
+    text-transform: uppercase;
+    max-width: 150px;
+    font-size: 12px;
+    line-height: 25px;
+    margin-left: 60px;
+}
+
+.footer-section ul li a {
+    opacity: 0.65;
+}
+
+.footer-section ul li h2 {
+    font-family: Museo Bolder, serif;
+    font-size: 18px;
+    opacity: 1;
+}
+
+.footer-section ul li p {
+    text-transform: none;
+    font-family: Museo Light, serif;
+    line-height: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.footer-section .copyright {
+    color: white;
+    font-family: Museo Bold, serif;
+    font-size: 12px;
+    margin-left: 100px;
+}
+
+.footer-section .involve {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 60px 0 0 50px;
+}
