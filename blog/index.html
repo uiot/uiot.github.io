@@ -3,8 +3,21 @@ layout: default
 title: Blog | Universal Internet of Things
 active: blog
 ---
-<ul>
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+<section class="header-section">
+    <div class="header">
+        <img src="img/uiot.svg"/>
+        <ul>
+					<li class="active">Home</li>
+					<li>About</li>
+					<li>Blog</li>
+					<li>Get Started</li>
+        </ul>
+    </div>
+</section>
+<section class="blog-section">
+  <ul>
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</section>
