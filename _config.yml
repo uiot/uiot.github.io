@@ -8,5 +8,5 @@ repository: uiot/uiot.github.io
 globalurl: https://betauiot.azurewebsites.net #Comment on Development
 #globalurl: http://127.0.0.1:4000 #Uncomment on Production
 
-#gems: [jekyll-tidy, jekyll-github-metadata] #Comment on Production
-gems: [jekyll-admin, jekyll-tidy, jekyll-github-metadata] #Uncomment on Development
+gems: [jekyll-tidy, jekyll-github-metadata] #Commenct on Development
+#gems: [jekyll-admin, jekyll-tidy, jekyll-github-metadata] #Uncomment on Production
