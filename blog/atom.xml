@@ -5,10 +5,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
     <title>Blog of Universal Internet of Things</title>
-    <link href="https://uiot.github.io/atom.xml" rel="self"/>
-    <link href="https://uiot.github.io/blog"/>
+    <link href="{{ site.globalurl }}/atom.xml" rel="self"/>
+    <link href="{{ site.globalurl }}/blog"/>
     <updated>{{ site.time | date_to_xmlschema }}</updated>
-    <id>https://uiot.github.io/blog</id>
+    <id>{{ site.globalurl }}</id>
     <author>
         <name>Universal Internet of Things</name>
         <email>blog@uiot.org</email>
@@ -17,9 +17,9 @@
     {% for post in site.posts %}
     <entry>
         <title>{{ post.title }}</title>
-        <link href="https://uiot.github.io{{ post.url }}"/>
+        <link href="{{ site.globalurl }}{{ post.url }}"/>
         <updated>{{ post.date | date_to_xmlschema }}</updated>
-        <id>https://uiot.github.io{{ post.id }}</id>
+        <id>{{ site.globalurl }}{{ post.id }}</id>
         <content type="html">{{ post.content | xml_escape }}</content>
     </entry>
     {% endfor %}

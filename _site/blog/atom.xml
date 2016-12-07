@@ -5,31 +5,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
     <title>Blog of Universal Internet of Things</title>
-    <link href="https://uiot.github.io/atom.xml" rel="self"/>
-    <link href="https://uiot.github.io/blog"/>
-    <updated>2016-12-07T15:57:10-02:00</updated>
-    <id>https://uiot.github.io/blog</id>
+    <link href="https://beta.uiot.org/atom.xml" rel="self"/>
+    <link href="https://beta.uiot.org/blog"/>
+    <updated>2016-12-07T16:07:32-02:00</updated>
+    <id>https://beta.uiot.org</id>
     <author>
         <name>Universal Internet of Things</name>
         <email>blog@uiot.org</email>
     </author>
 
-
+    
     <entry>
         <title>O Tempo do Amanhã</title>
-        <link href="https://uiot.github.io/blog/2016/12/05/O-Tempo-do-Amanha"/>
+        <link href="https://beta.uiot.org/blog/2016/12/05/O-Tempo-do-Amanha"/>
         <updated>2016-12-05T00:00:00-02:00</updated>
-        <id>https://uiot.github.io/blog/2016/12/05/O-Tempo-do-Amanha</id>
-        <content type="html">&lt;p&gt;Hoje (10/11) choveu dentro do UIoT.
-            Não se sabe como, mas, enquanto a água vertia fora do laboratório,
-            o ar-condicionado começou a “chorar” sobre nossos queridos dispositivos.
-            É visando evitar este (e outros problemas) que o UIoT School está construindo uma estação metereológica,
-            que fornecerá os dados necessários para o sistema maximizar sua relação com o meio-ambiente.
-            E a equipe formada por Vitor, Ryan e Naja está trabalhando nos sensores de temperatura, umidade, pressão e
-            chuva,
-            que será parte integrante da estação metereológica e fornecerá os mais essenciais dados para a compreensão e
-            predição do clima.&lt;/p&gt;
-        </content>
+        <id>https://beta.uiot.org/blog/2016/12/05/O-Tempo-do-Amanha</id>
+        <content type="html">&lt;p&gt;Hoje (10/11) choveu dentro do UIoT. 
+Não se sabe como, mas, enquanto a água vertia fora do laboratório, 
+o ar-condicionado começou a “chorar” sobre nossos queridos dispositivos. 
+É visando evitar este (e outros problemas) que o UIoT School está construindo uma estação metereológica, 
+que fornecerá os dados necessários para o sistema maximizar sua relação com o meio-ambiente. 
+E a equipe formada por Vitor, Ryan e Naja está trabalhando nos sensores de temperatura, umidade, pressão e chuva, 
+que será parte integrante da estação metereológica e fornecerá os mais essenciais dados para a compreensão e predição do clima.&lt;/p&gt;
+</content>
     </entry>
-
+    
 </feed>

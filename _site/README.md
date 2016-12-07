@@ -5,6 +5,20 @@
 <b>What this repository should be?</b><br>
 Read Only Repository Containing the UIoT's Development Web Site
 
+----------------------------------------------------
 <b>GitHub Pages & Jekyll</b><br>
 The New **UIoT** web site uses Jekyll and GitHub Pages and is continuously deployed in a Microsoft Azure WebApp.
 We recommend to you access the site directly from the Micrsooft Azure WebApp (beta.uiot.org) rather than (uiot.github.io) since the Public Configurations and Links are set for the Microsoft Azure WebApp.
+
+----------------------------------------------------
+<b>Building Jekyll</b><br>
+To Build the Website simply do those following commands:
+<pre>
+gem install jekyll
+jekyll build
+</pre>
+
+<b>Pre-Requisites to Build</b><br>
+* Ruby
+* Need be on the Repository Folder
+* Need be Super User
