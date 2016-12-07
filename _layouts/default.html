@@ -42,8 +42,9 @@
             <li><a>UnB</a></li>
             <li><a>Instagram</a></li>
         </ul>
-        <p class="copyright">Copyright 2016 Universal Internet of Things, All Rights Reserved <i>Build on {{ site.time
-            }}</i></p>
+        <p class="copyright">Copyright 2016 Universal Internet of Things, All Rights Reserved <br/>
+            <small>Build on {{ site.time | date_to_string }} <b>v{{ site.github.build_revision }}</b></small>
+        </p>
     </div>
 </section>
 </body>

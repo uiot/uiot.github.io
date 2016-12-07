@@ -141,7 +141,7 @@ a {
 
 .header-section .right p {
     margin-top: 20px;
-    font-family: Museo Lighter, serif;
+    font-family: Museo Light, serif;
     color: white;
     max-width: 360px;
     opacity: 0.9;
@@ -254,7 +254,7 @@ a {
     height: auto;
     background: url(../img/map.gif) no-repeat 0 -40px;
     background-size: cover;
-    padding: 100px 0 100px 0;
+    padding: 100px 0 60px 0;
 }
 
 .supporting-section .main {
@@ -518,10 +518,10 @@ a {
 
 .blog-section .right p {
     margin-top: 20px;
-    font-family: Museo Lighter, serif;
+    font-family: Museo Light, serif;
     color: white;
     max-width: 320px;
-    opacity: 0.65;
+    opacity: 0.8;
 }
 
 /** Blog Section - Left **/

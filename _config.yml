@@ -3,6 +3,7 @@
 name: Universal Internet of Things
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+repository: uiot/uiot.github.io
 globalurl: https://betauiot.azurewebsites.net #Comment on Development
 #globalurl: http://127.0.0.1:4000 #Uncomment on Development
-#gems: [jekyll-admin] #Uncomment on Development
+#gems: [jekyll-admin, jekyll-tidy, jekyll-github-metadata] #Uncomment on Development
