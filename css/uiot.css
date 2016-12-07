@@ -38,7 +38,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-h1, p, a, img, h2 {
+h1, p, a, img, h2, h3 {
     user-select: none;
     -webkit-user-drag: none;
 }
@@ -102,9 +102,7 @@ a {
 /** Header Section **/
 
 .header-section {
-    background: url(../img/bolhas.png),
-    -webkit-linear-gradient(-56deg, #ff913f 0%,
-            #e95b64 100%);
+    background: url(../img/bolhas.png), -webkit-linear-gradient(-56deg, #ff913f 0%, #e95b64 100%);
     min-height: 100vh;
     height: auto;
 }
@@ -158,6 +156,15 @@ a {
 
 .header-section .main img {
     animation: hero-animation 1.5s ease forwards;
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes notebook-intro {
@@ -712,7 +719,13 @@ a {
 }
 
 .blog-content-section .main h1 {
-    padding-bottom: 20px;
+    margin: 0;
+}
+
+.blog-content-section .main small {
+    margin-bottom: 40px;
+    display: block;
+    color: #646464;
 }
 
 .blog-content-section .main ul {
@@ -720,7 +733,9 @@ a {
     list-style: none;
 }
 
-.blog-content-section .main ul li span {
+/** Blog Content Section - Main **/
+
+.blog-content-section .main ul li .details span {
     font-family: Museo Bold, serif;
 }
 
@@ -729,10 +744,17 @@ a {
     margin-bottom: 20px;
     background: white;
     border-radius: 3px;
+    overflow: auto;
 }
 
-.blog-content-section .main ul li a {
+.blog-content-section .main ul li .details a {
     color: black;
+}
+
+.blog-content-section .main ul li .resume a {
+    color: #e65861;
+    font-family: Museo Bold, serif;
+    float: right;
 }
 
 /** Blog Post Section **/

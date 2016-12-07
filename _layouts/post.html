@@ -21,5 +21,19 @@ active: blog
     <div class="content">
         {{ content }}
     </div>
+    <div id="disqus_thread"></div>
+    <script>
+        (function () {
+            var d = document, s = d.createElement('script');
+
+            s.src = '//claudio_santoro.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments
+        powered by Disqus.</a></noscript>
 </section>
+<script id="dsq-count-scr" src="//claudio_santoro.disqus.com/count.js" async></script>
 

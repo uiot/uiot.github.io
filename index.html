@@ -103,10 +103,10 @@ active: home
                 {% capture excerpt_words %}
                 {{ post.resume | number_of_words }}
                 {% endcapture %}
-                {% if excerpt_words != content_words %}
-                    <a href="{{ post.url }}">See the full post by clicking here.</a>
-                {% endif %}
             </p>
+            {% if excerpt_words != content_words %}
+            <a href="{{ post.url }}#disqus_thread">See the full post by clicking here.</a>
+            {% endif %}
         </div>
         <div class="right">
             <h1>Latest Blog Post</h1>

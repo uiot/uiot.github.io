@@ -17,10 +17,22 @@ active: blog
 <section class="blog-content-section">
     <div class="main">
         <h1>UIoT Blog!</h1>
+        <small><b>Where news are spoiled.</b></small>
         <ul>
             {% for post in site.posts %}
-            <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{
-                post.title }}</a></li>
+            <li>
+                <div class="info">
+                    <span>{{ post.date | date_to_string }}</span> »
+                    <a href="{{ post.url }}#disqus_thread" title="{{ post.title }}">{{post.title }}</a>
+                    <br/>
+                    <small><b>Author.:</b> {{ post.author }}</small>
+                </div>
+                <div class="resume">
+                    {{ post.resume }}
+                    <br/><br/>
+                    <a href="{{ post.url }}#disqus_thread">Read the fully post here!</a>
+                </div>
+            </li>
             {% endfor %}
         </ul>
     </div>
