@@ -65,6 +65,6 @@ cd
 
 :: Added GitHub Token
 ECHO Running Jekyll
-call JEKYLL_GITHUB_TOKEN=692983bb72e2ecfcf8cee32e491209885e7f4144 bundle exec jekyll build
+call bundle exec jekyll build
 
 REM KuduSync is after this!
