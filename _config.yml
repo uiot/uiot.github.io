@@ -1,5 +1,5 @@
 name: Universal Internet of Things
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
-globalurl: https://uiot.github.io/
+globalurl: https://uiot.github.io
 gems: [jekyll-admin]
