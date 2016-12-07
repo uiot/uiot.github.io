@@ -734,3 +734,26 @@ a {
 .blog-content-section .main ul li a {
     color: black;
 }
+
+/** Blog Post Section **/
+
+.blog-post-section {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+    height: auto;
+    padding: 60px 0 60px 0;
+}
+
+.blog-post-section .details h1 {
+    margin-bottom: 0;
+}
+
+.blog-post-section .content {
+    padding: 30px 30px;
+    background: white;
+    color: black !important;
+    border-radius: 3px;
+    margin: 20px 0 20px 0;
+    text-align: justify;
+}

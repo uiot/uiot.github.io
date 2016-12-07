@@ -13,7 +13,13 @@ active: blog
         </ul>
     </div>
 </section>
-<section class="blog-post">
-    {{ content }}
+<section class="blog-post-section">
+    <div class="details">
+        <h1>{{ page.title }}</h1>
+        <small><b>Author:</b> {{ page.author }}</small>
+    </div>
+    <div class="content">
+        {{ content }}
+    </div>
 </section>
 
