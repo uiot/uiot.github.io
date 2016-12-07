@@ -31,4 +31,4 @@ jekyll build
 
 ----------------------------------------------------
 <b>Some Points.:</b><br>
-* We added (JekyllAdmin)[https://github.com/jekyll/jekyll-admin] into the `_config.yml` BUT it's commented. You can use locally to add new posts.
+* We added [JekyllAdmin](https://github.com/jekyll/jekyll-admin) into the `_config.yml` BUT it's commented. You can use locally to add new posts.
