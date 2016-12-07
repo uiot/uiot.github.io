@@ -2,7 +2,7 @@
 layout: post
 title: "O Tempo do Amanhã"
 date: 2016-12-05
-active: blog
+author: Pedro Tominaga
 ---
 Hoje (10/11) choveu dentro do UIoT. 
 Não se sabe como, mas, enquanto a água vertia fora do laboratório, 
