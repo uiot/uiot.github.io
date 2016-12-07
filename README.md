@@ -11,7 +11,7 @@ The New **UIoT** web site uses Jekyll and GitHub Pages and is continuously deplo
 We recommend to you access the site directly from the Micrsooft Azure WebApp (beta.uiot.org) rather than (uiot.github.io) since the Public Configurations and Links are set for the Microsoft Azure WebApp.
 
 ----------------------------------------------------
-<b>Building Jekyll</b><br>
+<b>Building Jekyll (Local)</b><br>
 To Build the Website simply do those following commands:
 <pre>
 gem install jekyll
@@ -22,3 +22,13 @@ jekyll build
 * Ruby
 * Need be on the Repository Folder
 * Need be Super User
+
+----------------------------------------------------
+<b>Building WebApp on MS Azure</b><br>
+* Add a Deployment of the Repository
+* Set in Application Settings `SCM_COMMAND_IDLE_TIMEOUT` to `600`
+* Wait for the Kudu App builds the Repository
+
+----------------------------------------------------
+<b>Some Points.:</b><br>
+* We added (JekyllAdmin)[https://github.com/jekyll/jekyll-admin] into the `_config.yml` BUT it's commented. You can use locally to add new posts.
