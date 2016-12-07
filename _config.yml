@@ -2,4 +2,3 @@ name: Universal Internet of Things
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 globalurl: https://betauiot.azurewebsites.net
-gems: [jekyll-admin]
