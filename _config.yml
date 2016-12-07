@@ -1,6 +1,6 @@
 name: Universal Internet of Things
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
-globalurl: https://betauiot.azurewebsites.net #Commented on Development
-globalurl: http://127.0.0.1:4000 #Uncomment on Development
-gems: [jekyll-admin] #Uncomment on Development
+globalurl: https://betauiot.azurewebsites.net #Comment on Development
+#globalurl: http://127.0.0.1:4000 #Uncomment on Development
+#gems: [jekyll-admin] #Uncomment on Development
