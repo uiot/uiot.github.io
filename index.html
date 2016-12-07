@@ -92,16 +92,11 @@ active: home
 <section class="blog-section">
     <div class="main">
         <div class="left">
-            <h2>Blog Entry Title of Something Nowhere</h2>
-            <p><b>Author:</b> Joaquim Lustosa Bezerra</p>
+              {% assign post = site.posts.first %}
+            <h2>{{ post.title }}</h2>
+            <p><b>Author:</b> {{ post.author }}</p>
             <p class="blog-entry">
-                Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Nullam sapien sem,
-                ornare ac, nonummy non, lobortis a, enim. Nunc tincidunt ante vitae massa. Duis ante orci, molestie
-                vitae, vehicula venenatis, tincidunt ac, pede. Nulla accumsan, elit sit amet varius semper, nulla mauris
-                mollis quam, tempor suscipit diam nulla vel leo. Etiam commodo dui eget wisi. Donec iaculis gravida
-                nulla. Donec quis nibh at felis congue commodo. Etiam bibendum elit eget erat. Praesent in mauris eu
-                tortor porttitor accumsan. Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel
-                sagittis velit mauris vel metus.
+                {{ post.content }}
             </p>
             <a>See the full post by clicking here.</a>
         </div>
