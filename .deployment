@@ -1,2 +1,3 @@
 [config]
+project = _site
 command = deploy.cmd
