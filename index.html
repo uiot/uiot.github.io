@@ -96,9 +96,17 @@ active: home
             <h2>{{ post.title }}</h2>
             <p><b>Author:</b> {{ post.author }}</p>
             <p class="blog-entry">
-                {{ post.content }}
+                {{ post.resume }}
+                {% capture content_words %}
+                {{ post.content | number_of_words }}
+                {% endcapture %}
+                {% capture excerpt_words %}
+                {{ post.resume | number_of_words }}
+                {% endcapture %}
+                {% if excerpt_words != content_words %}
+                    <a href="{{ post.url }}">See the full post by clicking here.</a>
+                {% endif %}
             </p>
-            <a href="{{ post.url }}">See the full post by clicking here.</a>
         </div>
         <div class="right">
             <h1>Latest Blog Post</h1>

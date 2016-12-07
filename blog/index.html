@@ -3,7 +3,7 @@ layout: default
 title: Blog | Universal Internet of Things
 active: blog
 ---
-<section class="header-section">
+<section class="header-section header-small">
     <div class="header">
         <img src="{{ site.globalurl }}/img/uiot.svg"/>
         <ul>
@@ -14,12 +14,15 @@ active: blog
         </ul>
     </div>
 </section>
-<section class="blog-section">
-    <ul>
-        {% for post in site.posts %}
-        <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{
-            post.title }}</a></li>
-        {% endfor %}
-    </ul>
+<section class="blog-content-section">
+    <div class="main">
+        <h1>UIoT Blog!</h1>
+        <ul>
+            {% for post in site.posts %}
+            <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{
+                post.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
 </section>
  

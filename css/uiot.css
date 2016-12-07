@@ -107,6 +107,10 @@ a {
             #e95b64 100%);
 }
 
+.header-section.header-small {
+    height: 22vh !important;
+}
+
 /** Header Section - Right **/
 
 .header-section .right {
@@ -670,4 +674,37 @@ a {
     max-width: 1024px;
     margin: 0 auto;
     padding: 60px 0 0 50px;
+}
+
+/** Blog Content Section **/
+
+.blog-content-section .main {
+    padding-top: 60px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.blog-content-section .main h1 {
+    padding-bottom: 20px;
+}
+
+.blog-content-section .main ul {
+    color: black !important;
+    list-style: none;
+}
+
+.blog-content-section .main ul li span {
+    font-family: Museo Bold, serif;
+}
+
+.blog-content-section .main ul li {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 3px;
+}
+
+.blog-content-section .main ul li a {
+    color: black;
 }
