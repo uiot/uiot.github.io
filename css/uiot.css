@@ -573,6 +573,7 @@ a {
     height: auto;
     padding: 0 0 60px 0;
     overflow: auto;
+    background: url(../img/worlddotted.PNG) no-repeat center top;
 }
 
 .companies-section h2 {
@@ -649,10 +650,10 @@ a {
 /** Footer Section **/
 
 .footer-section {
-    background: #1d334a url(../img/lilcircuits.png) no-repeat left bottom;
-    min-height: 45vh;
+    background: #1d334a url(../img/home.svg) no-repeat -200% -30%;
+    min-height: 40vh;
     height: auto;
-    padding: 0 0 20px 0;
+    padding: 0 0 10px 0;
     overflow: auto;
 }
 
@@ -774,6 +775,8 @@ a {
     padding: 60px 0 60px 0;
 }
 
+/** Blog Post Section - Details **/
+
 .blog-post-section .details h1 {
     margin-bottom: 0;
     color: #e65861;
@@ -782,6 +785,8 @@ a {
 .blog-post-section .details small {
     color: #646464;
 }
+
+/** Blog Post Section - Content **/
 
 .blog-post-section .content {
     padding: 30px 30px;
@@ -821,6 +826,14 @@ a {
     max-width: 1024px;
 }
 
+.sorry-section a {
+    color: #e65861;
+    font-family: Museo Bold, serif;
+    padding: 20px;
+}
+
+/** Sorry Section - Sorry **/
+
 .sorry-section .sorry {
     background: #c36767;
     color: white;
@@ -832,10 +845,4 @@ a {
     font-size: 100px;
     float: right;
     margin-right: 20%;
-}
-
-.sorry-section a {
-    color: #e65861;
-    font-family: Museo Bold, serif;
-    padding: 20px;
 }
