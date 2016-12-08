@@ -746,7 +746,7 @@ a {
 }
 
 .blog-content-section .main ul li .info a {
-    color: black;
+    color: #999999;
 }
 
 .blog-content-section .main ul li .info span {
@@ -781,8 +781,37 @@ a {
 .blog-post-section .content {
     padding: 30px 30px;
     background: white;
-    color: black !important;
+    color: #999999 !important;
     border-radius: 3px;
     margin: 20px 0 20px 0;
     text-align: justify;
+}
+
+/** Sorry Section **/
+
+.sorry-section {
+    height: auto;
+    padding: 60px 0 60px 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.sorry-section .sorry {
+    background: #c36767;
+    color: white;
+    padding: 18px 24px 18px 24px;
+    border-radius: 3px;
+}
+
+.sorry-section .sorry .sad {
+    font-size: 100px;
+    float: right;
+    margin-right: 20%;
+}
+
+.sorry-section a {
+    color: #e65861;
+    font-family: Museo Bold, serif;
+    padding: 20px;
 }

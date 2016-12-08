@@ -2,6 +2,7 @@
 
 name: Universal Internet of Things
 markdown: kramdown
+permalink: /404.html
 permalink: /blog/:year/:month/:day/:title
 repository: uiot/uiot.github.io
 
