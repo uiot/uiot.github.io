@@ -69,7 +69,9 @@ a {
 
 .white {
     background: white;
-    color: #e95b64;
+    color: #e9573f;
+    box-shadow: 0 0 0 5px rgba(20,28,34,0.1);
+    box-sizing: border-box;
 }
 
 .white:hover {
@@ -222,10 +224,10 @@ a {
     cursor: pointer;
 }
 
-.header-section .header ul > li.active {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 14px;
-    border-radius: 3px;
+.header-section .header ul > li.active:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 .header-section .header ul > li a {
