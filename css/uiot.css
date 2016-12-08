@@ -753,6 +753,10 @@ a {
     font-family: Museo Bold, serif;
 }
 
+.blog-content-section .main ul li .resume {
+    color: #999999 !important;
+}
+
 .blog-content-section .main ul li .resume a {
     color: #e65861;
     font-family: Museo Bold, serif;
