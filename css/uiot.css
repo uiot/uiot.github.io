@@ -70,7 +70,7 @@ a {
 .white {
     background: white;
     color: #e9573f;
-    box-shadow: 0 0 0 5px rgba(20,28,34,0.1);
+    box-shadow: 0 0 0 5px rgba(20, 28, 34, 0.1);
     box-sizing: border-box;
 }
 
@@ -261,9 +261,9 @@ a {
 .supporting-section {
     min-height: 60vh;
     height: auto;
-    background: url(../img/map.gif) no-repeat 0 -40px;
+    background: white url(../img/map.gif) no-repeat 0 -40px;
     background-size: cover;
-    padding: 100px 0 60px 0;
+    padding: 100px 0 20px 0;
 }
 
 .supporting-section .main {
@@ -540,7 +540,8 @@ a {
     background: white;
     padding: 100px 30px;
     height: 100%;
-    width: 450px;
+    max-width: 450px;
+    width: auto;
     box-sizing: border-box;
     border-radius: 0 0 3px 3px;
 }
@@ -652,7 +653,7 @@ a {
 /** Footer Section **/
 
 .footer-section {
-    background: #1d334a url(../img/home.svg) no-repeat -200% -30%;
+    background: #1d334a url(../img/home.svg) no-repeat bottom -250px left -800px;
     min-height: 40vh;
     height: auto;
     padding: 0 0 10px 0;
@@ -847,4 +848,55 @@ a {
     font-size: 100px;
     float: right;
     margin-right: 20%;
+}
+
+/** Media Screen **/
+
+@media screen and (max-width: 1024px) {
+    .blog-section .right, .companies-section, .header-section .main img, .supporting-section ul, .smart-section img {
+        display: none;
+    }
+
+    .footer-section ul, .footer-section .involve {
+        padding: 0;
+    }
+
+    .footer-section {
+        background: #1d334a;
+    }
+
+    .supporting-section .left, .smart-section .left {
+        margin-left: 0 !important;
+    }
+
+    .discovering-section .right {
+        margin-right: 0 !important;
+    }
+
+    .header-section .header img:first-child {
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header-section .main {
+        padding-top: 0 !important;
+    }
+
+    .header-section .right {
+        margin: 0 60px 0 0;
+    }
+
+    .header-section .right h1 {
+        font-size: 34px;
+        line-height: 34px;
+    }
+
+    .header-section {
+        min-height: 50vh !important;
+    }
+
+    .header-section .header img:first-child, .header-section .header ul {
+        display: none;
+    }
 }
