@@ -4,8 +4,8 @@ title: Universal Internet of Things
 active: home
 ---
 <section class="supporting-section">
-    <div class="main">
-        <div class="left">
+    <div class="row">
+        <div class="large-5 medium-5 columns small-8 support-ideas">
             <h1>Supporting big Ideas</h1>
             <hr/>
             <p>
@@ -13,35 +13,42 @@ active: home
                 this
                 purpose we offer a large set of great toolkits.
             </p>
-            <a class="button colored">Get Involved</a>
+            <a class="button colored float-right">Get Involved</a>
         </div>
-        <ul>
-            <li>
-                <img src="{{ site.globalurl }}/img/chip.png"/>
-                <h3>Devices</h3>
-                <p>
-                    UIoT offers a big set of daily life applications, to which you can quickly add your own devices with
-                    our
-                    great tools. Our device library contains all you need.
-                </p>
-                <a>Find Devices</a>
-            </li>
-            <li>
-                <img src="{{ site.globalurl }}/img/play-store.png"/>
-                <h3>Applications</h3>
-                <p>
-                    UIoT offers a big set of daily life applications to which you can quickly add your own devices. We
-                    have
-                    great tools to help you get started. Our device library contains all you need.
-                </p>
-                <a>Explore Applications</a>
-            </li>
-        </ul>
+        <div class="hide-for-small-only show-for-medium large-6 medium-7 columns">
+            <ul>
+                <li>
+                    <img src="{{ site.globalurl }}/img/chip.png"/>
+                    <h3>Devices</h3>
+                    <p>
+                        UIoT offers a big set of daily life applications, to which you can quickly add your own devices
+                        with
+                        our
+                        great tools. Our device library contains all you need.
+                    </p>
+                    <a>Find Devices</a>
+                </li>
+                <li>
+                    <img src="{{ site.globalurl }}/img/play-store.png"/>
+                    <h3>Applications</h3>
+                    <p>
+                        UIoT offers a big set of daily life applications to which you can quickly add your own devices.
+                        We
+                        have
+                        great tools to help you get started. Our device library contains all you need.
+                    </p>
+                    <a>Explore Applications</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </section>
 <section class="discovering-section">
-    <div class="main">
-        <div class="right">
+    <div class="row">
+        <div class="large-6 medium-4 columns hider-for-small-only">
+            <br/>
+        </div>
+        <div class="large-5 small-8 medium-6 columns">
             <h1>Discovering with You</h1>
             <hr/>
             <p>UIoT team works with you and for you to create a new IoT concept. By collaborating with our partners, we
@@ -52,8 +59,11 @@ active: home
     </div>
 </section>
 <section class="smart-section">
-    <div class="main">
-        <div class="left">
+    <div class="main row">
+        <div class="small-2 hide-for-medium hide-for-large columns">
+            <br/>
+        </div>
+        <div class="large-4 medium-4 small-8 columns">
             <h1>Let's be smart</h1>
             <hr/>
             <p>
@@ -62,14 +72,19 @@ active: home
                 UIoT to a whole new level. Get involved, contribute to UIoT. We endorse academic works. We do academic
                 works.
             </p>
-            <a class="button colored">UIoT Academics</a>
+            <a class="button colored float-right">UIoT Academics</a>
         </div>
-        <img src="{{ site.globalurl }}/img/smart.png"/>
+        <div class="large-2 medium-2 columns">
+            <br/>
+        </div>
+        <div class="large-6 medium-6 columns hide-for-small-only">
+            <img src="{{ site.globalurl }}/img/smart.png"/>
+        </div>
     </div>
 </section>
 <section class="blog-section">
-    <div class="main">
-        <div class="left">
+    <div class="row">
+        <div class="large-6 medium-6 small-12 columns p-entry">
             {% assign post = site.posts.first %}
             <h2>{{ post.title }}</h2>
             <p><b>Author:</b> {{ post.author }}</p>
@@ -86,7 +101,7 @@ active: home
             <a href="{{ post.url }}#disqus_thread">See the full post by clicking here.</a>
             {% endif %}
         </div>
-        <div class="right">
+        <div class="large-5 medium-6 columns hide-for-small-only p-details">
             <h1>Latest Blog Post</h1>
             <hr/>
             <p>Check the latest post in our blog, and if you like it, take a look at our UIoT blog page and share to
@@ -94,7 +109,7 @@ active: home
         </div>
     </div>
 </section>
-<section class="companies-section">
+<section class="companies-section hide-for-small-only">
     <h2>Meet the <b>Companies</b> that helps <b>UIoT</b> to be what we are.</h2>
     <div class="companies-list">
         <div class="company-entry pos-active">

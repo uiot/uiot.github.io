@@ -7,15 +7,18 @@
     <meta name="keywords" content="IoT,IoE,Internet of Things,Machine Learning,Big Data,Automation,Home Automation">
     <meta name="author" content="Universal Internet of Things">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{{ site.globalurl }}/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.globalurl }}/css/foundation.css">
     <link rel="stylesheet" type="text/css" href="{{ site.globalurl }}/css/uiot.css">
     <link rel='shortcut icon' type='image/x-icon' href='{{ site.globalurl }}/favicon.ico'/>
 </head>
 <body>
 {% if page.active == "home" %}
-    <section class="header-section">
-        <div class="header">
+<section class="header-section">
+    <div class="header row">
+        <div class="hide-for-small-only large-6 medium-6 columns">
             <img src="{{ site.globalurl }}/img/uiot.svg"/>
+        </div>
+        <div class="hide-for-small-only large-6 medium-6 columns">
             <ul>
                 <li class="active"><a href="{{ site.globalurl }}/">Home</a></li>
                 <li><a href="{{ site.globalurl }}/about/">About</a></li>
@@ -23,42 +26,49 @@
                 <li><a href="{{ site.globalurl }}/">Get Started</a></li>
             </ul>
         </div>
-        <div class="main">
+    </div>
+    <div class="main row">
+        <div class="hide-for-small-only large-6 medium-6 columns">
             <img src="{{ site.globalurl }}/img/notebook.png"/>
-            <div class="right">
-                <h1>Universal Internet of Things</h1>
-                <hr/>
-                <p>UIoT is a research project to create an universal, free,
-                    open-source and dynamic IoT architecture.</p>
-                <br/>
-                <a class="button white">Watch our Video</a>
-            </div>
         </div>
-    </section>
+        <div class="right float-right large-6 medium-6 columns">
+            <h1>Universal Internet of Things</h1>
+            <hr/>
+            <p>UIoT is a research project to create an universal, free,
+                open-source and dynamic IoT architecture.</p>
+            <br/>
+            <a class="button white">Watch our Video</a>
+        </div>
+    </div>
+</section>
 {% else %}
-    <section class="header-section header-small">
-        <div class="header">
+<section class="header-section header-small">
+    <div class="header row">
+        <div class="hide-for-small-only large-6 medium-6 columns">
             <img src="{{ site.globalurl }}/img/uiot.svg"/>
+        </div>
+        <div class="hide-for-small-only large-6 medium-6 columns">
             <ul>
                 <li><a href="{{ site.globalurl }}/">Home</a></li>
                 {% if page.active == "about" %}
-                    <li class="active"><a href="{{ site.globalurl }}/about/">About</a></li>
+                <li class="active"><a href="{{ site.globalurl }}/about/">About</a></li>
                 {% else %}
-                    <li><a href="{{ site.globalurl }}/about/">About</a></li>
+                <li><a href="{{ site.globalurl }}/about/">About</a></li>
                 {% endif %}
                 {% if page.active == "blog" %}
-                    <li class="active"><a href="{{ site.globalurl }}/blog/">Blog</a></li>
+                <li class="active"><a href="{{ site.globalurl }}/blog/">Blog</a></li>
                 {% else %}
-                    <li><a href="{{ site.globalurl }}/blog/">Blog</a></li>
+                <li><a href="{{ site.globalurl }}/blog/">Blog</a></li>
                 {% endif %}
                 {% if page.active == "start" %}
-                    <li class="active"><a href="{{ site.globalurl }}/start/">Get Started</a></li>
+                <li class="active"><a href="{{ site.globalurl }}/start/">Get Started</a></li>
                 {% else %}
-                    <li><a href="{{ site.globalurl }}/start/">Get Started</a></li>
+                <li><a href="{{ site.globalurl }}/start/">Get Started</a></li>
                 {% endif %}
             </ul>
         </div>
-    </section>
+    </div>
+</section>
 {% endif %}
 <script src="{{ site.globalurl }}/js/jquery.js"></script>
 {{ content }}

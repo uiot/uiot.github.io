@@ -43,11 +43,6 @@ h1, p, a, img, h2, h3 {
     -webkit-user-drag: none;
 }
 
-section {
-    width: 100%;
-    height: 100vh;
-}
-
 b {
     font-family: Museo Bold, serif !important;
 }
@@ -106,26 +101,19 @@ a {
 .header-section {
     background: url(../img/bolhas.png), -webkit-linear-gradient(-56deg, #ff913f 0%, #e95b64 100%);
     min-height: 100vh;
-    height: auto;
 }
 
 .header-section.header-small {
-    min-height: 22vh !important;
+    min-height: 20vh !important;
 }
 
 /** Header Section - Right **/
 
-.header-section .right {
-    float: right;
-    margin: -60px 80px 0 0;
-}
-
 .header-section .right h1 {
     font-family: Museo Hard, serif;
     color: white;
-    font-size: 61px;
+    font-size: 400%;
     text-transform: uppercase;
-    max-width: 360px;
     margin-bottom: 0;
     line-height: 80px;
 }
@@ -150,10 +138,7 @@ a {
 /** Header Section Main **/
 
 .header-section .main {
-    padding-top: 100px;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1024px;
+    padding: 60px 0 60px 0;
 }
 
 .header-section .main img {
@@ -185,9 +170,6 @@ a {
 
 .header-section .header {
     padding-top: 40px;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1024px;
 }
 
 .header-section .header img:first-child {
@@ -209,9 +191,8 @@ a {
 
 .header-section .header ul {
     list-style: none;
+    margin: 30px 0 0 0;
     display: inline-block;
-    float: right;
-    margin-right: 60px;
 }
 
 .header-section .header ul > li {
@@ -259,26 +240,15 @@ a {
 /** Supporting Section **/
 
 .supporting-section {
-    min-height: 60vh;
-    height: auto;
     background: white url(../img/map.gif) no-repeat 0 -40px;
     background-size: cover;
-    padding: 100px 0 20px 0;
-}
-
-.supporting-section .main {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1024px;
-    display: block;
-    overflow: auto;
+    padding: 100px 0 40px 0;
 }
 
 .supporting-section ul {
     list-style: none;
     float: right;
     max-width: 360px;
-    margin-right: 60px;
 }
 
 .supporting-section li {
@@ -327,23 +297,17 @@ a {
 
 /** Supporting Section - Left **/
 
-.supporting-section .left {
-    float: left;
-    margin-left: 20px;
-}
-
-.supporting-section .left h1 {
+.supporting-section .support-ideas h1 {
     font-family: Museo Hard, serif;
     color: #626262;
     font-size: 50px;
     text-transform: uppercase;
-    max-width: 360px;
     text-align: right;
     line-height: 60px;
     margin-bottom: 16px;
 }
 
-.supporting-section .left hr {
+.supporting-section .support-ideas hr {
     width: 100px;
     background: #e56469;
     height: 6px;
@@ -352,46 +316,32 @@ a {
     border-radius: 2px;
 }
 
-.supporting-section .left p {
+.supporting-section .support-ideas p {
     color: #4c4c4c;
     text-align: right;
     font-family: Museo Lighter, serif;
-    max-width: 320px;
     margin-left: 40px;
-}
-
-.supporting-section .left a {
-    float: right;
 }
 
 /** Discovering Section **/
 
 .discovering-section {
     background: #163748 url(../img/mountains.png) no-repeat left bottom;
-    min-height: 40vh;
-    height: auto;
-    overflow: auto;
     padding: 60px 0 100px 0;
 }
 
 /** Discovering Section - Right **/
 
-.discovering-section .right {
-    float: right;
-    margin-right: 60px;
-}
-
-.discovering-section .right h1 {
+.discovering-section h1 {
     font-family: Museo Hard, serif;
     color: #f3f3f3;
     font-size: 50px;
     text-transform: uppercase;
-    max-width: 360px;
     line-height: 60px;
     margin-bottom: 0;
 }
 
-.discovering-section .right hr {
+.discovering-section hr {
     width: 100px;
     background: white;
     height: 6px;
@@ -400,64 +350,43 @@ a {
     border-radius: 2px;
 }
 
-.discovering-section .right p {
+.discovering-section p {
     margin-top: 20px;
     font-family: Museo Lighter, serif;
     color: white;
-    max-width: 360px;
     opacity: 0.65;
-}
-
-/** Discovering Section - Main **/
-
-.discovering-section .main {
-    max-width: 1024px;
-    margin: 0 auto;
-    width: 100%;
 }
 
 /** Smart Section **/
 
 .smart-section {
     background: url(../img/lilcircuits.png) no-repeat left bottom;
-    height: auto;
-    overflow: auto;
     padding: 0 0 100px 0;
 }
 
 .smart-section img {
-    float: right;
-    margin: 30px 60px 0 0;
+    margin: 30px 0 0 0;
 }
 
 /** Smart Section - Main **/
 
 .smart-section .main {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1024px;
     padding-top: 60px;
 }
 
 /** Smart Section - Left **/
 
-.smart-section .left {
-    float: left;
-    margin-left: 40px;
-}
-
-.smart-section .left h1 {
+.smart-section h1 {
     font-family: Museo Hard, serif;
     color: #626262;
     font-size: 50px;
     text-transform: uppercase;
-    max-width: 360px;
     text-align: right;
     line-height: 60px;
     margin-bottom: 16px;
 }
 
-.smart-section .left hr {
+.smart-section hr {
     width: 100px;
     background: #e56469;
     height: 6px;
@@ -466,16 +395,10 @@ a {
     border-radius: 2px;
 }
 
-.smart-section .left p {
+.smart-section p {
     color: #4c4c4c;
     text-align: right;
     font-family: Museo Lighter, serif;
-    max-width: 320px;
-    margin-left: 40px;
-}
-
-.smart-section .left a {
-    float: right;
 }
 
 /** Blog Section **/
@@ -484,39 +407,25 @@ a {
     background: url(../img/circuits.png),
     -webkit-linear-gradient(-56deg, #e95b64 0%,
             #ff913f 100%);
-    min-height: 70vh;
-    height: auto;
-    overflow: auto;
     padding-bottom: 40px;
-}
-
-/** Blog Section - Main **/
-
-.blog-section .main {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1024px;
-    height: 100%;
 }
 
 /** Blog Section - Right **/
 
-.blog-section .right {
-    float: right;
-    margin: 120px 100px 0 0;
+.blog-section .p-details {
+    margin-top: 100px;
 }
 
-.blog-section .right h1 {
+.blog-section .p-details h1 {
     font-family: Museo Hard, serif;
     color: white;
     font-size: 50px;
     text-transform: uppercase;
-    max-width: 320px;
     line-height: 60px;
     margin-bottom: 0;
 }
 
-.blog-section .right hr {
+.blog-section .p-details hr {
     width: 100px;
     background: white;
     height: 6px;
@@ -525,46 +434,41 @@ a {
     border-radius: 2px;
 }
 
-.blog-section .right p {
+.blog-section .p-details p {
     margin-top: 20px;
     font-family: Museo Light, serif;
     color: white;
-    max-width: 320px;
     opacity: 0.8;
 }
 
 /** Blog Section - Left **/
 
-.blog-section .left {
-    float: left;
+.blog-section .p-entry {
     background: white;
     padding: 100px 30px;
-    height: 100%;
-    max-width: 450px;
-    width: auto;
     box-sizing: border-box;
     border-radius: 0 0 3px 3px;
 }
 
-.blog-section .left h2 {
+.blog-section .p-entry h2 {
     color: #6d6d6d;
     font-family: Museo Normal, serif;
     margin-bottom: 0;
     font-size: 28px;
 }
 
-.blog-section .left p {
+.blog-section .p-entry p {
     font-family: Museo Light, serif;
     font-size: 14px;
     color: #6d6d6d;
 }
 
-.blog-section .left a {
+.blog-section .p-entry a {
     color: #e65861;
     font-family: Museo Bold, serif;
 }
 
-.blog-section .left .blog-entry {
+.blog-section .p-entry .blog-entry {
     color: #999999;
 }
 
@@ -629,6 +533,7 @@ a {
 
 .companies-section .companies-list .company-entry img {
     max-height: 60px;
+    box-sizing: initial;
     padding: 0 15px 60px;
 }
 
@@ -848,55 +753,4 @@ a {
     font-size: 100px;
     float: right;
     margin-right: 20%;
-}
-
-/** Media Screen **/
-
-@media screen and (max-width: 1024px) {
-    .blog-section .right, .companies-section, .header-section .main img, .supporting-section ul, .smart-section img {
-        display: none;
-    }
-
-    .footer-section ul, .footer-section .involve {
-        padding: 0;
-    }
-
-    .footer-section {
-        background: #1d334a;
-    }
-
-    .supporting-section .left, .smart-section .left {
-        margin-left: 0 !important;
-    }
-
-    .discovering-section .right {
-        margin-right: 0 !important;
-    }
-
-    .header-section .header img:first-child {
-        margin-left: 40px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .header-section .main {
-        padding-top: 0 !important;
-    }
-
-    .header-section .right {
-        margin: 0 60px 0 0;
-    }
-
-    .header-section .right h1 {
-        font-size: 34px;
-        line-height: 34px;
-    }
-
-    .header-section {
-        min-height: 50vh !important;
-    }
-
-    .header-section .header img:first-child, .header-section .header ul {
-        display: none;
-    }
 }
