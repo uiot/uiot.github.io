@@ -740,6 +740,10 @@ a {
     padding: 20px;
 }
 
+.sorry-section h1 {
+    font-family: Museo Normal, serif;
+}
+
 /** Sorry Section - Sorry **/
 
 .sorry-section .sorry {
