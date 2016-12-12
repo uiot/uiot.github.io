@@ -757,3 +757,41 @@ a {
     float: right;
     margin-right: 20%;
 }
+
+/** Misc **/
+
+.ripples {
+    position: relative;
+    opacity: 0.6;
+}
+
+.ripple {
+    border: 10px solid #e36a4b;
+    width: 500px;
+    height: 500px;
+    border-radius: 500px;
+    position: absolute;
+}
+
+.ripple-1 {
+    -webkit-animation: ripple 3s linear infinite;
+}
+
+.ripple-2 {
+    -webkit-animation: ripple 3s linear infinite 0.75s;
+}
+
+.ripple-3 {
+    -webkit-animation: ripple 3s linear infinite 1.5s;
+}
+
+@-webkit-keyframes ripple {
+    from {
+        -webkit-transform: scale(0);
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: scale(3);
+        opacity: 0;
+    }
+}
