@@ -9,8 +9,12 @@
     <meta name="viewport" content="width=device-width, maximum-scale=1.0"/>
     <link rel='shortcut icon' type='image/x-icon' href='{{ site.globalurl }}/favicon.ico'/>
 </head>
+{% capture included_capture %}
+{% include foundation.css %}
+{% include uiot.css %}
+{% endcapture %}
 <style>
-    @import "/css/main.css";
+    {{ included_capture | scssify | strip_newlines }}
 </style>
 <body>
 {% if page.active == "home" %}
