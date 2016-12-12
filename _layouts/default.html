@@ -92,6 +92,25 @@
                 <li><a href="{{ site.globalurl }}/start/">Get Started</a></li>
             </ul>
         </div>
+        <div class="large-3 medium-3 hide-for-small-only columns">
+            <ul>
+                <li><h2>Latest Posts</h2></li>
+                {% for post in site.posts %}
+                <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="large-3 medium-3 hide-for-small-only  columns">
+            <ul>
+                <li><h2>Social Media</h2></li>
+                <li><a href="https://github.com/uiot">GitHub</a></li>
+                <li><a href="https://fb.com/universalinternetofthings">Facebook</a></li>
+                <li><a href="http://www.unb.br">UnB</a></li>
+                <li><a>Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row show-for-small-only">
         <div class="large-3 medium-3 small-6 columns">
             <ul>
                 <li><h2>Latest Posts</h2></li>
