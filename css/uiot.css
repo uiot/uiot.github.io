@@ -110,6 +110,10 @@ a {
 
 /** Header Section - Right **/
 
+.header-section .right {
+    margin-top: -30px;
+}
+
 .header-section .right h1 {
     font-family: Museo Hard, serif;
     color: white;
