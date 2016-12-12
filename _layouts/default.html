@@ -7,7 +7,7 @@
     <meta name="keywords" content="IoT,IoE,Internet of Things,Machine Learning,Big Data,Automation,Home Automation">
     <meta name="author" content="Universal Internet of Things">
     <meta name="viewport" content="width=device-width, maximum-scale=1.0"/>
-    <link rel='shortcut icon' type='image/x-icon' href='{{ site.globalurl }}/favicon.ico'/>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | absolute_url }}"/>
 </head>
 {% capture included_capture %}
 {% include foundation.css %}
@@ -18,6 +18,10 @@
 </style>
 <body>
 {% if page.active == "home" %}
+<script>
+    var buttonYeah = ['Love IoT?', 'Watch our Video!', 'You Rockz!', 'Get Started!', 'Wanna see amazing things?', 'Keep it real!', 'What is UIoT?!!'];
+    var buttonYeahRandom = buttonYeah[Math.floor(Math.random() * buttonYeah.length)];
+</script>
 <section class="header-section">
     <div class="header row">
         <div class="hide-for-small-only large-6 medium-6 columns">
@@ -48,7 +52,7 @@
             <p>UIoT is a research project to create an universal, free,
                 open-source and dynamic IoT architecture.</p>
             <br/>
-            <a class="button white">Watch our Video</a>
+            <a class="button white"><script>document.write(buttonYeahRandom);</script></a>
         </div>
     </div>
 </section>
