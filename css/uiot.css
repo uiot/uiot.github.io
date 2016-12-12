@@ -173,9 +173,13 @@ a {
     padding-top: 40px;
 }
 
-.header-section .header img:first-child {
+.header-section .header a img:first-child {
     width: 100px;
     display: inline-block;
+    animation: hero-animation 1.5s forwards
+}
+
+.header-section .header .limage:hover {
     animation: hero-animation 1.5s forwards
 }
 
@@ -763,15 +767,16 @@ a {
 
 .ripples {
     position: relative;
-    opacity: 0.6;
+    opacity: 0.35;
 }
 
 .ripple {
-    border: 10px solid #e36a4b;
-    width: 500px;
-    height: 500px;
+    border: 5px solid white;
+    width: 300px;
+    height: 300px;
     border-radius: 500px;
     position: absolute;
+    margin: -100px 0 0 -100px;
 }
 
 .ripple-1 {
