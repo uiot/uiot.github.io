@@ -8,86 +8,85 @@
     <meta name="author" content="Universal Internet of Things">
     <meta name="viewport" content="width=device-width, maximum-scale=1.0"/>
     <link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | absolute_url }}"/>
+    <link rel="stylesheet" href="{{ '/css/foundation.css' | absolute_url }}">
+    <link rel="stylesheet" href="{{ '/css/uiot.css' | absolute_url }}">
 </head>
-{% capture included_capture %}
-{% include foundation.css %}
-{% include uiot.css %}
-{% endcapture %}
-<style>
-    {{ included_capture | scssify | strip_newlines }}
-</style>
 <body>
 {% if page.active == "home" %}
-<script>
-    var buttonYeah = ['Love IoT?', 'Watch our Video!', 'You Rockz!', 'Get Started!', 'Wanna see amazing things?', 'Keep it real!', 'What is UIoT?!!'];
-    var buttonYeahRandom = buttonYeah[Math.floor(Math.random() * buttonYeah.length)];
-</script>
-<section class="header-section">
-    <div class="header row">
-        <div class="hide-for-small-only large-6 medium-6 columns">
-            <a href="{{ site.globalurl }}" class="limage">
-                <div class="ripples">
-                    <div class="ripple ripple-1"></div>
-                    <div class="ripple ripple-2"></div>
-                    <div class="ripple ripple-3"></div>
-                </div>
-                <img src="{{ site.globalurl }}/img/uiot.svg"/>
-            </a>
+    <script>
+        var buttonYeah = ['Love IoT?', 'Watch our Video!', 'You Rockz!', 'Get Started!', 'Wanna see amazing things?', 'Keep it real!', 'What is UIoT?!!'];
+        var buttonYeahRandom = buttonYeah[Math.floor(Math.random() * buttonYeah.length)];
+    </script>
+    <section class="header-section">
+        <div class="header row">
+            <div class="hide-for-small-only large-6 medium-6 columns">
+                <a href="{{ '/' | absolute_url }}">
+                    <div class="ripples">
+                        <div class="ripple ripple-1"></div>
+                        <div class="ripple ripple-2"></div>
+                        <div class="ripple ripple-3"></div>
+                    </div>
+                    <img src="{{ '/img/uiot.svg' | absolute_url }}"/>
+                </a>
+            </div>
+            <div class="hide-for-small-only large-6 medium-6 columns">
+                <ul>
+                    <li class="active"><a href="{{ '/' | absolute_url }}">Home</a></li>
+                    <li><a href="{{ '/about' | absolute_url }}">About</a></li>
+                    <li><a href="{{ '/blog' | absolute_url }}">Blog</a></li>
+                    <li><a href="{{ '/start' | absolute_url }}">Get Started</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="hide-for-small-only large-6 medium-6 columns">
-            <ul>
-                <li class="active"><a href="{{ site.globalurl }}/">Home</a></li>
-                <li><a href="{{ site.globalurl }}/about/">About</a></li>
-                <li><a href="{{ site.globalurl }}/blog/">Blog</a></li>
-                <li><a href="{{ site.globalurl }}/">Get Started</a></li>
-            </ul>
+        <div class="main row">
+            <div class="hide-for-small-only large-7 medium-6 columns">
+                <img src="{{ '/img/notebook.png' | absolute_url }}"/>
+            </div>
+            <div class="right large-5 medium-6 columns">
+                <h1 class="hide-for-small-only">Universal Internet of Things</h1>
+                <h1 class="show-for-small-only" style="font-size: 330%;line-height: 50px;">Universal Internet of Things</h1>
+                <hr/>
+                <p>UIoT is a research project to create an universal, free,
+                    open-source and dynamic IoT architecture.</p>
+                <br/>
+                <a class="button white">
+                    <script>document.write(buttonYeahRandom);</script>
+                </a>
+            </div>
         </div>
-    </div>
-    <div class="main row">
-        <div class="hide-for-small-only large-7 medium-6 columns">
-            <img src="{{ site.globalurl }}/img/notebook.png"/>
-        </div>
-        <div class="right large-5 medium-6 columns">
-            <h1 class="hide-for-small-only">Universal Internet of Things</h1>
-            <h1 class="show-for-small-only" style="font-size: 330%;line-height: 50px;">Universal Internet of Things</h1>
-            <hr/>
-            <p>UIoT is a research project to create an universal, free,
-                open-source and dynamic IoT architecture.</p>
-            <br/>
-            <a class="button white"><script>document.write(buttonYeahRandom);</script></a>
-        </div>
-    </div>
-</section>
+    </section>
 {% else %}
-<section class="header-section header-small">
-    <div class="header row">
-        <div class="hide-for-small-only large-6 medium-6 columns">
-            <a href="{{ site.globalurl }}" class="limage"><img class="limage" src="{{ site.globalurl }}/img/uiot.svg"/></a>
+    <section class="header-section header-small">
+        <div class="header row">
+            <div class="hide-for-small-only large-6 medium-6 columns">
+                <a href="{{ '/' | absolute_url }}">
+                    <img class="remove-transition" src="{{ '/img/uiot.svg' | absolute_url }}"/>
+                </a>
+            </div>
+            <div class="hide-for-small-only large-6 medium-6 columns">
+                <ul>
+                    <li><a href="{{ '/' | absolute_url }}">Home</a></li>
+                    {% if page.active == "about" %}
+                        <li class="active"><a href="{{ '/about' | absolute_url }}">About</a></li>
+                    {% else %}
+                        <li><a href="{{ '/about' | absolute_url }}">About</a></li>
+                    {% endif %}
+                    {% if page.active == "blog" %}
+                        <li class="active"><a href="{{ '/blog' | absolute_url }}">Blog</a></li>
+                    {% else %}
+                     <li><a href="{{ '/blog' | absolute_url }}">Blog</a></li>
+                    {% endif %}
+                    {% if page.active == "start" %}
+                        <li class="active"><a href="{{ '/start' | absolute_url }}">Get Started</a></li>
+                    {% else %}
+                        <li><a href="{{ '/start' | absolute_url }}">Get Started</a></li>
+                    {% endif %}
+                </ul>
+            </div>
         </div>
-        <div class="hide-for-small-only large-6 medium-6 columns">
-            <ul>
-                <li><a href="{{ site.globalurl }}/">Home</a></li>
-                {% if page.active == "about" %}
-                <li class="active"><a href="{{ site.globalurl }}/about/">About</a></li>
-                {% else %}
-                <li><a href="{{ site.globalurl }}/about/">About</a></li>
-                {% endif %}
-                {% if page.active == "blog" %}
-                <li class="active"><a href="{{ site.globalurl }}/blog/">Blog</a></li>
-                {% else %}
-                <li><a href="{{ site.globalurl }}/blog/">Blog</a></li>
-                {% endif %}
-                {% if page.active == "start" %}
-                <li class="active"><a href="{{ site.globalurl }}/start/">Get Started</a></li>
-                {% else %}
-                <li><a href="{{ site.globalurl }}/start/">Get Started</a></li>
-                {% endif %}
-            </ul>
-        </div>
-    </div>
-</section>
+    </section>
 {% endif %}
-<script src="{{ site.globalurl }}/js/jquery.js"></script>
+<script src="{{ '/js/jquery.js' | absolute_url }}"></script>
 {{ content }}
 <section class="footer-section">
     <div class="involve row">
@@ -105,17 +104,17 @@
         <div class="large-2 medium-2 small-6 columns">
             <ul>
                 <li><h2>Links</h2></li>
-                <li><a href="{{ site.globalurl }}">Home</a></li>
-                <li><a href="{{ site.globalurl }}/about/">About</a></li>
-                <li><a href="{{ site.globalurl }}/blog/">Blog</a></li>
-                <li><a href="{{ site.globalurl }}/start/">Get Started</a></li>
+                <li class="active"><a href="{{ '/' | absolute_url }}">Home</a></li>
+                <li><a href="{{ '/about' | absolute_url }}">About</a></li>
+                <li><a href="{{ '/blog' | absolute_url }}">Blog</a></li>
+                <li><a href="{{ '/start' | absolute_url }}">Get Started</a></li>
             </ul>
         </div>
         <div class="large-3 medium-3 hide-for-small-only columns">
             <ul>
                 <li><h2>Latest Posts</h2></li>
                 {% for post in site.posts %}
-                <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+                    <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
                 {% endfor %}
             </ul>
         </div>
@@ -134,7 +133,7 @@
             <ul>
                 <li><h2>Latest Posts</h2></li>
                 {% for post in site.posts %}
-                <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+                    <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
                 {% endfor %}
             </ul>
         </div>
@@ -158,7 +157,7 @@
     </div>
 </section>
 {% if page.comments %}
-<script id="dsq-count-scr" src="//universal-internet-of-things.disqus.com/count.js" async></script>
+    <script id="dsq-count-scr" src="//universal-internet-of-things.disqus.com/count.js" async></script>
 {% endif %}
 </body>
 </html>

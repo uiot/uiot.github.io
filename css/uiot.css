@@ -159,6 +159,11 @@ h1 {
     font-family: Museo Hard, serif
 }
 
+.remove-transition {
+    animation: none !important;
+    transition: none !important;
+}
+
 /** Buttons **/
 
 .button {
@@ -253,19 +258,19 @@ h1 {
     padding-top: 40px
 }
 
-.header-section .header .limage img {
+.header-section .header.row:first-child a img {
     width: 100px;
     display: inline-block;
     animation: hero-animation 1.5s forwards
 }
 
-.header-section .header .limage .ripples {
+.header-section .header.row:first-child a .ripples {
     position: relative;
     opacity: 0.35;
     display: none
 }
 
-.header-section .header .limage .ripple {
+.header-section .header.row:first-child a .ripple {
     border: 5px solid white;
     width: 300px;
     height: 300px;
@@ -274,26 +279,26 @@ h1 {
     margin: -100px 0 0 -100px
 }
 
-.header-section .header .limage .ripple-1 {
+.header-section .header.row:first-child a .ripple-1 {
     -webkit-animation: ripple 3s linear infinite;
     animation: ripple 3s linear infinite
 }
 
-.header-section .header .limage .ripple-2 {
+.header-section .header.row:first-child a .ripple-2 {
     -webkit-animation: ripple 3s linear infinite 0.75s;
     animation: ripple 3s linear infinite 0.75s
 }
 
-.header-section .header .limage .ripple-3 {
+.header-section .header.row:first-child a .ripple-3 {
     -webkit-animation: ripple 3s linear infinite 1.5s;
     animation: ripple 3s linear infinite 1.5s
 }
 
-.header-section .header .limage:hover .ripples {
+.header-section .header.row:first-child a:hover .ripples {
     display: block
 }
 
-.header-section .header .limage img:hover {
+.header-section .header.row:first-child a img:hover {
     animation: hero-animation 1.5s forwards infinite
 }
 
@@ -708,6 +713,8 @@ h1 {
 
 .blog-content-section .main h1 {
     margin-bottom: 0;
+    text-transform: none;
+    font-family: Museo Light, serif;
     color: #e65861
 }
 
@@ -764,6 +771,8 @@ h1 {
 
 .blog-post-section .details h1 {
     margin-bottom: 0;
+    text-transform: none;
+    font-family: Museo Light, serif;
     color: #e65861
 }
 
@@ -776,11 +785,15 @@ h1 {
 .blog-post-section .content {
     padding: 30px 30px;
     background: white;
-    color: #999999 !important;
+    color: #999999;
     border-radius: 3px;
     margin: 40px 0 20px 0;
     text-align: justify;
     position: relative
+}
+
+.blog-post-section .content p {
+    color: #999999;
 }
 
 .blog-post-section .content:before {
@@ -818,6 +831,7 @@ h1 {
 }
 
 .sorry-section h1 {
+    text-transform: none;
     font-family: Museo Normal, serif
 }
 

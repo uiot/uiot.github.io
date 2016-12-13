@@ -8,14 +8,9 @@
     <meta name="author" content="Universal Internet of Things">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | absolute_url }}"/>
+    <link rel="stylesheet" href="{{ '/css/foundation.css' | absolute_url }}">
+    <link rel="stylesheet" href="{{ '/css/uiot.css' | absolute_url }}">
 </head>
-{% capture included_capture %}
-{% include foundation.css %}
-{% include uiot.css %}
-{% endcapture %}
-<style>
-    {{ included_capture | scssify | strip_newlines }}
-</style>
 <body>
 {{ content }}
 </body>
