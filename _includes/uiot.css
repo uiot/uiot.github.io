@@ -749,10 +749,19 @@ h1 {
 
 @keyframes rotating {
     from {
-        transform: rotate(0deg);
+        transform: rotate(0deg)
     }
     to {
-        transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes rotating {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
     }
 }
 
@@ -768,24 +777,58 @@ h1 {
     }
 }
 
+@-webkit-keyframes notebook-intro {
+    10% {
+        -webkit-transform: scale(1.0)
+    }
+    20% {
+        -webkit-transform: scale(1.1)
+    }
+    30% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes ripple {
+    from {
+        transform: scale(0);
+        opacity: 1
+    }
+    to {
+        transform: scale(3);
+        opacity: 0
+    }
+}
+
 @-webkit-keyframes ripple {
     from {
         -webkit-transform: scale(0);
-        opacity: 1;
+        opacity: 1
     }
     to {
         -webkit-transform: scale(3);
-        opacity: 0;
+        opacity: 0
     }
 }
 
 @keyframes hero-animation {
     0% {
-        opacity: 0;
-        transform: scale(0.96)
+        transform: scale(0.96);
+        opacity: 0
     }
     100% {
-        opacity: 1;
-        transform: scale(1)
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes hero-animation {
+    0% {
+        -webkit-transform: scale(0.96);
+        opacity: 0
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1
     }
 }
