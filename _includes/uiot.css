@@ -30,6 +30,94 @@
     src: url(../fonts/museosansrounded-1000-webfont.woff)
 }
 
+/** Animations **/
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes rotating {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@keyframes notebook-intro {
+    10% {
+        transform: scale(1.0);
+    }
+    20% {
+        transform: scale(1.1);
+    }
+    30% {
+        transform: scale(1.0);
+    }
+}
+
+@-webkit-keyframes notebook-intro {
+    10% {
+        -webkit-transform: scale(1.0)
+    }
+    20% {
+        -webkit-transform: scale(1.1)
+    }
+    30% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes ripple {
+    from {
+        transform: scale(0);
+        opacity: 1
+    }
+    to {
+        transform: scale(3);
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes ripple {
+    from {
+        -webkit-transform: scale(0);
+        opacity: 1
+    }
+    to {
+        -webkit-transform: scale(3);
+        opacity: 0
+    }
+}
+
+@keyframes hero-animation {
+    0% {
+        transform: scale(0.96);
+        opacity: 0
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes hero-animation {
+    0% {
+        -webkit-transform: scale(0.96);
+        opacity: 0
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1
+    }
+}
+
 /** Body Elements **/
 
 body {
@@ -165,7 +253,7 @@ h1 {
     padding-top: 40px
 }
 
-.header-section .header .limage {
+.header-section .header .limage img {
     width: 100px;
     display: inline-block;
     animation: hero-animation 1.5s forwards
@@ -202,8 +290,8 @@ h1 {
     display: block
 }
 
-.header-section .header .limage:hover {
-    animation: hero-animation 1.5s forwards
+.header-section .header .limage img:hover {
+    animation: hero-animation 1.5s forwards infinite
 }
 
 .header-section .header ul {
@@ -743,92 +831,4 @@ h1 {
     font-size: 100px;
     float: right;
     margin-right: 20%
-}
-
-/** Misc **/
-
-@keyframes rotating {
-    from {
-        transform: rotate(0deg)
-    }
-    to {
-        transform: rotate(360deg)
-    }
-}
-
-@-webkit-keyframes rotating {
-    from {
-        -webkit-transform: rotate(0deg)
-    }
-    to {
-        -webkit-transform: rotate(360deg)
-    }
-}
-
-@keyframes notebook-intro {
-    10% {
-        transform: scale(1.0);
-    }
-    20% {
-        transform: scale(1.1);
-    }
-    30% {
-        transform: scale(1.0);
-    }
-}
-
-@-webkit-keyframes notebook-intro {
-    10% {
-        -webkit-transform: scale(1.0)
-    }
-    20% {
-        -webkit-transform: scale(1.1)
-    }
-    30% {
-        -webkit-transform: scale(1.0)
-    }
-}
-
-@keyframes ripple {
-    from {
-        transform: scale(0);
-        opacity: 1
-    }
-    to {
-        transform: scale(3);
-        opacity: 0
-    }
-}
-
-@-webkit-keyframes ripple {
-    from {
-        -webkit-transform: scale(0);
-        opacity: 1
-    }
-    to {
-        -webkit-transform: scale(3);
-        opacity: 0
-    }
-}
-
-@keyframes hero-animation {
-    0% {
-        transform: scale(0.96);
-        opacity: 0
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1
-    }
-}
-
-@-webkit-keyframes hero-animation {
-    0% {
-        -webkit-transform: scale(0.96);
-        opacity: 0
-    }
-    100% {
-        -webkit-transform: scale(1);
-        opacity: 1
-    }
 }
