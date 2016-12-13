@@ -133,7 +133,14 @@ active: home
             <img src="{{ '/img/logos/bizagi.png' | absolute_url }}" style="max-height: 80px;">
             <img src="{{ '/img/logos/splunk.png' | absolute_url }}">
         </div>
+        <div class="company-entry pos-hidden">
+            <img src="{{ '/img/logos/autodesk.png' | absolute_url }}">
+            <img src="{{ '/img/logos/lucidchart.png' | absolute_url }}">
+            <img src="{{ '/img/logos/firefox.png' | absolute_url }}">
+            <img src="{{ '/img/logos/salesforce.png' | absolute_url }}">
+        </div>
         <div class="balls">
+            <div class="ball"></div>
             <div class="ball"></div>
             <div class="ball"></div>
             <div class="ball"></div>
@@ -163,18 +170,28 @@ active: home
                 entry.eq(0).addClass('pos-active');
                 entry.eq(1).addClass('pos-hidden');
                 entry.eq(2).addClass('pos-hidden');
+                entry.eq(3).addClass('pos-hidden');
             } else if (index == 1) {
                 jQuery(this).addClass('active');
 
                 entry.eq(0).addClass('pos-hidden');
                 entry.eq(1).addClass('pos-active');
                 entry.eq(2).addClass('pos-hidden');
+                entry.eq(3).addClass('pos-hidden');
             } else if (index == 2) {
                 jQuery(this).addClass('active');
 
                 entry.eq(0).addClass('pos-hidden');
                 entry.eq(1).addClass('pos-hidden');
                 entry.eq(2).addClass('pos-active');
+                entry.eq(3).addClass('pos-hidden');
+            } else if (index == 3) {
+                jQuery(this).addClass('active');
+
+                entry.eq(0).addClass('pos-hidden');
+                entry.eq(1).addClass('pos-hidden');
+                entry.eq(2).addClass('pos-hidden');
+                entry.eq(3).addClass('pos-active');
             }
         });
     });

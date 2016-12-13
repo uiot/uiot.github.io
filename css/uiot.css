@@ -589,10 +589,6 @@ h1 {
     margin: 0 auto
 }
 
-.companies-section .companies-list .balls .active {
-    background-color: #c36767 !important
-}
-
 .companies-section .companies-list .pos-active {
     transition: all 0.4s ease
 }
@@ -623,7 +619,7 @@ h1 {
 .companies-section .companies-list .balls {
     height: 20px;
     position: absolute;
-    width: 100px;
+    width: 120px;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%)
@@ -636,6 +632,10 @@ h1 {
     float: left;
     margin: 0 6px;
     border-radius: 10px
+}
+
+.companies-section .companies-list .balls .active {
+    background-color: #c36767 !important
 }
 
 /** Footer Section **/
