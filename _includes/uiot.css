@@ -165,7 +165,7 @@ h1 {
     padding-top: 40px
 }
 
-.header-section .header a img:first-child {
+.header-section .header .limage {
     width: 100px;
     display: inline-block;
     animation: hero-animation 1.5s forwards
