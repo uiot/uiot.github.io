@@ -35,22 +35,40 @@
 body {
     background: #f3f3f3;
     font-family: Museo Light, serif;
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased
 }
 
 h1, p, a, img, h2, h3 {
     user-select: none;
-    -webkit-user-drag: none;
+    -webkit-user-drag: none
 }
 
 b {
-    font-family: Museo Bold, serif !important;
+    font-family: Museo Bold, serif
 }
 
 a {
     cursor: pointer;
     color: white;
-    text-decoration: none;
+    text-decoration: none
+}
+
+p {
+    font-family: Museo Light, serif;
+    color: white
+}
+
+hr {
+    width: 100px;
+    border: none;
+    background: white;
+    border-radius: 2px
+}
+
+h1 {
+    text-transform: uppercase;
+    color: white;
+    font-family: Museo Hard, serif
 }
 
 /** Buttons **/
@@ -59,37 +77,37 @@ a {
     border-radius: 3px;
     padding: 13px;
     font-family: Museo Bold, serif;
-    transition: background 0.4s linear;
+    transition: background 0.4s linear
 }
 
 .white {
     background: white;
     color: #e9573f;
     box-shadow: 0 0 0 5px rgba(20, 28, 34, 0.1);
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 .white:hover {
     background: #e95b64;
-    color: white;
+    color: white
 }
 
 .colored {
     color: white;
     background: linear-gradient(135deg, #e95b64 76%, #ff913f 99%);
     font-family: Museo Normal, serif;
-    padding: 13px 24px 13px 24px;
+    padding: 13px 24px 13px 24px
 }
 
 .colored:hover {
-    background: #ff913f;
+    background: #ff913f
 }
 
 .white-blue {
     color: #1d334a;
     background: linear-gradient(135deg, white 76%, #adbdcd 99%);
     font-family: Museo Normal, serif;
-    padding: 13px 24px 13px 24px;
+    padding: 13px 24px 13px 24px
 }
 
 .white-blue:hover {
@@ -115,27 +133,18 @@ a {
 }
 
 .header-section .right h1 {
-    font-family: Museo Hard, serif;
-    color: white;
     font-size: 400%;
-    text-transform: uppercase;
     margin-bottom: 0;
-    line-height: 80px;
+    line-height: 80px
 }
 
 .header-section .right hr {
-    width: 100px;
-    background: white;
     height: 4px;
-    margin-left: 0;
-    border: none;
-    border-radius: 2px;
+    margin-left: 0
 }
 
 .header-section .right p {
     margin-top: 20px;
-    font-family: Museo Light, serif;
-    color: white;
     max-width: 360px;
     opacity: 0.9;
 }
@@ -143,12 +152,600 @@ a {
 /** Header Section Main **/
 
 .header-section .main {
-    padding: 120px 0 60px 0;
+    padding: 120px 0 60px 0
 }
 
 .header-section .main img {
-    animation: hero-animation 1.5s ease forwards;
+    animation: hero-animation 1.5s ease forwards
 }
+
+/** Header Section - Header **/
+
+.header-section .header {
+    padding-top: 40px
+}
+
+.header-section .header a img:first-child {
+    width: 100px;
+    display: inline-block;
+    animation: hero-animation 1.5s forwards
+}
+
+.header-section .header .limage .ripples {
+    position: relative;
+    opacity: 0.35;
+    display: none
+}
+
+.header-section .header .limage .ripple {
+    border: 5px solid white;
+    width: 300px;
+    height: 300px;
+    border-radius: 500px;
+    position: absolute;
+    margin: -100px 0 0 -100px
+}
+
+.header-section .header .limage .ripple-1 {
+    -webkit-animation: ripple 3s linear infinite
+}
+
+.header-section .header .limage .ripple-2 {
+    -webkit-animation: ripple 3s linear infinite 0.75s
+}
+
+.header-section .header .limage .ripple-3 {
+    -webkit-animation: ripple 3s linear infinite 1.5s
+}
+
+.header-section .header .limage:hover .ripples {
+    display: block
+}
+
+.header-section .header .limage:hover {
+    animation: hero-animation 1.5s forwards
+}
+
+.header-section .header ul {
+    list-style: none;
+    margin: 30px 0 0 0;
+    display: inline-block
+}
+
+.header-section .header ul > li {
+    display: inline;
+    color: white;
+    font-family: Museo Bold, serif;
+    margin-right: 40px;
+    padding-bottom: 8px;
+    position: relative
+}
+
+.header-section .header ul > li.active:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1)
+}
+
+.header-section .header ul > li a {
+    color: white;
+    text-decoration: none
+}
+
+.header-section .header ul > li:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s
+}
+
+.header-section .header ul > li:hover:before {
+    visibility: visible;
+    transform: scaleX(1)
+}
+
+/** Supporting Section **/
+
+.supporting-section {
+    background: white url(../img/map.gif) no-repeat 0 -40px;
+    background-size: cover;
+    padding: 100px 0 40px 0
+}
+
+.supporting-section ul {
+    list-style: none;
+    float: right;
+    max-width: 360px
+}
+
+.supporting-section li {
+    margin-bottom: 40px
+}
+
+.supporting-section li h3 {
+    font-family: Museo Light, serif;
+    font-size: 28px;
+    color: #646464;
+    display: inline-block;
+    margin: 0
+}
+
+.supporting-section li p {
+    font-family: Museo Lighter, serif;
+    color: #939393;
+    font-size: 16px;
+    line-height: 20px;
+    vertical-align: 40px;
+    max-width: 320px;
+}
+
+.supporting-section li h3:before {
+    color: #e26467;
+    content: "UIoT ";
+    font-family: Museo Normal, serif
+}
+
+.supporting-section li:first-child img {
+    width: 45px;
+    margin: -10px 10px 0 -60px;
+    display: inline
+}
+
+.supporting-section li:last-child img {
+    width: 35px;
+    margin: -10px 10px 0 -50px;
+    display: inline
+}
+
+.supporting-section li a {
+    color: #08acb3;
+    font-family: Museo Normal, serif
+}
+
+/** Supporting Section - Left **/
+
+.supporting-section .support-ideas h1 {
+    color: #626262;
+    font-size: 50px;
+    text-align: right;
+    line-height: 60px;
+    margin-bottom: 16px
+}
+
+.supporting-section .support-ideas hr {
+    background: #e56469;
+    height: 6px;
+    margin-right: 0
+}
+
+.supporting-section .support-ideas p {
+    color: #4c4c4c;
+    text-align: right;
+    font-family: Museo Lighter, serif;
+    margin-left: 40px
+}
+
+/** Discovering Section **/
+
+.discovering-section {
+    background: #163748 url(../img/mountains.png) no-repeat left bottom;
+    padding: 60px 0 100px 0
+}
+
+/** Discovering Section - Right **/
+
+.discovering-section h1 {
+    color: #f3f3f3;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 0
+}
+
+.discovering-section hr {
+    height: 6px;
+    margin-left: 0
+}
+
+.discovering-section p {
+    margin-top: 20px;
+    font-family: Museo Lighter, serif;
+    opacity: 0.65
+}
+
+/** Smart Section **/
+
+.smart-section {
+    background: url(../img/lilcircuits.png) no-repeat left bottom;
+    padding: 0 0 100px 0
+}
+
+.smart-section img {
+    margin: 30px 0 0 0
+}
+
+/** Smart Section - Main **/
+
+.smart-section .main {
+    padding-top: 60px
+}
+
+/** Smart Section - Left **/
+
+.smart-section h1 {
+    color: #626262;
+    font-size: 50px;
+    text-align: right;
+    line-height: 60px;
+    margin-bottom: 16px
+}
+
+.smart-section hr {
+    background: #e56469;
+    height: 6px;
+    margin-right: 0
+}
+
+.smart-section p {
+    color: #4c4c4c;
+    text-align: right;
+    font-family: Museo Lighter, serif
+}
+
+/** Blog Section **/
+
+.blog-section {
+    background: url(../img/circuits.png),
+    linear-gradient(-56deg, #e95b64 0%, #ff913f 100%);
+    padding-bottom: 40px
+}
+
+/** Blog Section - Right **/
+
+.blog-section .p-details {
+    margin-top: 100px
+}
+
+.blog-section .p-details h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 0
+}
+
+.blog-section .p-details hr {
+    height: 6px;
+    margin-left: 0
+}
+
+.blog-section .p-details p {
+    margin-top: 20px;
+    font-family: Museo Light, serif;
+    opacity: 0.8
+}
+
+/** Blog Section - Left **/
+
+.blog-section .p-entry {
+    background: white;
+    padding: 100px 30px;
+    box-sizing: border-box;
+    border-radius: 0 0 3px 3px
+}
+
+.blog-section .p-entry h2 {
+    color: #6d6d6d;
+    font-family: Museo Normal, serif;
+    margin-bottom: 0;
+    font-size: 28px
+}
+
+.blog-section .p-entry p {
+    font-family: Museo Light, serif;
+    font-size: 14px;
+    color: #6d6d6d
+}
+
+.blog-section .p-entry a {
+    color: #e65861;
+    font-family: Museo Bold, serif
+}
+
+.blog-section .p-entry .blog-entry {
+    color: #999999
+}
+
+/** Companies Section **/
+
+.companies-section {
+    margin: 0 auto;
+    min-height: 35vh;
+    height: auto;
+    padding: 0 0 60px 0;
+    overflow: auto;
+    background: url(../img/worlddotted.PNG) no-repeat center top
+}
+
+.companies-section h2 {
+    color: #363636;
+    font-family: Museo Light, serif;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 80px
+}
+
+.companies-section b {
+    font-family: Museo Bold, serif;
+    color: #e3535f
+}
+
+/** Companies Section - Companies List **/
+
+.companies-section .companies-list {
+    width: 1024px;
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+    margin: 0 auto
+}
+
+.companies-section .companies-list .balls .active {
+    background-color: #c36767 !important
+}
+
+.companies-section .companies-list .pos-active {
+    transition: all 0.4s ease
+}
+
+.companies-section .companies-list .pos-hidden {
+    transition: all 0.4s ease;
+    visibility: hidden;
+    opacity: 0
+}
+
+.companies-section .companies-list .company-entry {
+    width: 100%;
+    max-width: 1024px;
+    height: 180px;
+    float: left;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.companies-section .companies-list .company-entry img {
+    max-height: 60px;
+    box-sizing: initial;
+    padding: 0 15px 60px
+}
+
+.companies-section .companies-list .balls {
+    height: 20px;
+    position: absolute;
+    width: 100px;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.companies-section .companies-list .balls .ball {
+    width: 15px;
+    height: 15px;
+    background-color: #999;
+    float: left;
+    margin: 0 6px;
+    border-radius: 10px
+}
+
+/** Footer Section **/
+
+@media screen and (min-width: 63.9375em) {
+    .footer-section {
+        background: #1d334a url(../img/home.svg) no-repeat bottom -250px left -800px !important
+    }
+}
+
+.footer-section {
+    background: #1d334a;
+    padding: 0 0 10px 0
+}
+
+.footer-section ul {
+    list-style: none;
+    display: inline-table
+}
+
+.footer-section ul li {
+    color: white;
+    font-family: Museo Bold, serif;
+    text-transform: uppercase;
+    max-width: 150px;
+    font-size: 12px;
+    line-height: 25px
+}
+
+.footer-section ul li a {
+    opacity: 0.65
+}
+
+.footer-section ul li h2 {
+    font-family: Museo Bolder, serif;
+    font-size: 18px;
+    opacity: 1
+}
+
+.footer-section ul li p {
+    text-transform: none;
+    font-family: Museo Light, serif;
+    line-height: 20px;
+    font-size: 14px;
+    opacity: 0.8
+}
+
+.footer-section .copyright {
+    color: white;
+    font-family: Museo Bold, serif;
+    font-size: 12px;
+    margin-left: 100px
+}
+
+.footer-section .involve {
+    padding: 80px 0 0 0
+}
+
+/** Blog Content Section **/
+
+.blog-content-section {
+    height: auto;
+    min-height: 40vh;
+    padding-bottom: 40px
+}
+
+/** Blog Content Section - Main **/
+
+.blog-content-section .main {
+    padding-top: 60px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px
+}
+
+.blog-content-section .main h1 {
+    margin-bottom: 0;
+    color: #e65861
+}
+
+.blog-content-section .main small {
+    margin-bottom: 40px;
+    display: block;
+    color: #646464
+}
+
+.blog-content-section .main ul {
+    color: black !important;
+    list-style: none;
+    padding: 0
+}
+
+.blog-content-section .main ul li {
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    background: white;
+    border-radius: 3px;
+    overflow: auto
+}
+
+.blog-content-section .main ul li .info a {
+    color: #363636
+}
+
+.blog-content-section .main ul li .info span {
+    font-family: Museo Bold, serif;
+    color: #363636
+}
+
+.blog-content-section .main ul li .resume {
+    color: #999999 !important
+}
+
+.blog-content-section .main ul li .resume a {
+    color: #e65861;
+    font-family: Museo Bold, serif;
+    float: right
+}
+
+/** Blog Post Section **/
+
+.blog-post-section {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+    height: auto;
+    padding: 60px 0 60px 0
+}
+
+/** Blog Post Section - Details **/
+
+.blog-post-section .details h1 {
+    margin-bottom: 0;
+    color: #e65861
+}
+
+.blog-post-section .details small {
+    color: #646464
+}
+
+/** Blog Post Section - Content **/
+
+.blog-post-section .content {
+    padding: 30px 30px;
+    background: white;
+    color: #999999 !important;
+    border-radius: 3px;
+    margin: 40px 0 20px 0;
+    text-align: justify;
+    position: relative
+}
+
+.blog-post-section .content:before {
+    bottom: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none
+}
+
+.blog-post-section .content:before {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #ffffff;
+    border-width: 30px 30px 30px 0;
+    float: left;
+    left: 0
+}
+
+/** Sorry Section **/
+
+.sorry-section {
+    height: auto;
+    padding: 60px 0 60px 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px
+}
+
+.sorry-section a {
+    color: #e65861;
+    font-family: Museo Bold, serif;
+    padding: 20px
+}
+
+.sorry-section h1 {
+    font-family: Museo Normal, serif
+}
+
+/** Sorry Section - Sorry **/
+
+.sorry-section .sorry {
+    background: #c36767;
+    color: white;
+    padding: 18px 24px 18px 24px;
+    border-radius: 3px
+}
+
+.sorry-section .sorry .sad {
+    font-size: 100px;
+    float: right;
+    margin-right: 20%
+}
+
+/** Misc **/
 
 @keyframes rotating {
     from {
@@ -171,20 +768,15 @@ a {
     }
 }
 
-/** Header Section - Header **/
-
-.header-section .header {
-    padding-top: 40px;
-}
-
-.header-section .header a img:first-child {
-    width: 100px;
-    display: inline-block;
-    animation: hero-animation 1.5s forwards
-}
-
-.header-section .header .limage:hover {
-    animation: hero-animation 1.5s forwards
+@-webkit-keyframes ripple {
+    from {
+        -webkit-transform: scale(0);
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: scale(3);
+        opacity: 0;
+    }
 }
 
 @keyframes hero-animation {
@@ -195,613 +787,5 @@ a {
     100% {
         opacity: 1;
         transform: scale(1)
-    }
-}
-
-.header-section .header ul {
-    list-style: none;
-    margin: 30px 0 0 0;
-    display: inline-block;
-}
-
-.header-section .header ul > li {
-    display: inline;
-    color: white;
-    font-family: Museo Bold, serif;
-    margin-right: 40px;
-    padding-bottom: 8px;
-    position: relative;
-    cursor: pointer;
-}
-
-.header-section .header ul > li.active:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-}
-
-.header-section .header ul > li a {
-    color: white;
-    text-decoration: none;
-}
-
-.header-section .header ul > li:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: white;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-.header-section .header ul > li:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-}
-
-/** Supporting Section **/
-
-.supporting-section {
-    background: white url(../img/map.gif) no-repeat 0 -40px;
-    background-size: cover;
-    padding: 100px 0 40px 0;
-}
-
-.supporting-section ul {
-    list-style: none;
-    float: right;
-    max-width: 360px;
-}
-
-.supporting-section li {
-    margin-bottom: 40px;
-}
-
-.supporting-section li h3 {
-    font-family: Museo Light, serif;
-    font-size: 28px;
-    color: #646464;
-    display: inline-block;
-    margin: 0;
-}
-
-.supporting-section li p {
-    font-family: Museo Lighter, serif;
-    color: #939393;
-    font-size: 16px;
-    line-height: 20px;
-    vertical-align: 40px;
-    max-width: 320px;
-}
-
-.supporting-section li h3:before {
-    color: #e26467;
-    content: "UIoT ";
-    font-family: Museo Normal, serif;
-}
-
-.supporting-section li:first-child img {
-    width: 45px;
-    margin: -10px 10px 0 -60px;
-    display: inline;
-}
-
-.supporting-section li:last-child img {
-    width: 35px;
-    margin: -10px 10px 0 -50px;
-    display: inline;
-}
-
-.supporting-section li a {
-    color: #08acb3;
-    font-family: Museo Normal, serif;
-}
-
-/** Supporting Section - Left **/
-
-.supporting-section .support-ideas h1 {
-    font-family: Museo Hard, serif;
-    color: #626262;
-    font-size: 50px;
-    text-transform: uppercase;
-    text-align: right;
-    line-height: 60px;
-    margin-bottom: 16px;
-}
-
-.supporting-section .support-ideas hr {
-    width: 100px;
-    background: #e56469;
-    height: 6px;
-    margin-right: 0;
-    border: none;
-    border-radius: 2px;
-}
-
-.supporting-section .support-ideas p {
-    color: #4c4c4c;
-    text-align: right;
-    font-family: Museo Lighter, serif;
-    margin-left: 40px;
-}
-
-/** Discovering Section **/
-
-.discovering-section {
-    background: #163748 url(../img/mountains.png) no-repeat left bottom;
-    padding: 60px 0 100px 0;
-}
-
-/** Discovering Section - Right **/
-
-.discovering-section h1 {
-    font-family: Museo Hard, serif;
-    color: #f3f3f3;
-    font-size: 50px;
-    text-transform: uppercase;
-    line-height: 60px;
-    margin-bottom: 0;
-}
-
-.discovering-section hr {
-    width: 100px;
-    background: white;
-    height: 6px;
-    margin-left: 0;
-    border: none;
-    border-radius: 2px;
-}
-
-.discovering-section p {
-    margin-top: 20px;
-    font-family: Museo Lighter, serif;
-    color: white;
-    opacity: 0.65;
-}
-
-/** Smart Section **/
-
-.smart-section {
-    background: url(../img/lilcircuits.png) no-repeat left bottom;
-    padding: 0 0 100px 0;
-}
-
-.smart-section img {
-    margin: 30px 0 0 0;
-}
-
-/** Smart Section - Main **/
-
-.smart-section .main {
-    padding-top: 60px;
-}
-
-/** Smart Section - Left **/
-
-.smart-section h1 {
-    font-family: Museo Hard, serif;
-    color: #626262;
-    font-size: 50px;
-    text-transform: uppercase;
-    text-align: right;
-    line-height: 60px;
-    margin-bottom: 16px;
-}
-
-.smart-section hr {
-    width: 100px;
-    background: #e56469;
-    height: 6px;
-    margin-right: 0;
-    border: none;
-    border-radius: 2px;
-}
-
-.smart-section p {
-    color: #4c4c4c;
-    text-align: right;
-    font-family: Museo Lighter, serif;
-}
-
-/** Blog Section **/
-
-.blog-section {
-    background: url(../img/circuits.png),
-    -webkit-linear-gradient(-56deg, #e95b64 0%,
-            #ff913f 100%);
-    padding-bottom: 40px;
-}
-
-/** Blog Section - Right **/
-
-.blog-section .p-details {
-    margin-top: 100px;
-}
-
-.blog-section .p-details h1 {
-    font-family: Museo Hard, serif;
-    color: white;
-    font-size: 50px;
-    text-transform: uppercase;
-    line-height: 60px;
-    margin-bottom: 0;
-}
-
-.blog-section .p-details hr {
-    width: 100px;
-    background: white;
-    height: 6px;
-    margin-left: 0;
-    border: none;
-    border-radius: 2px;
-}
-
-.blog-section .p-details p {
-    margin-top: 20px;
-    font-family: Museo Light, serif;
-    color: white;
-    opacity: 0.8;
-}
-
-/** Blog Section - Left **/
-
-.blog-section .p-entry {
-    background: white;
-    padding: 100px 30px;
-    box-sizing: border-box;
-    border-radius: 0 0 3px 3px;
-}
-
-.blog-section .p-entry h2 {
-    color: #6d6d6d;
-    font-family: Museo Normal, serif;
-    margin-bottom: 0;
-    font-size: 28px;
-}
-
-.blog-section .p-entry p {
-    font-family: Museo Light, serif;
-    font-size: 14px;
-    color: #6d6d6d;
-}
-
-.blog-section .p-entry a {
-    color: #e65861;
-    font-family: Museo Bold, serif;
-}
-
-.blog-section .p-entry .blog-entry {
-    color: #999999;
-}
-
-/** Companies Section **/
-
-.companies-section {
-    margin: 0 auto;
-    min-height: 35vh;
-    height: auto;
-    padding: 0 0 60px 0;
-    overflow: auto;
-    background: url(../img/worlddotted.PNG) no-repeat center top;
-}
-
-.companies-section h2 {
-    color: #363636;
-    font-family: Museo Light, serif;
-    font-size: 25px;
-    text-align: center;
-    margin-top: 80px;
-}
-
-.companies-section b {
-    font-family: Museo Bold, serif;
-    color: #e3535f;
-}
-
-/** Companies Section - Companies List **/
-
-.companies-section .companies-list {
-    width: 1024px;
-    position: relative;
-    height: 180px;
-    overflow: hidden;
-    margin: 0 auto;
-}
-
-.companies-section .companies-list .balls .active {
-    background-color: #c36767 !important;
-}
-
-.companies-section .companies-list .pos-active {
-    transition: all 0.4s ease;
-}
-
-.companies-section .companies-list .pos-hidden {
-    transition: all 0.4s ease;
-    visibility: hidden;
-    opacity: 0
-}
-
-.companies-section .companies-list .company-entry {
-    width: 100%;
-    max-width: 1024px;
-    height: 180px;
-    float: left;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.companies-section .companies-list .company-entry img {
-    max-height: 60px;
-    box-sizing: initial;
-    padding: 0 15px 60px;
-}
-
-.companies-section .companies-list .balls {
-    height: 20px;
-    position: absolute;
-    width: 100px;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.companies-section .companies-list .balls .ball {
-    width: 15px;
-    height: 15px;
-    background-color: #999;
-    float: left;
-    margin: 0 6px;
-    border-radius: 10px;
-}
-
-/** Footer Section **/
-
-@media screen and (min-width: 63.9375em) {
-    .footer-section {
-        background: #1d334a url(../img/home.svg) no-repeat bottom -250px left -800px !important;
-    }
-}
-
-.footer-section {
-    background: #1d334a;
-    padding: 0 0 10px 0;
-}
-
-.footer-section ul {
-    list-style: none;
-    display: inline-table;
-}
-
-.footer-section ul li {
-    color: white;
-    font-family: Museo Bold, serif;
-    text-transform: uppercase;
-    max-width: 150px;
-    font-size: 12px;
-    line-height: 25px;
-}
-
-.footer-section ul li a {
-    opacity: 0.65;
-}
-
-.footer-section ul li h2 {
-    font-family: Museo Bolder, serif;
-    font-size: 18px;
-    opacity: 1;
-}
-
-.footer-section ul li p {
-    text-transform: none;
-    font-family: Museo Light, serif;
-    line-height: 20px;
-    font-size: 14px;
-    opacity: 0.8;
-}
-
-.footer-section .copyright {
-    color: white;
-    font-family: Museo Bold, serif;
-    font-size: 12px;
-    margin-left: 100px;
-}
-
-.footer-section .involve {
-    padding: 80px 0 0 0;
-}
-
-/** Blog Content Section **/
-
-.blog-content-section {
-    height: auto;
-    min-height: 40vh;
-    padding-bottom: 40px;
-}
-
-/** Blog Content Section - Main **/
-
-.blog-content-section .main {
-    padding-top: 60px;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1024px;
-}
-
-.blog-content-section .main h1 {
-    margin-bottom: 0;
-    color: #e65861;
-}
-
-.blog-content-section .main small {
-    margin-bottom: 40px;
-    display: block;
-    color: #646464;
-}
-
-.blog-content-section .main ul {
-    color: black !important;
-    list-style: none;
-    padding: 0;
-}
-
-.blog-content-section .main ul li {
-    padding: 15px 20px;
-    margin-bottom: 30px;
-    background: white;
-    border-radius: 3px;
-    overflow: auto;
-}
-
-.blog-content-section .main ul li .info a {
-    color: #363636;
-}
-
-.blog-content-section .main ul li .info span {
-    font-family: Museo Bold, serif;
-    color: #363636;
-}
-
-.blog-content-section .main ul li .resume {
-    color: #999999 !important;
-}
-
-.blog-content-section .main ul li .resume a {
-    color: #e65861;
-    font-family: Museo Bold, serif;
-    float: right;
-}
-
-/** Blog Post Section **/
-
-.blog-post-section {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1024px;
-    height: auto;
-    padding: 60px 0 60px 0;
-}
-
-/** Blog Post Section - Details **/
-
-.blog-post-section .details h1 {
-    margin-bottom: 0;
-    color: #e65861;
-}
-
-.blog-post-section .details small {
-    color: #646464;
-}
-
-/** Blog Post Section - Content **/
-
-.blog-post-section .content {
-    padding: 30px 30px;
-    background: white;
-    color: #999999 !important;
-    border-radius: 3px;
-    margin: 40px 0 20px 0;
-    text-align: justify;
-    position: relative;
-}
-
-.blog-post-section .content:before {
-    bottom: 100%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-}
-
-.blog-post-section .content:before {
-    border-color: rgba(255, 255, 255, 0);
-    border-bottom-color: #ffffff;
-    border-width: 30px 30px 30px 0;
-    float: left;
-    left: 0;
-}
-
-/** Sorry Section **/
-
-.sorry-section {
-    height: auto;
-    padding: 60px 0 60px 0;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1024px;
-}
-
-.sorry-section a {
-    color: #e65861;
-    font-family: Museo Bold, serif;
-    padding: 20px;
-}
-
-.sorry-section h1 {
-    font-family: Museo Normal, serif;
-}
-
-/** Sorry Section - Sorry **/
-
-.sorry-section .sorry {
-    background: #c36767;
-    color: white;
-    padding: 18px 24px 18px 24px;
-    border-radius: 3px;
-}
-
-.sorry-section .sorry .sad {
-    font-size: 100px;
-    float: right;
-    margin-right: 20%;
-}
-
-/** Misc **/
-
-.ripples {
-    position: relative;
-    opacity: 0.35;
-}
-
-.ripple {
-    border: 5px solid white;
-    width: 300px;
-    height: 300px;
-    border-radius: 500px;
-    position: absolute;
-    margin: -100px 0 0 -100px;
-}
-
-.ripple-1 {
-    -webkit-animation: ripple 3s linear infinite;
-}
-
-.ripple-2 {
-    -webkit-animation: ripple 3s linear infinite 0.75s;
-}
-
-.ripple-3 {
-    -webkit-animation: ripple 3s linear infinite 1.5s;
-}
-
-@-webkit-keyframes ripple {
-    from {
-        -webkit-transform: scale(0);
-        opacity: 1;
-    }
-    to {
-        -webkit-transform: scale(3);
-        opacity: 0;
     }
 }
