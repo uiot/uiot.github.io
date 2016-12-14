@@ -1,0 +1,68 @@
+<section class="footer-section">
+    <div class="involve row">
+        <div class="large-1 medium-1 hide-for-small-only columns">
+            <br/>
+        </div>
+        <div class="large-3 medium-3 small-6 columns">
+            <ul>
+                <li><h2>About</h2></li>
+                <li><p>UIoT is an open-source middleware dedicated to
+                    managing services in Internet-of-Things environments.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="large-2 medium-2 small-6 columns">
+            <ul>
+                <li><h2>Links</h2></li>
+                <li><a href="{{ '/' | absolute_url }}">Home</a></li>
+                <li><a href="{{ '/about' | absolute_url }}">About</a></li>
+                <li><a href="{{ '/blog' | absolute_url }}">Blog</a></li>
+                <li><a href="{{ '/start' | absolute_url }}">Get Started</a></li>
+            </ul>
+        </div>
+        <div class="large-3 medium-3 hide-for-small-only columns">
+            <ul>
+                <li><h2>Latest Posts</h2></li>
+                {% for post in site.posts %}
+                <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="large-3 medium-3 hide-for-small-only columns">
+            <ul>
+                <li><h2>Social Media</h2></li>
+                <li><a href="https://github.com/uiot">GitHub</a></li>
+                <li><a href="https://fb.com/universalinternetofthings">Facebook</a></li>
+                <li><a href="http://www.unb.br">UnB</a></li>
+                <li><a>Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row show-for-small-only">
+        <div class="large-3 medium-3 small-6 columns">
+            <ul>
+                <li><h2>Latest Posts</h2></li>
+                {% for post in site.posts %}
+                <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="large-3 medium-3 small-6 columns">
+            <ul>
+                <li><h2>Social Media</h2></li>
+                <li><a href="https://github.com/uiot">GitHub</a></li>
+                <li><a href="https://fb.com/universalinternetofthings">Facebook</a></li>
+                <li><a href="http://www.unb.br">UnB</a></li>
+                <li><a>Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="hide-for-small-only large-12 medium-12 columns">
+            <p class="copyright">Copyright 2016 Universal Internet of Things, All Rights Reserved <br/>
+                <small>Build on {{ site.time | date_to_string }} | <b>VERSION.: {{ site.github.build_revision }}</b>
+                </small>
+            </p>
+        </div>
+    </div>
+</section>

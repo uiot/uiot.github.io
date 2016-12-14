@@ -1,0 +1,29 @@
+<section class="header-section header-small">
+    <div class="header row">
+        <div class="hide-for-small-only large-6 medium-6 columns">
+            <a href="{{ '/' | absolute_url }}">
+                <img src="{{ '/img/uiot.svg' | absolute_url }}"/>
+            </a>
+        </div>
+        <div class="hide-for-small-only large-6 medium-6 columns">
+            <ul>
+                <li><a href="{{ '/' | absolute_url }}">Home</a></li>
+                {% if page.active == "about" %}
+                <li class="active"><a href="{{ '/about' | absolute_url }}">About</a></li>
+                {% else %}
+                <li><a href="{{ '/about' | absolute_url }}">About</a></li>
+                {% endif %}
+                {% if page.active == "blog" %}
+                <li class="active"><a href="{{ '/blog' | absolute_url }}">Blog</a></li>
+                {% else %}
+                <li><a href="{{ '/blog' | absolute_url }}">Blog</a></li>
+                {% endif %}
+                {% if page.active == "start" %}
+                <li class="active"><a href="{{ '/start' | absolute_url }}">Get Started</a></li>
+                {% else %}
+                <li><a href="{{ '/start' | absolute_url }}">Get Started</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+</section>

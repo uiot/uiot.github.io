@@ -219,6 +219,11 @@ h1 {
     min-height: 20vh !important;
 }
 
+.header-section.header-small .row:first-child a img {
+    animation: none !important;
+    transition: none !important;
+}
+
 /** Header Section - Right **/
 
 .header-section .right {
@@ -683,6 +688,37 @@ h1 {
     opacity: 0.8
 }
 
+/** Footer Section - NoHeader **/
+
+.footer-section.noheader {
+    background: none !important;
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    width: 600px;
+    left: 50%
+}
+
+.footer-section.noheader ul {
+    margin-left: 0;
+    display: block
+}
+
+.footer-section.noheader ul li, .noheader .footer-section ul li p, .footer-section ul li a {
+    color: #666666
+}
+
+.footer-section.noheader ul li:first-child {
+    max-width: 400px;
+    text-transform: none;
+    float: left
+}
+
+.footer-section.noheader ul li {
+    padding: 10px;
+    float: right
+}
+
 .footer-section .copyright {
     color: white;
     font-family: Museo Bold, serif;
@@ -817,35 +853,29 @@ h1 {
 /** Sorry Section **/
 
 .sorry-section {
-    height: auto;
-    padding: 60px 0 60px 0;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1024px
+    width: 600px;
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%
+}
+
+.sorry-section p {
+    color: rgba(0, 0, 0, 0.5)
 }
 
 .sorry-section a {
     color: #e65861;
-    font-family: Museo Bold, serif;
-    padding: 20px
+    font-family: Museo Normal, serif;
+    padding: 10px;
+    display: block;
 }
 
 .sorry-section h1 {
-    text-transform: none;
-    font-family: Museo Normal, serif
-}
-
-/** Sorry Section - Sorry **/
-
-.sorry-section .sorry {
-    background: #c36767;
-    color: white;
-    padding: 18px 24px 18px 24px;
-    border-radius: 3px
-}
-
-.sorry-section .sorry .sad {
-    font-size: 100px;
-    float: right;
-    margin-right: 20%
+    text-shadow: 0 1px 0 #fff;
+    font-family: Museo Lighter, serif;
+    color: black;
+    position: relative;
+    margin: 0 0 10px 0
 }
