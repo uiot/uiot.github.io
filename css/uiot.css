@@ -720,7 +720,12 @@ h1 {
 
 .footer-section.noheader ul li {
     padding: 10px;
+    text-shadow: 0 1px 0 #fff;
     float: right
+}
+
+.footer-section.noheader ul li a:hover {
+    color: black
 }
 
 .footer-section .copyright {
