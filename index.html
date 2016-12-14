@@ -148,51 +148,31 @@ active: home
     </div>
 </section>
 <script>
-    jQuery(function () {
+    $(function () {
+        var ball = $('.ball'),
+            buttonYeah = ['Love IoT?',
+                'Watch our Video!',
+                'You Rockz!',
+                'Get Started!',
+                'Wanna see amazing things?',
+                'Keep it real!',
+                'What is UIoT?!!'];
 
-        var ball = jQuery('.ball');
+        $('.random-button').html(buttonYeah[Math.floor(Math.random() * buttonYeah.length)]);
 
         ball.eq(0).addClass('active');
 
         ball.on('click', function () {
-            var index = jQuery(this).index();
+            var click = $(this).index(), entry = $('.company-entry'), using = $('.pos-active').index();
 
-            var entry = jQuery('.company-entry');
+            entry.eq(using).removeClass('pos-active');
+            entry.eq(using).addClass('pos-hidden');
 
-            entry.removeClass('pos-active');
-            entry.removeClass('pos-hidden');
+            entry.eq(click).removeClass('pos-hidden');
+            entry.eq(click).addClass('pos-active');
 
             ball.removeClass('active');
-
-            if (index == 0) {
-                jQuery(this).addClass('active');
-
-                entry.eq(0).addClass('pos-active');
-                entry.eq(1).addClass('pos-hidden');
-                entry.eq(2).addClass('pos-hidden');
-                entry.eq(3).addClass('pos-hidden');
-            } else if (index == 1) {
-                jQuery(this).addClass('active');
-
-                entry.eq(0).addClass('pos-hidden');
-                entry.eq(1).addClass('pos-active');
-                entry.eq(2).addClass('pos-hidden');
-                entry.eq(3).addClass('pos-hidden');
-            } else if (index == 2) {
-                jQuery(this).addClass('active');
-
-                entry.eq(0).addClass('pos-hidden');
-                entry.eq(1).addClass('pos-hidden');
-                entry.eq(2).addClass('pos-active');
-                entry.eq(3).addClass('pos-hidden');
-            } else if (index == 3) {
-                jQuery(this).addClass('active');
-
-                entry.eq(0).addClass('pos-hidden');
-                entry.eq(1).addClass('pos-hidden');
-                entry.eq(2).addClass('pos-hidden');
-                entry.eq(3).addClass('pos-active');
-            }
+            $(this).addClass('active');
         });
     });
 </script>

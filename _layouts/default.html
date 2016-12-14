@@ -13,10 +13,6 @@
 </head>
 <body>
 {% if page.active == "home" %}
-    <script>
-        var buttonYeah = ['Love IoT?', 'Watch our Video!', 'You Rockz!', 'Get Started!', 'Wanna see amazing things?', 'Keep it real!', 'What is UIoT?!!'];
-        var buttonYeahRandom = buttonYeah[Math.floor(Math.random() * buttonYeah.length)];
-    </script>
     <section class="header-section">
         <div class="header row">
             <div class="hide-for-small-only large-6 medium-6 columns">
@@ -49,8 +45,8 @@
                 <p>UIoT is a research project to create an universal, free,
                     open-source and dynamic IoT architecture.</p>
                 <br/>
-                <a class="button white">
-                    <script>document.write(buttonYeahRandom);</script>
+                <a class="button white random-button">
+                    Watch teh Video!
                 </a>
             </div>
         </div>
@@ -86,7 +82,7 @@
         </div>
     </section>
 {% endif %}
-<script src="{{ '/js/jquery.js' | absolute_url }}"></script>
+<script src="{{ '/js/zepto.js' | absolute_url }}"></script>
 {{ content }}
 <section class="footer-section">
     <div class="involve row">

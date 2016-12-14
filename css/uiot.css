@@ -2,32 +2,32 @@
 
 @font-face {
     font-family: Museo Lighter;
-    src: url(../fonts/museosansrounded-100-webfont.woff)
+    src: url(../fonts/museosansrounded-100-webfont.woff2) format('woff2')
 }
 
 @font-face {
     font-family: Museo Light;
-    src: url(../fonts/museosansrounded-300-webfont.woff)
+    src: url(../fonts/museosansrounded-300-webfont.woff2) format('woff2')
 }
 
 @font-face {
     font-family: Museo Normal;
-    src: url(../fonts/museosansrounded-500-webfont.woff)
+    src: url(../fonts/museosansrounded-500-webfont.woff2) format('woff2')
 }
 
 @font-face {
     font-family: Museo Bold;
-    src: url(../fonts/museosansrounded-700-webfont.woff)
+    src: url(../fonts/museosansrounded-700-webfont.woff2) format('woff2')
 }
 
 @font-face {
     font-family: Museo Bolder;
-    src: url(../fonts/museosansrounded-900-webfont.woff)
+    src: url(../fonts/museosansrounded-900-webfont.woff2) format('woff2')
 }
 
 @font-face {
     font-family: Museo Hard;
-    src: url(../fonts/museosansrounded-1000-webfont.woff)
+    src: url(../fonts/museosansrounded-1000-webfont.woff2) format('woff2')
 }
 
 /** Animations **/
@@ -349,7 +349,7 @@ h1 {
 /** Supporting Section **/
 
 .supporting-section {
-    background: white url(../img/map.gif) no-repeat 0 -40px;
+    background: white;
     background-size: cover;
     padding: 100px 0 40px 0
 }
