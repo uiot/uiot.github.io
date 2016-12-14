@@ -1,4 +1,4 @@
-<section class="header-section header-small">
+<section class="header-section header-small {% if page.active == 'blog' %} blog-header {% endif %}">
     <div class="header row">
         <div class="hide-for-small-only large-6 medium-6 columns">
             <a href="{{ '/' | absolute_url }}">
@@ -9,21 +9,24 @@
             <ul>
                 <li><a href="{{ '/' | absolute_url }}">Home</a></li>
                 {% if page.active == "about" %}
-                <li class="active"><a href="{{ '/about' | absolute_url }}">About</a></li>
+                    <li class="active"><a href="{{ '/about' | absolute_url }}">About</a></li>
                 {% else %}
-                <li><a href="{{ '/about' | absolute_url }}">About</a></li>
+                    <li><a href="{{ '/about' | absolute_url }}">About</a></li>
                 {% endif %}
                 {% if page.active == "blog" %}
-                <li class="active"><a href="{{ '/blog' | absolute_url }}">Blog</a></li>
+                    <li class="active"><a href="{{ '/blog' | absolute_url }}">Blog</a></li>
                 {% else %}
-                <li><a href="{{ '/blog' | absolute_url }}">Blog</a></li>
+                    <li><a href="{{ '/blog' | absolute_url }}">Blog</a></li>
                 {% endif %}
                 {% if page.active == "start" %}
-                <li class="active"><a href="{{ '/start' | absolute_url }}">Get Started</a></li>
+                    <li class="active"><a href="{{ '/start' | absolute_url }}">Get Started</a></li>
                 {% else %}
-                <li><a href="{{ '/start' | absolute_url }}">Get Started</a></li>
+                    <li><a href="{{ '/start' | absolute_url }}">Get Started</a></li>
                 {% endif %}
             </ul>
         </div>
     </div>
 </section>
+
+
+
