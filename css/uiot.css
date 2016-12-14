@@ -299,7 +299,7 @@ h1 {
 }
 
 .header-section .header.row:first-child a img:hover {
-    animation: hero-animation 1.5s forwards infinite
+    animation: hero-animation 1.75s forwards infinite
 }
 
 .header-section .header ul {
