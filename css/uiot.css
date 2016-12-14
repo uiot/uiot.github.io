@@ -708,7 +708,7 @@ h1 {
     display: block
 }
 
-.footer-section.noheader ul li, .noheader .footer-section ul li p, .footer-section ul li a {
+.footer-section.noheader ul li, .footer-section.noheader ul li p, .footer-section.noheader ul li a {
     color: #666666
 }
 
