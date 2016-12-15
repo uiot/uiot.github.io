@@ -87,7 +87,24 @@ active: home
 </section>
 <section class="blog-section">
     <div class="row">
-        <div class="large-6 medium-6 small-12 columns p-entry">
+        <div class="large-6 medium-6 small-12 columns p-entry hide-for-small-only">
+            {% assign post = site.posts.first %}
+            <h2>{{ post.title }}</h2>
+            <p><b>Author:</b> {{ post.author }}</p>
+            <p class="blog-entry">
+                {{ post.resume }}
+                {% capture content_words %}
+                {{ post.content | number_of_words }}
+                {% endcapture %}
+                {% capture excerpt_words %}
+                {{ post.resume | number_of_words }}
+                {% endcapture %}
+            </p>
+            {% if excerpt_words != content_words %}
+            <a href="{{ post.url }}#disqus_thread">See the full post by clicking here.</a>
+            {% endif %}
+        </div>
+        <div class="large-6 medium-6 small-12 columns p-entry small show-for-small-only">
             {% assign post = site.posts.first %}
             <h2>{{ post.title }}</h2>
             <p><b>Author:</b> {{ post.author }}</p>
