@@ -745,6 +745,10 @@ h1 {
     margin-left: 100px
 }
 
+.footer-section .copyright small {
+    opacity: 0.8
+}
+
 .footer-section .involve {
     padding: 80px 0 0 0
 }
@@ -818,7 +822,9 @@ h1 {
 
 .blog-content-section .main ul li .resume {
     color: #999999 !important;
-    max-width: 700px
+    max-width: 700px;
+    text-align: justify;
+    word-wrap: break-word
 }
 
 .blog-content-section .main ul li .resume a {
