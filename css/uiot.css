@@ -776,25 +776,7 @@ h1 {
 
 /** Blog Content Section - Main **/
 
-.blog-content-section .main {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1024px
-}
-
-.blog-content-section .main h1 {
-    margin-bottom: 0;
-    text-transform: none;
-    font-family: Museo Light, serif;
-    color: #e65861
-}
-
-.blog-content-section .main small {
-    display: block;
-    color: #646464
-}
-
-.blog-content-section .main ul {
+.blog-content-section ul.main {
     color: black !important;
     list-style: none;
     border-right: 8px solid #eee;
@@ -803,13 +785,13 @@ h1 {
     margin-bottom: 0
 }
 
-.blog-content-section .main ul li {
+.blog-content-section ul.main li {
     padding: 15px 20px;
     margin: 0 40px 30px 0;
     position: relative
 }
 
-.blog-content-section .main ul li .circle {
+.blog-content-section ul.main li .circle {
     margin-top: -10px;
     top: 30%;
     right: -54px;
@@ -822,25 +804,30 @@ h1 {
     position: absolute
 }
 
-.blog-content-section .main ul li .info a {
+.blog-content-section ul.main li .info a {
     color: #626262;
     font-family: Museo Normal, serif;
     font-size: 28px
 }
 
-.blog-content-section .main ul li .info span {
+.blog-content-section ul.main li .info small {
+    display: block;
+    color: #646464
+}
+
+.blog-content-section ul.main li .info span {
     font-family: Museo Bold, serif;
     color: #e65861
 }
 
-.blog-content-section .main ul li .resume {
+.blog-content-section ul.main li .resume {
     color: #999999 !important;
     max-width: 700px;
     text-align: justify;
     word-wrap: break-word
 }
 
-.blog-content-section .main ul li .resume a {
+.blog-content-section ul.main li .resume a {
     color: #e65861;
     font-family: Museo Bold, serif;
     float: right
