@@ -39,4 +39,4 @@ bundle exec jekyll serve
 <b>Some Points.:</b><br>
 * We added [JekyllAdmin](https://github.com/jekyll/jekyll-admin) into the `_config.yml` BUT it's commented. You can use locally to add new posts.
 * Don't forget to comment the `#Comment on Production` sections if you're deploying it, and putting the right server base uri on `_config.yml`
-* Don't forget to uncomment the `#Uncomment on Development` sections if you're running it locally.
+* Don't forget to uncomment the `#Uncomment on Development` sections if you're running it locally. 
