@@ -156,17 +156,12 @@ active: home
             <img src="{{ '/img/logos/unb.png' | absolute_url }}" style="max-height: 40px;" onclick="window.open('http://www.unb.br', '_blank');">
             <img src="{{ '/img/logos/salesforce.png' | absolute_url }}" onclick="window.open('https://startups.salesforce.com/', '_blank');">
         </div>
-        <div class="balls">
-            <div class="ball"></div>
-            <div class="ball"></div>
-            <div class="ball"></div>
-            <div class="ball"></div>
-        </div>
+        <div class="balls"></div>
     </div>
 </section>
 <script>
     $(function () {
-        var ball = $('.ball'),
+        var ball = $('.ball'), balls = $('.balls'), ballAmount = 4,
             buttonYeah = ['Love IoT?',
                 'Watch our Video!',
                 'You Rockz!',
@@ -174,6 +169,9 @@ active: home
                 'Wanna see amazing things?',
                 'Keep it real!',
                 'What is UIoT?!!'];
+
+        for(var i = 0; i < ballAmount; i++)
+            balls.append("<div class='ball'></div>");
 
         $('.random-button').html(buttonYeah[Math.floor(Math.random() * buttonYeah.length)]);
 
