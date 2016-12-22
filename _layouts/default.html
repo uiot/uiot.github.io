@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-{% include header-includes.html %}
+{% include main/header-includes.html %}
 <body>
 {% if page.active == "home" %}
     {% include header-big.html %}
@@ -9,6 +9,6 @@
 {% endif %}
 <script src="{{ '/js/zepto.js' | absolute_url }}"></script>
 {{ content }}
-{% include footer-normal.html %}
+{% include main/footer-normal.html %}
 </body>
 </html>
