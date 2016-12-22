@@ -1,0 +1,21 @@
+<section class="blog-content-section">
+    <div class="row">
+        <ul class="main">
+            {% for post in site.posts %}
+            <li>
+                <div class="info">
+                    <span class="circle"></span>
+                    <a href="{{ post.url }}#disqus_thread" title="{{ post.title }}">{{post.title }}</a>
+                    <br/>
+                    <span>{{ post.date | date_to_string }}</span>
+                    <small><b>Author.:</b> {{ post.author }}</small>
+                    <br/>
+                </div>
+                <div class="resume">
+                    {{ post.resume }}
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>

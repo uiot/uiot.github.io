@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-{% include main/header-includes.html %}
+{% include global/header-includes.html %}
 <body>
 {% if page.active == "home" %}
-    {% include main/header-big.html %}
+    {% include global/header-big.html %}
 {% else %}
-    {% include main/header-small.html %}
+    {% include global/header-small.html %}
 {% endif %}
 <script src="{{ '/js/zepto.js' | absolute_url }}"></script>
 {{ content }}
-{% include main/footer-normal.html %}
+{% include global/footer-big.html %}
 </body>
 </html>
