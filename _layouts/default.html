@@ -3,9 +3,9 @@
 {% include main/header-includes.html %}
 <body>
 {% if page.active == "home" %}
-    {% include header-big.html %}
+    {% include main/header-big.html %}
 {% else %}
-    {% include header-small.html %}
+    {% include main/header-small.html %}
 {% endif %}
 <script src="{{ '/js/zepto.js' | absolute_url }}"></script>
 {{ content }}
