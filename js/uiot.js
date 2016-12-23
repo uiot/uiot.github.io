@@ -1,5 +1,5 @@
 $(function () {
-    var ball = $('.ball'), balls = $('.balls'), ballAmount = 4,
+    var balls = $('.balls'), ballAmount = 4,
         buttonYeah = ['Love IoT?',
             'Watch our Video!',
             'You Rockz!',
@@ -8,8 +8,11 @@ $(function () {
             'Keep it real!',
             'What is UIoT?!!'];
 
-    for (var i = 0; i < ballAmount; i++)
+    for (var i = 0; i < ballAmount; i++) {
         balls.append("<div class='ball'></div>");
+    }
+
+    var ball = $('.ball');
 
     $('.random-button').html(buttonYeah[Math.floor(Math.random() * buttonYeah.length)]);
 
