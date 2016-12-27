@@ -173,6 +173,10 @@ h1 {
     transition: background 0.4s linear
 }
 
+.button:hover {
+    color: white
+}
+
 .white {
     background: white;
     color: #5cb3e7;
@@ -212,7 +216,7 @@ h1 {
 .header-section {
     min-height: 100vh;
     overflow: hidden;
-    animation: color-change 10s ease infinite;
+    animation: color-change 20s ease infinite;
     /* background: linear-gradient(56deg, #ff913f, #e95b64); */
     background: linear-gradient(56deg, #5db2e6, #033656);
     background-size: 400% 400%
