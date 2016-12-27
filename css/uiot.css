@@ -175,13 +175,13 @@ h1 {
 
 .white {
     background: white;
-    color: #e9573f;
+    color: #5cb3e7;
     box-shadow: 0 0 0 5px rgba(20, 28, 34, 0.1);
     box-sizing: border-box
 }
 
 .white:hover {
-    background: #e95b64;
+    background: #023656;
     color: white
 }
 
@@ -210,9 +210,24 @@ h1 {
 /** Header Section **/
 
 .header-section {
-    background: url(../img/bolhas.png), linear-gradient(-56deg, #ff913f 0%, #e95b64 100%);
     min-height: 100vh;
     overflow: hidden;
+    animation: color-change 10s ease infinite;
+    /* background: linear-gradient(56deg, #ff913f, #e95b64); */
+    background: linear-gradient(56deg, #5db2e6, #033656);
+    background-size: 400% 400%
+}
+
+@keyframes color-change {
+    0% {
+        background-position: 0 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0 50%
+    }
 }
 
 .header-section.header-small {
@@ -241,7 +256,7 @@ h1 {
 /** Header Section - Right **/
 
 .header-section .right {
-    margin-top: -30px;
+    margin-top: -15px;
 }
 
 .header-section .right h1 {
