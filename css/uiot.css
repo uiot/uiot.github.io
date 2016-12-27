@@ -97,22 +97,22 @@
 }
 
 @keyframes hero-animation {
-    0% {
+    from {
         transform: scale(0.96);
         opacity: 0
     }
-    100% {
+    to {
         transform: scale(1);
         opacity: 1
     }
 }
 
 @-webkit-keyframes hero-animation {
-    0% {
+    from {
         -webkit-transform: scale(0.96);
         opacity: 0
     }
-    100% {
+    to {
         -webkit-transform: scale(1);
         opacity: 1
     }
@@ -223,7 +223,7 @@ h1 {
 }
 
 @keyframes color-change {
-    0% {
+    1% {
         background-position: 0 50%
     }
     50% {
@@ -376,7 +376,7 @@ h1 {
     background-color: white;
     visibility: hidden;
     transform: scaleX(0);
-    transition: all 0.3s ease-in-out 0s
+    transition: all 0.3s ease-in-out 1s
 }
 
 .header-section .header ul > li:hover:before {
