@@ -196,7 +196,8 @@ h1 {
 }
 
 .header-section.header-small.blog-header {
-    background: url(../img/bolhas.png), linear-gradient(56deg, rgb(45, 25, 66) 0%, rgb(64, 28, 64) 35%, rgb(83, 30, 62) 100%)
+    background: linear-gradient(56deg, rgb(45, 25, 66) 0%, rgb(64, 28, 64) 35%, rgb(83, 30, 62) 100%);
+    background-size: 400% 400%
 }
 
 .header-section.header-small.blog-header h1 {
