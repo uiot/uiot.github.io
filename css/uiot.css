@@ -218,7 +218,7 @@ h1 {
     overflow: hidden;
     animation: color-change 20s ease infinite;
     /* background: linear-gradient(56deg, #ff913f, #e95b64); */
-    background: linear-gradient(56deg, #5db2e6, #033656);
+    background: linear-gradient(-56deg, #5db2e6, #033656);
     background-size: 400% 400%
 }
 
