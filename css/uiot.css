@@ -43,13 +43,13 @@
 
 @keyframes notebook-intro {
     10% {
-        transform: scale(1.0);
+        transform: scale(1.0)
     }
     20% {
-        transform: scale(1.1);
+        transform: scale(1.1)
     }
     30% {
-        transform: scale(1.0);
+        transform: scale(1.0)
     }
 }
 
@@ -196,7 +196,7 @@ h1 {
 }
 
 .header-section.header-small.blog-header {
-    background: url(../img/bolhas.png), linear-gradient(56deg, rgb(45, 25, 66) 0%, rgb(64, 28, 64) 35%, rgb(83, 30, 62) 100%);
+    background: url(../img/bolhas.png), linear-gradient(56deg, rgb(45, 25, 66) 0%, rgb(64, 28, 64) 35%, rgb(83, 30, 62) 100%)
 }
 
 .header-section.header-small.blog-header h1 {
@@ -211,13 +211,13 @@ h1 {
 
 .header-section.header-small .row:first-child a img {
     animation: none !important;
-    transition: none !important;
+    transition: none !important
 }
 
 /** Header Section - Right **/
 
 .header-section .right {
-    margin-top: -15px;
+    margin-top: -15px
 }
 
 .header-section .right h1 {
@@ -234,7 +234,7 @@ h1 {
 .header-section .right p {
     margin-top: 20px;
     max-width: 360px;
-    opacity: 0.9;
+    opacity: 0.9
 }
 
 /** Header Section Main **/
@@ -878,7 +878,7 @@ h1 {
     color: #e65861;
     font-family: Museo Normal, serif;
     padding: 10px;
-    display: block;
+    display: block
 }
 
 .sorry-section h1 {
@@ -888,5 +888,3 @@ h1 {
     position: relative;
     margin: 0 0 10px 0
 }
-
-/** Blog Time Line **/
