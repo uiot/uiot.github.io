@@ -6,5 +6,5 @@ permalink: /404.html
 permalink: /blog/:year/:month/:day/:title
 repository: uiot/uiot.github.io
 
-gems: [jekyll-minifier, jekyll-github-metadata] #Comment on Development
+#gems: [jekyll-minifier, jekyll-github-metadata] #Comment on Development
 #gems: [jekyll-tidy, jekyll-admin, jekyll-github-metadata] #Comment on Production
