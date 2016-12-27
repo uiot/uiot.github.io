@@ -243,6 +243,10 @@ h1 {
     padding: 120px 0 60px 0
 }
 
+.header-section .main img {
+    animation: hero-animation 1.5s ease forwards
+}
+
 /** Header Section - Header **/
 
 .header-section .header {
@@ -284,10 +288,6 @@ h1 {
 
 .header-section .header.row:first-child a:hover .ripples {
     display: block
-}
-
-.header-section .header.row:first-child a img:hover {
-    animation: hero-animation 1.75s forwards infinite
 }
 
 .header-section .header ul {
@@ -575,7 +575,6 @@ h1 {
 }
 
 .companies-section b {
-    font-family: Museo Bold, serif;
     color: #e3535f
 }
 
