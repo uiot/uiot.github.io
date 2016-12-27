@@ -41,15 +41,6 @@
     }
 }
 
-@-webkit-keyframes rotating {
-    from {
-        -webkit-transform: rotate(0deg)
-    }
-    to {
-        -webkit-transform: rotate(360deg)
-    }
-}
-
 @keyframes notebook-intro {
     10% {
         transform: scale(1.0);
@@ -62,18 +53,6 @@
     }
 }
 
-@-webkit-keyframes notebook-intro {
-    10% {
-        -webkit-transform: scale(1.0)
-    }
-    20% {
-        -webkit-transform: scale(1.1)
-    }
-    30% {
-        -webkit-transform: scale(1.0)
-    }
-}
-
 @keyframes ripple {
     from {
         transform: scale(0);
@@ -81,17 +60,6 @@
     }
     to {
         transform: scale(3);
-        opacity: 0
-    }
-}
-
-@-webkit-keyframes ripple {
-    from {
-        -webkit-transform: scale(0);
-        opacity: 1
-    }
-    to {
-        -webkit-transform: scale(3);
         opacity: 0
     }
 }
@@ -107,23 +75,12 @@
     }
 }
 
-@-webkit-keyframes hero-animation {
-    from {
-        -webkit-transform: scale(0.96);
-        opacity: 0
-    }
-    to {
-        -webkit-transform: scale(1);
-        opacity: 1
-    }
-}
-
 /** Body Elements **/
 
 body {
     background: #f3f3f3;
     font-family: Museo Light, serif;
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased
 }
 
 h1, p, a, img, h2, h3 {
@@ -161,7 +118,7 @@ h1 {
 
 .remove-transition {
     animation: none !important;
-    transition: none !important;
+    transition: none !important
 }
 
 /** Buttons **/
@@ -286,10 +243,6 @@ h1 {
     padding: 120px 0 60px 0
 }
 
-.header-section .main img {
-    animation: hero-animation 1.5s ease forwards
-}
-
 /** Header Section - Header **/
 
 .header-section .header {
@@ -318,17 +271,14 @@ h1 {
 }
 
 .header-section .header.row:first-child a .ripple-1 {
-    -webkit-animation: ripple 3s linear infinite;
     animation: ripple 3s linear infinite
 }
 
 .header-section .header.row:first-child a .ripple-2 {
-    -webkit-animation: ripple 3s linear infinite 0.75s;
     animation: ripple 3s linear infinite 0.75s
 }
 
 .header-section .header.row:first-child a .ripple-3 {
-    -webkit-animation: ripple 3s linear infinite 1.5s;
     animation: ripple 3s linear infinite 1.5s
 }
 
@@ -357,7 +307,6 @@ h1 {
 
 .header-section .header ul > li.active:before {
     visibility: visible;
-    -webkit-transform: scaleX(1);
     transform: scaleX(1)
 }
 
