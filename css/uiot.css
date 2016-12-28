@@ -530,22 +530,22 @@ h1 {
 
 /** Blog Section - Right **/
 
-.blog-section .p-details {
+.blog-section .row div:last-child {
     margin: 120px 0 40px 0
 }
 
-.blog-section .p-details h1 {
+.blog-section .row div:last-child h1 {
     font-size: 50px;
     line-height: 60px;
     margin-bottom: 0
 }
 
-.blog-section .p-details hr {
+.blog-section .row div:last-child hr {
     height: 6px;
     margin-left: 0
 }
 
-.blog-section .p-details p {
+.blog-section .row div:last-child p {
     margin-top: 20px;
     font-weight: 300;
     opacity: 0.8
@@ -553,28 +553,29 @@ h1 {
 
 /** Blog Section - Left **/
 
-.blog-section .p-entry {
+.blog-section .row div:first-child {
     background: white;
     padding: 80px 30px;
     box-sizing: border-box;
     height: 100%;
+    border: 1px solid white;
     max-width: 45%
 }
 
-.blog-section .p-entry.small {
+.blog-section .row div:not(:first-child):not(:last-child) {
     position: relative;
     width: auto;
     max-width: 100%
 }
 
-.blog-section .p-entry h2 {
+.blog-section .row div:first-child h2 {
     color: #6d6d6d;
     font-weight: 500;
     margin-bottom: 0;
     font-size: 28px
 }
 
-.blog-section .p-entry p {
+.blog-section .row div:first-child p {
     font-weight: 300;
     font-size: 14px;
     color: #6d6d6d;
@@ -582,12 +583,12 @@ h1 {
     max-height: 200px
 }
 
-.blog-section .p-entry a {
+.blog-section .row div:first-child a {
     color: #e65861;
     font-weight: 700
 }
 
-.blog-section .p-entry .blog-entry {
+.blog-section .row div:first-child .blog-entry {
     color: #999999;
     overflow: hidden;
     display: -webkit-box;
