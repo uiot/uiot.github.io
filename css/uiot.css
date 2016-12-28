@@ -1,33 +1,66 @@
 /** Fonts **/
 
 @font-face {
-    font-family: Museo Lighter;
-    src: url(../fonts/museosansrounded-100-webfont.woff2) format('woff2')
+    font-family: Museo;
+    src: url(../fonts/museosansrounded-100-webfont.woff2) format('woff2');
+    font-weight: 100;
+    font-style: normal
 }
 
 @font-face {
-    font-family: Museo Light;
-    src: url(../fonts/museosansrounded-300-webfont.woff2) format('woff2')
+    font-family: Museo;
+    src: url(../fonts/museosansrounded-300-webfont.woff2) format('woff2');
+    font-weight: 300;
+    font-style: normal
 }
 
 @font-face {
-    font-family: Museo Normal;
-    src: url(../fonts/museosansrounded-500-webfont.woff2) format('woff2')
+    font-family: Museo;
+    src: url(../fonts/museosansrounded-500-webfont.woff2) format('woff2');
+    font-weight: 500;
+    font-style: normal
 }
 
 @font-face {
-    font-family: Museo Bold;
-    src: url(../fonts/museosansrounded-700-webfont.woff2) format('woff2')
+    font-family: Museo;
+    src: url(../fonts/museosansrounded-700-webfont.woff2) format('woff2');
+    font-weight: 700;
+    font-style: normal
 }
 
 @font-face {
-    font-family: Museo Bolder;
-    src: url(../fonts/museosansrounded-900-webfont.woff2) format('woff2')
+    font-family: Museo;
+    src: url(../fonts/museosansrounded-900-webfont.woff2) format('woff2');
+    font-weight: 900;
+    font-style: normal
 }
 
 @font-face {
-    font-family: Museo Hard;
-    src: url(../fonts/museosansrounded-1000-webfont.woff2) format('woff2')
+    font-family: Museo;
+    src: url(../fonts/museosansrounded-1000-webfont.woff2) format('woff2');
+    font-weight: 1000;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular-webfont.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Light-webfont.woff) format("woff");
+    font-weight: 200;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Bold-webfont.woff) format("woff");
+    font-weight: 700;
+    font-style: normal
 }
 
 /** Animations **/
@@ -75,12 +108,28 @@
     }
 }
 
+@keyframes color-change {
+    1% {
+        background-position: 0 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0 50%
+    }
+}
+
 /** Body Elements **/
 
 body {
     background: #f3f3f3;
-    font-family: Museo Light, serif;
+    font-weight: 300;
     -webkit-font-smoothing: antialiased
+}
+
+html, body, * {
+    font-family: Museo, serif !important;
 }
 
 h1, p, a, img, h2, h3 {
@@ -113,7 +162,7 @@ hr {
 h1 {
     text-transform: uppercase;
     color: white;
-    font-family: Museo Hard, serif
+    font-weight: 1000
 }
 
 .remove-transition {
@@ -126,7 +175,7 @@ h1 {
 .button {
     border-radius: 3px;
     padding: 13px;
-    font-family: Museo Bold, serif;
+    font-weight: 700;
     transition: background 0.4s linear
 }
 
@@ -149,7 +198,7 @@ h1 {
 .colored {
     color: white;
     background: linear-gradient(135deg, #e95b64 76%, #ff913f 99%);
-    font-family: Museo Normal, serif;
+    font-weight: 500;
     padding: 13px 24px 13px 24px
 }
 
@@ -160,7 +209,7 @@ h1 {
 .white-blue {
     color: #1d334a;
     background: linear-gradient(135deg, white 76%, #adbdcd 99%);
-    font-family: Museo Normal, serif;
+    font-weight: 500;
     padding: 13px 24px 13px 24px
 }
 
@@ -177,18 +226,6 @@ h1 {
     /* background: linear-gradient(56deg, #ff913f, #e95b64); */
     background: linear-gradient(-56deg, #5db2e6, #033656);
     background-size: 400% 400%
-}
-
-@keyframes color-change {
-    1% {
-        background-position: 0 50%
-    }
-    50% {
-        background-position: 100% 50%
-    }
-    100% {
-        background-position: 0 50%
-    }
 }
 
 .header-section.header-small {
@@ -224,6 +261,7 @@ h1 {
 .header-section .right h1 {
     font-size: 400%;
     margin-bottom: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     line-height: 80px
 }
 
@@ -300,7 +338,7 @@ h1 {
 .header-section .header ul > li {
     display: inline;
     color: white;
-    font-family: Museo Bold, serif;
+    font-weight: 700;
     margin-right: 40px;
     padding-bottom: 8px;
     position: relative
@@ -353,7 +391,7 @@ h1 {
 }
 
 .supporting-section li h3 {
-    font-family: Museo Light, serif;
+    font-weight: 300;
     font-size: 28px;
     color: #646464;
     display: inline-block;
@@ -361,7 +399,7 @@ h1 {
 }
 
 .supporting-section li p {
-    font-family: Museo Lighter, serif;
+    font-weight: 100;
     color: #939393;
     font-size: 16px;
     line-height: 20px;
@@ -372,7 +410,7 @@ h1 {
 .supporting-section li h3:before {
     color: #e26467;
     content: "UIoT ";
-    font-family: Museo Normal, serif
+    font-weight: 500
 }
 
 .supporting-section li:first-child img {
@@ -389,7 +427,7 @@ h1 {
 
 .supporting-section li a {
     color: #08acb3;
-    font-family: Museo Normal, serif
+    font-weight: 500
 }
 
 /** Supporting Section - Left **/
@@ -411,7 +449,7 @@ h1 {
 .supporting-section .support-ideas p {
     color: #4c4c4c;
     text-align: right;
-    font-family: Museo Lighter, serif;
+    font-weight: 100;
     margin-left: 40px
 }
 
@@ -438,7 +476,7 @@ h1 {
 
 .discovering-section p {
     margin-top: 20px;
-    font-family: Museo Lighter, serif;
+    font-weight: 100;
     opacity: 0.65
 }
 
@@ -478,7 +516,7 @@ h1 {
 .smart-section p {
     color: #4c4c4c;
     text-align: right;
-    font-family: Museo Lighter, serif
+    font-weight: 100
 }
 
 /** Blog Section **/
@@ -508,7 +546,7 @@ h1 {
 
 .blog-section .p-details p {
     margin-top: 20px;
-    font-family: Museo Light, serif;
+    font-weight: 300;
     opacity: 0.8
 }
 
@@ -530,13 +568,13 @@ h1 {
 
 .blog-section .p-entry h2 {
     color: #6d6d6d;
-    font-family: Museo Normal, serif;
+    font-weight: 500;
     margin-bottom: 0;
     font-size: 28px
 }
 
 .blog-section .p-entry p {
-    font-family: Museo Light, serif;
+    font-weight: 300;
     font-size: 14px;
     color: #6d6d6d;
     display: inline-block;
@@ -545,7 +583,7 @@ h1 {
 
 .blog-section .p-entry a {
     color: #e65861;
-    font-family: Museo Bold, serif
+    font-weight: 700
 }
 
 .blog-section .p-entry .blog-entry {
@@ -569,7 +607,7 @@ h1 {
 
 .companies-section h2 {
     color: #363636;
-    font-family: Museo Light, serif;
+    font-weight: 300;
     font-size: 25px;
     text-align: center;
     margin-top: 80px
@@ -659,7 +697,7 @@ h1 {
 
 .footer-section ul li {
     color: white;
-    font-family: Museo Bold, serif;
+    font-weight: 700;
     text-transform: uppercase;
     max-width: 150px;
     font-size: 12px;
@@ -671,14 +709,14 @@ h1 {
 }
 
 .footer-section ul li h2 {
-    font-family: Museo Bolder, serif;
+    font-weight: 900;
     font-size: 18px;
     opacity: 1
 }
 
 .footer-section ul li p {
     text-transform: none;
-    font-family: Museo Light, serif;
+    font-weight: 300;
     line-height: 20px;
     font-size: 14px;
     opacity: 0.8
@@ -722,7 +760,7 @@ h1 {
 
 .footer-section .copyright {
     color: white;
-    font-family: Museo Bold, serif;
+    font-weight: 700;
     font-size: 12px;
     margin-left: 100px
 }
@@ -775,7 +813,7 @@ h1 {
 
 .blog-content-section ul.main li .info a {
     color: #626262;
-    font-family: Museo Normal, serif;
+    font-weight: 500;
     font-size: 28px
 }
 
@@ -785,7 +823,7 @@ h1 {
 }
 
 .blog-content-section ul.main li .info span {
-    font-family: Museo Bold, serif;
+    font-weight: 700;
     color: #e65861
 }
 
@@ -798,7 +836,7 @@ h1 {
 
 .blog-content-section ul.main li .resume a {
     color: #e65861;
-    font-family: Museo Bold, serif;
+    font-weight: 700;
     float: right
 }
 
@@ -817,7 +855,7 @@ h1 {
 .blog-post-section .details h1 {
     margin-bottom: 0;
     text-transform: none;
-    font-family: Museo Light, serif;
+    font-weight: 300;
     color: #e65861
 }
 
@@ -876,14 +914,14 @@ h1 {
 
 .sorry-section a {
     color: #e65861;
-    font-family: Museo Normal, serif;
+    font-weight: 500;
     padding: 10px;
     display: block
 }
 
 .sorry-section h1 {
     text-shadow: 0 1px 0 #fff;
-    font-family: Museo Lighter, serif;
+    font-weight: 100;
     color: black;
     position: relative;
     margin: 0 0 10px 0
