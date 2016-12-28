@@ -238,7 +238,8 @@ h1 {
 }
 
 .header-section.header-small.blog-header h1 {
-    margin: 40px 0 0 0
+    margin: 40px 0 0 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5)
 }
 
 .header-section.header-small.blog-header span {
