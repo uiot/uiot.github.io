@@ -553,7 +553,13 @@ h1 {
 
 /** Blog Section - Left **/
 
-.blog-section .row div:first-child {
+.blog-section .row div:not(:first-child):not(:last-child) {
+    position: relative;
+    width: auto;
+    max-width: 100%
+}
+
+.blog-section .row div:not(:last-child) {
     background: white;
     padding: 80px 30px;
     box-sizing: border-box;
@@ -562,20 +568,14 @@ h1 {
     max-width: 45%
 }
 
-.blog-section .row div:not(:first-child):not(:last-child) {
-    position: relative;
-    width: auto;
-    max-width: 100%
-}
-
-.blog-section .row div:first-child h2 {
+.blog-section .row div:not(:last-child) h2 {
     color: #6d6d6d;
     font-weight: 500;
     margin-bottom: 0;
     font-size: 28px
 }
 
-.blog-section .row div:first-child p {
+.blog-section .row div:not(:last-child) p {
     font-weight: 300;
     font-size: 14px;
     color: #6d6d6d;
@@ -583,12 +583,12 @@ h1 {
     max-height: 200px
 }
 
-.blog-section .row div:first-child a {
+.blog-section .row div:not(:last-child) a {
     color: #e65861;
     font-weight: 700
 }
 
-.blog-section .row div:first-child .blog-entry {
+.blog-section .row div:not(:last-child) .blog-entry {
     color: #999999;
     overflow: hidden;
     display: -webkit-box;
@@ -761,11 +761,11 @@ h1 {
 }
 
 .footer-section .row:last-child div:last-child {
-    margin: -20px -40px 0 0
+    margin: -20px 0
 }
 
 .footer-section .row:last-child div:last-child img:first-child {
-    margin: 15px 20px 0 20px;
+    margin: -10px 0 0 0;
     width: auto
 }
 
