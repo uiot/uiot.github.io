@@ -1,12 +1,11 @@
 <section class="header-section">
+    <video id="home_video" class="hide-for-small-only" autoplay muted loop>
+        <source src="{{ '/img/vid/corporate.webm' | absolute_url }}" type="video/webm">
+        <source src="{{ '/img/vid/corporate.mp4' | absolute_url }}" type="video/mp4">
+    </video>
     <div class="header row">
         <div class="hide-for-small-only large-6 medium-6 columns">
             <a href="{{ '/' | absolute_url }}">
-                <div class="ripples">
-                    <div class="ripple ripple-1"></div>
-                    <div class="ripple ripple-2"></div>
-                    <div class="ripple ripple-3"></div>
-                </div>
                 <img src="{{ '/img/uiot.svg' | absolute_url }}"/>
             </a>
         </div>
@@ -21,7 +20,7 @@
     </div>
     <div class="main row">
         <div class="hide-for-small-only large-7 medium-6 columns">
-            <img src="{{ '/img/iot.png' | absolute_url }}"/>
+            <img style="display:none" src="{{ '/img/iot.png' | absolute_url }}"/>
         </div>
         <div class="right large-5 medium-6 columns">
             <h1 class="hide-for-small-only">Universal Internet of Things</h1>

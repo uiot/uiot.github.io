@@ -31,3 +31,8 @@ $(function () {
         $(this).addClass('active');
     });
 });
+
+$('video').on('ended', function () {
+    this.load();
+    this.play();
+});
