@@ -86,17 +86,6 @@
     }
 }
 
-@keyframes ripple {
-    from {
-        transform: scale(0);
-        opacity: 1
-    }
-    to {
-        transform: scale(3);
-        opacity: 0
-    }
-}
-
 @keyframes hero-animation {
     from {
         transform: scale(0.96);
@@ -225,7 +214,23 @@ h1 {
     animation: color-change 20s ease infinite;
     /* background: linear-gradient(56deg, #ff913f, #e95b64); */
     background: linear-gradient(-56deg, #5db2e6, #033656);
+    position: relative;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
     background-size: 400% 400%
+}
+
+#home_video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
 
 .header-section.header-small {
@@ -256,7 +261,8 @@ h1 {
 /** Header Section - Right **/
 
 .header-section .right {
-    margin-top: -15px
+    margin-top: -15px;
+    position: relative
 }
 
 .header-section .right h1 {
@@ -293,41 +299,15 @@ h1 {
     padding-top: 40px
 }
 
-.header-section .header.row:first-child a img {
+.header-section .header div:first-child a {
+    position: relative
+}
+
+.header-section .header div:first-child a img {
     width: 100px;
     display: inline-block;
-    animation: hero-animation 1.5s forwards
-}
-
-.header-section .header.row:first-child a .ripples {
-    position: relative;
-    opacity: 0.35;
-    display: none
-}
-
-.header-section .header.row:first-child a .ripple {
-    border: 5px solid white;
-    width: 300px;
-    height: 300px;
-    border-radius: 500px;
-    position: absolute;
-    margin: -100px 0 0 -100px
-}
-
-.header-section .header.row:first-child a .ripple-1 {
-    animation: ripple 3s linear infinite
-}
-
-.header-section .header.row:first-child a .ripple-2 {
-    animation: ripple 3s linear infinite 0.75s
-}
-
-.header-section .header.row:first-child a .ripple-3 {
-    animation: ripple 3s linear infinite 1.5s
-}
-
-.header-section .header.row:first-child a:hover .ripples {
-    display: block
+    animation: hero-animation 1.5s forwards;
+    position: relative
 }
 
 .header-section .header ul {
@@ -976,4 +956,3 @@ h1 {
     position: absolute;
     z-index: 99;
 }
-
