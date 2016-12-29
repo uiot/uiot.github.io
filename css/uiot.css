@@ -2,42 +2,42 @@
 
 @font-face {
     font-family: Museo;
-    src: url(../fonts/museosansrounded-100-webfont.woff2) format('woff2');
+    src: url(../fonts/museosansrounded-100-webfont.woff2) format('woff2'), url(../fonts/museosansrounded-100-webfont.woff) format('woff');
     font-weight: 100;
     font-style: normal
 }
 
 @font-face {
     font-family: Museo;
-    src: url(../fonts/museosansrounded-300-webfont.woff2) format('woff2');
+    src: url(../fonts/museosansrounded-300-webfont.woff2) format('woff2'), url(../fonts/museosansrounded-300-webfont.woff) format('woff');
     font-weight: 300;
     font-style: normal
 }
 
 @font-face {
     font-family: Museo;
-    src: url(../fonts/museosansrounded-500-webfont.woff2) format('woff2');
+    src: url(../fonts/museosansrounded-500-webfont.woff2) format('woff2'), url(../fonts/museosansrounded-500-webfont.woff) format('woff');
     font-weight: 500;
     font-style: normal
 }
 
 @font-face {
     font-family: Museo;
-    src: url(../fonts/museosansrounded-700-webfont.woff2) format('woff2');
+    src: url(../fonts/museosansrounded-700-webfont.woff2) format('woff2'), url(../fonts/museosansrounded-700-webfont.woff) format('woff');
     font-weight: 700;
     font-style: normal
 }
 
 @font-face {
     font-family: Museo;
-    src: url(../fonts/museosansrounded-900-webfont.woff2) format('woff2');
+    src: url(../fonts/museosansrounded-900-webfont.woff2) format('woff2'), url(../fonts/museosansrounded-900-webfont.woff) format('woff');
     font-weight: 900;
     font-style: normal
 }
 
 @font-face {
     font-family: Museo;
-    src: url(../fonts/museosansrounded-1000-webfont.woff2) format('woff2');
+    src: url(../fonts/museosansrounded-1000-webfont.woff2) format('woff2'), url(../fonts/museosansrounded-1000-webfont.woff) format('woff');
     font-weight: 1000;
     font-style: normal
 }
@@ -127,7 +127,7 @@ h1, p, a, img, h2, h3 {
 }
 
 b {
-    font-family: Museo Bold, serif
+    font-weight: 700
 }
 
 a {
@@ -137,7 +137,7 @@ a {
 }
 
 p {
-    font-family: Museo Light, serif;
+    font-weight: 300;
     color: white
 }
 
