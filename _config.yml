@@ -8,3 +8,6 @@ repository: uiot/uiot.github.io
 
 gems: [jekyll-minifier, jekyll-github-metadata] #Comment on Development
 #gems: [jekyll-tidy, jekyll-admin, jekyll-github-metadata] #Comment on Production
+
+jekyll-minifier:
+  exclude: ['js/foundation.js', 'js/jquery.js', 'js/zepto.js']

@@ -7,8 +7,9 @@
 {% else %}
     {% include global/header-small.html %}
 {% endif %}
-<script src="{{ '/js/zepto.js' | absolute_url }}"></script>
 {{ content }}
 {% include global/footer-big.html %}
+<script src="{{ '/js/zepto.js' | absolute_url }}"></script>
+<script src="{{ '/js/uiot.js' | absolute_url }}"></script>
 </body>
 </html>
