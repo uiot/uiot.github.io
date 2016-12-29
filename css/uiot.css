@@ -760,6 +760,19 @@ h1 {
     color: black
 }
 
+.footer-section .row:last-child div:last-child {
+    margin: -20px -40px 0 0
+}
+
+.footer-section .row:last-child div:last-child img:first-child {
+    margin: 15px 20px 0 20px;
+    width: auto
+}
+
+.footer-section .row:last-child div:last-child img:last-child {
+    width: 70px
+}
+
 .footer-section .copyright {
     color: white;
     font-weight: 700;
