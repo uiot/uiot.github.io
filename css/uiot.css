@@ -215,7 +215,7 @@ h1 {
     overflow: hidden;
     animation: color-change 20s ease infinite;
     /* background: linear-gradient(56deg, #ff913f, #e95b64); */
-    background: linear-gradient(-56deg, #5db2e6, #033656);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.4) 1%, rgba(255, 255, 255, 0.01) 100%), linear-gradient(-56deg, #5db2e6, #033656);
     /* background: #3c0f18; */
     position: relative;
     top: 0;
@@ -645,7 +645,7 @@ h1 {
 .companies-section .companies-list .balls {
     height: 20px;
     position: absolute;
-    width: 120px;
+    width: 140px;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%)
