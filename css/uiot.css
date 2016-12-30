@@ -213,7 +213,8 @@ h1 {
     overflow: hidden;
     animation: color-change 20s ease infinite;
     /* background: linear-gradient(56deg, #ff913f, #e95b64); */
-    background: linear-gradient(-56deg, #5db2e6, #033656);
+    /* background: linear-gradient(-56deg, #5db2e6, #033656); */
+    background: #3c0f18;
     position: relative;
     top: 0;
     bottom: 0;
@@ -222,14 +223,16 @@ h1 {
     background-size: 400% 400%
 }
 
-#home_video {
-    min-width: 100%;
-    min-height: 100%;
+.header-section video {
+    min-width: 105%;
+    min-height: 105%;
     width: auto;
     height: auto;
     position: absolute;
     top: 50%;
     left: 50%;
+    opacity: 0.5;
+    filter: blur(10px);
     transform: translate(-50%, -50%)
 }
 
