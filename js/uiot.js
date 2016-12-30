@@ -42,12 +42,19 @@ $('.reveal-button').on('click', function () {
 
     console.log('Open Modal: ' + revealComponent);
 
-    $('body').append("<div class='reveal-block'><div class='reveal-modal' style='display: inline-block' id='" + $(this).attr('reveal-id') + "'>" + revealComponent.html() + "<a class='close-button'>Close</a></div></div>");
+    $('body').append("<div class='reveal-block'><div class='reveal-modal' style='display: inline-block' id='" + $(this).attr('reveal-id') + "'>" + revealComponent.html() + "</div></div>");
+
+    revealComponent.remove();
 
     $('.close-button').on('click', function () {
         console.log('Closing Modal');
+
+        $('body').append("<div class='reveal-modal' id='" + $(this).parent().attr('id') + "'>" + $(this).parent().html() + "</div>")
 
         $(this).parent().parent().remove();
     });
 });
 
+$('.random-button').on('click', function () {
+    $('.our-video')[0].play();
+});
