@@ -1,12 +1,12 @@
 $(function () {
     var balls = $('.balls'), ballAmount = 4,
-        buttonYeah = ['Love IoT?',
+        buttonYeah = ['Love IoT? Watch this.',
             'Watch our Video!',
-            'You Rockz!',
-            'Get Started!',
+            'Know a little more about us!',
+            'Get Know about us.',
             'Wanna see amazing things?',
-            'Keep it real!',
-            'What is UIoT?!!'];
+            'See that and blow this.',
+            'What is UIoT?'];
 
     for (var i = 0; i < ballAmount; i++) {
         balls.append("<div class='ball'></div>");
@@ -36,3 +36,18 @@ $('video').on('ended', function () {
     this.load();
     this.play();
 });
+
+$('.reveal-button').on('click', function () {
+    var revealComponent = $('#' + $(this).attr('reveal-id'));
+
+    console.log('Open Modal: ' + revealComponent);
+
+    $('body').append("<div class='reveal-block'><div class='reveal-modal' style='display: inline-block' id='" + $(this).attr('reveal-id') + "'>" + revealComponent.html() + "<a class='close-button'>Close</a></div></div>");
+
+    $('.close-button').on('click', function () {
+        console.log('Closing Modal');
+
+        $(this).parent().parent().remove();
+    });
+});
+

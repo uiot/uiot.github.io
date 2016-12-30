@@ -1,8 +1,8 @@
 <section class="header-section">
-    <video class="header-video hide-for-small-only" autoplay muted loop>
+   <!--<video class="header-video hide-for-small-only" autoplay muted loop>
         <source src="{{ '/img/vid/corporate.webm' | absolute_url }}" type="video/webm">
         <source src="{{ '/img/vid/corporate.mp4' | absolute_url }}" type="video/mp4">
-    </video>
+    </video>-->
     <div class="header row">
         <div class="hide-for-small-only large-6 medium-6 columns">
             <a href="{{ '/' | absolute_url }}">
@@ -19,10 +19,9 @@
         </div>
     </div>
     <div class="main row">
-        <div class="hide-for-small-only large-6 medium-6 columns">
-            <!-- Temporarily Display None -->
-            <img style="visibility:hidden" src="{{ '/img/iot.png' | absolute_url }}"/>
-        </div>
+        <!--<div class="hide-for-small-only large-6 medium-6 columns">
+            <img src="{{ '/img/iot.png' | absolute_url }}"/>
+        </div>-->
         <div class="right large-5 medium-6 columns">
             <h1 class="hide-for-small-only">Universal Internet of Things</h1>
             <h1 class="show-for-small-only" style="font-size: 330%;line-height: 50px;">Universal Internet of Things</h1>
@@ -30,12 +29,15 @@
             <p>UIoT is a research project to create an universal, free,
                 open-source and dynamic IoT architecture.</p>
             <br/>
-            <a class="button white random-button">
-                Watch teh Video!
+            <a class="button white random-button reveal-button" reveal-id="reveal-video">
+                Watch the Video!
             </a>
         </div>
         <div class="hide-for-small-only large-1 medium-1 columns">
             <br/>
         </div>
+    </div>
+    <div class="reveal-modal" id="reveal-video">
+        HEEEELLOOOO
     </div>
 </section>
