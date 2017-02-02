@@ -1,5 +1,5 @@
 $(function () {
-    var balls = $('.balls'), ballAmount = 5,
+    var balls = $('.balls'), ballAmount = 4,
         buttonYeah = ['Love IoT? Watch this.',
             'Watch our Video!',
             'Know a little more about us!',
