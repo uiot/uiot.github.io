@@ -32,11 +32,6 @@ $(function () {
     });
 });
 
-$('video').on('ended', function () {
-    this.load();
-    this.play();
-});
-
 $('.reveal-button').on('click', function () {
     var revealComponent = $('#' + $(this).attr('reveal-id'));
 
@@ -53,8 +48,4 @@ $('.reveal-button').on('click', function () {
 
         $(this).parent().parent().remove();
     });
-});
-
-$('.random-button').on('click', function () {
-    $('.our-video')[0].play();
 });
