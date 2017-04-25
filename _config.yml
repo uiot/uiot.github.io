@@ -11,3 +11,5 @@ gems: [jekyll-minifier, jekyll-github-metadata, amp-jekyll] #Comment on Developm
 
 jekyll-minifier:
   exclude: ['js/foundation.js', 'js/jquery.js', 'js/zepto.js']
+  
+ampdir: amp
