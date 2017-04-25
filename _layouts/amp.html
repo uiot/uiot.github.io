@@ -14,13 +14,15 @@ layout: amp
     <script async src="https://cdn.ampproject.org/v0.js"></script>
   </head>
   <body>
+{% capture header %}{% include global/header-big.html %}{% endcapture %}
 <h1 class="post-title">
-{{ amp_images }}
+{{ header | amp_images }}
 </h1>
 <span>
 {{ page.date }} - {{ page.author }}
 </span>
 {{ content | markdownify | amp_images }}
-{{ amp_images: false, 24, 24 }}
+{% capture footer %}{% include global/footer-big.html %}{% endcapture %}
+{{ footer | amp_images: false, 24, 24 }}
 </body>
 </html>
