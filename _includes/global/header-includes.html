@@ -17,4 +17,13 @@
     })(window,document,'script','dataLayer','GTM-NX3VDK5');</script>
     <link rel="stylesheet" href="{{ '/css/foundation.css' | absolute_url }}">
     <link rel="stylesheet" href="{{ '/css/uiot.css' | absolute_url }}">
+    {% if page.layout == "post" %}
+        <script type="application/ld+json">
+          {% include metadata.json %}
+        </script>
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
+        {% comment %}
+            <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+        {% endcomment %}
+    {% endif %}
 </head>
