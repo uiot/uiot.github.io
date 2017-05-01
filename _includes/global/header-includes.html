@@ -6,7 +6,12 @@
     <meta name="author" content="Universal Internet of Things">
     <meta name="theme-color" content="#7AA5BF">
     <meta name=”robots” content=”follow”>
-    <meta name="viewport" content="width=device-width, maximum-scale=1.0"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    {% comment %}
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    {% endcomment %}
     <link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | absolute_url }}"/>
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -15,4 +20,8 @@
     })(window,document,'script','dataLayer','GTM-NX3VDK5');</script>
     <link rel="stylesheet" href="{{ '/css/foundation.css' | absolute_url }}">
     <link rel="stylesheet" href="{{ '/css/uiot.css' | absolute_url }}">
+    <script type="application/ld+json">
+      {% include metadata.json %}
+    </script>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
 </head>
