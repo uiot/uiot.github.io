@@ -1,6 +1,7 @@
 ## CAREFUL WHEN SWITCHING FROM DEVELOPMENT <> PRODUCTION
 
 name: Universal Internet of Things
+logo: "/img/uiot-final.png"
 markdown: kramdown
 permalink: /404.html
 permalink: /blog/:year/:month/:day/:title
