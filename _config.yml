@@ -14,3 +14,12 @@ jekyll-minifier:
   exclude: ['js/foundation.js', 'js/jquery.js', 'js/zepto.js']
   
 ampdir: amp
+twitter:
+  username: universaliot
+social:
+  name: Universal Internet of Things
+  links:
+    - https://twitter.com/universaliot
+    - https://www.facebook.com/universalinternetofthings
+webmaster_verifications:
+  google: UA-72710724-2
