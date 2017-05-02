@@ -3,8 +3,7 @@
 name: Universal Internet of Things
 logo: "/img/uiot-final.png"
 markdown: kramdown
-permalink: /404.html
-permalink: /blog/:year/:month/:day/:title
+permalink: pretty
 repository: uiot/uiot.github.io
 description: Universal Internet of Things it's an Open Middleware for the Internet of Things. It's a Free and Open Source IoT Platform & Middleware made for any architecture. It contains a large set of tools and applications that can be used on daily tasks.
 
