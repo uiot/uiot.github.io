@@ -1,6 +1,8 @@
 ---
 title: Apresentação no SBrT
 author: Claudio Santoro
+bio: Claudio Santoro é um estudante de Engenharia de Redes e Pesquisador da Universidade de Brasília
+image: https://avatars3.githubusercontent.com/u/12037269?v=3&s=460
 resume: |-
   No começo de 2016, devido a um artigo cientifico publicado por integrantes do projeto, o UIoT foi convidado para o SBrT 2016 que é o maior simpósio sobre telecomunicações do brasil.
 
