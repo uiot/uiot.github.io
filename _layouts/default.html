@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ⚡>
     {% include global/header-includes.html %}
     <body>
         {% if page.active == "home" %}
@@ -13,7 +13,7 @@
         <script src="{{ '/js/zepto.js' | absolute_url }}"></script>
         <script src="{{ '/js/uiot.js' | absolute_url }}"></script>
         {% if page.path contains '_posts' %}
-            <link rel="amphtml" href="{{ page.id | prepend: '/amp' | prepend: site.baseurl | prepend: site.url }}">
+        <link rel="amphtml" href="{{ page.id | prepend: '/amp' | prepend: site.baseurl | prepend: site.url }}">
         {% endif %}
     </body>
 </html>
