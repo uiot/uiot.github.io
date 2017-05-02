@@ -19,7 +19,7 @@ layout: amp
           <section class="share">
             <a class="icon" href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.id }}&text={{page.title | cgi_escape}}&via={{ site.twitter_username }}" target="_blank">
               Share on
-              {% include amp/icon-twitter.html %}
+              {% include icon-twitter.html %}
             </a>
           </section>
         </footer>
@@ -27,22 +27,36 @@ layout: amp
           <div class="isLeft">
             <h5 class="index-headline featured"><span>Written by</span></h5>
             <section class="author">
-              <h4>{{ page.author }}</h4>
+              <div class="author-image"></div>
+              <h4>{{ site.name }}</h4>
+              <p class="bio">{{site.bio}}</p>
+
               <p>
                 <span>
                   {% if site.github_username %}
-                    {% include amp/icon-github.html username=site.github_username %}
+                    {% include icon-github.html username=site.github_username %}
                   {% endif %}
                 </span>
+
                 <span>
                   {% if site.twitter_username %}
-                    {% include amp/icon-twitter.html username=site.twitter_username %}
+                    {% include icon-twitter.html username=site.twitter_username %}
                   {% endif %}
                 </span>
               </p>
               <hr>
               <p class="published">Published <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time></p>
             </section>
+          </div>
+          <div class="isRight">
+            <h5 class="index-headline featured"><span>Supported by</span></h5>
+            <footer class="site-footer">
+              <section class="poweredby">Proudly published with <a href="http://jekyllrb.com"> Jekyll</a> and <a href="https://github.com/ageitgey/amplify">Amplify</a></section>
+              <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip"> <i class="fa fa-rss"></i> You should subscribe to my feed.</span></a>
+              <div class="inner">
+                <section class="copyright">All content copyright <a href="mailto:{{ site.email}}">{{site.name}}</a> &copy; {{ site.time | date: '%Y' }}<br>All rights reserved.</section>
+              </div>
+            </footer>
           </div>
         </div>
       </article>
