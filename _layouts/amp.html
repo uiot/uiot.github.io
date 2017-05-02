@@ -3,9 +3,9 @@ layout: amp
 ---
 <!DOCTYPE html>
 <html ⚡ lang="en">
-  {% include head.html %}
+  {% include amp/head.html %}
   <body>
-    {% include header.html %}
+    {% include amp/header.html %}
     <main class="content" role="main">
       <article class="post">
         <div class="post-meta">
@@ -19,7 +19,7 @@ layout: amp
           <section class="share">
             <a class="icon" href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.id }}&text={{page.title | cgi_escape}}&via={{ site.twitter_username }}" target="_blank">
               Share on
-              {% include icon-twitter.html %}
+              {% include amp/icon-twitter.html %}
             </a>
           </section>
         </footer>
@@ -28,19 +28,16 @@ layout: amp
             <h5 class="index-headline featured"><span>Written by</span></h5>
             <section class="author">
               <div class="author-image"></div>
-              <h4>{{ site.name }}</h4>
-              <p class="bio">{{site.bio}}</p>
-
-              <p>
+              <h4>{{ page.author }}</h4>
                 <span>
                   {% if site.github_username %}
-                    {% include icon-github.html username=site.github_username %}
+                    {% include amp/icon-github.html username=site.github_username %}
                   {% endif %}
                 </span>
 
                 <span>
                   {% if site.twitter_username %}
-                    {% include icon-twitter.html username=site.twitter_username %}
+                    {% include amp/icon-twitter.html username=site.twitter_username %}
                   {% endif %}
                 </span>
               </p>
@@ -52,7 +49,7 @@ layout: amp
       </article>
     </main>
     {% comment %}
-        {% include analytics.html %}
+        {% include amp/analytics.html %}
     {% endcomment %}
   </body>
 </html>
