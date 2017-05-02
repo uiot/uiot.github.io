@@ -2,6 +2,8 @@
 title: O Tempo do Amanhã
 date: '2016-12-05'
 author: Pedro Tominaga
+image: http://ageitgey.github.io/amplify/assets/images/author.jpg
+bio: Pedro é um estudante de ensino médio.
 layout: post
 resume: "Hoje (10/11) choveu dentro do UIoT. \nNão se sabe como, mas, enquanto a água
   vertia fora do laboratório, \no ar-condicionado começou a \"chorar\" sobre nossos
