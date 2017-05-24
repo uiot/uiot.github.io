@@ -53,7 +53,7 @@ Regarding some info for you,
 You can access on-line our Published Papers as Additional Academic Data,
 
 * [Design and Evaluation of a Services Interface for the Internet of Things](http://link.springer.com/article/10.1007/s11277-015-3168-6)
-* [Evaluation of an Arduino-based IoT Person Counter] (http://www.scitepress.org/DigitalLibrary/PublicationsDetail.aspx?ID=DIzbUzEPdV8=&t=1)
+* [Evaluation of an Arduino-based IoT Person Counter](http://www.scitepress.org/DigitalLibrary/PublicationsDetail.aspx?ID=DIzbUzEPdV8=&t=1)
 
 ### Papers being Published
 
