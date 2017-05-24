@@ -1,36 +1,25 @@
 <h1><img src="http://i.imgur.com/TaFqVtT.png"/><sup><sup>Research Project</sup></sup></h1>
 <br>
 
-[![We Use ZenHub](https://raw.githubusercontent.com/ZenHubIO/support/master/zenhub-badge.png)](https://zenhub.com) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![We Use ZenHub](https://raw.githubusercontent.com/ZenHubIO/support/master/zenhub-badge.png)](https://zenhub.com) [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-<b>What is <i>UIoT</i>?</b><br>
+What is UIoT
+-------------
 
 UIoT is an open-source middleware dedicated to managing services in Internet-of-Things environments. It is designed to transparently allow control of any component able to communicate information. 
 
-----------------------------------------------------
-
-<b>Why <i>UIoT</i>?</b><br>
+Why UIoT
+--------
 
 UIoT offers a standardized API with intuitive and simplified ways to add new devices. UIoT is simple, secure and easy to deploy. IoT and the amazing things it can achieve are already known by a lot of people. 
 
-----------------------------------------------------
-
-<b>How <i>UIoT</i>?</b><br>
+How UIoT works?
+---------------
 
 Based on Universal Plug and Play pattern, UIoT discovers all devices which are able to communicate and use then to create an IoT network. UIoT also provides execution capabilities on IoT objects. 
 
-----------------------------------------------------
-
-<b>Observation</b><br>
-
-If you're searching about our repositories. They're currently private, since we're on alpha stage and we're writing our papers about the architecture. If you want to access some repositories or see the contents. Send a message in our Gitter.
-Also if you're a Sponsor from UIoT and want to see our updates. Enter in contact in our Gitter or our provided e-mail.
-You can also request a specific account of your Company to receive access to our repositories.
-Thanks!
-
-----------------------------------------------------
-
-<b>UIoT Docs</b>
+Documentation
+-------------
 
 To learn about how it works, please start visiting our website at [uiot.org](https://uiot.org) and, after that, read contents in this repositry's [docs folder](https://github.com/UIoT/UIoT/tree/master/docs). They are divided as follows:
 
@@ -39,9 +28,7 @@ To learn about how it works, please start visiting our website at [uiot.org](htt
 * [Docs for quick references](https://github.com/UIoT/UIoT/tree/master/docs/presentations)
 * [Scientific Papers ](https://github.com/UIoT/UIoT/tree/master/docs/papers)
 
-----------------------------------------------------
-
-<b>Available Docs</b>
+### Available Docs
 
 Available Docs for Community in <i>actual</i> state.
 
@@ -50,9 +37,7 @@ Available Docs for Community in <i>actual</i> state.
 2. *UIoT's Security Approach*
  This paper is about our first concept about of Handle Security in an IoT ecosystem/network, *this paper is old and outdated and with old informations about our approach*
 
-----------------------------------------------------
-
-<b>What i can see?</b>
+### What can I search?
 
 Regarding some info for you,
 
@@ -63,27 +48,21 @@ Regarding some info for you,
 * More data and explanations will be released later.
 * If you have any questions feel to enter in contact with us at contact@uiot.org
 
-----------------------------------------------------
-
-<b>Published Papers</b>
+### Published Papers
 
 You can access on-line our Published Papers as Additional Academic Data,
 
 * [Design and Evaluation of a Services Interface for the Internet of Things](http://link.springer.com/article/10.1007/s11277-015-3168-6)
 * [Evaluation of an Arduino-based IoT Person Counter] (http://www.scitepress.org/DigitalLibrary/PublicationsDetail.aspx?ID=DIzbUzEPdV8=&t=1)
 
-----------------------------------------------------
-
-<b>Papers Being Published</b>
+### Papers being Published
 
 You can see here a list of papers that are being published or in publishment progress.
 
 * UIoT's proposal of comparsion of inteligent sensor systems
 * UIoT's paper about context aware systems
 
-----------------------------------------------------
-
-<b>Papers planned to be Published</b>
+### Papers under Construction
 
 Is about a list of papers under "construction"
 
@@ -96,11 +75,8 @@ Is about a list of papers under "construction"
 * UIoT's Execution Layer, Hardware Abstraction Concern.
 * Others planned but not listed
 
-----------------------------------------------------
-
-<b>Additional Information</b>
+### Aditional Information
 
 * You can fin us at University of Brasília, Technology Faculty, Department of Electrical Engineering, LATITUDE Laboratory, UIoT Laboratory Room, at Brasília, DF - Brazil
 * Want know more about us? Enter contact at contact@uiot.org
-* Want to chat with us? [Enter in our Gitter Room](https://gitter.im/UIoT/public-room)
 * Also you can access University of Brasília's Website [by clicking here](http://unb.br)
