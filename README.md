@@ -1,4 +1,4 @@
-<h1><img src="http://i.imgur.com/TaFqVtT.png"/><sup><sup>Research Project</sup></sup></h1>
+<h1><img src="http://i.imgur.com/TaFqVtT.png"/><sup><sup>Open IoT Middleware</sup></sup></h1>
 <br>
 
 [![We Use ZenHub](https://raw.githubusercontent.com/ZenHubIO/support/master/zenhub-badge.png)](https://zenhub.com) [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
