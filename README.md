@@ -1,60 +1,106 @@
-<h1><img src="http://i.imgur.com/TaFqVtT.png"/><sup><sup>Website</sup></sup></h1>
+<h1><img src="http://i.imgur.com/TaFqVtT.png"/><sup><sup>Research Project</sup></sup></h1>
 <br>
 
 [![We Use ZenHub](https://raw.githubusercontent.com/ZenHubIO/support/master/zenhub-badge.png)](https://zenhub.com) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-#### Deploy!
-- [Heroku](https://heroku.com/deploy?template=https://github.com/UIoT/uiot.github.io/tree/master)
-- [Azure](https://azuredeploy.net/)
-- [IBM Bluemix](https://bluemix.net/deploy?repository=https://github.com/UIoT/uiot.github.io)
+<b>What is <i>UIoT</i>?</b><br>
 
-<b>What this repository should be?</b><br>
-
-Read Only Repository Containing the UIoT's Development Web Site
+UIoT is an open-source middleware dedicated to managing services in Internet-of-Things environments. It is designed to transparently allow control of any component able to communicate information. 
 
 ----------------------------------------------------
 
-<b>GitHub Pages & Jekyll</b><br>
+<b>Why <i>UIoT</i>?</b><br>
 
-The New **UIoT** web site uses Jekyll and GitHub Pages and is continuously deployed in a Microsoft Azure WebApp.
-We recommend to you access the site directly from the Micrsooft Azure WebApp (beta.uiot.org) rather than (uiot.github.io) since the Public Configurations and Links are set for the Microsoft Azure WebApp.
-
-----------------------------------------------------
-
-<b>Building Jekyll (Local)</b><br>
-
-To Build the Website simply do those following commands:
-
-<pre>
-bundle install
-bundle exec jekyll build
-</pre>
-
-To Run the Website locally do those commands:
-
-<pre>
-bundle install
-bundle exec jekyll serve
-</pre>
-
-<b>Pre-Requisites to Build</b><br>
-
-* Ruby
-* Need be on the Repository Folder
-* Need be Super User
+UIoT offers a standardized API with intuitive and simplified ways to add new devices. UIoT is simple, secure and easy to deploy. IoT and the amazing things it can achieve are already known by a lot of people. 
 
 ----------------------------------------------------
 
-<b>Building WebApp on MS Azure</b><br>
+<b>How <i>UIoT</i>?</b><br>
 
-* Add a Deployment of the Repository
-* Set in Application Settings `SCM_COMMAND_IDLE_TIMEOUT` to `600`
-* Wait for the Kudu App builds the Repository
+Based on Universal Plug and Play pattern, UIoT discovers all devices which are able to communicate and use then to create an IoT network. UIoT also provides execution capabilities on IoT objects. 
 
 ----------------------------------------------------
 
-<b>Some Points.:</b><br>
+<b>Observation</b><br>
 
-* We added [JekyllAdmin](https://github.com/jekyll/jekyll-admin) into the `_config.yml` BUT it's commented. You can use locally to add new posts.
-* Don't forget to comment the `#Comment on Production` sections if you're deploying it, and putting the right server base uri on `_config.yml`
-* Don't forget to uncomment the `#Uncomment on Development` sections if you're running it locally. 
+If you're searching about our repositories. They're currently private, since we're on alpha stage and we're writing our papers about the architecture. If you want to access some repositories or see the contents. Send a message in our Gitter.
+Also if you're a Sponsor from UIoT and want to see our updates. Enter in contact in our Gitter or our provided e-mail.
+You can also request a specific account of your Company to receive access to our repositories.
+Thanks!
+
+----------------------------------------------------
+
+<b>UIoT Docs</b>
+
+To learn about how it works, please start visiting our website at [uiot.org](https://uiot.org) and, after that, read contents in this repositry's [docs folder](https://github.com/UIoT/UIoT/tree/master/docs). They are divided as follows:
+
+* [Website with hints](https://uiot.org/)
+* [Complete Architectural and Communication Model reference in Portuguese](https://github.com/UIoT/UIoT/tree/master/docs/UIoT_Hiro_Dissertation.pdf)
+* [Docs for quick references](https://github.com/UIoT/UIoT/tree/master/docs/presentations)
+* [Scientific Papers ](https://github.com/UIoT/UIoT/tree/master/docs/papers)
+
+----------------------------------------------------
+
+<b>Available Docs</b>
+
+Available Docs for Community in <i>actual</i> state.
+
+1. *UIoT's REST API Proposal*
+ This paper is the about the first concept of our RESTapi implementation, that futurely is denominated as our Service Layer, *this paper is old and outdated and with old statements and informations about the layer*
+2. *UIoT's Security Approach*
+ This paper is about our first concept about of Handle Security in an IoT ecosystem/network, *this paper is old and outdated and with old informations about our approach*
+
+----------------------------------------------------
+
+<b>What i can see?</b>
+
+Regarding some info for you,
+
+* All repositories are currently private, until we finish the basics to display for you.
+* Only some docs (papers/articles/power points/etc) are available for community, until we publishes it.
+* UIoT is in management stage, that means that we're not ready for community. when we finish setting all the things to we be ready for you.
+* Web Site is under development.
+* More data and explanations will be released later.
+* If you have any questions feel to enter in contact with us at contact@uiot.org
+
+----------------------------------------------------
+
+<b>Published Papers</b>
+
+You can access on-line our Published Papers as Additional Academic Data,
+
+* [Design and Evaluation of a Services Interface for the Internet of Things](http://link.springer.com/article/10.1007/s11277-015-3168-6)
+* [Evaluation of an Arduino-based IoT Person Counter] (http://www.scitepress.org/DigitalLibrary/PublicationsDetail.aspx?ID=DIzbUzEPdV8=&t=1)
+
+----------------------------------------------------
+
+<b>Papers Being Published</b>
+
+You can see here a list of papers that are being published or in publishment progress.
+
+* UIoT's proposal of comparsion of inteligent sensor systems
+* UIoT's paper about context aware systems
+
+----------------------------------------------------
+
+<b>Papers planned to be Published</b>
+
+Is about a list of papers under "construction"
+
+* New Security Approach for IoT Networks
+* Some Papers about Specific Hardware Use-Cases for a Top-Level and Abstract IoT Architecture (Presence Sensor, Humidity Sensor, Etc)
+* UIoT's Communication Layer Paper
+* UIoT's Application Layer Use-Case, UIoT Network Management System - CMS
+* Machine Learning in a Top-Level IoT Network
+* IoT Big Data Approach, UIoT
+* UIoT's Execution Layer, Hardware Abstraction Concern.
+* Others planned but not listed
+
+----------------------------------------------------
+
+<b>Additional Information</b>
+
+* You can fin us at University of Brasília, Technology Faculty, Department of Electrical Engineering, LATITUDE Laboratory, UIoT Laboratory Room, at Brasília, DF - Brazil
+* Want know more about us? Enter contact at contact@uiot.org
+* Want to chat with us? [Enter in our Gitter Room](https://gitter.im/UIoT/public-room)
+* Also you can access University of Brasília's Website [by clicking here](http://unb.br)
