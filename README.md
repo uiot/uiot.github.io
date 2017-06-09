@@ -1,7 +1,5 @@
-<img src="http://imgur.com/iQU8c9L.png"/>
-
-Website
--------
+[![Logo](http://imgur.com/iQU8c9L.png)]() Website
+-------------------------------------------------
 
 [![We Use ZenHub](https://raw.githubusercontent.com/ZenHubIO/support/master/zenhub-badge.png)](https://zenhub.com) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
