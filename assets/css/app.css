@@ -45,7 +45,7 @@
     margin:30px 0 0 -20px
 }
 
-.box {
+.callout.box {
     background:#d3dae2;
     border:none;
     border-radius:4px;
@@ -419,4 +419,19 @@ select {
     font-size:14px;
     font-weight:700;
     padding:5px 40px 5px 10px
+}
+
+/* Website Specific Stuff */
+
+.bg .float-right {
+    padding-right: 30px;
+}
+
+.bg .float-right span {
+    margin: 30px 0 0 20px;
+    color: #6f71bc
+}
+
+h1, h2, h3 {
+    font-family: Titillium Web, sans-serif
 }
