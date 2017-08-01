@@ -432,6 +432,19 @@ select {
     color: #6f71bc
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5 {
     font-family: Titillium Web, sans-serif
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(-90deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(-90deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(-90deg);}
+    to {transform:rotate(360deg);}
 }
