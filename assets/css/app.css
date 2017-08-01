@@ -448,3 +448,15 @@ h1, h2, h3, h4, h5 {
     from {transform:rotate(-90deg);}
     to {transform:rotate(360deg);}
 }
+
+.menu-menu {
+    font-weight: 700
+}
+
+.menu-menu li {
+    padding: 4px 30px 4px 4px;
+}
+
+span[onclick] {
+    cursor: pointer
+}
