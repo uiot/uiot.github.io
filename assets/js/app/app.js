@@ -25,6 +25,9 @@ var typed = new Typed('.typed-animated', {
     onLastStringBackspaced: function (self) {
         jQuery('.typed-animated').html("What it's the <b style='color:#8385D0'>Universal Internet of Things?</b>");
     },
+    onDestroy: function (self) {
+        jQuery('.typed-animated').html("What it's the <b style='color:#8385D0'>Universal Internet of Things?</b>");
+    },
     smartBackspace: true,
     startDelay: 3000,
     loop: true,
