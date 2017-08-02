@@ -161,20 +161,24 @@
 
 .footer {
     background:#fff;
-    bottom:0;
     box-shadow:0 -4px 10px -4px rgba(0,0,0,.15);
-    height:100px;
     margin:20px 0 0;
     overflow:hidden;
     padding:30px;
+    height: 260px;
+    color: #3b4151;
     position:relative
 }
 
 .footer img {
     float:right;
-    margin:-10px -105px 0 0;
+    margin:-40px -105px 0 0;
     position:relative;
     width:200px
+}
+
+.footer .copyright {
+    margin-top: 20px
 }
 
 .grid-container {
