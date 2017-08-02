@@ -26,7 +26,7 @@ var typed = new Typed('.typed-animated', {
         jQuery('.typed-animated').html("What it's the <b style='color:#8385D0'>Universal Internet of Things?</b>");
     },
     smartBackspace: true,
-    startDelay: 4000,
+    startDelay: 3000,
     loop: true,
     loopCount: 2,
     showCursor: true,
