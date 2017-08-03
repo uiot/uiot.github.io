@@ -50,10 +50,7 @@
     border:none;
     border-radius:4px;
     color:#3b4151;
-    font-family:Source Code Pro, monospace;
-    font-size:12px;
-    font-weight:600;
-    padding:10px
+    font-family:Titillium Web, sans-serif
 }
 
 .callout h5 {
@@ -149,14 +146,12 @@
     border-color:#fca130
 }
 
-.code {
+.callout.code {
     background:#41444e;
     border:none;
     border-radius:4px;
     color:#fff;
-    font-family:Source Code Pro, monospace;
-    font-size:12px;
-    font-weight:600
+    font-family: Titillium Web, sans-serif
 }
 
 .footer {
@@ -463,4 +458,9 @@ h1, h2, h3, h4, h5 {
 
 span[onclick] {
     cursor: pointer
+}
+
+.responsive-container {
+    margin: 40px auto;
+    padding: 30px
 }
