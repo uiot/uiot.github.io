@@ -23,10 +23,10 @@ var typed = new Typed('.typed-animated', {
         "<b>Is...</b> Changing how the <b style='color:#8385D0'>IoT industry</b> leads."],
     typeSpeed: 100,
     onLastStringBackspaced: function (self) {
-        jQuery('.typed-animated').html("What it's the <b style='color:#8385D0'>Universal Internet of Things?</b>");
+        jQuery('.typed-animated').html("What's the <b style='color:#8385D0'>Universal Internet of Things?</b>");
     },
     onDestroy: function (self) {
-        jQuery('.typed-animated').html("What it's the <b style='color:#8385D0'>Universal Internet of Things?</b>");
+        jQuery('.typed-animated').html("What's the <b style='color:#8385D0'>Universal Internet of Things?</b>");
     },
     smartBackspace: true,
     startDelay: 3000,
