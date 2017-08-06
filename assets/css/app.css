@@ -247,6 +247,14 @@
     text-shadow:0 1px 0 rgba(0,0,0,.1)
 }
 
+@media screen and (max-width: 63.9375em) {
+    .method {
+        line-height: 1.8;
+        word-wrap: normal;
+        display: inline-block;
+        margin-bottom: 13px;
+    }
+}
 .method.alert {
     background:#f93e3e;
     border-color:#f93e3e
@@ -454,4 +462,16 @@ to {
     -moz-transform:rotate(360deg);
     -webkit-transform:rotate(360deg);
     transform:rotate(360deg)
+}
+
+.mobile-menu li{
+    font-family: Titillium Web, sans-serif;
+    font-weight:bold;
+    color: grey;
+    padding: 10px 0px;
+    font-size: 20px;
+}
+
+.off-canvas-content.is-open-top.has-transition-push{
+    transform: translateY(150px);
 }
