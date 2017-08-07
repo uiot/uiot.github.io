@@ -475,3 +475,9 @@ to {
 .off-canvas-content.is-open-top.has-transition-push{
     transform: translateY(150px);
 }
+
+@media screen and (max-width: 63.9375em) {
+    h3.section-title{
+        font-size: 1.8rem;
+    }
+}
