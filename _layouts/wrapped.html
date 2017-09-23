@@ -1,0 +1,50 @@
+---
+layout: skeleton
+title: Overwrite this title
+---
+<head>
+
+    <title>{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Code+Pro:300,600|Titillium+Web:400,600,700"
+          rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/foundation.min.css">
+    <link rel="stylesheet" href="assets/css/app.min.css">
+    <link rel="stylesheet" href="assets/icons/foundation-icons.min.css">
+
+</head>
+<body>
+
+{% include wrapped/header.html %}
+
+{{ content }}
+
+<div class="grid-x grid-padding-x" style="margin: 60px 0 60px 0">
+    <div class="large-12 medium-12 small-12 cell">
+        <hr>
+        <h5 style="color: #777"><i class="fi-at-sign"></i><b> Didn't find what you want?</b></h5>
+        <small style="display:block;margin: -10px 0 5px 0">get in touch</small>
+        <div style="display: flex;flex: 3">
+            <input class="search_at" title="explore at raise" placeholder="E-mail"
+                   type="email"
+                   style="margin: 0;border-radius: 4px 0 0 4px;border: 2px solid #8385D0;padding: 8px 10px;width:100%">
+            <button style="padding: 4px 40px;border: none;border-radius: 0 4px 4px 0;background: #8385D0;color: #fff;">
+                Send
+            </button>
+        </div>
+    </div>
+</div>
+
+{% include wrapped/footer.html %}
+
+<script src="assets/js/vendor/jquery.min.js"></script>
+<script src="assets/js/vendor/foundation.min.js"></script>
+<script src="assets/js/app/app.min.js"></script>
+
+
+</body>
