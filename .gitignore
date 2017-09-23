@@ -48,5 +48,3 @@ fabric.properties
 _site/
 .sass-cache/
 .jekyll-metadata
-
-Gemfile.lock
