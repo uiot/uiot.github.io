@@ -1,482 +1,471 @@
-<!doctype html>
-<html class="no-js" lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universal Internet of Things</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Code+Pro:300,600|Titillium+Web:400,600,700"
-          rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/foundation.min.css">
-    <link rel="stylesheet" href="assets/css/app.min.css">
-    <link rel="stylesheet" href="assets/icons/foundation-icons.min.css">
-</head>
-<body>
-<div class="off-canvas-wrapper">
-    <div class="off-canvas position-top" style="height: auto;" id="menu-mobile" data-off-canvas>
-        <center>
-            <ul class="vertical menu mobile-menu">
-                <li onclick="window.location.href='https://uiot.github.io/index.html'">about</li>
-                <li onclick="window.location.href='https://uiot.github.io/started.html'">get started</li>
-                <li onclick="window.location.href='http://docs.uiot.org'">docs</li>
-            </ul>
-        </center>
+---
+layout: clear
+title: Universal Internet of Things
+active: home
+---
+
+<div class="off-canvas position-top" style="height: auto;" id="menu-mobile" data-off-canvas>
+    <center>
+        <ul class="vertical menu mobile-menu">
+            <li onclick="window.location.href='https://uiot.github.io/index.html'">about</li>
+            <li onclick="window.location.href='https://uiot.github.io/started.html'">get started</li>
+            <li onclick="window.location.href='http://docs.uiot.org'">docs</li>
+        </ul>
+    </center>
+</div>
+<div class="off-canvas-content" data-off-canvas-content>
+    <div class="bg" style="margin-top: 20px">
+        <div class="float-left">
+            <img src="assets/svg/symbol-two.svg">
+            <span>uiot</span>
+        </div>
+        <div class="float-right hide-for-small-only">
+            <span onclick="window.location.href='https://uiot.github.io/index.html'">about</span>
+            <span onclick="window.location.href='https://uiot.github.io/started.html'">get started</span>
+            <span onclick="window.location.href='http://docs.uiot.org'">docs</span>
+        </div>
+        <div class="float-right show-for-small-only">
+            <span data-toggle="menu-mobile"><i class="fi-thumbnails"></i></span>
+        </div>
+        <br>
     </div>
-    <div class="off-canvas-content" data-off-canvas-content>
-        <div class="bg" style="margin-top: 20px">
-            <div class="float-left">
-                <img src="assets/svg/symbol-two.svg">
-                <span>uiot</span>
-            </div>
-            <div class="float-right hide-for-small-only">
-                <span onclick="window.location.href='https://uiot.github.io/index.html'">about</span>
-                <span onclick="window.location.href='https://uiot.github.io/started.html'">get started</span>
-                <span onclick="window.location.href='http://docs.uiot.org'">docs</span>
-            </div>
-            <div class="float-right show-for-small-only">
-                <span data-toggle="menu-mobile"><i class="fi-thumbnails"></i></span>
-            </div>
-            <br>
-        </div>
-        <div class="header-container" style="padding-top: 200px;">
-            <div class="grid-x grid-padding-x">
-                <div class="large-5 medium-5 small-12 cell">
-                    <h1 style="color: #3b4151;margin-left: 30px;margin-top: 80px"
-                        class="typed-animated hide-for-small-only">
-                        What's <b style="color:#8385D0">Universal Internet of Things?</b>
-                    </h1>
-                    <h1 style="color: #3b4151;font-size: 48px" class="show-for-small-only text-center">
-                        Connecting <b style="color:#8385D0">things</b> together.<br>
-                        <a href="./started.html">
-                            <button class="mega-button">get started</button>
-                        </a>
-                    </h1>
-                </div>
-                <div class="large-2 medium-1 hide-for-small-only cell">
-                    <br>
-                </div>
-                <div class="large-4 medium-5 hide-for-small-only cell">
-                    <img class="" src="assets/svg/symbol-three.svg" style="width: 300px;transform: rotate(-45deg);">
-                </div>
-            </div>
-        </div>
-        <div class="responsive-container" style="background: white">
-            <div class="grid-x grid-padding-x">
-                <div class="large-12 medium-12 small-12 cell">
-                    <center>
-                        <h3 class="section-title" style="font-weight: bold;color: #7d8492"><i style="color: #555" class="fi-zoom-in"></i> What
-                            we do
-                            here</h3>
-                        <small style="margin-top: -10px;display:block">What does UIoT deliver?</small>
-                    </center>
-                    <br>
-                </div>
-                <div class="large-4 medium-4 small-12 cell">
-                    <div class="callout box">
-                        <h5>RAISe</h5>
-                        <p>RAISe is a unique Internet of Things open middleware for managing devices, services and data.
-                            With full
-                            context-awareness support, it also includes social relationships, system visualization
-                            console, data confiability, clustering, and more.</p>
-                        <p>It's <b>scalable, big-data ready</b> and <b>open source</b>.</p>
-                    </div>
-                </div>
-                <div class="large-4 medium-4 small-12 cell">
-                    <div class="callout primary">
-                        <h5>DeviceOS</h5>
-                        <p>DeviceOS is a modularizable, hackable, micro Linux Kernel ready for Internet of Things.
-                            Campable of
-                            working with
-                            <b>80%</b> of the existing microcontrollers, it also supports <b>ZigBee, Wi-Fi, Bluetooth,
-                                Ethernet,
-                                MQTT and more.</b></p>
-                        <p>It's <b>lightweight</b> and <b>open source.</b></p>
-                    </div>
-                </div>
-                <div class="large-4 medium-4 small-12 cell">
-                    <div class="callout primary" style="background:#41444e;color: white">
-                        <h5 style="color:white">UIMS</h5>
-                        <p>UIMS represents the ultimate management system for Internet of Things networks, focused in
-                            user
-                            experience.
-                            It provides network node visualization, data insights,system overview, data visualization,
-                            network
-                            management and network confiability.</p>
-                        <p>It's <b>UX focused</b> and <b>open source.</b></p>
-                    </div>
-                </div>
-                <div class="large-4 medium-4 small-12 cell">
-                    <div class="callout primary">
-                        <h5>Gateway</h5>
-                        <p>The Internet of Things ready router operational system that aims data distribution,
-                            confiability
-                            and fast deliver of multiple complexed data to numerous networks or clients.</p>
-                        <p>It's <b>scalable, distributed</b> and <b>open source.</b></p>
-                    </div>
-                </div>
-                <div class="large-4 medium-4 small-12 cell">
-                    <div class="callout primary" style="background:#41444e;color: white">
-                        <h5 style="color:white">UIoT
-                            <small>academics</small>
-                        </h5>
-                        <p>Leading the science and academics industry with advanced papers, resumés and academic content
-                            that
-                            <b>aims for solving the biggest, relevant</b> Internet of Things problems.</p>
-                        <p>It's <b>for everyone.</b></p>
-                    </div>
-                </div>
-                <div class="large-4 medium-4 small-12 cell">
-                    <div class="callout box">
-                        <h5>UIoT
-                            <small style="color: #41444e;">intelliX</small>
-                        </h5>
-                        <p>An "orange box" of algorithms, that delivers most advanced <b>machine learning, data mining
-                            and
-                            business intelligence</b> algorithms for managing Internet of Things networks.</p>
-                        <p>It's <b>intelligent, capable</b> and <b>open source.</b></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="responsive-container">
-            <div class="grid-x grid-padding-x">
-                <div class="large-12 medium-12 small-12 cell">
-                    <center>
-                        <h3 class="section-title" style="font-weight: bold;color: #8385D0"><i style="color: #555"
-                                                                        class="fi-social-android"></i>
-                            Technologies?</h3>
-                        <small style="margin-top: -10px;display:block">How UIoT deals with Internet of Things.</small>
-                    </center>
-                    <br>
-                </div>
-                <div class="large-3 medium-3 small-6 cell">
-                    <h5 style="color: #3b4151"><i class="fi-bluetooth" style="font-size: 64px;color: #3b4151"></i>
-                        Connectivity
-                    </h5>
-                    <p style="color: #7d8492"><b>UIoT</b> uses multiple connectivity technologies in many softwares,
-                        like <b>Bluetooth,
-                            Zigbee, Wireless, MQTT, 433Mhz, Ethernet and more.</b></p>
-                </div>
-                <div class="large-3 medium-3 small-6 cell">
-                    <h5 style="color: #3b4151"><i class="fi-social-github" style="font-size: 64px;color: #3b4151"></i>
-                        Open
-                        Source
-                    </h5>
-                    <p style="color: #7d8492">We're open source and community focused. We think that
-                        by delivering things focused in the community, we can create a <b>smarter world.</b></p>
-                </div>
-                <div class="large-3 medium-3 small-6 cell">
-                    <h5 style="color: #3b4151"><i class="fi-universal-access"
-                                                  style="font-size: 64px;color: #3b4151"></i>
-                        Universal
-                    </h5>
-                    <p style="color: #7d8492">We deliver software and hardware aiming on the maximum set of devices,
-                        hardware
-                        specs, microcontrollers and operational systems possible.
-                    </p>
-                </div>
-                <div class="large-3 medium-3 small-6 cell">
-                    <h5 style="color: #3b4151"><i class="fi-social-dropbox" style="font-size: 64px;color: #3b4151"></i>
-                        Packaged
-                    </h5>
-                    <p style="color: #7d8492">We create <b>use cases</b> that are directed to solve from the simplest to
-                        the
-                        most complex daily
-                        problem, creating a big database of solutions.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="responsive-container" style="background: #6f71bc; color: white">
-            <div class="grid-x grid-padding-x">
-                <div class="large-12 medium-12 small-12 cell">
-                    <h3 class="section-title">Universal, <b>again.</b></h3>
-                    <p style="margin-top: -10px">UIoT, means <b>Universal Internet of Things.</b></p>
-                </div>
-                <div class="large-4 medium-6 small-12 cell">
-                    <div class="callout primary" style="background: white; color: #3b4151">
-                        <h5>What does Universal Internet of Things mean?</h5>
-                        <p>It means being an open source project, focused on creating the <b>very first</b> Internet of
-                            Things
-                            middleware, platform and architecture capable of delivering software and hardware that
-                            serves
-                            as many set of devices as possible, and the maximum set of different technologies too.
-                            <br><br>
-                            <small>We are UIoT!</small>
-                        </p>
-                    </div>
-                </div>
-                <div class="large-4 medium-6 small-12 cell">
-                    <div class="callout primary" style="background: white; color: #3b4151">
-                        <h5>Does it really work?</h5>
-                        <p>We have been identifying <s>enormous</s> sets of complex problems that resides in our
-                            everyday life
-                            and
-                            therefore, that we need to solve. We're in constant progress, going as far as possible in a
-                            daily
-                            basis.
-                            Providing intelligent systems and aims to make devices and clients
-                            real smart objects is <b>hard</b>, but we won't give up.
-                            <br>
-                        </p>
-                    </div>
-                </div>
-                <div class="large-4 medium-6 small-12 cell">
-                    <div class="callout code">
-                        <h5 style="color: white">So, is being Universal possible?</h5>
-                        <!--<small style="margin-bottom: 22px;margin-top: -10px;display: block">Yes, it's totally possible.</small>-->
-                        <p>A real <b>Universal Internet of Things</b> platform is far from
-                            existence, but academically speaking,
-                            we're the nearest point out here. We're advancing with math, physics, software and
-                            electronic engineering. We know it's not going to be
-                            an easy-ride, but we strongly believe that someday the IoT will be universal.
-                            <br>
-                            <small>but we don't give up.</small>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="responsive-container" style="margin-top: 40px">
-            <div class="grid-x grid-padding-x">
-                <div class="large-12 medium-12 small-12 cell">
-                    <center>
-                        <h3 class="section-title" style="font-weight: bold;color: #d3dae2"><i style="color: #555" class="fi-pencil"></i>
-                            Latest from
-                            our Blog</h3>
-                        <small style="margin-top: -10px;display:block">Pick a cup of coffee and enjoy what our team has
-                            written
-                            about
-                            IoT.
-                        </small>
-                    </center>
-                    <br>
-                </div>
-                <div class="large-4 medium-4 small-12 cell">
-                    <div class="callout primary">
-                        <small><b>#1</b></small>
-                        <h5>New look, new feel, same passion.</h5>
-                        <b class="see">Summary</b>
-                        <div class="callout code" style="background: white; color: #3b4151">
-                            Lorem ipsum dolor sit amet, sit ad enim populo malorum. Soluta urbanitas vix ea. Omnis
-                            cotidieque
-                            sed eu, justo summo sit id. Modo nibh mei ei, ea scaevola hendrerit referrentur pro.
-                        </div>
-                        <small style="display:block;margin: -10px 0">
-                            Category: <b>Updates</b>, By: <b>Admin</b>, at: <b>17/07/2017</b>
-                        </small>
-                        <br>
-                        <a class="see-button">Read more</a>
-                    </div>
-                </div>
-                <div class="large-4 medium-4 small-12 cell">
-                    <div class="callout primary">
-                        <small><b>#1</b></small>
-                        <h5>New look, new feel, same passion.</h5>
-                        <b class="see">Summary</b>
-                        <div class="callout code" style="background: white; color: #3b4151">
-                            Lorem ipsum dolor sit amet, sit ad enim populo malorum. Soluta urbanitas vix ea. Omnis
-                            cotidieque
-                            sed eu, justo summo sit id. Modo nibh mei ei, ea scaevola hendrerit referrentur pro.
-                        </div>
-                        <small style="display:block;margin: -10px 0">
-                            Category: <b>Updates</b>, By: <b>Admin</b>, at: <b>17/07/2017</b>
-                        </small>
-                        <br>
-                        <a class="see-button">Read more</a>
-                    </div>
-                </div>
-                <div class="large-4 medium-4 small-12 cell">
-                    <div class="callout primary">
-                        <small><b>#1</b></small>
-                        <h5>New look, new feel, same passion.</h5>
-                        <b class="see">Summary</b>
-                        <div class="callout code" style="background: white; color: #3b4151">
-                            Lorem ipsum dolor sit amet, sit ad enim populo malorum. Soluta urbanitas vix ea. Omnis
-                            cotidieque
-                            sed eu, justo summo sit id. Modo nibh mei ei, ea scaevola hendrerit referrentur pro.
-                        </div>
-                        <small style="display:block;margin: -10px 0">
-                            Category: <b>Updates</b>, By: <b>Admin</b>, at: <b>17/07/2017</b>
-                        </small>
-                        <br>
-                        <a class="see-button">Read more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="responsive-container" style="margin-top: 80px">
-            <div class="grid-x grid-padding-x">
-                <div class="large-12 medium-12 small-12 cell">
-                    <hr>
-                    <br>
-                </div>
-                <div class="large-3 medium-3 small-6 cell">
-                    <h4 style="color: #555"><b>Ready to begin?</b></h4>
-                    <small style="color: #cacaca;display: block; margin-top: -10px">And explore this waste universe?
-                    </small>
-                </div>
-                <div class="large-6 medium-6 hide-for-small-only cell">
-                    <br>
-                </div>
-                <div class="large-3 medium-3 small-6 cell">
+    <div class="header-container" style="padding-top: 200px;">
+        <div class="grid-x grid-padding-x">
+            <div class="large-5 medium-5 small-12 cell">
+                <h1 style="color: #3b4151;margin-left: 30px;margin-top: 80px"
+                    class="typed-animated hide-for-small-only">
+                    What's <b style="color:#8385D0">Universal Internet of Things?</b>
+                </h1>
+                <h1 style="color: #3b4151;font-size: 48px" class="show-for-small-only text-center">
+                    Connecting <b style="color:#8385D0">things</b> together.<br>
                     <a href="./started.html">
-                        <button class="mega-button float-right">get started</button>
+                        <button class="mega-button">get started</button>
                     </a>
+                </h1>
+            </div>
+            <div class="large-2 medium-1 hide-for-small-only cell">
+                <br>
+            </div>
+            <div class="large-4 medium-5 hide-for-small-only cell">
+                <img class="" src="assets/svg/symbol-three.svg" style="width: 300px;transform: rotate(-45deg);">
+            </div>
+        </div>
+    </div>
+    <div class="responsive-container" style="background: white">
+        <div class="grid-x grid-padding-x">
+            <div class="large-12 medium-12 small-12 cell">
+                <center>
+                    <h3 class="section-title" style="font-weight: bold;color: #7d8492"><i style="color: #555" class="fi-zoom-in"></i> What
+                        we do
+                        here</h3>
+                    <small style="margin-top: -10px;display:block">What does UIoT deliver?</small>
+                </center>
+                <br>
+            </div>
+            <div class="large-4 medium-4 small-12 cell">
+                <div class="callout box">
+                    <h5>RAISe</h5>
+                    <p>RAISe is a unique Internet of Things open middleware for managing devices, services and data.
+                        With full
+                        context-awareness support, it also includes social relationships, system visualization
+                        console, data confiability, clustering, and more.</p>
+                    <p>It's <b>scalable, big-data ready</b> and <b>open source</b>.</p>
                 </div>
-                <div class="large-12 medium-12 small-12 cell">
-                    <center><h3 class="section-title" style="color: #41444e">Get started now, and explore UIoT.</h3></center>
-                    <center>
-                        <p style="color: #41444e;display: block;margin-top: -10px">
-                            We deliver many softwares and resources that can be really useful to you. Why don't you
-                            create your
-                            first <b>IoT</b>
-                            network today?
-                        </p>
-                        <span class="method success">Read Docs</span>
-                        <span class="method info">Explore Marketplace</span>
-                        <span class="method warning">Access the GitHub</span>
-                        <span class="method alert">Download now!</span>
-                    </center>
+            </div>
+            <div class="large-4 medium-4 small-12 cell">
+                <div class="callout primary">
+                    <h5>DeviceOS</h5>
+                    <p>DeviceOS is a modularizable, hackable, micro Linux Kernel ready for Internet of Things.
+                        Campable of
+                        working with
+                        <b>80%</b> of the existing microcontrollers, it also supports <b>ZigBee, Wi-Fi, Bluetooth,
+                            Ethernet,
+                            MQTT and more.</b></p>
+                    <p>It's <b>lightweight</b> and <b>open source.</b></p>
                 </div>
-                <div class="large-12 medium-12 small-12 cell">
-                    <br><br>
+            </div>
+            <div class="large-4 medium-4 small-12 cell">
+                <div class="callout primary" style="background:#41444e;color: white">
+                    <h5 style="color:white">UIMS</h5>
+                    <p>UIMS represents the ultimate management system for Internet of Things networks, focused in
+                        user
+                        experience.
+                        It provides network node visualization, data insights,system overview, data visualization,
+                        network
+                        management and network confiability.</p>
+                    <p>It's <b>UX focused</b> and <b>open source.</b></p>
+                </div>
+            </div>
+            <div class="large-4 medium-4 small-12 cell">
+                <div class="callout primary">
+                    <h5>Gateway</h5>
+                    <p>The Internet of Things ready router operational system that aims data distribution,
+                        confiability
+                        and fast deliver of multiple complexed data to numerous networks or clients.</p>
+                    <p>It's <b>scalable, distributed</b> and <b>open source.</b></p>
+                </div>
+            </div>
+            <div class="large-4 medium-4 small-12 cell">
+                <div class="callout primary" style="background:#41444e;color: white">
+                    <h5 style="color:white">UIoT
+                        <small>academics</small>
+                    </h5>
+                    <p>Leading the science and academics industry with advanced papers, resumés and academic content
+                        that
+                        <b>aims for solving the biggest, relevant</b> Internet of Things problems.</p>
+                    <p>It's <b>for everyone.</b></p>
+                </div>
+            </div>
+            <div class="large-4 medium-4 small-12 cell">
+                <div class="callout box">
+                    <h5>UIoT
+                        <small style="color: #41444e;">intelliX</small>
+                    </h5>
+                    <p>An "orange box" of algorithms, that delivers most advanced <b>machine learning, data mining
+                        and
+                        business intelligence</b> algorithms for managing Internet of Things networks.</p>
+                    <p>It's <b>intelligent, capable</b> and <b>open source.</b></p>
                 </div>
             </div>
         </div>
-        <div id="js-heightControl" style="height: 0;">&nbsp;</div>
-        <div class="grid-x">
+    </div>
+    <div class="responsive-container">
+        <div class="grid-x grid-padding-x">
             <div class="large-12 medium-12 small-12 cell">
-                <div class="footer">
-                    <div class="grid-x grid-padding-x">
-                        <div class="large-1 medium-2 hide-for-small-only cell">
-                            <b>We</b>
+                <center>
+                    <h3 class="section-title" style="font-weight: bold;color: #8385D0"><i style="color: #555"
+                                                                                          class="fi-social-android"></i>
+                        Technologies?</h3>
+                    <small style="margin-top: -10px;display:block">How UIoT deals with Internet of Things.</small>
+                </center>
+                <br>
+            </div>
+            <div class="large-3 medium-3 small-6 cell">
+                <h5 style="color: #3b4151"><i class="fi-bluetooth" style="font-size: 64px;color: #3b4151"></i>
+                    Connectivity
+                </h5>
+                <p style="color: #7d8492"><b>UIoT</b> uses multiple connectivity technologies in many softwares,
+                    like <b>Bluetooth,
+                        Zigbee, Wireless, MQTT, 433Mhz, Ethernet and more.</b></p>
+            </div>
+            <div class="large-3 medium-3 small-6 cell">
+                <h5 style="color: #3b4151"><i class="fi-social-github" style="font-size: 64px;color: #3b4151"></i>
+                    Open
+                    Source
+                </h5>
+                <p style="color: #7d8492">We're open source and community focused. We think that
+                    by delivering things focused in the community, we can create a <b>smarter world.</b></p>
+            </div>
+            <div class="large-3 medium-3 small-6 cell">
+                <h5 style="color: #3b4151"><i class="fi-universal-access"
+                                              style="font-size: 64px;color: #3b4151"></i>
+                    Universal
+                </h5>
+                <p style="color: #7d8492">We deliver software and hardware aiming on the maximum set of devices,
+                    hardware
+                    specs, microcontrollers and operational systems possible.
+                </p>
+            </div>
+            <div class="large-3 medium-3 small-6 cell">
+                <h5 style="color: #3b4151"><i class="fi-social-dropbox" style="font-size: 64px;color: #3b4151"></i>
+                    Packaged
+                </h5>
+                <p style="color: #7d8492">We create <b>use cases</b> that are directed to solve from the simplest to
+                    the
+                    most complex daily
+                    problem, creating a big database of solutions.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="responsive-container" style="background: #6f71bc; color: white">
+        <div class="grid-x grid-padding-x">
+            <div class="large-12 medium-12 small-12 cell">
+                <h3 class="section-title">Universal, <b>again.</b></h3>
+                <p style="margin-top: -10px">UIoT, means <b>Universal Internet of Things.</b></p>
+            </div>
+            <div class="large-4 medium-6 small-12 cell">
+                <div class="callout primary" style="background: white; color: #3b4151">
+                    <h5>What does Universal Internet of Things mean?</h5>
+                    <p>It means being an open source project, focused on creating the <b>very first</b> Internet of
+                        Things
+                        middleware, platform and architecture capable of delivering software and hardware that
+                        serves
+                        as many set of devices as possible, and the maximum set of different technologies too.
+                        <br><br>
+                        <small>We are UIoT!</small>
+                    </p>
+                </div>
+            </div>
+            <div class="large-4 medium-6 small-12 cell">
+                <div class="callout primary" style="background: white; color: #3b4151">
+                    <h5>Does it really work?</h5>
+                    <p>We have been identifying <s>enormous</s> sets of complex problems that resides in our
+                        everyday life
+                        and
+                        therefore, that we need to solve. We're in constant progress, going as far as possible in a
+                        daily
+                        basis.
+                        Providing intelligent systems and aims to make devices and clients
+                        real smart objects is <b>hard</b>, but we won't give up.
+                        <br>
+                    </p>
+                </div>
+            </div>
+            <div class="large-4 medium-6 small-12 cell">
+                <div class="callout code">
+                    <h5 style="color: white">So, is being Universal possible?</h5>
+                    <!--<small style="margin-bottom: 22px;margin-top: -10px;display: block">Yes, it's totally possible.</small>-->
+                    <p>A real <b>Universal Internet of Things</b> platform is far from
+                        existence, but academically speaking,
+                        we're the nearest point out here. We're advancing with math, physics, software and
+                        electronic engineering. We know it's not going to be
+                        an easy-ride, but we strongly believe that someday the IoT will be universal.
+                        <br>
+                        <small>but we don't give up.</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="responsive-container" style="margin-top: 40px">
+        <div class="grid-x grid-padding-x">
+            <div class="large-12 medium-12 small-12 cell">
+                <center>
+                    <h3 class="section-title" style="font-weight: bold;color: #d3dae2"><i style="color: #555" class="fi-pencil"></i>
+                        Latest from
+                        our Blog</h3>
+                    <small style="margin-top: -10px;display:block">Pick a cup of coffee and enjoy what our team has
+                        written
+                        about
+                        IoT.
+                    </small>
+                </center>
+                <br>
+            </div>
+            <div class="large-4 medium-4 small-12 cell">
+                <div class="callout primary">
+                    <small><b>#1</b></small>
+                    <h5>New look, new feel, same passion.</h5>
+                    <b class="see">Summary</b>
+                    <div class="callout code" style="background: white; color: #3b4151">
+                        Lorem ipsum dolor sit amet, sit ad enim populo malorum. Soluta urbanitas vix ea. Omnis
+                        cotidieque
+                        sed eu, justo summo sit id. Modo nibh mei ei, ea scaevola hendrerit referrentur pro.
+                    </div>
+                    <small style="display:block;margin: -10px 0">
+                        Category: <b>Updates</b>, By: <b>Admin</b>, at: <b>17/07/2017</b>
+                    </small>
+                    <br>
+                    <a class="see-button">Read more</a>
+                </div>
+            </div>
+            <div class="large-4 medium-4 small-12 cell">
+                <div class="callout primary">
+                    <small><b>#1</b></small>
+                    <h5>New look, new feel, same passion.</h5>
+                    <b class="see">Summary</b>
+                    <div class="callout code" style="background: white; color: #3b4151">
+                        Lorem ipsum dolor sit amet, sit ad enim populo malorum. Soluta urbanitas vix ea. Omnis
+                        cotidieque
+                        sed eu, justo summo sit id. Modo nibh mei ei, ea scaevola hendrerit referrentur pro.
+                    </div>
+                    <small style="display:block;margin: -10px 0">
+                        Category: <b>Updates</b>, By: <b>Admin</b>, at: <b>17/07/2017</b>
+                    </small>
+                    <br>
+                    <a class="see-button">Read more</a>
+                </div>
+            </div>
+            <div class="large-4 medium-4 small-12 cell">
+                <div class="callout primary">
+                    <small><b>#1</b></small>
+                    <h5>New look, new feel, same passion.</h5>
+                    <b class="see">Summary</b>
+                    <div class="callout code" style="background: white; color: #3b4151">
+                        Lorem ipsum dolor sit amet, sit ad enim populo malorum. Soluta urbanitas vix ea. Omnis
+                        cotidieque
+                        sed eu, justo summo sit id. Modo nibh mei ei, ea scaevola hendrerit referrentur pro.
+                    </div>
+                    <small style="display:block;margin: -10px 0">
+                        Category: <b>Updates</b>, By: <b>Admin</b>, at: <b>17/07/2017</b>
+                    </small>
+                    <br>
+                    <a class="see-button">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="responsive-container" style="margin-top: 80px">
+        <div class="grid-x grid-padding-x">
+            <div class="large-12 medium-12 small-12 cell">
+                <hr>
+                <br>
+            </div>
+            <div class="large-3 medium-3 small-6 cell">
+                <h4 style="color: #555"><b>Ready to begin?</b></h4>
+                <small style="color: #cacaca;display: block; margin-top: -10px">And explore this waste universe?
+                </small>
+            </div>
+            <div class="large-6 medium-6 hide-for-small-only cell">
+                <br>
+            </div>
+            <div class="large-3 medium-3 small-6 cell">
+                <a href="./started.html">
+                    <button class="mega-button float-right">get started</button>
+                </a>
+            </div>
+            <div class="large-12 medium-12 small-12 cell">
+                <center><h3 class="section-title" style="color: #41444e">Get started now, and explore UIoT.</h3></center>
+                <center>
+                    <p style="color: #41444e;display: block;margin-top: -10px">
+                        We deliver many softwares and resources that can be really useful to you. Why don't you
+                        create your
+                        first <b>IoT</b>
+                        network today?
+                    </p>
+                    <span class="method success">Read Docs</span>
+                    <span class="method info">Explore Marketplace</span>
+                    <span class="method warning">Access the GitHub</span>
+                    <span class="method alert">Download now!</span>
+                </center>
+            </div>
+            <div class="large-12 medium-12 small-12 cell">
+                <br><br>
+            </div>
+        </div>
+    </div>
+    <div id="js-heightControl" style="height: 0;">&nbsp;</div>
+    <div class="grid-x">
+        <div class="large-12 medium-12 small-12 cell">
+            <div class="footer">
+                <div class="grid-x grid-padding-x">
+                    <div class="large-1 medium-2 hide-for-small-only cell">
+                        <b>We</b>
+                        <ul style="list-style: none;margin-left:0">
+                            <li>
+                                <small>About</small>
+                            </li>
+                            <li>
+                                <small>What we do</small>
+                            </li>
+                            <li>
+                                <small>Join us</small>
+                            </li>
+                            <li>
+                                <small>Partners</small>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="large-1 medium-2 hide-for-small-only cell">
+                        <b>About</b>
+                        <ul style="list-style: none;margin-left:0">
+                            <li>
+                                <small>Architecture</small>
+                            </li>
+                            <li>
+                                <small>Get Started</small>
+                            </li>
+                            <li>
+                                <small>Use Cases</small>
+                            </li>
+                            <li>
+                                <small>Examples</small>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="large-1 medium-2 hide-for-small-only cell">
+                        <b>Learn</b>
+                        <ul style="list-style: none;margin-left:0">
+                            <li>
+                                <small>Github</small>
+                            </li>
+                            <li>
+                                <small>Docs</small>
+                            </li>
+                            <li>
+                                <small>API</small>
+                            </li>
+                            <li>
+                                <small>Use Cases</small>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="large-1 medium-2 hide-for-small-only cell">
+                        <b>Software</b>
+                        <ul style="list-style: none;margin-left:0">
+                            <li>
+                                <small>RAISe</small>
+                            </li>
+                            <li>
+                                <small>UIMS</small>
+                            </li>
+                            <li>
+                                <small>Gateway</small>
+                            </li>
+                            <li>
+                                <small>DeviceOS ®</small>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="large-2 medium-3 hide-for-small-only cell">
+                        <b>Devices</b>
+                        <ul style="list-style: none;margin-left:0">
+                            <li>
+                                <small>UIoT LEGO ®</small>
+                            </li>
+                            <li>
+                                <small>Use Cases</small>
+                            </li>
+                            <li>
+                                <small>Future Projects</small>
+                            </li>
+                            <li>
+                                <small>About</small>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="large-4 medium-4 cell">
+                        <br>
+                    </div>
+                    <div class="large-2 medium-2 show-for-large-only cell">
+                        <div class="callout primary">
+                            <h5>Social
+                                <small>networks</small>
+                            </h5>
                             <ul style="list-style: none;margin-left:0">
-                                <li>
-                                    <small>About</small>
+                                <li><i class="fi-social-facebook"></i>
+                                    <small>Facebook</small>
                                 </li>
-                                <li>
-                                    <small>What we do</small>
+                                <li><i class="fi-social-github"></i>
+                                    <small>GitHub</small>
                                 </li>
-                                <li>
-                                    <small>Join us</small>
-                                </li>
-                                <li>
-                                    <small>Partners</small>
+                                <li><i class="fi-social-youtube"></i>
+                                    <small>Youtube</small>
                                 </li>
                             </ul>
-                        </div>
-                        <div class="large-1 medium-2 hide-for-small-only cell">
-                            <b>About</b>
-                            <ul style="list-style: none;margin-left:0">
-                                <li>
-                                    <small>Architecture</small>
-                                </li>
-                                <li>
-                                    <small>Get Started</small>
-                                </li>
-                                <li>
-                                    <small>Use Cases</small>
-                                </li>
-                                <li>
-                                    <small>Examples</small>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="large-1 medium-2 hide-for-small-only cell">
-                            <b>Learn</b>
-                            <ul style="list-style: none;margin-left:0">
-                                <li>
-                                    <small>Github</small>
-                                </li>
-                                <li>
-                                    <small>Docs</small>
-                                </li>
-                                <li>
-                                    <small>API</small>
-                                </li>
-                                <li>
-                                    <small>Use Cases</small>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="large-1 medium-2 hide-for-small-only cell">
-                            <b>Software</b>
-                            <ul style="list-style: none;margin-left:0">
-                                <li>
-                                    <small>RAISe</small>
-                                </li>
-                                <li>
-                                    <small>UIMS</small>
-                                </li>
-                                <li>
-                                    <small>Gateway</small>
-                                </li>
-                                <li>
-                                    <small>DeviceOS ®</small>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="large-2 medium-3 hide-for-small-only cell">
-                            <b>Devices</b>
-                            <ul style="list-style: none;margin-left:0">
-                                <li>
-                                    <small>UIoT LEGO ®</small>
-                                </li>
-                                <li>
-                                    <small>Use Cases</small>
-                                </li>
-                                <li>
-                                    <small>Future Projects</small>
-                                </li>
-                                <li>
-                                    <small>About</small>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="large-4 medium-4 cell">
-                            <br>
-                        </div>
-                        <div class="large-2 medium-2 show-for-large-only cell">
-                            <div class="callout primary">
-                                <h5>Social
-                                    <small>networks</small>
-                                </h5>
-                                <ul style="list-style: none;margin-left:0">
-                                    <li><i class="fi-social-facebook"></i>
-                                        <small>Facebook</small>
-                                    </li>
-                                    <li><i class="fi-social-github"></i>
-                                        <small>GitHub</small>
-                                    </li>
-                                    <li><i class="fi-social-youtube"></i>
-                                        <small>Youtube</small>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
-                    <div class="grid-x">
-                        <div class="large-12 medium-12 small-12 cell hide-for-small-only">
-                            <div class="copyright">
-                                <b>© 2017 Universal Internet of Things</b><br>
-                                <small style="display:block;margin-top: -5px">this project is maintained by the <a
-                                        href="http://www.unb.br">University of Brasília</a>.
-                                </small>
-                            </div>
-                            <img src="assets/svg/symbol-two.svg">
+                </div>
+                <div class="grid-x">
+                    <div class="large-12 medium-12 small-12 cell hide-for-small-only">
+                        <div class="copyright">
+                            <b>© 2017 Universal Internet of Things</b><br>
+                            <small style="display:block;margin-top: -5px">this project is maintained by the <a
+                                    href="http://www.unb.br">University of Brasília</a>.
+                            </small>
                         </div>
-                        <div class="small-12 cell show-for-small-only">
-                            <center>
-                                <b>&copy;2017 Universal Internet of Things</b><br>
-                                <small style="display:block;margin-top: -5px">this project is maintained by the <a
-                                        href="http://www.unb.br">University of Brasília</a>.
-                                </small>
-                                <img style="float: none;margin: 60px 0 0 -15px;width: 100px"
-                                     src="assets/svg/symbol-two.svg">
-                            </center>
-                        </div>
+                        <img src="assets/svg/symbol-two.svg">
+                    </div>
+                    <div class="small-12 cell show-for-small-only">
+                        <center>
+                            <b>&copy;2017 Universal Internet of Things</b><br>
+                            <small style="display:block;margin-top: -5px">this project is maintained by the <a
+                                    href="http://www.unb.br">University of Brasília</a>.
+                            </small>
+                            <img style="float: none;margin: 60px 0 0 -15px;width: 100px"
+                                 src="assets/svg/symbol-two.svg">
+                        </center>
                     </div>
                 </div>
             </div>
@@ -485,8 +474,8 @@
 </div>
 
 
+
 <script src="assets/js/vendor/jquery.min.js"></script>
 <script src="assets/js/vendor/typed.min.js"></script>
 <script src="assets/js/vendor/foundation.min.js"></script>
 <script src="assets/js/app/app.min.js"></script>
-</body>
