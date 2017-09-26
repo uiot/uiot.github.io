@@ -483,6 +483,5 @@ to {
 }
 
 .mega-button.hold-on { 
-    bottom: 16px;
-    position: absolute;
+    float: right;
 }
