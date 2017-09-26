@@ -1,25 +1,28 @@
+---
+layout: default
+title: Universal Internet of Things
+---
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universal Internet of Things</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Code+Pro:300,600|Titillium+Web:400,600,700"
-          rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/foundation.min.css">
-    <link rel="stylesheet" href="assets/css/app.min.css">
-    <link rel="stylesheet" href="assets/icons/foundation-icons.min.css">
+    <title>{{ page.title }}</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | absolute_url }}"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Code+Pro:300,600|Titillium+Web:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/foundation.min.css' | absolute_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/app.css' | absolute_url }}">
+    <link rel="stylesheet" href="{{ '/assets/icons/foundation-icons.min.css' | absolute_url }}">
 </head>
 <body>
 <div class="off-canvas-wrapper">
     <div class="off-canvas position-top" style="height: auto;" id="menu-mobile" data-off-canvas>
         <center>
             <ul class="vertical menu mobile-menu">
-                <li onclick="window.location.href='https://uiot.github.io/index.html'">about</li>
-                <li onclick="window.location.href='https://uiot.github.io/started.html'">get started</li>
-                <li onclick="window.location.href='http://docs.uiot.org'">docs</li>
+                <li onclick="openPage('{{ '/index' | absolute_url }}')">about</li>
+                <li onclick="openPage('{{ '/started' | absolute_url }}')">get started</li>
+                <li onclick="openPage('http://docs.uiot.org')">docs</li>
             </ul>
         </center>
     </div>
@@ -30,9 +33,9 @@
                 <span>uiot</span>
             </div>
             <div class="float-right hide-for-small-only">
-                <span onclick="window.location.href='https://uiot.github.io/index.html'">about</span>
-                <span onclick="window.location.href='https://uiot.github.io/started.html'">get started</span>
-                <span onclick="window.location.href='http://docs.uiot.org'">docs</span>
+                <span onclick="openPage('{{ '/index' | absolute_url }}')">about</span>
+                <span onclick="openPage('{{ '/started' | absolute_url }}')">get started</span>
+                <span onclick="openPage('http://docs.uiot.org')">docs</span>
             </div>
             <div class="float-right show-for-small-only">
                 <span data-toggle="menu-mobile"><i class="fi-thumbnails"></i></span>
@@ -62,10 +65,12 @@
             </div>
         </div>
         <div class="responsive-container" style="background: white">
-            <div class="grid-x grid-padding-x">
+            <div class="grid-x grid-padding-x" data-equalizer data-equalize-on="medium">
                 <div class="large-12 medium-12 small-12 cell">
                     <center>
-                        <h3 class="section-title" style="font-weight: bold;color: #7d8492"><i style="color: #555" class="fi-zoom-in"></i> What
+                        <h3 class="section-title" style="font-weight: bold;color: #7d8492"><i style="color: #555"
+                                                                                              class="fi-zoom-in"></i>
+                            What
                             we do
                             here</h3>
                         <small style="margin-top: -10px;display:block">What does UIoT deliver?</small>
@@ -73,7 +78,7 @@
                     <br>
                 </div>
                 <div class="large-4 medium-4 small-12 cell">
-                    <div class="callout box">
+                    <div class="callout box" data-equalizer-watch>
                         <h5>RAISe</h5>
                         <p>RAISe is a unique Internet of Things open middleware for managing devices, services and data.
                             With full
@@ -83,7 +88,7 @@
                     </div>
                 </div>
                 <div class="large-4 medium-4 small-12 cell">
-                    <div class="callout primary">
+                    <div class="callout primary" data-equalizer-watch>
                         <h5>DeviceOS</h5>
                         <p>DeviceOS is a modularizable, hackable, micro Linux Kernel ready for Internet of Things.
                             Campable of
@@ -95,7 +100,7 @@
                     </div>
                 </div>
                 <div class="large-4 medium-4 small-12 cell">
-                    <div class="callout primary" style="background:#41444e;color: white">
+                    <div class="callout primary" style="background:#41444e;color: white" data-equalizer-watch>
                         <h5 style="color:white">UIMS</h5>
                         <p>UIMS represents the ultimate management system for Internet of Things networks, focused in
                             user
@@ -106,8 +111,10 @@
                         <p>It's <b>UX focused</b> and <b>open source.</b></p>
                     </div>
                 </div>
+            </div>
+            <div class="grid-x grid-padding-x" data-equalizer data-equalize-on="medium">
                 <div class="large-4 medium-4 small-12 cell">
-                    <div class="callout primary">
+                    <div class="callout primary" data-equalizer-watch>
                         <h5>Gateway</h5>
                         <p>The Internet of Things ready router operational system that aims data distribution,
                             confiability
@@ -116,7 +123,7 @@
                     </div>
                 </div>
                 <div class="large-4 medium-4 small-12 cell">
-                    <div class="callout primary" style="background:#41444e;color: white">
+                    <div class="callout primary" style="background:#41444e;color: white" data-equalizer-watch>
                         <h5 style="color:white">UIoT
                             <small>academics</small>
                         </h5>
@@ -127,7 +134,7 @@
                     </div>
                 </div>
                 <div class="large-4 medium-4 small-12 cell">
-                    <div class="callout box">
+                    <div class="callout box" data-equalizer-watch>
                         <h5>UIoT
                             <small style="color: #41444e;">intelliX</small>
                         </h5>
@@ -143,8 +150,8 @@
             <div class="grid-x grid-padding-x">
                 <div class="large-12 medium-12 small-12 cell">
                     <center>
-                        <h3 class="section-title" style="font-weight: bold;color: #8385D0"><i style="color: #555"
-                                                                        class="fi-social-android"></i>
+                        <h3 class="section-title" style="font-weight: bold;color: #8385D0">
+                            <i style="color: #555" class="fi-social-android"></i>
                             Technologies?</h3>
                         <small style="margin-top: -10px;display:block">How UIoT deals with Internet of Things.</small>
                     </center>
@@ -167,8 +174,8 @@
                         by delivering things focused in the community, we can create a <b>smarter world.</b></p>
                 </div>
                 <div class="large-3 medium-3 small-6 cell">
-                    <h5 style="color: #3b4151"><i class="fi-universal-access"
-                                                  style="font-size: 64px;color: #3b4151"></i>
+                    <h5 style="color: #3b4151">
+                        <i class="fi-universal-access" style="font-size: 64px;color: #3b4151"></i>
                         Universal
                     </h5>
                     <p style="color: #7d8492">We deliver software and hardware aiming on the maximum set of devices,
@@ -189,26 +196,24 @@
             </div>
         </div>
         <div class="responsive-container" style="background: #6f71bc; color: white">
-            <div class="grid-x grid-padding-x">
+            <div class="grid-x grid-padding-x" data-equalizer data-equalize-on="medium">
                 <div class="large-12 medium-12 small-12 cell">
                     <h3 class="section-title">Universal, <b>again.</b></h3>
                     <p style="margin-top: -10px">UIoT, means <b>Universal Internet of Things.</b></p>
                 </div>
                 <div class="large-4 medium-6 small-12 cell">
-                    <div class="callout primary" style="background: white; color: #3b4151">
-                        <h5>What does Universal Internet of Things mean?</h5>
+                    <div class="callout primary" style="background: white; color: #3b4151" data-equalizer-watch>
+                        <h5>What does UIoT mean?</h5>
                         <p>It means being an open source project, focused on creating the <b>very first</b> Internet of
                             Things
                             middleware, platform and architecture capable of delivering software and hardware that
                             serves
                             as many set of devices as possible, and the maximum set of different technologies too.
-                            <br><br>
-                            <small>We are UIoT!</small>
                         </p>
                     </div>
                 </div>
                 <div class="large-4 medium-6 small-12 cell">
-                    <div class="callout primary" style="background: white; color: #3b4151">
+                    <div class="callout primary" style="background: white; color: #3b4151" data-equalizer-watch>
                         <h5>Does it really work?</h5>
                         <p>We have been identifying <s>enormous</s> sets of complex problems that resides in our
                             everyday life
@@ -217,22 +222,19 @@
                             daily
                             basis.
                             Providing intelligent systems and aims to make devices and clients
-                            real smart objects is <b>hard</b>, but we won't give up.
-                            <br>
+                            real smart objects.
                         </p>
                     </div>
                 </div>
-                <div class="large-4 medium-6 small-12 cell">
-                    <div class="callout code">
+                <div class="large-4 medium-6 small-12 cell hide-for-medium-only">
+                    <div class="callout code" data-equalizer-watch>
                         <h5 style="color: white">So, is being Universal possible?</h5>
                         <!--<small style="margin-bottom: 22px;margin-top: -10px;display: block">Yes, it's totally possible.</small>-->
-                        <p>A real <b>Universal Internet of Things</b> platform is far from
-                            existence, but academically speaking,
-                            we're the nearest point out here. We're advancing with math, physics, software and
+                        <p>A real <b>Universal</b> platform is far from
+                            existence, but we're the nearest point out here. We're advancing with math, physics,
+                            software and
                             electronic engineering. We know it's not going to be
                             an easy-ride, but we strongly believe that someday the IoT will be universal.
-                            <br>
-                            <small>but we don't give up.</small>
                         </p>
                     </div>
                 </div>
@@ -242,7 +244,8 @@
             <div class="grid-x grid-padding-x">
                 <div class="large-12 medium-12 small-12 cell">
                     <center>
-                        <h3 class="section-title" style="font-weight: bold;color: #d3dae2"><i style="color: #555" class="fi-pencil"></i>
+                        <h3 class="section-title" style="font-weight: bold;color: #d3dae2"><i style="color: #555"
+                                                                                              class="fi-pencil"></i>
                             Latest from
                             our Blog</h3>
                         <small style="margin-top: -10px;display:block">Pick a cup of coffee and enjoy what our team has
@@ -326,7 +329,8 @@
                     </a>
                 </div>
                 <div class="large-12 medium-12 small-12 cell">
-                    <center><h3 class="section-title" style="color: #41444e">Get started now, and explore UIoT.</h3></center>
+                    <center><h3 class="section-title" style="color: #41444e">Get started now, and explore UIoT.</h3>
+                    </center>
                     <center>
                         <p style="color: #41444e;display: block;margin-top: -10px">
                             We deliver many softwares and resources that can be really useful to you. Why don't you
@@ -465,7 +469,7 @@
                                         href="http://www.unb.br">University of Brasília</a>.
                                 </small>
                             </div>
-                            <img src="assets/svg/symbol-two.svg">
+                            <img src="{{ '/assets/svg/symbol-two.svg' | absolute_url }}">
                         </div>
                         <div class="small-12 cell show-for-small-only">
                             <center>
@@ -474,7 +478,7 @@
                                         href="http://www.unb.br">University of Brasília</a>.
                                 </small>
                                 <img style="float: none;margin: 60px 0 0 -15px;width: 100px"
-                                     src="assets/svg/symbol-two.svg">
+                                     src="{{ '/assets/svg/symbol-two.svg' | absolute_url }}">
                             </center>
                         </div>
                     </div>
@@ -484,9 +488,9 @@
     </div>
 </div>
 
-
-<script src="assets/js/vendor/jquery.min.js"></script>
-<script src="assets/js/vendor/typed.min.js"></script>
-<script src="assets/js/vendor/foundation.min.js"></script>
-<script src="assets/js/app/app.min.js"></script>
+</div>
+<script src="{{ '/assets/js/vendor/jquery.min.js' | absolute_url }}"></script>
+<script src="{{ '/assets/js/vendor/typed.min.js' | absolute_url }}"></script>
+<script src="{{ '/assets/js/vendor/foundation.min.js' | absolute_url }}"></script>
+<script src="{{ '/assets/js/app/app.js' | absolute_url }}"></script>
 </body>

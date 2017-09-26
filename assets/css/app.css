@@ -481,3 +481,8 @@ to {
         font-size: 1.8rem;
     }
 }
+
+.mega-button.hold-on { 
+    bottom: 16px;
+    position: absolute;
+}
