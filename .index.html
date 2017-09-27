@@ -1,10 +1,21 @@
 ---
-layout: base
+layout: default
 title: Universal Internet of Things
-css: assets/css.html
-js: assets/js.html
 ---
-
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | absolute_url }}"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Code+Pro:300,600|Titillium+Web:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/foundation.min.css' | absolute_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/app.css' | absolute_url }}">
+    <link rel="stylesheet" href="{{ '/assets/icons/foundation-icons.min.css' | absolute_url }}">
+</head>
+<body>
 <div class="off-canvas-wrapper">
     <div class="off-canvas position-top" style="height: auto;" id="menu-mobile" data-off-canvas>
         <center>
@@ -476,3 +487,10 @@ js: assets/js.html
         </div>
     </div>
 </div>
+
+</div>
+<script src="{{ '/assets/js/vendor/jquery.min.js' | absolute_url }}"></script>
+<script src="{{ '/assets/js/vendor/typed.min.js' | absolute_url }}"></script>
+<script src="{{ '/assets/js/vendor/foundation.min.js' | absolute_url }}"></script>
+<script src="{{ '/assets/js/app/app.js' | absolute_url }}"></script>
+</body>

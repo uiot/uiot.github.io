@@ -5,6 +5,7 @@ repository: uiot/uiot.github.io
 permalink: pretty
 collections:
   photos:
-plugins: [jekyll-admin, jekyll-minifier, jekyll-feed]
+#plugins: [jekyll-admin, jekyll-minifier, jekyll-feed]
+plugins: [jekyll-admin, jekyll-feed]
 jekyll-minifier:
   exclude: []
