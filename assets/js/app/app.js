@@ -36,3 +36,7 @@ var typed = new Typed('.typed-animated', {
     backSpeed: 40,
     cursorChar: ''
 });
+
+function openPage(page) {
+    window.location.href = page;
+}
