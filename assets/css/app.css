@@ -481,3 +481,7 @@ to {
         font-size: 1.8rem;
     }
 }
+
+.mega-button.hold-on { 
+    float: right;
+}
