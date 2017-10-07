@@ -4,32 +4,27 @@
             <center>
                 <h3 class="section-title" style="font-weight: bold;color: #7d8492"><i style="color: #555"
                                                                                       class="fi-zoom-in"></i>
-                    Members</h3>
+                    {{ member.name }}</h3>
             </center>
             <br>
         </div>
 
-
-        {% for member in site.data.members %}
-
         <div class="large-3 medium-4 small-12 cell">
             <div class="callout box" data-equalizer-watch>
 
-                <center><h5><a href="/about/me">{{ member.name }}</a></h5>
+                <center>
 
-                <div>
-                    <img src="{{ 'assets/img/' | absolute_url }}{{ member.photo }}" alt="">
-                </div>
+                    <div>
+                        <img src="{{ 'assets/img/' | absolute_url }}{{ member.photo }}" alt="">
+                    </div>
 
-                <div>
-                    <p> {{ member.bio}} </p>
-                </div>
+                    <div>
+                        <p> {{ member.bio}} </p>
+                    </div>
 
                 </center>
 
             </div>
         </div>
-        {% endfor %}
 
-
-</div>
+    </div>

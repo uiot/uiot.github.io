@@ -1,0 +1,23 @@
+- felipe de angelis:
+  name: Felipe de Angelis Silva
+  link: fangelis
+  photo: Felipe de Angelis.jpeg
+  email: felipe.angelis@uiot.org
+  city: Brasília - DF
+  bio: I'm an engineering student at UnB and I works as Infrastructure of the Universal Internet of Things.
+  lattes: http://lattes.cnpq.br/7084314591452393
+  media:
+    -Facebook
+    -oioioi
+
+
+- guilherme sa:
+  name: Guilherme Sá
+  link: gresendesa
+  position: Full stack developer master
+  skills:
+    - python
+    - html
+    - probabilidade e estatística
+
+
