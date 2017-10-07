@@ -11,7 +11,18 @@
             </center>
             <br>
         </div>
+
+        {% for action in site.data.root.whatwedohere %}
         <div class="large-4 medium-4 small-12 cell">
+            <div class="callout box" data-equalizer-watch>
+              <h5>{{action.title}}</h5>
+              {{action.text}}
+            </div>
+        </div>
+        {% endfor %}
+
+
+        <!-- <div class="large-4 medium-4 small-12 cell">
             <div class="callout box" data-equalizer-watch>
                 <h5>RAISe</h5>
                 <p>RAISe is a unique Internet of Things open middleware for managing devices, services and data.
@@ -77,6 +88,7 @@
                     business intelligence</b> algorithms for managing Internet of Things networks.</p>
                 <p>It's <b>intelligent, capable</b> and <b>open source.</b></p>
             </div>
-        </div>
+        </div> -->
+
     </div>
 </div>
