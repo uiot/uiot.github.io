@@ -12,23 +12,24 @@
 
         {% for member in site.data.members %}
 
-        <div class="large-3 medium-4 small-12 cell">
-            <div class="callout box" data-equalizer-watch>
+            <div class="large-3 medium-4 small-12 cell">
+                <div class="callout box" data-equalizer-watch>
 
-                <center><h5><a href="/about/me">{{ member.name }}</a></h5>
+                    <center><h5><a href="{{ 'about/member/' | absolute_url }}{{ member.github }}">{{ member.name }}</a></h5>
 
-                <div>
-                    <img src="{{ 'assets/img/' | absolute_url }}{{ member.photo }}" alt="">
+                    <div>
+                        <img src="{{ 'assets/img/' | absolute_url }}{{ member.photo }}" alt="">
+                    </div>
+
+                    <div>
+                        <p> {{ member.bio}} </p>
+                    </div>
+
+                    </center>
+
                 </div>
-
-                <div>
-                    <p> {{ member.bio}} </p>
-                </div>
-
-                </center>
-
             </div>
-        </div>
+
         {% endfor %}
 
 

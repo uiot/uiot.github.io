@@ -1,6 +1,5 @@
-- felipe de angelis:
+- github: FelipeDeAngelis
   name: Felipe de Angelis Silva
-  link: fangelis
   photo: Felipe de Angelis.jpeg
   email: felipe.angelis@uiot.org
   city: Brasília - DF
@@ -9,9 +8,7 @@
   media:
     -Facebook
     -oioioi
-
-
-- guilherme sa:
+- github: gresendesa
   name: Guilherme Sá
   link: gresendesa
   position: Full stack developer master
@@ -19,5 +16,4 @@
     - python
     - html
     - probabilidade e estatística
-
 

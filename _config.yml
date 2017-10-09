@@ -5,6 +5,10 @@ repository: uiot/uiot.github.io
 permalink: pretty
 collections:
   photos:
-plugins: [jekyll-admin, jekyll-minifier, jekyll-feed]
+  members:
+    output: true
+    type: page
+    permalink: "/about/member/:path/"
+#plugins: [jekyll-admin, jekyll-minifier, jekyll-feed]
 jekyll-minifier:
   exclude: []
