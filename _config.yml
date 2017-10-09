@@ -9,6 +9,6 @@ collections:
     output: true
     type: page
     permalink: "/about/member/:path/"
-plugins: [jekyll-admin, jekyll-minifier, jekyll-feed]
+#plugins: [jekyll-admin, jekyll-minifier, jekyll-feed]
 jekyll-minifier:
   exclude: []
