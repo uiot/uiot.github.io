@@ -1,5 +1,3 @@
-{% include root/index/assets/whatwedohere.css %}
-
 <div class="responsive-container" style="background: white">
     <div class="grid-x grid-padding-x" data-equalizer data-equalize-on="medium">
         <div class="large-12 medium-12 small-12 cell">
@@ -12,39 +10,36 @@
             <br>
         </div>
 
-<!--
--callout box
--callout primary
--callout primary
-style="background:#41444e;color: white"
-<h5 style="color:white">
--->
-
-{% comment %}Sketchy ceiling function since Liquid does integer division{% endcomment %}
-
         {% assign text_number = 0 %}
 
         {% for action in site.data.root.whatwedohere %}
 
-        <!-- {% if text_number > 3 %}
-          {% assign text_number = 1 %}
-        {% endif %} -->
             {% assign text_number = text_number | plus:1 %}
 
+            {% if text_number == 1 %}
+              {% assign box_style = 'class="callout box"' %}
+              {% assign box_title = '' %}
+
+            {% elsif text_number == 2 %}
+              {% assign box_style = 'class="callout primary"' %}
+              {% assign box_title = '' %}
+
+            {% elsif text_number == 3 %}
+              {% assign text_number = 0 %}
+              {% assign box_style = 'class="callout primary" style="background:#41444e;color: white"' %}
+              {% assign box_title = 'style="color:white"' %}
+            {% endif %}
+
         <div class="large-4 medium-4 small-12 cell">
-            <div class="callout primary" data-equalizer-watch>
-                <h5 style="color:white">{{action.title}} -- {{text_number}}</h5>
+            <div {{box_style}} data-equalizer-watch>
+                <h5 {{box_title}}>{{action.title}}</h5>
                 {{action.text}}
-                <!-- {% if text_number > 3 %}
-                  {% assign text_number = 1 %}
-                {% endif %} -->
             </div>
         </div>
         {% endfor %}
 
 
-
-        <div class="large-4 medium-4 small-12 cell">
+        <!-- <div class="large-4 medium-4 small-12 cell">
             <div class="callout box" data-equalizer-watch>
                 <h5>RAISe</h5>
                 <p>RAISe is a unique Internet of Things open middleware for managing devices, services and data.
@@ -110,7 +105,7 @@ style="background:#41444e;color: white"
                     business intelligence</b> algorithms for managing Internet of Things networks.</p>
                 <p>It's <b>intelligent, capable</b> and <b>open source.</b></p>
             </div>
-        </div>
+        </div> -->
 
     </div>
 </div>
