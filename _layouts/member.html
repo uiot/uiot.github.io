@@ -1,0 +1,73 @@
+---
+layout: default
+---
+
+{% assign author = site.data.members | where:"github", page.author | first %}
+
+<div class="responsive-container" style="background: white">
+    <div class="grid-x grid-padding-x" data-equalizer data-equalize-on="medium">
+        <div class="large-12 medium-12 small-12 cell">
+            <h3 class="section-title" style="font-weight: bold;color: #7d8492">
+                {{ author.name }}
+            </h3>
+
+            <br>
+        </div>
+
+        <div class="large-3 medium-4 small-12 cell">
+            <img style="border-radius:3px" src="{{ 'assets/img/' | absolute_url }}{{ author.photo }}" alt="">
+        </div>
+
+    </div>
+
+    <div>
+        <h4>
+            Bio:
+        </h4>
+        <p> {{ author.bio}} </p>
+    </div>
+
+    <div>
+        <h4>
+            E-mail:
+        </h4>
+        <p> {{ author.email}} </p>
+    </div>
+
+    <div>
+        <h4>
+            City:
+        </h4>
+        <p> {{ author.city}} </p>
+    </div>
+
+    <div>
+        <h4>
+            Lattes:
+        </h4>
+        <a href='{{ author.lattes}}'> {{ author.lattes}} </a>
+    </div>
+
+    <div>
+        <h4>
+            Social Media:
+        </h4>
+        <h5>
+            User: {{author.github}}
+        </h5>
+
+        <a href='{{ author.media.Github }}'> {{ author.media.Github }} </a>
+    </div>
+
+    <div>
+        <a href='{{ author.media.Twitter }}'> {{ author.media.Twitter }} </a>
+    </div>
+
+    <div>
+        <a href='{{ author.media.Linkedin }}'> {{ author.media.Linkedin }} </a>
+    </div>
+    <div>
+        <a href='{{ author.media.Instagram }}'> {{ author.media.Instagram }} </a>
+    </div>
+
+</div>
