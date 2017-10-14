@@ -5,6 +5,8 @@ css: get/started/assets/css.html
 js: get/started/assets/js.html
 ---
 <div class="responsive-container">
+  <div class="grid-x grid-padding-x" data-equalizer data-equalize-on="medium">
+
     <div class="grid-x grid-padding-x">
         <div class="large-12 medium-12 small-12 cell">
             <h2 class="section-title" style="color: #555">
@@ -12,13 +14,13 @@ js: get/started/assets/js.html
         </div>
         <div class="large-12 medium-12 small-12 cell">
 
-          <div class="large-4 medium-4 small-4 cell">
+          <div class="large-4 medium-4 small-4 cell" data-equalizer-watch>
             <a href="#iot">IoT</a>
           </div>
-          <div class="large-4 medium-4 small-4 cell">
+          <div class="large-4 medium-4 small-4 cell" data-equalizer-watch>
             <a href="#the-project">UIoT project</a>
           </div>
-          <div class="large-4 medium-4 small-4 cell">
+          <div class="large-4 medium-4 small-4 cell" data-equalizer-watch>
             <a href="#us">us</a>
           </div>
 
@@ -31,5 +33,6 @@ js: get/started/assets/js.html
 
     {% include about/sections/members.html %}
 
+  </div>
 </div>
 <div id="js-heightControl" style="height: 0">&nbsp;</div>
