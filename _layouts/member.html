@@ -1,5 +1,6 @@
 ---
 layout: default
+css: about/member/assets/css.html
 ---
 
 {% assign author = site.data.members | where:"github", page.author | first %}
@@ -14,60 +15,64 @@ layout: default
             <br>
         </div>
 
-        <div class="large-3 medium-4 small-12 cell">
-            <img style="border-radius:3px" src="{{ 'assets/img/' | absolute_url }}{{ author.photo }}" alt="">
+        <div class="centralizada large-6 medium-4 small-12 cell">
+            <center>
+            <img style="border-radius:3px" src="{{ 'assets/img/' | absolute_url }}{{ author.photo }}" alt="" width="300" height="300"">
+            </center>
+        </div>
+        <div class="large-6 medium-4 small-12 cell">
+            <div>
+                <h4>
+                    Bio:
+                </h4>
+                <p> {{ author.bio}} </p>
+            </div>
+
+
+            <div>
+                <h4>
+                    E-mail:
+                </h4>
+                <p> {{ author.email}} </p>
+            </div>
+
+            <div>
+                <h4>
+                    City:
+                </h4>
+                <p> {{ author.city}} </p>
+            </div>
+
+            <div>
+                <h4>
+                    Lattes:
+                </h4>
+                <a href='{{ author.lattes}}'> {{ author.lattes}} </a>
+            </div>
+
+            <div>
+                <h4>
+                    Social Media:
+                </h4>
+                <h5>
+                    User: {{author.github}}
+                </h5>
+
+                <a href='{{ author.media.Github }}'> {{ author.media.Github }} </a>
+            </div>
+
+            <div>
+                <a href='{{ author.media.Twitter }}'> {{ author.media.Twitter }} </a>
+            </div>
+
+            <div>
+                <a href='{{ author.media.Linkedin }}'> {{ author.media.Linkedin }} </a>
+            </div>
+            <div>
+                <a href='{{ author.media.Instagram }}'> {{ author.media.Instagram }} </a>
+            </div>
+
         </div>
 
-    </div>
-
-    <div>
-        <h4>
-            Bio:
-        </h4>
-        <p> {{ author.bio}} </p>
-    </div>
-
-    <div>
-        <h4>
-            E-mail:
-        </h4>
-        <p> {{ author.email}} </p>
-    </div>
-
-    <div>
-        <h4>
-            City:
-        </h4>
-        <p> {{ author.city}} </p>
-    </div>
-
-    <div>
-        <h4>
-            Lattes:
-        </h4>
-        <a href='{{ author.lattes}}'> {{ author.lattes}} </a>
-    </div>
-
-    <div>
-        <h4>
-            Social Media:
-        </h4>
-        <h5>
-            User: {{author.github}}
-        </h5>
-
-        <a href='{{ author.media.Github }}'> {{ author.media.Github }} </a>
-    </div>
-
-    <div>
-        <a href='{{ author.media.Twitter }}'> {{ author.media.Twitter }} </a>
-    </div>
-
-    <div>
-        <a href='{{ author.media.Linkedin }}'> {{ author.media.Linkedin }} </a>
-    </div>
-    <div>
-        <a href='{{ author.media.Instagram }}'> {{ author.media.Instagram }} </a>
-    </div>
-
 </div>
+
