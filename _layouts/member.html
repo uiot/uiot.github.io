@@ -7,69 +7,77 @@ css: about/member/assets/css.html
 
 <div class="responsive-container" style="background: white">
     <div class="grid-x grid-padding-x" data-equalizer data-equalize-on="medium">
-        <div class="large-12 medium-12 small-12 cell">
+        <div class="large-12 medium-1 small-12 cell">
             <h3 class="section-title" style="font-weight: bold;color: #7d8492">
                 {{ author.name }}
             </h3>
-
             <br>
         </div>
 
         <div class="centralizada large-6 medium-4 small-12 cell">
             <center>
+                <br>
             <img style="border-radius:3px" src="{{ 'assets/img/' | absolute_url }}{{ author.photo }}" alt="" width="300" height="300"">
             </center>
         </div>
         <div class="large-6 medium-4 small-12 cell">
             <div>
-                <h4>
-                    Bio:
-                </h4>
-                <p> {{ author.bio}} </p>
-            </div>
-
-
-            <div>
-                <h4>
-                    E-mail:
-                </h4>
-                <p> {{ author.email}} </p>
+                <h3>
+                    About me:
+                </h3>
+                <h6> {{ author.bio}} </h6>
             </div>
 
             <div>
-                <h4>
-                    City:
-                </h4>
-                <p> {{ author.city}} </p>
+                <h6><i style="color: black"
+                       class="fi-map"></i>
+                    {{ author.city }}
+                </h6>
             </div>
 
             <div>
-                <h4>
-                    Lattes:
-                </h4>
-                <a href='{{ author.lattes}}'> {{ author.lattes}} </a>
+                <h6><i style="color: black"
+                       class="fi-mail"></i>
+                    {{ author.email }}
+                </h6>
             </div>
 
             <div>
-                <h4>
-                    Social Media:
-                </h4>
-                <h5>
-                    User: {{author.github}}
-                </h5>
-
-                <a href='{{ author.media.Github }}'> {{ author.media.Github }} </a>
+                <a href='{{ author.lattes}}'> <h6>Currículo Lattes</h6> </a>
             </div>
 
             <div>
-                <a href='{{ author.media.Twitter }}'> {{ author.media.Twitter }} </a>
+                <h6><i style="color: black"
+                       class="fi-social-github"></i>
+                    <a href='{{ author.media.Github }}'> {{ author.github }} </a>
+                </h6>
             </div>
 
             <div>
-                <a href='{{ author.media.Linkedin }}'> {{ author.media.Linkedin }} </a>
+                <h6><i style="color: black"
+                       class={% if author.media.Facebook %}{{ "fi-social-facebook" }}{% endif %}></i>
+                    <a href='{{ author.media.Facebook }}'> {{ author.media.Facebook }} </a>
+                </h6>
             </div>
             <div>
-                <a href='{{ author.media.Instagram }}'> {{ author.media.Instagram }} </a>
+                <h6><i style="color: black"
+                       class={% if author.media.Twitter %}{{ "fi-social-twitter" }}{% endif %}></i>
+                    <a href='{{ author.media.Twitter }}'> {{ author.media.Twitter }} </a>
+                </h6>
+            </div>
+
+            <div>
+                <h6><i style="color: black"
+                       class={% if author.media.Linkedin %}{{ "fi-social-linkedin" }}{% endif %}></i>
+                    <a href='{{ author.media.Linkedin }}'> {{ author.media.Linkedin }} </a>
+                </h6>
+            </div>
+
+            <div>
+                <h6><i style="color: black"
+                       class={% if author.media.Instagram %}{{ "fi-social-instagram" }}{% endif %}></i>
+                    <a href='{{ author.media.Instagram }}'> {{ author.Instagram }} </a>
+                </h6>
             </div>
 
         </div>
