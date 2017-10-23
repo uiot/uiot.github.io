@@ -5,7 +5,7 @@
   text: <p><span class="highlight">RAISe</span> and <span class="highlight">UIMS</span>, our middleware software, support physical and virtual devices to reason about the world and "create" <span class="highlight">knowledge</span> to the devices and applications connected to it.</p><p>We want to enable the integration between IoT's specific plaforms.</p>
 
 - title: Connectivity and gateway
-  text: <p>Working on connectivity ways to make it possible for devices reach out the internet.</p><p>Our <span class="highlight">UIoT Gateway</span> is a device that enables the IoT world to several kinds of devices (including those with low-processing capability).</p>
+  text: <p>Working on connectivity to make it possible for devices reach out the internet.</p><p>Our <span class="highlight">UIoT Gateway</span> is a device that enables the IoT world to several kinds of devices (including those with low-processing capability).</p>
 
 - title: Devices and use cases
   text: <p>We care about building devices to explore IoT use cases as a way to investigate technology's potential on the real world.</p><p>This is also a way to see the impact of the ubiquitous and pervasive technology on people's lives.</p>
