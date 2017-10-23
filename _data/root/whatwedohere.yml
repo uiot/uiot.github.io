@@ -1,11 +1,11 @@
 - title: UIoT academics
-  text: <p>Leading science and academics industry with advanced papers, résumés and academic content that <b>aims for solving the biggest, relevant</b> Internet of Things problems.</p> <p>We are researchers and it's <b>for everyone.</b></p>
+  text: <p>Leading science and academics industry with advanced papers, résumés and academic content that <b>aims for solving the biggest, relevant</b> Internet of Things problems.</p> <p>We are researchers but it's <b>for everyone.</b></p>
 
 - title: Middleware
   text: <p><b>RAISe</b> and <b>UIMS</b>, our middleware software, support physical and virtual devices to reason about the world and "create" <b>knowledge</b> to the devices and applications connected to it.</p><p>We want to enable the integration between IoT's specific plaforms.</p>
 
 - title: Connectivity and gateway
-  text: <p>Working on connective ways to make it possible for devices reach out the internet.</p><p>Our <b>UIoT Gateway</b> is a device that enables the IoT world to several kinds of devices (including those with low-processing capability).</p>
+  text: <p>Working on connectivity ways to make it possible for devices reach out the internet.</p><p>Our <b>UIoT Gateway</b> is a device that enables the IoT world to several kinds of devices (including those with low-processing capability).</p>
 
 - title: Devices and use cases
   text: <p>We care about building devices to explore IoT use cases as a way to investigate technology's potential on the real world.</p><p>This is also a way to see the impact of the ubiquitous and pervasive technology on people's lives.</p>
