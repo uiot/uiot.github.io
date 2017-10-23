@@ -6,11 +6,13 @@
 
         <p>The Universal Internet of Thing (UIoT) project emerged from a <a target="_blank" href="https://www.ene.unb.br/">PPGEE</a>'s research at of <a target="_blank" href="https://www.unb.br/">University of Brasília</a> early in 2010's.</p>
 
-        <p>At the beginning, the project proposes an IoT middleware architecture to <i>control and notify the current state of generic devices</i>.
+        {% assign reference = site.data.about.references | where:"id", "ferreira_dissertation_2014" | first %}
+        <p>At the beginning, the project proposes an IoT middleware architecture to <q cite="{{reference.url}}">control and notify the current state of generic devices</q>.
         That proposal specifies the physical and logical components of the architecture that allow interaction with these smart objects, as well as defines its API and the use of UPnP for device discovery.
         In 2015, this IoT view was refined and evolved through consolidating the architecture protocols and the API. RAISe is the product of these path.</p>
 
-        <p>In 2016, the registration and admission control move from UPnP to self-registration.
+        {% assign reference = site.data.about.references | where:"id", "silva_autorregistro_2016" | first %}
+        <p>In 2016, the registration and admission control move from UPnP to <q cite="{{reference.url}}">self-registration</q>.
         The self-registration mechanism consists one that the device itself is aware of its context and becomes responsible for the initiative of its participation in the network.</p>
 
         <p>On the other side, we are working on objects' interoperability as communication issues between those objects and the middleware.</p>
