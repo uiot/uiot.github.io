@@ -12,10 +12,10 @@
             </h2>
             <p class="meta">
                 {{ post.content | strip_html | escape | truncatewords: 80 }}
-                <a class="link" href="{{ post.url | relative_url }}" role="link">read more.</a>
+                <a class="link" href="{{ post.url | relative_url }}" role="link">read more</a>
             </p>
         </li>
     {% endfor %}
     </ul>
-    <p class="rss-subscribe">subscribe <a href="{{ '/feed.xml' | relative_url }}" role="link">via RSS</a></p>
+    <p class="rss-subscribe">Subscribe <a href="{{ '/feed.xml' | relative_url }}" role="link">via RSS</a></p>
 </section>
