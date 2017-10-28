@@ -7,9 +7,9 @@
                 {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
                 {{ post.date | date: date_format }}
             </time>
-            <h2>
+            <h3>
                 <a class="link" href="{{ post.url | relative_url }}" role="link">{{ post.title | escape }}</a>
-            </h2>
+            </h3>
             <p class="meta">
                 {{ post.content | strip_html | escape | truncatewords: 80 }}
                 <a class="link" href="{{ post.url | relative_url }}" role="link">read more</a>
