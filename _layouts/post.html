@@ -40,7 +40,7 @@
         {% if page.authors %}
         • by
           {% for author in page.authors %}
-              <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ author }}</span></span>{% if forloop.last == false %},&nbsp;{% endif %}
+              <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="{{ 'about/member/' | absolute_url }}{{ author }}">{{ author }}</a></span></span>{% if forloop.last == false %},&nbsp;{% endif %}
           {% endfor %}
         {% endif %}
     </p>
