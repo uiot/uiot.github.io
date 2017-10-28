@@ -32,13 +32,13 @@
 <article class="post large-9 medium-6 small-12 cell" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
     <h1 itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="meta">
+    <p class="meta">Posted on
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
             {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
             {{ page.date | date: date_format }}
         </time>
         {% if page.authors %}
-        •
+        • by
           {% for author in page.authors %}
               <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ author }}</span></span>{% if forloop.last == false %},&nbsp;{% endif %}
           {% endfor %}
