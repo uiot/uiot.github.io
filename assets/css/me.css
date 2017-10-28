@@ -1,0 +1,22 @@
+
+
+*::after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.lattes a {
+    padding-left: 25px;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+}
+
+.lattes {
+    background-image: url('../img/lattes.png');
+    background-size: 17px;
+    background-repeat: no-repeat;
+    margin-left: -4px;
+}
