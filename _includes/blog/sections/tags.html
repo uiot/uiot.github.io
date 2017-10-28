@@ -1,26 +1,20 @@
 <section class="tags">
 
-
   <div id="archives">
-    <p>Blog tags:</p>
+    <h5>Tags</h5>
 
-<p>
-  {% for tag in site.tags %}
     <div class="archive-group">
+      <p>
+  {% for tag in site.tags %}
       {% capture tag_name %}{{ tag | first }}{% endcapture %}
-      <div id="#{{ tag_name | slugize }}"></div>
-      <!-- <p></p> -->
 
-      <span class="category-head"><a name="{{ tag_name | slugize }}">{{ tag_name }}</a>, </span>
-      <!-- {% for post in site.tags[tag_name] %}
-      <article class="archive-item">
-        <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
-      </article>
-      {% endfor %} -->
-    </div>
+      ,&nbsp;
+      <span id="#{{ tag_name | slugize }}" class="category-head"><a name="{{ tag_name | slugize }}">{{ tag_name }}</a></span>
+
   {% endfor %}
-</p>
-  </div>
+      </p>
+    </div>
 
+  </div>
 
 </section>
