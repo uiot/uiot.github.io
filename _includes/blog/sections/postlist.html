@@ -1,8 +1,8 @@
 <section class="blog">
 
-    <ul class="list">
+    <!-- <ul class="list"> -->
     {% for post in site.posts %}
-        <li>
+        <article>
             <time class="time">
                 {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
                 {{ post.date | date: date_format }}
@@ -14,9 +14,9 @@
                 {{ post.content | strip_html | escape | truncatewords: 80 }}
                 <a class="link" href="{{ post.url | relative_url }}" role="link">read more</a>
             </p>
-        </li>
+        </article>
     {% endfor %}
-    </ul>
+    <!-- </ul> -->
     <p class="rss-subscribe">Subscribe <a href="{{ '/feed.xml' | relative_url }}" role="link">via RSS</a></p>
 
 </section>
