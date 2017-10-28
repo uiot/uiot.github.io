@@ -2,6 +2,7 @@
 layout: post
 title:  "UIoT marca presença no CIACA/CIAWI 2017"
 date:   2017-10-19 19:50:01 -0300
+authors: [lucasmauricio, francisco]
 tags: [conferences, bla]
 ---
 

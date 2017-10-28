@@ -2,6 +2,7 @@
 layout: post
 title:  "UIoT marca presença no SBrT 2016"
 date:   2016-09-05 16:16:01 -0600
+authors: lucasmauricio
 tags: [conferences, test]
 ---
 
