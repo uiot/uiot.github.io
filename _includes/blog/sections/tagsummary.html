@@ -7,11 +7,10 @@
     <div class="archive-group">
       <p>
 
-
   {% for tag in site.tags %}
       {% capture tag_name %}{{ tag | first }}{% endcapture %}
 
-      <span id="#{{ tag_name | slugize }}" class="category-head"><a name="{{ tag_name | slugize }}">{{ tag_name }}</a>{% if forloop.last == false %},&nbsp;{% endif %}</span>
+      <span id="#{{ tag_name | slugize }}" class="category-head"><a href="/blog/tags/#{{ tag_name | slugize }}">{{ tag_name }}</a>{% if forloop.last == false %},&nbsp;{% endif %}</span>
 
   {% endfor %}
       </p>
