@@ -7,7 +7,7 @@
 }
 
 .lattes a {
-    padding-left: 25px;
+    padding-left: 19px;
 }
 
 a, a:hover, a:focus, a:active {
@@ -16,7 +16,7 @@ a, a:hover, a:focus, a:active {
 
 .lattes {
     background-image: url('../img/lattes.png');
-    background-size: 17px;
+    background-size: 14px;
     background-repeat: no-repeat;
-    margin-left: -4px;
+    margin-left: -1px;
 }

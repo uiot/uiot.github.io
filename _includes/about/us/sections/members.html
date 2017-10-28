@@ -17,8 +17,8 @@
 
                     <center><h5><a href="{{ 'about/member/' | absolute_url }}{{ member.github }}">{{ member.name }}</a></h5>
 
-                    <center><div class="image-cropper">
-                        <img src="{{ 'assets/img/about/' | absolute_url }}{{ member.photo }}" alt="" width="200" height="200" >
+                    <center><div class="image-cropper" style=" alt:{{ member.name }}; width:200px; height:200px">
+                        <img src="{{ 'assets/img/about/' | absolute_url }}{{ member.photo }}" >
                     </div></center>
 
                     <div>
