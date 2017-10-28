@@ -1,6 +1,35 @@
----
-layout: default
----
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+    <!-- {% if page.css %}{% include {{ page.css }} %}{% endif %} -->
+    {% include global/assets/css.html %}
+
+</head>
+<body>
+
+
+
+<div class="off-canvas-wrapper">
+    {% include default/mobile-header.html %}
+
+    <div class="off-canvas-content" data-off-canvas-content>
+
+        {% include default/header.html %}
+
+        <div class="responsive-container" style="margin-top: 80px">
+
+<!-- <div class="responsive-container" style="margin-top: 80px"> -->
+
+  <div class="grid-x grid-padding-x">
+
+
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
     <h1 itemprop="name headline">{{ page.title | escape }}</h1>
@@ -9,8 +38,11 @@ layout: default
             {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
             {{ page.date | date: date_format }}
         </time>
-        {% if page.author %}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+        {% if page.authors %}
+        •
+          {% for author in page.authors %}
+              <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ author }}</span></span>{% if forloop.last == false %},&nbsp;{% endif %}
+          {% endfor %}
         {% endif %}
     </p>
   </header>
@@ -19,3 +51,21 @@ layout: default
   </div>
 </article>
 {% include deeplink.html %}
+
+
+    </div>
+
+<!-- </div> -->
+
+    </div>
+
+            {% include default/footer.html %}
+</div>
+
+</div>
+
+
+{% include global/assets/js.html %}
+
+</body>
+</html>
