@@ -8,29 +8,28 @@
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
-    <!-- {% if page.css %}{% include {{ page.css }} %}{% endif %} -->
     {% include global/assets/css.html %}
 
 </head>
 <body>
 
-
-
-<div class="off-canvas-wrapper">
+  <div class="off-canvas-wrapper">
     {% include default/mobile-header.html %}
 
     <div class="off-canvas-content" data-off-canvas-content>
 
         {% include default/header.html %}
 
-        <div class="responsive-container" style="margin-top: 80px">
+        <h1 class="page-title">
+          <a href="/blog">Blog</a>
+        </h1>
 
-<!-- <div class="responsive-container" style="margin-top: 80px"> -->
+        <div class="responsive-container" style="margin-top: 80px">
 
   <div class="grid-x grid-padding-x">
 
 
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="post large-9 medium-6 small-12 cell" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
     <h1 itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="meta">
@@ -52,6 +51,11 @@
 </article>
 {% include deeplink.html %}
 
+
+
+<div class="large-3 medium-6 small-12 cell">
+		{% include blog/sections/archives.html %}
+</div>
 
     </div>
 

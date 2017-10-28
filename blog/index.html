@@ -4,16 +4,21 @@ title: Blog UIoT
 css: about/assets/css.html
 js: about/assets/js.html
 ---
+
+<h1 class="page-title">
+  <a href="/blog">Blog</a>
+</h1>
+
 <div class="responsive-container" style="margin-top: 80px">
 
   <div class="grid-x grid-padding-x">
     <!-- <div class="large-12 medium-12 small-12 cell"> -->
 
-      <div class="large-9 medium-9 small-9 cell">
+      <div class="large-9 medium-6 small-12 cell">
           {% include blog/sections/postlist.html %}
       </div>
 
-      <div class="large-3 medium-3 small-3 cell">
+      <div class="large-3 medium-6 small-12 cell">
           {% include blog/sections/tagsummary.html %}
           {% include blog/sections/archives.html %}
       </div>
