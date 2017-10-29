@@ -2,8 +2,8 @@
 layout: post
 title:  "Lorem ipsum 7 parágrafos"
 date:   2017-10-19 19:50:01 -0300
-authors: [CassioFabius]
-tags: [conferences, lorem-ipsum]
+authors: [CassioFabius, gresendesa]
+tags: [conferences, lorem-ipsum, use-case]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis leo sem. Suspendisse porttitor bibendum urna, et sollicitudin libero. Aenean tempus sodales mollis. Vivamus ante risus, sodales in vestibulum nec, gravida a mauris. Aenean cursus ante ut arcu aliquam, id rutrum tortor sagittis. Maecenas velit turpis, fermentum aliquam elit id, sollicitudin tristique ex. Curabitur sit amet est sed arcu blandit lacinia. Curabitur egestas nulla vel est mollis luctus vel a ex.
