@@ -34,12 +34,11 @@ js: about/assets/js.html
     Tags used in the blog
   </h3>
 
-
   <div class="grid-x grid-padding-x">
+
     <div class="large-9 medium-6 small-12 cell">
 
       <div class="posts">
-
         {% for tag in tags %}
         <h5 id="{{ tag | slugify }}">{{ tag }}</h5>
         <ul class="codinfox-category-list">
@@ -54,10 +53,8 @@ js: about/assets/js.html
           {% endfor %}
         </ul>
         {% endfor %}
-
       </div>
     </div>
-
 
     <div class="large-3 medium-6 small-12 cell">
         {% include blog/sections/archives.html %}
