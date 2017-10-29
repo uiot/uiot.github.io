@@ -4,17 +4,14 @@
             <center>
                 <h3 class="section-title" style="font-weight: bold;color: #d3dae2"><i style="color: #555"
                                                                                       class="fi-pencil"></i>
-                    Latest from
-                    our Blog</h3>
+                    Latest from our <a onclick="openPage('{{ '/blog' | absolute_url }}')">Blog</a></h3>
                 <small style="margin-top: -10px;display:block">Pick a cup of coffee and enjoy what our team has
-                    written
-                    about
-                    IoT.
+                    written about IoT.
                 </small>
             </center>
             <br>
         </div>
-        <div class="large-4 medium-4 small-12 cell">
+        <!-- <div class="large-4 medium-4 small-12 cell">
             <div class="callout primary">
                 <small><b>#1</b></small>
                 <h5>New look, new feel, same passion.</h5>
@@ -30,8 +27,8 @@
                 <br>
                 <a class="see-button">Read more</a>
             </div>
-        </div>
-        <div class="large-4 medium-4 small-12 cell">
+        </div> -->
+        <!-- <div class="large-4 medium-4 small-12 cell">
             <div class="callout primary">
                 <small><b>#1</b></small>
                 <h5>New look, new feel, same passion.</h5>
@@ -47,8 +44,8 @@
                 <br>
                 <a class="see-button">Read more</a>
             </div>
-        </div>
-        <div class="large-4 medium-4 small-12 cell">
+        </div> -->
+        <!-- <div class="large-4 medium-4 small-12 cell">
             <div class="callout primary">
                 <small><b>#1</b></small>
                 <h5>New look, new feel, same passion.</h5>
@@ -64,6 +61,31 @@
                 <br>
                 <a class="see-button">Read more</a>
             </div>
-        </div>
+        </div> -->
+
+        {% for post in site.posts limit:3 | sort: 'date' %}
+
+        <article class="large-4 medium-4 small-12 cell">
+            <div class="callout primary">
+                <small><b>#1</b></small>
+                <h5><a class="link" href="{{ post.url | relative_url }}" role="link">{{ post.title | escape }}</a></h5>
+                <b class="see">Summary</b>
+                <div class="callout code" style="background: white; color: #3b4151">
+                    {{ post.content | strip_html | escape | truncatewords: 50 }}
+                </div>
+                <small style="display:block;margin: -10px 0">
+                    By: <b>{{post.authors | join: ', ' }}</b>, at: <b><time class="time">
+                        {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
+                        {{ post.date | date: date_format }}
+                    </time></b><br>
+                    Tags: <b>{{post.tags | join: ', '}}</b>
+                </small>
+                <br>
+                <a class="see-button" href="{{ post.url | relative_url }}" role="link">Read more</a>
+            </div>
+        </article>
+
+        {% endfor %}
+
     </div>
 </div>
