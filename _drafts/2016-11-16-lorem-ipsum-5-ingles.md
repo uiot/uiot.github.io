@@ -2,7 +2,7 @@
 layout: post
 title:  "UIoT marca presença no WCNS 2017"
 date:   2016-09-05 16:16:01 -0600
-authors: thales
+authors: thalesvon
 tags: [conferences, lorem-ipsum, english]
 ---
 

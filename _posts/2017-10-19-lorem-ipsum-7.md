@@ -2,7 +2,7 @@
 layout: post
 title:  "Lorem ipsum 7 parágrafos"
 date:   2017-10-19 19:50:01 -0300
-authors: [francisco]
+authors: [CassioFabius]
 tags: [conferences, lorem-ipsum]
 ---
 
