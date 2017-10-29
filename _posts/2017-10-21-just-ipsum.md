@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Just a ipsum"
+title:  "Just an ipsum"
 date:   2017-10-21 22:23:51 -0200
 authors: [igordias]
 tags: [lorem-ipsum, academic]
