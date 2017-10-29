@@ -39,6 +39,11 @@
               <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="{{ 'about/member/' | absolute_url }}{{ author }}">{{ author }}</a></span></span>{% if forloop.last == false %},&nbsp;{% endif %}
           {% endfor %}
         {% endif %}
+    <br>
+        {% for tag in page.tags %}
+          <i style="color: black" class="fi-price-tag"></i>
+          <span id="#{{ tag | slugize }}" class="category-head"><a href="/blog/tags/#{{ tag | slugize }}">{{ tag }}</a>{% if forloop.last == false %},&nbsp;{% endif %}</span>
+        {% endfor %}
     </p>
   </header>
   <div class="post-content" itemprop="articleBody">
