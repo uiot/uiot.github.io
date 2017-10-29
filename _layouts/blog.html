@@ -1,5 +1,18 @@
 ---
-layout: default
+layout: base
 ---
 
-{{ content }}
+<div class="off-canvas-wrapper">
+
+    {% include default/mobile-header.html %}
+
+    <div class="off-canvas-content" data-off-canvas-content>
+
+        {% include blog/header.html %}
+
+        {{ content }}
+
+        {% include default/footer.html %}
+
+    </div>
+</div>
