@@ -482,6 +482,10 @@ to {
     }
 }
 
-.mega-button.hold-on { 
+.mega-button.hold-on {
     float: right;
+}
+
+.pointout {
+    font-weight: bold;
 }
