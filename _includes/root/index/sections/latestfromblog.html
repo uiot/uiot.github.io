@@ -63,11 +63,12 @@
             </div>
         </div> -->
 
+        {% assign post_count = 0 %}
         {% for post in site.posts limit:3 | sort: 'date' %}
-
+          {% assign post_count = post_count | plus: 1 %}
         <article class="large-4 medium-4 small-12 cell">
             <div class="callout primary">
-                <small><b>#1</b></small>
+                <small><b>#{{ post_count }}</b></small>
                 <h5><a class="link" href="{{ post.url | relative_url }}" role="link">{{ post.title | escape }}</a></h5>
                 <b class="see">Summary</b>
                 <div class="callout code" style="background: white; color: #3b4151">
