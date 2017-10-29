@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Tags
+title: Blog tags list
 css: about/assets/css.html
 js: about/assets/js.html
 ---
@@ -28,45 +28,43 @@ js: about/assets/js.html
 {% endif %}
 {% endfor %}
 
-<h1 class="page-title">
-  <a href="/blog">Blog</a> | {{ page.title }}
-</h1>
+<div class="responsive-container" style="margin-top: 80px">
 
-			<div class="responsive-container" style="margin-top: 80px">
+  <h3 class="page-title">
+    Tags used in the blog
+  </h3>
 
 
-<div class="grid-x grid-padding-x">
-	<div class="large-9 medium-6 small-12 cell">
+  <div class="grid-x grid-padding-x">
+    <div class="large-9 medium-6 small-12 cell">
 
-<div class="posts">
+      <div class="posts">
 
-{% for tag in tags %}
-<h3 id="{{ tag | slugify }}">{{ tag }}</h3>
-<ul class="codinfox-category-list">
-  {% for post in site.posts %}
-  {% if post.tags contains tag %}
-  <li>
-      <a href="{{ post.url }}">
-        {{ post.title }}
-        <small>{{ post.date | date_to_string }}</small>
-      </a>
-  </li>
-  {% endif %}
-  {% endfor %}
-</ul>
-{% endfor %}
+        {% for tag in tags %}
+        <h5 id="{{ tag | slugify }}">{{ tag }}</h5>
+        <ul class="codinfox-category-list">
+          {% for post in site.posts %}
+          {% if post.tags contains tag %}
+          <li>
+              <a href="{{ post.url }}">
+                {{ post.title }}</a>, posted on
+                <small>{{ post.date | date_to_string }}</small>
+          </li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+        {% endfor %}
+
+      </div>
+    </div>
+
+
+    <div class="large-3 medium-6 small-12 cell">
+        {% include blog/sections/archives.html %}
+    </div>
+
+  </div>
 
 </div>
-</div>
-
-
-<div class="large-3 medium-6 small-12 cell">
-		{% include blog/sections/archives.html %}
-</div>
-
-</div>
-
-</div>
-
 
 {% include blog/achordecorator.html %}
