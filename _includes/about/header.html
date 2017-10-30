@@ -1,0 +1,17 @@
+<div class="bg" style="margin-top: 20px">
+    <div class="float-left">
+        <img src="{{ '/assets/svg/symbol-two.svg' | absolute_url }}">
+        <span style="color: grey;">uiot / &nbsp;&nbsp;</span>
+        <span>about</span>
+    </div>
+    <div class="float-right hide-for-small-only">
+        <span onclick="openPage('{{ '/index' | absolute_url }}')">about</span>
+        <span onclick="openPage('{{ '/get/started' | absolute_url }}')">get started</span>
+        <span onclick="openPage('{{ '/blog' | absolute_url }}')">blog</span>
+        <span onclick="openPage('http://docs.uiot.org')">docs</span>
+    </div>
+    <div class="float-right show-for-small-only">
+        <span data-toggle="menu-mobile"><i class="fi-thumbnails"></i></span>
+    </div>
+    <br>
+</div>
