@@ -8,38 +8,12 @@ js: about/assets/js.html
   <div class="grid-x grid-padding-x" data-equalizer data-equalize-on="medium">
 
     <div class="grid-x grid-padding-x">
-        <!-- <div class="large-12 medium-12 small-12 cell">
-            <h2 class="section-title" style="color: #555">
-                About</h2>
-        </div> -->
 
-        <!-- <div class="large-12 medium-12 small-12 cell">
-            <h4 style="color: #41444e">... IoT, the project and us</h4>
-        </div> -->
+        {% include about/sections/iot.html %}
 
-        <!-- <div class="large-4 medium-4 small-4 cell">
-            <div class="callout primary">
-                <h5><a href="#iot">IoT</a></h5>
-            </div>
-        </div>
+        {% include about/sections/theproject.html %}
 
-        <div class="large-4 medium-4 small-4 cell">
-            <div class="callout primary">
-                <h5><a href="#the-project">UIoT project</a></h5>
-            </div>
-        </div>
-
-        <div class="large-4 medium-4 small-4 cell">
-            <div class="callout primary">
-                <h5><a href="#us">us</a></h5>
-            </div>
-        </div> -->
-
-            {% include about/sections/iot.html %}
-
-            {% include about/sections/theproject.html %}
-
-            {% include about/us/sections/members.html %}
+        {% include about/us/sections/members.html %}
 
     </div>
 
