@@ -40,11 +40,14 @@ js: about/assets/js.html
 
       <div class="posts">
         {% for tag in tags %}
-        <h5 id="{{ tag | slugify }}">{{ tag }}</h5>
+        <h5 id="{{ tag | slugify }}">
+          <i style="color: black" class="fi-price-tag"></i>
+          {{ tag }}
+        </h5>
         <ul class="codinfox-category-list">
           {% for post in site.posts %}
           {% if post.tags contains tag %}
-          <li>
+          <li style="list-style: none;">
               <a href="{{ post.url }}">
                 {{ post.title }}</a>, posted on
                 <small>{{ post.date | date_to_string }}</small>
