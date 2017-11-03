@@ -1,13 +1,10 @@
-<div class="responsive-container" style="background: white">
+<div class="responsive-container">
     <div class="grid-x grid-padding-x" data-equalizer data-equalize-on="medium">
-        <div class="large-12 medium-12 small-12 cell">
-            <center>
-                <h3 class="section-title" style="font-weight: bold;color: #7d8492"><i style="color: #555"
-                                                                                      class="fi-torsos"></i>
-                    Members</h3>
-            </center>
-            <br>
-        </div>
+
+
+      <div class="large-12 medium-12 small-12 cell">
+          <h3 style="color: #6F71BC"><a id="us"></a><b>UIoT Members</b></h3>
+      </div>
 
 
         {% for member in site.data.members %}
@@ -18,7 +15,7 @@
                     <center><h5><a href="{{ 'about/member/' | absolute_url }}{{ member.github }}">{{ member.name }}</a></h5>
 
                     <center><div class="image-cropper">
-                        <img src="{{ 'assets/img/about/' | absolute_url }}{{ member.photo }}" alt="" width="200" height="200" >
+                        <img src="{{ 'assets/img/about/' | absolute_url }}{{ member.photo }}" class="member-photo" alt="" width="200" height="200" >
                     </div></center>
 
                     <div>
@@ -30,8 +27,6 @@
                 </div>
             </div>
 
-
         {% endfor %}
-
 
 </div>
