@@ -482,6 +482,11 @@ to {
     }
 }
 
-.mega-button.hold-on { 
+.mega-button.hold-on {
     float: right;
+}
+
+.default-content-text {
+    font-size: large;
+    text-align: justify;
 }
