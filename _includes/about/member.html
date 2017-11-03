@@ -1,0 +1,80 @@
+{% assign author = site.data.members | where:"github", page.author | first %}
+
+<div class="responsive-container" style="background: white">
+    <div class="grid-x grid-padding-x" data-equalizer data-equalize-on="medium">
+        <div class="large-12 medium-1 small-12 cell">
+            <h3 class="section-title" style="font-weight: bold;color: #7d8492">
+                {{ author.name }}
+            </h3>
+            <br>
+        </div>
+
+        <div class="centralizada large-6 medium-4 small-12 cell">
+            <center>
+                <br>
+                <img style="border-radius:3px" src="{{ 'assets/img/about/' | absolute_url }}{{ author.photo }}" alt="" width="300" height="300">
+            </center>
+        </div>
+        <div class="large-6 medium-4 small-12 cell">
+            <div>
+                <h3>
+                    About me:
+                </h3>
+                <h6> {{ author.bio}} </h6>
+            </div>
+
+            <div>
+                <h6><i style="color: black"
+                       class="fi-map"></i>
+                    {{ author.city }}
+                </h6>
+            </div>
+
+            <div>
+                <h6><i style="color: black"
+                       class="fi-mail"></i>
+                    {{ author.email }}
+                </h6>
+            </div>
+
+            <div>
+                <a href='{{ author.lattes}}'> <h6>Currículo Lattes</h6> </a>
+            </div>
+
+            <div>
+                <h6><i style="color: black"
+                       class="fi-social-github"></i>
+                    <a href='{{ author.media.Github }}'> {{ author.github }} </a>
+                </h6>
+            </div>
+
+            <div>
+                <h6><i style="color: black"
+                       class='{% if author.media.Facebook %}{{ "fi-social-facebook" }}{% endif %}'></i>
+                    <a href='{{ author.media.Facebook }}'> {{ author.media.Facebook }} </a>
+                </h6>
+            </div>
+            <div>
+                <h6><i style="color: black"
+                       class='{% if author.media.Twitter %}{{ "fi-social-twitter" }}{% endif %}'></i>
+                    <a href='{{ author.media.Twitter }}'> {{ author.media.Twitter }} </a>
+                </h6>
+            </div>
+
+            <div>
+                <h6><i style="color: black"
+                       class='{% if author.media.Linkedin %}{{ "fi-social-linkedin" }}{% endif %}'></i>
+                    <a href='{{ author.media.Linkedin }}'> {{ author.media.Linkedin }} </a>
+                </h6>
+            </div>
+
+            <div>
+                <h6><i style="color: black"
+                       class='{% if author.media.Instagram %}{{ "fi-social-instagram" }}{% endif %}'></i>
+                    <a href='{{ author.media.Instagram }}'> {{ author.media.Instagram }} </a>
+                </h6>
+            </div>
+
+        </div>
+
+</div>
