@@ -4,17 +4,18 @@
     </div>
     <div class="large-12 medium-12 small-12 cell" data-equalizer-watch>
 
+        {% assign ferreira_dissertation_2014 = site.data.about.references | where:"id", "ferreira_dissertation_2014" | first %}
+        {% assign silva_autorregistro_2016 = site.data.about.references | where:"id", "silva_autorregistro_2016" | first %}
+
         <div class="default-content-text">
 
         <p>The Universal Internet of Things (UIoT) project emerged from a <a target="_blank" href="https://www.ene.unb.br/">PPGEE</a>'s research at of <a target="_blank" href="https://www.unb.br/">University of Brasília</a> early in 2010's.</p>
 
-        {% assign reference = site.data.about.references | where:"id", "ferreira_dissertation_2014" | first %}
-        <p>At the beginning, the project proposes an IoT middleware architecture to <q cite="{{reference.url}}">control and notify the current state of generic devices</q>.
+        <p>At the beginning, the project proposes an IoT middleware architecture to <q cite="{{ferreira_dissertation_2014.url}}">control and notify the current state of generic devices</q>.
         That proposal specifies the physical and logical components of the architecture that allow interaction with these smart objects, as well as defines its API and the use of UPnP for device discovery.
         In 2015, this IoT view was refined and evolved through consolidating the architecture protocols and the API. RAISe is the product of these path.</p>
 
-        {% assign reference = site.data.about.references | where:"id", "silva_autorregistro_2016" | first %}
-        <p>In 2016, the registration and admission control move from UPnP to <q cite="{{reference.url}}">self-registration</q>.
+        <p>In 2016, the registration and admission control move from UPnP to <q cite="{{silva_autorregistro_2016.url}}">self-registration</q>.
         The self-registration mechanism consists one that the device itself is aware of its context and becomes responsible for the initiative of its participation in the network.</p>
 
         <p>On the other side, we are working on objects' interoperability as communication issues between those objects and the middleware.</p>
@@ -26,9 +27,7 @@
         <h5>Cited references</h5>
 
         <ul>
-          <li>{{botta_cc_iot_2014.authors}}. {{botta_cc_iot_2014.date}}. {{botta_cc_iot_2014.title}}.</li>
-          <li>{{gubbi_iot_vision_2013.authors}}. {{gubbi_iot_vision_2013.date}}. {{gubbi_iot_vision_2013.title}}.</li>
-          <li>{{perera_context_iot_2014.authors}}. {{perera_context_iot_2014.date}}. {{perera_context_iot_2014.title}}.</li>
+          <li>{{ferreira_dissertation_2014.authors}}. {{ferreira_dissertation_2014.date}}. {{ferreira_dissertation_2014.title}}.</li>
           <li>{{silva_autorregistro_2016.authors}}. {{silva_autorregistro_2016.date}}. {{silva_autorregistro_2016.title}}.</li>
         <ul>
 
