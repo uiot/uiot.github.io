@@ -1,12 +1,16 @@
 <div class="bg" style="margin-top: 20px">
     <div class="float-left">
-        <img src="{{ '/assets/svg/symbol-two.svg' | absolute_url }}">
-        <span>uiot</span>
+        <a href="{{ 'index' | absolute_url }}">
+            <img src="{{ '/assets/svg/symbol-two.svg' | absolute_url }}">
+            <span style="color: grey;">uiot</span>
+        </a>
+        <span style="color: grey;">&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</span>
+        <span>blog</span>
     </div>
     <div class="float-right hide-for-small-only">
         <span onclick="openPage('{{ '/index' | absolute_url }}')">about</span>
         <span onclick="openPage('{{ '/get/started' | absolute_url }}')">get started</span>
-        <span onclick="openPage('{{ '/blog' | absolute_url }}')">blog</span>
+        <span style="color: #d3dae2">blog</span>
         <span onclick="openPage('http://docs.uiot.org')">docs</span>
     </div>
     <div class="float-right show-for-small-only">

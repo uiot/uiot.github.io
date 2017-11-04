@@ -1,0 +1,37 @@
+<div class="responsive-container" style="background: white">
+    <div class="grid-x grid-padding-x" data-equalizer data-equalize-on="medium">
+        <div class="large-12 medium-12 small-12 cell">
+            <center>
+                <h3 class="section-title" style="font-weight: bold;color: #7d8492"><i style="color: #555"
+                                                                                      class="fi-torsos"></i>
+                    Members</h3>
+            </center>
+            <br>
+        </div>
+
+
+        {% for member in site.data.members %}
+
+            <div class="large-3 medium-4 small-12 cell">
+                <div class="callout box" data-equalizer-watch>
+
+                    <center><h5><a href="{{ 'about/member/' | absolute_url }}{{ member.github }}">{{ member.name }}</a></h5>
+
+                    <center><div class="image-cropper" style=" alt:{{ member.name }}; width:200px; height:200px">
+                        <img src="{{ 'assets/img/about/' | absolute_url }}{{ member.photo }}" >
+                    </div></center>
+
+                    <div>
+                        <p> {{ member.Team}} </p>
+                    </div>
+
+                    </center>
+
+                </div>
+            </div>
+
+
+        {% endfor %}
+
+
+</div>
