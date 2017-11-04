@@ -486,6 +486,10 @@ to {
     float: right;
 }
 
+.pointout {
+    font-weight: bold;
+}
+
 .default-content-text {
     font-size: large;
     text-align: justify;
