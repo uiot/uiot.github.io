@@ -1,8 +1,14 @@
 name: Universal Internet of Things
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+title: Universal Internet of Things
+repository: uiot/uiot.github.io
+permalink: pretty
 collections:
   photos:
-gems: [jekyll-admin]
+  members:
+    output: true
+    type: page
+    permalink: "/about/member/:path/"
+#plugins: [jekyll-admin, jekyll-minifier, jekyll-feed]
 jekyll-minifier:
   exclude: []

@@ -1,0 +1,40 @@
+---
+
+- id: ferreira_dissertation_2014
+  authors: Hiro G. C. Ferreira
+  date: 2014
+  cite_authors: Ferreira
+  title: Arquitetura de Middleware para Internet das Coisas
+  url: www.olink.ene.unb.br
+
+- id: silva_autorregistro_2016
+  authors: Caio C. M. Silva, Francisco L. de Caldas, Felipe D. Machado, Fábio L. L. Mendonça, and Rafael T. de Sousa Jr.
+  date: 2016
+  cite_authors: Silva et al.
+  title: Proposta de auto-registro de serviços pelos dispositivos em ambientes de IoT
+  others: Santarém-PA.
+  url: www.olink2.ene.unb.br
+
+- id: botta_cc_iot_2014
+  authors: Alessio Botta, Walter de Donato, Valerio Persico, and Antonio Pescape
+  date: 2014
+  cite_authors: Botta et al.
+  title: On the Integration of Cloud Computing and Internet of Things
+  others: "IEEE, 23–30. DOI 10.1109/FiCloud.2014.14"
+  url: https://doi.org/10.1109/FiCloud.2014.14
+
+- id: gubbi_iot_vision_2013
+  authors: Jayavardhana Gubbi, Rajkumar Buyya, Slaven Marusic, and Marimuthu Palaniswami
+  date: 2013
+  cite_authors: Gubbi et al.
+  title: "Internet of Things (IoT): A vision, architectural elements, and future directions"
+  others: Future Generation Computer Systems 29, 7 (2013), 1645–1660. DOI 10.1016/j.future.2013.01.010"
+  url: https://doi.org/10.1016/j.future.2013.01.010
+
+- id: perera_context_iot_2014
+  authors: Charith Perera, Arkady Zaslavsky, Peter Christen, and Dimitrios Georgakopoulos
+  date: 2014
+  cite_authors: Perera et al.
+  title: "Context Aware Computing for The Internet of Things: A Survey"
+  others: "IEEE Communications Surveys Tutorials 16, 1 (2014), 414–454. DOI 10.1109/SURV.2013.042313.00197"
+  url: https://doi.org/10.1109/SURV.2013.042313.00197

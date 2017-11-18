@@ -1,0 +1,43 @@
+<div class="responsive-container" style="margin-top: 40px">
+    <div class="grid-x grid-padding-x">
+        <div class="large-12 medium-12 small-12 cell">
+            <center>
+                <h3 class="section-title" style="font-weight: bold;color: #d3dae2"><i style="color: #555"
+                                                                                      class="fi-pencil"></i>
+                    Latest from our <a href="{{ '/blog' | absolute_url }}">Blog</a></h3>
+                <small style="margin-top: -10px;display:block">Pick a cup of coffee and enjoy what our team has
+                    written about IoT.
+                </small>
+            </center>
+            <br>
+        </div>
+
+        {% assign post_count = 0 %}
+        {% for post in site.posts limit:3 | sort: 'date' %}
+
+          {% assign post_count = post_count | plus: 1 %}
+          <article class="large-4 medium-4 small-12 cell">
+              <div class="callout primary">
+                  <span class="pointout"><small>#{{ post_count }}</small></span>
+                  <h5><a class="link" href="{{ post.url | relative_url }}" role="link">{{ post.title | escape }}</a></h5>
+                  <span class="see pointout">Summary</span>
+                  <div class="callout code" style="background: white; color: #3b4151">
+                      {{ post.content | strip_html | escape | truncatewords: 50 }}
+                  </div>
+                  <p><small style="display:block;margin: -10px 0">
+                      By: <span class="pointout">{{post.authors | join: ', ' }}</span>, at: <span class="pointout">
+                          {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
+                          {{ post.date | date: date_format }}
+                      </span><br>
+                      Tags: <span class="pointout">{{post.tags | join: ', '}}</span>
+                  </small>
+                  <br>
+                  <a class="see-button" href="{{ post.url | relative_url }}" role="link">Read more</a>
+                </p>
+              </div>
+          </article>
+
+        {% endfor %}
+
+    </div>
+</div>

@@ -1,0 +1,74 @@
+---
+layout: blog
+title: Blog tags list
+css: about/assets/css.html
+js: about/assets/js.html
+---
+
+{% assign rawtags = "" %}
+{% for post in site.posts %}
+{% assign ttags = post.tags | join:'|' | append:'|' %}
+{% assign rawtags = rawtags | append:ttags %}
+{% endfor %}
+
+{% assign rawtags = rawtags | split:'|' | sort %}
+
+{% assign tags = "" %}
+
+{% for tag in rawtags %}
+{% if tag != "" %}
+
+{% if tags == "" %}
+{% assign tags = tag | split:'|' %}
+{% endif %}
+
+{% unless tags contains tag %}
+{% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
+{% endunless %}
+{% endif %}
+{% endfor %}
+
+<div class="responsive-container" style="margin-top: 80px">
+
+  <h3 class="page-title">
+    Tags used in the blog
+  </h3>
+
+  <div class="grid-x grid-padding-x">
+
+    <div class="large-9 medium-6 small-12 cell">
+
+      <div class="posts">
+        {% for tag in tags %}
+        <h5 id="{{ tag | slugify }}">
+          <i style="color: black" class="fi-price-tag"></i>
+          {{ tag }}
+        </h5>
+        <ul class="codinfox-category-list">
+          {% for post in site.posts %}
+          {% if post.tags contains tag %}
+          <li style="list-style: none;">
+              <a href="{{ post.url }}">
+                {{ post.title }}</a>, posted on
+                <small>{{ post.date | date_to_string }}</small>
+          </li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="large-3 medium-6 small-12 cell">
+        {% include blog/sections/archives.html %}
+    </div>
+
+    <div class="large-12 medium-12 small-12 cell">
+        <a href="{{ '/blog' | absolute_url }}">Back to blog home.</a>
+    </div>
+
+  </div>
+
+</div>
+
+{% include blog/achordecorator.html %}
