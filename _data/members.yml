@@ -1,17 +1,17 @@
-- github: BrunoVieiraDutra
-  name: Bruno Vieira Dutra
-  Team: Team
-  photo: missing.svg
-  email: bruno.dutra@uiot.org
-  city: Brasília - DF
-  bio: Bruno Vieira Dutra is an open source software enthusiast and a programming language ​​lover. He is also very interested in robotics.
-  lattes: http://lattes.cnpq.br/2714233444933461
-  media:
-    Facebook:
-    Github: https://github.com/BrunoVieiraDutra
-    Twitter:
-    Linkedin: https://www.linkedin.com/in/brunovdutra/
-    Instagram:
+#- github: BrunoVieiraDutra
+#  name: Bruno Vieira Dutra
+#  Team: Team
+#  photo: missing.svg
+#  email: bruno.dutra@uiot.org
+#  city: Brasília - DF
+#  bio: Bruno Vieira Dutra is an open source software enthusiast and a programming language ​​lover. He is also very interested in robotics.
+#  lattes: http://lattes.cnpq.br/2714233444933461
+#  media:
+#    Facebook:
+#    Github: https://github.com/BrunoVieiraDutra
+#    Twitter:
+#    Linkedin: https://www.linkedin.com/in/brunovdutra/
+#    Instagram:
 
 - github: CassioFabius
   name: Cassio Fabius Cambraia Ribeiro
@@ -108,20 +108,20 @@
     Linkedin:
     Instagram:
 
-- github: joaoalencastro
-  name: João Fiuza de Alencastro
-  Team: Team
-  photo: joao.alencastro.jpeg
-  email: joao.alencastro@uiot.org
-  city: Brasília - DF
-  bio: Estudante de engenharia de Redes de telecomunicações.
-  lattes: Falta
-  media:
-    Facebook:
-    Github: https://github.com/joaoalencastro
-    Twitter:
-    Linkedin:
-    Instagram:
+#- github: joaoalencastro
+#  name: João Fiuza de Alencastro
+#  Team: Team
+#  photo: joao.alencastro.jpeg
+#  email: joao.alencastro@uiot.org
+#  city: Brasília - DF
+#  bio: Estudante de engenharia de Redes de telecomunicações.
+#  lattes: Falta
+#  media:
+#    Facebook:
+#    Github: https://github.com/joaoalencastro
+#    Twitter:
+#    Linkedin:
+#    Instagram:
 
 - github: leonard6
   name: Leonardo Borges Dantas
