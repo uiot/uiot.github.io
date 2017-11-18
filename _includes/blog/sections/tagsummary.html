@@ -1,0 +1,21 @@
+<section class="tags callout primary">
+
+  <div id="archives">
+
+    <h5>Tags</h5>
+
+    <div class="archive-group">
+      <p>
+      {% for tag in site.tags %}
+
+        {% capture tag_name %}{{ tag | first }}{% endcapture %}
+        <i style="color: black" class="fi-price-tag"></i>
+        <span id="#{{ tag_name | slugize }}" class="category-head"><a href="/blog/tags/#{{ tag_name | slugize }}">{{ tag_name }}</a>{% if forloop.last == false %},&nbsp;{% endif %}</span>
+
+      {% endfor %}
+      </p>
+    </div>
+
+  </div>
+
+</section>

@@ -1,0 +1,36 @@
+<div class="grid-x grid-padding-x" style="margin-top: 40px" data-equalizer>
+    <div class="large-12 medium-12 small-12 cell">
+        <h3 style="color: #6F71BC"><a id="the-project"></a>The <b>UIoT</b> project</h3>
+    </div>
+    <div class="large-12 medium-12 small-12 cell" data-equalizer-watch>
+
+        {% assign ferreira_dissertation_2014 = site.data.about.references | where:"id", "ferreira_dissertation_2014" | first %}
+        {% assign silva_autorregistro_2016 = site.data.about.references | where:"id", "silva_autorregistro_2016" | first %}
+
+        <div class="default-content-text">
+
+          <p>The UnB Internet of Things (UIoT) project emerged from a <a target="_blank" href="https://www.ene.unb.br/">PPGEE</a>'s research of <a target="_blank" href="https://www.unb.br/">University of Brasília</a> early in 2010's.
+          Project's audacious goal is to build an <span class="highlight">universal</span> concept and platform of Internet of Things.</p>
+
+          <p>At the beginning, the project proposed an IoT middleware architecture to <q cite="{{ferreira_dissertation_2014.url}}">control and notify the current state of generic devices</q>.
+          That proposal specified the physical and logical components of the architecture that allow interaction with these smart objects, as well as defines its API and the use of UPnP for device discovery.
+          In 2015, this IoT view was refined and evolved through consolidating the architecture protocols and the API. RAISe is the product of this path.</p>
+
+          <p>In 2016, the registration and admission control moved from UPnP to <q cite="{{silva_autorregistro_2016.url}}">self-registration</q>.
+          The self-registration mechanism consists one that the device itself is aware of its context and becomes responsible for the initiative of its participation in the network.</p>
+
+          <p>On the other side, we are working on objects' interoperability as communication issues between those objects and the middleware.</p>
+
+          <p>We are just in the beginning, more to come...</p>
+
+        </div>
+
+        <h5>Cited references</h5>
+
+        <ul>
+          <li>{{ferreira_dissertation_2014.authors}}. {{ferreira_dissertation_2014.date}}. {{ferreira_dissertation_2014.title}}.</li>
+          <li>{{silva_autorregistro_2016.authors}}. {{silva_autorregistro_2016.date}}. {{silva_autorregistro_2016.title}}.</li>
+        <ul>
+
+    </div>
+</div>

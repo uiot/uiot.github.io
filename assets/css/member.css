@@ -6,7 +6,7 @@
     border-radius: 50%;
 }
 
-img {
+img.member-photo {
     display: inline;
     margin: 0 auto;
     height: 100%;
