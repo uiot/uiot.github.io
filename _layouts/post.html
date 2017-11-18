@@ -1,0 +1,80 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+    {% include global/assets/css.html %}
+
+</head>
+<body>
+
+  <div class="off-canvas-wrapper">
+    {% include default/mobile-header.html %}
+
+    <div class="off-canvas-content" data-off-canvas-content>
+
+        {% include blog/header.html %}
+
+        <div class="responsive-container" style="margin-top: 80px">
+
+  <div class="grid-x grid-padding-x">
+
+
+<article class="post large-9 medium-6 small-12 cell" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="meta">Posted on
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            {% assign date_format = site.date_format | default: "%b %-d, %Y" %}
+            {{ page.date | date: date_format }}
+        </time>
+        {% if page.authors %}
+        • by
+          {% for author in page.authors %}
+              <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="{{ 'about/member/' | absolute_url }}{{ author }}">{{ author }}</a></span></span>{% if forloop.last == false %},&nbsp;{% endif %}
+          {% endfor %}
+        {% endif %}
+    <br>
+        {% for tag in page.tags %}
+          <i style="color: black" class="fi-price-tag"></i>
+          <span id="#{{ tag | slugize }}" class="category-head"><a href="/blog/tags/#{{ tag | slugize }}">{{ tag }}</a>{% if forloop.last == false %},&nbsp;{% endif %}</span>
+        {% endfor %}
+    </p>
+  </header>
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+</article>
+
+
+
+<div class="large-3 medium-6 small-12 cell">
+    {% include blog/sections/tagsummary.html %}
+    {% include blog/sections/archives.html %}
+</div>
+
+
+<div class="large-12 medium-12 small-12 cell">
+    <a href="{{ '/blog' | absolute_url }}">Back to blog home.</a>
+</div>
+
+    </div>
+
+    </div>
+
+            {% include default/footer.html %}
+</div>
+
+</div>
+
+
+{% include blog/achordecorator.html %}
+{% include global/assets/js.html %}
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<div class="responsive-container" style="background: white">
+    <div class="grid-x grid-padding-x" data-equalizer data-equalize-on="medium">
+        <div class="large-12 medium-12 small-12 cell">
+            <center>
+                <h3 class="section-title" style="font-weight: bold;color: #7d8492"><i style="color: #555"
+                                                                                      class="fi-zoom-in"></i>
+                    What we do here</h3>
+                <small style="margin-top: -10px;display:block">What does UIoT deliver?</small>
+            </center>
+            <br>
+        </div>
+
+        {% assign text_number = 0 %}
+
+        {% for action in site.data.root.whatwedohere %}
+
+            {% assign text_number = text_number | plus:1 %}
+
+            {% if text_number == 1 %}
+              {% assign box_style = 'class="callout box"' %}
+              {% assign box_title = '' %}
+
+            {% elsif text_number == 2 %}
+              {% assign box_style = 'class="callout primary"' %}
+              {% assign box_title = '' %}
+
+            {% elsif text_number == 3 %}
+              {% assign text_number = 0 %}
+              {% assign box_style = 'class="callout primary" style="background:#41444e;color: white"' %}
+              {% assign box_title = 'style="color:white"' %}
+            {% endif %}
+
+        <div class="large-3 medium-6 small-12 cell">
+            <div {{box_style}} data-equalizer-watch>
+                <h5 {{box_title}}>{{action.title}}</h5>
+                {{action.text}}
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
