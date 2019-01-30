@@ -1,0 +1,104 @@
+/* === Open Sans - regular */
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url("./../fonts//OpenSans-Regular.eot");
+	src: local("Open Sans Regular"),
+		local("OpenSans-Regular"),
+		url("./../fonts//OpenSans-Regular.eot") format("embedded-opentype"),
+		url("./../fonts//OpenSans-Regular.woff2") format("woff2"),
+		url("./../fonts//OpenSans-Regular.woff") format("woff"),
+		url("./../fonts//OpenSans-Regular.ttf") format("truetype"),
+		url("./../fonts//OpenSans-Regular.svg") format("svg");
+}
+
+/* === Open Sans - 700 */
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url("./../fonts//OpenSans-Bold.eot");
+	src: local("Open Sans Bold"),
+		local("OpenSans-Bold"),
+		url("./../fonts//OpenSans-Bold.eot") format("embedded-opentype"),
+		url("./../fonts//OpenSans-Bold.woff2") format("woff2"),
+		url("./../fonts//OpenSans-Bold.woff") format("woff"),
+		url("./../fonts//OpenSans-Bold.ttf") format("truetype"),
+		url("./../fonts//OpenSans-Bold.svg") format("svg");
+}
+
+/* === Source Code Pro - 300 */
+@font-face {
+	font-family: 'Source Code Pro';
+	font-style: normal;
+	font-weight: 300;
+	src: url("./../fonts//SourceCodePro-Light.eot");
+	src: local("Source Code Pro Light"),
+		local("SourceCodePro-Light"),
+		url("./../fonts//SourceCodePro-Light.eot") format("embedded-opentype"),
+		url("./../fonts//SourceCodePro-Light.woff2") format("woff2"),
+		url("./../fonts//SourceCodePro-Light.woff") format("woff"),
+		url("./../fonts//SourceCodePro-Light.ttf") format("truetype"),
+		url("./../fonts//SourceCodePro-Light.svg") format("svg");
+}
+
+/* === Source Code Pro - 600 */
+@font-face {
+	font-family: 'Source Code Pro';
+	font-style: normal;
+	font-weight: 600;
+	src: url("./../fonts//SourceCodePro-SemiBold.eot");
+	src: local("Source Code Pro Semibold"),
+		local("SourceCodePro-Semibold"),
+		url("./../fonts//SourceCodePro-SemiBold.eot") format("embedded-opentype"),
+		url("./../fonts//SourceCodePro-SemiBold.woff2") format("woff2"),
+		url("./../fonts//SourceCodePro-SemiBold.woff") format("woff"),
+		url("./../fonts//SourceCodePro-SemiBold.ttf") format("truetype"),
+		url("./../fonts//SourceCodePro-SemiBold.svg") format("svg");
+}
+
+/* === Titillium Web - regular */
+@font-face {
+	font-family: 'Titillium Web';
+	font-style: normal;
+	font-weight: 400;
+	src: url("./../fonts//TitilliumWeb-Regular.eot");
+	src: local("Titillium Web Regular"),
+		local("TitilliumWeb-Regular"),
+		url("./../fonts//TitilliumWeb-Regular.eot") format("embedded-opentype"),
+		url("./../fonts//TitilliumWeb-Regular.woff2") format("woff2"),
+		url("./../fonts//TitilliumWeb-Regular.woff") format("woff"),
+		url("./../fonts//TitilliumWeb-Regular.ttf") format("truetype"),
+		url("./../fonts//TitilliumWeb-Regular.svg") format("svg");
+}
+
+/* === Titillium Web - 600 */
+@font-face {
+	font-family: 'Titillium Web';
+	font-style: normal;
+	font-weight: 600;
+	src: url("./../fonts//TitilliumWeb-SemiBold.eot");
+	src: local("Titillium Web SemiBold"),
+		local("TitilliumWeb-SemiBold"),
+		url("./../fonts//TitilliumWeb-SemiBold.eot") format("embedded-opentype"),
+		url("./../fonts//TitilliumWeb-SemiBold.woff2") format("woff2"),
+		url("./../fonts//TitilliumWeb-SemiBold.woff") format("woff"),
+		url("./../fonts//TitilliumWeb-SemiBold.ttf") format("truetype"),
+		url("./../fonts//TitilliumWeb-SemiBold.svg") format("svg");
+}
+
+/* === Titillium Web - 700 */
+@font-face {
+	font-family: 'Titillium Web';
+	font-style: normal;
+	font-weight: 700;
+	src: url("./../fonts//TitilliumWeb-Bold.eot");
+	src: local("Titillium Web Bold"),
+		local("TitilliumWeb-Bold"),
+		url("./../fonts//TitilliumWeb-Bold.eot") format("embedded-opentype"),
+		url("./../fonts//TitilliumWeb-Bold.woff2") format("woff2"),
+		url("./../fonts//TitilliumWeb-Bold.woff") format("woff"),
+		url("./../fonts//TitilliumWeb-Bold.ttf") format("truetype"),
+		url("./../fonts//TitilliumWeb-Bold.svg") format("svg");
+}
