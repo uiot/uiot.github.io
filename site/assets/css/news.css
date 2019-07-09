@@ -1,0 +1,95 @@
+.text{
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+  
+  
+    #all{
+      background-color:rgb(250, 250, 250);
+    }
+  
+  
+  footer{
+      background-color: rgb(221, 221, 221);
+  }
+  
+  .textfooter{
+      color: grey; 
+  }
+  
+  hr {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      border: 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      margin-left: 120px;
+      margin-right: 120px;
+    }
+  
+  .linha-vertical {
+      height: 50px;
+      border-left: 1px solid grey;
+  }
+  
+  .navbar-nav{
+    text-align: center;
+  }
+  
+  .navbar-left{
+    align-content: center;
+  }
+  
+  p{
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .backimage{
+      height: 100px;
+      margin-left: 120px;
+      margin-right: 120px;
+      filter: blur(0.1px);
+      /* background-color: rgb(112, 112, 112); */
+      background-image:url("../img/code1.jpeg");  
+  
+  }
+  
+  #title{  
+      font-size: 40px;  
+      text-align: center;
+      line-height: 100px;
+      color: rgb(255, 255, 255);
+  }
+  
+  .title{
+      font-size: 30px;    
+  }
+  
+  h1{
+    font-family: 'Raleway', sans-serif;
+    font-style: bold;
+    /* font-weight: bold; */
+  }
+  
+  #secondTitle{
+      text-align: center; 
+      line-height: 90px;
+      margin-left: 120px;
+      margin-right: 120px;
+  }
+  
+  .conteudo{
+      text-align: left;
+      margin-left: 120px;
+  }
+  
+  
+  .link{
+      font-size: 14px;
+      margin-bottom: 20px;
+  }
+
+.boxbody{
+      margin-left: 120px;
+      margin-right: 120px;
+  }
+

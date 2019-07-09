@@ -1,0 +1,40 @@
+  .navbar-fundo{
+    background-color: rgb(143, 170, 221);
+    height: 50px;
+  }
+
+  .nav-item > .active p{
+
+    color: #de761b !important;
+    transition-duration: 400ms;
+    border-bottom: solid #de761b 1px;
+  }
+  .nav-item > .active p{
+    border-bottom: none!important;
+  }
+  
+  .nav-link{
+    color:#ffffff;
+  }
+
+  .p-link{
+    color:#ffffff;
+  }
+
+  .nav_itens{
+    margin-left:60%;
+    padding-top:13px;
+    overflow: hidden;
+    width: 50%;
+  }
+
+  .narbar-brand{
+    text-align: center;
+    height: 61px;
+    width: 150px;
+  }
+
+  .text-brand{  
+    color:#ffffff;
+  }
+
