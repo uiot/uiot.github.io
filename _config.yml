@@ -1,8 +1,0 @@
-name: Universal Internet of Things
-markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
-collections:
-  photos:
-gems: [jekyll-admin]
-jekyll-minifier:
-  exclude: []
