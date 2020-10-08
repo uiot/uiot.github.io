@@ -1,23 +1,22 @@
 <template>
   <div class="toolbar">
     <v-toolbar>
-      <v-toolbar-title> <v-btn text to="/"> UIoT </v-btn> </v-toolbar-title>
+      <v-toolbar-title> <v-btn text to="/" active-class> <h2> UIoT </h2> </v-btn> </v-toolbar-title>
 
       <v-spacer></v-spacer>
 
       <v-toolbar-items>
         <v-btn text to="/publications">Publications</v-btn>
         <v-btn text to="/projects">Projects</v-btn>
-        <v-btn text to="/news">News</v-btn>
         <v-btn text to="/team">Team</v-btn>
         <v-menu offset-y>
           <template v-slot:activator="{ on }">
             <v-btn
-              color="primary"
+              color="base"
               dark
               v-on="on"
             >
-              Dropdown
+              {{currentLang}}
             </v-btn>
           </template>
           <v-list>
@@ -27,7 +26,8 @@
             >
               <v-list-item-title >
                 <v-btn text @click="changeLocale(item.language)" class="botao">
-                  {{ item.title }}
+                  <v-img width="30" :src="require(`@/assets/${item.img}`)"></v-img> <v-span class="lang-title"> {{ item.title }} </v-span>
+                  
                 </v-btn>
               </v-list-item-title>
             </v-list-item>
@@ -41,6 +41,7 @@
 
 <script>
 import i18n from '@/plugins/i18n';
+
 export default {
   data() {    
     return {      
@@ -50,21 +51,25 @@ export default {
       ],  
       languages: [            
         { 
+          img: 'united-states.png',
           flag: 'us', 
           language: 'en', 
           title: 'English' 
         },            
         { 
+          img: 'brazil.png',
           flag: 'pt-br', 
           language: 'pt-br', 
           title: 'Portugues' 
         }        
-      ]    
+      ],
+      currentLang: "en",    
     };
   },
   methods: {    
     changeLocale(locale) {        
-      i18n.locale = locale;    
+      i18n.locale = locale;
+      this.currentLang = i18n.locale    
     }
   }
 }
@@ -81,4 +86,7 @@ export default {
     font-family: 'Raleway', sans-serif;
 }
 
+.lang-title{
+  padding-left: 12px;
+}
 </style>

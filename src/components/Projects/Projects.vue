@@ -1,20 +1,20 @@
 <template>
     <div class="projetos">
         <v-container fluid>
-          <v-row>
-            <v-col cols="12" md="6">
-                <h1> Cidade inteligente </h1>
-                <p> Texto sobre a cidade inteligente </p>
-                <cidade></cidade>
-            </v-col>
-            <v-col cols="12" md="6">
-                <v-img
-                    :src="`https://picsum.photos/500/300?image=`"
-                    :lazy-src="`https://picsum.photos/id/884`"
-                    sizes="10%"
-                >
-
-                </v-img>
+        <v-row>
+            <v-col v-for="item in projects" :key="item" cols="12" sm="12" md="4" xl="4" >
+                <v-card flat color="grey lighten-3">
+                    <v-card-tile> <v-icon class="pa-3" size="50"> {{item.icon}} </v-icon> <v-span class=" title-text"> {{item.name}} </v-span> </v-card-tile>
+                    <v-card-subtitle>{{item.short_description}}</v-card-subtitle>
+                    <v-card-text>
+                        {{ $t('lorenIpsum') }}
+                    </v-card-text>
+                    <v-card-actions>
+                        <v-spacer/>
+                            <v-btn elevation="0" color="base"> {{ item.link }} </v-btn>
+                        <v-spacer/>
+                    </v-card-actions>
+                </v-card>
             </v-col>
         </v-row>
     </v-container>
@@ -22,13 +22,44 @@
 </template>
 
 <script>
-import cidade from './cidade_inteligente/City.vue'
 export default {
-    components: { cidade },
-    
+    data(){
+        return {
+            projects: [
+                { 
+                    name: "DIMS", 
+                    icon: "mdi-database",
+                    short_description: "The database for your UIoT middleware", 
+                    description: "aaaaaaaaaaaaaa", 
+                    img: "bla",
+                    link: "abc"
+                },
+                {
+                    name: "UIMS",
+                    icon: "mdi-chart-line",
+                    short_description: "The best way to check your data",
+                    description: "aaaaaaaaaaaaa",
+                    img: "bla",
+                    link: "abc"
+                },
+                {
+                    name: "Dashboard",
+                    icon: "mdi-view-dashboard",
+                    short_description: "The easiest way to interact with your devices",
+                    description: "aaaaaaaaaaaaa",
+                    img: "bla",
+                    link: "abc"
+                }
+            ]
+        }
+    }
 }
 </script>
 
 <style scoped>
+
+.title-text{
+    font-size: 30px;
+}
 
 </style>

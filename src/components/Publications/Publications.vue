@@ -1,30 +1,70 @@
 <template>
-  <v-expansion-panels>
-    <v-expansion-panel v-for="item in publicacoes" :key="item">
-      <v-expansion-panel-header class="year"> <b> {{ item.year }} </b> </v-expansion-panel-header>
-      <v-expansion-panel-content>
-        <div v-for="i in item.publication" :key="i">
-            <h1> {{ i.title }} </h1>
-            <v-divider></v-divider><br>
-            <div v-for="autor in i.authors" :key="autor">
-                <div class="autor">{{ autor }}</div>
-            </div>
-            <br>
-        </div>
-      </v-expansion-panel-content>
-    </v-expansion-panel>
-  </v-expansion-panels>
+  <div>
+    <v-card flat>
+      <v-card-title> 
+        <v-menu open-on-hover bottom offset-y>
+            <template v-slot:activator="{ on, attrs }">
+                <v-btn
+                    text
+                    color="black"
+                    dark
+                    v-bind="attrs"
+                    v-on="on"
+                >
+                Anos <v-icon> mdi-arrow-bottom-right </v-icon>
+                </v-btn>
+            </template>
+            <v-list color="#133e79">
+                <v-list-item v-for="(year, index) in years" :key="index" @click="changeDates(year)">
+                    <v-list-item-title class="white--text">{{ year }}</v-list-item-title>
+                </v-list-item>
+            </v-list>
+        </v-menu>
+        <v-spacer/> 
+        <v-chip
+          v-for="i in selectedYears" :key="i"
+          class="ma-2 white--text"
+          color="base"
+          value="oi">
+            {{i}}
+        </v-chip>
+      </v-card-title>
+    </v-card>
+
+    {{ filtered}}
+  </div>
 </template>
 
 <script>
 import Publications from "../../texts/Publications"
+import { filterPublications } from "../../functions/publications.js"
+
 
 export default {
     data(){
         return {
-            publicacoes: Publications.years
+            selectedYears: [2019],
+            publicacoes: Publications
         }
-    }    
+    },
+    computed: {
+      years(){
+        return new filterPublications().getYears()
+      },
+      filtered(){
+        return new filterPublications().byYears(this.selectedYears)
+      }
+    },
+    methods: {
+      changeDates(year){
+        if(this.selectedYears.includes(year)){
+          let idx = this.selectedYears.indexOf(year)
+          this.selectedYears.splice(idx, 1)
+        }else{
+          this.selectedYears.push(year)
+        }
+      }
+    } 
 }
 </script>
 

@@ -1,6 +1,7 @@
 // src/plugins/vuetify.js
 import Vue from 'vue'
 import Vuetify from 'vuetify/lib'
+import colors from "./colors.js"
 
 Vue.use(Vuetify)
 
@@ -26,4 +27,7 @@ export default new Vuetify({
     locales: { en },
     current: 'en',
   },
+  theme: {
+    themes: colors
+  }
 })

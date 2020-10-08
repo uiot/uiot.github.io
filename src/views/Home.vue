@@ -17,15 +17,15 @@
       </div>
       <v-divider></v-divider>
       <v-row class="times">
-        <v-col cols="4" class="bloco_texto_time">
+        <v-col cols="12" sm="12" md="4" lg="4">
           <h1> Hardware </h1>
           <p> {{ $t('lorenIpsum') }} </p>
         </v-col>
-        <v-col cols="4">
+        <v-col cols="12" sm="12" md="4" lg="4">
           <h1> Software </h1>
           <p> {{ $t('lorenIpsum') }} </p>
         </v-col>
-        <v-col cols="4">
+        <v-col cols="12" sm="12" md="4" lg="4">
           <h1> Segurança </h1>
           <p> {{ $t('lorenIpsum') }} </p>
         </v-col>

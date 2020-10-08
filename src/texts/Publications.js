@@ -1,9 +1,6 @@
-const Publications = {
-    years: [
-    {
-        year: 2019,
-        publication: [
+const Publications = [
             { 
+                year: 2019,
                 title: "A Real Data Analysis in an Internet of Things Environment", 
                 authors: [
                     "Joao Victor Poletti", 
@@ -15,6 +12,7 @@ const Publications = {
                 download: "download" 
             },
             { 
+                year: 2019,
                 title: "HIDS by Signature for embedded devices in IoT networks", 
                 authors: [
                     "Bruno Vieira Dutra", 
@@ -24,6 +22,7 @@ const Publications = {
                 download: "download" 
             },
             { 
+                year: 2019,
                 title: "IPS architecture for ioT networks overlapped in SDN", 
                 authors: [
                     "Daniel G. V. Gonçalves",
@@ -37,6 +36,7 @@ const Publications = {
                 download: "download" 
             },
             { 
+                year: 2019,
                 title: "University Campus Microclimate Monitoring Using IoT", 
                 authors: [
                     "Matheus S. Monteiro", 
@@ -49,6 +49,7 @@ const Publications = {
                 download: "download" 
             },
             { 
+                year: 2019,
                 title: "QoS Scheduling Algorithm for a Fog IoT Gateway", 
                 authors: [ 
                     "Lucas Mauricio Castro e Martins", 
@@ -61,6 +62,7 @@ const Publications = {
                 download: "download" 
             },
             { 
+                year: 2019,
                 title: "Inference of driver behavior using correlated IoT data from the vehicle telemetry and the driver mobile phone", 
                 authors: [ 
                     "Rafael T. de Sousa Jr",
@@ -75,6 +77,7 @@ const Publications = {
                 download: "download" 
             },
             { 
+                year: 2019,
                 title: "Arquitetura de IPS para redes IoT sobrepostas em SDN", 
                 authors: [ 
                     "Daniel GV Gonçalves", 
@@ -89,6 +92,7 @@ const Publications = {
                 download: "download" 
             },
             { 
+                year: 2019,
                 title: "Design of a Distributed HIDS for IoT Backbone Components", 
                 authors: [ 
                     "Guilherme de O Kfouri", 
@@ -102,13 +106,9 @@ const Publications = {
                     "Rafael T de Sousa Jr"
                 ], 
                 download: "download" 
-            }
-        ]
-    },
-    {
-        year: 2018,
-        publication: [
+            },
             { 
+                year: 2018,
                 title: "Evaluation of an IoT device designed for transparent traffic analysis", 
                 authors: [
                     "Thales L. von Sperling", 
@@ -121,6 +121,7 @@ const Publications = {
                 download: "download" 
             },
             { 
+                year: 2018,
                 title: "Protocolos de Redundancia de Gateway Aplicados em Redes IoT", 
                 authors: [
                     "Francisco L. de Caldas Filho", 
@@ -130,12 +131,9 @@ const Publications = {
                     "Cassio Fabius C. Ribeiro",
                 ], 
                 download: "download" 
-            } 
-        ]
-    },{
-        year: 2017,
-        publication: [
+            },
             { 
+                year: 2017,
                 title: "Tracking intruders in IoT networks by means of DNS traffic analysis", 
                 authors: [
                     "Thales L. von Sperling",  
@@ -147,6 +145,7 @@ const Publications = {
                 download: "download" 
             },
             { 
+                year: 2017,
                 title: "Increasing the Dependability of IoT Middleware with Cloud Computing and Microservices", 
                 authors: [
                     "Francisco L. de Caldas Filho", 
@@ -158,6 +157,7 @@ const Publications = {
                 download: "download" 
             },
             { 
+                year: 2017,
                 title: "Design and Evaluation of a Semantic Gateway Prototype for IoT Networks", 
                 authors: [
                     "Francisco L. de Caldas Filho", 
@@ -170,6 +170,7 @@ const Publications = {
                 download: "download" 
             },
             { 
+                year: 2017,
                 title: "Distributed Data Service for Data management in Internet of Things Middleware", 
                 authors: [
                     "Ruben Cruz Huacarpuma", 
@@ -182,6 +183,7 @@ const Publications = {
                 download: "download" 
             },
             { 
+                year: 2017,
                 title: "Proposição de um modelo e sistema de gerenciamento de dados distribuídos para internet das coisas - GDDIoT", 
                 authors: [
                     "Ruben Cruz Huacarpuma"
@@ -189,6 +191,7 @@ const Publications = {
                 download: "download" 
             },
             { 
+                year: 2017,
                 title: "Security analysis of a proposed internet of things middleware", 
                 authors: [
                     "Hiro Gabriel Cerqueira Ferreira",
@@ -197,6 +200,7 @@ const Publications = {
                 download: "download" 
             },
             { 
+                year: 2017,
                 title: "Proposta de adoção de microsserviços em IoT", 
                 authors: [
                     "Lucas M. C. e Martins",
@@ -208,6 +212,7 @@ const Publications = {
                 download: "download" 
             },
             { 
+                year: 2017,
                 title: "Gerenciamento de Serviços IoT com Gateway Semântico", 
                 authors: [
                     "Lucas M. C. e Martins",
@@ -218,13 +223,9 @@ const Publications = {
                     "João Paulo C. L. da Costa"
                 ], 
                 download: "download" 
-            }  
-        ]
-    },
-    {
-        year: 2016,
-        publication: [
+            },
             { 
+                year: 2016,
                 title: "Designand Evaluation of a Services Interface for the Internet of Things", 
                 authors: [
                     "Caio César de Melo Silva", 
@@ -236,6 +237,7 @@ const Publications = {
                 download: "download" 
             },
             { 
+                year: 2016,
                 title: "Proposta de auto-registro de serviços pelos dispositivos em ambientes de IoT", 
                 authors: [
                     "Caio C. M.Silva",
@@ -247,6 +249,7 @@ const Publications = {
                 download: "download" 
             },
             { 
+                year: 2016,
                 title: "O auto-registro de serviços por dispositivos contribui com a escalabilidade de ambientes de IoT", 
                 authors: [
                     "Caio C. M.Silva",
@@ -258,6 +261,7 @@ const Publications = {
                 download: "download" 
             },
             { 
+                year: 2016,
                 title: "Concepção e Desenvolvimento de um Serviço Distribuido de Coleta e Tratamento de Dados para Ambientes de Internet das Coisas", 
                 authors: [
                     "Ruben C. Huacarpuma",
@@ -268,6 +272,7 @@ const Publications = {
                 download: "download" 
             },
             { 
+                year: 2016,
                 title: "Proposta de auto-registro de serviços pelos dispositivos em ambientes de IoT", 
                 authors: [
                     "Caio C. M.Silva",
@@ -279,6 +284,7 @@ const Publications = {
                 download: "download" 
             },
             { 
+                year: 2016,
                 title: "RAISe: REST API Approach for IoT Services", 
                 authors: [
                     "Hiro Gabriel Cerqueira Ferreira",
@@ -286,18 +292,9 @@ const Publications = {
                     "Rafael T. de Sousa Jr."
                 ], 
                 download: "download" 
-            }
-        ]
-    },
-    {
-        year: 2015,
-        publication: [
-        ]
-    },
-    {
-        year: 2014,
-        publication: [
+            },
             { 
+                year: 2014,
                 title: "A ubiquitous communication architecture integrating trasparent UPnP and REST APIs", 
                 authors: [
                     "Hiro Gabriel Cerqueira Ferreira", 
@@ -307,6 +304,7 @@ const Publications = {
                 download: "download" 
             },
             { 
+                year: 2014,
                 title: "Arquitetura de Middleware para Internet das Coisas", 
                 authors: [
                     "Hiro Gabriel Cerqueira Ferreir",
@@ -314,6 +312,7 @@ const Publications = {
                 download: "download" 
             },
             { 
+                year: 2014,
                 title: "Proposal of a Secure, Deployable and Transparent Middleware for Internet of Things", 
                 authors: [
                     "Hiro Gabriel Cerqueira Ferreir",
@@ -322,13 +321,9 @@ const Publications = {
                     "Edna Dias Canedo"
                 ], 
                 download: "download" 
-            }
-        ]
-    },
-    {
-        year: 2013,
-        publication: [
+            },
             { 
+                year: 2013,
                 title: "IoT Architecture to Enable Intercommunication Through REST API and UPnP Using IP, ZigBee and Arduino", 
                 authors: [
                     "Hiro Gabriel Cerqueira Ferreira", 
@@ -338,8 +333,5 @@ const Publications = {
                 download: "download" 
             },
         ]
-    }
-    
-    ]
-  }
-  export default Publications
+
+        export default Publications
