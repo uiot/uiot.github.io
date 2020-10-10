@@ -1,10 +1,8 @@
 <template>
-  <v-app class="grey lighten-4 all">
+  <v-app class="white">
     <ToolBar/>
-      <!-- <v-content class="mx-4 mb-4"> -->
           <router-view></router-view>
-      <!-- </v-content>   -->
-    <Footer></Footer>
+    <Footer/>
   </v-app>
 </template>
 
@@ -25,6 +23,6 @@ export default {
 };
 </script>
 
-<style scoped>
-
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;1,300&display=swap');
 </style>

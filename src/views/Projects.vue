@@ -1,6 +1,10 @@
 <template>
   <div class="projects">
-    <div class="bloco_principal">
+    <div class="title">
+        <v-icon> mdi-devices </v-icon>  
+        <span> <b>{{ $t('projects.title') }}</b> </span>
+    </div>
+    <!-- <div class="bloco_principal">
         <div class="bloco_titulo">
             Projects
         </div>
@@ -9,14 +13,14 @@
         </div>
         <v-divider></v-divider>
         <Projects></Projects>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
-import Projects from '../components/Projects/Projects';
+// import Projects from '../components/Projects/Projects';
 export default {
-    components: { Projects },
+    // components: { Projects },
     
 }
 </script>
@@ -24,10 +28,16 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
+.title{
+    font-family: 'Titillium Web', sans-serif;
+    color: rgb(77, 77, 77);
+    size: 100px;
+}
+
 .projects{
     margin-top: 2%;
-    margin-left: 7%;
-    margin-right: 7%;    
+    margin-left: 3%;
+    margin-right: 3%;    
     font-family: 'Raleway', sans-serif;
 }
 

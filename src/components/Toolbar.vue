@@ -1,19 +1,29 @@
 <template>
   <div class="toolbar">
-    <v-toolbar>
-      <v-toolbar-title> <v-btn text to="/" active-class> <h2> UIoT </h2> </v-btn> </v-toolbar-title>
+    <div class="style-top base lighten-1" />
+    <v-toolbar flat class="grey lighten-3">
+      
+      <v-toolbar-title class="pl-10"> 
+
+        <div @click="goTo()">
+          <v-img class="nameLogo" src="../assets/logo.png" width="30"/>  
+          <span class="titleText  nameLogo base--text"> <h2> <b> uiot </b> </h2> </span>  
+        </div>
+        <div>
+        
+        </div>
+      </v-toolbar-title>
 
       <v-spacer></v-spacer>
 
-      <v-toolbar-items>
-        <v-btn text to="/publications">Publications</v-btn>
-        <v-btn text to="/projects">Projects</v-btn>
-        <v-btn text to="/team">Team</v-btn>
+      <v-toolbar-items class="pr-10">
+        <v-btn text to="/publications"  :class="{ base: checkRouteColor('publications', currentRoute), 'lighten-2': true }">Publications</v-btn>
+        <v-btn text to="/projects"      :class="{ base: checkRouteColor('projects', currentRoute), 'lighten-2': true }">Projects</v-btn>
+        <v-btn text to="/team"          :class="{ base: checkRouteColor('team', currentRoute), 'lighten-2': true }">Team</v-btn>
         <v-menu offset-y>
           <template v-slot:activator="{ on }">
             <v-btn
-              color="base"
-              dark
+              text
               v-on="on"
             >
               {{currentLang}}
@@ -66,27 +76,58 @@ export default {
       currentLang: "en",    
     };
   },
+  computed: {
+    currentRoute(){
+      return this.$route.name
+    }
+  },
   methods: {    
     changeLocale(locale) {        
       i18n.locale = locale;
       this.currentLang = i18n.locale    
+    },
+    checkRouteColor(name, routeName){
+      if(name == routeName){
+        return true
+      }else{
+        return false
+      }
+    },
+    goTo(){
+      this.$router.push("/")
     }
   }
 }
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+.nameLogo{
+  float: left;
+}
+
+.titleText{
+  padding-left: 10px;
+}
+
+.rotateLogo:hover{
+  transform: rotate(360deg);
+  transition: 2s;
+  
+}
 
 .toolbar{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .botao{
     font-family: 'Raleway', sans-serif;
 }
 
-.lang-title{
-  padding-left: 12px;
+.hoverItem{
+  background-color: blue;
+}
+
+.style-top{
+  height: 10px;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card flat>
+    <v-card >
       <v-card-title> 
         <v-menu open-on-hover bottom offset-y>
             <template v-slot:activator="{ on, attrs }">
@@ -22,11 +22,8 @@
         </v-menu>
         <v-spacer/> 
         <v-chip
-          v-for="i in selectedYears" :key="i"
-          class="ma-2 white--text"
-          color="base"
-          value="oi">
-            {{i}}
+          v-for="year in selectedYears" :key="year" class="ma-2 white--text" color="base">
+            {{year}}
         </v-chip>
       </v-card-title>
     </v-card>
@@ -43,7 +40,7 @@ import { filterPublications } from "../../functions/publications.js"
 export default {
     data(){
         return {
-            selectedYears: [2019],
+            selectedYears: [],
             publicacoes: Publications
         }
     },

@@ -4,7 +4,7 @@
         <v-row>
             <v-col v-for="item in projects" :key="item" cols="12" sm="12" md="4" xl="4" >
                 <v-card flat color="grey lighten-3">
-                    <v-card-tile> <v-icon class="pa-3" size="50"> {{item.icon}} </v-icon> <v-span class=" title-text"> {{item.name}} </v-span> </v-card-tile>
+                    <v-card-tile class=""> <v-icon class="pa-3 ma-1" size="50"> {{item.icon}} </v-icon> <v-span class="pm-4 title-text"> {{item.name}} </v-span> </v-card-tile>
                     <v-card-subtitle>{{item.short_description}}</v-card-subtitle>
                     <v-card-text>
                         {{ $t('lorenIpsum') }}

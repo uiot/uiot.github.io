@@ -1,36 +1,27 @@
 <template>
   <div class="home">
-      <v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material.jpg">
-    <div class="image">
-      <h1> {{ $t('welcomeMsg') }} </h1>
-    </div>
-      </v-parallax>
 
-    <div class="barraAzul">
-    </div>
-    <div class="corpo">    
-      <div class="bloco_titulo">
-          <h1 class="texto_titulo"> {{ $t('wwdo') }} </h1>
+      <div class="presentation grey lighten-3">
+          <h1> {{ $t('welcomeMsg') }} </h1>
+        <div class="title">
+        </div>
       </div>
-      <div class="text_wwdo">
-          {{ $t('lorenIpsum') }}
-      </div>
-      <v-divider></v-divider>
-      <v-row class="times">
-        <v-col cols="12" sm="12" md="4" lg="4">
-          <h1> Hardware </h1>
-          <p> {{ $t('lorenIpsum') }} </p>
-        </v-col>
-        <v-col cols="12" sm="12" md="4" lg="4">
-          <h1> Software </h1>
-          <p> {{ $t('lorenIpsum') }} </p>
-        </v-col>
-        <v-col cols="12" sm="12" md="4" lg="4">
-          <h1> Segurança </h1>
-          <p> {{ $t('lorenIpsum') }} </p>
-        </v-col>
-      </v-row>
+
+    <!-- <div class="barraAzul"/> -->
+
+    <div class="whatwedo">
+      <h2 class="base--text">  <v-icon class="base--text" size="40"> mdi-magnify </v-icon> <b> {{ $t('wwdo') }} </b> </h2>
     </div>
+
+    <div class="academics base lighten-1">
+        <h2 class="white--text">  <v-icon class="white--text" size="40"> mdi-book-open-variant </v-icon> <b> {{ $t('home.academics.title') }} </b> </h2>
+        <div class="text white--text"> {{ $t('home.academics.text') }} </div>
+    </div>
+
+    <div class="team">
+
+    </div>
+
 
   </div>
 </template>
@@ -47,6 +38,54 @@ export default {
 
 <style scoped>
 
+.presentation{
+  height: 500px;
+  text-align: center;
+}
+
+.presentation h1 {
+  color: rgb(70, 70, 70);
+  padding-top: 200px;
+}
+
+.whatwedo{
+  height: 500px;
+  padding-top: 2%;
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 25px;
+}
+
+.academics {
+  height: 300px;
+  padding-top: 2%;
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 20px;
+}
+
+.academics .text{
+  margin-top: -2px;
+  font-size: 13px;
+}
+
+
+.team{
+  height: 300px;
+  padding-top: 2%;
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 20px;
+}
+
+
+
+
+
+.teste{
+  /* background-image: url("https://cdn.vuetifyjs.com/images/parallax/material.jpg"); */
+}
+
 .home{
   font-family: 'Raleway', sans-serif;
 }
@@ -59,12 +98,8 @@ export default {
   padding-bottom: 20px;
 }
 
-.image{
-  line-height: 500px;
-  text-align: center;
-  color: rgb(49, 49, 49);
-  height: 500px;
-}
+
+
 .barraAzul{
   background-color: rgb(36, 180, 180);
   height: 5px;
