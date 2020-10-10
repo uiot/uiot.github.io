@@ -1,25 +1,26 @@
 <template>
-  <div class="publication">
-    <div class="bloco_principal">
-        <div class="bloco_titulo">
-            Publications
-        </div>
-        <div class="bloco_texto">
-            <p> {{ $t('lorenIpsum') }} </p>
-        </div>
-        <v-divider></v-divider>
-        <div class="publicacoes">
-            <publications></publications>
+    <div class="publication">
+        <main-title
+            :icon="'mdi-book'"
+            :title="$t('pages.publications.title')"
+            :subtitle="$t('pages.publications.subtitle')"
+        />
+        <div class="content">
+            <div class="publicacoes">
+                <publications></publications>
+            </div>
         </div>
     </div>
-  </div>
 </template>
 
 <script>
 import publications from "../components/Publications/Publications.vue"
+import mainTitle from "../components/MainTitle.vue"
+
 export default {
     components: {
         publications,
+        mainTitle
     },
     data(){
         return {
@@ -33,9 +34,6 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
 .publication{
-    margin-top: 2%;
-    margin-left: 7%;
-    margin-right: 7%;    
     font-family: 'Raleway', sans-serif;
 }
 
@@ -56,4 +54,10 @@ export default {
 .publicacoes{
     padding-top: 15px;
 }
+
+.content{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
 </style>

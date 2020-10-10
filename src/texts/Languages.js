@@ -14,6 +14,13 @@ const Languages =  {
                 title: "UIoT Publications",
                 text: "Ours publications not involve only IoT topics. We research new technologies involving..."
             }
+        },
+        pages:{
+            publications: {
+                title: "UIoT Publications",
+                subtitle: "Checkout our academics publications",
+                publicationYear: "Publication Year"
+            }
         }
     },
     Portugues : {
@@ -30,6 +37,13 @@ const Languages =  {
             academics: {
                 title: "UIoT Publicações",
                 text: "Nossas publicações não envolvem apenas tópicos de IoT. Pesquisamos novas tecnologias envolvendo ...",
+            }
+        },
+        pages:{
+            publications: {
+                title: "UIoT Publicações",
+                subtitle: "Confira nossas publicações acadêmicas",
+                publicationYear: "Ano de publicação"
             }
         }
     }
