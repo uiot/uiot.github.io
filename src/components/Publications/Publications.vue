@@ -1,13 +1,13 @@
 <template>
-  <div>
+  <div class="component">
     <v-card flat class="grey lighten-5">
       <v-card-title> 
         <v-col cols="8">
-          <v-select outlined dense v-model="selectedYears" :items="years" attach chips color="base" label="Ano de publicação" multiple>
+          <v-select outlined dense v-model="selectedYears" :items="years" attach chips color="base" :label="$t('pages.publications.publicationYear')" multiple>
             <template v-slot:selection="{ attrs, item}">
               <v-chip v-bind="attrs" class="white--text" color="base">
                 <template class="pr-2">
-                  {{ item }}
+                  {{ item }}  
                 </template>
               </v-chip>
             </template>
@@ -15,14 +15,15 @@
         </v-col>
           <v-spacer/>
           <v-col cols="4">
-            <v-text-field
+            <!-- <v-text-field
             label="Autor"
-          ></v-text-field>
+          ></v-text-field> -->
           </v-col>
         <v-spacer/> 
       </v-card-title>
     </v-card>
     <v-data-table
+      v-if="filtered"
       :headers="headers"
       :items="filtered"
       class="grey lighten-5"
@@ -31,18 +32,18 @@
       item-key="title"
       show-expand
     >
-      <!-- <template v-slot:body="{ items }">
+      <template v-slot:body="{ items }">
         <tbody>
           <tr
             v-for="(item, i) in items"
             :key="`${i}-${item.id}`"
           >
-            <td>{{ item.year }}</td>
+            <td> <v-chip class="base white--text"> <b> {{ item.year }} </b> </v-chip> </td>
             <td>{{ item.title }}</td>
-            <td>{{ item.authors }}</td>
+            <td>{{ item.authors | teste }}</td>
           </tr>
         </tbody>
-      </template> -->
+      </template>
     <template v-slot:expanded-item="{  item }">
       <span v-for="author in item.authors" :key="author"> {{ author }} </span>
     </template>
@@ -72,7 +73,8 @@ export default {
     },
     filters: {
       teste(value){
-        return value
+      
+        return value.toString()
       }
     },
     computed: {
@@ -97,7 +99,9 @@ export default {
 </script>
 
 <style scoped>
-
+.component{
+  
+}
 .year{
   font-size: 30px;
   color: rgb(56, 56, 56);

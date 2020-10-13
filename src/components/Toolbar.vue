@@ -6,7 +6,7 @@
       <v-toolbar-title class="pl-10"> 
 
         <div @click="goTo()">
-          <v-img class="nameLogo" src="../assets/logo.png" width="30"/>  
+          <v-img class="nameLogo" src="../assets/logo.png" width="35"/>  
           <span class="titleText  nameLogo base--text"> <h2> <b> uiot </b> </h2> </span>  
         </div>
         <div>

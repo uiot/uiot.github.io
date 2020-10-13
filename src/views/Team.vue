@@ -1,46 +1,20 @@
 <template>
   <div class="team">
-    <div class="bloco_principal">
-        <div class="bloco_titulo">
-            Team
-        </div>
-        <div class="bloco_texto">
-            {{ $t('lorenIpsum') }}
-        </div>
-        <v-divider></v-divider>
-        <v-tabs
-        v-model="tab"
-        color="blue"
-        grow
-        >
-        <v-tab
-            v-for="item in items"
-            :key="item"
-        >
-            {{ item }}
-        </v-tab>
-        </v-tabs>
-        <v-tabs-items v-model="tab">
-        <v-tab-item
-            v-for="item in items"
-            :key="item"
-        >
-            <v-card flat color="basil">
-                <current></current>
-            </v-card>
-        </v-tab-item>
-        </v-tabs-items>
-        
-    </div>
+        <main-title
+            :icon="'mdi-account'"
+            :title="$t('pages.team.title')"
+            :subtitle="$t('pages.team.subtitle')"
+        />
+        <div class="barraAzul base lighten-2"></div>
   </div>
 </template>
 
 <script>
-import current from '../components/Team/Current.vue';
+import mainTitle from "../components/MainTitle";
 // import left from '../components/Team/Left.vue';
 
 export default {
-    components: { current },
+    components: { mainTitle },
     data(){
       return {
         tab: null,
@@ -56,9 +30,6 @@ export default {
 
 <style scoped>
 .team{
-    margin-top: 2%;
-    margin-left: 7%;
-    margin-right: 7%;    
     font-family: 'Raleway', sans-serif;
     
 }

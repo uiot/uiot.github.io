@@ -20,6 +20,14 @@ const Languages =  {
                 title: "UIoT Publications",
                 subtitle: "Checkout our academics publications",
                 publicationYear: "Publication Year"
+            },
+            projects: {
+                title: "UIoT Projects",
+                subtitle: "Checkout our projects",
+            },
+            team: {
+                title: "UIoT Team",
+                subtitle: "Our team",
             }
         }
     },
@@ -44,6 +52,14 @@ const Languages =  {
                 title: "UIoT Publicações",
                 subtitle: "Confira nossas publicações acadêmicas",
                 publicationYear: "Ano de publicação"
+            },
+            projects: {
+                title: "Projetos do UIoT",
+                subtitle: "Confira nossos projetos",
+            },
+            team: {
+                title: "Time UIoT",
+                subtitle: "Nosso time",
             }
         }
     }

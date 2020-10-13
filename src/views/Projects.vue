@@ -1,9 +1,11 @@
 <template>
   <div class="projects">
-    <div class="title">
-        <v-icon> mdi-devices </v-icon>  
-        <span> <b>{{ $t('projects.title') }}</b> </span>
-    </div>
+        <main-title
+            :icon="'mdi-wrench'"
+            :title="$t('pages.projects.title')"
+            :subtitle="$t('pages.projects.subtitle')"
+        />
+        <div class="barraAzul base lighten-2"></div>
     <!-- <div class="bloco_principal">
         <div class="bloco_titulo">
             Projects
@@ -18,9 +20,10 @@
 </template>
 
 <script>
+import mainTitle from "../components/MainTitle.vue";
 // import Projects from '../components/Projects/Projects';
 export default {
-    // components: { Projects },
+    components: { mainTitle },
     
 }
 </script>
@@ -35,9 +38,6 @@ export default {
 }
 
 .projects{
-    margin-top: 2%;
-    margin-left: 3%;
-    margin-right: 3%;    
     font-family: 'Raleway', sans-serif;
 }
 

@@ -1,10 +1,11 @@
 <template>
     <div class="publication">
         <main-title
-            :icon="'mdi-book'"
+            :icon="'mdi-book-open-variant'"
             :title="$t('pages.publications.title')"
             :subtitle="$t('pages.publications.subtitle')"
         />
+        <div class="barraAzul base lighten-2"></div>
         <div class="content">
             <div class="publicacoes">
                 <publications></publications>

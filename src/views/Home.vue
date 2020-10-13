@@ -7,15 +7,59 @@
         </div>
       </div>
 
-    <!-- <div class="barraAzul"/> -->
+    <div class="barraAzul base"/>
 
     <div class="whatwedo">
       <h2 class="base--text">  <v-icon class="base--text" size="40"> mdi-magnify </v-icon> <b> {{ $t('wwdo') }} </b> </h2>
+      <p class="text"> {{ $t("lorenIpsum") }} </p>
+      <v-row>
+        <v-col sm="12" md="4">
+          <v-card flat color="grey lighten-2">
+            <v-card-title>
+              Hardware
+            </v-card-title>
+            <v-card-text>
+              {{ $t("lorenIpsum") }}
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col sm="12" md="4">
+          <v-card flat color="grey darken-3 white--text">
+            <v-card-title>
+              Software
+            </v-card-title>
+            <v-card-text class="white--text">
+              {{ $t("lorenIpsum") }}
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col sm="12" md="4">
+          <v-card flat color="blue-grey lighten-2">
+            <v-card-title>
+              Security
+            </v-card-title>
+            <v-card-text>
+              {{ $t("lorenIpsum") }}
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+      <div>
+        <v-btn outlined class="base lighten-1 white--text" to="/projects"> <b> Check out </b> </v-btn>
+      </div>
     </div>
 
     <div class="academics base lighten-1">
         <h2 class="white--text">  <v-icon class="white--text" size="40"> mdi-book-open-variant </v-icon> <b> {{ $t('home.academics.title') }} </b> </h2>
         <div class="text white--text"> {{ $t('home.academics.text') }} </div>
+        <v-row>
+          <v-col sm="12" md="6" lg="6" v-for="i in 6" :key="i">
+            <v-card>
+              <v-card-subtitle>Teste</v-card-subtitle>
+              <v-card-text>Teste de texto</v-card-text>
+            </v-card>
+          </v-col>
+        </v-row>
     </div>
 
     <div class="team">
@@ -49,16 +93,24 @@ export default {
 }
 
 .whatwedo{
-  height: 500px;
   padding-top: 2%;
+  padding-bottom: 2%;
   text-align: center;
   font-family: 'Titillium Web', sans-serif;
   font-size: 25px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.whatwedo .text{
+  font-size: 15px;
 }
 
 .academics {
-  height: 300px;
   padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
   text-align: center;
   font-family: 'Titillium Web', sans-serif;
   font-size: 20px;
@@ -101,7 +153,6 @@ export default {
 
 
 .barraAzul{
-  background-color: rgb(36, 180, 180);
   height: 5px;
 }
 .bloco_titulo{
