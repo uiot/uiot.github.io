@@ -6,6 +6,10 @@ let publications = Publications
 export class filterPublications {
     constructor() {  }
 
+    byQuantity(qtd){
+        return publications.slice(0, qtd)
+    }
+
     getYears(){
         let arr_ret = []
         publications.map(function(item){ if( arr_ret.indexOf(item.year) === -1 ){ arr_ret.push(item.year) }  })

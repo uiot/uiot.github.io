@@ -59,7 +59,7 @@ import { filterPublications } from "../../functions/publications.js"
 export default {
     data(){
         return {
-            selectedYears: [],
+            selectedYears: [ 2019 ],
             publicacoes: Publications,
             expanded: [],
             singleExpand: false,

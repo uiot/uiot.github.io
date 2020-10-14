@@ -53,11 +53,18 @@
         <h2 class="white--text">  <v-icon class="white--text" size="40"> mdi-book-open-variant </v-icon> <b> {{ $t('home.academics.title') }} </b> </h2>
         <div class="text white--text"> {{ $t('home.academics.text') }} </div>
         <v-row>
-          <v-col sm="12" md="6" lg="6" v-for="i in 6" :key="i">
-            <v-card>
-              <v-card-subtitle>Teste</v-card-subtitle>
-              <v-card-text>Teste de texto</v-card-text>
+          <v-col sm="12" md="6" lg="6" v-for="item in publications" :key="item.title">
+            <v-card flat :class="`${item.color} lighten-2`">
+              <v-card-title> 
+                <span class="title font-weight-thin"> {{ item.year }} </span>
+              </v-card-title>
+              <v-card-subtitle>
+                <span class="font-weight-light title_card"> {{ item.title }} </span> 
+              </v-card-subtitle>
             </v-card>
+          </v-col>
+          <v-col sm="12" md="6" lg="6">
+            <v-icon to="/publications" size="90" class="white--text"> mdi-plus-circle-outline </v-icon>
           </v-col>
         </v-row>
     </div>
@@ -71,11 +78,28 @@
 </template>
 
 <script>
+import { filterPublications } from "../functions/publications.js"
 // @ is an alias to /src
 
 export default {
   name: "home",
   components: {
+  },
+  data() {
+    return {
+      
+    }
+  },
+  computed: {
+    publications(){
+      let publications = new filterPublications().byQuantity(5) 
+      publications[0]['color'] = 'grey'
+      publications[1]['color'] = 'blue-grey'
+      publications[2]['color'] = 'teal'
+      publications[3]['color'] = 'red'
+      publications[4]['color'] = 'brown'
+      return publications
+    }
   }
 };
 </script>
@@ -121,6 +145,9 @@ export default {
   font-size: 13px;
 }
 
+.academics .title_card{
+  font-size: 17px;
+}
 
 .team{
   height: 300px;
@@ -134,9 +161,7 @@ export default {
 
 
 
-.teste{
-  /* background-image: url("https://cdn.vuetifyjs.com/images/parallax/material.jpg"); */
-}
+
 
 .home{
   font-family: 'Raleway', sans-serif;
