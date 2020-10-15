@@ -55,16 +55,13 @@
         <v-row>
           <v-col sm="12" md="6" lg="6" v-for="item in publications" :key="item.title">
             <v-card flat :class="`${item.color} lighten-2`">
-              <v-card-title> 
-                <span class="title font-weight-thin"> {{ item.year }} </span>
-              </v-card-title>
               <v-card-subtitle>
-                <span class="font-weight-light title_card"> {{ item.title }} </span> 
+                <span class="font-weight-light title_card"> {{ item.year }} - {{ item.title }} </span> 
               </v-card-subtitle>
             </v-card>
           </v-col>
           <v-col sm="12" md="6" lg="6">
-            <v-icon to="/publications" size="90" class="white--text"> mdi-plus-circle-outline </v-icon>
+            <v-icon size="50" class="white--text">  mdi-plus-circle-outline </v-icon>
           </v-col>
         </v-row>
     </div>
