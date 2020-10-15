@@ -23,7 +23,6 @@
       </v-card-title>
     </v-card>
     <v-data-table
-      v-if="filtered"
       :headers="headers"
       :items="filtered"
       class="grey lighten-5"
@@ -100,7 +99,7 @@ export default {
 
 <style scoped>
 .component{
-  
+  padding-bottom: 10%;
 }
 .year{
   font-size: 30px;

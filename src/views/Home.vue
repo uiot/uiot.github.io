@@ -53,16 +53,23 @@
         <h2 class="white--text">  <v-icon class="white--text" size="40"> mdi-book-open-variant </v-icon> <b> {{ $t('home.academics.title') }} </b> </h2>
         <div class="text white--text"> {{ $t('home.academics.text') }} </div>
         <v-row>
-          <v-col sm="12" md="6" lg="6" v-for="item in publications" :key="item.title">
-            <v-card flat :class="`${item.color} lighten-2`">
+          <v-col sm="6" md="4" lg="4" v-for="item in publications" :key="item.title">
+            <v-hover v-slot:default="{ hover }" >
+              <v-card :elevation="hover ? 6 : 1" flat :color="item.color" height="80">
+                <v-card-subtitle>
+                  <span class="font-weight-bold title_card"> {{ item.title }} </span> 
+                </v-card-subtitle>
+              </v-card>
+            </v-hover>
+          </v-col>
+          <v-col sm="6" md="4" lg="4">
+            <v-card flat color="grey darken-2" height="80">
               <v-card-subtitle>
-                <span class="font-weight-light title_card"> {{ item.year }} - {{ item.title }} </span> 
+                <v-btn text class="white--text"> See more <v-icon size="15" class="white--text icon">  mdi-plus-circle-outline </v-icon> </v-btn>
               </v-card-subtitle>
             </v-card>
           </v-col>
-          <v-col sm="12" md="6" lg="6">
-            <v-icon size="50" class="white--text">  mdi-plus-circle-outline </v-icon>
-          </v-col>
+            
         </v-row>
     </div>
 
@@ -90,10 +97,10 @@ export default {
   computed: {
     publications(){
       let publications = new filterPublications().byQuantity(5) 
-      publications[0]['color'] = 'grey'
-      publications[1]['color'] = 'blue-grey'
-      publications[2]['color'] = 'teal'
-      publications[3]['color'] = 'red'
+      publications[0]['color'] = '#94a69c'
+      publications[1]['color'] = '#969187'
+      publications[2]['color'] = '#c9cad1'
+      publications[3]['color'] = 'blue-grey'
       publications[4]['color'] = 'brown'
       return publications
     }
@@ -154,7 +161,10 @@ export default {
   font-size: 20px;
 }
 
-
+.icon{
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
 
 

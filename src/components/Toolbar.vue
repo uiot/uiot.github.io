@@ -36,7 +36,7 @@
             >
               <v-list-item-title >
                 <v-btn text @click="changeLocale(item.language)" class="botao">
-                  <v-img width="30" :src="require(`@/assets/${item.img}`)"></v-img> <v-span class="lang-title"> {{ item.title }} </v-span>
+                  <v-img width="30" :src="require(`@/assets/${item.img}`)"></v-img> <v-span class="lang-title"> - {{ item.title }} </v-span>
                   
                 </v-btn>
               </v-list-item-title>

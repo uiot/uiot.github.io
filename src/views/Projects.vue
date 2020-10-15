@@ -6,24 +6,16 @@
             :subtitle="$t('pages.projects.subtitle')"
         />
         <div class="barraAzul base lighten-2"></div>
-    <!-- <div class="bloco_principal">
-        <div class="bloco_titulo">
-            Projects
-        </div>
-        <div class="bloco_texto">
-            {{ $t('lorenIpsum') }}
-        </div>
-        <v-divider></v-divider>
-        <Projects></Projects>
-    </div> -->
+        <projects></projects>
   </div>
 </template>
 
 <script>
 import mainTitle from "../components/MainTitle.vue";
-// import Projects from '../components/Projects/Projects';
+import Projects from '../components/Projects/Projects';
+
 export default {
-    components: { mainTitle },
+    components: { mainTitle, Projects },
     
 }
 </script>
