@@ -10,8 +10,14 @@ const projects = {
             img: "bla",
             link: "abc",
             technologies: [
-                "mdi-language-python",
-                "mdi-database"
+                {
+                    language: "mdi-language-python",
+                    name: "python"
+                },
+                {
+                    language: "mdi-database",
+                    name: "mongodb"
+                },
             ]
         },
         { 
@@ -24,8 +30,14 @@ const projects = {
             img: "bla",
             link: "abc",
             technologies: [
-                "mdi-language-python",
-                "mdi-database"
+                {
+                    language: "mdi-language-python",
+                    name: "python"
+                },
+                {
+                    language: "mdi-database",
+                    name: "mongodb"
+                },
             ]
         },
         {
@@ -38,8 +50,14 @@ const projects = {
             img: "bla",
             link: "abc",
             technologies: [
-                "mdi-language-javascript",
-                "mdi-language-html5"
+                {
+                    language: "mdi-language-javascript",
+                    name: "javascript"
+                },
+                {
+                    language: "mdi-database",
+                    name: "mongodb"
+                },
             ]
         },
         {
@@ -52,9 +70,18 @@ const projects = {
             img: "bla",
             link: "abc",
             technologies: [
-                "mdi-language-javascript",
-                "mdi-database",
-                "mdi-language-html5"
+                {
+                    language: "mdi-language-javascript",
+                    name: "vuejs"
+                },
+                {
+                    language: "mdi-database",
+                    name: "postgresql"
+                },
+                {
+                    language: "mdi-language-html5",
+                    name: "html"
+                },
             ]
         },
     ],
@@ -69,8 +96,14 @@ const projects = {
             img: "bla",
             link: "abc",
             technologies: [
-                "mdi-language-javascript",
-                "mdi-language-html5"
+                {
+                    language: "mdi-language-javascript",
+                    name: "javascript"
+                },
+                {
+                    language: "mdi-language-html5",
+                    name: "html"
+                },
             ]
         },
         {
@@ -83,8 +116,14 @@ const projects = {
             img: "bla",
             link: "abc",
             technologies: [
-                "mdi-android",
-                "mdi-database"
+                {
+                    language: "mdi-android",
+                    name: "android"
+                },
+                {
+                    language: "mdi-database",
+                    name: "postgresql"
+                }
             ]
         },
     ]

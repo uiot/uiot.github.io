@@ -23,7 +23,16 @@
                         </v-card-text>
                         <v-card-actions class="footer-card ">
                             <v-spacer/>
-                            <v-icon v-for="i in item.technologies" :key="i" :class="`${item.text_color} pr-3`"> {{i}} </v-icon>
+                            <v-tooltip bottom v-for="i in item.technologies" :key="i" >
+                                <template v-slot:activator="{on, attrs}">
+                                    <v-icon v-bind="attrs" v-on="on" :class="`${item.text_color} pr-3`"> 
+                                        {{i.language}}
+                                    </v-icon>
+                                </template>
+                                <span>
+                                    {{i.name}}
+                                </span>
+                            </v-tooltip>
                         </v-card-actions>
                     </v-card>
                 </v-col>
@@ -52,7 +61,16 @@
                         </v-card-text>
                         <v-card-actions class="footer-card ">
                             <v-spacer/>
-                            <v-icon v-for="i in item.technologies" :key="i" :class="`${item.text_color} pr-3`"> {{i}} </v-icon>
+                            <v-tooltip bottom v-for="i in item.technologies" :key="i" >
+                                <template v-slot:activator="{on, attrs}">
+                                    <v-icon v-bind="attrs" v-on="on" :class="`${item.text_color} pr-3`"> 
+                                        {{i.language}}
+                                    </v-icon>
+                                </template>
+                                <span>
+                                    {{i.name}}
+                                </span>
+                            </v-tooltip>
                         </v-card-actions>
                     </v-card>
                 </v-col>
