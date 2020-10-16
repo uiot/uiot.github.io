@@ -1,10 +1,10 @@
 <template>
     <div class="projetos">
         <v-container fluid>
-            <div class="header">
-                <span class="main_title grey--text text--darken-2"> Middleware UIoT </span><br>
-                <span class="subtitle grey--text"> short description </span>
-            </div>
+            <main-title
+                :title="`Middleware UIoT`"
+                :subtitle="`short description`"
+            />
             <v-row>
                 <v-col v-for="item in middleware" :key="item" cols="12" sm="12" md="4" xl="4" >
                     <v-card flat :color="item.color" :class="`${item.text_color}`">
@@ -39,10 +39,10 @@
             </v-row>
         </v-container>
         <v-container fluid>
-            <div class="header">
-                <span class="main_title grey--text text--darken-2"> Amoris </span><br>
-                <span class="subtitle grey--text"> short description </span>
-            </div>
+            <main-title
+                :title="`Amoris`"
+                :subtitle="`short description`"
+            />
             <v-row>
                 <v-col v-for="item in covid" :key="item" cols="12" sm="12" md="4" xl="4" >
                     <v-card flat :color="item.color" :class="`${item.text_color}`">
@@ -81,8 +81,12 @@
 
 <script>
 import Projects from "../../texts/Projects.js"
+import MainTitle from "./commom/Title"
 
 export default {
+    components: {
+        MainTitle  
+    },
     data(){
         return {
             middleware: Projects.middleware,

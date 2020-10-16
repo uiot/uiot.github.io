@@ -13,18 +13,11 @@
             </template>
           </v-select>
         </v-col>
-          <v-spacer/>
-          <v-col cols="4">
-            <!-- <v-text-field
-            label="Autor"
-          ></v-text-field> -->
-          </v-col>
-        <v-spacer/> 
       </v-card-title>
     </v-card>
     <v-data-table
       :headers="headers"
-      :items="filtered"
+      :items="filtered.length ? filtered : setYear()"
       class="grey lighten-5"
       :single-expand="singleExpand"
       :expanded.sync="expanded"
@@ -58,6 +51,7 @@ import { filterPublications } from "../../functions/publications.js"
 export default {
     data(){
         return {
+            lastDateSelected: [ 2019 ],
             selectedYears: [ 2019 ],
             publicacoes: Publications,
             expanded: [],
@@ -92,6 +86,9 @@ export default {
         }else{
           this.selectedYears.push(year)
         }
+      },
+      setYear(){
+        this.selectedYears = [ 2019 ]
       }
     } 
 }
