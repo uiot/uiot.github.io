@@ -55,7 +55,7 @@
         <v-row>
           <v-col sm="6" md="4" lg="4" v-for="item in publications" :key="item.title">
             <v-hover v-slot:default="{ hover }" >
-              <v-card :elevation="hover ? 6 : 1" flat :color="item.color" height="80">
+              <v-card :elevation="hover ? 6 : 1" flat :color="item.color" height="75">
                 <v-card-subtitle>
                   <span class="font-weight-bold title_card"> {{ item.title }} </span> 
                 </v-card-subtitle>
@@ -63,11 +63,13 @@
             </v-hover>
           </v-col>
           <v-col sm="6" md="4" lg="4">
-            <v-card flat color="grey darken-2" height="80">
-              <v-card-subtitle>
-                <v-btn text class="white--text"> See more <v-icon size="15" class="white--text icon">  mdi-plus-circle-outline </v-icon> </v-btn>
-              </v-card-subtitle>
-            </v-card>
+            <v-hover v-slot:default="{ hover }" >
+              <v-card :elevation="hover ? 6 : 1" flat color="grey darken-2" height="75" @click="goTo('/publications')">
+                <v-card-subtitle>
+                  <span text class="white--text"> See more <v-icon size="15" class="white--text icon">  mdi-plus-circle-outline </v-icon> </span>
+                </v-card-subtitle>
+              </v-card>
+            </v-hover>
           </v-col>
             
         </v-row>
@@ -103,6 +105,11 @@ export default {
       publications[3]['color'] = 'blue-grey'
       publications[4]['color'] = 'brown'
       return publications
+    }
+  },
+  methods: {
+    goTo(text){
+      this.$router.push(text)
     }
   }
 };
