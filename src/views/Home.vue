@@ -10,36 +10,36 @@
     <div class="barraAzul base"/>
 
     <div class="whatwedo">
-      <h2 class="base--text">  <v-icon class="base--text" size="40"> mdi-magnify </v-icon> <b> {{ $t('wwdo') }} </b> </h2>
-      <p class="text"> {{ $t("lorenIpsum") }} </p>
+      <h2 class="base--text">  <v-icon class="base--text" size="40"> mdi-magnify </v-icon> <b> {{ $t('wwdo.title') }} </b> </h2>
+      <p class="text"> {{ $t("wwdo.text") }} </p>
       <v-row>
         <v-col xs="12" sm="12" md="4">
           <v-card flat color="grey lighten-2">
             <v-card-title>
-              Hardware
+              {{ $t("wwdo.hardware.title") }}
             </v-card-title>
             <v-card-text>
-              {{ $t("lorenIpsum") }}
+              {{ $t("wwdo.hardware.text") }}
             </v-card-text>
           </v-card>
         </v-col>
         <v-col sm="12" md="4">
           <v-card flat color="grey darken-3 white--text">
             <v-card-title>
-              Software
+              {{ $t("wwdo.software.title") }}
             </v-card-title>
             <v-card-text class="white--text">
-              {{ $t("lorenIpsum") }}
+              {{ $t("wwdo.software.text") }}
             </v-card-text>
           </v-card>
         </v-col>
         <v-col sm="12" md="4">
           <v-card flat color="blue-grey lighten-2">
             <v-card-title>
-              Security
+              {{ $t("wwdo.security.title") }}
             </v-card-title>
             <v-card-text>
-              {{ $t("lorenIpsum") }}
+              {{ $t("wwdo.security.text") }}
             </v-card-text>
           </v-card>
         </v-col>

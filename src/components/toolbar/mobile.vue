@@ -3,13 +3,13 @@
     <v-expand-transition>
     <div class="base lighten-1 menu-mobile" v-if="drawer">
             <div class="button-position">
-                <v-btn text to="/projects"      :class="{ base: checkRouteColor('projects', currentRoute), 'lighten-2': true }">Projects</v-btn>
+                <v-btn text to="/projects"      :class="{ base: checkRouteColor('projects', currentRoute), 'lighten-2': true }"> {{ $t("toolbar.projects") }} </v-btn>
             </div>
             <div class="button-position">
-                <v-btn text to="/publications"  :class="{ base: checkRouteColor('publications', currentRoute), 'lighten-2': true }">Publications</v-btn>
+                <v-btn text to="/publications"  :class="{ base: checkRouteColor('publications', currentRoute), 'lighten-2': true }"> {{ $t("toolbar.publications") }} </v-btn>
             </div>
             <div class="button-position">
-                <v-btn text to="/team"          :class="{ base: checkRouteColor('team', currentRoute), 'lighten-2': true }">Team</v-btn>
+                <v-btn text to="/team"          :class="{ base: checkRouteColor('team', currentRoute), 'lighten-2': true }"> {{ $t("toolbar.team") }} </v-btn>
             </div>
             <div class="button-position">
                 <v-menu offset-y>

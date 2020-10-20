@@ -17,9 +17,9 @@
       <v-spacer></v-spacer>
 
       <v-toolbar-items class="pr-10">
-        <v-btn text to="/projects"      :class="{ base: checkRouteColor('projects', currentRoute), 'lighten-2': true }">Projects</v-btn>
-        <v-btn text to="/publications"  :class="{ base: checkRouteColor('publications', currentRoute), 'lighten-2': true }">Publications</v-btn>
-        <v-btn text to="/team"          :class="{ base: checkRouteColor('team', currentRoute), 'lighten-2': true }">Team</v-btn>
+        <v-btn text to="/projects"      :class="{ base: checkRouteColor('projects', currentRoute), 'lighten-2': true }"> {{ $t("toolbar.projects") }} </v-btn>
+        <v-btn text to="/publications"  :class="{ base: checkRouteColor('publications', currentRoute), 'lighten-2': true }"> {{ $t("toolbar.publications") }} </v-btn>
+        <v-btn text to="/team"          :class="{ base: checkRouteColor('team', currentRoute), 'lighten-2': true }"> {{ $t("toolbar.team") }} </v-btn>
         <v-menu offset-y>
           <template v-slot:activator="{ on }">
             <v-btn
