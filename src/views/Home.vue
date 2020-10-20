@@ -1,10 +1,11 @@
 <template>
   <div class="home">
+      
+      <!-- <v-btn @click="go">ClickHere</v-btn>
+      <div class="block" ref="square">Teste</div> -->
 
       <div class="presentation grey lighten-3">
           <h1> {{ $t('welcomeMsg') }} </h1>
-        <div class="title">
-        </div>
       </div>
 
     <div class="barraAzul base"/>
@@ -45,7 +46,7 @@
         </v-col>
       </v-row>
       <div>
-        <v-btn outlined class="base lighten-1 white--text" to="/projects"> <b> Check out </b> </v-btn>
+        <v-btn outlined class="base lighten-1 white--text" to="/projects"> <b> {{ $t("wwdo.button") }} </b> </v-btn>
       </div>
     </div>
 
@@ -66,7 +67,7 @@
             <v-hover v-slot:default="{ hover }" >
               <v-card :elevation="hover ? 6 : 0" flat color="#a9d2db" min-height="75" @click="goTo('/publications')">
                 <v-card-subtitle>
-                  <span text> <strong> See more </strong> <v-icon size="15" class="icon">  mdi-plus-circle-outline </v-icon> </span>
+                  <span text> <h2> <strong> See more </strong> </h2> <v-icon size="15" class="icon">  mdi-plus-circle-outline </v-icon> </span>
                 </v-card-subtitle>
               </v-card>
             </v-hover>
@@ -85,6 +86,7 @@
 
 <script>
 import { filterPublications } from "../functions/publications.js"
+// import anime from 'animejs';
 // @ is an alias to /src
 
 export default {
@@ -107,7 +109,30 @@ export default {
       return publications
     }
   },
+  mounted() {
+    const targets = this.$el;
+    this
+      .$anime
+      .timeline
+      .add({
+        targets,
+        translateX: 250,
+        easing: 'easeOutExpo',
+      })
+      .add({
+        targets,
+        translateX: 250,
+        easing: 'easeOutExpo',
+      });
+  },
   methods: {
+    // go(){
+    //   anime({
+    //     targets: this.$refs.square,
+    //     translateX: 250,
+    //     delay: 1000
+    //   })
+    // },
     goTo(text){
       this.$router.push(text)
     }

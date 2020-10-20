@@ -25,7 +25,7 @@ const Languages =  {
                 title: "Security",
                 text: ""
             },
-            button: ""
+            button: "Check out"
         },
         home: {
             academics: {
@@ -75,7 +75,7 @@ const Languages =  {
                 title: "Segurança",
                 text: "Esta é a equipe responsável por criar soluções que permitem um tráfego de dados seguro de ponta a ponta"
             },
-            button: ""
+            button: "Confira"
         },
         home: {
             academics: {
