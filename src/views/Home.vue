@@ -55,7 +55,7 @@
         <v-row>
           <v-col sm="6" md="4" lg="4" v-for="item in publications" :key="item.title">
             <v-hover v-slot:default="{ hover }" >
-              <v-card :elevation="hover ? 6 : 1" flat :color="item.color" min-height="75">
+              <v-card :elevation="hover ? 6 : 0" flat :color="item.color" min-height="75">
                 <v-card-subtitle>
                   <span class="font-weight-bold title_card"> {{ item.title }} </span> 
                 </v-card-subtitle>
@@ -64,9 +64,9 @@
           </v-col>
           <v-col sm="6" md="4" lg="4">
             <v-hover v-slot:default="{ hover }" >
-              <v-card :elevation="hover ? 6 : 1" flat color="grey darken-2" min-height="75" @click="goTo('/publications')">
+              <v-card :elevation="hover ? 6 : 0" flat color="#a9d2db" min-height="75" @click="goTo('/publications')">
                 <v-card-subtitle>
-                  <span text class="white--text"> See more <v-icon size="15" class="white--text icon">  mdi-plus-circle-outline </v-icon> </span>
+                  <span text> <strong> See more </strong> <v-icon size="15" class="icon">  mdi-plus-circle-outline </v-icon> </span>
                 </v-card-subtitle>
               </v-card>
             </v-hover>
@@ -99,11 +99,11 @@ export default {
   computed: {
     publications(){
       let publications = new filterPublications().byQuantity(5) 
-      publications[0]['color'] = '#94a69c'
-      publications[1]['color'] = '#969187'
-      publications[2]['color'] = '#c9cad1'
-      publications[3]['color'] = 'blue-grey'
-      publications[4]['color'] = 'brown'
+      publications[0]['color'] = '#c1c3d6'
+      publications[1]['color'] = '#c1d6c8'
+      publications[2]['color'] = '#e8ebd5'
+      publications[3]['color'] = '#dfd5eb'
+      publications[4]['color'] = '#ebdad5'
       return publications
     }
   },
