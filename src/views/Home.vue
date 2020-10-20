@@ -14,7 +14,7 @@
       <h2 class="base--text">  <v-icon class="base--text" size="40"> mdi-magnify </v-icon> <b> {{ $t('wwdo.title') }} </b> </h2>
       <p class="text"> {{ $t("wwdo.text") }} </p>
       <v-row>
-        <v-col xs="12" sm="12" md="4">
+        <v-col cols="12" xs="12" sm="12" md="4" lg="4" xl="4">
           <v-card flat color="grey lighten-2">
             <v-card-title>
               {{ $t("wwdo.hardware.title") }}

@@ -51,6 +51,10 @@ const Languages =  {
                     DIMS: "O DIMS é uma instância do UIoT responsável pelo armazenamento de dados dos dispositivos físicos de forma persistente",
                     UIMS: "O UIMS é o módulo gráfico que se comunica com o DIMS para visualização de dados, aqui é possível filtrar os dados de interesse e visualizar em forma de gráficos",
                     dashboard: "O Dashboard é o módulo de visualização de dados do banco de dados mas de forma contextual. É possível criar cenários de interesse e incluir dispositivos, assim como interagir com os mesmos, enviando comandos"
+                },
+                amoris: {
+                    dashboard: "O Dashboard covid é um projeto desenvolvido pelo laboratório UIoT para combater a pandemia causada pelo Covid 19. Este dashboard de monitoramento é capaz de analisar os dados enviados pelos usuários e desenvolver ações de saúde geolocalizadas",
+                    solidaria: "Aplicativo desenvolvido para auxiliar na segurança dos alunos da Universidade de Brasília (UnB). Com este aplicativo, um aluno consegue reportar para a segurança da universidade momentos que necessite de ajuda, como alertas de emergência, escolta ou ajudas de saúde."
                 }
             },
             team: {
@@ -111,6 +115,10 @@ const Languages =  {
                     DIMS: "O DIMS é uma instância do UIoT responsável pelo armazenamento de dados dos dispositivos físicos de forma persistente",
                     UIMS: "O UIMS é o módulo gráfico que se comunica com o DIMS para visualização de dados, aqui é possível filtrar os dados de interesse e visualizar em forma de gráficos",
                     dashboard: "O Dashboard é o módulo de visualização de dados do banco de dados mas de forma contextual. É possível criar cenários de interesse e incluir dispositivos, assim como interagir com os mesmos, enviando comandos"
+                },
+                amoris: {
+                    dashboard: "O Dashboard covid é um projeto desenvolvido pelo laboratório UIoT para combater a pandemia causada pelo Covid 19. Este dashboard de monitoramento é capaz de analisar os dados enviados pelos usuários e desenvolver ações de saúde geolocalizadas",
+                    solidaria: "Aplicativo desenvolvido para auxiliar na segurança dos alunos da Universidade de Brasília (UnB). Com este aplicativo, um aluno consegue reportar para a segurança da universidade momentos que necessite de ajuda, como alertas de emergência, escolta ou ajudas de saúde."
                 }
             },
             team: {

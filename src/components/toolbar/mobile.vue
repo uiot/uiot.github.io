@@ -3,13 +3,13 @@
     <v-expand-transition>
     <div class="base lighten-1 menu-mobile" v-if="drawer">
             <div class="button-position">
-                <v-btn text to="/projects"      :class="{ base: checkRouteColor('projects', currentRoute), 'lighten-2': true }"> {{ $t("toolbar.projects") }} </v-btn>
+                <v-btn text to="/projects" @click="drawer = false"      :class="{ base: checkRouteColor('projects', currentRoute), 'lighten-2': true }"> {{ $t("toolbar.projects") }} </v-btn>
             </div>
             <div class="button-position">
-                <v-btn text to="/publications"  :class="{ base: checkRouteColor('publications', currentRoute), 'lighten-2': true }"> {{ $t("toolbar.publications") }} </v-btn>
+                <v-btn text to="/publications" @click="drawer = false"  :class="{ base: checkRouteColor('publications', currentRoute), 'lighten-2': true }"> {{ $t("toolbar.publications") }} </v-btn>
             </div>
             <div class="button-position">
-                <v-btn text to="/team"          :class="{ base: checkRouteColor('team', currentRoute), 'lighten-2': true }"> {{ $t("toolbar.team") }} </v-btn>
+                <v-btn text to="/team" @click="drawer = false"          :class="{ base: checkRouteColor('team', currentRoute), 'lighten-2': true }"> {{ $t("toolbar.team") }} </v-btn>
             </div>
             <div class="button-position">
                 <v-menu offset-y>
@@ -98,6 +98,7 @@ export default {
     },
     goTo(){
       this.$router.push("/")
+      this.drawer = false
     }
   }
 }
@@ -106,7 +107,7 @@ export default {
 <style scoped>
 .button-position{
   padding-top: 2px;
-    text-align: center;
+  text-align: center;
 }
 
 .logo-mobile{
