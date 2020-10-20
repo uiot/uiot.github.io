@@ -75,12 +75,9 @@
             
         </v-row>
     </div>
-
     <div class="team">
-
+      <h2 class="base--text">  <v-icon class="base--text" size="40"> mdi-account-group </v-icon> <b> {{ $t('team.title') }} </b> </h2>
     </div>
-
-
   </div>
 </template>
 
@@ -183,6 +180,15 @@ export default {
 
 .academics .title_card{
   font-size: 17px;
+}
+
+.team{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .team{

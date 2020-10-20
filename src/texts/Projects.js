@@ -5,8 +5,7 @@ const projects = {
             icon: "mdi-router-wireless",
             color: "#94a69c",
             text_color: "black--text",
-            short_description: "The database for your UIoT middleware", 
-            description: "aaaaaaaaaaaaaa", 
+            text: "gateway", 
             img: "bla",
             link: "abc",
             technologies: [
@@ -25,8 +24,7 @@ const projects = {
             icon: "mdi-database",
             color: "blue-grey lighten-2",
             text_color: "black--text",
-            short_description: "The database for your UIoT middleware", 
-            description: "aaaaaaaaaaaaaa", 
+            text: "DIMS", 
             img: "bla",
             link: "abc",
             technologies: [
@@ -45,8 +43,7 @@ const projects = {
             icon: "mdi-chart-line",
             color: "#c1c2d9",
             text_color: "black--text",
-            short_description: "The best way to check your data",
-            description: "aaaaaaaaaaaaa",
+            text: "UIMS",
             img: "bla",
             link: "abc",
             technologies: [
@@ -65,8 +62,7 @@ const projects = {
             icon: "mdi-view-dashboard",
             color: "#4b4d54",
             text_color: "white--text",
-            short_description: "The easiest way to interact with your devices",
-            description: "aaaaaaaaaaaaa",
+            text: "dashboard",
             img: "bla",
             link: "abc",
             technologies: [
@@ -90,9 +86,8 @@ const projects = {
             name: "Dashboard Covid",
             icon: "mdi-view-dashboard",
             color: "#e8dab3",
-            text_color: "black--text",
             short_description: "The easiest way to interact with your devices",
-            description: "aaaaaaaaaaaaa",
+            text: "dashboard",
             img: "bla",
             link: "abc",
             technologies: [
@@ -111,8 +106,7 @@ const projects = {
             icon: "mdi-cellphone",
             color: "#b3dbe8",
             text_color: "black--text",
-            short_description: "The easiest way to interact with your devices",
-            description: "aaaaaaaaaaaaa",
+            text: "solidaria",
             img: "bla",
             link: "abc",
             technologies: [

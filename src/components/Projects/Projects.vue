@@ -18,7 +18,7 @@
                         </v-card-title>
                         <v-card-text :class="`${item.text_color}`">
                             <span class="text_text">
-                                {{ $t('lorenIpsum') }}
+                                {{ $t(`pages.projects.middleware.${item.text}`) }}
                             </span>
                         </v-card-text>
                         <v-card-actions class="footer-card ">
