@@ -105,6 +105,7 @@ export default {
 
 <style scoped>
 .button-position{
+  padding-top: 2px;
     text-align: center;
 }
 

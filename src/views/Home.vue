@@ -13,7 +13,7 @@
       <h2 class="base--text">  <v-icon class="base--text" size="40"> mdi-magnify </v-icon> <b> {{ $t('wwdo') }} </b> </h2>
       <p class="text"> {{ $t("lorenIpsum") }} </p>
       <v-row>
-        <v-col sm="12" md="4">
+        <v-col xs="12" sm="12" md="4">
           <v-card flat color="grey lighten-2">
             <v-card-title>
               Hardware
@@ -55,7 +55,7 @@
         <v-row>
           <v-col sm="6" md="4" lg="4" v-for="item in publications" :key="item.title">
             <v-hover v-slot:default="{ hover }" >
-              <v-card :elevation="hover ? 6 : 1" flat :color="item.color" height="75">
+              <v-card :elevation="hover ? 6 : 1" flat :color="item.color" min-height="75">
                 <v-card-subtitle>
                   <span class="font-weight-bold title_card"> {{ item.title }} </span> 
                 </v-card-subtitle>
@@ -64,7 +64,7 @@
           </v-col>
           <v-col sm="6" md="4" lg="4">
             <v-hover v-slot:default="{ hover }" >
-              <v-card :elevation="hover ? 6 : 1" flat color="grey darken-2" height="75" @click="goTo('/publications')">
+              <v-card :elevation="hover ? 6 : 1" flat color="grey darken-2" min-height="75" @click="goTo('/publications')">
                 <v-card-subtitle>
                   <span text class="white--text"> See more <v-icon size="15" class="white--text icon">  mdi-plus-circle-outline </v-icon> </span>
                 </v-card-subtitle>

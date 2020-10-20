@@ -1,14 +1,13 @@
 <template>
   <div class="toolbar">
-    <mobile v-if="$isMobile()"></mobile>
-    <web v-if="!$isMobile()"></web>
+    <mobile v-if="isMobile"></mobile>
+    <web v-if="!isMobile"></web>
   </div>
 </template>
 
 <script>
 import web from "./toolbar/web.vue"
 import mobile from "./toolbar/mobile.vue"
-import i18n from '@/plugins/i18n';
 
 export default {
   components: {
@@ -17,28 +16,25 @@ export default {
   },
   data() {    
     return {      
+      isMobile: false,
       show: false,   
     };
   },
   created() {
 
   },
-  computed: {
-    currentRoute(){
-      return this.$route.name
+  beforeDestroy () {
+    if (typeof window !== 'undefined') {
+      window.removeEventListener('resize', this.onResize, { passive: true })
     }
   },
+  mounted () {
+    this.onResize();
+    window.addEventListener('resize', this.onResize, { passive: true })
+  },
   methods: {  
-    changeLocale(locale) {        
-      i18n.locale = locale;
-      this.currentLang = i18n.locale    
-    },
-    checkRouteColor(name, routeName){
-      if(name == routeName){
-        return true
-      }else{
-        return false
-      }
+    onResize(){
+      this.isMobile = window.innerWidth < 630
     },
     goTo(){
       this.$router.push("/")
