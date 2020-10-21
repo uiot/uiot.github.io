@@ -6,15 +6,17 @@
             :subtitle="$t('pages.team.subtitle')"
         />
         <div class="barraAzul base lighten-2"></div>
+        <team></team>
   </div>
 </template>
 
 <script>
 import mainTitle from "../components/MainTitle";
+import Team from "../components/Team/Team";
 // import left from '../components/Team/Left.vue';
 
 export default {
-    components: { mainTitle },
+    components: { mainTitle, Team },
     data(){
       return {
         tab: null,
