@@ -26,7 +26,7 @@
             align="center"
             justify="center"
           >
-            <div class="display-3">
+            <div class="display-3 presentation">
               {{ slide }}
             </div>
           </v-row>

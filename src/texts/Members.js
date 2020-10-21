@@ -1,26 +1,43 @@
-const Members = {
-    Current: [
+const Members = [
         {
-            id: 1,
-            name: "João josé", 
-            role: "University graduate",
-            email: "jjose@gmail.com",
+            name: "Daniel Prado", 
+            area: "Eng. Redes",
+            role: "software",
+            email: "daniel@gmail.com",
             pic: "",
             bio: "A cool person",
-            linkedin: "meu linked-in"
+            linkedin: "meu linked-in",
+            active: true
         },
         {
-            id: 2,
-            name: "Maria Marcela", 
-            role: "University graduate",
-            email: "mmarcela@gmail.com",
+            name: "Victor Campos", 
+            area: "Cic",
+            role: "software",
+            email: "victor@gmail.com",
             pic: "",
             bio: "A strong person",
-            linkedin: "meu linked-in"
+            linkedin: "meu linked-in",
+            active: true,
         },
-    ],
-    Left: [
-
+        {
+            name: "Lincoln Abreu", 
+            area: "Eng. Computação",
+            role: "hardware",
+            email: "abreu@gmail.com",
+            pic: "",
+            bio: "A smart person",
+            linkedin: "meu linked-in",
+            active: true
+        },
+        {
+            name: "Daniel Gomes", 
+            area: "Eng. Redes",
+            role: "security",
+            email: "gomes@gmail.com",
+            pic: "",
+            bio: "A smart person",
+            linkedin: "meu linked-in",
+            active: false
+        }
     ]
-  }
   export default Members
