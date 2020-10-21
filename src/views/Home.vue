@@ -4,11 +4,37 @@
       <!-- <v-btn @click="go">ClickHere</v-btn>
       <div class="block" ref="square">Teste</div> -->
 
-      <div class="presentation grey lighten-3">
+      <!--<div class="presentation grey lighten-3">
           <h1> {{ $t('welcomeMsg') }} </h1>
-      </div>
+      </div> -->
+    <v-carousel
+      cycle
+      height="520"
+      hide-delimiters
+      :show-arrows="false"
+    >
+      <v-carousel-item
+        v-for="(slide, i) in slides"
+        :key="i"
+      >
+        <v-sheet
+          :color="colors[i]"
+          height="100%"
+        >
+          <v-row
+            class="fill-height"
+            align="center"
+            justify="center"
+          >
+            <div class="display-3">
+              {{ slide }}
+            </div>
+          </v-row>
+        </v-sheet>
+      </v-carousel-item>
+    </v-carousel>
 
-    <div class="barraAzul base"/>
+    <!-- <div class="barraAzul base"/> -->
 
     <div class="whatwedo">
       <h2 class="base--text">  <v-icon class="base--text" size="40"> mdi-magnify </v-icon> <b> {{ $t('wwdo.title') }} </b> </h2>
@@ -93,7 +119,20 @@ export default {
   },
   data() {
     return {
-      
+      colors: [
+        'indigo',
+        'warning',
+        'pink darken-2',
+        'red lighten-1',
+        'deep-purple accent-4',
+      ],
+      slides: [
+        'The universal way of connecting things!',
+        'Second',
+        'Third',
+        'Fourth',
+        'Fifth',
+      ],
     }
   },
   computed: {
