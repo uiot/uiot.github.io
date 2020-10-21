@@ -54,7 +54,7 @@
         <h2 class="white--text">  <v-icon class="white--text" size="40"> mdi-book-open-variant </v-icon> <b> {{ $t('home.academics.title') }} </b> </h2>
         <div class="text white--text"> {{ $t('home.academics.text') }} </div>
         <v-row>
-          <v-col sm="6" md="4" lg="4" v-for="item in publications" :key="item.title">
+          <v-col xs="12" sm="6" md="4" lg="4" v-for="item in publications" :key="item.title">
             <v-hover v-slot:default="{ hover }" >
               <v-card :elevation="hover ? 6 : 0" flat :color="item.color" min-height="75">
                 <v-card-subtitle>
@@ -77,6 +77,7 @@
     </div>
     <div class="team">
       <h2 class="base--text">  <v-icon class="base--text" size="40"> mdi-account-group </v-icon> <b> {{ $t('team.title') }} </b> </h2>
+      <p class="text"> {{ $t("team.text") }} </p>
     </div>
   </div>
 </template>
@@ -175,7 +176,7 @@ export default {
 
 .academics .text{
   margin-top: -2px;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .academics .title_card{
@@ -189,14 +190,8 @@ export default {
   padding-right: 2%;
   text-align: center;
   font-family: 'Titillium Web', sans-serif;
-}
-
-.team{
+  font-size: 13px;
   height: 300px;
-  padding-top: 2%;
-  text-align: center;
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 20px;
 }
 
 .icon{

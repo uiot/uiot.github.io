@@ -1,24 +1,22 @@
 <template>
-  <v-footer dark padless absolute class="component">
-    <v-card flat tile class="base white--text text-center">
+    <v-card flat tile class="component base white--text text-center">
       <v-card-text>
         <v-btn v-for="icon in icons" :key="icon" class="mx-4 white--text" icon>
           <v-btn rounded text :href="icon.link">
-            <v-icon size="24px">
+            <v-icon size="24px" class="white--text">
               {{ icon.icon }}
             </v-icon>
           </v-btn>
         </v-btn>
       </v-card-text>
       <v-card-text class="white--text pt-0 main-text">
-        {{$t('lorenIpsum')}}
+        {{$t('footer')}}
       </v-card-text>
       <v-divider/>
       <v-card-text class="white--text">
         {{ new Date().getFullYear() }} — <strong> UioT </strong>
       </v-card-text>
     </v-card>
-  </v-footer>
 </template>
 
 <script>
@@ -46,6 +44,5 @@
 .component{
   box-shadow: 0 -5px 5px #3a3a3a44;
   position: relative;
-  
 }
 </style>

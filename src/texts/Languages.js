@@ -2,9 +2,7 @@ const Languages =  {
     English: {
         welcomeMsg: 'The universal way of connecting things!',
         lorenIpsum: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ante elit, sagittis ac justo vitae, venenatis varius mi. Mauris ultrices magna vel risus lacinia, non varius velit tempus. Sed eget odio magna. Proin tincidunt eros id enim consequat, ac volutpat ante lobortis. Sed efficitur nisl tristique, scelerisque leo id, suscipit ipsum. Integer hendrerit porttitor ante at egestas. Donec tincidunt justo ligula, quis tempus ipsum lobortis sed. Aenean in augue rutrum elit elementum luctus. Morbi nisl urna, facilisis eget sodales vitae, faucibus non mauris. Vestibulum et orci varius, posuere quam a, mollis ipsum. ',
-        plugins: 'Installed CLI Plugins',
-        links: 'Essential Links',
-        ecosystem: 'Ecosystem',
+        footer: 'O projeto Universal Internet of Things (UIoT) é mantido pelo Laboratório de Tomada de Decisão (LATITUDE) e está localizado na Faculdade de Tecnologia (FT) no departamento de Engenharia Elétrica - Universidade de Brasília (UnB)', 
         toolbar: {
             projects: "Projects",
             publications: "Publications",
@@ -34,7 +32,8 @@ const Languages =  {
             }
         },
         team: {
-            title: "Our Team"
+            title: "Our Team",
+            text: "Nosso time é composto por alunos de diversos cursos da Universidade de Brasília (UnB), dentre eles: Engenharia de Redes de Comunicação, Engenharia Elétrica, Engenharia da Computação, Engenharia de Produção, entre outros. Também é composto por alunos de outros faculdades"
         },
         pages:{
             publications: {
@@ -65,9 +64,6 @@ const Languages =  {
     },
     Portugues : {
         welcomeMsg: 'A maneira universal de conectar as coisas!',
-        lorenIpsum: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ante elit, sagittis ac justo vitae, venenatis varius mi. Mauris ultrices magna vel risus lacinia, non varius velit tempus. Sed eget odio magna. Proin tincidunt eros id enim consequat, ac volutpat ante lobortis. Sed efficitur nisl tristique, scelerisque leo id, suscipit ipsum. Integer hendrerit porttitor ante at egestas. Donec tincidunt justo ligula, quis tempus ipsum lobortis sed. Aenean in augue rutrum elit elementum luctus. Morbi nisl urna, facilisis eget sodales vitae, faucibus non mauris. Vestibulum et orci varius, posuere quam a, mollis ipsum. ',
-        plugins: 'Plugins de CLI instalados',
-        links: 'Enlaces esenciales',
         ecosystem: 'Ecosistema',
         toolbar: {
             projects: "Projetos",
@@ -98,7 +94,8 @@ const Languages =  {
             }
         },
         team: {
-            title: "Nosso time"
+            title: "Nosso time",
+            text: "Nosso time é composto por alunos de diversos cursos da Universidade de Brasília (UnB), dentre eles: Engenharia de Redes de Comunicação, Engenharia Elétrica, Engenharia da Computação, Engenharia de Produção, entre outros. Também é composto por alunos de outros faculdades"
         },
         pages:{
             publications: {
