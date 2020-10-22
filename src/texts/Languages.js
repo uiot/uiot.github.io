@@ -2,12 +2,12 @@ const Languages =  {
     English: {
         welcomeMsg: 'The universal way of connecting things!',
         lorenIpsum: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ante elit, sagittis ac justo vitae, venenatis varius mi. Mauris ultrices magna vel risus lacinia, non varius velit tempus. Sed eget odio magna. Proin tincidunt eros id enim consequat, ac volutpat ante lobortis. Sed efficitur nisl tristique, scelerisque leo id, suscipit ipsum. Integer hendrerit porttitor ante at egestas. Donec tincidunt justo ligula, quis tempus ipsum lobortis sed. Aenean in augue rutrum elit elementum luctus. Morbi nisl urna, facilisis eget sodales vitae, faucibus non mauris. Vestibulum et orci varius, posuere quam a, mollis ipsum. ',
-        footer: 'O projeto Universal Internet of Things (UIoT) é mantido pelo Laboratório de Tomada de Decisão (LATITUDE) e está localizado na Faculdade de Tecnologia (FT) no departamento de Engenharia Elétrica - Universidade de Brasília (UnB)', 
+        footer: 'O projeto Universal Internet of Things (UIoT) é mantido pelo Laboratório de Tomada de Decisão (LATITUDE) e está localizado na Faculdade de Tecnologia (FT) no departamento de Engenharia Elétrica - Universidade de Brasília (UnB)',
         toolbar: {
             projects: "Projects",
             publications: "Publications",
             team: "Team"
-        },        
+        },
         wwdo: {
             title: "This is what we do",
             text: "O UIoT é um laboratório de pesquisa científica em aplicações que envolvem Internet das Coisas (IoT). Aqui desenvolvemos projetos que envolvem a solução completa, envolvendo o sistema destes dispositivos (software), a parte física (hardware) e também a segurança da informação",
@@ -64,7 +64,7 @@ const Languages =  {
     },
     Portugues : {
         welcomeMsg: 'A maneira universal de conectar as coisas!',
-        ecosystem: 'Ecosistema',
+        ecosystem: 'Ecossistema',
         toolbar: {
             projects: "Projetos",
             publications: "Publicações",
@@ -99,7 +99,7 @@ const Languages =  {
         },
         pages:{
             publications: {
-                title: "UIoT Publicações",
+                title: "Publicações do UIoT",
                 subtitle: "Confira nossas publicações acadêmicas",
                 publicationYear: "Ano de publicação"
             },
