@@ -21,7 +21,7 @@ const Languages =  {
             },
             security: {
                 title: "Security",
-                text: "Esta é a equipe responsável por criar soluções que permitem um tráfego de dados seguro de ponta a ponta"
+                text: "This is the team responsible for creating solutions that allow secure end-to-end data traffic."
             },
             button: "Check out"
         },
@@ -33,7 +33,7 @@ const Languages =  {
         },
         team: {
             title: "Our Team",
-            text: "Nosso time é composto por alunos de diversos cursos da Universidade de Brasília (UnB), dentre eles: Engenharia de Redes de Comunicação, Engenharia Elétrica, Engenharia da Computação, Engenharia de Produção, entre outros. Também é composto por alunos de outros faculdades"
+            text: "Our team is composed of students from several courses at the University of Brasília (UnB), such as: Communication Network Engineering, Electrical Engineering, Computer Engineering, Production Engineering, among others. It is also composed of students from other colleges."
         },
         pages:{
             publications: {
@@ -89,13 +89,13 @@ const Languages =  {
         },
         home: {
             academics: {
-                title: "UIoT Publicações",
+                title: "Publicações do UIoT",
                 text: "Nossas publicações não envolvem apenas tópicos de IoT. Pesquisamos novas tecnologias envolvendo ...",
             }
         },
         team: {
             title: "Nosso time",
-            text: "Nosso time é composto por alunos de diversos cursos da Universidade de Brasília (UnB), dentre eles: Engenharia de Redes de Comunicação, Engenharia Elétrica, Engenharia da Computação, Engenharia de Produção, entre outros. Também é composto por alunos de outros faculdades"
+            text: "Nosso time é composto por alunos de diversos cursos da Universidade de Brasília (UnB), dentre eles: Engenharia de Redes de Comunicação, Engenharia Elétrica, Engenharia da Computação, Engenharia de Produção, entre outros. Também é composto por alunos de outros faculdades."
         },
         pages:{
             publications: {
