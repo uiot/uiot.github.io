@@ -1,13 +1,13 @@
 <template>
   <div class="component">
     <v-card flat class="grey lighten-5">
-      <v-card-title> 
+      <v-card-title>
         <v-col cols="8">
           <v-select outlined dense v-model="selectedYears" :items="years" attach chips color="base" :label="$t('pages.publications.publicationYear')" multiple>
             <template v-slot:selection="{ attrs, item}">
               <v-chip v-bind="attrs" class="white--text" color="base">
                 <template class="pr-2">
-                  {{ item }}  
+                  {{ item }}
                 </template>
               </v-chip>
             </template>
@@ -51,8 +51,8 @@ import { filterPublications } from "../../functions/publications.js"
 export default {
     data(){
         return {
-            lastDateSelected: [ 2019 ],
-            selectedYears: [ 2019 ],
+            lastDateSelected: [ 2020 ],
+            selectedYears: [ 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012 ],
             publicacoes: Publications,
             expanded: [],
             singleExpand: false,
@@ -66,7 +66,7 @@ export default {
     },
     filters: {
       teste(value){
-      
+
         return value.toString()
       }
     },
@@ -90,7 +90,7 @@ export default {
       setYear(){
         this.selectedYears = [ 2019 ]
       }
-    } 
+    }
 }
 </script>
 
