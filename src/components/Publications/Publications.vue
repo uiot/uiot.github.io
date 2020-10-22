@@ -66,8 +66,7 @@ export default {
     },
     filters: {
       teste(value){
-
-        return value.toString()
+        return value.join(', ')
       }
     },
     computed: {
