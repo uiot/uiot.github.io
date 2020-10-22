@@ -33,6 +33,8 @@
             <td> <v-chip class="base white--text"> <b> {{ item.year }} </b> </v-chip> </td>
             <td>{{ item.title }}</td>
             <td>{{ item.authors | teste }}</td>
+            <td v-if="item.download"><a v-bind:href='item.download'> <img width="20" :src="require(`@/assets/pdf.png`)"> </a></td>
+            <td v-else></td>
           </tr>
         </tbody>
       </template>
