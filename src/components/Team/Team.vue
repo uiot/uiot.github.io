@@ -89,6 +89,7 @@
                                 {{ icon }}
                             </v-icon>
                         </v-btn>
+                        {{ publications(item.key) }}
                     </v-card>
                 </v-col>
             </v-row>
@@ -99,6 +100,7 @@
 <script>
 import Members from "../../texts/Members.js";
 import MainTitle from "../Projects/commom/Title";
+import { filterPublications } from "../../functions/publications.js"
 
 export default {
     components: {
@@ -122,6 +124,9 @@ export default {
                     return item
                 }
             })
+        },
+        publications(member){
+            return new filterPublications().byOneMember(member)
         }
     }
 }

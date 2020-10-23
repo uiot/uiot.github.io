@@ -20,5 +20,7 @@ export class filterPublications {
         return publications.filter(function(item){  if(years.indexOf(item.year) !== -1 ){ return item } })
     }
 
-    
+    byOneMember(member){
+        return publications.filter(function(item){ return item.authors.includes(member) })
+    }
 }
