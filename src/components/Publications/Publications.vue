@@ -36,6 +36,7 @@
             <td v-else-if="item.language === 'pt-br'"> <img width="20" :src="require(`@/assets/brazil.png`)"> </td>
             <td v-else></td>
             <td>{{ item.title }}</td>
+            <td class="capitalize">{{ item.type }}</td>
             <td>{{ item.authors | teste }}</td>
             <td v-if="item.download"><a :href="`/assets/pdf/${item.download}`" target="_blank"> <img width="20" :src="require(`@/assets/pdf.png`)"> </a></td>
             <td v-else></td>
@@ -66,6 +67,7 @@ export default {
               { text: 'Year', align: 'start', sortable: false, value: 'year',},
               { text: '', value: '' },
               { text: 'Title', value: 'title' },
+              { text: 'Type', value: 'type' },
               { text: 'Authors', value: 'authors' },
               { text: '', value: 'data-table-expand' },
             ],
@@ -114,5 +116,8 @@ h1{
 }
 .autor{
   color: rgb(73, 73, 73);
+}
+.capitalize {
+  text-transform: capitalize;
 }
 </style>

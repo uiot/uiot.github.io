@@ -9,6 +9,7 @@ const Publications = [
                     "Maristela Holanda",
                     "Rafael Timoteo de Sousa Júnior"
                 ],
+                type: "conference",
                 download: "polettietal2019.pdf",
                 language: "en"
             },
@@ -20,6 +21,7 @@ const Publications = [
                     "Lucas Mauricio Castro e Martins",
                     "Francisco L. de Caldas Filho",
                 ],
+                type: "conference",
                 download: "",
                 language: "en"
             },
@@ -35,6 +37,7 @@ const Publications = [
                     "Robson de O. Albuquerde",
                     "Rafael T. de Sousa Junior"
                 ],
+                type: "conference",
                 download: "",
                 language: "en"
             },
@@ -49,6 +52,7 @@ const Publications = [
                     "João T. M. de Menezes",
                     "Demétrio A. da Silva Filho"
                 ],
+                type: "conference",
                 download: "",
                 language: "en"
             },
@@ -63,6 +67,7 @@ const Publications = [
                     "Edna Dias Canedo",
                     "Rafael T. de Sousa Junior"
                 ],
+                type: "conference",
                 download: "",
                 language: "en"
             },
@@ -79,6 +84,7 @@ const Publications = [
                     "Bruno J. G Praciano",
                     "Guilherme Oliveira Kfouri"
                 ],
+                type: "conference",
                 download: "",
                 language: "en"
             },
@@ -95,6 +101,7 @@ const Publications = [
                     "Robson de O Martins",
                     "Rafael T de Sousa Jr"
                 ],
+                type: "conference",
                 download: "",
                 language: "pt-br"
             },
@@ -112,6 +119,7 @@ const Publications = [
                     "Robson de O. Albuquerque",
                     "Rafael T de Sousa Jr"
                 ],
+                type: "conference",
                 download: "",
                 language: "en"
             },
@@ -126,6 +134,7 @@ const Publications = [
                     "Rafael Timoteo de Sousa Júnior",
                     "Robson de O. Albuquerque"
                 ],
+                type: "conference",
                 download: "",
                 language: "en"
             },
@@ -139,6 +148,7 @@ const Publications = [
                     "Claudia J. Barenco Abbas",
                     "Cassio Fabius C. Ribeiro",
                 ],
+                type: "conference",
                 download: "",
                 language: "pt-br"
             },
@@ -152,6 +162,7 @@ const Publications = [
                     "Rafael Timoteo de Sousa Júnior",
                     "Rodrigo L. Rocha"
                 ],
+                type: "conference",
                 download: "",
                 language: "en"
             },
@@ -165,6 +176,7 @@ const Publications = [
                     "William F. Giozza",
                     "João Paulo C. L. da Costa",
                 ],
+                type: "conference",
                 download: "",
                 language: "en"
             },
@@ -179,6 +191,7 @@ const Publications = [
                     "João Paulo C. L. da Costa",
                     "Fábio L. L. de Medonça"
                 ],
+                type: "conference",
                 download: "",
                 language: "en"
             },
@@ -193,6 +206,7 @@ const Publications = [
                     "Luis Javier Garcia Villalba",
                     "Tai-Hoon Kim"
                 ],
+                type: "journal",
                 download: "",
                 language: "en"
             },
@@ -202,6 +216,7 @@ const Publications = [
                 authors: [
                     "Ruben Cruz Huacarpuma"
                 ],
+                type: "doctoral thesis",
                 download: "",
                 language: "pt-br"
             },
@@ -212,6 +227,7 @@ const Publications = [
                     "Hiro Gabriel Cerqueira Ferreira",
                     "Rafael Timóteo de Sousa Junior"
                 ],
+                type: "journal",
                 download: "",
                 language: "en"
             },
@@ -225,6 +241,7 @@ const Publications = [
                     "William F. Giozza",
                     "João Paulo C. L. da Costa"
                 ],
+                type: "conference",
                 download: "",
                 language: "pt-br"
             },
@@ -239,6 +256,7 @@ const Publications = [
                     "Fábio L. L de medonça",
                     "João Paulo C. L. da Costa"
                 ],
+                type: "conference",
                 download: "",
                 language: "pt-br"
             },
@@ -252,6 +270,7 @@ const Publications = [
                     "Fábio Buiati",
                     "Luis Javier García Villalba"
                 ],
+                type: "journal",
                 download: "",
                 language: "en"
             },
@@ -265,6 +284,7 @@ const Publications = [
                     "Fábio L. L. Medonça",
                     "Rafael T. de Sousa Jr."
                 ],
+                type: "conference",
                 download: "",
                 language: "pt-br"
             },
@@ -278,6 +298,7 @@ const Publications = [
                     "Fábio L. L. Medonça",
                     "Rafael T. de Sousa Jr."
                 ],
+                type: "conference",
                 download: "",
                 language: "pt-br"
             },
@@ -290,6 +311,7 @@ const Publications = [
                     "Sérgio Lifschitz",
                     "Rafael T. de Sousa Júnior."
                 ],
+                type: "conference",
                 download: "",
                 language: "pt-br"
             },
@@ -303,6 +325,7 @@ const Publications = [
                     "Fábio L. L. Medonça",
                     "Rafael T. de Sousa Jr."
                 ],
+                type: "conference",
                 download: "",
                 language: "pt-br"
             },
@@ -314,6 +337,7 @@ const Publications = [
                     "Caio César de Melo e Silva",
                     "Rafael T. de Sousa Jr."
                 ],
+                type: "conference",
                 download: "",
                 language: "en"
             },
@@ -325,6 +349,7 @@ const Publications = [
                     "Edna Dias Canedi",
                     "Rafael Timoteo de Sousa Júnior"
                 ],
+                type: "conference",
                 download: "",
                 language: "en"
             },
@@ -334,6 +359,7 @@ const Publications = [
                 authors: [
                     "Hiro Gabriel Cerqueira Ferreir",
                 ],
+                type: "master thesis",
                 download: "",
                 language: "en"
             },
@@ -346,6 +372,7 @@ const Publications = [
                     "Flávio Elias Gomes de Deus",
                     "Edna Dias Canedo"
                 ],
+                type: "conference",
                 download: "",
                 language: "en"
             },
@@ -357,6 +384,7 @@ const Publications = [
                     "Edna Dias Canedo",
                     "Rafael Timoteo de Sousa Júnior"
                 ],
+                type: "conference",
                 download: "",
                 language: "en"
             },
