@@ -2,7 +2,8 @@
     <div class="team">
         <main-title
             :title="`Team UIoT`"
-            :subtitle="`short description`"
+            :subtitle="`Nossa equipe`"
+            class="titulo"
         />
         <h2 class="sub-titulo">Direção</h2>
         <v-container class="grey lighten-5 direction">
@@ -97,9 +98,13 @@
 
 <script>
 import Members from "../../texts/Members.js";
+import MainTitle from "../Projects/commom/Title";
 
 export default {
-     data: () => ({
+    components: {
+        MainTitle  
+    },
+    data: () => ({
         members: Members,
         selected_member: [],
         current_option: "",
@@ -154,6 +159,11 @@ export default {
 
 .direction { 
     text-align: center;
+}
+
+.main_title{
+    font-family: 'Titillium Web Bold', sans-serif;
+    font-size: 30px;
 }
 
 img {
