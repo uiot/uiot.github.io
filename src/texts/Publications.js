@@ -114,8 +114,6 @@ const Publications = [
                 language: "en"
             },
             {
-                year: 2019,
-                title: "QoS Scheduling Algorithm for a Fog IoT Gateway",
                 title: "Publicação de testes",
                 authors: [
                     'prado',
