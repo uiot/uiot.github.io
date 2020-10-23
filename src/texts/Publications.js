@@ -1,5 +1,25 @@
 const Publications = [
             {
+                year: 2020,
+                title: "Monitoramento e controle de ambientes com base em aprendizagem de máquina e computação em nevoeiro em arquitetura IoT",
+                authors: [
+                    "Rafael L. Patrão",
+                    "Francisco L. de Caldas Filho",
+                    "Lucas M. C. e Martins",
+                    "Gerson do N. Silva",
+                    "Matheus S. Monteiro",
+                    "Marcos B. Andrade",
+                    "Fabio L. L. de Mendonça",
+                    "Rafael Timoteo de Sousa Júnior"
+                ],
+                type: "conference",
+                name: "15th Iberian Conference on Information Systems and Technologies",
+                short: "CISTI 2020",
+                publication_link: "https://ieeexplore.ieee.org/abstract/document/9141085",
+                download: "",
+                language: "pt-br"
+            },
+            {
                 year: 2019,
                 title: "A Real Data Analysis in an Internet of Things Environment",
                 authors: [
@@ -28,6 +48,24 @@ const Publications = [
                 name: "V Jornadas Nacionales de Investigación en Ciberseguridad",
                 short: "JNIC 2019",
                 publication_link: "https://2019.jnic.es/Actas_JNIC2019.pdf",
+                download: "",
+                language: "en"
+            },
+            {
+                year: 2019,
+                title: "P2PIoT: A Peer-To-Peer Communication Model for the Internet of Things",
+                authors: [
+                    "abio L. L. de Mendonça",
+                    "Dayanne F. da Cunha",
+                    "Bruno J. G. Praciano",
+                    "Mateus da Rosa Zanatta",
+                    "Joao Paulo C. L. da Costa",
+                    "Rafael T. de Sousa"
+                ],
+                type: "conference",
+                name: "2019 Workshop on Communication Networks and Power Systems",
+                short: "WCNPS 2019",
+                publication_link: "https://ieeexplore.ieee.org/document/8896313",
                 download: "",
                 language: "en"
             },
