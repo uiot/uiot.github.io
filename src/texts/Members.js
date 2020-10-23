@@ -18,6 +18,7 @@ const Members = [
             email: "daniel@gmail.com",
             pic: "",
             bio: "A cool person",
+            lattes: "",
             linkedin: "meu linked-in",
             active: true
         },
@@ -29,17 +30,19 @@ const Members = [
             email: "lmartins@gmail.com",
             pic: "",
             bio: "A cool person",
+            lattes: "",
             linkedin: "meu linked-in",
             active: true
         },
         {
-            key: "campos",
+            key: "victorcampos",
             name: "Victor Campos",
             area: "Ciência da Computação",
             role: "software",
             email: "victor@gmail.com",
             pic: "",
             bio: "A strong person",
+            lattes: "",
             linkedin: "meu linked-in",
             active: true,
         },
@@ -51,6 +54,7 @@ const Members = [
             email: "abreu@gmail.com",
             pic: "",
             bio: "A smart person",
+            lattes: "",
             linkedin: "meu linked-in",
             active: true
         },
@@ -62,6 +66,7 @@ const Members = [
             email: "gomes@gmail.com",
             pic: "",
             bio: "A smart person",
+            lattes: "",
             linkedin: "meu linked-in",
             active: false
         },
@@ -73,6 +78,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -84,6 +90,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -95,6 +102,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -106,6 +114,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -117,6 +126,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -128,6 +138,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -139,6 +150,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -150,6 +162,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -161,6 +174,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -172,6 +186,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -183,6 +198,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -194,6 +210,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -205,6 +222,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -216,6 +234,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -227,6 +246,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -238,6 +258,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -249,6 +270,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -260,6 +282,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -271,6 +294,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -282,6 +306,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -293,6 +318,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -304,6 +330,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -315,6 +342,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -326,6 +354,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -337,6 +366,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -348,6 +378,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -359,6 +390,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -370,6 +402,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -381,6 +414,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -392,6 +426,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -403,6 +438,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -414,6 +450,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
@@ -427,6 +464,7 @@ const Members = [
             email: "",
             pic: "",
             bio: "",
+            lattes: "",
             linkedin: "",
             active: false
         },
