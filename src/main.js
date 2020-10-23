@@ -4,9 +4,7 @@ import router from "./router";
 import vuetify from "./plugins/vuetify";
 import i18n from '@/plugins/i18n';
 import VueMobileDetection from "vue-mobile-detection"
-import VueAnime from "vue-animejs"
 
-Vue.use(VueAnime)
 Vue.use(VueMobileDetection)
 
 Vue.filter('capitalize', function (value) {

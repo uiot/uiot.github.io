@@ -9,9 +9,8 @@
       </div> -->
     <div class="display-3 presentation">
       {{ $t("welcomeMsg") }}
-      <!-- {{ slide }} -->
     </div>
-    <v-carousel cycle height="520" hide-delimiters :show-arrows="false">
+    <v-carousel cycle height="520" :show-arrows="false">
       <v-carousel-item v-for="(slide, i) in slides" :key="i">
         <v-sheet :color="colors[i]" height="100%">
           <v-row class="fill-height" align="center" justify="center">
@@ -21,7 +20,7 @@
       </v-carousel-item>
     </v-carousel>
 
-    <!-- <div class="barraAzul base"/> -->
+    <div class="barraAzul base"/>
 
     <div class="whatwedo">
       <h2 class="base--text">  <v-icon class="base--text" size="40"> mdi-magnify </v-icon> <b> {{ $t('wwdo.title') }} </b> </h2>
@@ -97,8 +96,6 @@
 
 <script>
 import { filterPublications } from "../functions/publications.js"
-// import anime from 'animejs';
-// @ is an alias to /src
 
 export default {
   name: "home",
@@ -145,13 +142,6 @@ export default {
       });
   },
   methods: {
-    // go(){
-    //   anime({
-    //     targets: this.$refs.square,
-    //     translateX: 250,
-    //     delay: 1000
-    //   })
-    // },
     goTo(text){
       this.$router.push(text)
     }
@@ -162,6 +152,8 @@ export default {
 <style scoped>
 
 .presentation{
+  padding-left: 2%;
+  padding-right: 2%;
   padding-top: 190px;
   width: 100%;
   position: absolute;

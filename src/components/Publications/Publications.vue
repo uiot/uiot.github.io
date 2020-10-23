@@ -48,13 +48,14 @@
 <script>
 import Publications from "../../texts/Publications"
 import { filterPublications } from "../../functions/publications.js"
+import { filterMembers } from "../../functions/members.js"
 
 
 export default {
     data(){
         return {
             lastDateSelected: [ 2020 ],
-            selectedYears: [ 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012 ],
+            selectedYears: [ 2020 ],
             publicacoes: Publications,
             expanded: [],
             singleExpand: false,
@@ -68,7 +69,10 @@ export default {
     },
     filters: {
       teste(value){
-        return value.join(', ')
+        let arr_ret = []
+        value.map(function(item){ arr_ret.push(new filterMembers().byKey(item)) })
+        
+        return arr_ret.toString()
       }
     },
     computed: {
@@ -89,7 +93,7 @@ export default {
         }
       },
       setYear(){
-        this.selectedYears = [ 2019 ]
+        this.selectedYears = [ 2020 ]
       }
     }
 }

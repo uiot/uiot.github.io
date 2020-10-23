@@ -19,4 +19,6 @@ export class filterPublications {
     byYears(years){
         return publications.filter(function(item){  if(years.indexOf(item.year) !== -1 ){ return item } })
     }
+
+    
 }
