@@ -80,7 +80,7 @@ export default {
       teste(value){
         let arr_ret = []
         value.map(function(item){ arr_ret.push(new filterMembers().byKey(item)) })
-        
+
         return arr_ret.toString()
       }
     },
@@ -102,7 +102,7 @@ export default {
         }
       },
       setYear(){
-        this.selectedYears = [ 2020 ]
+        this.selectedYears = [ 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012 ]
       }
     }
 }
