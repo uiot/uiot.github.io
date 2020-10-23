@@ -31,10 +31,17 @@
             :key="`${i}-${item.id}`"
           >
             <td> <v-chip class="base white--text"> <b> {{ item.year }} </b> </v-chip> </td>
-            <td>{{ item.title }}</td>
-            <td>{{ item.authors | teste }}</td>
-            <td v-if="item.download"><a v-bind:href='item.download'> <img width="20" :src="require(`@/assets/pdf.png`)"> </a></td>
+            <td v-if="!item.language"></td>
+            <td v-else-if="item.language === 'en'"> <img width="20" :src="require(`@/assets/united-states.png`)"> </td>
+            <td v-else-if="item.language === 'pt-br'"> <img width="20" :src="require(`@/assets/brazil.png`)"> </td>
             <td v-else></td>
+            <td>{{ item.title }}</td>
+            <td><span>{{ item.short }}</span> <span v-if="!item.short" >({{ item.type }})</span> </td>
+            <td>{{ item.authors | teste }}</td>
+            <td>
+              <a v-if="item.download" :href="`/assets/pdf/${item.download}`" target="_blank"> <img width="20" :src="require(`@/assets/pdf.png`)"> </a>
+              <a v-if="item.publication_link" :href="`${item.publication_link}`" target="_blank"> <img width="20" :src="require(`@/assets/globe.png`)"> </a>
+            </td>
           </tr>
         </tbody>
       </template>
@@ -61,7 +68,9 @@ export default {
             singleExpand: false,
             headers: [
               { text: 'Year', align: 'start', sortable: false, value: 'year',},
+              { text: '', value: '' },
               { text: 'Title', value: 'title' },
+              { text: 'Published in', value: 'short' },
               { text: 'Authors', value: 'authors' },
               { text: '', value: 'data-table-expand' },
             ],
@@ -113,5 +122,8 @@ h1{
 }
 .autor{
   color: rgb(73, 73, 73);
+}
+.capitalize {
+  text-transform: capitalize;
 }
 </style>
