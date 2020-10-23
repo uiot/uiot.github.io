@@ -1,18 +1,18 @@
 <template>
     <div class="team">
         <main-title
-                :title="`Team UIoT`"
-                :subtitle="`short description`"
-            />
-
+            :title="`Team UIoT`"
+            :subtitle="`short description`"
+        />
         <h2 class="sub-titulo">Direção</h2>
-        <v-container class="grey lighten-5">
+        <v-container class="grey lighten-5 direction">
             <v-row>
                 <v-col class="template-col">
                     <v-card
                     class="pa-2"
                     outlined
                     tile
+                    style="width: 70%; border: 3px solid rgb(111, 113, 188); border-radius: 10px; margin: 0 auto;"
                     >
                     <img src="../../assets/perfil.jpg">
                     <h2>Rafael</h2>
@@ -30,6 +30,7 @@
                     class="pa-2"
                     outlined
                     tile
+                    style="width: 70%; border: 3px solid rgb(111, 113, 188); border-radius: 10px; margin: 0 auto;"
                     >
                     <img src="../../assets/perfil.jpg">
                     <h2>Francisco</h2>
@@ -47,6 +48,7 @@
                     class="pa-2"
                     outlined
                     tile
+                    style="width: 70%; border: 3px solid rgb(111, 113, 188); border-radius: 10px; margin: 0 auto;"
                     >
                     <img src="../../assets/perfil.jpg">
                     <h2>Lucas</h2>
@@ -76,6 +78,7 @@
                         class="pa-2"
                         outlined
                         tile
+                        style="width: 70%; border: 3px solid rgb(111, 113, 188); border-radius: 10px; margin: 0 auto;"
                     >
                         <img src="../../assets/perfil.jpg">
                         <h2>{{item.name}}</h2>
@@ -144,12 +147,18 @@ export default {
     margin: 0 6em 0 6em;
 }
 
-img {
-    width: 60%;
-}
-
 .btn {
     background-color: rgb(111, 113, 188) !important;
     color: azure;
 }
+
+.direction { 
+    text-align: center;
+}
+
+img {
+    width: 60%;
+}
+
+
 </style>
