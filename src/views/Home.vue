@@ -7,28 +7,15 @@
       <!--<div class="presentation grey lighten-3">
           <h1> {{ $t('welcomeMsg') }} </h1>
       </div> -->
-    <v-carousel
-      cycle
-      height="520"
-      hide-delimiters
-      :show-arrows="false"
-    >
-      <v-carousel-item
-        v-for="(slide, i) in slides"
-        :key="i"
-      >
-        <v-sheet
-          :color="colors[i]"
-          height="100%"
-        >
-          <v-row
-            class="fill-height"
-            align="center"
-            justify="center"
-          >
-            <div class="display-3 presentation">
-              {{ slide }}
-            </div>
+    <div class="display-3 presentation">
+      {{ $t("welcomeMsg") }}
+      <!-- {{ slide }} -->
+    </div>
+    <v-carousel cycle height="520" hide-delimiters :show-arrows="false">
+      <v-carousel-item v-for="(slide, i) in slides" :key="i">
+        <v-sheet :color="colors[i]" height="100%">
+          <v-row class="fill-height" align="center" justify="center">
+            
           </v-row>
         </v-sheet>
       </v-carousel-item>
@@ -120,18 +107,13 @@ export default {
   data() {
     return {
       colors: [
-        'indigo',
-        'warning',
-        'pink darken-2',
-        'red lighten-1',
-        'deep-purple accent-4',
+        'blue lighten-2',
+        'green lighten-2',
+        'red lighten-2',
       ],
       slides: [
         'The universal way of connecting things!',
         'Second',
-        'Third',
-        'Fourth',
-        'Fifth',
       ],
     }
   },
@@ -180,14 +162,13 @@ export default {
 <style scoped>
 
 .presentation{
-  height: 500px;
+  padding-top: 190px;
+  width: 100%;
+  position: absolute;
   text-align: center;
+  z-index: 1;
 }
 
-.presentation h1 {
-  color: rgb(70, 70, 70);
-  padding-top: 200px;
-}
 
 .whatwedo{
   padding-top: 2%;
