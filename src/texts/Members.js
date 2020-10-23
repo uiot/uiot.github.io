@@ -5,6 +5,7 @@ const Members = [
         - obs: caso o nome tenha algum sufixo, acrescentar a primeira letra do sufixo no final do nome;
       - exceção 1: usar o "nome de guerra" de professor da UnB (se houver);
       - exceção 2: usar o sobrenome se for um sobrenome já utilizado para se referir a pessoa. Exemplo: Patrão, Prado, Venzi e Kfouri.
+
       Obs.:
       - todos as letras minúsculas;
       - não usar acentos ou cedilha.
@@ -43,7 +44,7 @@ const Members = [
             active: true,
         },
         {
-            key: "abreu",
+            key: "lincolnbarbosa",
             name: "Lincoln Abreu",
             area: "Engenharia da Computação",
             role: "hardware",
@@ -252,17 +253,6 @@ const Members = [
             active: false
         },
         {
-            key: "lincolnbarbosa",
-            name: "lincolnbarbosa",
-            area: "",
-            role: "",
-            email: "",
-            pic: "",
-            bio: "",
-            linkedin: "",
-            active: false
-        },
-        {
             key: "tribouilet",
             name: "tribouilet",
             area: "",
@@ -428,6 +418,7 @@ const Members = [
             active: false
         },
 
+        // template
         {
             key: "x",
             name: "",
@@ -439,6 +430,5 @@ const Members = [
             linkedin: "",
             active: false
         },
-        // template
     ]
   export default Members

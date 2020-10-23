@@ -37,25 +37,12 @@ const Publications = [
                     "desousa"
                 ],
                 type: "conference",
-                name: "Conferências Ibero-Americanas de Computação Aplicada 2017",
-                short: "CIACA 2017",
+                name: "4th International Conference on Internet of Things, Big Data and Security",
+                short: "IoTBDS 2019",
                 publication_link: "https://www.scitepress.org/PublicationsDetail.aspx?ID=2Wb+aNVirL0=&t=1",
                 download: "polettietal2019.pdf",
                 language: "en"
             },
-            // {
-            //     year: 2019,
-            //     title: "A Real Data Analysis in an Internet of Things Environment",
-            //     authors: [
-            //         "Joao Victor Poletti",
-            //         "lucasmartins",
-            //         "Samuel Almeida",
-            //         "maristelaholanda",
-            //         "desousa"
-            //     ],
-            //     download: "download"
-            // },
-
             {
                 year: 2019,
                 title: "HIDS by Signature for embedded devices in IoT networks",
@@ -140,25 +127,30 @@ const Publications = [
                 type: "conference",
                 name: "2019 Workshop on Communication Networks and Power Systems",
                 short: "WCNPS 2019",
-                publication_link: "",
+                publication_link: "https://ieeexplore.ieee.org/document/8896311",
                 download: "",
                 language: "en"
             },
-            // {
-            //     year: 2019,
-            //     title: "Inference of driver behavior using correlated IoT data from the vehicle telemetry and the driver mobile phone",
-            //     authors: [
-            //         "desousa",
-            //         "Daniel Alves da Silva",
-            //         "José Alberto Sousa Torres",
-            //         "Alexandre Pinheiro",
-            //         "franciscocaldasf",
-            //         "Fabio L. L. Mendonça",
-            //         "Bruno J. G Praciano",
-            //         "kfouri"
-            //     ],
-            //     download: "download"
-            // },
+            {
+                year: 2019,
+                title: "Inference of driver behavior using correlated IoT data from the vehicle telemetry and the driver mobile phone",
+                authors: [
+                    "desousa",
+                    // "Daniel Alves da Silva",
+                    // "José Alberto Sousa Torres",
+                    // "Alexandre Pinheiro",
+                    "franciscocaldasf",
+                    "fabiomendonca",
+                    "justino",
+                    "kfouri"
+                ],
+                type: "conference",
+                name: "",
+                short: "",
+                publication_link: "",
+                download: "download",
+                language: "en"
+            },
             {
                 year: 2019,
                 title: "Arquitetura de IPS para redes IoT sobrepostas em SDN",
@@ -172,7 +164,12 @@ const Publications = [
                     "robsonalbuquerde",
                     "desousa"
                 ],
-                download: "download"
+                type: "conference",
+                name: "XIX Simpósio Brasileiro de Segurança da Informação e de Sistemas Computacionais",
+                short: "SBSeg 2019",
+                publication_link: "https://sbseg2019.ime.usp.br/artigos.html",
+                download: "download",
+                language: "pt-br"
             },
             {
                 year: 2019,
@@ -188,7 +185,12 @@ const Publications = [
                     "robsonalbuquerde",
                     "desousa"
                 ],
-                download: "download"
+                type: "conference",
+                name: "14th Federated Conference on Computer Science and Information Systems",
+                short: "FedCSIS 2019",
+                publication_link: "https://fedcsis.org/proceedings/2019/drp/329.html",
+                download: "",
+                language: "en"
             },
             {
                 year: 2018,
@@ -201,7 +203,12 @@ const Publications = [
                     "desousa",
                     "robsonalbuquerde"
                 ],
-                download: "download"
+                type: "conference",
+                name: "3rd Workshop on Communication Networks and Power Systems",
+                short: "WCNPS 2018",
+                publication_link: "https://ieeexplore.ieee.org/abstract/document/8604444",
+                download: "",
+                language: "en"
             },
             {
                 year: 2018,
@@ -213,7 +220,12 @@ const Publications = [
                     "barenco",
                     "cassioribeiro",
                 ],
-                download: "download"
+                type: "conference",
+                name: "",
+                short: "",
+                publication_link: "",
+                download: "",
+                language: "pt-br"
             },
             {
                 year: 2017,
@@ -225,7 +237,12 @@ const Publications = [
                     "desousa",
                     "rodrigorocha"
                 ],
-                download: "download"
+                type: "conference",
+                name: "2nd Workshop on Communication Networks and Power Systems",
+                short: "WCNPS 2017",
+                publication_link: "https://ieeexplore.ieee.org/document/8252938",
+                download: "",
+                language: "en"
             },
             {
                 year: 2017,
@@ -237,7 +254,12 @@ const Publications = [
                     "giozza",
                     "lustosa",
                 ],
-                download: "download"
+                type: "conference",
+                name: "International Conference on Utility and Cloud Computing 2017",
+                short: "UCC/BDCAT 2017",
+                publication_link: "https://dl.acm.org/doi/10.1145/3147234.3148092",
+                download: "",
+                language: "en"
             },
             {
                 year: 2017,
@@ -250,7 +272,12 @@ const Publications = [
                     "lustosa",
                     "fabiomendonca"
                 ],
-                download: "download"
+                type: "conference",
+                name: "International Conference on Utility and Cloud Computing 2017",
+                short: "UCC/BDCAT 2017",
+                publication_link: "http://doi.acm.org/10.1145/3147234.3148091",
+                download: "",
+                language: "en"
             },
             {
                 year: 2017,
@@ -263,7 +290,12 @@ const Publications = [
                     "luisvillalba",
                     "taikim"
                 ],
-                download: "download"
+                type: "journal",
+                name: "",
+                short: "",
+                publication_link: "",
+                download: "",
+                language: "en"
             },
             {
                 year: 2017,
@@ -271,7 +303,12 @@ const Publications = [
                 authors: [
                     "rubenhuacarpuma"
                 ],
-                download: "download"
+                type: "doctoral thesis",
+                name: "Universidade de Brasília",
+                short: "UnB",
+                publication_link: "",
+                download: "",
+                language: "pt-br"
             },
             {
                 year: 2017,
@@ -280,7 +317,12 @@ const Publications = [
                     "hiroferreira",
                     "desousa"
                 ],
-                download: "download"
+                type: "journal",
+                name: "",
+                short: "",
+                publication_link: "",
+                download: "",
+                language: "en"
             },
             {
                 year: 2017,
@@ -292,7 +334,12 @@ const Publications = [
                     "giozza",
                     "lustosa"
                 ],
-                download: "download"
+                type: "conference",
+                name: "Conferência Ibero-Americana WWW/Internet 2017",
+                short: "CIAWI 2017",
+                publication_link: "http://www.iadisportal.org/digital-library/proposta-de-ado%C3%A7%C3%A3o-de-microsservi%C3%A7os-em-iot",
+                download: "",
+                language: "pt-br"
             },
             {
                 year: 2017,
@@ -305,7 +352,12 @@ const Publications = [
                     "fabiomendonca",
                     "lustosa"
                 ],
-                download: "download"
+                type: "conference",
+                name: "Conferências Ibero-Americanas de Computação Aplicada 2017",
+                short: "CIACA 2017",
+                publication_link: "http://www.iadisportal.org/digital-library/gerenciamento-de-servi%C3%A7os-iot-com-gateway-sem%C3%A2ntico",
+                download: "",
+                language: "pt-br"
             },
             {
                 year: 2016,
@@ -317,7 +369,12 @@ const Publications = [
                     "fabiobuiati",
                     "luisvillalba"
                 ],
-                download: "download"
+                type: "journal",
+                name: "",
+                short: "",
+                publication_link: "",
+                download: "",
+                language: "en"
             },
             {
                 year: 2016,
@@ -329,7 +386,12 @@ const Publications = [
                     "fabiomendonca",
                     "desousa"
                 ],
-                download: "download"
+                type: "conference",
+                name: "",
+                short: "",
+                publication_link: "",
+                download: "",
+                language: "pt-br"
             },
             {
                 year: 2016,
@@ -341,7 +403,12 @@ const Publications = [
                     "fabiomendonca",
                     "desousa"
                 ],
-                download: "download"
+                type: "conference",
+                name: "",
+                short: "",
+                publication_link: "",
+                download: "",
+                language: "pt-br"
             },
             {
                 year: 2016,
@@ -352,7 +419,12 @@ const Publications = [
                     "sergiolifschitz",
                     "desousa"
                 ],
-                download: "download"
+                type: "conference",
+                name: "",
+                short: "",
+                publication_link: "",
+                download: "",
+                language: "pt-br"
             },
             {
                 year: 2016,
@@ -364,7 +436,12 @@ const Publications = [
                     "fabiomendonca",
                     "desousa"
                 ],
-                download: "download"
+                type: "conference",
+                name: "",
+                short: "",
+                publication_link: "",
+                download: "",
+                language: "pt-br"
             },
             {
                 year: 2016,
@@ -374,7 +451,12 @@ const Publications = [
                     "caiosilva",
                     "desousa"
                 ],
-                download: "download"
+                type: "conference",
+                name: "",
+                short: "",
+                publication_link: "",
+                download: "",
+                language: "en"
             },
             {
                 year: 2014,
@@ -384,7 +466,12 @@ const Publications = [
                     "ednacanedo",
                     "desousa"
                 ],
-                download: "download"
+                type: "conference",
+                name: "",
+                short: "",
+                publication_link: "",
+                download: "",
+                language: "en"
             },
             {
                 year: 2014,
@@ -392,7 +479,12 @@ const Publications = [
                 authors: [
                     "hiroferreira",
                 ],
-                download: "download"
+                type: "master thesis",
+                name: "Universidade de Brasília",
+                short: "UnB",
+                publication_link: "",
+                download: "",
+                language: "en"
             },
             {
                 year: 2014,
@@ -403,7 +495,12 @@ const Publications = [
                     "flavioelias",
                     "ednacanedo"
                 ],
-                download: "download"
+                type: "conference",
+                name: "",
+                short: "",
+                publication_link: "",
+                download: "",
+                language: "en"
             },
             {
                 year: 2013,
@@ -413,7 +510,12 @@ const Publications = [
                     "ednacanedo",
                     "desousa"
                 ],
-                download: "download"
+                type: "conference",
+                name: "",
+                short: "",
+                publication_link: "",
+                download: "",
+                language: "en"
             },
         ]
 
