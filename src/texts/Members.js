@@ -77,30 +77,19 @@ const Members = [
             active: false
         },
         {
+            key: "franciscocaldasf",
+            name: "franciscocaldasf",
+            area: "",
+            role: "",
+            email: "",
+            pic: "",
+            bio: "",
+            linkedin: "",
+            active: false
+        },
+        {
             key: "maristelaholanda",
             name: "maristelaholanda",
-            area: "",
-            role: "",
-            email: "",
-            pic: "",
-            bio: "",
-            linkedin: "",
-            active: false
-        },
-        {
-            key: "samuelalmeida",
-            name: "samuelalmeida",
-            area: "",
-            role: "",
-            email: "",
-            pic: "",
-            bio: "",
-            linkedin: "",
-            active: false
-        },
-        {
-            key: "poletti",
-            name: "poletti",
             area: "",
             role: "",
             email: "",
@@ -143,28 +132,6 @@ const Members = [
             active: false
         },
         {
-            key: "gersonsilva",
-            name: "gersonsilva",
-            area: "",
-            role: "",
-            email: "",
-            pic: "",
-            bio: "",
-            linkedin: "",
-            active: false
-        },
-        {
-            key: "franciscocaldasf",
-            name: "franciscocaldasf",
-            area: "",
-            role: "",
-            email: "",
-            pic: "",
-            bio: "",
-            linkedin: "",
-            active: false
-        },
-        {
             key: "patrao",
             name: "patrao",
             area: "",
@@ -176,8 +143,41 @@ const Members = [
             active: false
         },
         {
+            key: "robsonalbuquerde",
+            name: "robsonalbuquerde",
+            area: "",
+            role: "",
+            email: "",
+            pic: "",
+            bio: "",
+            linkedin: "",
+            active: false
+        },
+        {
             key: "lustosa",
             name: "lustosa",
+            area: "",
+            role: "",
+            email: "",
+            pic: "",
+            bio: "",
+            linkedin: "",
+            active: false
+        },
+        {
+            key: "cassioribeiro",
+            name: "cassioribeiro",
+            area: "",
+            role: "",
+            email: "",
+            pic: "",
+            bio: "",
+            linkedin: "",
+            active: false
+        },
+        {
+            key: "thalessperling",
+            name: "thalessperling",
             area: "",
             role: "",
             email: "",
@@ -242,8 +242,8 @@ const Members = [
             active: false
         },
         {
-            key: "robsonalbuquerde",
-            name: "robsonalbuquerde",
+            key: "gersonsilva",
+            name: "gersonsilva",
             area: "",
             role: "",
             email: "",
@@ -288,28 +288,6 @@ const Members = [
         {
             key: "rodrigorocha",
             name: "rodrigorocha",
-            area: "",
-            role: "",
-            email: "",
-            pic: "",
-            bio: "",
-            linkedin: "",
-            active: false
-        },
-        {
-            key: "cassioribeiro",
-            name: "cassioribeiro",
-            area: "",
-            role: "",
-            email: "",
-            pic: "",
-            bio: "",
-            linkedin: "",
-            active: false
-        },
-        {
-            key: "thalessperling",
-            name: "thalessperling",
             area: "",
             role: "",
             email: "",
@@ -376,6 +354,28 @@ const Members = [
         {
             key: "caiosilva",
             name: "caiosilva",
+            area: "",
+            role: "",
+            email: "",
+            pic: "",
+            bio: "",
+            linkedin: "",
+            active: false
+        },
+        {
+            key: "samuelalmeida",
+            name: "samuelalmeida",
+            area: "",
+            role: "",
+            email: "",
+            pic: "",
+            bio: "",
+            linkedin: "",
+            active: false
+        },
+        {
+            key: "poletti",
+            name: "poletti",
             area: "",
             role: "",
             email: "",
