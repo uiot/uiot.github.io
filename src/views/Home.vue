@@ -7,34 +7,20 @@
       <!--<div class="presentation grey lighten-3">
           <h1> {{ $t('welcomeMsg') }} </h1>
       </div> -->
-    <v-carousel
-      cycle
-      height="520"
-      hide-delimiters
-      :show-arrows="false"
-    >
-      <v-carousel-item
-        v-for="(slide, i) in slides"
-        :key="i"
-      >
-        <v-sheet
-          :color="colors[i]"
-          height="100%"
-        >
-          <v-row
-            class="fill-height"
-            align="center"
-            justify="center"
-          >
-            <div class="display-3 presentation">
-              {{ slide }}
-            </div>
+    <div class="display-3 presentation">
+      {{ $t("welcomeMsg") }}
+    </div>
+    <v-carousel cycle height="520" :show-arrows="false">
+      <v-carousel-item v-for="(slide, i) in slides" :key="i">
+        <v-sheet :color="colors[i]" height="100%">
+          <v-row class="fill-height" align="center" justify="center">
+            
           </v-row>
         </v-sheet>
       </v-carousel-item>
     </v-carousel>
 
-    <!-- <div class="barraAzul base"/> -->
+    <div class="barraAzul base"/>
 
     <div class="whatwedo">
       <h2 class="base--text">  <v-icon class="base--text" size="40"> mdi-magnify </v-icon> <b> {{ $t('wwdo.title') }} </b> </h2>
@@ -110,8 +96,6 @@
 
 <script>
 import { filterPublications } from "../functions/publications.js"
-// import anime from 'animejs';
-// @ is an alias to /src
 
 export default {
   name: "home",
@@ -120,18 +104,13 @@ export default {
   data() {
     return {
       colors: [
-        'indigo',
-        'warning',
-        'pink darken-2',
-        'red lighten-1',
-        'deep-purple accent-4',
+        'blue lighten-2',
+        'green lighten-2',
+        'red lighten-2',
       ],
       slides: [
         'The universal way of connecting things!',
         'Second',
-        'Third',
-        'Fourth',
-        'Fifth',
       ],
     }
   },
@@ -163,13 +142,6 @@ export default {
       });
   },
   methods: {
-    // go(){
-    //   anime({
-    //     targets: this.$refs.square,
-    //     translateX: 250,
-    //     delay: 1000
-    //   })
-    // },
     goTo(text){
       this.$router.push(text)
     }
@@ -180,14 +152,15 @@ export default {
 <style scoped>
 
 .presentation{
-  height: 500px;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 190px;
+  width: 100%;
+  position: absolute;
   text-align: center;
+  z-index: 1;
 }
 
-.presentation h1 {
-  color: rgb(70, 70, 70);
-  padding-top: 200px;
-}
 
 .whatwedo{
   padding-top: 2%;

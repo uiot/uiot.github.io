@@ -2,40 +2,39 @@
   <div class="toolbar grey">
     <v-expand-transition>
     <div class="base lighten-1 menu-mobile" v-if="drawer">
-            <div class="button-position">
-                <v-btn text to="/projects" @click="drawer = false"      :class="{ base: checkRouteColor('projects', currentRoute), 'lighten-2': true }"> {{ $t("toolbar.projects") }} </v-btn>
-            </div>
-            <div class="button-position">
-                <v-btn text to="/publications" @click="drawer = false"  :class="{ base: checkRouteColor('publications', currentRoute), 'lighten-2': true }"> {{ $t("toolbar.publications") }} </v-btn>
-            </div>
-            <div class="button-position">
-                <v-btn text to="/team" @click="drawer = false"          :class="{ base: checkRouteColor('team', currentRoute), 'lighten-2': true }"> {{ $t("toolbar.team") }} </v-btn>
-            </div>
-            <div class="button-position">
-                <v-menu offset-y>
-                    <template v-slot:activator="{ on }">
-                        <v-btn
-                        text
-                        v-on="on"
-                        >
-                        {{currentLang}}
-                        </v-btn>
-                    </template>
-                    <v-list>
-                        <v-list-item
-                        v-for="(item, index) in languages"
-                        :key="index"
-                        >
-                        <v-list-item-title >
-                            <v-btn text @click="changeLocale(item.language)" class="botao">
-                            <v-img width="30" :src="require(`@/assets/${item.img}`)"></v-img> <v-span class="lang-title"> - {{ item.title }} </v-span>
-                            
-                            </v-btn>
-                        </v-list-item-title>
-                        </v-list-item>
-                    </v-list>
-                </v-menu>
-            </div>
+      <div class="button-position">
+          <v-btn text to="/projects" @click="drawer = false"      :class="{ base: checkRouteColor('projects', currentRoute), 'lighten-2': true }"> {{ $t("toolbar.projects") }} </v-btn>
+      </div>
+      <div class="button-position">
+          <v-btn text to="/publications" @click="drawer = false"  :class="{ base: checkRouteColor('publications', currentRoute), 'lighten-2': true }"> {{ $t("toolbar.publications") }} </v-btn>
+      </div>
+      <div class="button-position">
+          <v-btn text to="/team" @click="drawer = false"          :class="{ base: checkRouteColor('team', currentRoute), 'lighten-2': true }"> {{ $t("toolbar.team") }} </v-btn>
+      </div>
+      <div class="button-position">
+          <v-menu offset-y>
+              <template v-slot:activator="{ on }">
+                  <v-btn
+                  text
+                  v-on="on"
+                  >
+                  {{currentLang}}
+                  </v-btn>
+              </template>
+              <v-list>
+                  <v-list-item
+                  v-for="(item, index) in languages"
+                  :key="index"
+                  >
+                  <v-list-item-title >
+                      <v-btn text @click="changeLocale(item.language)" class="botao">
+                        <v-img width="30" :src="require(`@/assets/${item.img}`)"></v-img> <v-span class="lang-title"> - {{ item.title }} </v-span>
+                      </v-btn>
+                  </v-list-item-title>
+                  </v-list-item>
+              </v-list>
+          </v-menu>
+      </div>
     </div>
         </v-expand-transition>
     <div class="style-top base lighten-1"/>
