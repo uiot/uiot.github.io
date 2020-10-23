@@ -31,9 +31,13 @@
             :key="`${i}-${item.id}`"
           >
             <td> <v-chip class="base white--text"> <b> {{ item.year }} </b> </v-chip> </td>
+            <td v-if="!item.language"></td>
+            <td v-else-if="item.language === 'en'"> <img width="20" :src="require(`@/assets/united-states.png`)"> </td>
+            <td v-else-if="item.language === 'pt-br'"> <img width="20" :src="require(`@/assets/brazil.png`)"> </td>
+            <td v-else></td>
             <td>{{ item.title }}</td>
             <td>{{ item.authors | teste }}</td>
-            <td v-if="item.download"><a v-bind:href='item.download'> <img width="20" :src="require(`@/assets/pdf.png`)"> </a></td>
+            <td v-if="item.download"><a :href="item.download"> <img width="20" :src="require(`@/assets/pdf.png`)"> </a></td>
             <td v-else></td>
           </tr>
         </tbody>
@@ -60,6 +64,7 @@ export default {
             singleExpand: false,
             headers: [
               { text: 'Year', align: 'start', sortable: false, value: 'year',},
+              { text: '', value: '' },
               { text: 'Title', value: 'title' },
               { text: 'Authors', value: 'authors' },
               { text: '', value: 'data-table-expand' },
