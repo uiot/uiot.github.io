@@ -81,7 +81,7 @@ export default {
         let arr_ret = []
         value.map(function(item){ arr_ret.push(new filterMembers().byKey(item)) })
 
-        return arr_ret.toString()
+        return arr_ret.join(", ")
       }
     },
     computed: {
