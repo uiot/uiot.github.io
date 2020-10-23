@@ -1,70 +1,95 @@
 const Publications = [
-            { 
+            {
                 year: 2019,
-                title: "A Real Data Analysis in an Internet of Things Environment", 
+                title: "A Real Data Analysis in an Internet of Things Environment",
                 authors: [
-                    "Joao Victor Poletti", 
-                    "Lucas Mauricio Castro e Martins", 
-                    "Samuel Almeida", 
-                    "Maristela Holanda", 
+                    "Joao Victor Poletti",
+                    "Lucas Mauricio Castro e Martins",
+                    "Samuel Almeida",
+                    "Maristela Holanda",
                     "Rafael Timoteo de Sousa Júnior"
-                ], 
-                download: "download" 
+                ],
+                type: "conference",
+                name: "Conferências Ibero-Americanas de Computação Aplicada 2017",
+                short: "CIACA 2017",
+                publication_link: "https://www.scitepress.org/PublicationsDetail.aspx?ID=2Wb+aNVirL0=&t=1",
+                download: "polettietal2019.pdf",
+                language: "en"
             },
-            { 
+            {
                 year: 2019,
-                title: "HIDS by Signature for embedded devices in IoT networks", 
+                title: "HIDS by Signature for embedded devices in IoT networks",
                 authors: [
-                    "Bruno Vieira Dutra", 
-                    "Lucas Mauricio Castro e Martins", 
+                    "Bruno Vieira Dutra",
+                    "Lucas Mauricio Castro e Martins",
                     "Francisco L. de Caldas Filho",
-                ], 
-                download: "download" 
+                ],
+                type: "conference",
+                name: "V Jornadas Nacionales de Investigación en Ciberseguridad",
+                short: "JNIC 2019",
+                publication_link: "https://2019.jnic.es/Actas_JNIC2019.pdf",
+                download: "",
+                language: "en"
             },
-            { 
+            {
                 year: 2019,
-                title: "IPS architecture for ioT networks overlapped in SDN", 
+                title: "IPS architecture for IoT networks overlapped in SDN",
                 authors: [
                     "Daniel G. V. Gonçalves",
-                    "Bruno Vieira Dutra", 
-                    "Lucas Mauricio Castro e Martins", 
+                    "Bruno Vieira Dutra",
+                    "Lucas Mauricio Castro e Martins",
                     "Francisco L. de Caldas Filho",
                     "Guilherme de O. Kfouri",
                     "Robson de O. Albuquerde",
                     "Rafael T. de Sousa Junior"
-                ], 
-                download: "download" 
+                ],
+                type: "conference",
+                name: "2019 Workshop on Communication Networks and Power Systems",
+                short: "WCNPS 2019",
+                publication_link: "https://ieeexplore.ieee.org/document/8896297",
+                download: "",
+                language: "en"
             },
-            { 
+            {
                 year: 2019,
-                title: "University Campus Microclimate Monitoring Using IoT", 
+                title: "University Campus Microclimate Monitoring Using IoT",
                 authors: [
-                    "Matheus S. Monteiro", 
-                    "Lucas Mauricio Castro e Martins", 
+                    "Matheus S. Monteiro",
+                    "Lucas Mauricio Castro e Martins",
                     "Francisco L. de Caldas Filho",
                     "Lincoln A. Barbosa",
                     "João T. M. de Menezes",
                     "Demétrio A. da Silva Filho"
-                ], 
-                download: "download" 
+                ],
+                type: "conference",
+                name: "2019 Workshop on Communication Networks and Power Systems",
+                short: "WCNPS 2019",
+                publication_link: "https://ieeexplore.ieee.org/document/8896242",
+                download: "",
+                language: "en"
             },
-            { 
+            {
                 year: 2019,
-                title: "QoS Scheduling Algorithm for a Fog IoT Gateway", 
-                authors: [ 
-                    "Lucas Mauricio Castro e Martins", 
+                title: "QoS Scheduling Algorithm for a Fog IoT Gateway",
+                authors: [
+                    "Lucas Mauricio Castro e Martins",
                     "Francisco L. de Caldas Filho",
                     "Rodrigo L. Rocha",
                     "Cláudia J. B. Abbas",
                     "Edna Dias Canedo",
                     "Rafael T. de Sousa Junior"
-                ], 
-                download: "download" 
+                ],
+                type: "conference",
+                name: "2019 Workshop on Communication Networks and Power Systems",
+                short: "WCNPS 2019",
+                publication_link: "https://ieeexplore.ieee.org/document/8896311",
+                download: "",
+                language: "en"
             },
-            { 
+            {
                 year: 2019,
-                title: "Inference of driver behavior using correlated IoT data from the vehicle telemetry and the driver mobile phone", 
-                authors: [ 
+                title: "Inference of driver behavior using correlated IoT data from the vehicle telemetry and the driver mobile phone",
+                authors: [
                     "Rafael T. de Sousa Jr",
                     "Daniel Alves da Silva",
                     "José Alberto Sousa Torres",
@@ -73,147 +98,207 @@ const Publications = [
                     "Fabio L. L. Mendonça",
                     "Bruno J. G Praciano",
                     "Guilherme Oliveira Kfouri"
-                ], 
-                download: "download" 
+                ],
+                type: "conference",
+                name: "",
+                short: "",
+                publication_link: "",
+                download: "",
+                language: "en"
             },
-            { 
+            {
                 year: 2019,
-                title: "Arquitetura de IPS para redes IoT sobrepostas em SDN", 
-                authors: [ 
-                    "Daniel GV Gonçalves", 
-                    "Guilherme de O Kfouri", 
-                    "Bruno V Dutra", 
-                    "João F de Alencastro", 
-                    "Francisco L de Caldas Filho", 
-                    "Lucas M. C. e Martins", 
-                    "Robson de O Martins", 
-                    "Rafael T de Sousa Jr"
-                ], 
-                download: "download" 
-            },
-            { 
-                year: 2019,
-                title: "Design of a Distributed HIDS for IoT Backbone Components", 
-                authors: [ 
-                    "Guilherme de O Kfouri", 
-                    "Daniel G. V. Gonçalves", 
-                    "Bruno V. Dutra", 
-                    "João F. de Alencastro", 
-                    "Francisco L. de Caldas Filho", 
-                    "Lucas M. C. e Martins", 
-                    "Bruno J. G. Praciano", 
-                    "Robson de O. Albuquerque", 
-                    "Rafael T de Sousa Jr"
-                ], 
-                download: "download" 
-            },
-            { 
-                year: 2018,
-                title: "Evaluation of an IoT device designed for transparent traffic analysis", 
+                title: "Arquitetura de IPS para redes IoT sobrepostas em SDN",
                 authors: [
-                    "Thales L. von Sperling", 
-                    "Bruno de A. Franca", 
-                    "Francisco L. de Caldas Filho", 
-                    "Lucas Mauricio Castro e Martins", 
+                    "Daniel GV Gonçalves",
+                    "Guilherme de O Kfouri",
+                    "Bruno V Dutra",
+                    "João F de Alencastro",
+                    "Francisco L de Caldas Filho",
+                    "Lucas M. C. e Martins",
+                    "Robson de O Martins",
+                    "Rafael T de Sousa Jr"
+                ],
+                type: "conference",
+                name: "XIX Simpósio Brasileiro de Segurança da Informação e de Sistemas Computacionais",
+                short: "SBSeg 2019",
+                publication_link: "https://sbseg2019.ime.usp.br/artigos.html",
+                download: "",
+                language: "pt-br"
+            },
+            {
+                year: 2019,
+                title: "Design of a Distributed HIDS for IoT Backbone Components",
+                authors: [
+                    "Guilherme de O Kfouri",
+                    "Daniel G. V. Gonçalves",
+                    "Bruno V. Dutra",
+                    "João F. de Alencastro",
+                    "Francisco L. de Caldas Filho",
+                    "Lucas M. C. e Martins",
+                    "Bruno J. G. Praciano",
+                    "Robson de O. Albuquerque",
+                    "Rafael T de Sousa Jr"
+                ],
+                type: "conference",
+                name: "14th Federated Conference on Computer Science and Information Systems",
+                short: "FedCSIS 2019",
+                publication_link: "https://fedcsis.org/proceedings/2019/drp/329.html",
+                download: "",
+                language: "en"
+            },
+            {
+                year: 2018,
+                title: "Evaluation of an IoT device designed for transparent traffic analysis",
+                authors: [
+                    "Thales L. von Sperling",
+                    "Bruno de A. Franca",
+                    "Francisco L. de Caldas Filho",
+                    "Lucas Mauricio Castro e Martins",
                     "Rafael Timoteo de Sousa Júnior",
                     "Robson de O. Albuquerque"
-                ], 
-                download: "download" 
+                ],
+                type: "conference",
+                name: "3rd Workshop on Communication Networks and Power Systems",
+                short: "WCNPS 2018",
+                publication_link: "https://ieeexplore.ieee.org/abstract/document/8604444",
+                download: "",
+                language: "en"
             },
-            { 
+            {
                 year: 2018,
-                title: "Protocolos de Redundancia de Gateway Aplicados em Redes IoT", 
+                title: "Protocolos de Redundancia de Gateway Aplicados em Redes IoT",
                 authors: [
-                    "Francisco L. de Caldas Filho", 
-                    "Lucas Mauricio Castro e Martins", 
+                    "Francisco L. de Caldas Filho",
+                    "Lucas Mauricio Castro e Martins",
                     "Rafael Timoteo de Sousa Júnior",
                     "Claudia J. Barenco Abbas",
                     "Cassio Fabius C. Ribeiro",
-                ], 
-                download: "download" 
+                ],
+                type: "conference",
+                name: "",
+                short: "",
+                publication_link: "",
+                download: "",
+                language: "pt-br"
             },
-            { 
+            {
                 year: 2017,
-                title: "Tracking intruders in IoT networks by means of DNS traffic analysis", 
+                title: "Tracking intruders in IoT networks by means of DNS traffic analysis",
                 authors: [
-                    "Thales L. von Sperling",  
-                    "Francisco L. de Caldas Filho", 
-                    "Lucas Mauricio Castro e Martins", 
+                    "Thales L. von Sperling",
+                    "Francisco L. de Caldas Filho",
+                    "Lucas Mauricio Castro e Martins",
                     "Rafael Timoteo de Sousa Júnior",
                     "Rodrigo L. Rocha"
-                ], 
-                download: "download" 
+                ],
+                type: "conference",
+                name: "2nd Workshop on Communication Networks and Power Systems",
+                short: "WCNPS 2017",
+                publication_link: "https://ieeexplore.ieee.org/document/8252938",
+                download: "",
+                language: "en"
             },
-            { 
+            {
                 year: 2017,
-                title: "Increasing the Dependability of IoT Middleware with Cloud Computing and Microservices", 
+                title: "Increasing the Dependability of IoT Middleware with Cloud Computing and Microservices",
                 authors: [
-                    "Francisco L. de Caldas Filho", 
-                    "Lucas Mauricio Castro e Martins", 
+                    "Francisco L. de Caldas Filho",
+                    "Lucas Mauricio Castro e Martins",
                     "Rafael Timoteo de Sousa Júnior",
                     "William F. Giozza",
                     "João Paulo C. L. da Costa",
-                ], 
-                download: "download" 
+                ],
+                type: "conference",
+                name: "International Conference on Utility and Cloud Computing 2017",
+                short: "UCC/BDCAT 2017",
+                publication_link: "https://dl.acm.org/doi/10.1145/3147234.3148092",
+                download: "",
+                language: "en"
             },
-            { 
+            {
                 year: 2017,
-                title: "Design and Evaluation of a Semantic Gateway Prototype for IoT Networks", 
+                title: "Design and Evaluation of a Semantic Gateway Prototype for IoT Networks",
                 authors: [
-                    "Francisco L. de Caldas Filho", 
-                    "Lucas Mauricio Castro e Martins", 
+                    "Francisco L. de Caldas Filho",
+                    "Lucas Mauricio Castro e Martins",
                     "Rafael Timoteo de Sousa Júnior",
                     "Ingrid Palma Ataújo",
                     "João Paulo C. L. da Costa",
                     "Fábio L. L. de Medonça"
-                ], 
-                download: "download" 
+                ],
+                type: "conference",
+                name: "International Conference on Utility and Cloud Computing 2017",
+                short: "UCC/BDCAT 2017",
+                publication_link: "http://doi.acm.org/10.1145/3147234.3148091",
+                download: "",
+                language: "en"
             },
-            { 
+            {
                 year: 2017,
-                title: "Distributed Data Service for Data management in Internet of Things Middleware", 
+                title: "Distributed Data Service for Data management in Internet of Things Middleware",
                 authors: [
-                    "Ruben Cruz Huacarpuma", 
-                    "Maristela Terto de Holanda", 
+                    "Ruben Cruz Huacarpuma",
+                    "Maristela Terto de Holanda",
                     "Rafael Timoteo de Sousa Júnior",
                     "Robson de Oliveira Albuquerque",
                     "Luis Javier Garcia Villalba",
                     "Tai-Hoon Kim"
-                ], 
-                download: "download" 
+                ],
+                type: "journal",
+                name: "",
+                short: "",
+                publication_link: "",
+                download: "",
+                language: "en"
             },
-            { 
+            {
                 year: 2017,
-                title: "Proposição de um modelo e sistema de gerenciamento de dados distribuídos para internet das coisas - GDDIoT", 
+                title: "Proposição de um modelo e sistema de gerenciamento de dados distribuídos para internet das coisas - GDDIoT",
                 authors: [
                     "Ruben Cruz Huacarpuma"
-                ], 
-                download: "download" 
+                ],
+                type: "doctoral thesis",
+                name: "Universidade de Brasília",
+                short: "UnB",
+                publication_link: "",
+                download: "",
+                language: "pt-br"
             },
-            { 
+            {
                 year: 2017,
-                title: "Security analysis of a proposed internet of things middleware", 
+                title: "Security analysis of a proposed internet of things middleware",
                 authors: [
                     "Hiro Gabriel Cerqueira Ferreira",
                     "Rafael Timóteo de Sousa Junior"
-                ], 
-                download: "download" 
+                ],
+                type: "journal",
+                name: "",
+                short: "",
+                publication_link: "",
+                download: "",
+                language: "en"
             },
-            { 
+            {
                 year: 2017,
-                title: "Proposta de adoção de microsserviços em IoT", 
+                title: "Proposta de adoção de microsserviços em IoT",
                 authors: [
                     "Lucas M. C. e Martins",
                     "Francisco L. de Caldas Filho",
                     "Rafael Timóteo de Sousa Junior",
                     "William F. Giozza",
                     "João Paulo C. L. da Costa"
-                ], 
-                download: "download" 
+                ],
+                type: "conference",
+                name: "Conferência Ibero-Americana WWW/Internet 2017",
+                short: "CIAWI 2017",
+                publication_link: "http://www.iadisportal.org/digital-library/proposta-de-ado%C3%A7%C3%A3o-de-microsservi%C3%A7os-em-iot",
+                download: "",
+                language: "pt-br"
             },
-            { 
+            {
                 year: 2017,
-                title: "Gerenciamento de Serviços IoT com Gateway Semântico", 
+                title: "Gerenciamento de Serviços IoT com Gateway Semântico",
                 authors: [
                     "Lucas M. C. e Martins",
                     "Francisco L. de Caldas Filho",
@@ -221,116 +306,171 @@ const Publications = [
                     "Ingrid P. Araújo",
                     "Fábio L. L de medonça",
                     "João Paulo C. L. da Costa"
-                ], 
-                download: "download" 
+                ],
+                type: "conference",
+                name: "Conferências Ibero-Americanas de Computação Aplicada 2017",
+                short: "CIACA 2017",
+                publication_link: "http://www.iadisportal.org/digital-library/gerenciamento-de-servi%C3%A7os-iot-com-gateway-sem%C3%A2ntico",
+                download: "",
+                language: "pt-br"
             },
-            { 
+            {
                 year: 2016,
-                title: "Designand Evaluation of a Services Interface for the Internet of Things", 
+                title: "Designand Evaluation of a Services Interface for the Internet of Things",
                 authors: [
-                    "Caio César de Melo Silva", 
-                    "Hiro Gabriel Verqueira Ferreira", 
+                    "Caio César de Melo Silva",
+                    "Hiro Gabriel Verqueira Ferreira",
                     "Rafael Timoteo de Sousa Júnior",
                     "Fábio Buiati",
                     "Luis Javier García Villalba"
-                ], 
-                download: "download" 
+                ],
+                type: "journal",
+                name: "",
+                short: "",
+                publication_link: "",
+                download: "",
+                language: "en"
             },
-            { 
+            {
                 year: 2016,
-                title: "Proposta de auto-registro de serviços pelos dispositivos em ambientes de IoT", 
+                title: "Proposta de auto-registro de serviços pelos dispositivos em ambientes de IoT",
                 authors: [
                     "Caio C. M.Silva",
                     "Francisco L. de Caldas",
                     "Felipe D. Machado",
                     "Fábio L. L. Medonça",
                     "Rafael T. de Sousa Jr."
-                ], 
-                download: "download" 
+                ],
+                type: "conference",
+                name: "",
+                short: "",
+                publication_link: "",
+                download: "",
+                language: "pt-br"
             },
-            { 
+            {
                 year: 2016,
-                title: "O auto-registro de serviços por dispositivos contribui com a escalabilidade de ambientes de IoT", 
+                title: "O auto-registro de serviços por dispositivos contribui com a escalabilidade de ambientes de IoT",
                 authors: [
                     "Caio C. M.Silva",
                     "Francisco L. de Caldas",
                     "Felipe D. Machado",
                     "Fábio L. L. Medonça",
                     "Rafael T. de Sousa Jr."
-                ], 
-                download: "download" 
+                ],
+                type: "conference",
+                name: "",
+                short: "",
+                publication_link: "",
+                download: "",
+                language: "pt-br"
             },
-            { 
+            {
                 year: 2016,
-                title: "Concepção e Desenvolvimento de um Serviço Distribuido de Coleta e Tratamento de Dados para Ambientes de Internet das Coisas", 
+                title: "Concepção e Desenvolvimento de um Serviço Distribuido de Coleta e Tratamento de Dados para Ambientes de Internet das Coisas",
                 authors: [
                     "Ruben C. Huacarpuma",
                     "Maristela Holanda",
                     "Sérgio Lifschitz",
                     "Rafael T. de Sousa Júnior."
-                ], 
-                download: "download" 
+                ],
+                type: "conference",
+                name: "",
+                short: "",
+                publication_link: "",
+                download: "",
+                language: "pt-br"
             },
-            { 
+            {
                 year: 2016,
-                title: "Proposta de auto-registro de serviços pelos dispositivos em ambientes de IoT", 
+                title: "Proposta de auto-registro de serviços pelos dispositivos em ambientes de IoT",
                 authors: [
                     "Caio C. M.Silva",
                     "Francisco L. de Caldas",
                     "Felipe D. Machado",
                     "Fábio L. L. Medonça",
                     "Rafael T. de Sousa Jr."
-                ], 
-                download: "download" 
+                ],
+                type: "conference",
+                name: "",
+                short: "",
+                publication_link: "",
+                download: "",
+                language: "pt-br"
             },
-            { 
+            {
                 year: 2016,
-                title: "RAISe: REST API Approach for IoT Services", 
+                title: "RAISe: REST API Approach for IoT Services",
                 authors: [
                     "Hiro Gabriel Cerqueira Ferreira",
                     "Caio César de Melo e Silva",
                     "Rafael T. de Sousa Jr."
-                ], 
-                download: "download" 
+                ],
+                type: "conference",
+                name: "",
+                short: "",
+                publication_link: "",
+                download: "",
+                language: "en"
             },
-            { 
+            {
                 year: 2014,
-                title: "A ubiquitous communication architecture integrating trasparent UPnP and REST APIs", 
+                title: "A ubiquitous communication architecture integrating trasparent UPnP and REST APIs",
                 authors: [
-                    "Hiro Gabriel Cerqueira Ferreira", 
-                    "Edna Dias Canedi", 
+                    "Hiro Gabriel Cerqueira Ferreira",
+                    "Edna Dias Canedi",
                     "Rafael Timoteo de Sousa Júnior"
-                ], 
-                download: "download" 
+                ],
+                type: "conference",
+                name: "",
+                short: "",
+                publication_link: "",
+                download: "",
+                language: "en"
             },
-            { 
+            {
                 year: 2014,
-                title: "Arquitetura de Middleware para Internet das Coisas", 
+                title: "Arquitetura de Middleware para Internet das Coisas",
                 authors: [
                     "Hiro Gabriel Cerqueira Ferreir",
-                ], 
-                download: "download" 
+                ],
+                type: "master thesis",
+                name: "Universidade de Brasília",
+                short: "UnB",
+                publication_link: "",
+                download: "",
+                language: "en"
             },
-            { 
+            {
                 year: 2014,
-                title: "Proposal of a Secure, Deployable and Transparent Middleware for Internet of Things", 
+                title: "Proposal of a Secure, Deployable and Transparent Middleware for Internet of Things",
                 authors: [
                     "Hiro Gabriel Cerqueira Ferreir",
                     "Rafael Timóteo de Sousa Júnior",
                     "Flávio Elias Gomes de Deus",
                     "Edna Dias Canedo"
-                ], 
-                download: "download" 
+                ],
+                type: "conference",
+                name: "",
+                short: "",
+                publication_link: "",
+                download: "",
+                language: "en"
             },
-            { 
+            {
                 year: 2013,
-                title: "IoT Architecture to Enable Intercommunication Through REST API and UPnP Using IP, ZigBee and Arduino", 
+                title: "IoT Architecture to Enable Intercommunication Through REST API and UPnP Using IP, ZigBee and Arduino",
                 authors: [
-                    "Hiro Gabriel Cerqueira Ferreira", 
-                    "Edna Dias Canedo", 
+                    "Hiro Gabriel Cerqueira Ferreira",
+                    "Edna Dias Canedo",
                     "Rafael Timoteo de Sousa Júnior"
-                ], 
-                download: "download" 
+                ],
+                type: "conference",
+                name: "",
+                short: "",
+                publication_link: "",
+                download: "",
+                language: "en"
             },
         ]
 
