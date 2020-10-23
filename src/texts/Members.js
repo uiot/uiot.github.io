@@ -95,6 +95,18 @@ const Members = [
             active: false
         },
         {
+            key: "fiuza",
+            name: "João Fiuza",
+            area: "",
+            role: "",
+            email: "",
+            pic: "",
+            bio: "",
+            lattes: "",
+            linkedin: "",
+            active: false
+        },
+        {
             key: "maristelaholanda",
             name: "maristelaholanda",
             area: "",
@@ -251,6 +263,18 @@ const Members = [
             active: false
         },
         {
+            key: "brunofranca",
+            name: "Bruno Franca",
+            area: "",
+            role: "",
+            email: "",
+            pic: "",
+            bio: "",
+            lattes: "",
+            linkedin: "",
+            active: false
+        },
+        {
             key: "kfouri",
             name: "kfouri",
             area: "",
@@ -301,6 +325,18 @@ const Members = [
         {
             key: "barenco",
             name: "Cláudia Jacy Barenco Abbas",
+            area: "",
+            role: "",
+            email: "",
+            pic: "",
+            bio: "",
+            lattes: "",
+            linkedin: "",
+            active: false
+        },
+        {
+            key: "ednacanedo",
+            name: "Edna Canedo",
             area: "",
             role: "",
             email: "",
@@ -443,6 +479,30 @@ const Members = [
             active: false
         },
         {
+            key: "hiroferreira",
+            name: "Hiro Gabriel",
+            area: "",
+            role: "",
+            email: "",
+            pic: "",
+            bio: "",
+            lattes: "",
+            linkedin: "",
+            active: false
+        },
+        {
+            key: "giozza",
+            name: "Giozza",
+            area: "",
+            role: "",
+            email: "",
+            pic: "",
+            bio: "",
+            lattes: "",
+            linkedin: "",
+            active: false
+        },
+        {
             key: "flavioelias",
             name: "Flávio Elias Gomes de Deus",
             area: "",
@@ -456,17 +516,17 @@ const Members = [
         },
 
         // template
-        {
-            key: "x",
-            name: "",
-            area: "",
-            role: "",
-            email: "",
-            pic: "",
-            bio: "",
-            lattes: "",
-            linkedin: "",
-            active: false
-        },
+        // {
+        //     key: "x",
+        //     name: "",
+        //     area: "",
+        //     role: "",
+        //     email: "",
+        //     pic: "",
+        //     bio: "",
+        //     lattes: "",
+        //     linkedin: "",
+        //     active: false
+        // },
     ]
   export default Members
