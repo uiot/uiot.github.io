@@ -37,7 +37,7 @@
             <td v-else></td>
             <td>{{ item.title }}</td>
             <td>{{ item.authors | teste }}</td>
-            <td v-if="item.download"><a :href="item.download"> <img width="20" :src="require(`@/assets/pdf.png`)"> </a></td>
+            <td v-if="item.download"><a :href="`/assets/pdf/${item.download}`" target="_blank"> <img width="20" :src="require(`@/assets/pdf.png`)"> </a></td>
             <td v-else></td>
           </tr>
         </tbody>

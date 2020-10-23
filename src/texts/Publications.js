@@ -9,7 +9,7 @@ const Publications = [
                     "Maristela Holanda",
                     "Rafael Timoteo de Sousa Júnior"
                 ],
-                download: "download",
+                download: "polettietal2019.pdf",
                 language: "en"
             },
             {
@@ -20,7 +20,7 @@ const Publications = [
                     "Lucas Mauricio Castro e Martins",
                     "Francisco L. de Caldas Filho",
                 ],
-                download: "download",
+                download: "",
                 language: "en"
             },
             {
@@ -35,7 +35,7 @@ const Publications = [
                     "Robson de O. Albuquerde",
                     "Rafael T. de Sousa Junior"
                 ],
-                download: "download",
+                download: "",
                 language: "en"
             },
             {
@@ -49,7 +49,7 @@ const Publications = [
                     "João T. M. de Menezes",
                     "Demétrio A. da Silva Filho"
                 ],
-                download: "download",
+                download: "",
                 language: "en"
             },
             {
@@ -63,7 +63,7 @@ const Publications = [
                     "Edna Dias Canedo",
                     "Rafael T. de Sousa Junior"
                 ],
-                download: "download",
+                download: "",
                 language: "en"
             },
             {
@@ -79,7 +79,7 @@ const Publications = [
                     "Bruno J. G Praciano",
                     "Guilherme Oliveira Kfouri"
                 ],
-                download: "download",
+                download: "",
                 language: "en"
             },
             {
@@ -95,7 +95,7 @@ const Publications = [
                     "Robson de O Martins",
                     "Rafael T de Sousa Jr"
                 ],
-                download: "download",
+                download: "",
                 language: "pt-br"
             },
             {
@@ -112,7 +112,7 @@ const Publications = [
                     "Robson de O. Albuquerque",
                     "Rafael T de Sousa Jr"
                 ],
-                download: "download",
+                download: "",
                 language: "en"
             },
             {
@@ -126,7 +126,7 @@ const Publications = [
                     "Rafael Timoteo de Sousa Júnior",
                     "Robson de O. Albuquerque"
                 ],
-                download: "download",
+                download: "",
                 language: "en"
             },
             {
@@ -139,7 +139,7 @@ const Publications = [
                     "Claudia J. Barenco Abbas",
                     "Cassio Fabius C. Ribeiro",
                 ],
-                download: "download",
+                download: "",
                 language: "pt-br"
             },
             {
@@ -152,7 +152,7 @@ const Publications = [
                     "Rafael Timoteo de Sousa Júnior",
                     "Rodrigo L. Rocha"
                 ],
-                download: "download",
+                download: "",
                 language: "en"
             },
             {
@@ -165,7 +165,7 @@ const Publications = [
                     "William F. Giozza",
                     "João Paulo C. L. da Costa",
                 ],
-                download: "download",
+                download: "",
                 language: "en"
             },
             {
@@ -179,7 +179,7 @@ const Publications = [
                     "João Paulo C. L. da Costa",
                     "Fábio L. L. de Medonça"
                 ],
-                download: "download",
+                download: "",
                 language: "en"
             },
             {
@@ -193,7 +193,7 @@ const Publications = [
                     "Luis Javier Garcia Villalba",
                     "Tai-Hoon Kim"
                 ],
-                download: "download",
+                download: "",
                 language: "en"
             },
             {
@@ -202,7 +202,7 @@ const Publications = [
                 authors: [
                     "Ruben Cruz Huacarpuma"
                 ],
-                download: "download",
+                download: "",
                 language: "pt-br"
             },
             {
@@ -212,7 +212,7 @@ const Publications = [
                     "Hiro Gabriel Cerqueira Ferreira",
                     "Rafael Timóteo de Sousa Junior"
                 ],
-                download: "download",
+                download: "",
                 language: "en"
             },
             {
@@ -225,7 +225,7 @@ const Publications = [
                     "William F. Giozza",
                     "João Paulo C. L. da Costa"
                 ],
-                download: "download",
+                download: "",
                 language: "pt-br"
             },
             {
@@ -239,7 +239,7 @@ const Publications = [
                     "Fábio L. L de medonça",
                     "João Paulo C. L. da Costa"
                 ],
-                download: "download",
+                download: "",
                 language: "pt-br"
             },
             {
@@ -252,7 +252,7 @@ const Publications = [
                     "Fábio Buiati",
                     "Luis Javier García Villalba"
                 ],
-                download: "download",
+                download: "",
                 language: "en"
             },
             {
@@ -265,7 +265,7 @@ const Publications = [
                     "Fábio L. L. Medonça",
                     "Rafael T. de Sousa Jr."
                 ],
-                download: "download",
+                download: "",
                 language: "pt-br"
             },
             {
@@ -278,7 +278,7 @@ const Publications = [
                     "Fábio L. L. Medonça",
                     "Rafael T. de Sousa Jr."
                 ],
-                download: "download",
+                download: "",
                 language: "pt-br"
             },
             {
@@ -290,7 +290,7 @@ const Publications = [
                     "Sérgio Lifschitz",
                     "Rafael T. de Sousa Júnior."
                 ],
-                download: "download",
+                download: "",
                 language: "pt-br"
             },
             {
@@ -303,7 +303,7 @@ const Publications = [
                     "Fábio L. L. Medonça",
                     "Rafael T. de Sousa Jr."
                 ],
-                download: "download",
+                download: "",
                 language: "pt-br"
             },
             {
@@ -314,7 +314,7 @@ const Publications = [
                     "Caio César de Melo e Silva",
                     "Rafael T. de Sousa Jr."
                 ],
-                download: "download",
+                download: "",
                 language: "en"
             },
             {
@@ -325,7 +325,7 @@ const Publications = [
                     "Edna Dias Canedi",
                     "Rafael Timoteo de Sousa Júnior"
                 ],
-                download: "download",
+                download: "",
                 language: "en"
             },
             {
@@ -334,7 +334,7 @@ const Publications = [
                 authors: [
                     "Hiro Gabriel Cerqueira Ferreir",
                 ],
-                download: "download",
+                download: "",
                 language: "en"
             },
             {
@@ -346,7 +346,7 @@ const Publications = [
                     "Flávio Elias Gomes de Deus",
                     "Edna Dias Canedo"
                 ],
-                download: "download",
+                download: "",
                 language: "en"
             },
             {
@@ -357,7 +357,7 @@ const Publications = [
                     "Edna Dias Canedo",
                     "Rafael Timoteo de Sousa Júnior"
                 ],
-                download: "download",
+                download: "",
                 language: "en"
             },
         ]
