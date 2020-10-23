@@ -10,6 +10,8 @@ const Publications = [
                     "Rafael Timoteo de Sousa Júnior"
                 ],
                 type: "conference",
+                name: "Conferências Ibero-Americanas de Computação Aplicada 2017",
+                short: "CIACA 2017",
                 publication_link: "https://www.scitepress.org/PublicationsDetail.aspx?ID=2Wb+aNVirL0=&t=1",
                 download: "polettietal2019.pdf",
                 language: "en"
@@ -23,13 +25,15 @@ const Publications = [
                     "Francisco L. de Caldas Filho",
                 ],
                 type: "conference",
+                name: "V Jornadas Nacionales de Investigación en Ciberseguridad",
+                short: "JNIC 2019",
                 publication_link: "https://2019.jnic.es/Actas_JNIC2019.pdf",
                 download: "",
                 language: "en"
             },
             {
                 year: 2019,
-                title: "IPS architecture for ioT networks overlapped in SDN",
+                title: "IPS architecture for IoT networks overlapped in SDN",
                 authors: [
                     "Daniel G. V. Gonçalves",
                     "Bruno Vieira Dutra",
@@ -40,7 +44,9 @@ const Publications = [
                     "Rafael T. de Sousa Junior"
                 ],
                 type: "conference",
-                publication_link: "",
+                name: "2019 Workshop on Communication Networks and Power Systems",
+                short: "WCNPS 2019",
+                publication_link: "https://ieeexplore.ieee.org/document/8896297",
                 download: "",
                 language: "en"
             },
@@ -56,7 +62,9 @@ const Publications = [
                     "Demétrio A. da Silva Filho"
                 ],
                 type: "conference",
-                publication_link: "",
+                name: "2019 Workshop on Communication Networks and Power Systems",
+                short: "WCNPS 2019",
+                publication_link: "https://ieeexplore.ieee.org/document/8896242",
                 download: "",
                 language: "en"
             },
@@ -72,7 +80,9 @@ const Publications = [
                     "Rafael T. de Sousa Junior"
                 ],
                 type: "conference",
-                publication_link: "",
+                name: "2019 Workshop on Communication Networks and Power Systems",
+                short: "WCNPS 2019",
+                publication_link: "https://ieeexplore.ieee.org/document/8896311",
                 download: "",
                 language: "en"
             },
@@ -90,6 +100,8 @@ const Publications = [
                     "Guilherme Oliveira Kfouri"
                 ],
                 type: "conference",
+                name: "",
+                short: "",
                 publication_link: "",
                 download: "",
                 language: "en"
@@ -108,6 +120,8 @@ const Publications = [
                     "Rafael T de Sousa Jr"
                 ],
                 type: "conference",
+                name: "XIX Simpósio Brasileiro de Segurança da Informação e de Sistemas Computacionais",
+                short: "SBSeg 2019",
                 publication_link: "https://sbseg2019.ime.usp.br/artigos.html",
                 download: "",
                 language: "pt-br"
@@ -127,6 +141,8 @@ const Publications = [
                     "Rafael T de Sousa Jr"
                 ],
                 type: "conference",
+                name: "14th Federated Conference on Computer Science and Information Systems",
+                short: "FedCSIS 2019",
                 publication_link: "https://fedcsis.org/proceedings/2019/drp/329.html",
                 download: "",
                 language: "en"
@@ -143,6 +159,8 @@ const Publications = [
                     "Robson de O. Albuquerque"
                 ],
                 type: "conference",
+                name: "3rd Workshop on Communication Networks and Power Systems",
+                short: "WCNPS 2018",
                 publication_link: "https://ieeexplore.ieee.org/abstract/document/8604444",
                 download: "",
                 language: "en"
@@ -158,6 +176,8 @@ const Publications = [
                     "Cassio Fabius C. Ribeiro",
                 ],
                 type: "conference",
+                name: "",
+                short: "",
                 publication_link: "",
                 download: "",
                 language: "pt-br"
@@ -173,6 +193,8 @@ const Publications = [
                     "Rodrigo L. Rocha"
                 ],
                 type: "conference",
+                name: "2nd Workshop on Communication Networks and Power Systems",
+                short: "WCNPS 2017",
                 publication_link: "https://ieeexplore.ieee.org/document/8252938",
                 download: "",
                 language: "en"
@@ -188,6 +210,8 @@ const Publications = [
                     "João Paulo C. L. da Costa",
                 ],
                 type: "conference",
+                name: "International Conference on Utility and Cloud Computing 2017",
+                short: "UCC/BDCAT 2017",
                 publication_link: "https://dl.acm.org/doi/10.1145/3147234.3148092",
                 download: "",
                 language: "en"
@@ -204,6 +228,8 @@ const Publications = [
                     "Fábio L. L. de Medonça"
                 ],
                 type: "conference",
+                name: "International Conference on Utility and Cloud Computing 2017",
+                short: "UCC/BDCAT 2017",
                 publication_link: "http://doi.acm.org/10.1145/3147234.3148091",
                 download: "",
                 language: "en"
@@ -220,6 +246,8 @@ const Publications = [
                     "Tai-Hoon Kim"
                 ],
                 type: "journal",
+                name: "",
+                short: "",
                 publication_link: "",
                 download: "",
                 language: "en"
@@ -231,6 +259,8 @@ const Publications = [
                     "Ruben Cruz Huacarpuma"
                 ],
                 type: "doctoral thesis",
+                name: "Universidade de Brasília",
+                short: "UnB",
                 publication_link: "",
                 download: "",
                 language: "pt-br"
@@ -243,6 +273,9 @@ const Publications = [
                     "Rafael Timóteo de Sousa Junior"
                 ],
                 type: "journal",
+                name: "",
+                short: "",
+                publication_link: "",
                 download: "",
                 language: "en"
             },
@@ -257,6 +290,8 @@ const Publications = [
                     "João Paulo C. L. da Costa"
                 ],
                 type: "conference",
+                name: "Conferência Ibero-Americana WWW/Internet 2017",
+                short: "CIAWI 2017",
                 publication_link: "http://www.iadisportal.org/digital-library/proposta-de-ado%C3%A7%C3%A3o-de-microsservi%C3%A7os-em-iot",
                 download: "",
                 language: "pt-br"
@@ -273,6 +308,8 @@ const Publications = [
                     "João Paulo C. L. da Costa"
                 ],
                 type: "conference",
+                name: "Conferências Ibero-Americanas de Computação Aplicada 2017",
+                short: "CIACA 2017",
                 publication_link: "http://www.iadisportal.org/digital-library/gerenciamento-de-servi%C3%A7os-iot-com-gateway-sem%C3%A2ntico",
                 download: "",
                 language: "pt-br"
@@ -288,6 +325,8 @@ const Publications = [
                     "Luis Javier García Villalba"
                 ],
                 type: "journal",
+                name: "",
+                short: "",
                 publication_link: "",
                 download: "",
                 language: "en"
@@ -303,6 +342,8 @@ const Publications = [
                     "Rafael T. de Sousa Jr."
                 ],
                 type: "conference",
+                name: "",
+                short: "",
                 publication_link: "",
                 download: "",
                 language: "pt-br"
@@ -318,6 +359,8 @@ const Publications = [
                     "Rafael T. de Sousa Jr."
                 ],
                 type: "conference",
+                name: "",
+                short: "",
                 publication_link: "",
                 download: "",
                 language: "pt-br"
@@ -332,6 +375,8 @@ const Publications = [
                     "Rafael T. de Sousa Júnior."
                 ],
                 type: "conference",
+                name: "",
+                short: "",
                 publication_link: "",
                 download: "",
                 language: "pt-br"
@@ -347,6 +392,8 @@ const Publications = [
                     "Rafael T. de Sousa Jr."
                 ],
                 type: "conference",
+                name: "",
+                short: "",
                 publication_link: "",
                 download: "",
                 language: "pt-br"
@@ -360,6 +407,8 @@ const Publications = [
                     "Rafael T. de Sousa Jr."
                 ],
                 type: "conference",
+                name: "",
+                short: "",
                 publication_link: "",
                 download: "",
                 language: "en"
@@ -373,6 +422,8 @@ const Publications = [
                     "Rafael Timoteo de Sousa Júnior"
                 ],
                 type: "conference",
+                name: "",
+                short: "",
                 publication_link: "",
                 download: "",
                 language: "en"
@@ -384,6 +435,8 @@ const Publications = [
                     "Hiro Gabriel Cerqueira Ferreir",
                 ],
                 type: "master thesis",
+                name: "Universidade de Brasília",
+                short: "UnB",
                 publication_link: "",
                 download: "",
                 language: "en"
@@ -398,6 +451,8 @@ const Publications = [
                     "Edna Dias Canedo"
                 ],
                 type: "conference",
+                name: "",
+                short: "",
                 publication_link: "",
                 download: "",
                 language: "en"
@@ -411,6 +466,8 @@ const Publications = [
                     "Rafael Timoteo de Sousa Júnior"
                 ],
                 type: "conference",
+                name: "",
+                short: "",
                 publication_link: "",
                 download: "",
                 language: "en"
