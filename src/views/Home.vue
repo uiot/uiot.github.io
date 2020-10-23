@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-      
+
       <!-- <v-btn @click="go">ClickHere</v-btn>
       <div class="block" ref="square">Teste</div> -->
 
@@ -14,7 +14,7 @@
       <v-carousel-item v-for="(slide, i) in slides" :key="i">
         <v-sheet :color="colors[i]" height="100%">
           <v-row class="fill-height" align="center" justify="center">
-            
+
           </v-row>
         </v-sheet>
       </v-carousel-item>
@@ -70,7 +70,7 @@
             <v-hover v-slot:default="{ hover }" >
               <v-card :elevation="hover ? 6 : 0" flat :color="item.color" min-height="75">
                 <v-card-subtitle>
-                  <span class="font-weight-bold title_card"> {{ item.title }} </span> 
+                  <span class="font-weight-bold title_card"> {{ item.title }} </span>
                 </v-card-subtitle>
               </v-card>
             </v-hover>
@@ -84,7 +84,7 @@
               </v-card>
             </v-hover>
           </v-col>
-            
+
         </v-row>
     </div>
     <div class="team">
@@ -116,12 +116,11 @@ export default {
   },
   computed: {
     publications(){
-      let publications = new filterPublications().byQuantity(5) 
-      publications[0]['color'] = '#c1c3d6'
-      publications[1]['color'] = '#c1d6c8'
-      publications[2]['color'] = '#e8ebd5'
-      publications[3]['color'] = '#dfd5eb'
-      publications[4]['color'] = '#ebdad5'
+      let publications = new filterPublications().byQuantity(5)
+      var colors = ['#c1c3d6', '#c1d6c8', '#e8ebd5', '#dfd5eb', '#ebdad5']
+      for (var i = 0; i < publications.length && i < 5; i++) {
+        publications[i]['color'] = colors[i]
+      }
       return publications
     }
   },
@@ -246,7 +245,7 @@ export default {
 .corpo{
     margin-top: 2%;
     margin-left: 7%;
-    margin-right: 7%;     
+    margin-right: 7%;
 }
 .times{
   text-align: center;
