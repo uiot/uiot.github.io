@@ -1,11 +1,4 @@
 const Publications = [
-    /*
-        TODO
-        - Tipo de publicação (TCC, dissertação, conferência, etc)
-        - Local da publicação
-        - Idioma da publicação
-        - Link para a publicação
-    */
             {
                 year: 2020,
                 title: "Monitoramento e controle de ambientes com base em aprendizagem de máquina e computação em nevoeiro em arquitetura IoT",
