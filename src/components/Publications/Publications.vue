@@ -38,8 +38,10 @@
             <td>{{ item.title }}</td>
             <td class="capitalize">{{ item.type }}</td>
             <td>{{ item.authors | teste }}</td>
-            <td v-if="item.download"><a :href="`/assets/pdf/${item.download}`" target="_blank"> <img width="20" :src="require(`@/assets/pdf.png`)"> </a></td>
-            <td v-else></td>
+            <td>
+              <a v-if="item.download" :href="`/assets/pdf/${item.download}`" target="_blank"> <img width="20" :src="require(`@/assets/pdf.png`)"> </a>
+              <a v-if="item.publication_link" :href="`${item.publication_link}`" target="_blank"> <img width="20" :src="require(`@/assets/globe.png`)"> </a>
+            </td>
           </tr>
         </tbody>
       </template>

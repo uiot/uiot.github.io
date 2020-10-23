@@ -10,6 +10,7 @@ const Publications = [
                     "Rafael Timoteo de Sousa Júnior"
                 ],
                 type: "conference",
+                publication_link: "https://www.scitepress.org/PublicationsDetail.aspx?ID=2Wb+aNVirL0=&t=1",
                 download: "polettietal2019.pdf",
                 language: "en"
             },
@@ -22,6 +23,7 @@ const Publications = [
                     "Francisco L. de Caldas Filho",
                 ],
                 type: "conference",
+                publication_link: "https://2019.jnic.es/Actas_JNIC2019.pdf",
                 download: "",
                 language: "en"
             },
@@ -38,6 +40,7 @@ const Publications = [
                     "Rafael T. de Sousa Junior"
                 ],
                 type: "conference",
+                publication_link: "",
                 download: "",
                 language: "en"
             },
@@ -53,6 +56,7 @@ const Publications = [
                     "Demétrio A. da Silva Filho"
                 ],
                 type: "conference",
+                publication_link: "",
                 download: "",
                 language: "en"
             },
@@ -68,6 +72,7 @@ const Publications = [
                     "Rafael T. de Sousa Junior"
                 ],
                 type: "conference",
+                publication_link: "",
                 download: "",
                 language: "en"
             },
@@ -85,6 +90,7 @@ const Publications = [
                     "Guilherme Oliveira Kfouri"
                 ],
                 type: "conference",
+                publication_link: "",
                 download: "",
                 language: "en"
             },
@@ -102,6 +108,7 @@ const Publications = [
                     "Rafael T de Sousa Jr"
                 ],
                 type: "conference",
+                publication_link: "https://sbseg2019.ime.usp.br/artigos.html",
                 download: "",
                 language: "pt-br"
             },
@@ -120,6 +127,7 @@ const Publications = [
                     "Rafael T de Sousa Jr"
                 ],
                 type: "conference",
+                publication_link: "https://fedcsis.org/proceedings/2019/drp/329.html",
                 download: "",
                 language: "en"
             },
@@ -135,6 +143,7 @@ const Publications = [
                     "Robson de O. Albuquerque"
                 ],
                 type: "conference",
+                publication_link: "https://ieeexplore.ieee.org/abstract/document/8604444",
                 download: "",
                 language: "en"
             },
@@ -149,6 +158,7 @@ const Publications = [
                     "Cassio Fabius C. Ribeiro",
                 ],
                 type: "conference",
+                publication_link: "",
                 download: "",
                 language: "pt-br"
             },
@@ -163,6 +173,7 @@ const Publications = [
                     "Rodrigo L. Rocha"
                 ],
                 type: "conference",
+                publication_link: "https://ieeexplore.ieee.org/document/8252938",
                 download: "",
                 language: "en"
             },
@@ -177,6 +188,7 @@ const Publications = [
                     "João Paulo C. L. da Costa",
                 ],
                 type: "conference",
+                publication_link: "https://dl.acm.org/doi/10.1145/3147234.3148092",
                 download: "",
                 language: "en"
             },
@@ -192,6 +204,7 @@ const Publications = [
                     "Fábio L. L. de Medonça"
                 ],
                 type: "conference",
+                publication_link: "http://doi.acm.org/10.1145/3147234.3148091",
                 download: "",
                 language: "en"
             },
@@ -207,6 +220,7 @@ const Publications = [
                     "Tai-Hoon Kim"
                 ],
                 type: "journal",
+                publication_link: "",
                 download: "",
                 language: "en"
             },
@@ -217,6 +231,7 @@ const Publications = [
                     "Ruben Cruz Huacarpuma"
                 ],
                 type: "doctoral thesis",
+                publication_link: "",
                 download: "",
                 language: "pt-br"
             },
@@ -242,6 +257,7 @@ const Publications = [
                     "João Paulo C. L. da Costa"
                 ],
                 type: "conference",
+                publication_link: "http://www.iadisportal.org/digital-library/proposta-de-ado%C3%A7%C3%A3o-de-microsservi%C3%A7os-em-iot",
                 download: "",
                 language: "pt-br"
             },
@@ -257,6 +273,7 @@ const Publications = [
                     "João Paulo C. L. da Costa"
                 ],
                 type: "conference",
+                publication_link: "http://www.iadisportal.org/digital-library/gerenciamento-de-servi%C3%A7os-iot-com-gateway-sem%C3%A2ntico",
                 download: "",
                 language: "pt-br"
             },
@@ -271,6 +288,7 @@ const Publications = [
                     "Luis Javier García Villalba"
                 ],
                 type: "journal",
+                publication_link: "",
                 download: "",
                 language: "en"
             },
@@ -285,6 +303,7 @@ const Publications = [
                     "Rafael T. de Sousa Jr."
                 ],
                 type: "conference",
+                publication_link: "",
                 download: "",
                 language: "pt-br"
             },
@@ -299,6 +318,7 @@ const Publications = [
                     "Rafael T. de Sousa Jr."
                 ],
                 type: "conference",
+                publication_link: "",
                 download: "",
                 language: "pt-br"
             },
@@ -312,6 +332,7 @@ const Publications = [
                     "Rafael T. de Sousa Júnior."
                 ],
                 type: "conference",
+                publication_link: "",
                 download: "",
                 language: "pt-br"
             },
@@ -326,6 +347,7 @@ const Publications = [
                     "Rafael T. de Sousa Jr."
                 ],
                 type: "conference",
+                publication_link: "",
                 download: "",
                 language: "pt-br"
             },
@@ -338,6 +360,7 @@ const Publications = [
                     "Rafael T. de Sousa Jr."
                 ],
                 type: "conference",
+                publication_link: "",
                 download: "",
                 language: "en"
             },
@@ -350,6 +373,7 @@ const Publications = [
                     "Rafael Timoteo de Sousa Júnior"
                 ],
                 type: "conference",
+                publication_link: "",
                 download: "",
                 language: "en"
             },
@@ -360,6 +384,7 @@ const Publications = [
                     "Hiro Gabriel Cerqueira Ferreir",
                 ],
                 type: "master thesis",
+                publication_link: "",
                 download: "",
                 language: "en"
             },
@@ -373,6 +398,7 @@ const Publications = [
                     "Edna Dias Canedo"
                 ],
                 type: "conference",
+                publication_link: "",
                 download: "",
                 language: "en"
             },
@@ -385,6 +411,7 @@ const Publications = [
                     "Rafael Timoteo de Sousa Júnior"
                 ],
                 type: "conference",
+                publication_link: "",
                 download: "",
                 language: "en"
             },
