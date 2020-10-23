@@ -14,7 +14,7 @@
       </v-card-text>
       <v-divider/>
       <v-card-text class="white--text">
-        {{ new Date().getFullYear() }} — <strong> UioT </strong>
+        {{ new Date().getFullYear() }} — <strong> UIoT </strong>
       </v-card-text>
     </v-card>
 </template>
