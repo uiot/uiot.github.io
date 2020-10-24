@@ -121,38 +121,6 @@ const Members = [
             }
         },
         {
-            key: "fiuza",
-            name: "João Fiuza",
-            area: "",
-            role: "",
-            email: "",
-            pic: "",
-            bio: "",
-            lattes: "",
-            linkedin: "",
-            belong: true,
-            lab: {
-                active: false,
-                area: "software",
-            }
-        },
-        {
-            key: "maristelaholanda",
-            name: "maristelaholanda",
-            area: "",
-            role: "",
-            email: "",
-            pic: "",
-            bio: "",
-            lattes: "",
-            linkedin: "",
-            belong: true,
-            lab: {
-                active: false,
-                area: "",
-            }
-        },
-        {
             key: "fabiomendonca",
             name: "fabiomendonca",
             area: "",
@@ -165,7 +133,7 @@ const Members = [
             belong: true,
             lab: {
                 active: false,
-                area: "",
+                area: "software",
             }
         },
         {
@@ -210,7 +178,23 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            belong: false,
+            belong: true,
+            lab: {
+                active: false,
+                area: "",
+            }
+        },
+        {
+            key: "justino",
+            name: "justino",
+            area: "",
+            role: "",
+            email: "",
+            pic: "",
+            bio: "",
+            lattes: "",
+            linkedin: "",
+            belong: true,
             lab: {
                 active: false,
                 area: "",
@@ -226,9 +210,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
+            belong: false,
             lab: {
                 active: false,
-                area: "coordination",
+                area: "",
             }
         },
         {
@@ -262,6 +247,36 @@ const Members = [
             }
         },
         {
+            key: "fiuza",
+            name: "João Fiuza",
+            area: "",
+            role: "",
+            email: "",
+            pic: "",
+            bio: "",
+            lattes: "",
+            linkedin: "",
+            lab: {
+                active: false,
+                area: "coordination",
+            }
+        },
+        {
+            key: "maristelaholanda",
+            name: "maristelaholanda",
+            area: "",
+            role: "",
+            email: "",
+            pic: "",
+            bio: "",
+            lattes: "",
+            linkedin: "",
+            lab: {
+                active: false,
+                area: "coordination",
+            }
+        },
+        {
             key: "thalessperling",
             name: "thalessperling",
             area: "",
@@ -279,21 +294,6 @@ const Members = [
         {
             key: "dayannecunha",
             name: "dayannecunha",
-            area: "",
-            role: "",
-            email: "",
-            pic: "",
-            bio: "",
-            lattes: "",
-            linkedin: "",
-            lab: {
-                active: false,
-                area: "coordination",
-            }
-        },
-        {
-            key: "justino",
-            name: "justino",
             area: "",
             role: "",
             email: "",
@@ -650,6 +650,43 @@ const Members = [
                 active: false,
                 area: "coordination",
             }
+        },
+
+        {
+            key: "danielsilva",
+            name: "Daniel Alves da Silva",
+            area: "",
+            role: "",
+            email: "",
+            pic: "",
+            bio: "",
+            lattes: "",
+            linkedin: "",
+            active: false
+        },
+        {
+            key: "josetorres",
+            name: "José Alberto Sousa Torres",
+            area: "",
+            role: "",
+            email: "",
+            pic: "",
+            bio: "",
+            lattes: "",
+            linkedin: "",
+            active: false
+        },
+        {
+            key: "alexandrepinheiro",
+            name: "Alexandre Pinheiro",
+            area: "",
+            role: "",
+            email: "",
+            pic: "",
+            bio: "",
+            lattes: "",
+            linkedin: "",
+            active: false
         },
 
         // template
