@@ -515,6 +515,43 @@ const Members = [
             active: false
         },
 
+        {
+            key: "danielsilva",
+            name: "Daniel Alves da Silva",
+            area: "",
+            role: "",
+            email: "",
+            pic: "",
+            bio: "",
+            lattes: "",
+            linkedin: "",
+            active: false
+        },
+        {
+            key: "josetorres",
+            name: "José Alberto Sousa Torres",
+            area: "",
+            role: "",
+            email: "",
+            pic: "",
+            bio: "",
+            lattes: "",
+            linkedin: "",
+            active: false
+        },
+        {
+            key: "alexandrepinheiro",
+            name: "Alexandre Pinheiro",
+            area: "",
+            role: "",
+            email: "",
+            pic: "",
+            bio: "",
+            lattes: "",
+            linkedin: "",
+            active: false
+        },
+
         // template
         // {
         //     key: "x",
