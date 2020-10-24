@@ -60,7 +60,7 @@ const Members = [
         },
         {
             key: "venzi",
-            name: "Daniel Gomes",
+            name: "Daniel G. V. Gonçalves",
             area: "Engenharia de Redes de Comunicação",
             role: "security",
             email: "gomes@gmail.com",
@@ -72,7 +72,7 @@ const Members = [
         },
         {
             key: "desousa",
-            name: "desousa",
+            name: "Rafael T. de Sousa Júnior",
             area: "",
             role: "",
             email: "",
@@ -84,7 +84,7 @@ const Members = [
         },
         {
             key: "franciscocaldasf",
-            name: "franciscocaldasf",
+            name: "Francisco L. de Caldas Filho",
             area: "",
             role: "",
             email: "",
@@ -96,7 +96,7 @@ const Members = [
         },
         {
             key: "fabiomendonca",
-            name: "fabiomendonca",
+            name: "Fábio L. L. de Mendonça",
             area: "",
             role: "",
             email: "",
@@ -108,7 +108,7 @@ const Members = [
         },
         {
             key: "marcosandrade",
-            name: "marcosandrade",
+            name: "Marcos B. Andrade",
             area: "",
             role: "",
             email: "",
@@ -120,7 +120,7 @@ const Members = [
         },
         {
             key: "matheusmonteiro",
-            name: "matheusmonteiro",
+            name: "Matheus S. Monteiro",
             area: "",
             role: "",
             email: "",
@@ -132,7 +132,7 @@ const Members = [
         },
         {
             key: "patrao",
-            name: "patrao",
+            name: "Rafael L. Patrão",
             area: "",
             role: "",
             email: "",
@@ -144,7 +144,7 @@ const Members = [
         },
         {
             key: "justino",
-            name: "justino",
+            name: "Bruno Justino G. Praciano",
             area: "",
             role: "",
             email: "",
@@ -168,7 +168,7 @@ const Members = [
         },
         {
             key: "lustosa",
-            name: "lustosa",
+            name: "João Paulo C. L. da Costa",
             area: "",
             role: "",
             email: "",
@@ -180,7 +180,7 @@ const Members = [
         },
         {
             key: "cassioribeiro",
-            name: "cassioribeiro",
+            name: "Cassio Fabius C. Ribeiro",
             area: "",
             role: "",
             email: "",
@@ -192,7 +192,7 @@ const Members = [
         },
         {
             key: "fiuza",
-            name: "João Fiuza",
+            name: "João F. de Alencastro",
             area: "",
             role: "",
             email: "",
@@ -204,7 +204,7 @@ const Members = [
         },
         {
             key: "maristelaholanda",
-            name: "maristelaholanda",
+            name: "Maristela Holanda",
             area: "",
             role: "",
             email: "",
@@ -216,7 +216,7 @@ const Members = [
         },
         {
             key: "thalessperling",
-            name: "thalessperling",
+            name: "Thales L. von Sperling",
             area: "",
             role: "",
             email: "",
@@ -252,7 +252,7 @@ const Members = [
         },
         {
             key: "brunodutra",
-            name: "brunodutra",
+            name: "Bruno V. Dutra",
             area: "",
             role: "",
             email: "",
@@ -264,7 +264,7 @@ const Members = [
         },
         {
             key: "brunofranca",
-            name: "Bruno Franca",
+            name: "Bruno de A. França",
             area: "",
             role: "",
             email: "",
@@ -276,7 +276,7 @@ const Members = [
         },
         {
             key: "kfouri",
-            name: "kfouri",
+            name: "Guilherme de O. Kfouri",
             area: "",
             role: "",
             email: "",
@@ -288,7 +288,7 @@ const Members = [
         },
         {
             key: "gersonsilva",
-            name: "gersonsilva",
+            name: "Gerson do N. Silva",
             area: "",
             role: "",
             email: "",
@@ -300,7 +300,7 @@ const Members = [
         },
         {
             key: "tribouilet",
-            name: "tribouilet",
+            name: "João Tribouilet M. de Menezes",
             area: "",
             role: "",
             email: "",
@@ -324,7 +324,7 @@ const Members = [
         },
         {
             key: "barenco",
-            name: "Cláudia Jacy Barenco Abbas",
+            name: "Cláudia J. Barenco Abbas",
             area: "",
             role: "",
             email: "",
@@ -336,7 +336,7 @@ const Members = [
         },
         {
             key: "ednacanedo",
-            name: "Edna Canedo",
+            name: "Edna D. Canedo",
             area: "",
             role: "",
             email: "",
@@ -348,7 +348,7 @@ const Members = [
         },
         {
             key: "rodrigorocha",
-            name: "rodrigorocha",
+            name: "Rodrigo L. Rocha",
             area: "",
             role: "",
             email: "",
@@ -360,7 +360,7 @@ const Members = [
         },
         {
             key: "rubenhuacarpuma",
-            name: "Ruben Cruz Huacarpuma",
+            name: "Ruben C. Huacarpuma",
             area: "",
             role: "",
             email: "",
@@ -372,7 +372,7 @@ const Members = [
         },
         {
             key: "ingridaraujo",
-            name: "ingridaraujo",
+            name: "Ingrid P. Araújo",
             area: "",
             role: "",
             email: "",
@@ -420,7 +420,7 @@ const Members = [
         },
         {
             key: "caiosilva",
-            name: "caiosilva",
+            name: "Caio C. M. Silva",
             area: "",
             role: "",
             email: "",
@@ -432,7 +432,7 @@ const Members = [
         },
         {
             key: "samuelalmeida",
-            name: "samuelalmeida",
+            name: "Samuel Almeida",
             area: "",
             role: "",
             email: "",
@@ -444,7 +444,7 @@ const Members = [
         },
         {
             key: "poletti",
-            name: "poletti",
+            name: "João Victor Poletti",
             area: "",
             role: "",
             email: "",
@@ -456,7 +456,7 @@ const Members = [
         },
         {
             key: "felipemachado",
-            name: "felipemachado",
+            name: "Felipe D. Machado",
             area: "",
             role: "",
             email: "",
@@ -480,7 +480,7 @@ const Members = [
         },
         {
             key: "hiroferreira",
-            name: "Hiro Gabriel",
+            name: "Hiro G. C. Ferreira",
             area: "",
             role: "",
             email: "",
@@ -492,7 +492,7 @@ const Members = [
         },
         {
             key: "giozza",
-            name: "Giozza",
+            name: "William F. Giozza",
             area: "",
             role: "",
             email: "",
@@ -504,7 +504,7 @@ const Members = [
         },
         {
             key: "flavioelias",
-            name: "Flávio Elias Gomes de Deus",
+            name: "Flávio Elias G. de Deus",
             area: "",
             role: "",
             email: "",
@@ -517,7 +517,7 @@ const Members = [
 
         {
             key: "danielsilva",
-            name: "Daniel Alves da Silva",
+            name: "Daniel A. da Silva",
             area: "",
             role: "",
             email: "",
@@ -529,7 +529,7 @@ const Members = [
         },
         {
             key: "josetorres",
-            name: "José Alberto Sousa Torres",
+            name: "José Alberto S. Torres",
             area: "",
             role: "",
             email: "",
