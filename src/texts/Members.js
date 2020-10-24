@@ -398,7 +398,7 @@ const Members = [
         },
         {
             key: "demetriosilvaf",
-            name: "demetriosilvaf",
+            name: "Demétrio A. da Silva Filho",
             area: "",
             role: "",
             email: "",
