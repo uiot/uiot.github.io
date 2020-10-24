@@ -7,14 +7,15 @@
             <v-row>
                 <v-col v-for="item in coordination" :key="item.key" xs="6" sm="4" md="3" xl="2">
                     <v-card
-                        style="border-radius: 10px; margin: 0 auto;"
+                        flat
+                        style="border-radius: 8px; margin: 0 auto;"
                     >
                         <v-img
                             height="200"
                             src="../../assets/perfil.jpg"
                         />
                         <v-card-title> {{item.name}} </v-card-title>
-                        <v-card-subtitle> {{item.area}} </v-card-subtitle>
+                        <v-card-subtitle> {{item.area}} {{item.email}} </v-card-subtitle>
                         <v-card-actions>
                             <v-btn text @click="getArticles(item.key)" class="grey--text"> <v-icon> mdi-arrow-down </v-icon> </v-btn>
                             <v-spacer/>
@@ -35,7 +36,7 @@
                 </template>
                 <v-list color="#133e79">
                     <v-list-item v-for="(item, index) in options" :key="index" @click="filterMembers(item.name)">
-                        <v-list-item-title class="white--text">{{ item.name }}</v-list-item-title>
+                        <v-list-item-title class="white--text">{{ item.name | capitalize }}</v-list-item-title>
                     </v-list-item>
                 </v-list>
             </v-menu>
@@ -48,7 +49,8 @@
                         src="../../assets/perfil.jpg"
                     />
                     <v-card-title> {{item.name}} </v-card-title>
-                    <v-card-subtitle> {{item.area}} </v-card-subtitle>
+                    <v-card-subtitle> {{item.area}} {{item.email}} </v-card-subtitle>
+
                     <v-card-actions>
                         <v-btn text @click="getArticles(item.key)" class="grey--text"> <v-icon> mdi-arrow-down </v-icon> </v-btn>
                         <v-spacer/>
@@ -127,10 +129,9 @@ export default {
     }),
 filters: {
     teste(value){
-    let arr_ret = []
-    value.map(function(item){ arr_ret.push(new filterMembers().byKey(item)) })
-
-    return arr_ret.join(", ")
+        let arr_ret = []
+        value.map(function(item){ arr_ret.push(new filterMembers().byKey(item)) })
+        return arr_ret.join(", ")
     }
 },
     computed: {
