@@ -95,30 +95,6 @@ const Members = [
             active: false
         },
         {
-            key: "fiuza",
-            name: "João Fiuza",
-            area: "",
-            role: "",
-            email: "",
-            pic: "",
-            bio: "",
-            lattes: "",
-            linkedin: "",
-            active: false
-        },
-        {
-            key: "maristelaholanda",
-            name: "maristelaholanda",
-            area: "",
-            role: "",
-            email: "",
-            pic: "",
-            bio: "",
-            lattes: "",
-            linkedin: "",
-            active: false
-        },
-        {
             key: "fabiomendonca",
             name: "fabiomendonca",
             area: "",
@@ -167,6 +143,18 @@ const Members = [
             active: false
         },
         {
+            key: "justino",
+            name: "justino",
+            area: "",
+            role: "",
+            email: "",
+            pic: "",
+            bio: "",
+            lattes: "",
+            linkedin: "",
+            active: false
+        },
+        {
             key: "robsonalbuquerde",
             name: "robsonalbuquerde",
             area: "",
@@ -203,6 +191,30 @@ const Members = [
             active: false
         },
         {
+            key: "fiuza",
+            name: "João Fiuza",
+            area: "",
+            role: "",
+            email: "",
+            pic: "",
+            bio: "",
+            lattes: "",
+            linkedin: "",
+            active: false
+        },
+        {
+            key: "maristelaholanda",
+            name: "maristelaholanda",
+            area: "",
+            role: "",
+            email: "",
+            pic: "",
+            bio: "",
+            lattes: "",
+            linkedin: "",
+            active: false
+        },
+        {
             key: "thalessperling",
             name: "thalessperling",
             area: "",
@@ -217,18 +229,6 @@ const Members = [
         {
             key: "dayannecunha",
             name: "dayannecunha",
-            area: "",
-            role: "",
-            email: "",
-            pic: "",
-            bio: "",
-            lattes: "",
-            linkedin: "",
-            active: false
-        },
-        {
-            key: "justino",
-            name: "justino",
             area: "",
             role: "",
             email: "",
