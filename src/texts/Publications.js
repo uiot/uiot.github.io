@@ -41,8 +41,11 @@ const Publications = [
                 title: "HIDS by Signature for embedded devices in IoT networks",
                 authors: [
                     "brunodutra",
-                    "lucasmartins",
+                    "fiuza",
                     "franciscocaldasf",
+                    "lucasmartins",
+                    "desousa",
+                    "robsonalbuquerde",
                 ],
                 type: "conference",
                 name: "V Jornadas Nacionales de Investigación en Ciberseguridad",
@@ -126,22 +129,48 @@ const Publications = [
             },
             {
                 year: 2019,
+                title: "Proposal of an Adaptable and Scalable IoT Middleware for Hybrid Computational Models",
+                authors: [
+                    "lucasmartins",
+                ],
+                type: "master thesis",
+                name: "Universidade de Brasília",
+                short: "UnB",
+                publication_link: "https://repositorio.unb.br/handle/10482/38655",
+                download: "",
+                language: "en"
+            },
+            {
+                year: 2019,
+                title: "Proposta de um Gateway IoT em Computação Fog com Técnicas de Aceleração WAN",
+                authors: [
+                    "franciscocaldasf",
+                ],
+                type: "master thesis",
+                name: "Universidade de Brasília",
+                short: "UnB",
+                publication_link: "https://repositorio.unb.br/handle/10482/38117",
+                download: "",
+                language: "pt-br"
+            },
+            {
+                year: 2019,
                 title: "Inference of driver behavior using correlated IoT data from the vehicle telemetry and the driver mobile phone",
                 authors: [
-                    "desousa",
-                    // "Daniel Alves da Silva",
-                    // "José Alberto Sousa Torres",
-                    // "Alexandre Pinheiro",
+                    "danielsilva",
+                    "josetorres",
+                    "alexandrepinheiro",
                     "franciscocaldasf",
                     "fabiomendonca",
                     "justino",
-                    "kfouri"
+                    "kfouri",
+                    "desousa"
                 ],
                 type: "conference",
-                name: "",
-                short: "",
-                publication_link: "",
-                download: "download",
+                name: "14th Federated Conference on Computer Science and Information Systems",
+                short: "FedCSIS 2019",
+                publication_link: "https://fedcsis.org/proceedings/2019/drp/263.html",
+                download: "",
                 language: "en"
             },
             {
@@ -161,7 +190,7 @@ const Publications = [
                 name: "XIX Simpósio Brasileiro de Segurança da Informação e de Sistemas Computacionais",
                 short: "SBSeg 2019",
                 publication_link: "https://sbseg2019.ime.usp.br/artigos.html",
-                download: "download",
+                download: "",
                 language: "pt-br"
             },
             {
@@ -207,15 +236,15 @@ const Publications = [
                 year: 2018,
                 title: "Protocolos de Redundancia de Gateway Aplicados em Redes IoT",
                 authors: [
+                    "cassioribeiro",
                     "franciscocaldasf",
                     "lucasmartins",
-                    "desousa",
                     "barenco",
-                    "cassioribeiro",
+                    "desousa",
                 ],
                 type: "conference",
-                name: "",
-                short: "",
+                name: "XXXVI Simpósio Brasileiro de Telecomunicações e Processamento de Sinais",
+                short: "SBrT 2018",
                 publication_link: "",
                 download: "",
                 language: "pt-br"
@@ -284,9 +313,9 @@ const Publications = [
                     "taikim"
                 ],
                 type: "journal",
-                name: "",
-                short: "",
-                publication_link: "",
+                name: "Sensors",
+                short: "Sensors",
+                publication_link: "http://www.mdpi.com/1424-8220/17/5/977",
                 download: "",
                 language: "en"
             },
@@ -299,7 +328,7 @@ const Publications = [
                 type: "doctoral thesis",
                 name: "Universidade de Brasília",
                 short: "UnB",
-                publication_link: "",
+                publication_link: "https://repositorio.unb.br/handle/10482/31146",
                 download: "",
                 language: "pt-br"
             },
@@ -311,9 +340,9 @@ const Publications = [
                     "desousa"
                 ],
                 type: "journal",
-                name: "",
-                short: "",
-                publication_link: "",
+                name: "Cluster Computing",
+                short: "Cluster Comput",
+                publication_link: "http://link.springer.com/10.1007/s10586-017-0729-3",
                 download: "",
                 language: "en"
             },
@@ -363,9 +392,9 @@ const Publications = [
                     "luisvillalba"
                 ],
                 type: "journal",
-                name: "",
-                short: "",
-                publication_link: "",
+                name: "Wireless Personal Communications",
+                short: "Wireless Pers Commum",
+                publication_link: "https://link.springer.com/article/10.1007%2Fs11277-015-3168-6",
                 download: "",
                 language: "en"
             },
@@ -380,26 +409,9 @@ const Publications = [
                     "desousa"
                 ],
                 type: "conference",
-                name: "",
-                short: "",
-                publication_link: "",
-                download: "",
-                language: "pt-br"
-            },
-            {
-                year: 2016,
-                title: "O auto-registro de serviços por dispositivos contribui com a escalabilidade de ambientes de IoT",
-                authors: [
-                    "caiosilva",
-                    "franciscocaldasf",
-                    "felipemachado",
-                    "fabiomendonca",
-                    "desousa"
-                ],
-                type: "conference",
-                name: "",
-                short: "",
-                publication_link: "",
+                name: "XXXIV Simpósio Brasileiro de Telecomunicações e Processamento de Sinais",
+                short: "SBrT",
+                publication_link: "http://sbrt.org.br/sbrt2016/anais/",
                 download: "",
                 language: "pt-br"
             },
@@ -408,48 +420,16 @@ const Publications = [
                 title: "Concepção e Desenvolvimento de um Serviço Distribuido de Coleta e Tratamento de Dados para Ambientes de Internet das Coisas",
                 authors: [
                     "rubenhuacarpuma",
+                    "desousa",
                     "maristelaholanda",
                     "sergiolifschitz",
-                    "desousa"
                 ],
                 type: "conference",
-                name: "",
-                short: "",
-                publication_link: "",
+                name: "31o Simpósio Brasileiro de Banco de Dados",
+                short: "SBBD 2016",
+                publication_link: "http://sbbd2016.fpc.ufba.br/artigos-aceitos/",
                 download: "",
                 language: "pt-br"
-            },
-            {
-                year: 2016,
-                title: "Proposta de auto-registro de serviços pelos dispositivos em ambientes de IoT",
-                authors: [
-                    "caiosilva",
-                    "franciscocaldasf",
-                    "felipemachado",
-                    "fabiomendonca",
-                    "desousa"
-                ],
-                type: "conference",
-                name: "",
-                short: "",
-                publication_link: "",
-                download: "",
-                language: "pt-br"
-            },
-            {
-                year: 2016,
-                title: "RAISe: REST API Approach for IoT Services",
-                authors: [
-                    "hiroferreira",
-                    "caiosilva",
-                    "desousa"
-                ],
-                type: "conference",
-                name: "",
-                short: "",
-                publication_link: "",
-                download: "",
-                language: "en"
             },
             {
                 year: 2014,
@@ -459,10 +439,10 @@ const Publications = [
                     "ednacanedo",
                     "desousa"
                 ],
-                type: "conference",
-                name: "",
-                short: "",
-                publication_link: "",
+                type: "journal",
+                name: "International Journal of Embedded Systems",
+                short: "IJES",
+                publication_link: "http://www.inderscience.com/link.php?id=63816",
                 download: "",
                 language: "en"
             },
@@ -475,7 +455,7 @@ const Publications = [
                 type: "master thesis",
                 name: "Universidade de Brasília",
                 short: "UnB",
-                publication_link: "",
+                publication_link: "https://repositorio.unb.br/handle/10482/17251",
                 download: "",
                 language: "en"
             },
@@ -489,9 +469,9 @@ const Publications = [
                     "ednacanedo"
                 ],
                 type: "conference",
-                name: "",
-                short: "",
-                publication_link: "",
+                name: "9th Iberian Conference on Information Systems and Technologies",
+                short: "CISTI 2014",
+                publication_link: "https://ieeexplore.ieee.org/document/6877069",
                 download: "",
                 language: "en"
             },
@@ -504,9 +484,9 @@ const Publications = [
                     "desousa"
                 ],
                 type: "conference",
-                name: "",
-                short: "",
-                publication_link: "",
+                name: "IEEE 9th International Conference on Wireless and Mobile Computing, Networking and Communications",
+                short: "WiMob 2013",
+                publication_link: "https://ieeexplore.ieee.org/document/6673340/",
                 download: "",
                 language: "en"
             },
