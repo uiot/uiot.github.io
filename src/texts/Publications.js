@@ -457,7 +457,7 @@ const Publications = [
                 short: "UnB",
                 publication_link: "https://repositorio.unb.br/handle/10482/17251",
                 download: "",
-                language: "en"
+                language: "pt-br"
             },
             {
                 year: 2014,
