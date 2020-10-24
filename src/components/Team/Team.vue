@@ -1,99 +1,99 @@
 <template>
     <div class="team">
-        <main-title
-            :title="`Team UIoT`"
-            :subtitle="`Nossa equipe`"
-            class="titulo"
-        />
-        <h2 class="sub-titulo">Direção</h2>
-        <v-container class="grey lighten-5 direction">
+        <v-container fluid>
+            <main-title
+                :title="`Coordenadores do projeto`"
+            />
             <v-row>
-                <v-col class="template-col">
+                <v-col v-for="item in coordination" :key="item.key" xs="6" sm="4" md="3" xl="2">
                     <v-card
-                    class="pa-2"
-                    outlined
-                    tile
-                    style="width: 70%; border: 3px solid rgb(111, 113, 188); border-radius: 10px; margin: 0 auto;"
+                        style="border-radius: 10px; margin: 0 auto;"
                     >
-                    <img src="../../assets/perfil.jpg">
-                    <h2>Rafael</h2>
-                    <h3>Role</h3><br>
-                    <v-btn v-for="icon in icons" :key="icon" class="mx-4 black--text" icon>
-                        <v-icon size="22px">
-                            {{ icon }}
-                        </v-icon>
-                    </v-btn>
-                    </v-card>
-                </v-col>
-
-                <v-col class="template-col">
-                    <v-card
-                    class="pa-2"
-                    outlined
-                    tile
-                    style="width: 70%; border: 3px solid rgb(111, 113, 188); border-radius: 10px; margin: 0 auto;"
-                    >
-                    <img src="../../assets/perfil.jpg">
-                    <h2>Francisco</h2>
-                    <h3>Role</h3><br>
-                    <v-btn v-for="icon in icons" :key="icon" class="mx-4 black--text" icon>
-                        <v-icon size="22px">
-                            {{ icon }}
-                        </v-icon>
-                    </v-btn>
-                    </v-card>
-                </v-col>
-
-                <v-col class="template-col">
-                    <v-card
-                    class="pa-2"
-                    outlined
-                    tile
-                    style="width: 70%; border: 3px solid rgb(111, 113, 188); border-radius: 10px; margin: 0 auto;"
-                    >
-                    <img src="../../assets/perfil.jpg">
-                    <h2>Lucas</h2>
-                    <h3>Role</h3><br>
-                    <v-btn v-for="icon in icons" :key="icon" class="mx-4 black--text" icon>
-                        <v-icon size="22px">
-                            {{ icon }}
-                        </v-icon>
-                    </v-btn>
+                        <v-img
+                            height="200"
+                            src="../../assets/perfil.jpg"
+                        />
+                        <v-card-title> {{item.name}} </v-card-title>
+                        <v-card-subtitle> {{item.area}} </v-card-subtitle>
+                        <v-card-actions>
+                            <v-btn text @click="getArticles(item.key)" class="grey--text"> <v-icon> mdi-arrow-down </v-icon> </v-btn>
+                            <v-spacer/>
+                            <v-icon> mdi-linkedin </v-icon>
+                            <v-icon> mdi-github </v-icon>
+                        </v-card-actions>
                     </v-card>
                 </v-col>
             </v-row>
+            <main-title
+                :title="current_option | capitalize"
+            />
+            <v-menu open-on-hover bottom offset-y>
+                <template v-slot:activator="{ on, attrs }">
+                    <v-btn text color="grey" dark v-bind="attrs" v-on="on">
+                        <v-icon> mdi-arrow-bottom-right </v-icon>
+                    </v-btn>
+                </template>
+                <v-list color="#133e79">
+                    <v-list-item v-for="(item, index) in options" :key="index" @click="filterMembers(item.name)">
+                        <v-list-item-title class="white--text">{{ item.name }}</v-list-item-title>
+                    </v-list-item>
+                </v-list>
+            </v-menu>
         </v-container>
+        <v-row>
+            <v-col v-for="item in current_team" :key="item.key" xs="6" sm="4" md="3" xl="2">
+                <v-card style="border-radius: 10px; margin: 0 auto;">
+                    <v-img
+                        height="200"
+                        src="../../assets/perfil.jpg"
+                    />
+                    <v-card-title> {{item.name}} </v-card-title>
+                    <v-card-subtitle> {{item.area}} </v-card-subtitle>
+                    <v-card-actions>
+                        <v-btn text @click="getArticles(item.key)" class="grey--text"> <v-icon> mdi-arrow-down </v-icon> </v-btn>
+                        <v-spacer/>
+                        <v-icon> mdi-linkedin </v-icon>
+                        <v-icon> mdi-github </v-icon>
+                    </v-card-actions>
+                </v-card>
+            </v-col>
+        </v-row>
 
-        <v-container class="btn-group">
-            <v-btn @click="filterMembers('software')" class="btn">Software</v-btn>
-            <v-btn @click="filterMembers('hardware')" class="btn btn-opt">hardware</v-btn>
-            <v-btn @click="filterMembers('security')" class="btn">Security</v-btn>
-        </v-container>
-        <h2 class="sub-titulo">
-        {{current_option | capitalize}}
-        </h2>
-        <v-container>
-            <v-row :key="key">
-                <v-col cols="4" v-for="item in selected_member" :key="item.name" class="template-col">
-                    <v-card
-                        class="pa-2"
-                        outlined
-                        tile
-                        style="width: 70%; border: 3px solid rgb(111, 113, 188); border-radius: 10px; margin: 0 auto;"
-                    >
-                        <img src="../../assets/perfil.jpg">
-                        <h2>{{item.name}}</h2>
-                        <h3>{{item.area}}</h3><br>
-                        <v-btn v-for="icon in icons" :key="icon" class="mx-4 black--text" icon>
-                            <v-icon size="22px">
-                                {{ icon }}
-                            </v-icon>
-                        </v-btn>
-                        {{ publications(item.key) }}
-                    </v-card>
-                </v-col>
-            </v-row>
-        </v-container>
+        <v-dialog v-model="dialog" width="900">
+            <v-card>
+                <v-data-table
+                    :headers="headers"
+                    :items="current_publications.length ? current_publications : []"
+                    class="grey lighten-5"
+                    :single-expand="singleExpand"
+                    :expanded.sync="expanded"
+                    item-key="title"
+                    show-expand
+                >
+                    <template v-slot:body="{ items }">
+                        <tbody>
+                            <tr v-for="(item, i) in items" :key="`${i}-${item.id}`">
+                                <td> <v-chip class="base white--text"> <b> {{ item.year }} </b> </v-chip> </td>
+                                <td v-if="!item.language"></td>
+                                <td v-else-if="item.language === 'en'"> <img width="20" :src="require(`@/assets/united-states.png`)"> </td>
+                                <td v-else-if="item.language === 'pt-br'"> <img width="20" :src="require(`@/assets/brazil.png`)"> </td>
+                                <td v-else></td>
+                                <td>{{ item.title }}</td>
+                                <td><span>{{ item.short }}</span> <span v-if="!item.short" >({{ item.type }})</span> </td>
+                                <td>{{ item.authors | teste }}</td>
+                                <td>
+                                <a v-if="item.download" :href="`/assets/pdf/${item.download}`" target="_blank"> <img width="20" :src="require(`@/assets/pdf.png`)"> </a>
+                                <a v-if="item.publication_link" :href="`${item.publication_link}`" target="_blank"> <img width="20" :src="require(`@/assets/globe.png`)"> </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </template>
+                    <template v-slot:expanded-item="{  item }">
+                        <span v-for="author in item.authors" :key="author"> {{ author }} </span>
+                    </template>
+                </v-data-table>
+            </v-card>
+        </v-dialog>
     </div>    
 </template>
 
@@ -101,29 +101,66 @@
 import Members from "../../texts/Members.js";
 import MainTitle from "../Projects/commom/Title";
 import { filterPublications } from "../../functions/publications.js"
+import { filterMembers } from "../../functions/members.js"
 
 export default {
     components: {
         MainTitle  
     },
     data: () => ({
+        dialog: false,
         members: Members,
         selected_member: [],
-        current_option: "",
-        icons: [
-            'mdi-badge-account-outline',
-            'mdi-linkedin',
-            'mdi-github',
+        current_option: "choose an option",
+        icons: [ 'mdi-badge-account-outline', 'mdi-linkedin', 'mdi-github',],
+        options: [ { name: "software" }, { name: "hardware" }, { name: "security" }],
+        current_team: [],
+        current_publications: [],
+        headers: [
+            { text: 'Year', align: 'start', sortable: false, value: 'year',},
+            { text: '', value: '' },
+            { text: 'Title', value: 'title' },
+            { text: 'Published in', value: 'short' },
+            { text: 'Authors', value: 'authors' },
+            { text: '', value: 'data-table-expand' },
         ],
     }),
+filters: {
+    teste(value){
+    let arr_ret = []
+    value.map(function(item){ arr_ret.push(new filterMembers().byKey(item)) })
+
+    return arr_ret.join(", ")
+    }
+},
+    computed: {
+        coordination(){
+            return new filterMembers().byArea('coordination')
+        },
+        software(){
+            return new filterMembers().byArea('software')
+        },
+        hardware(){
+            return new filterMembers().byArea('hardware')
+        },
+        security(){
+            return new filterMembers().byArea('security')
+        }
+    },
     methods: {
+        getArticles(key){
+            this.dialog = true
+            this.current_publications = this.publications(key)
+        },
         filterMembers(area){        
             this.current_option = area    
-            this.selected_member = this.members.filter(function(item){
-                if(item.role == area){
-                    return item
-                }
-            })
+            if(area == 'software'){
+                this.current_team = this.software
+            }else if(area == 'hardware'){
+                this.current_team = this.hardware
+            }else if(area == 'security'){
+                this.current_team = this.security
+            }
         },
         publications(member){
             return new filterPublications().byOneMember(member)
@@ -133,6 +170,10 @@ export default {
 </script>
 
 <style scoped>
+.team{
+    padding: 2% 2% 10% 2%;
+}
+
 .titulo {
     text-align: center;
     margin: 1em 0 1em 0;

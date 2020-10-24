@@ -14,25 +14,32 @@ const Members = [
             key: "prado",
             name: "Daniel Prado",
             area: "Engenharia de Redes de Comunicação",
-            role: "software",
             email: "daniel@gmail.com",
             pic: "",
             bio: "A cool person",
             lattes: "",
             linkedin: "meu linked-in",
-            active: true
+            belong: true,
+            lab: {
+                active: true,
+                area: "software",
+            }
         },
         {
             key: "lucasmartins",
             name: "Lucas Martins",
-            area: "Engenharia Elétrica",
+            area: "Doutorando em Engenharia Elétrica",
             role: "software",
             email: "lmartins@gmail.com",
             pic: "",
             bio: "A cool person",
             lattes: "",
             linkedin: "meu linked-in",
-            active: true
+            belong: true,
+            lab: {
+                active: true,
+                area: "coordination",
+            }
         },
         {
             key: "victorcampos",
@@ -44,19 +51,26 @@ const Members = [
             bio: "A strong person",
             lattes: "",
             linkedin: "meu linked-in",
-            active: true,
+            belong: true,
+            lab: {
+                active: true,
+                area: "software",
+            }
         },
         {
             key: "lincolnbarbosa",
             name: "Lincoln Abreu",
             area: "Engenharia da Computação",
-            role: "hardware",
             email: "abreu@gmail.com",
             pic: "",
             bio: "A smart person",
             lattes: "",
             linkedin: "meu linked-in",
-            active: true
+            belong: true,
+            lab: {
+                active: true,
+                area: "hardware",
+            }
         },
         {
             key: "venzi",
@@ -68,31 +82,43 @@ const Members = [
             bio: "A smart person",
             lattes: "",
             linkedin: "meu linked-in",
-            active: false
+            belong: true,
+            lab: {
+                active: true,
+                area: "software",
+            }
         },
         {
             key: "desousa",
-            name: "desousa",
-            area: "",
+            name: "Rafael Timóteo",
+            area: "Professor Dr. Engenharia Elétrica",
             role: "",
             email: "",
             pic: "",
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            belong: true,
+            lab: {
+                active: true,
+                area: "coordination",
+            }
         },
         {
             key: "franciscocaldasf",
-            name: "franciscocaldasf",
-            area: "",
+            name: "Francisco Caldas",
+            area: "Doutorando em Engenharia Elétrica",
             role: "",
             email: "",
             pic: "",
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            belong: true,
+            lab: {
+                active: false,
+                area: "coordination",
+            }
         },
         {
             key: "fiuza",
@@ -104,7 +130,11 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            belong: true,
+            lab: {
+                active: false,
+                area: "software",
+            }
         },
         {
             key: "maristelaholanda",
@@ -116,7 +146,11 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            belong: true,
+            lab: {
+                active: false,
+                area: "",
+            }
         },
         {
             key: "fabiomendonca",
@@ -128,7 +162,11 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            belong: true,
+            lab: {
+                active: false,
+                area: "",
+            }
         },
         {
             key: "marcosandrade",
@@ -140,7 +178,11 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            belong: true,
+            lab: {
+                active: false,
+                area: "",
+            }
         },
         {
             key: "matheusmonteiro",
@@ -152,7 +194,11 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            belong: true,
+            lab: {
+                active: false,
+                area: "",
+            }
         },
         {
             key: "patrao",
@@ -164,7 +210,11 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            belong: false,
+            lab: {
+                active: false,
+                area: "",
+            }
         },
         {
             key: "robsonalbuquerde",
@@ -176,7 +226,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            lab: {
+                active: false,
+                area: "coordination",
+            }
         },
         {
             key: "lustosa",
@@ -188,7 +241,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            lab: {
+                active: false,
+                area: "coordination",
+            }
         },
         {
             key: "cassioribeiro",
@@ -200,7 +256,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            lab: {
+                active: false,
+                area: "coordination",
+            }
         },
         {
             key: "thalessperling",
@@ -212,7 +271,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            lab: {
+                active: false,
+                area: "coordination",
+            }
         },
         {
             key: "dayannecunha",
@@ -224,7 +286,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            lab: {
+                active: false,
+                area: "coordination",
+            }
         },
         {
             key: "justino",
@@ -236,7 +301,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            lab: {
+                active: false,
+                area: "coordination",
+            }
         },
         {
             key: "mateuszanatta",
@@ -248,7 +316,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            lab: {
+                active: false,
+                area: "coordination",
+            }
         },
         {
             key: "brunodutra",
@@ -260,7 +331,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            lab: {
+                active: false,
+                area: "coordination",
+            }
         },
         {
             key: "brunofranca",
@@ -272,7 +346,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            lab: {
+                active: false,
+                area: "coordination",
+            }
         },
         {
             key: "kfouri",
@@ -284,7 +361,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            lab: {
+                active: false,
+                area: "coordination",
+            }
         },
         {
             key: "gersonsilva",
@@ -296,7 +376,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            lab: {
+                active: false,
+                area: "coordination",
+            }
         },
         {
             key: "tribouilet",
@@ -308,7 +391,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            lab: {
+                active: false,
+                area: "coordination",
+            }
         },
         {
             key: "demetriosilvaf",
@@ -320,7 +406,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            lab: {
+                active: false,
+                area: "coordination",
+            }
         },
         {
             key: "barenco",
@@ -332,7 +421,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            lab: {
+                active: false,
+                area: "coordination",
+            }
         },
         {
             key: "ednacanedo",
@@ -344,7 +436,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            lab: {
+                active: false,
+                area: "coordination",
+            }
         },
         {
             key: "rodrigorocha",
@@ -356,7 +451,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            lab: {
+                active: false,
+                area: "coordination",
+            }
         },
         {
             key: "rubenhuacarpuma",
@@ -368,7 +466,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            lab: {
+                active: false,
+                area: "coordination",
+            }
         },
         {
             key: "ingridaraujo",
@@ -380,7 +481,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            lab: {
+                active: false,
+                area: "coordination",
+            }
         },
         {
             key: "fabiobuiati",
@@ -392,7 +496,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            lab: {
+                active: false,
+                area: "coordination",
+            }
         },
         {
             key: "luisvillalba",
@@ -404,7 +511,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            lab: {
+                active: false,
+                area: "coordination",
+            }
         },
         {
             key: "taikim",
@@ -416,7 +526,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            lab: {
+                active: false,
+                area: "coordination",
+            }
         },
         {
             key: "caiosilva",
@@ -428,7 +541,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            lab: {
+                active: false,
+                area: "coordination",
+            }
         },
         {
             key: "samuelalmeida",
@@ -440,7 +556,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            lab: {
+                active: false,
+                area: "coordination",
+            }
         },
         {
             key: "poletti",
@@ -452,7 +571,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            lab: {
+                active: false,
+                area: "coordination",
+            }
         },
         {
             key: "felipemachado",
@@ -464,7 +586,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            lab: {
+                active: false,
+                area: "coordination",
+            }
         },
         {
             key: "sergiolifschitz",
@@ -476,7 +601,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            lab: {
+                active: false,
+                area: "coordination",
+            }
         },
         {
             key: "hiroferreira",
@@ -488,7 +616,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            lab: {
+                active: false,
+                area: "coordination",
+            }
         },
         {
             key: "giozza",
@@ -500,7 +631,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            lab: {
+                active: false,
+                area: "coordination",
+            }
         },
         {
             key: "flavioelias",
@@ -512,7 +646,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            lab: {
+                active: false,
+                area: "coordination",
+            }
         },
 
         // template
@@ -526,7 +663,10 @@ const Members = [
         //     bio: "",
         //     lattes: "",
         //     linkedin: "",
-        //     active: false
+        //     lab: {
+            //     active: false,
+            //     area: "coordination",
+            // }
         // },
     ]
   export default Members

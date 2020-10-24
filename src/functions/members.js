@@ -11,6 +11,10 @@ export class filterMembers {
         return members[idx].name
     }
     
-    
+    byArea(area){
+        return members.filter(function(item){ 
+            return item.lab.area == area && item.belong == true
+        })
+    }
 
 }

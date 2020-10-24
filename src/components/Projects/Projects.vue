@@ -6,7 +6,7 @@
                 :subtitle="`short description`"
             />
             <v-row>
-                <v-col v-for="item in middleware" :key="item" cols="12" sm="12" md="4" xl="4" >
+                <v-col v-for="item in middleware" :key="item" cols="12" sm="12" md="4" xl="4">
                     <v-card flat :color="item.color" :class="`${item.text_color}`">
                         <v-card-title> 
                             <v-icon :class="`${item.text_color}`" > {{item.icon}} </v-icon>
