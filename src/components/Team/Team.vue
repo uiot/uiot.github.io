@@ -50,7 +50,6 @@
                     />
                     <v-card-title> {{item.name}} </v-card-title>
                     <v-card-subtitle> {{item.area}} {{item.email}} </v-card-subtitle>
-
                     <v-card-actions>
                         <v-btn text @click="getArticles(item.key)" class="grey--text"> <v-icon> mdi-arrow-down </v-icon> </v-btn>
                         <v-spacer/>
