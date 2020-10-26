@@ -1,8 +1,8 @@
 <template>
     <v-card flat tile class="component base white--text text-center">
       <v-card-text>
-        <v-btn v-for="icon in icons" :key="icon" class="mx-4 white--text" icon>
-          <v-btn rounded text :href="icon.link">
+        <v-btn v-for="icon in icons" :key="icon.icon" class="mx-4 white--text" icon>
+          <v-btn rounded text :href="icon.link" target="_blank">
             <v-icon size="24px" class="white--text">
               {{ icon.icon }}
             </v-icon>
@@ -14,7 +14,7 @@
       </v-card-text>
       <v-divider/>
       <v-card-text class="white--text">
-        {{ new Date().getFullYear() }} — <strong> UioT </strong>
+        {{ new Date().getFullYear() }} — <strong> UIoT </strong>
       </v-card-text>
     </v-card>
 </template>
@@ -25,11 +25,11 @@
       icons: [
         {
           icon: 'mdi-linkedin',
-          link: 'https://www.linkedin.com/company/uiot/' 
+          link: 'https://www.linkedin.com/company/uiot/'
         },
         {
           icon: 'mdi-github',
-          link: 'http://www.github.com/uiot' 
+          link: 'http://www.github.com/uiot'
         }
       ],
     }),
