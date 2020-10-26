@@ -84,7 +84,7 @@ const Members = [
             linkedin: "meu linked-in",
             belong: true,
             lab: {
-                active: true,
+                active: false,
                 area: "software",
             }
         },
@@ -164,8 +164,8 @@ const Members = [
             linkedin: "",
             belong: true,
             lab: {
-                active: false,
-                area: "",
+                active: true,
+                area: "hardware",
             }
         },
         {
@@ -226,9 +226,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
+            belong: false,
             lab: {
                 active: false,
-                area: "coordination",
+                area: "",
             }
         },
         {
@@ -241,9 +242,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
+            belong: true,
             lab: {
-                active: false,
-                area: "coordination",
+                active: true,
+                area: "software",
             }
         },
         {
@@ -256,9 +258,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
+            belong: true,
             lab: {
                 active: false,
-                area: "coordination",
+                area: "software",
             }
         },
         {
@@ -271,6 +274,7 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
+            belong: false,
             lab: {
                 active: false,
                 area: "coordination",
@@ -286,9 +290,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
+            belong: true,
             lab: {
                 active: false,
-                area: "coordination",
+                area: "software",
             }
         },
         {
@@ -301,9 +306,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
+            belong: true,
             lab: {
-                active: false,
-                area: "coordination",
+                active: true,
+                area: "software",
             }
         },
         {
@@ -316,9 +322,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
+            belong: true,
             lab: {
                 active: false,
-                area: "coordination",
+                area: "",
             }
         },
         {
@@ -331,9 +338,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
+            belong: true,
             lab: {
                 active: false,
-                area: "coordination",
+                area: "software",
             }
         },
         {
@@ -346,9 +354,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
+            belong: true,
             lab: {
                 active: false,
-                area: "coordination",
+                area: "software",
             }
         },
         {
@@ -361,9 +370,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
+            belong: true,
             lab: {
                 active: false,
-                area: "coordination",
+                area: "security",
             }
         },
         {
@@ -376,6 +386,7 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
+            belong: false,
             lab: {
                 active: false,
                 area: "coordination",
@@ -391,9 +402,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
+            belong: true,
             lab: {
-                active: false,
-                area: "coordination",
+                active: true,
+                area: "software",
             }
         },
         {
@@ -406,9 +418,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
+            belong: true,
             lab: {
                 active: false,
-                area: "coordination",
+                area: "",
             }
         },
         {
@@ -421,9 +434,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
+            belong: false,
             lab: {
                 active: false,
-                area: "coordination",
+                area: "",
             }
         },
         {
@@ -436,9 +450,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
+            belong: false,
             lab: {
                 active: false,
-                area: "coordination",
+                area: "",
             }
         },
         {
@@ -451,9 +466,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
+            belong: true,
             lab: {
                 active: false,
-                area: "coordination",
+                area: "hardware",
             }
         },
         {
@@ -466,9 +482,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
+            belong: false,
             lab: {
                 active: false,
-                area: "coordination",
+                area: "",
             }
         },
         {
@@ -481,9 +498,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
+            belong: false,
             lab: {
                 active: false,
-                area: "coordination",
+                area: "",
             }
         },
         {
@@ -496,9 +514,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
+            belong: false,
             lab: {
                 active: false,
-                area: "coordination",
+                area: "",
             }
         },
         {
@@ -511,6 +530,7 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
+            belong: false,
             lab: {
                 active: false,
                 area: "coordination",
@@ -526,9 +546,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
+            belong: false,
             lab: {
                 active: false,
-                area: "coordination",
+                area: "",
             }
         },
         {
@@ -541,9 +562,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
+            belong: false,
             lab: {
                 active: false,
-                area: "coordination",
+                area: "",
             }
         },
         {
@@ -556,9 +578,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
+            belong: false,
             lab: {
                 active: false,
-                area: "coordination",
+                area: "",
             }
         },
         {
@@ -571,9 +594,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
+            belong: false,
             lab: {
                 active: false,
-                area: "coordination",
+                area: "",
             }
         },
         {
@@ -586,9 +610,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
+            belong: false,
             lab: {
                 active: false,
-                area: "coordination",
+                area: "",
             }
         },
         {
@@ -601,9 +626,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
+            belong: false,
             lab: {
                 active: false,
-                area: "coordination",
+                area: "",
             }
         },
         {
@@ -616,9 +642,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
+            belong: true,
             lab: {
                 active: false,
-                area: "coordination",
+                area: "software",
             }
         },
         {
@@ -631,9 +658,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
+            belong: false,
             lab: {
                 active: false,
-                area: "coordination",
+                area: "",
             }
         },
         {
@@ -646,9 +674,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
+            belong: false,
             lab: {
                 active: false,
-                area: "coordination",
+                area: "",
             }
         },
 
@@ -662,7 +691,11 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            belong: false,
+            lab: {
+                active: false,
+                area: "",
+            }
         },
         {
             key: "josetorres",
@@ -674,7 +707,11 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            belong: false,
+            lab: {
+                active: false,
+                area: "",
+            }
         },
         {
             key: "alexandrepinheiro",
@@ -686,7 +723,12 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            active: false
+            belong: false,
+            lab: {
+                active: false,
+                area: "",
+            }
+
         },
 
         // template

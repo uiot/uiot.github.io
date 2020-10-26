@@ -25,6 +25,7 @@
                     </v-card>
                 </v-col>
             </v-row>
+
             <main-title
                 :title="current_option | capitalize"
             />
@@ -66,8 +67,6 @@
                     :headers="headers"
                     :items="current_publications.length ? current_publications : []"
                     class="grey lighten-5"
-                    :single-expand="singleExpand"
-                    :expanded.sync="expanded"
                     item-key="title"
                     show-expand
                 >
