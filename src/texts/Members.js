@@ -85,7 +85,7 @@ const Members = [
             belong: true,
             lab: {
                 active: false,
-                area: "software",
+                area: "security",
             }
         },
         {
@@ -132,7 +132,7 @@ const Members = [
             linkedin: "",
             belong: true,
             lab: {
-                active: false,
+                active: true,
                 area: "software",
             }
         },
@@ -149,7 +149,7 @@ const Members = [
             belong: true,
             lab: {
                 active: false,
-                area: "",
+                area: "software",
             }
         },
         {
@@ -180,8 +180,8 @@ const Members = [
             linkedin: "",
             belong: true,
             lab: {
-                active: false,
-                area: "",
+                active: true,
+                area: "software",
             }
         },
         {
@@ -197,12 +197,12 @@ const Members = [
             belong: true,
             lab: {
                 active: false,
-                area: "",
+                area: "software",
             }
         },
         {
             key: "robsonalbuquerde",
-            name: "robsonalbuquerde",
+            name: "Robson de O. Albuquerde",
             area: "",
             role: "",
             email: "",
@@ -213,7 +213,7 @@ const Members = [
             belong: false,
             lab: {
                 active: false,
-                area: "",
+                area: "orientation",
             }
         },
         {
@@ -229,7 +229,7 @@ const Members = [
             belong: false,
             lab: {
                 active: false,
-                area: "",
+                area: "orientation",
             }
         },
         {
@@ -277,7 +277,7 @@ const Members = [
             belong: false,
             lab: {
                 active: false,
-                area: "coordination",
+                area: "orientation",
             }
         },
         {
@@ -298,7 +298,7 @@ const Members = [
         },
         {
             key: "dayannecunha",
-            name: "dayannecunha",
+            name: "Dayanne Cunha",
             area: "",
             role: "",
             email: "",
@@ -308,13 +308,13 @@ const Members = [
             linkedin: "",
             belong: true,
             lab: {
-                active: true,
+                active: false,
                 area: "software",
             }
         },
         {
             key: "mateuszanatta",
-            name: "mateuszanatta",
+            name: "Mateus da R. Zanatta",
             area: "",
             role: "",
             email: "",
@@ -341,7 +341,7 @@ const Members = [
             belong: true,
             lab: {
                 active: false,
-                area: "software",
+                area: "security",
             }
         },
         {
@@ -389,7 +389,7 @@ const Members = [
             belong: false,
             lab: {
                 active: false,
-                area: "coordination",
+                area: "software",
             }
         },
         {
@@ -421,7 +421,7 @@ const Members = [
             belong: true,
             lab: {
                 active: false,
-                area: "",
+                area: "orientation",
             }
         },
         {
@@ -437,7 +437,7 @@ const Members = [
             belong: false,
             lab: {
                 active: false,
-                area: "",
+                area: "orientation",
             }
         },
         {
@@ -453,7 +453,7 @@ const Members = [
             belong: false,
             lab: {
                 active: false,
-                area: "",
+                area: "orientation",
             }
         },
         {
@@ -533,7 +533,7 @@ const Members = [
             belong: false,
             lab: {
                 active: false,
-                area: "coordination",
+                area: "",
             }
         },
         {
@@ -562,10 +562,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            belong: false,
+            belong: true,
             lab: {
                 active: false,
-                area: "",
+                area: "software",
             }
         },
         {
@@ -586,7 +586,7 @@ const Members = [
         },
         {
             key: "poletti",
-            name: "João Victor Poletti",
+            name: "João V. Poletti",
             area: "",
             role: "",
             email: "",
@@ -610,10 +610,10 @@ const Members = [
             bio: "",
             lattes: "",
             linkedin: "",
-            belong: false,
+            belong: true,
             lab: {
                 active: false,
-                area: "",
+                area: "hardware",
             }
         },
         {
@@ -661,7 +661,7 @@ const Members = [
             belong: false,
             lab: {
                 active: false,
-                area: "",
+                area: "orientation",
             }
         },
         {
@@ -677,7 +677,7 @@ const Members = [
             belong: false,
             lab: {
                 active: false,
-                area: "",
+                area: "orientation",
             }
         },
 
@@ -744,7 +744,7 @@ const Members = [
         //     linkedin: "",
         //     lab: {
             //     active: false,
-            //     area: "coordination",
+            //     area: "xxxxxxxxxxx",
             // }
         // },
     ]
