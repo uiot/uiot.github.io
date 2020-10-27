@@ -66,7 +66,7 @@
         <h2 class="white--text">  <v-icon class="white--text" size="40"> mdi-book-open-variant </v-icon> <b> {{ $t('home.academics.title') }} </b> </h2>
         <div class="text white--text"> {{ $t('home.academics.text') }} </div>
         <v-row>
-          <v-col xs="12" sm="6" md="4" lg="4" v-for="item in publications" :key="item.title">
+          <v-col xs="12" sm="12" md="6" lg="6" v-for="item in publications" :key="item.title">
             <v-hover v-slot:default="{ hover }" >
               <v-card :elevation="hover ? 6 : 0" flat :color="item.color" min-height="75">
                 <v-card-subtitle>
@@ -75,7 +75,7 @@
               </v-card>
             </v-hover>
           </v-col>
-          <v-col sm="6" md="4" lg="4">
+          <v-col sm="12" md="6" lg="6">
             <v-hover v-slot:default="{ hover }" >
               <v-card :elevation="hover ? 6 : 0" flat color="#a9d2db" min-height="75" @click="goTo('/publications')">
                 <v-card-subtitle>

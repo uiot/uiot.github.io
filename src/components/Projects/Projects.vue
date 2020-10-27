@@ -81,7 +81,7 @@
 
 <script>
 import Projects from "../../texts/Projects.js"
-import MainTitle from "./commom/Title"
+import MainTitle from "../commom/Title"
 
 export default {
     components: {

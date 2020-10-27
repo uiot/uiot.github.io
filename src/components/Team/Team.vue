@@ -44,7 +44,7 @@
         </v-container>
         <v-row>
             <v-col v-for="item in current_team" :key="item.key" xs="6" sm="4" md="3" xl="2">
-                <v-card style="border-radius: 10px; margin: 0 auto;">
+                <v-card flat style="border-radius: 10px; margin: 0 auto;">
                     <v-img
                         height="200"
                         src="../../assets/perfil.jpg"
@@ -68,6 +68,7 @@
                     :items="current_publications.length ? current_publications : []"
                     class="grey lighten-5"
                     item-key="title"
+                    :items-per-page="5"
                     show-expand
                 >
                     <template v-slot:body="{ items }">
@@ -99,7 +100,7 @@
 
 <script>
 import Members from "../../texts/Members.js";
-import MainTitle from "../Projects/commom/Title";
+import MainTitle from "../commom/Title";
 import { filterPublications } from "../../functions/publications.js"
 import { filterMembers } from "../../functions/members.js"
 
