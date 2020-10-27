@@ -17,7 +17,7 @@
     </v-card>
     <v-data-table
       :headers="headers"
-      :items="filtered.length ? filtered : setYear()"
+      :items="filtered.length ? filtered : all()"
       class="grey lighten-5"
       :single-expand="singleExpand"
       :expanded.sync="expanded"
@@ -62,19 +62,30 @@ export default {
     data(){
         return {
             lastDateSelected: [ 2020 ],
-            selectedYears: [ 2020 ],
+            selectedYears: [ ],
             publicacoes: Publications,
             expanded: [],
             singleExpand: false,
+            filtered_publications: [],
             headers: [
               { text: 'Year', align: 'start', sortable: false, value: 'year',},
               { text: '', value: '' },
               { text: 'Title', value: 'title' },
-              { text: 'Published in', value: 'short' },
+              { text: 'Published in', value: 'short',
+                filter: value => {
+                  if(!this.short) return true;
+                  if( this.short.every( f => value.includes(f) ) ){
+                    return value
+                  }
+                }
+              },
               { text: 'Authors', value: 'authors' },
               { text: '', value: 'data-table-expand' },
             ],
         }
+    },
+    created(){
+      this.filtered_publications = this.all
     },
     filters: {
       teste(value){
@@ -90,6 +101,9 @@ export default {
       },
       filtered(){
         return new filterPublications().byYears(this.selectedYears)
+      },
+      all(){
+        return new filterPublications().all
       }
     },
     methods: {
