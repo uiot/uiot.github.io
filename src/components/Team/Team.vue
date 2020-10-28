@@ -5,23 +5,26 @@
                 :title="`Coordenadores do projeto`"
             />
             <v-row>
-                <v-col v-for="item in coordination" :key="item.key" xs="6" sm="4" md="3" xl="2">
-                    <v-card
-                        flat
-                        style="border-radius: 8px; margin: 0 auto;"
-                    >
-                        <v-img
-                            height="200"
-                            src="../../assets/perfil.jpg"
-                        />
-                        <v-card-title> {{item.name}} </v-card-title>
-                        <v-card-subtitle> {{item.area}} {{item.email}} </v-card-subtitle>
-                        <v-card-actions>
-                            <v-btn text @click="getArticles(item.key)" class="grey--text"> <v-icon> mdi-arrow-down </v-icon> </v-btn>
-                            <v-spacer/>
-                            <v-icon> mdi-linkedin </v-icon>
-                            <v-icon> mdi-github </v-icon>
-                        </v-card-actions>
+                <v-col v-for="(item, i) in coordination" :key="item.key" xs="12" sm="12" md="6" xl="4">
+                    <v-card :color="colors[i%5]" dark>
+                        <div class="d-flex flex-no-wrap justify-space-between black--text">
+                            <v-avatar class="ma-3" size="125" tile>
+                                <v-img src="@/assets/photos/man.svg"></v-img>
+                            </v-avatar>
+                            <div class="content-body">
+                                <v-card-title class="headline"> {{item.name}} </v-card-title>
+                                <v-card-text>
+                                    {{item.area}} <br> 
+                                    {{item.email}}
+                                </v-card-text>
+                                <v-card-actions>
+                                    <v-btn text @click="getArticles(item.key)" class="black--text mx-3"> <v-icon> mdi-arrow-down </v-icon> </v-btn>
+                                    <v-spacer/>
+                                    <v-icon class="mx-3 black--text"> mdi-linkedin </v-icon>
+                                    <v-icon class="mx-3 black--text"> mdi-github </v-icon>
+                                </v-card-actions>
+                            </div>
+                        </div>
                     </v-card>
                 </v-col>
             </v-row>
@@ -41,23 +44,30 @@
                     </v-list-item>
                 </v-list>
             </v-menu>
+
         </v-container>
         <v-row>
-            <v-col v-for="item in current_team" :key="item.key" xs="6" sm="4" md="3" xl="2">
-                <v-card flat style="border-radius: 10px; margin: 0 auto;">
-                    <v-img
-                        height="200"
-                        src="../../assets/perfil.jpg"
-                    />
-                    <v-card-title> {{item.name}} </v-card-title>
-                    <v-card-subtitle> {{item.area}} {{item.email}} </v-card-subtitle>
-                    <v-card-actions>
-                        <v-btn text @click="getArticles(item.key)" class="grey--text"> <v-icon> mdi-arrow-down </v-icon> </v-btn>
-                        <v-spacer/>
-                        <v-icon> mdi-linkedin </v-icon>
-                        <v-icon> mdi-github </v-icon>
-                    </v-card-actions>
-                </v-card>
+            <v-col v-for="(item, i) in current_team" :key="item.key" xs="12" sm="12" md="6" xl="4">
+                <v-card :color="colors[i%5]" dark>
+                        <div class="d-flex flex-no-wrap justify-space-between black--text">
+                            <div class="content-body">
+                                <v-card-title class="headline"> {{item.name}} </v-card-title>
+                                <v-card-text>
+                                    {{item.area}} <br> 
+                                    {{item.email}}
+                                </v-card-text>
+                                <v-card-actions>
+                                    <v-btn text @click="getArticles(item.key)" class="black--text mx-3"> <v-icon> mdi-arrow-down </v-icon> </v-btn>
+                                    <v-spacer/>
+                                    <v-icon class="mx-3 black--text"> mdi-linkedin </v-icon>
+                                    <v-icon class="mx-3 black--text"> mdi-github </v-icon>
+                                </v-card-actions>
+                            </div>
+                            <v-avatar class="ma-3" size="125" tile>
+                                <v-img :src="require(`@/assets/photos/${item.picture}.svg`)"></v-img>
+                            </v-avatar>
+                        </div>
+                    </v-card>
             </v-col>
         </v-row>
 
@@ -109,6 +119,13 @@ export default {
         MainTitle  
     },
     data: () => ({
+        colors: [
+            "#91c7a0",
+            "#ffa8a8",
+            "#9199c7",
+            "#e3b1b1",
+            "#b1e3e2"
+        ],
         dialog: false,
         members: Members,
         selected_member: [],
@@ -172,6 +189,10 @@ filters: {
 <style scoped>
 .team{
     padding: 2% 2% 10% 2%;
+}
+
+.content-body{
+    text-align: left;
 }
 
 .titulo {
