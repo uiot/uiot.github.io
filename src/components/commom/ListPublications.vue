@@ -39,11 +39,20 @@ export default {
     props: [ 'data' ],
     data(){
         return{
-
+            headers: [
+              { text: 'Year', align: 'start', sortable: false, value: 'year',},
+              { text: '', value: '' },
+              { text: 'Title', value: 'title' },
+              { text: 'Published in', value: 'short' },
+              { text: 'Authors', value: 'authors' },
+              { text: '', value: 'data-table-expand' },
+            ],
         }
     },
     filters: {
         teste(value){
+            let arr_ret = []
+            value.map(function(item){ arr_ret.push(item) })
             return value.join(", ")
         }
     }

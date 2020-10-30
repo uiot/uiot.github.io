@@ -23,6 +23,7 @@
 import listPublications from "../commom/ListPublications.vue"
 import Publications from "../../texts/Publications"
 import { filterPublications } from "../../functions/publications.js"
+import { filterMembers } from "../../functions/members.js"
 
 
 export default {
@@ -37,25 +38,18 @@ export default {
             expanded: [],
             singleExpand: false,
             filtered_publications: [],
-            headers: [
-              { text: 'Year', align: 'start', sortable: false, value: 'year',},
-              { text: '', value: '' },
-              { text: 'Title', value: 'title' },
-              { text: 'Published in', value: 'short',
-                filter: value => {
-                  if(!this.short) return true;
-                  if( this.short.every( f => value.includes(f) ) ){
-                    return value
-                  }
-                }
-              },
-              { text: 'Authors', value: 'authors' },
-              { text: '', value: 'data-table-expand' },
-            ],
         }
     },
     created(){
       this.filtered_publications = this.all
+    },
+    filters: {
+      teste(value){
+        let arr_ret = []
+        value.map(function(item){ arr_ret.push(new filterMembers().byKey(item)) })
+
+        return arr_ret.join(", ")
+      }
     },
     computed: {
       years(){
