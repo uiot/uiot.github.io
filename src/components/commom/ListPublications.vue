@@ -16,7 +16,7 @@
                             <td v-else></td>
                             <td>{{ item.title }}</td>
                             <td><span>{{ item.short }}</span> <span v-if="!item.short" >({{ item.type }})</span> </td>
-                            <td>{{ item.authors | teste }}</td>
+                            <td>{{ item.authors | getAuthorsNames }}</td>
                             <td>
                             <a v-if="item.download" :href="`/assets/pdf/${item.download}`" target="_blank"> <img width="20" :src="require(`@/assets/pdf.png`)"> </a>
                             <a v-if="item.publication_link" :href="`${item.publication_link}`" target="_blank"> <img width="20" :src="require(`@/assets/globe.png`)"> </a>
@@ -32,6 +32,8 @@
 </template>
 
 <script>
+import { filterMembers } from "../../functions/members.js"
+
 export default {
     props: [ 'data' ],
     data(){
@@ -47,10 +49,10 @@ export default {
         }
     },
     filters: {
-        teste(value){
-            let arr_ret = []
-            value.map(function(item){ arr_ret.push(item) })
-            return value.join(", ")
+        getAuthorsNames(value){
+          let arr_ret = []
+          value.map(function(item){ arr_ret.push(new filterMembers().byKey(item)) })
+          return arr_ret.join(", ")
         }
     }
 }
