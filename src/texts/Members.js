@@ -37,9 +37,43 @@ const Members = [
             linkedin: "meu linked-in",
             belong: true,
             lab: {
-                active: true,
+                active: false,
                 area: "coordination",
             }
+        },
+        {
+            key: "desousa",
+            name: "Rafael Timóteo",
+            area: "Professor Dr. Engenharia Elétrica",
+            role: "",
+            email: "desousa@unb.br",
+            picture: "man",
+            bio: "",
+            lattes: "",
+            linkedin: "",
+            belong: true,
+            lab: {
+                active: false,
+                area: "coordination",
+            },
+            order: 0
+        },
+        {
+            key: "franciscocaldasf",
+            name: "Francisco Caldas",
+            area: "Doutorando em Engenharia Elétrica",
+            role: "",
+            email: "francisco.caldas@uiot.org",
+            picture: "man",
+            bio: "",
+            lattes: "",
+            linkedin: "",
+            belong: true,
+            lab: {
+                active: false,
+                area: "coordination",
+            },
+            order: 2
         },
         {
             key: "victorcampos",
@@ -86,38 +120,6 @@ const Members = [
             lab: {
                 active: false,
                 area: "security",
-            }
-        },
-        {
-            key: "desousa",
-            name: "Rafael Timóteo",
-            area: "Professor Dr. Engenharia Elétrica",
-            role: "",
-            email: "desousa@unb.br",
-            picture: "man",
-            bio: "",
-            lattes: "",
-            linkedin: "",
-            belong: true,
-            lab: {
-                active: true,
-                area: "coordination",
-            }
-        },
-        {
-            key: "franciscocaldasf",
-            name: "Francisco Caldas",
-            area: "Doutorando em Engenharia Elétrica",
-            role: "",
-            email: "francisco.caldas@uiot.org",
-            picture: "man",
-            bio: "",
-            lattes: "",
-            linkedin: "",
-            belong: true,
-            lab: {
-                active: false,
-                area: "coordination",
             }
         },
         {
