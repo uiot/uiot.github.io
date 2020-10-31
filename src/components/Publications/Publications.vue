@@ -59,7 +59,7 @@ export default {
         return new filterPublications().byYears(this.selectedYears)
       },
       all(){
-        return new filterPublications().all()
+        return new filterPublications().all
       }
     },
     methods: {

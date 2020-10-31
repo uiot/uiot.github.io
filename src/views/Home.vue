@@ -8,7 +8,7 @@
           <h1> {{ $t('welcomeMsg') }} </h1>
       </div> -->
     <div class="display-3 presentation">
-      {{ $t("welcomeMsg") }}
+      <b>{{ $t("welcomeMsg") }}</b>
     </div>
     <v-carousel cycle height="520" :show-arrows="false">
       <v-carousel-item v-for="(slide, i) in slides" :key="i">
