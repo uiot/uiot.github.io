@@ -4,10 +4,7 @@
             :headers="headers"
             :items="data"
             class="grey lighten-5"
-            :single-expand="singleExpand"
-            :expanded.sync="expanded"
             item-key="title"
-            show-expand
         >
             <template v-slot:body="{ items }">
                 <tbody>
