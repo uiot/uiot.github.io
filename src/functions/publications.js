@@ -16,6 +16,12 @@ export class filterPublications {
         return arr_ret
     }
 
+    getConferences(){
+        let arr_ret = []
+        publications.map(function(item){ if(arr_ret.indexOf(item.short) === -1){ arr_ret.push(item.short) } })
+        return arr_ret
+    }
+
     all(){
         return publications
     }

@@ -2,7 +2,7 @@
     <div>
         <v-data-table
             :headers="headers"
-            :items="data"
+            :items="!conference ? data : data.filter(function( item ){ return item.short == conference }) "
             class="grey lighten-5"
             item-key="title"
         >
@@ -35,7 +35,7 @@
 import { filterMembers } from "../../functions/members.js"
 
 export default {
-    props: [ 'data' ],
+    props: [ 'data', 'conference' ],
     data(){
         return{
             headers: [

@@ -1,12 +1,5 @@
 <template>
   <div class="home">
-
-      <!-- <v-btn @click="go">ClickHere</v-btn>
-      <div class="block" ref="square">Teste</div> -->
-
-      <!--<div class="presentation grey lighten-3">
-          <h1> {{ $t('welcomeMsg') }} </h1>
-      </div> -->
     <div class="display-3 presentation">
       <b>{{ $t("welcomeMsg") }}</b>
     </div>

@@ -13,9 +13,20 @@
             </template>
           </v-select>
         </v-col>
+        <v-col cols="4">
+          <v-select clearable outlined dense v-model="currentConference" :items="conferences" attach chips color="base" :label="'Conference'">
+            <template v-slot:selection="{ attrs, item}">
+              <v-chip v-bind="attrs" class="white--text" color="base">
+                <template class="pr-2">
+                  {{ item }}
+                </template>
+              </v-chip>
+            </template>
+          </v-select>
+        </v-col>
       </v-card-title>
     </v-card>
-    <list-publications :data="filtered.length ? filtered : all()"/>
+    <list-publications :data="filtered.length ? filtered : all()" :conference="currentConference"/>
   </div>
 </template>
 
@@ -34,6 +45,7 @@ export default {
         return {
             lastDateSelected: [ 2020 ],
             selectedYears: [ ],
+            currentConference: "",
             publicacoes: Publications,
             expanded: [],
             singleExpand: false,
@@ -54,6 +66,9 @@ export default {
     computed: {
       years(){
         return new filterPublications().getYears()
+      },
+      conferences(){
+        return new filterPublications().getConferences()
       },
       filtered(){
         return new filterPublications().byYears(this.selectedYears)
