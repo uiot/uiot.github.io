@@ -81,8 +81,10 @@
         </v-row>
     </div>
     <div class="team">
-      <h2 class="base--text">  <v-icon class="base--text" size="40"> mdi-account-group </v-icon> <b> {{ $t('team.title') }} </b> </h2>
-      <p class="text"> {{ $t("team.text") }} </p>
+      <div class="image">
+      </div>
+        <h2 class="base--text">  <v-icon class="base--text" size="40"> mdi-account-group </v-icon> <b> {{ $t('team.title') }} </b> </h2>
+        <h3 class="text black--text"> <b>{{ $t("team.text") }}</b> </h3>
     </div>
   </div>
 </template>
@@ -188,6 +190,10 @@ export default {
 }
 
 .team{
+  position: relative;
+  z-index: 1;
+
+  background-size: 100%;  
   padding-top: 2%;
   padding-bottom: 2%;
   padding-left: 2%;
@@ -196,6 +202,19 @@ export default {
   font-family: 'Titillium Web', sans-serif;
   font-size: 13px;
   height: 300px;
+}
+
+.team .image {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url('../assets/unb1.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  opacity: 30%;
 }
 
 .icon{
