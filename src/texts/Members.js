@@ -43,7 +43,7 @@ const Members = [
         },
         {
             key: "desousa",
-            name: "Rafael Timóteo",
+            name: "Rafael de Sousa Jr.",
             area: "Professor Dr. Engenharia Elétrica",
             role: "",
             email: "desousa@unb.br",
@@ -60,7 +60,7 @@ const Members = [
         },
         {
             key: "franciscocaldasf",
-            name: "Francisco Caldas",
+            name: "Francisco de Caldas Filho",
             area: "Doutorando em Engenharia Elétrica",
             role: "",
             email: "francisco.caldas@uiot.org",
