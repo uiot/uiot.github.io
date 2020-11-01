@@ -2,6 +2,7 @@ const projects = {
     middleware: {
         title: "Middleware UIoT",
         subtitle: "Short description",
+        bind: "middleware",
         projects: [
             { 
                 name: "Gateway", 
@@ -88,6 +89,7 @@ const projects = {
     covid: {
         title: "Amoris",
         subtitle: "Short description",
+        bind: "amoris",
         projects: [
             {
                 name: "Dashboard Covid",
