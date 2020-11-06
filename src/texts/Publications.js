@@ -1,6 +1,44 @@
 const Publications = [
             {
                 year: 2020,
+                title: "Technological Solution Development During the COVID-19 Pandemic: a Case Study in an IoT Lab",
+                authors: [
+                    "patrao",
+                    "franciscocaldasf",
+                    "gustavoluz",
+                    "carolinasartori",
+                    "fabiomendonca",
+                    "desousa"
+                ],
+                type: "conference",
+                name: "",
+                short: "GCAIoT 2020",
+                publication_link: "",
+                download: "",
+                language: "en",
+                published: false
+            },
+            {
+                year: 2020,
+                title: "Optimization Model for an Individualized IoT Ambient Monitoring and Control System",
+                authors: [
+                    "patrao",
+                    "lucasmartins",
+                    "franciscocaldasf",
+                    "marcosandrade",
+                    "fernandaformiga",
+                    "desousa"
+                ],
+                type: "conference",
+                name: "",
+                short: "GCAIoT 2020",
+                publication_link: "",
+                download: "",
+                language: "en",
+                published: false
+            },
+            {
+                year: 2020,
                 title: "Monitoramento e controle de ambientes com base em aprendizagem de máquina e computação em nevoeiro em arquitetura IoT",
                 authors: [
                     "patrao",
@@ -17,7 +55,8 @@ const Publications = [
                 short: "CISTI 2020",
                 publication_link: "https://ieeexplore.ieee.org/abstract/document/9141085",
                 download: "",
-                language: "pt-br"
+                language: "pt-br",
+                published: true
             },
             {
                 year: 2019,
@@ -34,7 +73,8 @@ const Publications = [
                 short: "IoTBDS 2019",
                 publication_link: "https://www.scitepress.org/PublicationsDetail.aspx?ID=2Wb+aNVirL0=&t=1",
                 download: "polettietal2019.pdf",
-                language: "en"
+                language: "en",
+                published: true
             },
             {
                 year: 2019,
@@ -52,7 +92,8 @@ const Publications = [
                 short: "JNIC 2019",
                 publication_link: "https://2019.jnic.es/Actas_JNIC2019.pdf",
                 download: "",
-                language: "en"
+                language: "en",
+                published: true
             },
             {
                 year: 2019,
@@ -70,7 +111,8 @@ const Publications = [
                 short: "WCNPS 2019",
                 publication_link: "https://ieeexplore.ieee.org/document/8896313",
                 download: "",
-                language: "en"
+                language: "en",
+                published: true
             },
             {
                 year: 2019,
@@ -89,7 +131,8 @@ const Publications = [
                 short: "WCNPS 2019",
                 publication_link: "https://ieeexplore.ieee.org/document/8896297",
                 download: "",
-                language: "en"
+                language: "en",
+                published: true
             },
             {
                 year: 2019,
@@ -107,7 +150,8 @@ const Publications = [
                 short: "WCNPS 2019",
                 publication_link: "https://ieeexplore.ieee.org/document/8896242",
                 download: "",
-                language: "en"
+                language: "en",
+                published: true
             },
             {
                 year: 2019,
@@ -125,7 +169,8 @@ const Publications = [
                 short: "WCNPS 2019",
                 publication_link: "https://ieeexplore.ieee.org/document/8896311",
                 download: "",
-                language: "en"
+                language: "en",
+                published: true
             },
             {
                 year: 2019,
@@ -138,7 +183,8 @@ const Publications = [
                 short: "UnB",
                 publication_link: "https://repositorio.unb.br/handle/10482/38655",
                 download: "",
-                language: "en"
+                language: "en",
+                published: true
             },
             {
                 year: 2019,
@@ -151,7 +197,8 @@ const Publications = [
                 short: "UnB",
                 publication_link: "https://repositorio.unb.br/handle/10482/38117",
                 download: "",
-                language: "pt-br"
+                language: "pt-br",
+                published: true
             },
             {
                 year: 2019,
@@ -171,7 +218,8 @@ const Publications = [
                 short: "FedCSIS 2019",
                 publication_link: "https://fedcsis.org/proceedings/2019/drp/263.html",
                 download: "",
-                language: "en"
+                language: "en",
+                published: true
             },
             {
                 year: 2019,
@@ -191,7 +239,8 @@ const Publications = [
                 short: "SBSeg 2019",
                 publication_link: "https://sbseg2019.ime.usp.br/artigos.html",
                 download: "",
-                language: "pt-br"
+                language: "pt-br",
+                published: true
             },
             {
                 year: 2019,
@@ -212,7 +261,8 @@ const Publications = [
                 short: "FedCSIS 2019",
                 publication_link: "https://fedcsis.org/proceedings/2019/drp/329.html",
                 download: "",
-                language: "en"
+                language: "en",
+                published: true
             },
             {
                 year: 2018,
@@ -230,7 +280,8 @@ const Publications = [
                 short: "WCNPS 2018",
                 publication_link: "https://ieeexplore.ieee.org/abstract/document/8604444",
                 download: "",
-                language: "en"
+                language: "en",
+                published: true
             },
             {
                 year: 2018,
@@ -247,7 +298,8 @@ const Publications = [
                 short: "SBrT 2018",
                 publication_link: "",
                 download: "",
-                language: "pt-br"
+                language: "pt-br",
+                published: true
             },
             {
                 year: 2017,
@@ -264,7 +316,8 @@ const Publications = [
                 short: "WCNPS 2017",
                 publication_link: "https://ieeexplore.ieee.org/document/8252938",
                 download: "",
-                language: "en"
+                language: "en",
+                published: true
             },
             {
                 year: 2017,
@@ -281,7 +334,8 @@ const Publications = [
                 short: "UCC/BDCAT 2017",
                 publication_link: "https://dl.acm.org/doi/10.1145/3147234.3148092",
                 download: "",
-                language: "en"
+                language: "en",
+                published: true
             },
             {
                 year: 2017,
@@ -299,7 +353,8 @@ const Publications = [
                 short: "UCC/BDCAT 2017",
                 publication_link: "http://doi.acm.org/10.1145/3147234.3148091",
                 download: "",
-                language: "en"
+                language: "en",
+                published: true
             },
             {
                 year: 2017,
@@ -317,7 +372,8 @@ const Publications = [
                 short: "Sensors",
                 publication_link: "http://www.mdpi.com/1424-8220/17/5/977",
                 download: "",
-                language: "en"
+                language: "en",
+                published: true
             },
             {
                 year: 2017,
@@ -330,7 +386,8 @@ const Publications = [
                 short: "UnB",
                 publication_link: "https://repositorio.unb.br/handle/10482/31146",
                 download: "",
-                language: "pt-br"
+                language: "pt-br",
+                published: true
             },
             {
                 year: 2017,
@@ -344,7 +401,8 @@ const Publications = [
                 short: "Cluster Comput",
                 publication_link: "http://link.springer.com/10.1007/s10586-017-0729-3",
                 download: "",
-                language: "en"
+                language: "en",
+                published: true
             },
             {
                 year: 2017,
@@ -361,7 +419,8 @@ const Publications = [
                 short: "CIAWI 2017",
                 publication_link: "http://www.iadisportal.org/digital-library/proposta-de-ado%C3%A7%C3%A3o-de-microsservi%C3%A7os-em-iot",
                 download: "",
-                language: "pt-br"
+                language: "pt-br",
+                published: true
             },
             {
                 year: 2017,
@@ -379,7 +438,8 @@ const Publications = [
                 short: "CIACA 2017",
                 publication_link: "http://www.iadisportal.org/digital-library/gerenciamento-de-servi%C3%A7os-iot-com-gateway-sem%C3%A2ntico",
                 download: "",
-                language: "pt-br"
+                language: "pt-br",
+                published: true
             },
             {
                 year: 2016,
@@ -396,7 +456,8 @@ const Publications = [
                 short: "Wireless Pers Commum",
                 publication_link: "https://link.springer.com/article/10.1007%2Fs11277-015-3168-6",
                 download: "",
-                language: "en"
+                language: "en",
+                published: true
             },
             {
                 year: 2016,
@@ -413,7 +474,8 @@ const Publications = [
                 short: "SBrT",
                 publication_link: "http://sbrt.org.br/sbrt2016/anais/",
                 download: "",
-                language: "pt-br"
+                language: "pt-br",
+                published: true
             },
             {
                 year: 2016,
@@ -429,7 +491,8 @@ const Publications = [
                 short: "SBBD 2016",
                 publication_link: "http://sbbd2016.fpc.ufba.br/artigos-aceitos/",
                 download: "",
-                language: "pt-br"
+                language: "pt-br",
+                published: true
             },
             {
                 year: 2014,
@@ -444,7 +507,8 @@ const Publications = [
                 short: "IJES",
                 publication_link: "http://www.inderscience.com/link.php?id=63816",
                 download: "",
-                language: "en"
+                language: "en",
+                published: true
             },
             {
                 year: 2014,
@@ -457,7 +521,8 @@ const Publications = [
                 short: "UnB",
                 publication_link: "https://repositorio.unb.br/handle/10482/17251",
                 download: "",
-                language: "pt-br"
+                language: "pt-br",
+                published: true
             },
             {
                 year: 2014,
@@ -473,7 +538,8 @@ const Publications = [
                 short: "CISTI 2014",
                 publication_link: "https://ieeexplore.ieee.org/document/6877069",
                 download: "",
-                language: "en"
+                language: "en",
+                published: true
             },
             {
                 year: 2013,
@@ -488,7 +554,8 @@ const Publications = [
                 short: "WiMob 2013",
                 publication_link: "https://ieeexplore.ieee.org/document/6673340/",
                 download: "",
-                language: "en"
+                language: "en",
+                published: true
             },
         ]
 

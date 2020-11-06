@@ -14,7 +14,7 @@
                             <td v-else-if="item.language === 'en'"> <img width="20" :src="require(`@/assets/united-states.png`)"> </td>
                             <td v-else-if="item.language === 'pt-br'"> <img width="20" :src="require(`@/assets/brazil.png`)"> </td>
                             <td v-else></td>
-                            <td>{{ item.title }}</td>
+                            <td>{{ item.title }} <span v-if="!item.published" class="highlight"><br> &laquo;not published yet&raquo; </span> </td>
                             <td><span>{{ item.short }}</span> <span v-if="!item.short" >({{ item.type }})</span> </td>
                             <td>{{ item.authors | getAuthorsNames }}</td>
                             <td>
@@ -57,3 +57,11 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+.highlight{
+    font-style: oblique;
+    font-stretch: condensed;
+    font-weight: bold;
+}
+</style>

@@ -187,6 +187,55 @@ const Members = [
             }
         },
         {
+            key: "fernandaformiga",
+            name: "Fernanda Formiga",
+            area: "Area atuação",
+            role: "",
+            email: "email@email.com",
+            picture: "woman",
+            bio: "",
+            lattes: "",
+            linkedin: "",
+            belong: true,
+            lab: {
+                active: true,
+                area: "software",
+            }
+        },
+
+        {
+            key: "gustavoluz",
+            name: "Gustavo da Luz",
+            area: "Area atuação",
+            role: "",
+            email: "email@email.com",
+            picture: "man",
+            bio: "",
+            lattes: "",
+            linkedin: "",
+            belong: true,
+            lab: {
+                active: true,
+                area: "software",
+            }
+        },
+        {
+            key: "carolinasartori",
+            name: "Carolina Sartori",
+            area: "Area atuação",
+            role: "",
+            email: "email@email.com",
+            picture: "woman",
+            bio: "",
+            lattes: "",
+            linkedin: "",
+            belong: true,
+            lab: {
+                active: true,
+                area: "software",
+            }
+        },
+        {
             key: "justino",
             name: "Bruno Justino G. Praciano",
             area: "Area atuação",
