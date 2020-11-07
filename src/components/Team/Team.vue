@@ -14,6 +14,7 @@
                         <v-btn rounded outlined :class="`blue ${chardware}`" @click="filterMembers('hardware')"> Hardware </v-btn>
                         <v-btn rounded outlined :class="`green ${csoftware}`" @click="filterMembers('software')"> Software </v-btn> 
                         <v-btn rounded outlined :class="`red ${csecurity}`" @click="filterMembers('security')"> Security </v-btn>
+                        <v-btn rounded outlined :class="`purple ${cquality}`" @click="filterMembers('quality')"> Quality </v-btn>
                     </v-col>
                     <v-col cols="3">  </v-col>
                 </v-row>
@@ -41,6 +42,7 @@ export default {
         chardware: "lighten-5",
         csoftware: "lighten-5",
         csecurity: "lighten-5",
+        cquality: "lighten-5",
         current_team: [],
         current_option: "",
         
@@ -56,7 +58,8 @@ filters: {
         coordination(){ return new filterMembers().byArea('coordination') },
         software(){ return new filterMembers().byArea('software') },
         hardware(){ return new filterMembers().byArea('hardware') },
-        security(){ return new filterMembers().byArea('security') }
+        security(){ return new filterMembers().byArea('security') },
+        quality(){ return new filterMembers().byArea('quality') }
     },
     methods: {
         filterMembers(area){
@@ -68,6 +71,8 @@ filters: {
                 this.current_team = this.hardware
             }else if(area == 'security'){
                 this.current_team = this.security
+            }else if(area == 'quality'){
+                this.current_team = this.quality
             }
         },
         setSelectedColors(area){
@@ -75,14 +80,22 @@ filters: {
                 this.csoftware = "lighten-3"
                 this.chardware = "lighten-5"
                 this.csecurity = "lighten-5"
+                this.cquality = "lighten-5"
             }else if(area == 'hardware'){
                 this.csoftware = "lighten-5"
                 this.chardware = "lighten-3"
                 this.csecurity = "lighten-5"
+                this.cquality = "lighten-5"
             }else if(area == 'security'){
                 this.csoftware = "lighten-5"
                 this.chardware = "lighten-5"
                 this.csecurity = "lighten-3"
+                this.cquality = "lighten-5"
+            }else if(area == 'quality'){
+                this.csoftware = "lighten-5"
+                this.chardware = "lighten-5"
+                this.csecurity = "lighten-5"
+                this.cquality = "lighten-3"
             }
         }
     }
