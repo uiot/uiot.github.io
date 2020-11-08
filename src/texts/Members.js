@@ -29,7 +29,6 @@ const Members = [
             key: "lucasmartins",
             name: "Lucas Martins",
             area: "Doutorando em Engenharia Elétrica",
-            role: "software",
             email: "lucas.martins@uiot.org",
             picture: "man",
             bio: "A cool person",
@@ -37,7 +36,7 @@ const Members = [
             linkedin: "meu linked-in",
             belong: true,
             lab: {
-                active: false,
+                active: true,
                 area: "coordination",
             }
         },
@@ -45,7 +44,6 @@ const Members = [
             key: "desousa",
             name: "Rafael de Sousa Jr.",
             area: "Professor Dr. Engenharia Elétrica",
-            role: "",
             email: "desousa@unb.br",
             picture: "man",
             bio: "",
@@ -53,7 +51,7 @@ const Members = [
             linkedin: "",
             belong: true,
             lab: {
-                active: false,
+                active: true,
                 area: "coordination",
             },
             order: 0
@@ -62,7 +60,6 @@ const Members = [
             key: "franciscocaldasf",
             name: "Francisco de Caldas Filho",
             area: "Doutorando em Engenharia Elétrica",
-            role: "",
             email: "francisco.caldas@uiot.org",
             picture: "man",
             bio: "",
@@ -70,7 +67,7 @@ const Members = [
             linkedin: "",
             belong: true,
             lab: {
-                active: false,
+                active: true,
                 area: "coordination",
             },
             order: 2
@@ -125,23 +122,22 @@ const Members = [
         {
             key: "fabiomendonca",
             name: "Fábio L. L. de Mendonça",
-            area: "Area atuação",
-            role: "",
+            area: "Doutorando em Engenharia Elétrica",
             email: "email@email.com",
             picture: "man",
             bio: "",
             lattes: "",
             linkedin: "",
-            belong: true,
+            belong: false,
             lab: {
-                active: true,
-                area: "software",
+                active: false,
+                area: "coordination",
             }
         },
         {
             key: "marcosandrade",
             name: "Marcos B. Andrade",
-            area: "Area atuação",
+            area: "Engenharia da Computação",
             role: "hardware",
             email: "marcos.blandim@uiot.org",
             picture: "man",
@@ -150,14 +146,14 @@ const Members = [
             linkedin: "",
             belong: true,
             lab: {
-                active: false,
+                active: true,
                 area: "hardware",
             }
         },
         {
             key: "matheusmonteiro",
             name: "Matheus S. Monteiro",
-            area: "Area atuação",
+            area: "Engenharia de Redes de Comunicação",
             role: "hardware",
             email: "matheus.monteiro@uiot.org",
             picture: "man",
@@ -173,7 +169,7 @@ const Members = [
         {
             key: "patrao",
             name: "Rafael L. Patrão",
-            area: "Area atuação",
+            area: "Engenharia de Produção",
             role: "quality",
             email: "rafael.patrao@uiot.org",
             picture: "man",
@@ -189,7 +185,7 @@ const Members = [
         {
             key: "fernandaformiga",
             name: "Fernanda Formiga",
-            area: "Area atuação",
+            area: "Engenharia de Produção",
             role: "software",
             email: "fernanda.formiga@uiot.org",
             picture: "woman",
@@ -206,7 +202,7 @@ const Members = [
         {
             key: "gustavoluz",
             name: "Gustavo Pessoa Caixeta Pinto da Luz",
-            area: "Area atuação",
+            area: "Engenharia de Produção",
             role: "software",
             email: "gustavo.luz@uiot.org",
             picture: "man",
@@ -222,7 +218,7 @@ const Members = [
         {
             key: "carolinasartori",
             name: "Carolina Sartori da Silva",
-            area: "Area atuação",
+            area: "",
             role: "software",
             email: "carolina.silva@uiot.org",
             picture: "woman",
@@ -238,7 +234,7 @@ const Members = [
         {
             key: "justino",
             name: "Bruno Justino G. Praciano",
-            area: "Area atuação",
+            area: "Mestrando em Engenharia Elétrica",
             role: "software",
             email: "email@email.com",
             picture: "man",
@@ -254,7 +250,7 @@ const Members = [
         {
             key: "robsonalbuquerde",
             name: "Robson de O. Albuquerque",
-            area: "Area atuação",
+            area: "",
             role: "orientation",
             email: "email@email.com",
             picture: "man",
@@ -270,7 +266,7 @@ const Members = [
         {
             key: "lustosa",
             name: "João Paulo C. L. da Costa",
-            area: "Area atuação",
+            area: "",
             role: "orientation",
             email: "email@email.com",
             picture: "man",
@@ -286,7 +282,7 @@ const Members = [
         {
             key: "cassioribeiro",
             name: "Cassio Fabius C. Ribeiro",
-            area: "Area atuação",
+            area: "Mestrando em Engenharia Elétrica",
             role: "hardware",
             email: "cassio.fabius@uiot.org",
             picture: "man",
@@ -302,7 +298,7 @@ const Members = [
         {
             key: "fiuza",
             name: "João F. de Alencastro",
-            area: "Area atuação",
+            area: "Engenharia de Redes de Comunicação",
             role: "software",
             email: "email@email.com",
             picture: "man",
@@ -318,7 +314,7 @@ const Members = [
         {
             key: "maristelaholanda",
             name: "Maristela Holanda",
-            area: "Area atuação",
+            area: "",
             role: "orientation",
             email: "email@email.com",
             picture: "woman",
@@ -334,7 +330,7 @@ const Members = [
         {
             key: "thalessperling",
             name: "Thales L. von Sperling",
-            area: "Area atuação",
+            area: "Engenharia de Redes de Comunicação",
             role: "software",
             email: "email@email.com",
             picture: "man",
@@ -350,7 +346,7 @@ const Members = [
         {
             key: "dayannecunha",
             name: "Dayanne Cunha",
-            area: "Area atuação",
+            area: "Ciencia da Computação",
             role: "software",
             email: "email@email.com",
             picture: "woman",
@@ -366,8 +362,7 @@ const Members = [
         {
             key: "mateuszanatta",
             name: "Mateus da R. Zanatta",
-            area: "Area atuação",
-            role: "",
+            area: "",
             email: "email@email.com",
             picture: "man",
             bio: "",
@@ -382,7 +377,7 @@ const Members = [
         {
             key: "brunodutra",
             name: "Bruno V. Dutra",
-            area: "Area atuação",
+            area: "Ciencia da Computação",
             role: "security",
             email: "email@email.com",
             picture: "man",
@@ -398,7 +393,7 @@ const Members = [
         {
             key: "brunofranca",
             name: "Bruno de A. França",
-            area: "Area atuação",
+            area: "Engenharia de Redes de Comunicação",
             role: "software",
             email: "email@email.com",
             picture: "man",
@@ -414,7 +409,7 @@ const Members = [
         {
             key: "kfouri",
             name: "Guilherme de O. Kfouri",
-            area: "Area atuação",
+            area: "Engenharia Elétrica",
             role: "security",
             email: "email@email.com",
             picture: "man",
@@ -430,7 +425,7 @@ const Members = [
         {
             key: "gersonsilva",
             name: "Gerson do N. Silva",
-            area: "Area atuação",
+            area: "",
             role: "software",
             email: "email@email.com",
             picture: "man",
@@ -446,7 +441,7 @@ const Members = [
         {
             key: "tribouilet",
             name: "João Tribouilet M. de Menezes",
-            area: "Area atuação",
+            area: "Engenharia de Redes de Comunicação",
             role: "software",
             email: "email@email.com",
             picture: "man",
@@ -462,7 +457,7 @@ const Members = [
         {
             key: "demetriosilvaf",
             name: "Demétrio A. da Silva Filho",
-            area: "Area atuação",
+            area: "Professor Dr. em Física",
             role: "orientation",
             email: "email@email.com",
             picture: "man",
@@ -478,7 +473,7 @@ const Members = [
         {
             key: "barenco",
             name: "Cláudia J. Barenco Abbas",
-            area: "Area atuação",
+            area: "Professora Dra. Egenharia Elétrica",
             role: "orientation",
             email: "email@email.com",
             picture: "woman",
@@ -494,7 +489,7 @@ const Members = [
         {
             key: "ednacanedo",
             name: "Edna D. Canedo",
-            area: "Area atuação",
+            area: "",
             role: "orientation",
             email: "email@email.com",
             picture: "woman",
@@ -510,7 +505,7 @@ const Members = [
         {
             key: "rodrigorocha",
             name: "Rodrigo L. Rocha",
-            area: "Area atuação",
+            area: "",
             role: "hardware",
             email: "email@email.com",
             picture: "man",
@@ -526,7 +521,7 @@ const Members = [
         {
             key: "rubenhuacarpuma",
             name: "Ruben C. Huacarpuma",
-            area: "Area atuação",
+            area: "",
             role: "",
             email: "email@email.com",
             picture: "man",
@@ -542,8 +537,7 @@ const Members = [
         {
             key: "ingridaraujo",
             name: "Ingrid P. Araújo",
-            area: "Area atuação",
-            role: "",
+            area: "",
             email: "email@email.com",
             picture: "woman",
             bio: "",
@@ -558,8 +552,7 @@ const Members = [
         {
             key: "fabiobuiati",
             name: "Fábio Buiati",
-            area: "Area atuação",
-            role: "",
+            area: "",
             email: "email@email.com",
             picture: "man",
             bio: "",
@@ -574,8 +567,7 @@ const Members = [
         {
             key: "luisvillalba",
             name: "Luis Javier García Villalba",
-            area: "Area atuação",
-            role: "",
+            area: "",
             email: "email@email.com",
             picture: "man",
             bio: "",
@@ -590,8 +582,7 @@ const Members = [
         {
             key: "taikim",
             name: "Tai-Hoon Kim",
-            area: "Area atuação",
-            role: "",
+            area: "",
             email: "email@email.com",
             picture: "man",
             bio: "",
@@ -606,7 +597,7 @@ const Members = [
         {
             key: "caiosilva",
             name: "Caio C. M. Silva",
-            area: "Area atuação",
+            area: "",
             role: "software",
             email: "email@email.com",
             picture: "man",
@@ -622,8 +613,7 @@ const Members = [
         {
             key: "samuelalmeida",
             name: "Samuel Almeida",
-            area: "Area atuação",
-            role: "",
+            area: "",
             email: "email@email.com",
             picture: "man",
             bio: "",
@@ -638,8 +628,7 @@ const Members = [
         {
             key: "poletti",
             name: "João V. Poletti",
-            area: "Area atuação",
-            role: "",
+            area: "",
             email: "email@email.com",
             picture: "man",
             bio: "",
@@ -654,7 +643,7 @@ const Members = [
         {
             key: "felipemachado",
             name: "Felipe D. Machado",
-            area: "Area atuação",
+            area: "",
             role: "hardware",
             email: "email@email.com",
             picture: "man",
@@ -670,8 +659,7 @@ const Members = [
         {
             key: "sergiolifschitz",
             name: "Sérgio Lifschitz",
-            area: "Area atuação",
-            role: "",
+            area: "",
             email: "email@email.com",
             picture: "man",
             bio: "",
@@ -686,7 +674,7 @@ const Members = [
         {
             key: "hiroferreira",
             name: "Hiro G. C. Ferreira",
-            area: "Area atuação",
+            area: "Engenharia de Redes de Comunicação",
             role: "software",
             email: "email@email.com",
             picture: "man",
@@ -702,7 +690,7 @@ const Members = [
         {
             key: "giozza",
             name: "William F. Giozza",
-            area: "Area atuação",
+            area: "Professor Dr. Engenharia Elétrica",
             role: "orientation",
             email: "email@email.com",
             picture: "man",
@@ -718,7 +706,7 @@ const Members = [
         {
             key: "flavioelias",
             name: "Flávio Elias G. de Deus",
-            area: "Area atuação",
+            area: "Professor Dr. Engenharia Elétrica",
             role: "orientation",
             email: "email@email.com",
             picture: "man",
@@ -735,8 +723,7 @@ const Members = [
         {
             key: "danielsilva",
             name: "Daniel A. da Silva",
-            area: "Area atuação",
-            role: "",
+            area: "",
             email: "email@email.com",
             picture: "man",
             bio: "",
@@ -751,8 +738,7 @@ const Members = [
         {
             key: "josetorres",
             name: "José Alberto S. Torres",
-            area: "Area atuação",
-            role: "",
+            area: "",
             email: "email@email.com",
             picture: "man",
             bio: "",
@@ -767,8 +753,7 @@ const Members = [
         {
             key: "alexandrepinheiro",
             name: "Alexandre Pinheiro",
-            area: "Area atuação",
-            role: "",
+            area: "",
             email: "email@email.com",
             picture: "man",
             bio: "",
@@ -784,7 +769,7 @@ const Members = [
         {
             key: "annarosa",
             name: "Anna Carolina Ferreira Rosa",
-            area: "Curso",
+            area: "Engenharia de Redes de Comunicação",
             role: "hardware",
             email: "anna.rosa@uiot.org",
             picture: "woman",
@@ -800,7 +785,7 @@ const Members = [
         {
             key: "hectoroliveira",
             name: "Hector Wender dos Santos Oliveira",
-            area: "Curso",
+            area: "Cência da Computação",
             role: "hardware",
             email: "hector.oliveira@uiot.org",
             picture: "man",
@@ -816,7 +801,7 @@ const Members = [
         {
             key: "jonathasalves",
             name: "Jonathas Alves de Oliveira",
-            area: "Curso",
+            area: "Ciência da Computação",
             role: "software",
             email: "jonatas.alves@uiot.org",
             picture: "man",
@@ -832,7 +817,7 @@ const Members = [
         {
             key: "nayarasilva",
             name: "Nayara Rossi Brito da Silva",
-            area: "Curso",
+            area: "Ciência da Computação",
             role: "software",
             email: "nayara.silva@uiot.org",
             picture: "woman",
@@ -848,7 +833,7 @@ const Members = [
         {
             key: "rafaelzerbini",
             name: "Rafael Zerbini Alves da Mata",
-            area: "Curso",
+            area: "Engenharia de Redes de Comunicação",
             role: "security",
             email: "rafael.zerbini@uiot.org",
             picture: "man",
@@ -864,7 +849,7 @@ const Members = [
         {
             key: "viniciuscosta",
             name: "Vinicius Salgueiro Costa",
-            area: "Curso",
+            area: "",
             role: "hardware",
             email: "vinicius.costa@uiot.org",
             picture: "man",
@@ -880,7 +865,7 @@ const Members = [
         {
             key: "paulomendes",
             name: "Paulo Henrique Ferreira Campos Mendes",
-            area: "Curso",
+            area: "Mestrando em Engenharia Elétrica",
             role: "software",
             email: "paulo.mendes@uiot.org",
             picture: "man",
@@ -896,7 +881,7 @@ const Members = [
         {
             key: "nataliamarques",
             name: "Natália Andrade Marques",
-            area: "Curso",
+            area: "Engenharia de Redes de Comunicação",
             role: "software",
             email: "natalia.marques@uiot.org",
             picture: "woman",
@@ -912,7 +897,7 @@ const Members = [
         {
             key: "lucascoelho",
             name: "Lucas Coelho de Almeida",
-            area: "Curso",
+            area: "Mestrando em Engenharia Elétrica",
             role: "software",
             email: "lucas.coelho@uiot.org",
             picture: "man",
@@ -928,7 +913,7 @@ const Members = [
         {
             key: "leonardoalmeida",
             name: "Leonardo de Oliveira Almeida",
-            area: "Curso",
+            area: "Engenharia de Redes de Comunicação",
             role: "quality",
             email: "leonardo.almeida@uiot.org",
             picture: "man",
@@ -944,7 +929,7 @@ const Members = [
         {
             key: "mariaflavia",
             name: "Maria Flávia da Rocha Soares",
-            area: "Curso",
+            area: "",
             role: "software",
             email: "flavia.maria@uiot.org",
             picture: "woman",
@@ -960,7 +945,7 @@ const Members = [
         {
             key: "pedrosusa",
             name: "Pedro de Oliveira Moura e Souza",
-            area: "Curso",
+            area: "Engenharia de Redes de Comunicação",
             role: "software",
             email: "pedro.susa@uiot.org",
             picture: "man",
@@ -976,7 +961,7 @@ const Members = [
         {
             key: "heitorvieira",
             name: "Heitor Magalhães Vieira",
-            area: "Curso",
+            area: "Engenharia de Redes de Comunicação",
             role: "software",
             email: "heitor.vieira@uiot.org",
             picture: "man",

@@ -1,8 +1,7 @@
 <template>
     <div>
-        <v-card :color="colors[index%5]" dark>
+        <v-card :color="getColor(index, person.lab.active)" dark>
             <div class="d-flex flex-no-wrap justify-space-between black--text">
-                
                 <div class="content-body">
                     <v-card-title class="headline"> {{person.name}} </v-card-title>
                     <v-card-text>
@@ -56,6 +55,13 @@ export default {
         },
         publications(member){
             return new filterPublications().byOneMember(member)
+        },
+        getColor(index, active){
+            if(active){
+                return this.colors[index%5]
+            }else{
+                return this.colors[index%5] + "30"
+            }
         }
     }
 }
@@ -64,5 +70,8 @@ export default {
 <style scoped>
 .content-body{
     text-align: left;
+}
+.teste{
+    size: 100px;
 }
 </style>
