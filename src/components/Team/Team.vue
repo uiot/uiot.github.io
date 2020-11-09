@@ -25,6 +25,18 @@
                 <profile :person="item" :index="i" />
             </v-col>
         </v-row>
+            <div v-show="current_option" :style="{ 'padding-top': '15px' }">
+                <v-divider/>
+                <h3 class="grey--text" :style="{ 'padding-left': '10px', 'padding-top': '5px' }">
+                    {{ $t('statusMember') }}
+                </h3>
+            </div>
+        <v-row>
+            <v-col v-for="(item, i) in left_team" :key="item.key" xs="12" sm="12" md="6" xl="4">
+                <profile :person="item" :index="i" />
+            </v-col>
+        </v-row>
+            
     </div>    
 </template>
 
@@ -44,6 +56,7 @@ export default {
         csecurity: "lighten-5",
         cquality: "lighten-5",
         current_team: [],
+        left_team: [],
         current_option: "",
         
     }),
@@ -55,11 +68,19 @@ filters: {
     }
 },
     computed: {
-        coordination(){ return new filterMembers().byArea('coordination') },
-        software(){ return new filterMembers().byArea('software') },
-        hardware(){ return new filterMembers().byArea('hardware') },
-        security(){ return new filterMembers().byArea('security') },
-        quality(){ return new filterMembers().byArea('quality') }
+        coordination(){ return new filterMembers().byAreaCurrent('coordination') },
+        software(){ return new filterMembers().byAreaCurrent('software') },
+        hardware(){ return new filterMembers().byAreaCurrent('hardware') },
+        security(){ return new filterMembers().byAreaCurrent('security') },
+        quality(){ return new filterMembers().byAreaCurrent('quality') },
+
+        lcoordination(){ return new filterMembers().byAreaLeft('coordination') },
+        lsoftware(){ return new filterMembers().byAreaLeft('software') },
+        lhardware(){ return new filterMembers().byAreaLeft('hardware') },
+        lsecurity(){ return new filterMembers().byAreaLeft('security') },
+        lquality(){ return new filterMembers().byAreaLeft('quality') }
+
+
     },
     methods: {
         filterMembers(area){
@@ -67,12 +88,16 @@ filters: {
             this.setSelectedColors(area)
             if(area == 'software'){
                 this.current_team = this.software
+                this.left_team = this.lsoftware
             }else if(area == 'hardware'){
                 this.current_team = this.hardware
+                this.left_team = this.lhardware
             }else if(area == 'security'){
                 this.current_team = this.security
+                this.left_team = this.lsecurity
             }else if(area == 'quality'){
                 this.current_team = this.quality
+                this.left_team = this.lquality
             }
         },
         setSelectedColors(area){

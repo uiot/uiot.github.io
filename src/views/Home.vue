@@ -211,7 +211,7 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url('../assets/unb1.jpg');
+  background-image: url('/assets/unb1.jpg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   opacity: 30%;

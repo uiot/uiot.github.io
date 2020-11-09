@@ -45,7 +45,9 @@ export default {
                 "#b1e3e2"
             ],
             dialog: false,
-            current_publications: []
+            current_publications: [],
+            current: [],
+            left: []
         }
     },
     methods: {
