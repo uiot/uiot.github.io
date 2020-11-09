@@ -3,7 +3,7 @@
         <v-container fluid>
             <main-title :title="`Coordenadores do projeto`"/>
             <v-row>
-                <v-col v-for="(item, i) in coordination" :key="item.key" xs="12" sm="12" md="6" xl="4">
+                <v-col v-for="(item, i) in coordination" :key="item.key" xs="12" sm="12" md="4" xl="4">
                     <profile :person="item" :index="i" />
                 </v-col>
             </v-row>
@@ -21,7 +21,7 @@
             </div>
         </v-container>
         <v-row>
-            <v-col v-for="(item, i) in current_team" :key="item.key" xs="12" sm="12" md="6" xl="4">
+            <v-col v-for="(item, i) in current_team" :key="item.key" xs="12" sm="12" md="4" xl="4">
                 <profile :person="item" :index="i" />
             </v-col>
         </v-row>
@@ -32,7 +32,7 @@
                 </h3>
             </div>
         <v-row>
-            <v-col v-for="(item, i) in left_team" :key="item.key" xs="12" sm="12" md="6" xl="4">
+            <v-col v-for="(item, i) in left_team" :key="item.key" xs="12" sm="12" md="4" xl="4">
                 <profile :person="item" :index="i" />
             </v-col>
         </v-row>
