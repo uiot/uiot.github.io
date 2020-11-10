@@ -1,26 +1,20 @@
 <template>
   <div class="home">
-    <div class="display-3 presentation">
+    <div class="display-3 presentation white--text">
       <b>{{ $t("welcomeMsg") }}</b>
     </div>
     <v-carousel cycle height="520" :show-arrows="false">
-      <v-carousel-item v-for="(slide, i) in slides" :key="i">
-        <v-sheet :color="colors[i]" height="100%">
-          <v-row class="fill-height" align="center" justify="center">
-
-          </v-row>
-        </v-sheet>
-      </v-carousel-item>
+      <v-carousel-item v-for="(image, i) in images" :key="i" :src="require(`@/assets/${image}.jpeg`)"/>        
     </v-carousel>
 
     <div class="barraAzul base"/>
 
     <div class="whatwedo">
-      <h2 class="base--text">  <v-icon class="base--text" size="40"> mdi-magnify </v-icon> <b> {{ $t('wwdo.title') }} </b> </h2>
+      <h2 class="base--text body-h1">  <v-icon class="base--text" size="40"> mdi-magnify </v-icon> <b> {{ $t('wwdo.title') }} </b> </h2>
       <p class="text"> {{ $t("wwdo.text") }} </p>
       <v-row>
         <v-col cols="12" xs="12" sm="12" md="4" lg="4" xl="4">
-          <v-card flat color="grey lighten-2">
+          <v-card flat color="grey lighten-2" min-height="170">
             <v-card-title>
               {{ $t("wwdo.hardware.title") }}
             </v-card-title>
@@ -30,7 +24,7 @@
           </v-card>
         </v-col>
         <v-col sm="12" md="4">
-          <v-card flat color="grey darken-3 white--text">
+          <v-card flat color="grey darken-3 white--text" min-height="170">
             <v-card-title>
               {{ $t("wwdo.software.title") }}
             </v-card-title>
@@ -40,17 +34,17 @@
           </v-card>
         </v-col>
         <v-col sm="12" md="4">
-          <v-card flat color="blue-grey lighten-2">
+          <v-card flat color="blue-grey lighten-2 white--text" min-height="170">
             <v-card-title>
               {{ $t("wwdo.security.title") }}
             </v-card-title>
-            <v-card-text>
+            <v-card-text class="white--text">
               {{ $t("wwdo.security.text") }}
             </v-card-text>
           </v-card>
         </v-col>
       </v-row>
-      <div>
+      <div :style="{ 'padding-top': '2%' }">
         <v-btn outlined class="base lighten-1 white--text" to="/projects"> <b> {{ $t("wwdo.button") }} </b> </v-btn>
       </div>
     </div>
@@ -61,16 +55,19 @@
         <v-row>
           <v-col xs="12" sm="12" md="6" lg="6" v-for="item in publications" :key="item.title">
             <v-hover v-slot:default="{ hover }" >
-              <v-card :elevation="hover ? 6 : 0" flat :color="item.color" min-height="75">
+              <v-card :elevation="hover ? 6 : 0" flat color="grey lighten-2" min-height="95">
                 <v-card-subtitle>
-                  <span class="font-weight-bold title_card"> {{ item.title }} </span>
+                  <span class="font-weight-bold title_card"> 
+                    {{ item.title }} <br> 
+                    <span class="body-1"> {{item.year}} </span>
+                  </span>
                 </v-card-subtitle>
               </v-card>
             </v-hover>
           </v-col>
           <v-col sm="12" md="6" lg="6">
             <v-hover v-slot:default="{ hover }" >
-              <v-card :elevation="hover ? 6 : 0" flat color="#a9d2db" min-height="75" @click="goTo('/publications')">
+              <v-card :elevation="hover ? 6 : 0" flat color="grey lighten-2" min-height="95" @click="goTo('/publications')">
                 <v-card-subtitle>
                   <span text> <h2> <strong> See more </strong> </h2> <v-icon size="15" class="icon">  mdi-plus-circle-outline </v-icon> </span>
                 </v-card-subtitle>
@@ -102,6 +99,11 @@ export default {
         'blue lighten-2',
         'green lighten-2',
         'red lighten-2',
+      ],
+      images: [
+        "cpu",
+        "motherboard",
+        "logic2",
       ],
       slides: [
         'The universal way of connecting things!',
@@ -158,7 +160,7 @@ export default {
 
 .whatwedo{
   padding-top: 2%;
-  padding-bottom: 2%;
+  padding-bottom: 3%;
   text-align: center;
   font-family: 'Titillium Web', sans-serif;
   font-size: 25px;
@@ -211,7 +213,8 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url('/assets/unb1.jpg');
+  /* background-image: url('https://imgur.com/a/aycZl22'); */
+  background-image: url('assets/unb1.jpg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   opacity: 30%;
