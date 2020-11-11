@@ -1,19 +1,20 @@
 <template>
-    <v-card flat tile class="component base white--text text-center">
+    <v-card flat tile class="component grey lighten-4 black--text text-center">
       <v-card-text>
-        <v-btn v-for="icon in icons" :key="icon.icon" class="mx-4 white--text" icon>
+        <v-btn v-for="icon in icons" :key="icon.icon" class="mx-4 black--text" icon>
           <v-btn rounded text :href="icon.link" target="_blank">
-            <v-icon size="24px" class="white--text">
+            <v-icon size="24px" class="black--text">
               {{ icon.icon }}
             </v-icon>
           </v-btn>
         </v-btn>
       </v-card-text>
-      <v-card-text class="white--text pt-0 main-text">
+      <v-divider></v-divider><br>
+      <v-card-text class="black--text pt-0 main-text">
         {{$t('footer')}}
       </v-card-text>
       <v-divider/>
-      <v-card-text class="white--text">
+      <v-card-text class="base component lighten-1 white--text">
         {{ new Date().getFullYear() }} — <strong> UIoT </strong>
       </v-card-text>
     </v-card>
