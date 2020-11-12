@@ -185,7 +185,7 @@ const Members = [
         {
             key: "fernandaformiga",
             name: "Fernanda Formiga",
-            area: "Engenharia de Produção",
+            area: "Desenvolvimento de Sistemas",
             role: "software",
             email: "fernanda.formiga@uiot.org",
             picture: "woman",
