@@ -103,7 +103,6 @@ export default {
       images: [
         "cpu",
         "motherboard",
-        "logic2",
       ],
       slides: [
         'The universal way of connecting things!',

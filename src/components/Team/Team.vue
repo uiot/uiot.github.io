@@ -24,18 +24,20 @@
             <v-col v-for="(item, i) in current_team" :key="item.key" xs="12" sm="12" md="4" xl="4">
                 <profile :person="item" :index="i" />
             </v-col>
-        </v-row>
-            <div v-show="current_option" :style="{ 'padding-top': '15px' }">
-                <v-divider/>
-                <h3 class="grey--text" :style="{ 'padding-left': '10px', 'padding-top': '5px' }">
-                    {{ $t('statusMember') }}
-                </h3>
+                </v-row>
+            <div v-show="false"> 
+                    <div v-show="current_option" :style="{ 'padding-top': '15px' }">
+                        <v-divider/>
+                        <h3 class="grey--text" :style="{ 'padding-left': '10px', 'padding-top': '5px' }">
+                            {{ $t('statusMember') }}
+                        </h3>
+                    </div>
+                <v-row>
+                    <v-col v-for="(item, i) in left_team" :key="item.key" xs="12" sm="12" md="4" xl="4">
+                        <profile :person="item" :index="i" />
+                    </v-col>
+                </v-row>
             </div>
-        <v-row>
-            <v-col v-for="(item, i) in left_team" :key="item.key" xs="12" sm="12" md="4" xl="4">
-                <profile :person="item" :index="i" />
-            </v-col>
-        </v-row>
             
     </div>    
 </template>

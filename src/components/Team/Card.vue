@@ -10,7 +10,6 @@
                     </v-card-text>
                     <v-card-actions>
                         <v-btn text @click="getArticles(person.key)" class="black--text mx-3"> <v-icon> mdi-arrow-down </v-icon> </v-btn>
-                        <v-spacer/>
                         <v-icon v-if="person.linkedin" class="mx-3 black--text"> mdi-linkedin </v-icon>
                         <v-icon v-if="person.github" class="mx-3 black--text"> mdi-github </v-icon>
                     </v-card-actions>
