@@ -195,13 +195,13 @@ const Members = [
             belong: true,
             lab: {
                 active: true,
-                area: "software",
+                area: "quality",
             }
         },
 
         {
             key: "gustavoluz",
-            name: "Gustavo Pessoa Caixeta Pinto da Luz",
+            name: "Gustavo Luz", //Gustavo Pessoa Caixeta Pinto da Luz
             area: "Engenharia de Produção",
             role: "software",
             email: "gustavo.luz@uiot.org",
@@ -212,7 +212,7 @@ const Members = [
             belong: true,
             lab: {
                 active: true,
-                area: "software",
+                area: "quality",
             }
         },
         {
@@ -832,7 +832,7 @@ const Members = [
         },
         {
             key: "rafaelzerbini",
-            name: "Rafael Zerbini Alves da Mata",
+            name: "Rafael Zerbini",
             area: "Engenharia de Redes de Comunicação",
             role: "security",
             email: "rafael.zerbini@uiot.org",
@@ -864,7 +864,7 @@ const Members = [
         },
         {
             key: "paulomendes",
-            name: "Paulo Henrique Ferreira Campos Mendes",
+            name: "Paulo Henrique",
             area: "Mestrando em Engenharia Elétrica",
             role: "software",
             email: "paulo.mendes@uiot.org",
@@ -875,7 +875,7 @@ const Members = [
             belong: true,
             lab: {
                 active: true,
-                area: "software",
+                area: "security",
             }
         },
         {
@@ -923,7 +923,7 @@ const Members = [
             belong: true,
             lab: {
                 active: true,
-                area: "quality",
+                area: "software",
             }
         },
         {
@@ -944,7 +944,7 @@ const Members = [
         },
         {
             key: "pedrosusa",
-            name: "Pedro de Oliveira Moura e Souza",
+            name: "Pedro Souza",
             area: "Engenharia de Redes de Comunicação",
             role: "software",
             email: "pedro.susa@uiot.org",
@@ -990,7 +990,22 @@ const Members = [
                 area: "software",
             }
         },
-
+        {
+            key: "andrecavalcanti",
+            name: "André Cavalcanti",
+            area: "Engenharia de Redes de Comunicação",
+            role: "software",
+            email: "",
+            picture: "man",
+            bio: "",
+            linkedin: "",
+            github: "",
+            belong: true,
+            lab: {
+                active: true,
+                area: "software",
+            }
+        },
         // template
         // {
         //     key: "x",
