@@ -8,6 +8,7 @@ const Languages =  {
             publications: "Publications",
             team: "Team"
         },
+        statusMember: "Saíram",
         wwdo: {
             title: "This is what we do",
             text: "UIoT is a scientific research laboratory in applications involving Internet of Things (IoT). Here we develop projects that involve a complete solution, involving the system of these devices (software), the physical part (hardware) and also information security",
@@ -71,6 +72,7 @@ const Languages =  {
             publications: "Publicações",
             team: "Time"
         },
+        statusMember: "Saíram",
         wwdo: {
             title: "Isso é o que nós fazemos",
             text: "O UIoT é um laboratório de pesquisa científica em aplicações que envolvem Internet das Coisas (IoT). Aqui desenvolvemos projetos que envolvem a solução completa, envolvendo o sistema destes dispositivos (software), a parte física (hardware) e também a segurança da informação",

@@ -9,13 +9,15 @@
                         {{person.email}}
                     </v-card-text>
                     <v-card-actions>
-                        <v-btn text @click="getArticles(person.key)" class="black--text mx-3"> 
+                        <v-btn text @click="getArticles(person.key)" class="black--text"> 
                             <v-icon> mdi-arrow-down </v-icon> 
                         </v-btn>
-                        <v-btn text :href="`http://www.linkedin.com/${person.linkedin}`">
-                            <v-icon v-if="person.linkedin" class="mx-3 black--text"> mdi-linkedin </v-icon>
+                        <v-btn v-if="person.linkedin" :href="`https://linkedin.com/in/${person.linkedin}`" text>
+                            <v-icon class="black--text"> mdi-linkedin </v-icon>
                         </v-btn>
-                        <v-icon v-if="person.github" class="mx-3 black--text"> mdi-github </v-icon>
+                        <v-btn v-if="person.github" :href="`https://github.com/${person.github}`" text>
+                            <v-icon class="black--text"> mdi-github </v-icon>
+                        </v-btn>
                     </v-card-actions>
                 </div>
                 <v-avatar class="ma-3" size="125" tile>
@@ -49,7 +51,9 @@ export default {
                 "#b1e3e2"
             ],
             dialog: false,
-            current_publications: []
+            current_publications: [],
+            current: [],
+            left: []
         }
     },
     methods: {

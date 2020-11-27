@@ -43,9 +43,21 @@ export class filterMembers {
     }
 
     byArea(area){
+      return members.filter(function(item){
+          return item.lab.area == area && item.belong == true
+      })
+  }
+
+    byAreaCurrent(area){
         return members.filter(function(item){
             return item.lab.area == area && item.belong == true && item.lab.active == true
         })
     }
+
+    byAreaLeft(area){
+      return members.filter(function(item){
+          return item.lab.area == area && item.belong == true && item.lab.active == false
+      })
+  }
 
 }
