@@ -44,7 +44,7 @@ export class filterMembers {
 
     byArea(area){
         return members.filter(function(item){
-            return item.lab.area == area && item.belong == true
+            return item.lab.area == area && item.belong == true && item.lab.active == true
         })
     }
 

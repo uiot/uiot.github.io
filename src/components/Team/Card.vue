@@ -9,14 +9,18 @@
                         {{person.email}}
                     </v-card-text>
                     <v-card-actions>
-                        <v-btn text @click="getArticles(person.key)" class="black--text mx-3"> <v-icon> mdi-arrow-down </v-icon> </v-btn>
-                        <v-spacer/>
-                        <v-icon v-if="person.linkedin" class="mx-3 black--text"> mdi-linkedin </v-icon>
+                        <v-btn text @click="getArticles(person.key)" class="black--text mx-3"> 
+                            <v-icon> mdi-arrow-down </v-icon> 
+                        </v-btn>
+                        <v-btn text :href="`http://www.linkedin.com/${person.linkedin}`">
+                            <v-icon v-if="person.linkedin" class="mx-3 black--text"> mdi-linkedin </v-icon>
+                        </v-btn>
                         <v-icon v-if="person.github" class="mx-3 black--text"> mdi-github </v-icon>
                     </v-card-actions>
                 </div>
                 <v-avatar class="ma-3" size="125" tile>
-                    <v-img :src="require(`@/assets/photos/${person.picture}.svg`)"></v-img>
+                    <v-img :src="require(`@/assets/photos/${person.picture}.svg`)" dark> 
+                    </v-img>
                 </v-avatar>
             </div>
         </v-card>
@@ -73,5 +77,9 @@ export default {
 }
 .teste{
     size: 100px;
+}
+.image_config{
+    background-color: blue;
+    opacity: 0.2;
 }
 </style>

@@ -18,7 +18,7 @@ const Members = [
             picture: "man",
             bio: "A cool person",
             lattes: "",
-            linkedin: "meu linked-in",
+            linkedin: "",
             belong: true,
             lab: {
                 active: true,
@@ -33,7 +33,7 @@ const Members = [
             picture: "man",
             bio: "A cool person",
             lattes: "",
-            linkedin: "meu linked-in",
+            linkedin: "",
             belong: true,
             lab: {
                 active: true,
@@ -81,7 +81,7 @@ const Members = [
             picture: "man",
             bio: "A strong person",
             lattes: "",
-            linkedin: "meu linked-in",
+            linkedin: "",
             belong: true,
             lab: {
                 active: true,
@@ -96,7 +96,7 @@ const Members = [
             picture: "man",
             bio: "A smart person",
             lattes: "",
-            linkedin: "meu linked-in",
+            linkedin: "",
             belong: true,
             lab: {
                 active: true,
@@ -112,7 +112,7 @@ const Members = [
             picture: "man",
             bio: "A smart person",
             lattes: "",
-            linkedin: "meu linked-in",
+            linkedin: "",
             belong: true,
             lab: {
                 active: false,
@@ -240,10 +240,10 @@ const Members = [
             picture: "man",
             bio: "",
             lattes: "",
-            linkedin: "",
+            linkedin: "mwlite/in/bruno-justino-58b846123",
             belong: true,
             lab: {
-                active: false,
+                active: true,
                 area: "software",
             }
         },
@@ -775,7 +775,7 @@ const Members = [
             picture: "woman",
             bio: "A strong person",
             lattes: "",
-            linkedin: "meu linked-in",
+            linkedin: "",
             belong: true,
             lab: {
                 active: true,
@@ -791,7 +791,7 @@ const Members = [
             picture: "man",
             bio: "A strong person",
             lattes: "",
-            linkedin: "meu linked-in",
+            linkedin: "",
             belong: true,
             lab: {
                 active: true,
@@ -807,7 +807,7 @@ const Members = [
             picture: "man",
             bio: "A strong person",
             lattes: "",
-            linkedin: "meu linked-in",
+            linkedin: "",
             belong: true,
             lab: {
                 active: true,
@@ -823,7 +823,7 @@ const Members = [
             picture: "woman",
             bio: "A strong person",
             lattes: "",
-            linkedin: "meu linked-in",
+            linkedin: "",
             belong: true,
             lab: {
                 active: true,
@@ -839,7 +839,7 @@ const Members = [
             picture: "man",
             bio: "A strong person",
             lattes: "",
-            linkedin: "meu linked-in",
+            linkedin: "",
             belong: true,
             lab: {
                 active: true,
@@ -855,7 +855,7 @@ const Members = [
             picture: "man",
             bio: "A strong person",
             lattes: "",
-            linkedin: "meu linked-in",
+            linkedin: "",
             belong: true,
             lab: {
                 active: true,
@@ -871,11 +871,11 @@ const Members = [
             picture: "man",
             bio: "A strong person",
             lattes: "",
-            linkedin: "meu linked-in",
+            linkedin: "",
             belong: true,
             lab: {
                 active: true,
-                area: "software",
+                area: "security",
             }
         },
         {
@@ -887,7 +887,7 @@ const Members = [
             picture: "woman",
             bio: "A strong person",
             lattes: "",
-            linkedin: "meu linked-in",
+            linkedin: "",
             belong: true,
             lab: {
                 active: true,
@@ -903,7 +903,7 @@ const Members = [
             picture: "man",
             bio: "A strong person",
             lattes: "",
-            linkedin: "meu linked-in",
+            linkedin: "",
             belong: true,
             lab: {
                 active: true,
@@ -919,7 +919,7 @@ const Members = [
             picture: "man",
             bio: "A strong person",
             lattes: "",
-            linkedin: "meu linked-in",
+            linkedin: "",
             belong: true,
             lab: {
                 active: true,
@@ -935,7 +935,7 @@ const Members = [
             picture: "woman",
             bio: "A strong person",
             lattes: "",
-            linkedin: "meu linked-in",
+            linkedin: "",
             belong: true,
             lab: {
                 active: true,
@@ -951,7 +951,7 @@ const Members = [
             picture: "man",
             bio: "A strong person",
             lattes: "",
-            linkedin: "meu linked-in",
+            linkedin: "",
             belong: true,
             lab: {
                 active: true,
@@ -967,7 +967,7 @@ const Members = [
             picture: "man",
             bio: "A strong person",
             lattes: "",
-            linkedin: "meu linked-in",
+            linkedin: "",
             belong: true,
             lab: {
                 active: true,
