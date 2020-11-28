@@ -16,7 +16,8 @@ jobs:
       - name: deploy to gh-pages
         run: |
           npm i
-          NODE_ENV=production npm run build
+          NODE_ENV=production 
+          npm run build
           cd dist
           git init
           git add -A
