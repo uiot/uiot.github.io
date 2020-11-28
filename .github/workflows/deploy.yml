@@ -13,6 +13,14 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '12'
+      - name: setup git auth
+        env:
+          email: danielsprado12@gmail.com
+          username: dasprado12
+        run: |
+            git config --global credential.helper store
+            git config --global user.email $email
+            git config --global user.name $username
       - name: deploy to gh-pages
         run: |
           npm i
