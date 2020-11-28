@@ -6,71 +6,68 @@
 </template>
 
 <script>
-import web from "./toolbar/web.vue"
-import mobile from "./toolbar/mobile.vue"
+import web from "./toolbar/web.vue";
+import mobile from "./toolbar/mobile.vue";
 
 export default {
   components: {
     web,
     mobile
   },
-  data() {    
-    return {      
+  data() {
+    return {
       isMobile: false,
-      show: false,   
+      show: false
     };
   },
-  created() {
-
-  },
-  beforeDestroy () {
-    if (typeof window !== 'undefined') {
-      window.removeEventListener('resize', this.onResize, { passive: true })
+  created() {},
+  beforeDestroy() {
+    if (typeof window !== "undefined") {
+      window.removeEventListener("resize", this.onResize, { passive: true });
     }
   },
-  mounted () {
+  mounted() {
     this.onResize();
-    window.addEventListener('resize', this.onResize, { passive: true })
+    window.addEventListener("resize", this.onResize, { passive: true });
   },
-  methods: {  
-    onResize(){
-      this.isMobile = window.innerWidth < 630
+  methods: {
+    onResize() {
+      this.isMobile = window.innerWidth < 630;
     },
-    goTo(){
-      this.$router.push("/")
+    goTo() {
+      this.$router.push("/");
     }
   }
-}
+};
 </script>
 
 <style scoped>
-.nameLogo{
+.nameLogo {
   float: left;
 }
 
-.titleText{
+.titleText {
   padding-left: 10px;
 }
 
-.rotateLogo:hover{
+.rotateLogo:hover {
   transform: rotate(360deg);
   transition: 2s;
-  
 }
 
-.toolbar{
-    font-family: 'Titillium Web', sans-serif;
+.toolbar {
+  font-family: "Titillium Web", sans-serif;
 }
 
-.botao{
-    font-family: 'Raleway', sans-serif;
+.botao {
+  font-family: "Raleway", sans-serif;
 }
 
-.hoverItem{
+.hoverItem {
   background-color: blue;
 }
 
-.style-top{
+.style-top {
   height: 10px;
 }
 </style>

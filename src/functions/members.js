@@ -1,14 +1,13 @@
+import Members from "../texts/Members.js";
 
-import Members from "../texts/Members.js"
-
-let members = Members.sort( function(a, b) {
+let members = Members.sort(function(a, b) {
   // 1) active first than inactive
-  let crit_active = (a.lab.active - b.lab.active)*(-1);
+  let crit_active = (a.lab.active - b.lab.active) * -1;
   if (crit_active !== 0) {
     return crit_active;
   }
   // 2) member first than associate
-  let crit_member = (a.belong - b.belong)*(-1);
+  let crit_member = (a.belong - b.belong) * -1;
   if (crit_member !== 0) {
     return crit_member;
   }
@@ -32,32 +31,37 @@ let members = Members.sort( function(a, b) {
   } else {
     return 1;
   }
-})
+});
 
 export class filterMembers {
-    constructor() {  }
+  constructor() {}
 
-    byKey(key){
-        let idx = members.findIndex(function(item){ return item.key == key })
-        return members[idx].name
-    }
-
-    byArea(area){
-      return members.filter(function(item){
-          return item.lab.area == area && item.belong == true
-      })
+  byKey(key) {
+    let idx = members.findIndex(function(item) {
+      return item.key == key;
+    });
+    return members[idx].name;
   }
 
-    byAreaCurrent(area){
-        return members.filter(function(item){
-            return item.lab.area == area && item.belong == true && item.lab.active == true
-        })
-    }
-
-    byAreaLeft(area){
-      return members.filter(function(item){
-          return item.lab.area == area && item.belong == true && item.lab.active == false
-      })
+  byArea(area) {
+    return members.filter(function(item) {
+      return item.lab.area == area && item.belong == true;
+    });
   }
 
+  byAreaCurrent(area) {
+    return members.filter(function(item) {
+      return (
+        item.lab.area == area && item.belong == true && item.lab.active == true
+      );
+    });
+  }
+
+  byAreaLeft(area) {
+    return members.filter(function(item) {
+      return (
+        item.lab.area == area && item.belong == true && item.lab.active == false
+      );
+    });
+  }
 }

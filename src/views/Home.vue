@@ -4,14 +4,21 @@
       <b>{{ $t("welcomeMsg") }}</b>
     </div>
     <v-carousel cycle height="520" :show-arrows="false">
-      <v-carousel-item v-for="(image, i) in images" :key="i" :src="require(`@/assets/${image}.jpeg`)"/>        
+      <v-carousel-item
+        v-for="(image, i) in images"
+        :key="i"
+        :src="require(`@/assets/${image}.jpeg`)"
+      />
     </v-carousel>
 
-    <div class="barraAzul base"/>
+    <div class="barraAzul base" />
 
     <div class="whatwedo">
-      <h2 class="base--text body-h1">  <v-icon class="base--text" size="40"> mdi-magnify </v-icon> <b> {{ $t('wwdo.title') }} </b> </h2>
-      <p class="text"> {{ $t("wwdo.text") }} </p>
+      <h2 class="base--text body-h1">
+        <v-icon class="base--text" size="40"> mdi-magnify </v-icon>
+        <b> {{ $t("wwdo.title") }} </b>
+      </h2>
+      <p class="text">{{ $t("wwdo.text") }}</p>
       <v-row>
         <v-col cols="12" xs="12" sm="12" md="4" lg="4" xl="4">
           <v-card flat color="grey lighten-2" min-height="170">
@@ -45,108 +52,125 @@
         </v-col>
       </v-row>
       <div :style="{ 'padding-top': '2%' }">
-        <v-btn outlined class="base lighten-1 white--text" to="/projects"> <b> {{ $t("wwdo.button") }} </b> </v-btn>
+        <v-btn outlined class="base lighten-1 white--text" to="/projects">
+          <b> {{ $t("wwdo.button") }} </b>
+        </v-btn>
       </div>
     </div>
 
     <div class="academics base lighten-1">
-        <h2 class="white--text">  <v-icon class="white--text" size="40"> mdi-book-open-variant </v-icon> <b> {{ $t('home.academics.title') }} </b> </h2>
-        <div class="text white--text"> {{ $t('home.academics.text') }} </div>
-        <v-row>
-          <v-col xs="12" sm="12" md="6" lg="6" v-for="item in publications" :key="item.title">
-            <v-hover v-slot:default="{ hover }" >
-              <v-card :elevation="hover ? 6 : 0" flat color="grey lighten-2" min-height="95">
-                <v-card-subtitle>
-                  <span class="font-weight-bold title_card"> 
-                    {{ item.title }} <br> 
-                    <span class="body-1"> {{item.year}} </span>
-                  </span>
-                </v-card-subtitle>
-              </v-card>
-            </v-hover>
-          </v-col>
-          <v-col sm="12" md="6" lg="6">
-            <v-hover v-slot:default="{ hover }" >
-              <v-card :elevation="hover ? 6 : 0" flat color="grey lighten-2" min-height="95" @click="goTo('/publications')">
-                <v-card-subtitle>
-                  <span text> <h2> <strong> See more </strong> </h2> <v-icon size="15" class="icon">  mdi-plus-circle-outline </v-icon> </span>
-                </v-card-subtitle>
-              </v-card>
-            </v-hover>
-          </v-col>
-
-        </v-row>
+      <h2 class="white--text">
+        <v-icon class="white--text" size="40"> mdi-book-open-variant </v-icon>
+        <b> {{ $t("home.academics.title") }} </b>
+      </h2>
+      <div class="text white--text">{{ $t("home.academics.text") }}</div>
+      <v-row>
+        <v-col
+          xs="12"
+          sm="12"
+          md="6"
+          lg="6"
+          v-for="item in publications"
+          :key="item.title"
+        >
+          <v-hover v-slot:default="{ hover }">
+            <v-card
+              :elevation="hover ? 6 : 0"
+              flat
+              color="grey lighten-2"
+              min-height="95"
+            >
+              <v-card-subtitle>
+                <span class="font-weight-bold title_card">
+                  {{ item.title }} <br />
+                  <span class="body-1"> {{ item.year }} </span>
+                </span>
+              </v-card-subtitle>
+            </v-card>
+          </v-hover>
+        </v-col>
+        <v-col sm="12" md="6" lg="6">
+          <v-hover v-slot:default="{ hover }">
+            <v-card
+              :elevation="hover ? 6 : 0"
+              flat
+              color="grey lighten-2"
+              min-height="95"
+              @click="goTo('/publications')"
+            >
+              <v-card-subtitle>
+                <span text>
+                  <h2><strong> See more </strong></h2>
+                  <v-icon size="15" class="icon">
+                    mdi-plus-circle-outline
+                  </v-icon>
+                </span>
+              </v-card-subtitle>
+            </v-card>
+          </v-hover>
+        </v-col>
+      </v-row>
     </div>
     <div class="team">
-      <div class="image">
-      </div>
-        <h2 class="base--text">  <v-icon class="base--text" size="40"> mdi-account-group </v-icon> <b> {{ $t('team.title') }} </b> </h2>
-        <h3 class="text black--text"> <b>{{ $t("team.text") }}</b> </h3>
+      <div class="image"></div>
+      <h2 class="base--text">
+        <v-icon class="base--text" size="40"> mdi-account-group </v-icon>
+        <b> {{ $t("team.title") }} </b>
+      </h2>
+      <h3 class="text black--text">
+        <b>{{ $t("team.text") }}</b>
+      </h3>
     </div>
   </div>
 </template>
 
 <script>
-import { filterPublications } from "../functions/publications.js"
+import { filterPublications } from "../functions/publications.js";
 
 export default {
   name: "home",
-  components: {
-  },
+  components: {},
   data() {
     return {
-      colors: [
-        'blue lighten-2',
-        'green lighten-2',
-        'red lighten-2',
-      ],
-      images: [
-        "cpu",
-        "motherboard",
-      ],
-      slides: [
-        'The universal way of connecting things!',
-        'Second',
-      ],
-    }
+      colors: ["blue lighten-2", "green lighten-2", "red lighten-2"],
+      images: ["cpu", "motherboard"],
+      slides: ["The universal way of connecting things!", "Second"]
+    };
   },
   computed: {
-    publications(){
-      let publications = new filterPublications().byQuantity(5)
-      var colors = ['#c1c3d6', '#c1d6c8', '#e8ebd5', '#dfd5eb', '#ebdad5']
+    publications() {
+      let publications = new filterPublications().byQuantity(5);
+      var colors = ["#c1c3d6", "#c1d6c8", "#e8ebd5", "#dfd5eb", "#ebdad5"];
       for (var i = 0; i < publications.length && i < 5; i++) {
-        publications[i]['color'] = colors[i]
+        publications[i]["color"] = colors[i];
       }
-      return publications
+      return publications;
     }
   },
   mounted() {
     const targets = this.$el;
-    this
-      .$anime
-      .timeline
+    this.$anime.timeline
       .add({
         targets,
         translateX: 250,
-        easing: 'easeOutExpo',
+        easing: "easeOutExpo"
       })
       .add({
         targets,
         translateX: 250,
-        easing: 'easeOutExpo',
+        easing: "easeOutExpo"
       });
   },
   methods: {
-    goTo(text){
-      this.$router.push(text)
+    goTo(text) {
+      this.$router.push(text);
     }
   }
 };
 </script>
 
 <style scoped>
-
-.presentation{
+.presentation {
   padding-left: 2%;
   padding-right: 2%;
   padding-top: 190px;
@@ -156,18 +180,17 @@ export default {
   z-index: 1;
 }
 
-
-.whatwedo{
+.whatwedo {
   padding-top: 2%;
   padding-bottom: 3%;
   text-align: center;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-size: 25px;
   padding-left: 2%;
   padding-right: 2%;
 }
 
-.whatwedo .text{
+.whatwedo .text {
   font-size: 15px;
 }
 
@@ -177,30 +200,30 @@ export default {
   padding-left: 2%;
   padding-right: 2%;
   text-align: center;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-size: 20px;
 }
 
-.academics .text{
+.academics .text {
   margin-top: -2px;
   font-size: 15px;
 }
 
-.academics .title_card{
+.academics .title_card {
   font-size: 17px;
 }
 
-.team{
+.team {
   position: relative;
   z-index: 1;
 
-  background-size: 100%;  
+  background-size: 100%;
   padding-top: 2%;
   padding-bottom: 2%;
   padding-left: 2%;
   padding-right: 2%;
   text-align: center;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-size: 13px;
   height: 300px;
 }
@@ -213,59 +236,53 @@ export default {
   left: 0;
   right: 0;
   /* background-image: url('https://imgur.com/a/aycZl22'); */
-  background-image: url('assets/unb1.jpg');
+  background-image: url("assets/unb1.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   opacity: 30%;
 }
 
-.icon{
+.icon {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-
-
-
-
-.home{
-  font-family: 'Raleway', sans-serif;
+.home {
+  font-family: "Raleway", sans-serif;
 }
 
-.text_wwdo{
+.text_wwdo {
   color: rgb(110, 81, 81);
 }
 
-.text_wwdo{
+.text_wwdo {
   padding-bottom: 20px;
 }
 
-
-
-.barraAzul{
+.barraAzul {
   height: 5px;
 }
-.bloco_titulo{
+.bloco_titulo {
   padding-top: 15px;
   text-align: center;
 }
-.texto_titulo{
+.texto_titulo {
   size: 10px;
 }
-.subtitulo{
+.subtitulo {
   margin-left: 10%;
   margin-right: 10px;
 }
-.corpo{
-    margin-top: 2%;
-    margin-left: 7%;
-    margin-right: 7%;
+.corpo {
+  margin-top: 2%;
+  margin-left: 7%;
+  margin-right: 7%;
 }
-.times{
+.times {
   text-align: center;
 }
 
-.bloco_texto_time{
+.bloco_texto_time {
   padding-left: 1px;
   padding-right: 1px;
 }

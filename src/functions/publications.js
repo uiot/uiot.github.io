@@ -1,36 +1,49 @@
+import Publications from "../texts/Publications.js";
 
-import Publications from "../texts/Publications.js"
-
-let publications = Publications
+let publications = Publications;
 
 export class filterPublications {
-    constructor() {  }
+  constructor() {}
 
-    byQuantity(qtd){
-        return publications.slice(0, qtd)
-    }
+  byQuantity(qtd) {
+    return publications.slice(0, qtd);
+  }
 
-    getYears(){
-        let arr_ret = []
-        publications.map(function(item){ if( arr_ret.indexOf(item.year) === -1 ){ arr_ret.push(item.year) }  })
-        return arr_ret
-    }
+  getYears() {
+    let arr_ret = [];
+    publications.map(function(item) {
+      if (arr_ret.indexOf(item.year) === -1) {
+        arr_ret.push(item.year);
+      }
+    });
+    return arr_ret;
+  }
 
-    getConferences(){
-        let arr_ret = []
-        publications.map(function(item){ if(arr_ret.indexOf(item.short) === -1){ arr_ret.push(item.short) } })
-        return arr_ret
-    }
+  getConferences() {
+    let arr_ret = [];
+    publications.map(function(item) {
+      if (arr_ret.indexOf(item.short) === -1) {
+        arr_ret.push(item.short);
+      }
+    });
+    return arr_ret;
+  }
 
-    all(){
-        return publications
-    }
+  all() {
+    return publications;
+  }
 
-    byYears(years){
-        return publications.filter(function(item){  if(years.indexOf(item.year) !== -1 ){ return item } })
-    }
+  byYears(years) {
+    return publications.filter(function(item) {
+      if (years.indexOf(item.year) !== -1) {
+        return item;
+      }
+    });
+  }
 
-    byOneMember(member){
-        return publications.filter(function(item){ return item.authors.includes(member) })
-    }
+  byOneMember(member) {
+    return publications.filter(function(item) {
+      return item.authors.includes(member);
+    });
+  }
 }
