@@ -26,8 +26,4 @@ jobs:
           npm i
           NODE_ENV=production 
           npm run build
-          cd dist
-          git init
-          git add -A
-          git commit -m "🚀 Deploying"
-          git push -f "https://github.com/${GITHUB_REPOSITORY}.git" master:gh-pages
+          npm run deploy
