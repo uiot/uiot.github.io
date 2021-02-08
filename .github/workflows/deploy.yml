@@ -21,6 +21,11 @@ jobs:
             git config --global credential.helper store
             git config --global user.email $email
             git config --global user.name $username
+            
+      - name: Install and Build 🔧 
+        run: |
+          npm install
+          npm run build
       
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.0.0
