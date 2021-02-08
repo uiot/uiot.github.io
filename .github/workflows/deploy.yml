@@ -21,9 +21,9 @@ jobs:
             git config --global credential.helper store
             git config --global user.email $email
             git config --global user.name $username
-      - name: deploy to gh-pages
-        run: |
-          npm i
-          NODE_ENV=production 
-          npm run build
-          npm run deploy
+      
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.0.0
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: dist # The folder the action should deploy.
