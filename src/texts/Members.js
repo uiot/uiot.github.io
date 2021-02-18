@@ -63,7 +63,7 @@ const Members = [
     email: "francisco.caldas@uiot.org",
     picture: "man",
     bio: "",
-    linkedin: "",
+    linkedin: "msc-francisco-lopes-de-c-filho-b0255224",
     github: "",
     belong: true,
     lab: {
@@ -207,8 +207,8 @@ const Members = [
     email: "gustavo.luz@uiot.org",
     picture: "man",
     bio: "",
-    linkedin: "",
-    github: "",
+    linkedin: "gustavo-luz-unb",
+    github: "gustavo-luz",
     belong: true,
     lab: {
       active: true,
@@ -227,7 +227,7 @@ const Members = [
     github: "",
     belong: true,
     lab: {
-      active: true,
+      active: false,
       area: "software"
     }
   },
@@ -287,8 +287,8 @@ const Members = [
     email: "cassio.fabius@uiot.org",
     picture: "man",
     bio: "",
-    linkedin: "",
-    github: "",
+    linkedin: "cassiofabius",
+    github: "cassiofabius",
     belong: true,
     lab: {
       active: true,
@@ -450,7 +450,7 @@ const Members = [
     github: "",
     belong: true,
     lab: {
-      active: true,
+      active: false,
       area: "software"
     }
   },
@@ -837,8 +837,8 @@ const Members = [
     email: "rafael.zerbini@uiot.org",
     picture: "man",
     bio: "A strong person",
-    linkedin: "",
-    github: "",
+    linkedin: "rafael-zerbini",
+    github: "zerbinidamata",
     belong: true,
     lab: {
       active: true,
@@ -853,7 +853,7 @@ const Members = [
     email: "vinicius.costa@uiot.org",
     picture: "man",
     bio: "A strong person",
-    linkedin: "",
+    linkedin: "vinicius-salgueiro-1722b21b1",
     github: "Viniciusalgueiro",
     belong: true,
     lab: {
@@ -885,8 +885,8 @@ const Members = [
     email: "natalia.marques@uiot.org",
     picture: "woman",
     bio: "A strong person",
-    linkedin: "",
-    github: "",
+    linkedin: "nat%C3%A1lia-a-marques-9159731b1",
+    github: "natmarqs",
     belong: true,
     lab: {
       active: true,
@@ -928,7 +928,7 @@ const Members = [
   {
     key: "mariaflavia",
     name: "Maria Flávia da Rocha Soares",
-    area: "",
+    area: "Engenharia de Redes de Comunicação",
     role: "software",
     email: "flavia.maria@uiot.org",
     picture: "woman",
@@ -949,8 +949,8 @@ const Members = [
     email: "pedro.susa@uiot.org",
     picture: "man",
     bio: "A strong person",
-    linkedin: "",
-    github: "",
+    linkedin: "pedromsouza",
+    github: "pedrusouza",
     belong: true,
     lab: {
       active: true,
@@ -965,7 +965,7 @@ const Members = [
     email: "heitor.vieira@uiot.org",
     picture: "man",
     bio: "",
-    linkedin: "",
+    linkedin: "heitorvieira",
     github: "VieiraHeitor",
     belong: true,
     lab: {
@@ -978,11 +978,11 @@ const Members = [
     name: "Ricardo Dias",
     area: "Engenharia de Redes de Comunicação",
     role: "software",
-    email: "",
+    email: "ricardo.dias@uiot.org",
     picture: "man",
     bio: "",
-    linkedin: "",
-    github: "ricardo-dias-b5ba49164",
+    linkedin: "ricardo-dias-b5ba49164",
+    github: "diasricardo23",
     belong: true,
     lab: {
       active: true,
@@ -1004,7 +1004,55 @@ const Members = [
       active: true,
       area: "software"
     }
+  },
+  {
+      key: "lucasdanelon",
+      name: "Lucas Caldas Danelon Lopes",
+      area: "Engenharia de Produção",
+      role: "hardware",
+      email: "lucas.lopes@uiot.org",
+      picture: "man",
+      bio: "",
+      linkedin: "lucas-danelon",
+      github: "lucasdanelon",
+      belong:true,
+      lab: {
+        active: true,
+        area: "hardware",
+      }
+  },
+  {
+    key: "matheuscarvalho",
+    name: "Matheus dos Santos Carvalho",
+    area: "Engenharia Eletrônica",
+    role: "hardware",
+    email: "matheus.carvalho@uiot.org",
+    picture: "man",
+    bio: "",
+    linkedin: "mathscarvalho",
+    github: "mathscarvalho",
+    belong:true,
+    lab: {
+      active: true,
+      area: "hardware",
+    }
+},
+{
+  key: "rafaelmonteiro",
+  name: "Rafael Moraes Monteiro",
+  area: "Engenharia de Redes de Comunicação",
+  role: "hardware",
+  email: "rafael.monteiro.org",
+  picture: "man",
+  bio: "",
+  linkedin: "rafael-moraes-monteiro",
+  github: "Moraes26",
+  belong:true,
+  lab: {
+    active: true,
+    area: "hardware",
   }
+},
   // template
   // {
   //     key: "x",
