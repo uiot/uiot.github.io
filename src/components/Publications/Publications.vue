@@ -2,7 +2,7 @@
   <div class="component">
     <v-card flat class="grey lighten-5">
       <v-card-title>
-        <v-col cols="8">
+        <v-col cols="4">
           <v-select
             outlined
             dense
@@ -23,7 +23,7 @@
             </template>
           </v-select>
         </v-col>
-        <v-col cols="4">
+        <v-col cols="8">
           <v-select
             clearable
             outlined
