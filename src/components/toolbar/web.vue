@@ -45,6 +45,16 @@
         >
           {{ $t("toolbar.team") }}
         </v-btn>
+        <v-btn
+          text
+          to="/docs"
+          :class="{
+            base: checkRouteColor('docs', currentRoute),
+            'lighten-2': true
+          }"
+        >
+          DOCS
+        </v-btn>
         <v-menu offset-y>
           <template v-slot:activator="{ on }">
             <v-btn text v-on="on">
