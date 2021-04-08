@@ -2,6 +2,7 @@
   <div class="toolbar">
     <div class="style-top base lighten-1" />
     <v-toolbar flat class="grey lighten-3">
+      
       <v-toolbar-title class="pl-10">
         <div @click="goTo()">
           <v-img class="nameLogo" src="@/assets/logo.png" width="35" />
