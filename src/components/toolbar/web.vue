@@ -2,6 +2,7 @@
   <div class="toolbar">
     <div class="style-top base lighten-1" />
     <v-toolbar flat class="grey lighten-3">
+      
       <v-toolbar-title class="pl-10">
         <div @click="goTo()">
           <v-img class="nameLogo" src="@/assets/logo.png" width="35" />
@@ -44,6 +45,16 @@
           }"
         >
           {{ $t("toolbar.team") }}
+        </v-btn>
+        <v-btn
+          text
+          to="/docs"
+          :class="{
+            base: checkRouteColor('docs', currentRoute),
+            'lighten-2': true
+          }"
+        >
+          DOCS
         </v-btn>
         <v-menu offset-y>
           <template v-slot:activator="{ on }">
