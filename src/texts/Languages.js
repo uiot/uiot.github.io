@@ -8,7 +8,8 @@ const Languages = {
     toolbar: {
       projects: "Projects",
       publications: "Publications",
-      team: "Team"
+      team: "Team",
+      docs: "Docs"
     },
     statusMember: "Saíram",
     wwdo: {
@@ -85,7 +86,8 @@ const Languages = {
     toolbar: {
       projects: "Projetos",
       publications: "Publicações",
-      team: "Time"
+      team: "Time",
+      docs: "Docs"
     },
     statusMember: "Saíram",
     wwdo: {

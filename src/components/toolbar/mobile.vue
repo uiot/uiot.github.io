@@ -42,6 +42,19 @@
           </v-btn>
         </div>
         <div class="button-position">
+          <v-btn
+            text
+            to="/docs"
+            @click="drawer = false"
+            :class="{
+              base: checkRouteColor('docs', currentRoute),
+              'lighten-2': true
+            }"
+          >
+            {{ $t("toolbar.docs") }}
+          </v-btn>
+        </div>
+        <div class="button-position">
           <v-menu offset-y>
             <template v-slot:activator="{ on }">
               <v-btn text v-on="on">

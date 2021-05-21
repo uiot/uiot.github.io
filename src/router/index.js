@@ -51,23 +51,10 @@ export default new Router({
       component: Docs_Layout,
       children: [
         {
-          path: "/",
+          path: "/*",
           name: "default",
           component: Default
-        },
-        // {
-        //   path: "/middleware",
-        //   component: Middleware,
-        //   children: [
-        //     {
-        //       path: "/DIMS",
-        //       name: "DIMS",
-        //     },
-        //   ]
-        // },
-        // {
-        //   path: "/gateway"
-        // }
+        }
       ]
     }
   ]

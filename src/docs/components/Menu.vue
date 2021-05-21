@@ -1,28 +1,17 @@
 <template>
-    <div>
-        <div class="">
-            <div @click="goTo()">
-                <v-img class="nameLogo" src="@/assets/logo.png" width="35" />
-                <span class="titleText base--text">
-                    <h2><b> uiot </b></h2>
+    <div class="menu-content">
+        <ul>
+            <li v-for="(item, index) in menu" :key="index">
+                <v-btn text class="main-button" :to="`/docs${item.link}`"> {{ item.name }} </v-btn>
+                <span v-if="item.subMenu"> 
+                    <ul>
+                        <li v-for="(i, idx) in item.subMenu" :key="idx">
+                            <v-btn text :to="`/docs${item.link}`">{{i.name}}</v-btn>
+                        </li>
+                    </ul>
                 </span>
-            </div>
-        </div><br>
-        <v-divider/>
-        <div>
-            <ul>
-                <li v-for="(item, index) in menu" :key="index">
-                    <a> {{ item.name }} </a>
-                    <span v-if="item.subMenu"> 
-                        <ul>
-                            <li v-for="(i, idx) in item.subMenu" :key="idx">
-                                <a>{{i.name}}</a>
-                            </li>
-                        </ul>
-                    </span>
-                </li>
-            </ul>
-        </div>
+            </li>
+        </ul>
     </div>
 </template>
 
@@ -31,22 +20,23 @@ export default {
     data(){
         return {
             menu: [
-                { name: "What is UIoT" },
-                { name: "Sponsored" },
+                { name: "What is UIoT", link: "/about" },
+                { name: "Sponsored", link: "/sponsored" },
                 { 
                     icon: "mdi-icon",
                     name: "Middleware",
-                    subMenu: [
-                        { name: "DIMS" },
-                        { name: "Kernel" },
-                        { name: "Security" },
-                        { name: "Rules" },
-                        { name: "Intellingency" },
-                    ]
+                    link: "/middleware",
+                    // subMenu: [
+                    //     { name: "DIMS", link: "/middleware/dims" },
+                    //     { name: "Kernel", link: "/middleware/kernel" },
+                    //     { name: "Security", link: "/middleware/security" },
+                    //     { name: "Rules", link: "/middleware/rules" },
+                    //     { name: "Intellingency", link: "/middleware/intelligency" },
+                    // ]
                 },
-                { name: "Gateway" },
-                { name: "UIMS" },
-                { name: "Dashboard" },
+                { name: "Gateway", link: "/gateway" },
+                { name: "UIMS", link: "/uims" },
+                { name: "Dashboard", link: "/dashboard" },
             ]
         }
     }
@@ -55,8 +45,7 @@ export default {
 </script>
 
 <style scoped>
-.nameLogo {
-  float: left;
+.main-button{
+    
 }
-
 </style>
