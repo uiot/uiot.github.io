@@ -2,7 +2,7 @@
     <div>
         <div v-html="compiledMarkdown"></div>
         <div>
-            {{currentRoute}}
+            {{computedRoute}}
         </div>
     </div>
 </template>
@@ -14,27 +14,32 @@ import _ from 'lodash'
 export default {
     data(){
         return {
-            input: "# aea mundo \
-            como vai?\
-            \
-            teste"
+            input: ""
         }
     },
     computed: {
         compiledMarkdown: function(){
-            // let path = "./"+this.currentRoute()
-            // let content = require("./docs/sobre.md") 
-            // let content = this.input 
+            let path = "./"+this.currentRoute()
+            let content = require(`${path.toString()}`) 
             // alert(content)
-            return marked(this.input, { sanitize: true });
+            // let content = this.input 
+            // console.log(content.default)
+            return marked(content.default, { sanitize: true });
         },
-        currentRoute(){
-            let route = this.$route.path.split("/")
-            route[route.length-1]=route[route.length-1]+".md"
-            return route.slice(1,route.length).join("/")
+        computedRoute(){
+            return this.currentRoute()
         }
     },
     methods: {
+        currentRoute(){
+            let route = this.$route.path.split("/")
+            route[route.length-1]=route[route.length-1]+".md"
+            let __ret = route.slice(1,route.length).join("/")
+            if(__ret == "docs.md"){
+                __ret = "docs/welcome.md"
+            }
+            return __ret
+        },
         update: _.debounce(function(e) {
             this.input = e.target.value;
         }, 300)
