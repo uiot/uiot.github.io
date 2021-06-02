@@ -12,7 +12,7 @@ function Message() {
                 set: setType
             },
             load:{
-                enumarable:true,
+                enumerable:true,
                 writable:false,
                 value:parse
             },

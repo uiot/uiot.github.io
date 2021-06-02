@@ -8,6 +8,6 @@ export default Vue.extend({
     valueComparator: {
       type: Function,
       default: deepEqual,
-    } as any as PropValidator<typeof deepEqual>,
+    } as PropValidator<typeof deepEqual>,
   },
 })

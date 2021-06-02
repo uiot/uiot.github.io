@@ -1,6 +1,10 @@
 // Components
 import VBanner from '../VBanner'
 
+// Services
+import { Breakpoint } from '../../../services/breakpoint'
+import { preset } from '../../../presets/default'
+
 // Utilities
 import {
   mount,
@@ -20,7 +24,13 @@ describe('VBanner.ts', () => {
         ...options,
         mocks: {
           $vuetify: {
+            application: {
+              top: 0,
+              bar: 0,
+            },
             breakpoint: {
+              mobile: true,
+              mobileBreakpoint: 1264,
               width: 1000,
             },
           },
@@ -102,12 +112,12 @@ describe('VBanner.ts', () => {
 
     const icon = wrapper.find('.v-banner__icon')
 
-    // expect(fn).not.toHaveBeenCalled()
+    expect(fn).not.toHaveBeenCalled()
     icon.trigger('click')
-    // expect(fn).toHaveBeenCalled()
+    expect(fn).toHaveBeenCalled()
   })
 
-  it('should not render icon container if icon property and slot aren\'t passed', () => {
+  it(`should not render icon container if icon property and slot aren't passed`, () => {
     const wrapper = mountFunction({
       slots: {
         default: 'Hello, World!',
@@ -117,7 +127,7 @@ describe('VBanner.ts', () => {
     expect(wrapper.findAll('.v-banner__icon')).toHaveLength(0)
   })
 
-  it('should not render actions container if slot isn\'t passed', () => {
+  it(`should not render actions container if slot isn't passed`, () => {
     const wrapper = mountFunction({
       slots: {
         default: 'Hello, World!',
@@ -183,13 +193,36 @@ describe('VBanner.ts', () => {
       },
       mocks: {
         $vuetify: {
-          breakpoint: {
-            width: 900,
-          },
+          breakpoint: new Breakpoint(preset),
         },
       },
     })
 
     expect(wrapper.classes('v-banner--is-mobile')).toBeTruthy()
+  })
+
+  it('should apply sticky when using the app prop', () => {
+    const wrapper = mountFunction({
+      propsData: { app: true },
+    })
+
+    expect(wrapper.vm.isSticky).toBe(true)
+
+    expect(wrapper.html()).toMatchSnapshot()
+
+    wrapper.setProps({
+      app: false,
+      sticky: true,
+    })
+
+    expect(wrapper.vm.isSticky).toBe(true)
+
+    expect(wrapper.html()).toMatchSnapshot()
+
+    wrapper.setProps({ sticky: false })
+
+    expect(wrapper.vm.isSticky).toBe(false)
+
+    expect(wrapper.html()).toMatchSnapshot()
   })
 })

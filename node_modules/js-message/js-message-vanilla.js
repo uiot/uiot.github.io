@@ -70,6 +70,6 @@
             }
         }
 
-        window.message=Message;
+        window.Message=Message;
     }
 )();

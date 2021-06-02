@@ -5,16 +5,16 @@ import CalendarBase from './calendar-base'
 // Util
 import props from '../util/props'
 import {
-  VTimestamp,
-  VTime,
-  VTimestampFormatter,
   parseTime,
   copyTimestamp,
   updateMinutes,
   createDayList,
   createIntervalList,
   createNativeLocaleFormatter,
+  VTime,
+  MINUTES_IN_DAY,
 } from '../util/timestamp'
+import { CalendarTimestamp, CalendarFormatter, CalendarDayBodySlotScope } from 'vuetify/types'
 
 /* @vue/component */
 export default CalendarBase.extend({
@@ -35,13 +35,20 @@ export default CalendarBase.extend({
     parsedIntervalHeight (): number {
       return parseFloat(this.intervalHeight)
     },
+    parsedFirstTime (): number | false {
+      return parseTime(this.firstTime)
+    },
     firstMinute (): number {
-      return this.parsedFirstInterval * this.parsedIntervalMinutes
+      const time = this.parsedFirstTime
+
+      return time !== false && time >= 0 && time <= MINUTES_IN_DAY
+        ? time
+        : this.parsedFirstInterval * this.parsedIntervalMinutes
     },
     bodyHeight (): number {
       return this.parsedIntervalCount * this.parsedIntervalHeight
     },
-    days (): VTimestamp[] {
+    days (): CalendarTimestamp[] {
       return createDayList(
         this.parsedStart,
         this.parsedEnd,
@@ -50,23 +57,23 @@ export default CalendarBase.extend({
         this.maxDays
       )
     },
-    intervals (): VTimestamp[][] {
-      const days: VTimestamp[] = this.days
-      const first: number = this.parsedFirstInterval
+    intervals (): CalendarTimestamp[][] {
+      const days: CalendarTimestamp[] = this.days
+      const first: number = this.firstMinute
       const minutes: number = this.parsedIntervalMinutes
       const count: number = this.parsedIntervalCount
-      const now: VTimestamp = this.times.now
+      const now: CalendarTimestamp = this.times.now
 
       return days.map(d => createIntervalList(d, first, minutes, count, now))
     },
-    intervalFormatter (): VTimestampFormatter {
+    intervalFormatter (): CalendarFormatter {
       if (this.intervalFormat) {
-        return this.intervalFormat as VTimestampFormatter
+        return this.intervalFormat as CalendarFormatter
       }
 
-      const longOptions = { timeZone: 'UTC', hour12: true, hour: '2-digit', minute: '2-digit' }
-      const shortOptions = { timeZone: 'UTC', hour12: true, hour: 'numeric', minute: '2-digit' }
-      const shortHourOptions = { timeZone: 'UTC', hour12: true, hour: 'numeric' }
+      const longOptions = { timeZone: 'UTC', hour: '2-digit', minute: '2-digit' }
+      const shortOptions = { timeZone: 'UTC', hour: 'numeric', minute: '2-digit' }
+      const shortHourOptions = { timeZone: 'UTC', hour: 'numeric' }
 
       return createNativeLocaleFormatter(
         this.currentLocale,
@@ -76,16 +83,16 @@ export default CalendarBase.extend({
   },
 
   methods: {
-    showIntervalLabelDefault (interval: VTimestamp): boolean {
-      const first: VTimestamp = this.intervals[0][0]
+    showIntervalLabelDefault (interval: CalendarTimestamp): boolean {
+      const first: CalendarTimestamp = this.intervals[0][0]
       const isFirst: boolean = first.hour === interval.hour && first.minute === interval.minute
-      return !isFirst && interval.minute === 0
+      return !isFirst
     },
-    intervalStyleDefault (_interval: VTimestamp): object | undefined {
+    intervalStyleDefault (_interval: CalendarTimestamp): object | undefined {
       return undefined
     },
-    getTimestampAtEvent (e: MouseEvent | TouchEvent, day: VTimestamp): VTimestamp {
-      const timestamp: VTimestamp = copyTimestamp(day)
+    getTimestampAtEvent (e: MouseEvent | TouchEvent, day: CalendarTimestamp): CalendarTimestamp {
+      const timestamp: CalendarTimestamp = copyTimestamp(day)
       const bounds = (e.currentTarget as HTMLElement).getBoundingClientRect()
       const baseMinutes: number = this.firstMinute
       const touchEvent: TouchEvent = e as TouchEvent
@@ -98,10 +105,12 @@ export default CalendarBase.extend({
 
       return updateMinutes(timestamp, minutes, this.times.now)
     },
-    getSlotScope (timestamp: VTimestamp): any {
+    getSlotScope (timestamp: CalendarTimestamp): CalendarDayBodySlotScope {
       const scope = copyTimestamp(timestamp) as any
       scope.timeToY = this.timeToY
+      scope.timeDelta = this.timeDelta
       scope.minutesToPixels = this.minutesToPixels
+      scope.week = this.days
       return scope
     },
     scrollToTime (time: VTime): boolean {
@@ -120,6 +129,24 @@ export default CalendarBase.extend({
       return minutes / this.parsedIntervalMinutes * this.parsedIntervalHeight
     },
     timeToY (time: VTime, clamp = true): number | false {
+      let y = this.timeDelta(time)
+
+      if (y !== false) {
+        y *= this.bodyHeight
+
+        if (clamp) {
+          if (y < 0) {
+            y = 0
+          }
+          if (y > this.bodyHeight) {
+            y = this.bodyHeight
+          }
+        }
+      }
+
+      return y
+    },
+    timeDelta (time: VTime): number | false {
       const minutes = parseTime(time)
 
       if (minutes === false) {
@@ -128,19 +155,8 @@ export default CalendarBase.extend({
 
       const min: number = this.firstMinute
       const gap: number = this.parsedIntervalCount * this.parsedIntervalMinutes
-      const delta: number = (minutes - min) / gap
-      let y: number = delta * this.bodyHeight
 
-      if (clamp) {
-        if (y < 0) {
-          y = 0
-        }
-        if (y > this.bodyHeight) {
-          y = this.bodyHeight
-        }
-      }
-
-      return y
+      return (minutes - min) / gap
     },
   },
 })

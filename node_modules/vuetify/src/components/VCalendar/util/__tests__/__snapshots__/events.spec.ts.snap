@@ -3,6 +3,7 @@
 exports[`events.ts should parse events 1`] = `
 Object {
   "allDay": true,
+  "category": false,
   "end": Object {
     "date": "2019-02-14",
     "day": 14,
@@ -19,7 +20,7 @@ Object {
     "year": 2019,
   },
   "endIdentifier": 20190214,
-  "endTimestampIdentifier": 201902140000,
+  "endTimestampIdentifier": 201902142359,
   "index": 0,
   "input": Object {
     "end": "2019-02-14",
@@ -48,6 +49,7 @@ Object {
 exports[`events.ts should parse events 2`] = `
 Object {
   "allDay": true,
+  "category": false,
   "end": Object {
     "date": "2019-02-14",
     "day": 14,
@@ -64,7 +66,7 @@ Object {
     "year": 2019,
   },
   "endIdentifier": 20190214,
-  "endTimestampIdentifier": 201902140000,
+  "endTimestampIdentifier": 201902142359,
   "index": 0,
   "input": Object {
     "a": "2019-02-13",
@@ -93,6 +95,7 @@ Object {
 exports[`events.ts should parse events 3`] = `
 Object {
   "allDay": true,
+  "category": false,
   "end": Object {
     "date": "2019-02-14",
     "day": 14,
@@ -109,7 +112,7 @@ Object {
     "year": 2019,
   },
   "endIdentifier": 20190214,
-  "endTimestampIdentifier": 201902140000,
+  "endTimestampIdentifier": 201902142359,
   "index": 1,
   "input": Object {
     "end": "2019-02-14",
@@ -138,6 +141,7 @@ Object {
 exports[`events.ts should parse events 4`] = `
 Object {
   "allDay": true,
+  "category": false,
   "end": Object {
     "date": "2019-02-14",
     "day": 14,
@@ -154,7 +158,7 @@ Object {
     "year": 2019,
   },
   "endIdentifier": 20190214,
-  "endTimestampIdentifier": 201902140000,
+  "endTimestampIdentifier": 201902142359,
   "index": 1,
   "input": Object {
     "a": "2019-02-13",
@@ -183,6 +187,7 @@ Object {
 exports[`events.ts should parse timed events 1`] = `
 Object {
   "allDay": false,
+  "category": false,
   "end": Object {
     "date": "2019-02-14",
     "day": 14,

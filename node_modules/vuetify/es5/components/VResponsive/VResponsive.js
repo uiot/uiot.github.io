@@ -20,7 +20,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _default = (0, _mixins.default)(_measurable.default).extend({
   name: 'v-responsive',
   props: {
-    aspectRatio: [String, Number]
+    aspectRatio: [String, Number],
+    contentClass: String
   },
   computed: {
     computedAspectRatio: function computedAspectRatio() {
@@ -42,7 +43,8 @@ var _default = (0, _mixins.default)(_measurable.default).extend({
   methods: {
     genContent: function genContent() {
       return this.$createElement('div', {
-        staticClass: 'v-responsive__content'
+        staticClass: 'v-responsive__content',
+        class: this.contentClass
       }, this.$slots.default);
     }
   },

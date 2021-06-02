@@ -17,13 +17,17 @@
     --max-warnings       specify number of warnings to make build failed (default: Infinity)
   ```
 
-  Lints and fixes files. If no specific files are given, it lints all files in `src` and `test`.
+  Lints and fixes files. If no specific files are given, it lints all files in `src` and `tests`.
 
   Other [ESLint CLI options](https://eslint.org/docs/user-guide/command-line-interface#options) are also supported.
 
 ## Configuration
 
-ESLint can be configured via `.eslintrc` or the `eslintConfig` field in `package.json`.
+ESLint can be configured via `.eslintrc` or the `eslintConfig` field in `package.json`. See the [ESLint configuration docs](https://eslint.org/docs/user-guide/configuring) for more detail.
+
+::: tip
+The following option is under the section of [`vue.config.js`](https://cli.vuejs.org/config/#vue-config-js). It is respected only when `@vue/cli-plugin-eslint` is installed.
+:::
 
 Lint-on-save during development with `eslint-loader` is enabled by default. It can be disabled with the `lintOnSave` option in `vue.config.js`:
 

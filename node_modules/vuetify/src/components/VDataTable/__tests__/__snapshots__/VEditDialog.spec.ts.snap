@@ -6,25 +6,20 @@ exports[`VEditDialog.ts should render 1`] = `
     <span class="v-small-dialog__activator__content">
     </span>
   </div>
-  <div role="menu"
-       class="v-menu__content theme--light v-small-dialog__menu-content"
-       style="max-height: auto; min-width: 0px; max-width: auto; top: 12px; left: 0px; transform-origin: top right; z-index: 0; display: none;"
-  >
-  </div>
 </div>
 `;
 
 exports[`VEditDialog.ts should render actions 1`] = `
 <div class="v-small-dialog__actions">
   <button type="button"
-          class="v-btn v-btn--flat v-btn--text theme--light v-size--default primary--text"
+          class="v-btn v-btn--text theme--light v-size--default primary--text"
   >
     <span class="v-btn__content">
       Cancel
     </span>
   </button>
   <button type="button"
-          class="v-btn v-btn--flat v-btn--text theme--light v-size--default primary--text"
+          class="v-btn v-btn--text theme--light v-size--default primary--text"
   >
     <span class="v-btn__content">
       Save
@@ -35,7 +30,7 @@ exports[`VEditDialog.ts should render actions 1`] = `
 
 exports[`VEditDialog.ts should render button 1`] = `
 <button type="button"
-        class="v-btn v-btn--flat v-btn--text theme--light v-size--default primary--text"
+        class="v-btn v-btn--text theme--light v-size--default primary--text"
 >
   <span class="v-btn__content">
     test
@@ -48,11 +43,6 @@ exports[`VEditDialog.ts should render custom button texts 1`] = `
   <div class="v-small-dialog__activator">
     <span class="v-small-dialog__activator__content">
     </span>
-  </div>
-  <div role="menu"
-       class="v-menu__content theme--light v-small-dialog__menu-content"
-       style="max-height: auto; min-width: 0px; max-width: auto; top: 12px; left: 0px; transform-origin: top right; z-index: 0; display: none;"
-  >
   </div>
 </div>
 `;

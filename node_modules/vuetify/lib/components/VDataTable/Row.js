@@ -7,6 +7,7 @@ export default Vue.extend({
   functional: true,
   props: {
     headers: Array,
+    index: Number,
     item: Object,
     rtl: Boolean
   },
@@ -27,7 +28,9 @@ export default Vue.extend({
       if (scopedSlot) {
         children.push(scopedSlot({
           item: props.item,
+          isMobile: false,
           header,
+          index: props.index,
           value
         }));
       } else if (regularSlot) {
@@ -38,10 +41,9 @@ export default Vue.extend({
 
       const textAlign = `text-${header.align || 'start'}`;
       return h('td', {
-        class: {
-          [textAlign]: true,
+        class: [textAlign, header.cellClass, {
           'v-data-table__divider': header.divider
-        }
+        }]
       }, children);
     });
     return h('tr', data, columns);

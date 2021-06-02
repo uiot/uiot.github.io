@@ -11,13 +11,14 @@ var _helpers = require("../../util/helpers");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
+// Types
+// Utils
 var _default = _vue.default.extend({
   name: 'row',
   functional: true,
   props: {
     headers: Array,
+    index: Number,
     item: Object,
     rtl: Boolean
   },
@@ -27,8 +28,6 @@ var _default = _vue.default.extend({
         data = _ref.data;
     var computedSlots = slots();
     var columns = props.headers.map(function (header) {
-      var _class;
-
       var children = [];
       var value = (0, _helpers.getObjectValueByPath)(props.item, header.value);
       var slotName = header.value;
@@ -38,7 +37,9 @@ var _default = _vue.default.extend({
       if (scopedSlot) {
         children.push(scopedSlot({
           item: props.item,
+          isMobile: false,
           header: header,
+          index: props.index,
           value: value
         }));
       } else if (regularSlot) {
@@ -49,7 +50,9 @@ var _default = _vue.default.extend({
 
       var textAlign = "text-".concat(header.align || 'start');
       return h('td', {
-        class: (_class = {}, _defineProperty(_class, textAlign, true), _defineProperty(_class, 'v-data-table__divider', header.divider), _class)
+        class: [textAlign, header.cellClass, {
+          'v-data-table__divider': header.divider
+        }]
       }, children);
     });
     return h('tr', data, columns);

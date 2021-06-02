@@ -4,22 +4,23 @@ exports[`VSparkline.ts should position labels correctly 1`] = `
 <svg display="block"
      stroke-width="20"
      viewbox="0 0 300 85.5"
-     class="v-sparkline theme--light primary--text"
+     class="primary--text"
 >
   <defs>
     <linearGradient id="35"
+                    gradientunits="userSpaceOnUse"
                     x1="0"
-                    y1="1"
+                    y1="100%"
                     x2="0"
                     y2="0"
     >
       <stop offset="0"
-            stop-color="primary"
+            stop-color="currentColor"
       >
       </stop>
     </linearGradient>
   </defs>
-  <g style="font-size: 8; text-anchor: middle; dominant-baseline: mathematical; fill: primary;">
+  <g style="font-size: 8; text-anchor: middle; dominant-baseline: mathematical; fill: currentColor;">
     <text x="8"
           y="76.25"
           font-size="7"
@@ -39,8 +40,7 @@ exports[`VSparkline.ts should position labels correctly 1`] = `
       42
     </text>
   </g>
-  <path id="35"
-        d="M8 66.99999L150 58.36585365853659S150 58.36585365853659 150 58.36585365853659L292 8.00001"
+  <path d="M8 67L150 58.36585365853659S150 58.36585365853659 150 58.36585365853659L292 8"
         fill="none"
         stroke="url(#35)"
   >
@@ -48,27 +48,84 @@ exports[`VSparkline.ts should position labels correctly 1`] = `
 </svg>
 `;
 
-exports[`VSparkline.ts should render component and match a snapshot 1`] = `
+exports[`VSparkline.ts should render bar component with all values 0 1`] = `
 <svg display="block"
-     stroke-width="4"
      viewbox="0 0 300 75"
-     class="v-sparkline theme--light primary--text"
 >
   <defs>
-    <linearGradient id="1"
+    <linearGradient id="39"
+                    gradientunits="userSpaceOnUse"
                     x1="0"
-                    y1="1"
+                    y1="100%"
                     x2="0"
                     y2="0"
     >
       <stop offset="0"
-            stop-color="primary"
+            stop-color="currentColor"
       >
       </stop>
     </linearGradient>
   </defs>
-  <path id="1"
-        d="M8 66.99999L150 58.36585365853659S150 58.36585365853659 150 58.36585365853659L292 8.00001"
+  <clipPath id="sparkline-bar-39-clip">
+    <rect x="48"
+          y="75"
+          width="4"
+          height="0"
+          rx="0"
+          ry="0"
+    >
+    </rect>
+    <rect x="148"
+          y="75"
+          width="4"
+          height="0"
+          rx="0"
+          ry="0"
+    >
+    </rect>
+    <rect x="248"
+          y="75"
+          width="4"
+          height="0"
+          rx="0"
+          ry="0"
+    >
+    </rect>
+  </clipPath>
+  <g clip-path="url(#sparkline-bar-39-clip)"
+     fill="url(#39)"
+  >
+    <rect x="0"
+          y="0"
+          width="300"
+          height="75"
+    >
+    </rect>
+  </g>
+</svg>
+`;
+
+exports[`VSparkline.ts should render component and match a snapshot 1`] = `
+<svg display="block"
+     stroke-width="4"
+     viewbox="0 0 300 75"
+     class="primary--text"
+>
+  <defs>
+    <linearGradient id="1"
+                    gradientunits="userSpaceOnUse"
+                    x1="0"
+                    y1="100%"
+                    x2="0"
+                    y2="0"
+    >
+      <stop offset="0"
+            stop-color="currentColor"
+      >
+      </stop>
+    </linearGradient>
+  </defs>
+  <path d="M8 67L150 58.36585365853659S150 58.36585365853659 150 58.36585365853659L292 8"
         fill="none"
         stroke="url(#1)"
   >
@@ -79,17 +136,17 @@ exports[`VSparkline.ts should render component and match a snapshot 1`] = `
 exports[`VSparkline.ts should render component with bars and auto-line-width and match a snapshot 1`] = `
 <svg display="block"
      viewbox="0 0 300 75"
-     class="v-sparkline theme--light"
 >
   <defs>
     <linearGradient id="21"
+                    gradientunits="userSpaceOnUse"
                     x1="0"
-                    y1="1"
+                    y1="100%"
                     x2="0"
                     y2="0"
     >
       <stop offset="0"
-            stop-color="primary"
+            stop-color="currentColor"
       >
       </stop>
     </linearGradient>
@@ -136,17 +193,17 @@ exports[`VSparkline.ts should render component with bars and auto-line-width and
 exports[`VSparkline.ts should render component with bars and auto-line-width with custom padding and match a snapshot 1`] = `
 <svg display="block"
      viewbox="0 0 300 75"
-     class="v-sparkline theme--light"
 >
   <defs>
     <linearGradient id="27"
+                    gradientunits="userSpaceOnUse"
                     x1="0"
-                    y1="1"
+                    y1="100%"
                     x2="0"
                     y2="0"
     >
       <stop offset="0"
-            stop-color="primary"
+            stop-color="currentColor"
       >
       </stop>
     </linearGradient>
@@ -193,17 +250,17 @@ exports[`VSparkline.ts should render component with bars and auto-line-width wit
 exports[`VSparkline.ts should render component with bars and correct bar lengths 1`] = `
 <svg display="block"
      viewbox="0 0 300 75"
-     class="v-sparkline theme--light"
 >
   <defs>
     <linearGradient id="37"
+                    gradientunits="userSpaceOnUse"
                     x1="0"
-                    y1="1"
+                    y1="100%"
                     x2="0"
                     y2="0"
     >
       <stop offset="0"
-            stop-color="primary"
+            stop-color="currentColor"
       >
       </stop>
     </linearGradient>
@@ -242,17 +299,17 @@ exports[`VSparkline.ts should render component with bars and correct bar lengths
 exports[`VSparkline.ts should render component with bars and correct bar lengths 2`] = `
 <svg display="block"
      viewbox="0 0 300 75"
-     class="v-sparkline theme--light"
 >
   <defs>
     <linearGradient id="37"
+                    gradientunits="userSpaceOnUse"
                     x1="0"
-                    y1="1"
+                    y1="100%"
                     x2="0"
                     y2="0"
     >
       <stop offset="0"
-            stop-color="primary"
+            stop-color="currentColor"
       >
       </stop>
     </linearGradient>
@@ -291,17 +348,17 @@ exports[`VSparkline.ts should render component with bars and correct bar lengths
 exports[`VSparkline.ts should render component with bars and custom label size and match a snapshot 1`] = `
 <svg display="block"
      viewbox="0 0 300 97.5"
-     class="v-sparkline theme--light"
 >
   <defs>
     <linearGradient id="29"
+                    gradientunits="userSpaceOnUse"
                     x1="0"
-                    y1="1"
+                    y1="100%"
                     x2="0"
                     y2="0"
     >
       <stop offset="0"
-            stop-color="primary"
+            stop-color="currentColor"
       >
       </stop>
     </linearGradient>
@@ -332,7 +389,7 @@ exports[`VSparkline.ts should render component with bars and custom label size a
     >
     </rect>
   </clipPath>
-  <g style="font-size: 8; text-anchor: middle; dominant-baseline: mathematical; fill: primary;">
+  <g style="font-size: 8; text-anchor: middle; dominant-baseline: mathematical; fill: currentColor;">
     <text x="50"
           y="86.25"
           font-size="15"
@@ -368,17 +425,17 @@ exports[`VSparkline.ts should render component with bars and custom label size a
 exports[`VSparkline.ts should render component with bars and custom padding and match a snapshot 1`] = `
 <svg display="block"
      viewbox="0 0 300 75"
-     class="v-sparkline theme--light"
 >
   <defs>
     <linearGradient id="25"
+                    gradientunits="userSpaceOnUse"
                     x1="0"
-                    y1="1"
+                    y1="100%"
                     x2="0"
                     y2="0"
     >
       <stop offset="0"
-            stop-color="primary"
+            stop-color="currentColor"
       >
       </stop>
     </linearGradient>
@@ -425,12 +482,12 @@ exports[`VSparkline.ts should render component with bars and custom padding and 
 exports[`VSparkline.ts should render component with bars and gradient and match a snapshot 1`] = `
 <svg display="block"
      viewbox="0 0 300 75"
-     class="v-sparkline theme--light"
 >
   <defs>
     <linearGradient id="17"
+                    gradientunits="userSpaceOnUse"
                     x1="0"
-                    y1="1"
+                    y1="100%"
                     x2="0"
                     y2="0"
     >
@@ -490,17 +547,17 @@ exports[`VSparkline.ts should render component with bars and gradient and match 
 exports[`VSparkline.ts should render component with bars and labels and match a snapshot 1`] = `
 <svg display="block"
      viewbox="0 0 300 85.5"
-     class="v-sparkline theme--light"
 >
   <defs>
     <linearGradient id="19"
+                    gradientunits="userSpaceOnUse"
                     x1="0"
-                    y1="1"
+                    y1="100%"
                     x2="0"
                     y2="0"
     >
       <stop offset="0"
-            stop-color="primary"
+            stop-color="currentColor"
       >
       </stop>
     </linearGradient>
@@ -531,7 +588,7 @@ exports[`VSparkline.ts should render component with bars and labels and match a 
     >
     </rect>
   </clipPath>
-  <g style="font-size: 8; text-anchor: middle; dominant-baseline: mathematical; fill: primary;">
+  <g style="font-size: 8; text-anchor: middle; dominant-baseline: mathematical; fill: currentColor;">
     <text x="50"
           y="80.25"
           font-size="7"
@@ -567,17 +624,17 @@ exports[`VSparkline.ts should render component with bars and labels and match a 
 exports[`VSparkline.ts should render component with bars and line width and match a snapshot 1`] = `
 <svg display="block"
      viewbox="0 0 300 75"
-     class="v-sparkline theme--light"
 >
   <defs>
     <linearGradient id="23"
+                    gradientunits="userSpaceOnUse"
                     x1="0"
-                    y1="1"
+                    y1="100%"
                     x2="0"
                     y2="0"
     >
       <stop offset="0"
-            stop-color="primary"
+            stop-color="currentColor"
       >
       </stop>
     </linearGradient>
@@ -624,17 +681,17 @@ exports[`VSparkline.ts should render component with bars and line width and matc
 exports[`VSparkline.ts should render component with bars and match a snapshot 1`] = `
 <svg display="block"
      viewbox="0 0 300 75"
-     class="v-sparkline theme--light"
 >
   <defs>
     <linearGradient id="13"
+                    gradientunits="userSpaceOnUse"
                     x1="0"
-                    y1="1"
+                    y1="100%"
                     x2="0"
                     y2="0"
     >
       <stop offset="0"
-            stop-color="primary"
+            stop-color="currentColor"
       >
       </stop>
     </linearGradient>
@@ -681,17 +738,17 @@ exports[`VSparkline.ts should render component with bars and match a snapshot 1`
 exports[`VSparkline.ts should render component with bars and negative and match a snapshot 1`] = `
 <svg display="block"
      viewbox="0 0 300 75"
-     class="v-sparkline theme--light"
 >
   <defs>
     <linearGradient id="15"
+                    gradientunits="userSpaceOnUse"
                     x1="0"
-                    y1="1"
+                    y1="100%"
                     x2="0"
                     y2="0"
     >
       <stop offset="0"
-            stop-color="primary"
+            stop-color="currentColor"
       >
       </stop>
     </linearGradient>
@@ -747,12 +804,13 @@ exports[`VSparkline.ts should render component with gradient and match a snapsho
 <svg display="block"
      stroke-width="4"
      viewbox="0 0 300 75"
-     class="v-sparkline theme--light primary--text"
+     class="primary--text"
 >
   <defs>
     <linearGradient id="9"
+                    gradientunits="userSpaceOnUse"
                     x1="0"
-                    y1="1"
+                    y1="100%"
                     x2="0"
                     y2="0"
     >
@@ -770,8 +828,7 @@ exports[`VSparkline.ts should render component with gradient and match a snapsho
       </stop>
     </linearGradient>
   </defs>
-  <path id="9"
-        d="M8 66.99999L150 58.36585365853659S150 58.36585365853659 150 58.36585365853659L292 8.00001"
+  <path d="M8 67L150 58.36585365853659S150 58.36585365853659 150 58.36585365853659L292 8"
         fill="none"
         stroke="url(#9)"
   >
@@ -783,22 +840,23 @@ exports[`VSparkline.ts should render component with label size and match a snaps
 <svg display="block"
      stroke-width="4"
      viewbox="0 0 300 96"
-     class="v-sparkline theme--light primary--text"
+     class="primary--text"
 >
   <defs>
     <linearGradient id="33"
+                    gradientunits="userSpaceOnUse"
                     x1="0"
-                    y1="1"
+                    y1="100%"
                     x2="0"
                     y2="0"
     >
       <stop offset="0"
-            stop-color="primary"
+            stop-color="currentColor"
       >
       </stop>
     </linearGradient>
   </defs>
-  <g style="font-size: 8; text-anchor: middle; dominant-baseline: mathematical; fill: primary;">
+  <g style="font-size: 8; text-anchor: middle; dominant-baseline: mathematical; fill: currentColor;">
     <text x="8"
           y="81.5"
           font-size="14"
@@ -818,8 +876,7 @@ exports[`VSparkline.ts should render component with label size and match a snaps
       42
     </text>
   </g>
-  <path id="33"
-        d="M8 66.99999L150 58.36585365853659S150 58.36585365853659 150 58.36585365853659L292 8.00001"
+  <path d="M8 67L150 58.36585365853659S150 58.36585365853659 150 58.36585365853659L292 8"
         fill="none"
         stroke="url(#33)"
   >
@@ -831,23 +888,23 @@ exports[`VSparkline.ts should render component with line width and match a snaps
 <svg display="block"
      stroke-width="42"
      viewbox="0 0 300 75"
-     class="v-sparkline theme--light primary--text"
+     class="primary--text"
 >
   <defs>
     <linearGradient id="7"
+                    gradientunits="userSpaceOnUse"
                     x1="0"
-                    y1="1"
+                    y1="100%"
                     x2="0"
                     y2="0"
     >
       <stop offset="0"
-            stop-color="primary"
+            stop-color="currentColor"
       >
       </stop>
     </linearGradient>
   </defs>
-  <path id="7"
-        d="M8 66.99999L150 58.36585365853659S150 58.36585365853659 150 58.36585365853659L292 8.00001"
+  <path d="M8 67L150 58.36585365853659S150 58.36585365853659 150 58.36585365853659L292 8"
         fill="none"
         stroke="url(#7)"
   >
@@ -859,23 +916,23 @@ exports[`VSparkline.ts should render component with padding and match a snapshot
 <svg display="block"
      stroke-width="4"
      viewbox="0 0 300 75"
-     class="v-sparkline theme--light primary--text"
+     class="primary--text"
 >
   <defs>
     <linearGradient id="3"
+                    gradientunits="userSpaceOnUse"
                     x1="0"
-                    y1="1"
+                    y1="100%"
                     x2="0"
                     y2="0"
     >
       <stop offset="0"
-            stop-color="primary"
+            stop-color="currentColor"
       >
       </stop>
     </linearGradient>
   </defs>
-  <path id="3"
-        d="M20 54.99999L150 49.8780487804878S150 49.8780487804878 150 49.8780487804878L280 20.00001"
+  <path d="M20 55L150 49.8780487804878S150 49.8780487804878 150 49.8780487804878L280 20"
         fill="none"
         stroke="url(#3)"
   >
@@ -887,22 +944,23 @@ exports[`VSparkline.ts should render component with string labels and match a sn
 <svg display="block"
      stroke-width="4"
      viewbox="0 0 300 85.5"
-     class="v-sparkline theme--light primary--text"
+     class="primary--text"
 >
   <defs>
     <linearGradient id="11"
+                    gradientunits="userSpaceOnUse"
                     x1="0"
-                    y1="1"
+                    y1="100%"
                     x2="0"
                     y2="0"
     >
       <stop offset="0"
-            stop-color="primary"
+            stop-color="currentColor"
       >
       </stop>
     </linearGradient>
   </defs>
-  <g style="font-size: 8; text-anchor: middle; dominant-baseline: mathematical; fill: primary;">
+  <g style="font-size: 8; text-anchor: middle; dominant-baseline: mathematical; fill: currentColor;">
     <text x="8"
           y="76.25"
           font-size="7"
@@ -922,8 +980,7 @@ exports[`VSparkline.ts should render component with string labels and match a sn
       42
     </text>
   </g>
-  <path id="11"
-        d="M8 66.99999L150 58.36585365853659S150 58.36585365853659 150 58.36585365853659L292 8.00001"
+  <path d="M8 67L150 58.36585365853659S150 58.36585365853659 150 58.36585365853659L292 8"
         fill="none"
         stroke="url(#11)"
   >
@@ -935,22 +992,23 @@ exports[`VSparkline.ts should render component with string labels and match a sn
 <svg display="block"
      stroke-width="4"
      viewbox="0 0 300 85.5"
-     class="v-sparkline theme--light primary--text"
+     class="primary--text"
 >
   <defs>
     <linearGradient id="11"
+                    gradientunits="userSpaceOnUse"
                     x1="0"
-                    y1="1"
+                    y1="100%"
                     x2="0"
                     y2="0"
     >
       <stop offset="0"
-            stop-color="primary"
+            stop-color="currentColor"
       >
       </stop>
     </linearGradient>
   </defs>
-  <g style="font-size: 8; text-anchor: middle; dominant-baseline: mathematical; fill: primary;">
+  <g style="font-size: 8; text-anchor: middle; dominant-baseline: mathematical; fill: currentColor;">
     <text x="8"
           y="76.25"
           font-size="7"
@@ -970,8 +1028,7 @@ exports[`VSparkline.ts should render component with string labels and match a sn
       43
     </text>
   </g>
-  <path id="11"
-        d="M8 66.99999L150 58.36585365853659S150 58.36585365853659 150 58.36585365853659L292 8.00001"
+  <path d="M8 67L150 58.36585365853659S150 58.36585365853659 150 58.36585365853659L292 8"
         fill="none"
         stroke="url(#11)"
   >
@@ -983,22 +1040,23 @@ exports[`VSparkline.ts should render component with string labels and match a sn
 <svg display="block"
      stroke-width="4"
      viewbox="0 0 300 85.5"
-     class="v-sparkline theme--light primary--text"
+     class="primary--text"
 >
   <defs>
     <linearGradient id="11"
+                    gradientunits="userSpaceOnUse"
                     x1="0"
-                    y1="1"
+                    y1="100%"
                     x2="0"
                     y2="0"
     >
       <stop offset="0"
-            stop-color="primary"
+            stop-color="currentColor"
       >
       </stop>
     </linearGradient>
   </defs>
-  <g style="font-size: 8; text-anchor: middle; dominant-baseline: mathematical; fill: primary;">
+  <g style="font-size: 8; text-anchor: middle; dominant-baseline: mathematical; fill: currentColor;">
     <text x="8"
           y="76.25"
           font-size="7"
@@ -1018,8 +1076,7 @@ exports[`VSparkline.ts should render component with string labels and match a sn
       baz
     </text>
   </g>
-  <path id="11"
-        d="M8 66.99999L150 58.36585365853659S150 58.36585365853659 150 58.36585365853659L292 8.00001"
+  <path d="M8 67L150 58.36585365853659S150 58.36585365853659 150 58.36585365853659L292 8"
         fill="none"
         stroke="url(#11)"
   >
@@ -1031,23 +1088,23 @@ exports[`VSparkline.ts should render component with trend and equal values and m
 <svg display="block"
      stroke-width="4"
      viewbox="0 0 300 75"
-     class="v-sparkline theme--light primary--text"
+     class="primary--text"
 >
   <defs>
     <linearGradient id="31"
+                    gradientunits="userSpaceOnUse"
                     x1="0"
-                    y1="1"
+                    y1="100%"
                     x2="0"
                     y2="0"
     >
       <stop offset="0"
-            stop-color="primary"
+            stop-color="currentColor"
       >
       </stop>
     </linearGradient>
   </defs>
-  <path id="31"
-        d="M8 66.99999L150 67L292 67.00001"
+  <path d="M8 67L150 67L292 67"
         fill="none"
         stroke="url(#31)"
   >
@@ -1059,23 +1116,23 @@ exports[`VSparkline.ts should render smooth component and match a snapshot 1`] =
 <svg display="block"
      stroke-width="4"
      viewbox="0 0 300 75"
-     class="v-sparkline theme--light primary--text"
+     class="primary--text"
 >
   <defs>
     <linearGradient id="5"
+                    gradientunits="userSpaceOnUse"
                     x1="0"
-                    y1="1"
+                    y1="100%"
                     x2="0"
                     y2="0"
     >
       <stop offset="0"
-            stop-color="primary"
+            stop-color="currentColor"
       >
       </stop>
     </linearGradient>
   </defs>
-  <path id="5"
-        d="M8 66.99999L130.03686879378304 59.579687437670394S150 58.36585365853659 168.8494438621337 51.6801625133916L292 8.00001"
+  <path d="M8 67L130.03686887894946 59.57968883834626S150 58.36585365853659 168.84944344392306 51.680161334300735L292 8"
         fill="none"
         stroke="url(#5)"
   >

@@ -130,6 +130,21 @@ function checkPnpm (result) {
   return result
 }
 
+const _npmProjects = new LRU({
+  max: 10,
+  maxAge: 1000
+})
+exports.hasProjectNpm = (cwd) => {
+  if (_npmProjects.has(cwd)) {
+    return _npmProjects.get(cwd)
+  }
+
+  const lockFile = path.join(cwd, 'package-lock.json')
+  const result = fs.existsSync(lockFile)
+  _npmProjects.set(cwd, result)
+  return result
+}
+
 // OS
 exports.isWindows = process.platform === 'win32'
 exports.isMacintosh = process.platform === 'darwin'
@@ -141,7 +156,8 @@ let hasCheckedBrowsers = false
 function tryRun (cmd) {
   try {
     return execSync(cmd, {
-      stdio: [0, 'pipe', 'ignore']
+      stdio: [0, 'pipe', 'ignore'],
+      timeout: 10000
     }).toString().trim()
   } catch (e) {
     return ''
@@ -162,44 +178,41 @@ function getMacAppVersion (bundleIdentifier) {
   }
 }
 
-Object.defineProperty(exports, 'installedBrowsers', {
-  enumerable: true,
-  get () {
-    if (hasCheckedBrowsers) {
-      return browsers
-    }
-    hasCheckedBrowsers = true
-
-    if (exports.isLinux) {
-      browsers.chrome = getLinuxAppVersion('google-chrome')
-      browsers.firefox = getLinuxAppVersion('firefox')
-    } else if (exports.isMacintosh) {
-      browsers.chrome = getMacAppVersion('com.google.Chrome')
-      browsers.firefox = getMacAppVersion('org.mozilla.firefox')
-    } else if (exports.isWindows) {
-      // get chrome stable version
-      // https://stackoverflow.com/a/51773107/2302258
-      const chromeQueryResult = tryRun(
-        'reg query "HKLM\\Software\\Google\\Update\\Clients\\{8A69D345-D564-463c-AFF1-A69D9E530F96}" /v pv /reg:32'
-      ) || tryRun(
-        'reg query "HKCU\\Software\\Google\\Update\\Clients\\{8A69D345-D564-463c-AFF1-A69D9E530F96}" /v pv /reg:32'
-      )
-      if (chromeQueryResult) {
-        const matched = chromeQueryResult.match(/REG_SZ\s+(\S*)$/)
-        browsers.chrome = matched && matched[1]
-      }
-
-      // get firefox version
-      // https://community.spiceworks.com/topic/111518-how-to-determine-version-of-installed-firefox-in-windows-batchscript
-      const ffQueryResult = tryRun(
-        'reg query "HKLM\\Software\\Mozilla\\Mozilla Firefox" /v CurrentVersion'
-      )
-      if (ffQueryResult) {
-        const matched = ffQueryResult.match(/REG_SZ\s+(\S*)$/)
-        browsers.firefox = matched && matched[1]
-      }
-    }
-
+exports.getInstalledBrowsers = () => {
+  if (hasCheckedBrowsers) {
     return browsers
   }
-})
+  hasCheckedBrowsers = true
+
+  if (exports.isLinux) {
+    browsers.chrome = getLinuxAppVersion('google-chrome')
+    browsers.firefox = getLinuxAppVersion('firefox')
+  } else if (exports.isMacintosh) {
+    browsers.chrome = getMacAppVersion('com.google.Chrome')
+    browsers.firefox = getMacAppVersion('org.mozilla.firefox')
+  } else if (exports.isWindows) {
+    // get chrome stable version
+    // https://stackoverflow.com/a/51773107/2302258
+    const chromeQueryResult = tryRun(
+      'reg query "HKLM\\Software\\Google\\Update\\Clients\\{8A69D345-D564-463c-AFF1-A69D9E530F96}" /v pv /reg:32'
+    ) || tryRun(
+      'reg query "HKCU\\Software\\Google\\Update\\Clients\\{8A69D345-D564-463c-AFF1-A69D9E530F96}" /v pv /reg:32'
+    )
+    if (chromeQueryResult) {
+      const matched = chromeQueryResult.match(/REG_SZ\s+(\S*)$/)
+      browsers.chrome = matched && matched[1]
+    }
+
+    // get firefox version
+    // https://community.spiceworks.com/topic/111518-how-to-determine-version-of-installed-firefox-in-windows-batchscript
+    const ffQueryResult = tryRun(
+      'reg query "HKLM\\Software\\Mozilla\\Mozilla Firefox" /v CurrentVersion'
+    )
+    if (ffQueryResult) {
+      const matched = ffQueryResult.match(/REG_SZ\s+(\S*)$/)
+      browsers.firefox = matched && matched[1]
+    }
+  }
+
+  return browsers
+}

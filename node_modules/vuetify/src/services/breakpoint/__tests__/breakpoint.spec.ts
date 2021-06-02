@@ -1,5 +1,6 @@
 import { resizeWindow } from '../../../../test'
 import { Breakpoint } from '../'
+import { preset } from '../../../presets/default'
 
 describe('Breakpoint.ts', () => {
   let breakpoint: Breakpoint
@@ -230,7 +231,8 @@ describe('Breakpoint.ts', () => {
   ]
 
   beforeEach(() => {
-    breakpoint = new Breakpoint()
+    breakpoint = new Breakpoint(preset)
+    breakpoint.init()
   })
 
   scenarios.slice(0, 1).forEach(scenario => {
@@ -271,15 +273,28 @@ describe('Breakpoint.ts', () => {
 
   it('should allow to override defaults via factory args', async () => {
     breakpoint = new Breakpoint({
-      thresholds: {
-        xs: 400,
-      },
+      ...preset,
+      breakpoint: {
+        thresholds: { xs: 400 },
+      } as any,
     })
+    breakpoint.init()
 
     await resizeWindow(401)
     expect(breakpoint.xs).toBe(false)
 
     await resizeWindow(399)
     expect(breakpoint.xs).toBe(true)
+  })
+
+  it('should allow breakpoint strings for mobileBreakpoint', async () => {
+    breakpoint.mobileBreakpoint = 'lg'
+    await resizeWindow(1920)
+
+    expect(breakpoint.mobile).toBe(false)
+
+    await resizeWindow(600)
+
+    expect(breakpoint.mobile).toBe(true)
   })
 })

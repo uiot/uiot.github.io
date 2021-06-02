@@ -8,7 +8,8 @@ import mixins from '../../util/mixins';
 export default mixins(Measurable).extend({
   name: 'v-responsive',
   props: {
-    aspectRatio: [String, Number]
+    aspectRatio: [String, Number],
+    contentClass: String
   },
   computed: {
     computedAspectRatio() {
@@ -33,7 +34,8 @@ export default mixins(Measurable).extend({
   methods: {
     genContent() {
       return this.$createElement('div', {
-        staticClass: 'v-responsive__content'
+        staticClass: 'v-responsive__content',
+        class: this.contentClass
       }, this.$slots.default);
     }
 
