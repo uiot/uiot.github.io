@@ -14,7 +14,7 @@ const Publications = [
     type: "conference",
     name: "",
     short: "ICITS 2021",
-    publication_link: "",
+    publication_link: "https://link.springer.com/chapter/10.1007/978-3-030-68285-9_3",
     download: "",
     language: "en",
     published: true
@@ -29,12 +29,12 @@ const Publications = [
       "lucascoelho",
       "danielsilva",
       "lucasmartins",
-      "nataliamarques"
+      "fabiomendonca"
     ],
     type: "conference",
     name: "",
     short: "ICITS 2021",
-    publication_link: "",
+    publication_link: "https://link.springer.com/chapter/10.1007/978-3-030-68285-9_27",
     download: "",
     language: "en",
     published: true
@@ -54,7 +54,7 @@ const Publications = [
     type: "conference",
     name: "",
     short: "ICITS 2021",
-    publication_link: "",
+    publication_link: "http://risti.xyz/index.php?lang=es",
     download: "",
     language: "pt-br",
     published: true
@@ -69,7 +69,7 @@ const Publications = [
       "fabiomendonca",
       "paulomendes",
       "andrecavalcanti",
-      "fabiomendonca",
+      "leonardoalmeida",
     ],
     type: "conference",
     name: "",
@@ -94,7 +94,7 @@ const Publications = [
     type: "conference",
     name: "",
     short: "WorldCIST 2021",
-    publication_link: "",
+    publication_link: "https://link.springer.com/chapter/10.1007%2F978-3-030-72660-7_61",
     download: "",
     language: "en",
     published: true
@@ -114,7 +114,7 @@ const Publications = [
     type: "conference",
     name: "",
     short: "IJWI 2021",
-    publication_link: "",
+    publication_link: "http://www.iadisportal.org/ijwi/papers/202018201.pdf",
     download: "",
     language: "en",
     published: true
