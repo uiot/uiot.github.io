@@ -1,5 +1,125 @@
 const Publications = [
   {
+    year: 2021,
+    title:
+      "Design and Evaluation of a Data Collector and Analyzer to Monitor the COVID-19 and other Epidemic Outbreaks",
+    authors: [
+      "desousa",
+      "franciscocaldasf",
+      "lucascoelho",
+      "danielsilva",
+      "fabiomendonca",
+      "nataliamarques"
+    ],
+    type: "conference",
+    name: "",
+    short: "ICITS 2021",
+    publication_link: "",
+    download: "",
+    language: "en",
+    published: true
+  },
+  {
+    year: 2021,
+    title:
+      "Design of a Fog Controller to Provide an IoT Middleware with Hierarchical Interaction Capability",
+    authors: [
+      "desousa",
+      "franciscocaldasf",
+      "lucascoelho",
+      "danielsilva",
+      "lucasmartins",
+      "nataliamarques"
+    ],
+    type: "conference",
+    name: "",
+    short: "ICITS 2021",
+    publication_link: "",
+    download: "",
+    language: "en",
+    published: true
+  },
+  {
+    year: 2021,
+    title:
+      "Home Office file-sharing: A secure and highly available file storage solution in a private cloud environment",
+    authors: [
+      "desousa",
+      "franciscocaldasf",
+      "lucasmartins",
+      "rafaelmonteiro",
+      "caiosilva",
+      "robsonalbuquerde",
+    ],
+    type: "conference",
+    name: "",
+    short: "ICITS 2021",
+    publication_link: "",
+    download: "",
+    language: "pt-br",
+    published: true
+  },
+  {
+    year: 2021,
+    title:
+      "Design of an Interactive Mobile Platform to Assist Communities in Voluntary Cooperation to Counter the Covid-19 Outbreak (AMORISIOT Mobile APP)",
+    authors: [
+      "desousa",
+      "franciscocaldasf",
+      "fabiomendonca",
+      "paulomendes",
+      "andrecavalcanti",
+      "fabiomendonca",
+    ],
+    type: "conference",
+    name: "",
+    short: "WorldCIST 2021",
+    publication_link: "",
+    download: "",
+    language: "en",
+    published: true
+  },
+  {
+    year: 2021,
+    title:
+      "Data Science Procedures to Aggregate Unstructured Disease Data in Georeferenced Spreading Analysis",
+    authors: [
+      "desousa",
+      "franciscocaldasf",
+      "lucascoelho",
+      "danielsilva",
+      "lucasmartins",
+      "nataliamarques"
+    ],
+    type: "conference",
+    name: "",
+    short: "WorldCIST 2021",
+    publication_link: "",
+    download: "",
+    language: "en",
+    published: true
+  },
+  {
+    year: 2021,
+    title:
+      "Design and Implementation of a Collaborative Platform Model for Epidemic and Collective Health Services",
+    authors: [
+      "desousa",
+      "franciscocaldasf",
+      "lucascoelho",
+      "danielsilva",
+      "fabiomendonca",
+      "lucasmartins"
+    ],
+    type: "conference",
+    name: "",
+    short: "IJWI 2021",
+    publication_link: "",
+    download: "",
+    language: "en",
+    published: true
+  },
+  {
     year: 2020,
     title:
       "Technological Solution Development During the COVID-19 Pandemic: a Case Study in an IoT Lab",
