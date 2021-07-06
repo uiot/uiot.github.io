@@ -7,7 +7,7 @@ const Publications = [
       "desousa",
       "franciscocaldasf",
       "lucascoelho",
-      "danielsilva",
+      "prado",
       "fabiomendonca",
       "nataliamarques"
     ],
@@ -27,7 +27,7 @@ const Publications = [
       "desousa",
       "franciscocaldasf",
       "lucascoelho",
-      "danielsilva",
+      "prado",
       "lucasmartins",
       "fabiomendonca"
     ],
@@ -87,7 +87,7 @@ const Publications = [
       "desousa",
       "franciscocaldasf",
       "lucascoelho",
-      "danielsilva",
+      "prado",
       "lucasmartins",
       "nataliamarques"
     ],
