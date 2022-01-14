@@ -56,6 +56,21 @@ const Members = [
     }
   },
   {
+    key: "georges",
+    name: "Georges Daniel Amvame Nze",
+    area: "Professor Dr. Engenharia Elétrica",
+    email: "georges@unb.br",
+    picture: "man",
+    bio: "A cool person",
+    linkedin: "",
+    github: "",
+    belong: true,
+    lab: {
+      active: true,
+      area: "coordination"
+    }
+  },
+  {
     key: "desousa",
     name: "Rafael de Sousa Jr.",
     area: "Professor Dr. Engenharia Elétrica",
