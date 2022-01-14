@@ -36,6 +36,21 @@ const Members = [
     github: "",
     belong: true,
     lab: {
+      active: false,
+      area: "coordination"
+    }
+  },
+  {
+    key: "fabio",
+    name: "Fábio Lucio Lopes de Mendonca",
+    area: "Professor Dr. Engenharia Elétrica",
+    email: "fabio.mendonca@redes.unb.br ",
+    picture: "man",
+    bio: "A cool person",
+    linkedin: "",
+    github: "",
+    belong: true,
+    lab: {
       active: true,
       area: "coordination"
     }
