@@ -1,5 +1,5 @@
 import Vue from "vue";
-import Router from "vue-router";
+import VueRouter from "vue-router";
 
 import Site_Layout from "../Site.vue";
 import Home from "../views/Home.vue";
@@ -11,8 +11,8 @@ import Team from "../views/Team.vue";
 import Docs_Layout from "../Docs.vue";
 import Default from "../docs/Default.vue";
 
-Vue.use(Router);
-export default new Router({
+Vue.use(VueRouter);
+export default new VueRouter({
   routes: [
     {
       path: "/",
