@@ -1,4 +1,4 @@
-import Vue from "vue";
+import Vue from "vue/dist/vue";
 import VueRouter from "vue-router";
 
 import Site_Layout from "../Site.vue";
