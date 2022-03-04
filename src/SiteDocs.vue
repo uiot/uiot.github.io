@@ -6,7 +6,7 @@
         <v-toolbar-title class="pl-10">
           <div @click="goTo()">
             <v-img class="imgLogo" src="@/assets/logo.png" width="35" />
-            <span class="titleText  nameLogo base--text">
+            <span class="titleText nameLogo base--text">
               <h2><b> uiot </b></h2>
             </span>
             <span class="titleText nameLogo base--text">
@@ -31,15 +31,15 @@
 </template>
 
 <script>
-import Menu from "./docs/components/Menu.vue";
+import Menu from "./docs/components/DocsMenu.vue";
 
 export default {
   components: {
-    Menu
+    Menu,
   },
   data: () => ({
-    drawer: null
-  })
+    drawer: null,
+  }),
 };
 </script>
 

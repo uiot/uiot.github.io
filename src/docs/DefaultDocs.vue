@@ -14,11 +14,11 @@ import _ from "lodash";
 export default {
   data() {
     return {
-      input: ""
+      input: "",
     };
   },
   computed: {
-    compiledMarkdown: function() {
+    compiledMarkdown: function () {
       let path = "./" + this.currentRoute();
       let content = require(`${path.toString()}`);
       // alert(content)
@@ -28,7 +28,7 @@ export default {
     },
     computedRoute() {
       return this.currentRoute();
-    }
+    },
   },
   methods: {
     currentRoute() {
@@ -40,10 +40,10 @@ export default {
       }
       return __ret;
     },
-    update: _.debounce(function(e) {
+    update: _.debounce(function (e) {
       this.input = e.target.value;
-    }, 300)
-  }
+    }, 300),
+  },
 };
 </script>
 

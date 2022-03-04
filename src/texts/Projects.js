@@ -15,13 +15,13 @@ const projects = {
         technologies: [
           {
             language: "mdi-language-python",
-            name: "python"
+            name: "python",
           },
           {
             language: "mdi-database",
-            name: "mongodb"
-          }
-        ]
+            name: "mongodb",
+          },
+        ],
       },
       {
         name: "DIMS",
@@ -34,13 +34,13 @@ const projects = {
         technologies: [
           {
             language: "mdi-language-python",
-            name: "python"
+            name: "python",
           },
           {
             language: "mdi-database",
-            name: "mongodb"
-          }
-        ]
+            name: "mongodb",
+          },
+        ],
       },
       {
         name: "UIMS",
@@ -53,13 +53,13 @@ const projects = {
         technologies: [
           {
             language: "mdi-language-javascript",
-            name: "javascript"
+            name: "javascript",
           },
           {
             language: "mdi-database",
-            name: "mongodb"
-          }
-        ]
+            name: "mongodb",
+          },
+        ],
       },
       {
         name: "Dashboard UIoT",
@@ -72,19 +72,19 @@ const projects = {
         technologies: [
           {
             language: "mdi-language-javascript",
-            name: "vuejs"
+            name: "vuejs",
           },
           {
             language: "mdi-database",
-            name: "postgresql"
+            name: "postgresql",
           },
           {
             language: "mdi-language-html5",
-            name: "html"
-          }
-        ]
-      }
-    ]
+            name: "html",
+          },
+        ],
+      },
+    ],
   },
   covid: {
     title: "Amoris",
@@ -102,13 +102,13 @@ const projects = {
         technologies: [
           {
             language: "mdi-language-javascript",
-            name: "javascript"
+            name: "javascript",
           },
           {
             language: "mdi-language-html5",
-            name: "html"
-          }
-        ]
+            name: "html",
+          },
+        ],
       },
       {
         name: "UnB Solidária",
@@ -121,16 +121,16 @@ const projects = {
         technologies: [
           {
             language: "mdi-android",
-            name: "android"
+            name: "android",
           },
           {
             language: "mdi-database",
-            name: "postgresql"
-          }
-        ]
-      }
-    ]
-  }
+            name: "postgresql",
+          },
+        ],
+      },
+    ],
+  },
 };
 
 export default projects;

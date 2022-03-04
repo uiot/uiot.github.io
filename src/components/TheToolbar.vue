@@ -6,18 +6,18 @@
 </template>
 
 <script>
-import web from "./toolbar/web.vue";
-import mobile from "./toolbar/mobile.vue";
+import web from "./toolbar/WebToolbar.vue";
+import mobile from "./toolbar/MobileToolbar.vue";
 
 export default {
   components: {
     web,
-    mobile
+    mobile,
   },
   data() {
     return {
       isMobile: false,
-      show: false
+      show: false,
     };
   },
   created() {},
@@ -36,8 +36,8 @@ export default {
     },
     goTo() {
       this.$router.push("/");
-    }
-  }
+    },
+  },
 };
 </script>
 

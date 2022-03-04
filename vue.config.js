@@ -4,15 +4,14 @@ module.exports = {
     module: {
       rules: [
         {
-          test: /\.md$/,
-          loader: "raw-loader"
+          test: /(\.md)|(\.ico)$/,
+          loader: "raw-loader",
         },
         {
-          test: /^(.+)\/(assets)\/([^\/]+)\.html$/,
-          loader: "html-loader"
+          test: /\.html$/,
+          loader: "html-loader",
         },
-
-      ]
-    }
-  }
+      ],
+    },
+  },
 };

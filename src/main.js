@@ -7,7 +7,7 @@ import VueMobileDetection from "vue-mobile-detection";
 
 Vue.use(VueMobileDetection);
 
-Vue.filter("capitalize", function(value) {
+Vue.filter("capitalize", function (value) {
   if (!value) return "";
   value = value.toString();
   return value.charAt(0).toUpperCase() + value.slice(1);
@@ -19,5 +19,5 @@ new Vue({
   i18n,
   router,
   vuetify,
-  render: h => h(App)
-}).$mount("#app");
+  render: (h) => h(App),
+}).$mount("app");

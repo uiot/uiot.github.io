@@ -6,13 +6,13 @@ Vue.use(VueI18n);
 
 const messages = {
   en: Languages.English,
-  "pt-br": Languages.Portugues
+  "pt-br": Languages.Portugues,
 };
 
 const i18n = new VueI18n({
   locale: "en", // set locale
   fallbackLocale: "es", // set fallback locale
-  messages // set locale messages
+  messages, // set locale messages
 });
 
 export default i18n;

@@ -27,7 +27,7 @@ export default {
         {
           icon: "mdi-icon",
           name: "Middleware",
-          link: "/middleware"
+          link: "/middleware",
           // subMenu: [
           //     { name: "DIMS", link: "/middleware/dims" },
           //     { name: "Kernel", link: "/middleware/kernel" },
@@ -38,10 +38,10 @@ export default {
         },
         { name: "Gateway", link: "/gateway" },
         { name: "UIMS", link: "/uims" },
-        { name: "Dashboard", link: "/dashboard" }
-      ]
+        { name: "Dashboard", link: "/dashboard" },
+      ],
     };
-  }
+  },
 };
 </script>
 

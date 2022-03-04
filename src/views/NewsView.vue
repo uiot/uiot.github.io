@@ -1,12 +1,8 @@
 <template>
   <div class="news">
     <div class="bloco_principal">
-      <div class="bloco_titulo">
-        News
-      </div>
-      <div class="bloco_texto">
-        Este é um texto de bloco de texto
-      </div>
+      <div class="bloco_titulo">News</div>
+      <div class="bloco_texto">Este é um texto de bloco de texto</div>
       <v-divider></v-divider>
     </div>
   </div>

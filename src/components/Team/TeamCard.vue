@@ -47,7 +47,7 @@ import { filterPublications } from "../../functions/publications.js";
 export default {
   props: ["person", "index"],
   components: {
-    listPublications
+    listPublications,
   },
   data() {
     return {
@@ -55,7 +55,7 @@ export default {
       dialog: false,
       current_publications: [],
       current: [],
-      left: []
+      left: [],
     };
   },
   methods: {
@@ -72,8 +72,8 @@ export default {
       } else {
         return this.colors[index % 5] + "30";
       }
-    }
-  }
+    },
+  },
 };
 </script>
 

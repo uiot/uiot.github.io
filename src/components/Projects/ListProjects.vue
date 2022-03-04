@@ -30,7 +30,7 @@
                 {{ $t(`pages.projects.${project.bind}.${item.text}`) }}
               </span>
             </v-card-text>
-            <v-card-actions class="footer-card ">
+            <v-card-actions class="footer-card">
               <v-spacer />
               <v-tooltip bottom v-for="i in item.technologies" :key="i">
                 <template v-slot:activator="{ on, attrs }">
@@ -56,17 +56,17 @@
 
 <script>
 import Projects from "../../texts/Projects.js";
-import MainTitle from "../commom/Title";
+import MainTitle from "../commom/MainTitle";
 
 export default {
   components: {
-    MainTitle
+    MainTitle,
   },
   data() {
     return {
-      projects: Projects
+      projects: Projects,
     };
-  }
+  },
 };
 </script>
 

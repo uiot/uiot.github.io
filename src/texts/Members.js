@@ -22,8 +22,8 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "software"
-    }
+      area: "software",
+    },
   },
   {
     key: "lucasmartins",
@@ -37,8 +37,8 @@ const Members = [
     belong: true,
     lab: {
       active: false,
-      area: "coordination"
-    }
+      area: "coordination",
+    },
   },
   {
     key: "fabio",
@@ -52,8 +52,8 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "coordination"
-    }
+      area: "coordination",
+    },
   },
   {
     key: "georges",
@@ -67,8 +67,8 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "coordination"
-    }
+      area: "coordination",
+    },
   },
   {
     key: "desousa",
@@ -82,9 +82,9 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "coordination"
+      area: "coordination",
     },
-    order: 0
+    order: 0,
   },
   {
     key: "franciscocaldasf",
@@ -98,9 +98,9 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "coordination"
+      area: "coordination",
     },
-    order: 2
+    order: 2,
   },
   {
     key: "victorcampos",
@@ -115,8 +115,8 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "software"
-    }
+      area: "software",
+    },
   },
   {
     key: "lincolnbarbosa",
@@ -130,8 +130,8 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "hardware"
-    }
+      area: "hardware",
+    },
   },
   {
     key: "venzi",
@@ -146,8 +146,8 @@ const Members = [
     belong: true,
     lab: {
       active: false,
-      area: "security"
-    }
+      area: "security",
+    },
   },
   {
     key: "fabiomendonca",
@@ -161,8 +161,8 @@ const Members = [
     belong: false,
     lab: {
       active: false,
-      area: "coordination"
-    }
+      area: "coordination",
+    },
   },
   {
     key: "marcosandrade",
@@ -177,8 +177,8 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "hardware"
-    }
+      area: "hardware",
+    },
   },
   {
     key: "matheusmonteiro",
@@ -193,8 +193,8 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "hardware"
-    }
+      area: "hardware",
+    },
   },
   {
     key: "patrao",
@@ -209,8 +209,8 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "quality"
-    }
+      area: "quality",
+    },
   },
   {
     key: "fernandaformiga",
@@ -225,8 +225,8 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "quality"
-    }
+      area: "quality",
+    },
   },
 
   {
@@ -242,8 +242,8 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "quality"
-    }
+      area: "quality",
+    },
   },
   {
     key: "carolinasartori",
@@ -258,8 +258,8 @@ const Members = [
     belong: true,
     lab: {
       active: false,
-      area: "software"
-    }
+      area: "software",
+    },
   },
   {
     key: "justino",
@@ -274,8 +274,8 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "software"
-    }
+      area: "software",
+    },
   },
   {
     key: "robsonalbuquerde",
@@ -290,8 +290,8 @@ const Members = [
     belong: false,
     lab: {
       active: false,
-      area: "orientation"
-    }
+      area: "orientation",
+    },
   },
   {
     key: "lustosa",
@@ -306,8 +306,8 @@ const Members = [
     belong: false,
     lab: {
       active: false,
-      area: "orientation"
-    }
+      area: "orientation",
+    },
   },
   {
     key: "cassioribeiro",
@@ -322,8 +322,8 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "hardware"
-    }
+      area: "hardware",
+    },
   },
   {
     key: "fiuza",
@@ -338,8 +338,8 @@ const Members = [
     belong: true,
     lab: {
       active: false,
-      area: "software"
-    }
+      area: "software",
+    },
   },
   {
     key: "maristelaholanda",
@@ -354,8 +354,8 @@ const Members = [
     belong: false,
     lab: {
       active: false,
-      area: "orientation"
-    }
+      area: "orientation",
+    },
   },
   {
     key: "thalessperling",
@@ -370,8 +370,8 @@ const Members = [
     belong: true,
     lab: {
       active: false,
-      area: "software"
-    }
+      area: "software",
+    },
   },
   {
     key: "dayannecunha",
@@ -386,8 +386,8 @@ const Members = [
     belong: true,
     lab: {
       active: false,
-      area: "software"
-    }
+      area: "software",
+    },
   },
   {
     key: "mateuszanatta",
@@ -401,8 +401,8 @@ const Members = [
     belong: true,
     lab: {
       active: false,
-      area: "Area atuação"
-    }
+      area: "Area atuação",
+    },
   },
   {
     key: "brunodutra",
@@ -417,8 +417,8 @@ const Members = [
     belong: true,
     lab: {
       active: false,
-      area: "security"
-    }
+      area: "security",
+    },
   },
   {
     key: "brunofranca",
@@ -433,8 +433,8 @@ const Members = [
     belong: true,
     lab: {
       active: false,
-      area: "software"
-    }
+      area: "software",
+    },
   },
   {
     key: "kfouri",
@@ -449,8 +449,8 @@ const Members = [
     belong: true,
     lab: {
       active: false,
-      area: "security"
-    }
+      area: "security",
+    },
   },
   {
     key: "gersonsilva",
@@ -465,8 +465,8 @@ const Members = [
     belong: false,
     lab: {
       active: false,
-      area: "software"
-    }
+      area: "software",
+    },
   },
   {
     key: "tribouilet",
@@ -481,8 +481,8 @@ const Members = [
     belong: true,
     lab: {
       active: false,
-      area: "software"
-    }
+      area: "software",
+    },
   },
   {
     key: "demetriosilvaf",
@@ -497,8 +497,8 @@ const Members = [
     belong: true,
     lab: {
       active: false,
-      area: "orientation"
-    }
+      area: "orientation",
+    },
   },
   {
     key: "barenco",
@@ -513,8 +513,8 @@ const Members = [
     belong: false,
     lab: {
       active: false,
-      area: "orientation"
-    }
+      area: "orientation",
+    },
   },
   {
     key: "ednacanedo",
@@ -529,8 +529,8 @@ const Members = [
     belong: false,
     lab: {
       active: false,
-      area: "orientation"
-    }
+      area: "orientation",
+    },
   },
   {
     key: "rodrigorocha",
@@ -545,8 +545,8 @@ const Members = [
     belong: true,
     lab: {
       active: false,
-      area: "hardware"
-    }
+      area: "hardware",
+    },
   },
   {
     key: "rubenhuacarpuma",
@@ -561,8 +561,8 @@ const Members = [
     belong: false,
     lab: {
       active: false,
-      area: "Area atuação"
-    }
+      area: "Area atuação",
+    },
   },
   {
     key: "ingridaraujo",
@@ -576,8 +576,8 @@ const Members = [
     belong: false,
     lab: {
       active: false,
-      area: "Area atuação"
-    }
+      area: "Area atuação",
+    },
   },
   {
     key: "fabiobuiati",
@@ -591,8 +591,8 @@ const Members = [
     belong: false,
     lab: {
       active: false,
-      area: "Area atuação"
-    }
+      area: "Area atuação",
+    },
   },
   {
     key: "luisvillalba",
@@ -606,8 +606,8 @@ const Members = [
     belong: false,
     lab: {
       active: false,
-      area: "Area atuação"
-    }
+      area: "Area atuação",
+    },
   },
   {
     key: "taikim",
@@ -621,8 +621,8 @@ const Members = [
     belong: false,
     lab: {
       active: false,
-      area: "Area atuação"
-    }
+      area: "Area atuação",
+    },
   },
   {
     key: "caiosilva",
@@ -637,8 +637,8 @@ const Members = [
     belong: true,
     lab: {
       active: false,
-      area: "software"
-    }
+      area: "software",
+    },
   },
   {
     key: "samuelalmeida",
@@ -652,8 +652,8 @@ const Members = [
     belong: false,
     lab: {
       active: false,
-      area: "Area atuação"
-    }
+      area: "Area atuação",
+    },
   },
   {
     key: "poletti",
@@ -667,8 +667,8 @@ const Members = [
     belong: false,
     lab: {
       active: false,
-      area: "Area atuação"
-    }
+      area: "Area atuação",
+    },
   },
   {
     key: "felipemachado",
@@ -683,8 +683,8 @@ const Members = [
     belong: true,
     lab: {
       active: false,
-      area: "hardware"
-    }
+      area: "hardware",
+    },
   },
   {
     key: "sergiolifschitz",
@@ -698,8 +698,8 @@ const Members = [
     belong: false,
     lab: {
       active: false,
-      area: "Area atuação"
-    }
+      area: "Area atuação",
+    },
   },
   {
     key: "hiroferreira",
@@ -714,8 +714,8 @@ const Members = [
     belong: true,
     lab: {
       active: false,
-      area: "software"
-    }
+      area: "software",
+    },
   },
   {
     key: "giozza",
@@ -730,8 +730,8 @@ const Members = [
     belong: false,
     lab: {
       active: false,
-      area: "orientation"
-    }
+      area: "orientation",
+    },
   },
   {
     key: "flavioelias",
@@ -746,8 +746,8 @@ const Members = [
     belong: false,
     lab: {
       active: false,
-      area: "orientation"
-    }
+      area: "orientation",
+    },
   },
 
   {
@@ -762,8 +762,8 @@ const Members = [
     belong: false,
     lab: {
       active: false,
-      area: "Area atuação"
-    }
+      area: "Area atuação",
+    },
   },
   {
     key: "josetorres",
@@ -777,8 +777,8 @@ const Members = [
     belong: false,
     lab: {
       active: false,
-      area: "Area atuação"
-    }
+      area: "Area atuação",
+    },
   },
   {
     key: "alexandrepinheiro",
@@ -792,8 +792,8 @@ const Members = [
     belong: false,
     lab: {
       active: false,
-      area: "Area atuação"
-    }
+      area: "Area atuação",
+    },
   },
   {
     key: "annarosa",
@@ -808,8 +808,8 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "hardware"
-    }
+      area: "hardware",
+    },
   },
   {
     key: "hectoroliveira",
@@ -824,8 +824,8 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "hardware"
-    }
+      area: "hardware",
+    },
   },
   {
     key: "jonathasalves",
@@ -840,8 +840,8 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "software"
-    }
+      area: "software",
+    },
   },
   {
     key: "nayarasilva",
@@ -856,8 +856,8 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "software"
-    }
+      area: "software",
+    },
   },
   {
     key: "rafaelzerbini",
@@ -872,8 +872,8 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "security"
-    }
+      area: "security",
+    },
   },
   {
     key: "viniciuscosta",
@@ -888,8 +888,8 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "hardware"
-    }
+      area: "hardware",
+    },
   },
   {
     key: "paulomendes",
@@ -904,8 +904,8 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "security"
-    }
+      area: "security",
+    },
   },
   {
     key: "nataliamarques",
@@ -920,8 +920,8 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "software"
-    }
+      area: "software",
+    },
   },
   {
     key: "lucascoelho",
@@ -936,8 +936,8 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "software"
-    }
+      area: "software",
+    },
   },
   {
     key: "leonardoalmeida",
@@ -952,8 +952,8 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "software"
-    }
+      area: "software",
+    },
   },
   {
     key: "mariaflavia",
@@ -968,8 +968,8 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "software"
-    }
+      area: "software",
+    },
   },
   {
     key: "pedrosusa",
@@ -984,8 +984,8 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "software"
-    }
+      area: "software",
+    },
   },
   {
     key: "heitorvieira",
@@ -1000,8 +1000,8 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "software"
-    }
+      area: "software",
+    },
   },
   {
     key: "ricardodias",
@@ -1016,8 +1016,8 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "software"
-    }
+      area: "software",
+    },
   },
   {
     key: "andrecavalcanti",
@@ -1032,8 +1032,8 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "software"
-    }
+      area: "software",
+    },
   },
   {
     key: "lucasdanelon",
@@ -1048,8 +1048,8 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "hardware"
-    }
+      area: "hardware",
+    },
   },
   {
     key: "matheuscarvalho",
@@ -1064,8 +1064,8 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "hardware"
-    }
+      area: "hardware",
+    },
   },
   {
     key: "rafaelmonteiro",
@@ -1080,9 +1080,9 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "hardware"
-    }
-  }
+      area: "hardware",
+    },
+  },
   // template
   // {
   //     key: "x",

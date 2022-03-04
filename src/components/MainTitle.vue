@@ -14,7 +14,7 @@ export default {
   props: ["icon", "title", "subtitle"],
   data() {
     return {};
-  }
+  },
 };
 </script>
 

@@ -1,15 +1,15 @@
 import Vue from "vue/dist/vue";
 import VueRouter from "vue-router";
 
-import Site_Layout from "../Site.vue";
-import Home from "../views/Home.vue";
-import Publications from "../views/Publications.vue";
-import Projects from "../views/Projects.vue";
-import News from "../views/News.vue";
-import Team from "../views/Team.vue";
+import Site_Layout from "../SiteMain.vue";
+import Home from "../views/HomeView.vue";
+import Publications from "../views/PublicationsView.vue";
+import Projects from "../views/ProjectsView.vue";
+import News from "../views/NewsView.vue";
+import Team from "../views/TeamView.vue";
 
-import Docs_Layout from "../Docs.vue";
-import Default from "../docs/Default.vue";
+import Docs_Layout from "../SiteDocs.vue";
+import Default from "../docs/DefaultDocs.vue";
 
 Vue.use(VueRouter);
 export default new VueRouter({
@@ -22,29 +22,29 @@ export default new VueRouter({
         {
           path: "/",
           name: "home",
-          component: Home
+          component: Home,
         },
         {
           path: "/publications",
           name: "publications",
-          component: Publications
+          component: Publications,
         },
         {
           path: "/projects",
           name: "projects",
-          component: Projects
+          component: Projects,
         },
         {
           path: "/news",
           name: "news",
-          component: News
+          component: News,
         },
         {
           path: "/team",
           name: "team",
-          component: Team
-        }
-      ]
+          component: Team,
+        },
+      ],
     },
     {
       path: "/docs",
@@ -53,9 +53,9 @@ export default new VueRouter({
         {
           path: "/*",
           name: "default",
-          component: Default
-        }
-      ]
-    }
-  ]
+          component: Default,
+        },
+      ],
+    },
+  ],
 });

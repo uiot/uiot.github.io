@@ -9,7 +9,7 @@ const Publications = [
       "lucascoelho",
       "prado",
       "fabiomendonca",
-      "nataliamarques"
+      "nataliamarques",
     ],
     type: "conference",
     name: "",
@@ -18,7 +18,7 @@ const Publications = [
       "https://link.springer.com/chapter/10.1007/978-3-030-68285-9_3",
     download: "",
     language: "en",
-    published: true
+    published: true,
   },
   {
     year: 2021,
@@ -30,7 +30,7 @@ const Publications = [
       "lucascoelho",
       "prado",
       "lucasmartins",
-      "fabiomendonca"
+      "fabiomendonca",
     ],
     type: "conference",
     name: "",
@@ -39,7 +39,7 @@ const Publications = [
       "https://link.springer.com/chapter/10.1007/978-3-030-68285-9_27",
     download: "",
     language: "en",
-    published: true
+    published: true,
   },
   {
     year: 2021,
@@ -51,7 +51,7 @@ const Publications = [
       "lucasmartins",
       "rafaelmonteiro",
       "caiosilva",
-      "robsonalbuquerde"
+      "robsonalbuquerde",
     ],
     type: "conference",
     name: "",
@@ -59,7 +59,7 @@ const Publications = [
     publication_link: "http://risti.xyz/index.php?lang=es",
     download: "",
     language: "pt-br",
-    published: true
+    published: true,
   },
   {
     year: 2021,
@@ -71,7 +71,7 @@ const Publications = [
       "fabiomendonca",
       "paulomendes",
       "andrecavalcanti",
-      "leonardoalmeida"
+      "leonardoalmeida",
     ],
     type: "conference",
     name: "",
@@ -79,7 +79,7 @@ const Publications = [
     publication_link: "",
     download: "",
     language: "en",
-    published: true
+    published: true,
   },
   {
     year: 2021,
@@ -91,7 +91,7 @@ const Publications = [
       "lucascoelho",
       "prado",
       "lucasmartins",
-      "nataliamarques"
+      "nataliamarques",
     ],
     type: "conference",
     name: "",
@@ -100,7 +100,7 @@ const Publications = [
       "https://link.springer.com/chapter/10.1007%2F978-3-030-72660-7_61",
     download: "",
     language: "en",
-    published: true
+    published: true,
   },
   {
     year: 2021,
@@ -112,7 +112,7 @@ const Publications = [
       "lucascoelho",
       "danielsilva",
       "fabiomendonca",
-      "lucasmartins"
+      "lucasmartins",
     ],
     type: "conference",
     name: "",
@@ -120,7 +120,7 @@ const Publications = [
     publication_link: "http://www.iadisportal.org/ijwi/papers/202018201.pdf",
     download: "",
     language: "en",
-    published: true
+    published: true,
   },
   {
     year: 2020,
@@ -132,7 +132,7 @@ const Publications = [
       "gustavoluz",
       "carolinasartori",
       "fabiomendonca",
-      "desousa"
+      "desousa",
     ],
     type: "conference",
     name: "",
@@ -140,7 +140,7 @@ const Publications = [
     publication_link: "",
     download: "",
     language: "en",
-    published: false
+    published: false,
   },
   {
     year: 2020,
@@ -152,7 +152,7 @@ const Publications = [
       "franciscocaldasf",
       "marcosandrade",
       "fernandaformiga",
-      "desousa"
+      "desousa",
     ],
     type: "conference",
     name: "",
@@ -160,7 +160,7 @@ const Publications = [
     publication_link: "",
     download: "",
     language: "en",
-    published: false
+    published: false,
   },
   {
     year: 2020,
@@ -174,7 +174,7 @@ const Publications = [
       "matheusmonteiro",
       "marcosandrade",
       "fabiomendonca",
-      "desousa"
+      "desousa",
     ],
     type: "conference",
     name: "15th Iberian Conference on Information Systems and Technologies",
@@ -182,7 +182,7 @@ const Publications = [
     publication_link: "https://ieeexplore.ieee.org/abstract/document/9141085",
     download: "",
     language: "pt-br",
-    published: true
+    published: true,
   },
   {
     year: 2019,
@@ -192,17 +192,16 @@ const Publications = [
       "lucasmartins",
       "samuelalmeida",
       "maristelaholanda",
-      "desousa"
+      "desousa",
     ],
     type: "conference",
-    name:
-      "4th International Conference on Internet of Things, Big Data and Security",
+    name: "4th International Conference on Internet of Things, Big Data and Security",
     short: "IoTBDS 2019",
     publication_link:
       "https://www.scitepress.org/PublicationsDetail.aspx?ID=2Wb+aNVirL0=&t=1",
     download: "polettietal2019.pdf",
     language: "en",
-    published: true
+    published: true,
   },
   {
     year: 2019,
@@ -213,7 +212,7 @@ const Publications = [
       "franciscocaldasf",
       "lucasmartins",
       "desousa",
-      "robsonalbuquerde"
+      "robsonalbuquerde",
     ],
     type: "conference",
     name: "V Jornadas Nacionales de Investigación en Ciberseguridad",
@@ -221,7 +220,7 @@ const Publications = [
     publication_link: "https://2019.jnic.es/Actas_JNIC2019.pdf",
     download: "",
     language: "en",
-    published: true
+    published: true,
   },
   {
     year: 2019,
@@ -233,7 +232,7 @@ const Publications = [
       "justino",
       "mateuszanatta",
       "lustosa",
-      "desousa"
+      "desousa",
     ],
     type: "conference",
     name: "2019 Workshop on Communication Networks and Power Systems",
@@ -241,7 +240,7 @@ const Publications = [
     publication_link: "https://ieeexplore.ieee.org/document/8896313",
     download: "",
     language: "en",
-    published: true
+    published: true,
   },
   {
     year: 2019,
@@ -253,7 +252,7 @@ const Publications = [
       "franciscocaldasf",
       "kfouri",
       "robsonalbuquerde",
-      "desousa"
+      "desousa",
     ],
     type: "conference",
     name: "2019 Workshop on Communication Networks and Power Systems",
@@ -261,7 +260,7 @@ const Publications = [
     publication_link: "https://ieeexplore.ieee.org/document/8896297",
     download: "",
     language: "en",
-    published: true
+    published: true,
   },
   {
     year: 2019,
@@ -272,7 +271,7 @@ const Publications = [
       "franciscocaldasf",
       "lincolnbarbosa",
       "tribouilet",
-      "demetriosilvaf"
+      "demetriosilvaf",
     ],
     type: "conference",
     name: "2019 Workshop on Communication Networks and Power Systems",
@@ -280,7 +279,7 @@ const Publications = [
     publication_link: "https://ieeexplore.ieee.org/document/8896242",
     download: "",
     language: "en",
-    published: true
+    published: true,
   },
   {
     year: 2019,
@@ -291,7 +290,7 @@ const Publications = [
       "rodrigorocha",
       "barenco",
       "ednacanedo",
-      "desousa"
+      "desousa",
     ],
     type: "conference",
     name: "2019 Workshop on Communication Networks and Power Systems",
@@ -299,7 +298,7 @@ const Publications = [
     publication_link: "https://ieeexplore.ieee.org/document/8896311",
     download: "",
     language: "en",
-    published: true
+    published: true,
   },
   {
     year: 2019,
@@ -312,7 +311,7 @@ const Publications = [
     publication_link: "https://repositorio.unb.br/handle/10482/38655",
     download: "",
     language: "en",
-    published: true
+    published: true,
   },
   {
     year: 2019,
@@ -325,7 +324,7 @@ const Publications = [
     publication_link: "https://repositorio.unb.br/handle/10482/38117",
     download: "",
     language: "pt-br",
-    published: true
+    published: true,
   },
   {
     year: 2019,
@@ -339,16 +338,15 @@ const Publications = [
       "fabiomendonca",
       "justino",
       "kfouri",
-      "desousa"
+      "desousa",
     ],
     type: "conference",
-    name:
-      "14th Federated Conference on Computer Science and Information Systems",
+    name: "14th Federated Conference on Computer Science and Information Systems",
     short: "FedCSIS 2019",
     publication_link: "https://fedcsis.org/proceedings/2019/drp/263.html",
     download: "",
     language: "en",
-    published: true
+    published: true,
   },
   {
     year: 2019,
@@ -361,16 +359,15 @@ const Publications = [
       "franciscocaldasf",
       "lucasmartins",
       "robsonalbuquerde",
-      "desousa"
+      "desousa",
     ],
     type: "conference",
-    name:
-      "XIX Simpósio Brasileiro de Segurança da Informação e de Sistemas Computacionais",
+    name: "XIX Simpósio Brasileiro de Segurança da Informação e de Sistemas Computacionais",
     short: "SBSeg 2019",
     publication_link: "https://sbseg2019.ime.usp.br/artigos.html",
     download: "",
     language: "pt-br",
-    published: true
+    published: true,
   },
   {
     year: 2019,
@@ -384,16 +381,15 @@ const Publications = [
       "lucasmartins",
       "justino",
       "robsonalbuquerde",
-      "desousa"
+      "desousa",
     ],
     type: "conference",
-    name:
-      "14th Federated Conference on Computer Science and Information Systems",
+    name: "14th Federated Conference on Computer Science and Information Systems",
     short: "FedCSIS 2019",
     publication_link: "https://fedcsis.org/proceedings/2019/drp/329.html",
     download: "",
     language: "en",
-    published: true
+    published: true,
   },
   {
     year: 2018,
@@ -405,7 +401,7 @@ const Publications = [
       "franciscocaldasf",
       "lucasmartins",
       "desousa",
-      "robsonalbuquerde"
+      "robsonalbuquerde",
     ],
     type: "conference",
     name: "3rd Workshop on Communication Networks and Power Systems",
@@ -413,7 +409,7 @@ const Publications = [
     publication_link: "https://ieeexplore.ieee.org/abstract/document/8604444",
     download: "",
     language: "en",
-    published: true
+    published: true,
   },
   {
     year: 2018,
@@ -423,16 +419,15 @@ const Publications = [
       "franciscocaldasf",
       "lucasmartins",
       "barenco",
-      "desousa"
+      "desousa",
     ],
     type: "conference",
-    name:
-      "XXXVI Simpósio Brasileiro de Telecomunicações e Processamento de Sinais",
+    name: "XXXVI Simpósio Brasileiro de Telecomunicações e Processamento de Sinais",
     short: "SBrT 2018",
     publication_link: "",
     download: "",
     language: "pt-br",
-    published: true
+    published: true,
   },
   {
     year: 2017,
@@ -443,7 +438,7 @@ const Publications = [
       "franciscocaldasf",
       "lucasmartins",
       "desousa",
-      "rodrigorocha"
+      "rodrigorocha",
     ],
     type: "conference",
     name: "2nd Workshop on Communication Networks and Power Systems",
@@ -451,7 +446,7 @@ const Publications = [
     publication_link: "https://ieeexplore.ieee.org/document/8252938",
     download: "",
     language: "en",
-    published: true
+    published: true,
   },
   {
     year: 2017,
@@ -462,7 +457,7 @@ const Publications = [
       "lucasmartins",
       "desousa",
       "giozza",
-      "lustosa"
+      "lustosa",
     ],
     type: "conference",
     name: "International Conference on Utility and Cloud Computing 2017",
@@ -470,7 +465,7 @@ const Publications = [
     publication_link: "https://dl.acm.org/doi/10.1145/3147234.3148092",
     download: "",
     language: "en",
-    published: true
+    published: true,
   },
   {
     year: 2017,
@@ -482,7 +477,7 @@ const Publications = [
       "desousa",
       "ingridaraujo",
       "lustosa",
-      "fabiomendonca"
+      "fabiomendonca",
     ],
     type: "conference",
     name: "International Conference on Utility and Cloud Computing 2017",
@@ -490,7 +485,7 @@ const Publications = [
     publication_link: "http://doi.acm.org/10.1145/3147234.3148091",
     download: "",
     language: "en",
-    published: true
+    published: true,
   },
   {
     year: 2017,
@@ -502,7 +497,7 @@ const Publications = [
       "desousa",
       "robsonalbuquerde",
       "luisvillalba",
-      "taikim"
+      "taikim",
     ],
     type: "journal",
     name: "Sensors",
@@ -510,7 +505,7 @@ const Publications = [
     publication_link: "http://www.mdpi.com/1424-8220/17/5/977",
     download: "",
     language: "en",
-    published: true
+    published: true,
   },
   {
     year: 2017,
@@ -523,7 +518,7 @@ const Publications = [
     publication_link: "https://repositorio.unb.br/handle/10482/31146",
     download: "",
     language: "pt-br",
-    published: true
+    published: true,
   },
   {
     year: 2017,
@@ -535,7 +530,7 @@ const Publications = [
     publication_link: "http://link.springer.com/10.1007/s10586-017-0729-3",
     download: "",
     language: "en",
-    published: true
+    published: true,
   },
   {
     year: 2017,
@@ -545,7 +540,7 @@ const Publications = [
       "franciscocaldasf",
       "desousa",
       "giozza",
-      "lustosa"
+      "lustosa",
     ],
     type: "conference",
     name: "Conferência Ibero-Americana WWW/Internet 2017",
@@ -554,7 +549,7 @@ const Publications = [
       "http://www.iadisportal.org/digital-library/proposta-de-ado%C3%A7%C3%A3o-de-microsservi%C3%A7os-em-iot",
     download: "",
     language: "pt-br",
-    published: true
+    published: true,
   },
   {
     year: 2017,
@@ -565,7 +560,7 @@ const Publications = [
       "desousa",
       "ingridaraujo",
       "fabiomendonca",
-      "lustosa"
+      "lustosa",
     ],
     type: "conference",
     name: "Conferências Ibero-Americanas de Computação Aplicada 2017",
@@ -574,7 +569,7 @@ const Publications = [
       "http://www.iadisportal.org/digital-library/gerenciamento-de-servi%C3%A7os-iot-com-gateway-sem%C3%A2ntico",
     download: "",
     language: "pt-br",
-    published: true
+    published: true,
   },
   {
     year: 2016,
@@ -585,7 +580,7 @@ const Publications = [
       "hiroferreira",
       "desousa",
       "fabiobuiati",
-      "luisvillalba"
+      "luisvillalba",
     ],
     type: "journal",
     name: "Wireless Personal Communications",
@@ -594,7 +589,7 @@ const Publications = [
       "https://link.springer.com/article/10.1007%2Fs11277-015-3168-6",
     download: "",
     language: "en",
-    published: true
+    published: true,
   },
   {
     year: 2016,
@@ -605,16 +600,15 @@ const Publications = [
       "franciscocaldasf",
       "felipemachado",
       "fabiomendonca",
-      "desousa"
+      "desousa",
     ],
     type: "conference",
-    name:
-      "XXXIV Simpósio Brasileiro de Telecomunicações e Processamento de Sinais",
+    name: "XXXIV Simpósio Brasileiro de Telecomunicações e Processamento de Sinais",
     short: "SBrT",
     publication_link: "http://sbrt.org.br/sbrt2016/anais/",
     download: "",
     language: "pt-br",
-    published: true
+    published: true,
   },
   {
     year: 2016,
@@ -624,7 +618,7 @@ const Publications = [
       "rubenhuacarpuma",
       "desousa",
       "maristelaholanda",
-      "sergiolifschitz"
+      "sergiolifschitz",
     ],
     type: "conference",
     name: "31o Simpósio Brasileiro de Banco de Dados",
@@ -632,7 +626,7 @@ const Publications = [
     publication_link: "http://sbbd2016.fpc.ufba.br/artigos-aceitos/",
     download: "",
     language: "pt-br",
-    published: true
+    published: true,
   },
   {
     year: 2014,
@@ -645,7 +639,7 @@ const Publications = [
     publication_link: "http://www.inderscience.com/link.php?id=63816",
     download: "",
     language: "en",
-    published: true
+    published: true,
   },
   {
     year: 2014,
@@ -657,7 +651,7 @@ const Publications = [
     publication_link: "https://repositorio.unb.br/handle/10482/17251",
     download: "",
     language: "pt-br",
-    published: true
+    published: true,
   },
   {
     year: 2014,
@@ -670,7 +664,7 @@ const Publications = [
     publication_link: "https://ieeexplore.ieee.org/document/6877069",
     download: "",
     language: "en",
-    published: true
+    published: true,
   },
   {
     year: 2013,
@@ -678,14 +672,13 @@ const Publications = [
       "IoT Architecture to Enable Intercommunication Through REST API and UPnP Using IP, ZigBee and Arduino",
     authors: ["hiroferreira", "ednacanedo", "desousa"],
     type: "conference",
-    name:
-      "IEEE 9th International Conference on Wireless and Mobile Computing, Networking and Communications",
+    name: "IEEE 9th International Conference on Wireless and Mobile Computing, Networking and Communications",
     short: "WiMob 2013",
     publication_link: "https://ieeexplore.ieee.org/document/6673340/",
     download: "",
     language: "en",
-    published: true
-  }
+    published: true,
+  },
 ];
 
 export default Publications;

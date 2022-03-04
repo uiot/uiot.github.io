@@ -94,14 +94,14 @@
 </template>
 
 <script>
-import profile from "./Card";
-import MainTitle from "../commom/Title";
+import profile from "./TeamCard";
+import MainTitle from "../commom/MainTitle";
 import { filterMembers } from "../../functions/members.js";
 
 export default {
   components: {
     MainTitle,
-    profile
+    profile,
   },
   data: () => ({
     chardware: "lighten-5",
@@ -110,16 +110,16 @@ export default {
     cquality: "lighten-5",
     current_team: [],
     left_team: [],
-    current_option: ""
+    current_option: "",
   }),
   filters: {
     teste(value) {
       let arr_ret = [];
-      value.map(function(item) {
+      value.map(function (item) {
         arr_ret.push(new filterMembers().byKey(item));
       });
       return arr_ret.join(", ");
-    }
+    },
   },
   computed: {
     coordination() {
@@ -152,7 +152,7 @@ export default {
     },
     lquality() {
       return new filterMembers().byAreaLeft("quality");
-    }
+    },
   },
   methods: {
     filterMembers(area) {
@@ -194,8 +194,8 @@ export default {
         this.csecurity = "lighten-5";
         this.cquality = "lighten-3";
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
