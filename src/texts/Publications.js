@@ -14,8 +14,7 @@ const Publications = [
     type: "conference",
     name: "",
     short: "ICITS 2021",
-    publication_link:
-      "https://link.springer.com/chapter/10.1007/978-3-030-68285-9_3",
+    publication_link: "https://link.springer.com/chapter/10.1007/978-3-030-68285-9_3",
     download: "",
     language: "en",
     published: true
@@ -35,8 +34,7 @@ const Publications = [
     type: "conference",
     name: "",
     short: "ICITS 2021",
-    publication_link:
-      "https://link.springer.com/chapter/10.1007/978-3-030-68285-9_27",
+    publication_link: "https://link.springer.com/chapter/10.1007/978-3-030-68285-9_27",
     download: "",
     language: "en",
     published: true
@@ -51,7 +49,7 @@ const Publications = [
       "lucasmartins",
       "rafaelmonteiro",
       "caiosilva",
-      "robsonalbuquerde"
+      "robsonalbuquerde",
     ],
     type: "conference",
     name: "",
@@ -71,7 +69,7 @@ const Publications = [
       "fabiomendonca",
       "paulomendes",
       "andrecavalcanti",
-      "leonardoalmeida"
+      "leonardoalmeida",
     ],
     type: "conference",
     name: "",
@@ -96,8 +94,7 @@ const Publications = [
     type: "conference",
     name: "",
     short: "WorldCIST 2021",
-    publication_link:
-      "https://link.springer.com/chapter/10.1007%2F978-3-030-72660-7_61",
+    publication_link: "https://link.springer.com/chapter/10.1007%2F978-3-030-72660-7_61",
     download: "",
     language: "en",
     published: true

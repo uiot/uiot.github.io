@@ -1036,20 +1036,20 @@ const Members = [
     }
   },
   {
-    key: "lucasdanelon",
-    name: "Lucas Caldas Danelon Lopes",
-    area: "Engenharia de Produção",
-    role: "hardware",
-    email: "lucas.lopes@uiot.org",
-    picture: "man",
-    bio: "",
-    linkedin: "lucas-danelon",
-    github: "lucasdanelon",
-    belong: true,
-    lab: {
-      active: true,
-      area: "hardware"
-    }
+      key: "lucasdanelon",
+      name: "Lucas Caldas Danelon Lopes",
+      area: "Engenharia de Produção",
+      role: "hardware",
+      email: "lucas.lopes@uiot.org",
+      picture: "man",
+      bio: "",
+      linkedin: "lucas-danelon",
+      github: "lucasdanelon",
+      belong:true,
+      lab: {
+        active: true,
+        area: "hardware",
+      }
   },
   {
     key: "matheuscarvalho",
@@ -1061,28 +1061,28 @@ const Members = [
     bio: "",
     linkedin: "mathscarvalho",
     github: "mathscarvalho",
-    belong: true,
+    belong:true,
     lab: {
       active: true,
-      area: "hardware"
+      area: "hardware",
     }
-  },
-  {
-    key: "rafaelmonteiro",
-    name: "Rafael Moraes Monteiro",
-    area: "Engenharia de Redes de Comunicação",
-    role: "hardware",
-    email: "rafael.monteiro.org",
-    picture: "man",
-    bio: "",
-    linkedin: "rafael-moraes-monteiro",
-    github: "Moraes26",
-    belong: true,
-    lab: {
-      active: true,
-      area: "hardware"
-    }
+},
+{
+  key: "rafaelmonteiro",
+  name: "Rafael Moraes Monteiro",
+  area: "Engenharia de Redes de Comunicação",
+  role: "hardware",
+  email: "rafael.monteiro.org",
+  picture: "man",
+  bio: "",
+  linkedin: "rafael-moraes-monteiro",
+  github: "Moraes26",
+  belong:true,
+  lab: {
+    active: true,
+    area: "hardware",
   }
+},
   // template
   // {
   //     key: "x",

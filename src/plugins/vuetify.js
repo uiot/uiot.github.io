@@ -17,6 +17,7 @@ Vue.component("my-component", {
 });
 
 export default new Vuetify({
+
   theme: {
     themes: colors
   }
