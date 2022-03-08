@@ -5,7 +5,7 @@
       :items="
         !conference
           ? data
-          : data.filter(function (item) {
+          : data.filter(function(item) {
               return item.short == conference;
             })
       "
@@ -79,19 +79,19 @@ export default {
         { text: "Title", value: "title" },
         { text: "Published in", value: "short" },
         { text: "Authors", value: "authors" },
-        { text: "", value: "data-table-expand" },
-      ],
+        { text: "", value: "data-table-expand" }
+      ]
     };
   },
   filters: {
     getAuthorsNames(value) {
       let arr_ret = [];
-      value.map(function (item) {
+      value.map(function(item) {
         arr_ret.push(new filterMembers().byKey(item));
       });
       return arr_ret.join(", ");
-    },
-  },
+    }
+  }
 };
 </script>
 

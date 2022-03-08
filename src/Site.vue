@@ -7,19 +7,19 @@
 </template>
 
 <script>
-import ToolBar from "./components/TheToolbar.vue";
-import Footer from "./components/TheFooter.vue";
+import ToolBar from "../src/components/Toolbar.vue";
+import Footer from "../src/components/Footer.vue";
 
 export default {
   name: "App",
   components: {
     ToolBar,
-    Footer,
+    Footer
   },
 
   data: () => ({
     //
-  }),
+  })
 };
 </script>
 

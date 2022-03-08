@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  props: ["title", "subtitle"],
+  props: ["title", "subtitle"]
 };
 </script>
 

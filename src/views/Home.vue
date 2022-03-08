@@ -128,13 +128,13 @@
 import { filterPublications } from "../functions/publications.js";
 
 export default {
-  name: "homeView",
+  name: "home",
   components: {},
   data() {
     return {
       colors: ["blue lighten-2", "green lighten-2", "red lighten-2"],
       images: ["cpu", "motherboard"],
-      slides: ["The universal way of connecting things!", "Second"],
+      slides: ["The universal way of connecting things!", "Second"]
     };
   },
   computed: {
@@ -145,7 +145,7 @@ export default {
         publications[i]["color"] = colors[i];
       }
       return publications;
-    },
+    }
   },
   mounted() {
     const targets = this.$el;
@@ -153,19 +153,19 @@ export default {
       .add({
         targets,
         translateX: 250,
-        easing: "easeOutExpo",
+        easing: "easeOutExpo"
       })
       .add({
         targets,
         translateX: 250,
-        easing: "easeOutExpo",
+        easing: "easeOutExpo"
       });
   },
   methods: {
     goTo(text) {
       this.$router.push(text);
-    },
-  },
+    }
+  }
 };
 </script>
 

@@ -5,7 +5,7 @@
       <v-toolbar-title class="pl-10">
         <div @click="goTo()">
           <v-img class="nameLogo" src="@/assets/logo.png" width="35" />
-          <span class="titleText nameLogo base--text">
+          <span class="titleText  nameLogo base--text">
             <h2><b> uiot </b></h2>
           </span>
         </div>
@@ -20,7 +20,7 @@
           to="/projects"
           :class="{
             base: checkRouteColor('projects', currentRoute),
-            'lighten-2': true,
+            'lighten-2': true
           }"
         >
           {{ $t("toolbar.projects") }}
@@ -30,7 +30,7 @@
           to="/publications"
           :class="{
             base: checkRouteColor('publications', currentRoute),
-            'lighten-2': true,
+            'lighten-2': true
           }"
         >
           {{ $t("toolbar.publications") }}
@@ -40,7 +40,7 @@
           to="/team"
           :class="{
             base: checkRouteColor('team', currentRoute),
-            'lighten-2': true,
+            'lighten-2': true
           }"
         >
           {{ $t("toolbar.team") }}
@@ -50,7 +50,7 @@
           to="/docs"
           :class="{
             base: checkRouteColor('docs', currentRoute),
-            'lighten-2': true,
+            'lighten-2': true
           }"
         >
           DOCS
@@ -92,22 +92,22 @@ export default {
           img: "united-states.png",
           flag: "us",
           language: "en",
-          title: "English",
+          title: "English"
         },
         {
           img: "brazil.png",
           flag: "pt-br",
           language: "pt-br",
-          title: "Portugues",
-        },
+          title: "Portugues"
+        }
       ],
-      currentLang: "en",
+      currentLang: "en"
     };
   },
   computed: {
     currentRoute() {
       return this.$route.name;
-    },
+    }
   },
   methods: {
     changeLocale(locale) {
@@ -123,8 +123,8 @@ export default {
     },
     goTo() {
       this.$router.push("/");
-    },
-  },
+    }
+  }
 };
 </script>
 

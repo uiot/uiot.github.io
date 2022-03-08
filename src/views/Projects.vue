@@ -12,10 +12,10 @@
 
 <script>
 import mainTitle from "../components/MainTitle.vue";
-import Projects from "../components/Projects/ListProjects";
+import Projects from "../components/Projects/Projects";
 
 export default {
-  components: { mainTitle, Projects },
+  components: { mainTitle, Projects }
 };
 </script>
 

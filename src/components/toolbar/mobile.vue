@@ -9,7 +9,7 @@
             @click="drawer = false"
             :class="{
               base: checkRouteColor('projects', currentRoute),
-              'lighten-2': true,
+              'lighten-2': true
             }"
           >
             {{ $t("toolbar.projects") }}
@@ -22,7 +22,7 @@
             @click="drawer = false"
             :class="{
               base: checkRouteColor('publications', currentRoute),
-              'lighten-2': true,
+              'lighten-2': true
             }"
           >
             {{ $t("toolbar.publications") }}
@@ -35,7 +35,7 @@
             @click="drawer = false"
             :class="{
               base: checkRouteColor('team', currentRoute),
-              'lighten-2': true,
+              'lighten-2': true
             }"
           >
             {{ $t("toolbar.team") }}
@@ -48,7 +48,7 @@
             @click="drawer = false"
             :class="{
               base: checkRouteColor('docs', currentRoute),
-              'lighten-2': true,
+              'lighten-2': true
             }"
           >
             {{ $t("toolbar.docs") }}
@@ -87,7 +87,7 @@
       <v-app-bar-nav-icon @click="drawer = !drawer" />
       <div @click="goTo()" class="logo-mobile">
         <v-img class="nameLogo" src="@/assets/logo.png" width="35" />
-        <span class="titleText nameLogo base--text">
+        <span class="titleText  nameLogo base--text">
           <h2><b> uiot </b></h2>
         </span>
       </div>
@@ -108,22 +108,22 @@ export default {
           img: "united-states.png",
           flag: "us",
           language: "en",
-          title: "English",
+          title: "English"
         },
         {
           img: "brazil.png",
           flag: "pt-br",
           language: "pt-br",
-          title: "Portugues",
-        },
+          title: "Portugues"
+        }
       ],
-      currentLang: "en",
+      currentLang: "en"
     };
   },
   computed: {
     currentRoute() {
       return this.$route.name;
-    },
+    }
   },
   methods: {
     changeLocale(locale) {
@@ -140,8 +140,8 @@ export default {
     goTo() {
       this.$router.push("/");
       this.drawer = false;
-    },
-  },
+    }
+  }
 };
 </script>
 

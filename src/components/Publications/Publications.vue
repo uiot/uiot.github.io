@@ -61,7 +61,7 @@ import { filterMembers } from "../../functions/members.js";
 
 export default {
   components: {
-    listPublications,
+    listPublications
   },
   data() {
     return {
@@ -71,7 +71,7 @@ export default {
       publicacoes: Publications,
       expanded: [],
       singleExpand: false,
-      filtered_publications: [],
+      filtered_publications: []
     };
   },
   created() {
@@ -80,12 +80,12 @@ export default {
   filters: {
     teste(value) {
       let arr_ret = [];
-      value.map(function (item) {
+      value.map(function(item) {
         arr_ret.push(new filterMembers().byKey(item));
       });
 
       return arr_ret.join(", ");
-    },
+    }
   },
   computed: {
     years() {
@@ -99,7 +99,7 @@ export default {
     },
     all() {
       return new filterPublications().all;
-    },
+    }
   },
   methods: {
     changeDates(year) {
@@ -112,10 +112,18 @@ export default {
     },
     setYear() {
       this.selectedYears = [
-        2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012,
+        2020,
+        2019,
+        2018,
+        2017,
+        2016,
+        2015,
+        2014,
+        2013,
+        2012
       ];
-    },
-  },
+    }
+  }
 };
 </script>
 

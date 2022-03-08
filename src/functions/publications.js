@@ -11,7 +11,7 @@ export class filterPublications {
 
   getYears() {
     let arr_ret = [];
-    publications.map(function (item) {
+    publications.map(function(item) {
       if (arr_ret.indexOf(item.year) === -1) {
         arr_ret.push(item.year);
       }
@@ -21,7 +21,7 @@ export class filterPublications {
 
   getConferences() {
     let arr_ret = [];
-    publications.map(function (item) {
+    publications.map(function(item) {
       if (arr_ret.indexOf(item.short) === -1) {
         arr_ret.push(item.short);
       }
@@ -34,7 +34,7 @@ export class filterPublications {
   }
 
   byYears(years) {
-    return publications.filter(function (item) {
+    return publications.filter(function(item) {
       if (years.indexOf(item.year) !== -1) {
         return item;
       }
@@ -42,7 +42,7 @@ export class filterPublications {
   }
 
   byOneMember(member) {
-    return publications.filter(function (item) {
+    return publications.filter(function(item) {
       return item.authors.includes(member);
     });
   }

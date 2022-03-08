@@ -31,14 +31,14 @@ export default {
     icons: [
       {
         icon: "mdi-linkedin",
-        link: "https://www.linkedin.com/company/uiot/",
+        link: "https://www.linkedin.com/company/uiot/"
       },
       {
         icon: "mdi-github",
-        link: "http://www.github.com/uiot",
-      },
-    ],
-  }),
+        link: "http://www.github.com/uiot"
+      }
+    ]
+  })
 };
 </script>
 

@@ -12,12 +12,12 @@ Vue.component("my-component", {
   methods: {
     changeLocale() {
       this.$vuetify.lang.current = "en";
-    },
-  },
+    }
+  }
 });
 
 export default new Vuetify({
   theme: {
-    themes: colors,
-  },
+    themes: colors
+  }
 });

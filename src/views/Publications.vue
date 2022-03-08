@@ -15,17 +15,17 @@
 </template>
 
 <script>
-import publications from "../components/Publications/UiotPublications.vue";
+import publications from "../components/Publications/Publications.vue";
 import mainTitle from "../components/MainTitle.vue";
 
 export default {
   components: {
     publications,
-    mainTitle,
+    mainTitle
   },
   data() {
     return {};
-  },
+  }
 };
 </script>
 
