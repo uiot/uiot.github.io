@@ -16,7 +16,7 @@ const Members = [
     area: "Engenharia de Redes de Comunicação",
     email: "daniel.prado@uiot.org",
     picture: "man",
-    bio: "A person serves a porpouse",
+    bio: "A cool person",
     linkedin: "",
     github: "dasprado12",
     belong: true,
