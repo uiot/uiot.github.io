@@ -1,0 +1,266 @@
+<template>
+  <div class="home">
+    <div class="display-3 presentation white--text">
+      <b>{{ $t("welcomeMsg") }}</b>
+    </div>
+    <v-carousel cycle height="520" :show-arrows="false">
+      <v-carousel-item
+        v-for="(image, i) in images"
+        :key="i"
+        :src="require(`@/assets/${image}.jpeg`)"
+      />
+    </v-carousel>
+
+    <div class="barraAzul base" />
+
+    <div class="whatwedo">
+      <h2 class="base--text body-h1">
+        <v-icon class="base--text" size="40"> mdi-magnify </v-icon>
+        <b> {{ $t("wwdo.title") }} </b>
+      </h2>
+      <p class="text">{{ $t("wwdo.text") }}</p>
+      <v-row>
+        <v-col cols="12" xs="12" sm="12" md="4" lg="4" xl="4">
+          <v-card flat color="grey lighten-2" min-height="170">
+            <v-card-title>
+              {{ $t("wwdo.hardware.title") }}
+            </v-card-title>
+            <v-card-text>
+              {{ $t("wwdo.hardware.text") }}
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col sm="12" md="4">
+          <v-card flat color="grey darken-3 white--text" min-height="170">
+            <v-card-title>
+              {{ $t("wwdo.software.title") }}
+            </v-card-title>
+            <v-card-text class="white--text">
+              {{ $t("wwdo.software.text") }}
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col sm="12" md="4">
+          <v-card flat color="blue-grey lighten-2 white--text" min-height="170">
+            <v-card-title>
+              {{ $t("wwdo.security.title") }}
+            </v-card-title>
+            <v-card-text class="white--text">
+              {{ $t("wwdo.security.text") }}
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+    </div>
+
+    <div class="academics base lighten-1">
+      <h2 class="white--text">
+        <v-icon class="white--text" size="40"> mdi-book-open-variant </v-icon>
+        <b> {{ $t("home.academics.title") }} </b>
+      </h2>
+      <div class="text white--text">{{ $t("home.academics.text") }}</div>
+      <v-row>
+        <v-col
+          xs="12"
+          sm="12"
+          md="6"
+          lg="6"
+          v-for="item in publications"
+          :key="item.title"
+        >
+          <v-hover v-slot:default="{ hover }">
+            <v-card
+              :elevation="hover ? 6 : 0"
+              flat
+              color="grey lighten-2"
+              min-height="95"
+            >
+              <v-card-subtitle>
+                <span class="font-weight-bold title_card">
+                  {{ item.title }} <br />
+                  <span class="body-1"> {{ item.year }} </span>
+                </span>
+              </v-card-subtitle>
+            </v-card>
+          </v-hover>
+        </v-col>
+        <v-col sm="12" md="6" lg="6">
+          <v-hover v-slot:default="{ hover }">
+            <v-card
+              :elevation="hover ? 6 : 0"
+              flat
+              color="grey lighten-2"
+              min-height="95"
+            >
+              <v-card-subtitle>
+                <span text>
+                  <h2><strong> See more </strong></h2>
+                  <v-icon size="15" class="icon">
+                    mdi-plus-circle-outline
+                  </v-icon>
+                </span>
+              </v-card-subtitle>
+            </v-card>
+          </v-hover>
+        </v-col>
+      </v-row>
+    </div>
+    <div class="team">
+      <div class="image"></div>
+      <h2 class="base--text">
+        <v-icon class="base--text" size="40"> mdi-account-group </v-icon>
+        <b> {{ $t("team.title") }} </b>
+      </h2>
+      <h3 class="text black--text">
+        <b>{{ $t("team.text") }}</b>
+      </h3>
+    </div>
+  </div>
+</template>
+
+<script>
+import { filterPublications } from "../functions/publications.js";
+
+export default {
+  components: {},
+  data() {
+    return {
+      colors: ["blue lighten-2", "green lighten-2", "red lighten-2"],
+      images: ["cpu", "motherboard"],
+      slides: ["The universal way of connecting things!", "Second"],
+    };
+  },
+  computed: {
+    publications() {
+      let publications = new filterPublications().byQuantity(5);
+      var colors = ["#c1c3d6", "#c1d6c8", "#e8ebd5", "#dfd5eb", "#ebdad5"];
+      for (var i = 0; i < publications.length && i < 5; i++) {
+        publications[i]["color"] = colors[i];
+      }
+      return publications;
+    },
+  },
+  mounted() {
+    
+  },
+  methods: {},
+};
+</script>
+
+<style scoped>
+.presentation {
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 190px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+}
+
+.whatwedo {
+  padding-top: 2%;
+  padding-bottom: 3%;
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 25px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.whatwedo .text {
+  font-size: 15px;
+}
+
+.academics {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+}
+
+.academics .text {
+  margin-top: -2px;
+  font-size: 15px;
+}
+
+.academics .title_card {
+  font-size: 17px;
+}
+
+.team {
+  position: relative;
+  z-index: 1;
+
+  background-size: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 13px;
+  height: 300px;
+}
+
+.team .image {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../assets/unb1.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  opacity: 30%;
+}
+
+.icon {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.home {
+  font-family: "Raleway", sans-serif;
+}
+
+.text_wwdo {
+  color: rgb(110, 81, 81);
+}
+
+.text_wwdo {
+  padding-bottom: 20px;
+}
+
+.barraAzul {
+  height: 5px;
+}
+.bloco_titulo {
+  padding-top: 15px;
+  text-align: center;
+}
+.texto_titulo {
+  size: 10px;
+}
+.subtitulo {
+  margin-left: 10%;
+  margin-right: 10px;
+}
+.corpo {
+  margin-top: 2%;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+.times {
+  text-align: center;
+}
+
+.bloco_texto_time {
+  padding-left: 1px;
+  padding-right: 1px;
+}
+</style>

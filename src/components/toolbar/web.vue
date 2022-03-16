@@ -2,9 +2,8 @@
   <div class="toolbar">
     <div class="style-top base lighten-1" />
     <v-toolbar flat class="grey lighten-3">
-      
       <v-toolbar-title class="pl-10">
-        <div @click="goTo()">
+        <div>
           <v-img class="nameLogo" src="@/assets/logo.png" width="35" />
           <span class="titleText  nameLogo base--text">
             <h2><b> uiot </b></h2>
@@ -15,47 +14,7 @@
 
       <v-spacer></v-spacer>
 
-      <v-toolbar-items class="pr-10">
-        <v-btn
-          text
-          to="/projects"
-          :class="{
-            base: checkRouteColor('projects', currentRoute),
-            'lighten-2': true
-          }"
-        >
-          {{ $t("toolbar.projects") }}
-        </v-btn>
-        <v-btn
-          text
-          to="/publications"
-          :class="{
-            base: checkRouteColor('publications', currentRoute),
-            'lighten-2': true
-          }"
-        >
-          {{ $t("toolbar.publications") }}
-        </v-btn>
-        <v-btn
-          text
-          to="/team"
-          :class="{
-            base: checkRouteColor('team', currentRoute),
-            'lighten-2': true
-          }"
-        >
-          {{ $t("toolbar.team") }}
-        </v-btn>
-        <v-btn
-          text
-          to="/docs"
-          :class="{
-            base: checkRouteColor('docs', currentRoute),
-            'lighten-2': true
-          }"
-        >
-          DOCS
-        </v-btn>
+      <v-toolbar-items >
         <v-menu offset-y>
           <template v-slot:activator="{ on }">
             <v-btn text v-on="on">
@@ -105,25 +64,10 @@ export default {
       currentLang: "en"
     };
   },
-  computed: {
-    currentRoute() {
-      return this.$route.name;
-    }
-  },
   methods: {
     changeLocale(locale) {
       i18n.locale = locale;
       this.currentLang = i18n.locale;
-    },
-    checkRouteColor(name, routeName) {
-      if (name == routeName) {
-        return true;
-      } else {
-        return false;
-      }
-    },
-    goTo() {
-      this.$router.push("/");
     }
   }
 };

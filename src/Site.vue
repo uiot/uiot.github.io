@@ -1,7 +1,7 @@
 <template>
   <v-app class="white">
     <ToolBar />
-    <router-view></router-view>
+    <Home />
     <Footer />
   </v-app>
 </template>
@@ -9,12 +9,14 @@
 <script>
 import ToolBar from "../src/components/Toolbar.vue";
 import Footer from "../src/components/Footer.vue";
+import Home from "../src/components/Home.vue";
 
 export default {
-  name: "App",
+  name: "MainSite",
   components: {
     ToolBar,
-    Footer
+    Footer,
+    Home
   },
 
   data: () => ({
