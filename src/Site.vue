@@ -11,7 +11,7 @@ import ToolBar from "../src/components/Toolbar.vue";
 import Footer from "../src/components/Footer.vue";
 
 export default {
-  name: "App",
+  name: "MainSite",
   components: {
     ToolBar,
     Footer
