@@ -945,7 +945,7 @@ const Members = [
     key: "pedrosusa",
     name: "Pedro Souza",
     area: "Engenharia de Redes de Comunicação",
-    role: "software",
+    role: "hardware",
     email: "pedro.susa@uiot.org",
     picture: "man",
     bio: "A strong person",
@@ -954,7 +954,7 @@ const Members = [
     belong: true,
     lab: {
       active: true,
-      area: "software"
+      area: "hardware"
     }
   },
   {
@@ -1053,6 +1053,119 @@ const Members = [
     area: "hardware",
   }
 },
+{
+  key: "brunodias",
+  name: "Bruno Scholles Soares Dias",
+  area: "",
+  role: "software",
+  email: "",
+  picture: "man",
+  bio: "",
+  linkedin: "",
+  github: "",
+  belong:true,
+  lab: {
+    active: true,
+    area: "software",
+  }
+},
+{
+  key: "ianmello",
+  name: "Ian Porto e Mello",
+  area: "",
+  role: "software",
+  email: "",
+  picture: "man",
+  bio: "",
+  linkedin: "",
+  github: "",
+  belong:true,
+  lab: {
+    active: true,
+    area: "software",
+  }
+},
+{
+  key: "luiscarvalho",
+  name: "Luis Felipe de Oliveira Carvalho",
+  area: "",
+  role: "software",
+  email: "",
+  picture: "man",
+  bio: "",
+  linkedin: "",
+  github: "",
+  belong:true,
+  lab: {
+    active: true,
+    area: "software",
+  }
+},
+{
+  key: "annaportela",
+  name: "Anna Carolina Mota Portela",
+  area: "",
+  role: "coordination",
+  email: "",
+  picture: "woman",
+  bio: "",
+  linkedin: "",
+  github: "",
+  belong: true,
+  lab: {
+    active: true,
+    area: "coordination"
+  }
+},
+{
+  key: "juliajamile",
+  name: "Julia Jamile de Oliveira Gonçalves",
+  area: "",
+  role: "software",
+  email: "",
+  picture: "woman",
+  bio: "",
+  linkedin: "",
+  github: "",
+  belong: true,
+  lab: {
+    active: true,
+    area: "software"
+  }
+},
+{
+  key: "igormorais",
+  name: "Igor David Morais",
+  area: "",
+  role: "hardware",
+  email: "",
+  picture: "man",
+  bio: "",
+  linkedin: "",
+  github: "",
+  belong:true,
+  lab: {
+    active: true,
+    area: "hardware",
+  }
+},
+{
+  key: "gianmagalhaes",
+  name: "Gian Vitor Oliveira de Magalhães",
+  area: "",
+  role: "software",
+  email: "",
+  picture: "man",
+  bio: "",
+  linkedin: "",
+  github: "",
+  belong:true,
+  lab: {
+    active: true,
+    area: "software",
+  }
+},
+
   // template
   // {
   //     key: "x",
