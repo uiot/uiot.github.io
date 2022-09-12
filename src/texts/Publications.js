@@ -1,4 +1,378 @@
 const Publications = [
+  
+  {
+    year: 2021,
+    title:
+      "Design and Evaluation of a Data Collector and Analyzer to Monitor the COVID-19 and other Epidemic Outbreaks",
+    authors: [
+      "lucascoelho",
+      "franciscocaldasf",
+      "nataliamarques",
+      "fabiomendonca",
+      "prado",
+      "desousa"
+    ],
+    type: "conference",
+    name: "",
+    short: "ICITS",
+    publication_link: "",
+    download: "",
+    language: "en",
+    published: true
+  },  
+  
+  {
+    year: 2021,
+    title:
+      "Design of a Fog Controller to Provide an IoT Middleware with Hierarchical Interaction Capability",
+    authors: [
+      "prado",
+      "franciscocaldasf",
+      "lucascoelho",
+      "lucasmartins",
+      "nataliamarques",
+      "desousa"
+    ],
+    type: "conference",
+    name: "",
+    short: "ICITS",
+    publication_link: "",
+    download: "",
+    language: "en",
+    published: true
+  },   
+  
+  {
+    year: 2021,
+    title:
+      "Home Office file-sharing: A secure and highly available file storage solution in a private cloud environment",
+    authors: [
+      "rafaelmonteiro",
+      "franciscocaldasf",
+      "robsonalbuquerde",
+      "lucasmartins",
+      "desousa"
+    ],
+    type: "conference",
+    name: "",
+    short: "ICITS",
+    publication_link: "",
+    download: "",
+    language: "en",
+    published: true
+  }, 
+  
+  {
+    year: 2021,
+    title:
+      "Design of an Interactive Mobile Platform to Assist Communities in Voluntary Cooperation to Counter the Covid-19 Outbreak (AMORISIOT Mobile APP)",
+    authors: [
+      "franciscocaldasf",
+      "nayarasilva",
+      "leonardoalmeida",
+      "paulomendes",
+      "andrecavalcanti",
+      "fabiomendonca",
+      "desousa"
+    ],
+    type: "conference",
+    name: "",
+    short: "WorldCIST",
+    publication_link: "",
+    download: "",
+    language: "en",
+    published: true
+  },   
+  
+  {
+    year: 2021,
+    title:
+      "Data Science Procedures to Aggregate Unstructured Disease Data in Georeferenced Spreading Analysis",
+    authors: [
+      "lucascoelho",
+      "franciscocaldasf",
+      "nataliamarques",
+      "lucasmartins",
+      "prado",
+      "desousa"
+    ],
+    type: "conference",
+    name: "",
+    short: "WorldCIST",
+    publication_link: "",
+    download: "",
+    language: "en",
+    published: true
+  },    
+  
+  {
+    year: 2021,
+    title:
+      "Design and Implementation of a Collaborative Platform Model for Epidemic and Collective Health Services",
+    authors: [
+      "lucascoelho",
+      "prado",
+      "lucasmartins",      
+      "franciscocaldasf",
+      "fabiomendonca",
+      "desousa"
+    ],
+    type: "conference",
+    name: "",
+    short: "IJWI",
+    publication_link: "",
+    download: "",
+    language: "en",
+    published: true
+  },  
+  
+  {
+    year: 2021,
+    title:
+      "Distributed Architecture for Intrusion Detection inIoT Network using Smart Contracts",
+    authors: [
+      "rafaelzerbini",
+      "franciscocaldasf",
+      "lucasmartins",      
+      "fabiomendonca",
+      "desousa"
+    ],
+    type: "conference",
+    name: "",
+    short: "JNIC",
+    publication_link: "",
+    download: "",
+    language: "en",
+    published: true
+  },    
+  
+  {
+    year: 2021,
+    title:
+      "Solid waste management and monitoringsystem for smart cities: development of alow-cost sustainable IoT architecture usingGPRS/GSM",
+    authors: [
+      "matheusmonteiro",
+      "franciscocaldasf",
+      "pedrosusa",
+      "viniciuscosta",
+      "gustavoluz",      
+      "luiscarvalho",
+      "desousa"
+    ],
+    type: "conference",
+    name: "",
+    short: "WCNPS",
+    publication_link: "",
+    download: "",
+    language: "en",
+    published: true
+  },  
+  
+  {
+    year: 2021,
+    title:
+      "Hybrid Architecture for Intrusion Prevention and Detection in IoT Networks",
+    authors: [
+      "rafaelzerbini",
+      "franciscocaldasf",
+      "fabiomendonca",
+      //"awatef",
+      "desousa"
+    ],
+    type: "conference",
+    name: "",
+    short: "WCNPS",
+    publication_link: "",
+    download: "",
+    language: "en",
+    published: true
+  },
+  
+  {
+    year: 2021,
+    title:
+      "Sistema para a identificação de aglomerações operando em Redes IoT e Fog Computing",
+    authors: [
+      "brunodias",
+      "ianmello",
+      "franciscocaldasf",
+      "leonardoalmeida",
+      "fabiomendonca",
+      "desousa"
+    ],
+    type: "conference",
+    name: "",
+    short: "ICITS",
+    publication_link: "",
+    download: "",
+    language: "pt",
+    published: true
+  },  
+
+  {
+    year: 2021,
+    title:
+      "Sistema de Internet das Coisas para Monitoração de Dados e Tomada de Decisões Quanto à Coleta Seletiva de Lixo em Cidades Inteligentes.",
+    authors: [
+      "gustavoluz",
+      "lucasdanelon",
+      "luiscarvalho",
+      "viniciuscosta",
+      "desousa"
+      //"viniciuseloy"
+    ],
+    type: "conference",
+    name: "",
+    short: "CIACA",
+    publication_link: "",
+    download: "",
+    language: "pt",
+    published: true
+  },
+
+  {
+    year: 2021,
+    title:
+      "Sistema Monitor de Aglomerações Baseado em Reconhecimento de Padrões e Cálculos de Distanciamento Social Operante em Rede IoT Estruturada em Fog Computing",
+    authors: [
+      "brunodias",
+      "ianmello",
+      "franciscocaldasf",
+      "rafaelzerbini",
+      "fabiomendonca",
+      "desousa"
+    ],
+    type: "conference",
+    name: "",
+    short: "CIACA",
+    publication_link: "",
+    download: "",
+    language: "pt",
+    published: true
+  },  
+
+
+
+  
+
+  
+  
+  {
+    year: 2020,
+    title:
+      "Projeto e Implementação de uma Plataforma Colaborativa para Auxiliar a Comunidade Acadêmica com Problemas Ocasionados pela Pandemia do Covid-19",
+    authors: [
+      "franciscocaldasf",
+      "nataliamarques",
+      "leonardoalmeida",
+      "paulomendes",
+      "andrecavalcanti",
+      "desousa"
+    ],
+    type: "conference",
+    name: "",
+    short: "CIACA",
+    publication_link: "",
+    download: "",
+    language: "pt",
+    published: true
+  },  
+  {
+    year: 2020,
+    title:
+      "Revista:HIDS distribuído expans JNIC 2019",
+    authors: [
+      "franciscocaldasf",
+      "rafaelzerbini",
+      "desousa"
+    ],
+    type: "conference",
+    name: "",
+    short: "IEEE Acces",
+    publication_link: "",
+    download: "",
+    language: "en",
+    published: true
+  },
+  {
+    year: 2020,
+    title:
+      "Composição de Gateways IoT Redundantes com Base em Computação de Nevoeiro",
+    authors: [
+      "paulomascarenhas",
+      "franciscocaldasf",
+      "cassioribeiro",
+      "fabiomendonca",
+      "desousa"
+    ],
+    type: "conference",
+    name: "",
+    short: "SBrT",
+    publication_link: "",
+    download: "",
+    language: "pt",
+    published: true
+  },   
+  {
+    year: 2020,
+    title:
+      "Vulnerabilidades de sistemas ciber-físicos ",
+    authors: [
+      "mateuszanatta",
+      "lustosa",
+      "franciscocaldasf",
+      "fabiomendonca",
+      "danielsilva",
+      "desousa"
+    ],
+    type: "conference",
+    name: "",
+    short: "CIACA",
+    publication_link: "",
+    download: "",
+    language: "pt",
+    published: true
+  },   
+  {
+    year: 2020,
+    title:
+      "Projeto e Implementação de um Sistema de Visualização de Dados de Epidemias Obtidos Colaborativamente",
+    authors: [
+      "lucascoelho",
+      "prado",
+      "lucasmartins",
+      "jonathasalves",
+      "danielsilva",
+      "desousa"
+    ],
+    type: "conference",
+    name: "",
+    short: "CIACA",
+    publication_link: "",
+    download: "",
+    language: "pt",
+    published: true
+  },   
+  {
+      year: 2020,
+      title:
+        "IoT Fog-based image matching monitoring systemfor physical access control through IP camera devices",
+      authors: [
+        "marcosandrade",
+        "fernandaformiga",
+        "lucasmartins",
+        "hectoroliveira",
+        "fabiomendonca",
+        "desousa"
+      ],
+      type: "conference",
+      name: "",
+      short: "WCNPS",
+      publication_link: "",
+      download: "",
+      language: "en",
+      published: true
+    },  
     {
       year: 2020,
       title:
@@ -17,7 +391,7 @@ const Publications = [
       publication_link: "",
       download: "",
       language: "en",
-      published: false
+      published: true
     },
     {
       year: 2020,
@@ -37,7 +411,7 @@ const Publications = [
       publication_link: "",
       download: "",
       language: "en",
-      published: false
+      published: true
     },
     {
       year: 2020,
