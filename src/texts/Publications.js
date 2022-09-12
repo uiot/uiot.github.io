@@ -205,7 +205,7 @@ const Publications = [
     short: "ICITS",
     publication_link: "",
     download: "",
-    language: "pt",
+    language: "pt-br",
     published: true
   },  
 
@@ -226,7 +226,7 @@ const Publications = [
     short: "CIACA",
     publication_link: "",
     download: "",
-    language: "pt",
+    language: "pt-br",
     published: true
   },
 
@@ -247,7 +247,7 @@ const Publications = [
     short: "CIACA",
     publication_link: "",
     download: "",
-    language: "pt",
+    language: "pt-br",
     published: true
   },  
 
@@ -274,7 +274,7 @@ const Publications = [
     short: "CIACA",
     publication_link: "",
     download: "",
-    language: "pt",
+    language: "pt-br",
     published: true
   },  
   {
@@ -310,7 +310,7 @@ const Publications = [
     short: "SBrT",
     publication_link: "",
     download: "",
-    language: "pt",
+    language: "pt-br",
     published: true
   },   
   {
@@ -330,7 +330,7 @@ const Publications = [
     short: "CIACA",
     publication_link: "",
     download: "",
-    language: "pt",
+    language: "pt-br",
     published: true
   },   
   {
@@ -350,7 +350,7 @@ const Publications = [
     short: "CIACA",
     publication_link: "",
     download: "",
-    language: "pt",
+    language: "pt-br",
     published: true
   },   
   {
