@@ -36,7 +36,7 @@ const Members = [
     github: "",
     belong: true,
     lab: {
-      active: true,
+      active: false,
       area: "coordination"
     }
   },
@@ -84,7 +84,7 @@ const Members = [
     github: "",
     belong: true,
     lab: {
-      active: true,
+      active: false,
       area: "software"
     }
   },
@@ -122,7 +122,7 @@ const Members = [
   {
     key: "fabiomendonca",
     name: "Fábio L. L. de Mendonça",
-    area: "Doutorando em Engenharia Elétrica",
+    area: "Doutor em Engenharia Elétrica",
     email: "",
     picture: "man",
     bio: "",
@@ -130,7 +130,7 @@ const Members = [
     github: "",
     belong: false,
     lab: {
-      active: false,
+      active: true,
       area: "coordination"
     }
   },
@@ -146,7 +146,7 @@ const Members = [
     github: "marcosblandim",
     belong: true,
     lab: {
-      active: true,
+      active: false,
       area: "hardware"
     }
   },
@@ -178,6 +178,38 @@ const Members = [
     github: "",
     belong: true,
     lab: {
+      active: false,
+      area: "quality"
+    }
+  },
+  {
+    key: "porto",
+    name: "Letícia Bontempo Porto da Fonseca",
+    area: "Engenharia de Produção",
+    role: "quality",
+    email: "leticia.portoo@uiot.org",
+    picture: "woman",
+    bio: "",
+    linkedin: "",
+    github: "",
+    belong: true,
+    lab: {
+      active: true,
+      area: "quality"
+    }
+  },
+  {
+    key: "braulio",
+    name: "Nicole Cristina Braulio da Fonseca",
+    area: "Engenharia de Produção",
+    role: "quality",
+    email: "nicole.fonseca@uiot.org",
+    picture: "woman",
+    bio: "",
+    linkedin: "",
+    github: "",
+    belong: true,
+    lab: {
       active: true,
       area: "quality"
     }
@@ -194,7 +226,7 @@ const Members = [
     github: "fernandaformiga",
     belong: true,
     lab: {
-      active: true,
+      active: false,
       area: "quality"
     }
   },
@@ -211,7 +243,7 @@ const Members = [
     github: "gustavo-luz",
     belong: true,
     lab: {
-      active: true,
+      active: false,
       area: "quality"
     }
   },
@@ -793,7 +825,7 @@ const Members = [
     github: "",
     belong: true,
     lab: {
-      active: true,
+      active: false,
       area: "hardware"
     }
   },
@@ -889,7 +921,7 @@ const Members = [
     github: "natmarqs",
     belong: true,
     lab: {
-      active: true,
+      active: false,
       area: "software"
     }
   },
@@ -937,7 +969,7 @@ const Members = [
     github: "",
     belong: true,
     lab: {
-      active: true,
+      active: false,
       area: "software"
     }
   },
@@ -953,7 +985,7 @@ const Members = [
     github: "pedrusouza",
     belong: true,
     lab: {
-      active: true,
+      active: false,
       area: "hardware"
     }
   },
@@ -985,7 +1017,7 @@ const Members = [
     github: "diasricardo23",
     belong: true,
     lab: {
-      active: true,
+      active: false,
       area: "software"
     }
   },
@@ -1017,7 +1049,7 @@ const Members = [
       github: "lucasdanelon",
       belong:true,
       lab: {
-        active: true,
+        active: false,
         area: "hardware",
       }
   },
@@ -1049,7 +1081,7 @@ const Members = [
   github: "Moraes26",
   belong:true,
   lab: {
-    active: true,
+    active: false,
     area: "hardware",
   }
 },
@@ -1113,7 +1145,7 @@ const Members = [
   github: "",
   belong: true,
   lab: {
-    active: true,
+    active: false,
     area: "coordination"
   }
 },
@@ -1129,7 +1161,7 @@ const Members = [
   github: "",
   belong: true,
   lab: {
-    active: true,
+    active: false,
     area: "software"
   }
 },
