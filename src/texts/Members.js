@@ -128,7 +128,7 @@ const Members = [
     bio: "",
     linkedin: "",
     github: "",
-    belong: false,
+    belong: true,
     lab: {
       active: true,
       area: "coordination"
