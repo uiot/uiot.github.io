@@ -11,14 +11,14 @@ const Members = [
       - não usar acentos ou cedilha.
   */
   {
-    key: "prado",
-    name: "Daniel Prado",
+    key: "hugosilva",
+    name: "Hugo Silva de vasconcelos",
     area: "Engenharia de Redes de Comunicação",
-    email: "daniel.prado@uiot.org",
+    email: "",
     picture: "man",
     bio: "A cool person",
     linkedin: "",
-    github: "dasprado12",
+    github: "",
     belong: true,
     lab: {
       active: true,
@@ -86,21 +86,6 @@ const Members = [
     lab: {
       active: false,
       area: "software"
-    }
-  },
-  {
-    key: "lincolnbarbosa",
-    name: "Lincoln Abreu",
-    area: "Engenharia da Computação",
-    email: "lincoln.barbosa@uiot.org",
-    picture: "man",
-    bio: "A smart person",
-    linkedin: "",
-    github: "",
-    belong: true,
-    lab: {
-      active: true,
-      area: "hardware"
     }
   },
   {
@@ -260,22 +245,6 @@ const Members = [
     belong: true,
     lab: {
       active: false,
-      area: "software"
-    }
-  },
-  {
-    key: "justino",
-    name: "Bruno Justino G. Praciano",
-    area: "Mestrando em Engenharia Elétrica",
-    role: "software",
-    email: "",
-    picture: "man",
-    bio: "",
-    linkedin: "mwlite/in/bruno-justino-58b846123",
-    github: "",
-    belong: true,
-    lab: {
-      active: true,
       area: "software"
     }
   },
@@ -830,11 +799,11 @@ const Members = [
     }
   },
   {
-    key: "jonathasalves",
-    name: "Jonathas Alves de Oliveira",
-    area: "Ciência da Computação",
+    key: "vitorpina",
+    name: "Vitor Souza Piña",
+    area: "",
     role: "software",
-    email: "jonatas.alves@uiot.org",
+    email: "",
     picture: "man",
     bio: "A strong person",
     linkedin: "",
@@ -846,12 +815,12 @@ const Members = [
     }
   },
   {
-    key: "nayarasilva",
-    name: "Nayara Rossi Brito da Silva",
+    key: "mateusflach",
+    name: "Mateus Flach Romani",
     area: "Ciência da Computação",
     role: "software",
-    email: "nayara.silva@uiot.org",
-    picture: "woman",
+    email: "@uiot.org",
+    picture: "man",
     bio: "A strong person",
     linkedin: "",
     github: "",
@@ -859,22 +828,6 @@ const Members = [
     lab: {
       active: true,
       area: "software"
-    }
-  },
-  {
-    key: "rafaelzerbini",
-    name: "Rafael Zerbini",
-    area: "Engenharia de Redes de Comunicação",
-    role: "security",
-    email: "rafael.zerbini@uiot.org",
-    picture: "man",
-    bio: "A strong person",
-    linkedin: "rafael-zerbini",
-    github: "zerbinidamata",
-    belong: true,
-    lab: {
-      active: true,
-      area: "security"
     }
   },
   {
@@ -894,22 +847,6 @@ const Members = [
     }
   },
   {
-    key: "paulomendes",
-    name: "Paulo Henrique",
-    area: "Mestrando em Engenharia Elétrica",
-    role: "software",
-    email: "paulo.mendes@uiot.org",
-    picture: "man",
-    bio: "A strong person",
-    linkedin: "",
-    github: "",
-    belong: true,
-    lab: {
-      active: true,
-      area: "security"
-    }
-  },
-  {
     key: "nataliamarques",
     name: "Natália Andrade Marques",
     area: "Engenharia de Redes de Comunicação",
@@ -926,11 +863,11 @@ const Members = [
     }
   },
   {
-    key: "lucascoelho",
-    name: "Lucas Coelho de Almeida",
-    area: "Mestrando em Engenharia Elétrica",
+    key: "matheusvirgilio",
+    name: "Matheus Virgílio",
+    area: "",
     role: "software",
-    email: "lucas.coelho@uiot.org",
+    email: "@uiot.org",
     picture: "man",
     bio: "A strong person",
     linkedin: "",
@@ -1022,22 +959,6 @@ const Members = [
     }
   },
   {
-    key: "andrecavalcanti",
-    name: "André Cavalcanti",
-    area: "Engenharia de Redes de Comunicação",
-    role: "software",
-    email: "",
-    picture: "man",
-    bio: "",
-    linkedin: "",
-    github: "",
-    belong: true,
-    lab: {
-      active: true,
-      area: "software"
-    }
-  },
-  {
       key: "lucasdanelon",
       name: "Lucas Caldas Danelon Lopes",
       area: "Engenharia de Produção",
@@ -1118,9 +1039,9 @@ const Members = [
   }
 },
 {
-  key: "luiscarvalho",
-  name: "Luis Felipe de Oliveira Carvalho",
-  area: "",
+  key: "mateuspedroza",
+  name: "Mateus Leite Pedrosa",
+  area: "Engenharia de Software",
   role: "software",
   email: "",
   picture: "man",
@@ -1182,8 +1103,8 @@ const Members = [
   }
 },
 {
-  key: "gianmagalhaes",
-  name: "Gian Vitor Oliveira de Magalhães",
+  key: "joaofranca",
+  name: "João Lucas Araújo França",
   area: "",
   role: "software",
   email: "",
