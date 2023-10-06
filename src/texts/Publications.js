@@ -1,5 +1,5 @@
 const Publications = [
-  
+
   {
     year: 2021,
     title:
@@ -219,7 +219,7 @@ const Publications = [
       "luiscarvalho",
       "viniciuscosta",
       "desousa"
-      //"viniciuseloy"
+     
     ],
     type: "conference",
     name: "",
