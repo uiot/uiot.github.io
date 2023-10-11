@@ -11,6 +11,180 @@ const Members = [
       - não usar acentos ou cedilha.
   */
   {
+    key: "prado",
+    name: "Daniel Prado",
+    area: "Engenharia de Redes de Comunicação",
+    email: "daniel.prado@uiot.org",
+    picture: "man",
+    bio: "A cool person",
+    linkedin: "",
+    github: "dasprado12",
+    belong: false,
+    lab: {
+      active: false,
+      area: "software"
+    }
+  },
+  {
+    key: "lincolnbarbosa",
+    name: "Lincoln Abreu",
+    area: "Engenharia da Computação",
+    email: "lincoln.barbosa@uiot.org",
+    picture: "man",
+    bio: "A smart person",
+    linkedin: "",
+    github: "",
+    belong: false,
+    lab: {
+      active: false,
+      area: "hardware"
+    }
+  },
+  {
+    key: "justino",
+    name: "Bruno Justino G. Praciano",
+    area: "Mestrando em Engenharia Elétrica",
+    role: "software",
+    email: "",
+    picture: "man",
+    bio: "",
+    linkedin: "mwlite/in/bruno-justino-58b846123",
+    github: "",
+    belong: false,
+    lab: {
+      active: false,
+      area: "software"
+    }
+  },
+  {
+    key: "jonathasalves",
+    name: "Jonathas Alves de Oliveira",
+    area: "Ciência da Computação",
+    role: "software",
+    email: "jonatas.alves@uiot.org",
+    picture: "man",
+    bio: "A strong person",
+    linkedin: "",
+    github: "",
+    belong: false,
+    lab: {
+      active: false,
+      area: "software"
+    }
+  },
+  {
+    key: "nayarasilva",
+    name: "Nayara Rossi Brito da Silva",
+    area: "Ciência da Computação",
+    role: "software",
+    email: "nayara.silva@uiot.org",
+    picture: "woman",
+    bio: "A strong person",
+    linkedin: "",
+    github: "",
+    belong: false,
+    lab: {
+      active: false,
+      area: "software"
+    }
+  },
+  {
+    key: "rafaelzerbini",
+    name: "Rafael Zerbini",
+    area: "Engenharia de Redes de Comunicação",
+    role: "security",
+    email: "rafael.zerbini@uiot.org",
+    picture: "man",
+    bio: "A strong person",
+    linkedin: "rafael-zerbini",
+    github: "zerbinidamata",
+    belong: false,
+    lab: {
+      active: false,
+      area: "security"
+    }
+  },
+  {
+    key: "paulomendes",
+    name: "Paulo Henrique",
+    area: "Mestrando em Engenharia Elétrica",
+    role: "software",
+    email: "paulo.mendes@uiot.org",
+    picture: "man",
+    bio: "A strong person",
+    linkedin: "",
+    github: "",
+    belong: false,
+    lab: {
+      active: false,
+      area: "security"
+    }
+  },
+  {
+    key: "lucascoelho",
+    name: "Lucas Coelho de Almeida",
+    area: "Mestrando em Engenharia Elétrica",
+    role: "software",
+    email: "lucas.coelho@uiot.org",
+    picture: "man",
+    bio: "A strong person",
+    linkedin: "",
+    github: "",
+    belong: true,
+    lab: {
+      active: false,
+      area: "software"
+    }
+  },
+  {
+    key: "andrecavalcanti",
+    name: "André Cavalcanti",
+    area: "Engenharia de Redes de Comunicação",
+    role: "software",
+    email: "",
+    picture: "man",
+    bio: "",
+    linkedin: "",
+    github: "",
+    belong: false,
+    lab: {
+      active: false,
+      area: "software"
+    }
+  },
+  {
+    key: "luiscarvalho",
+    name: "Luis Felipe de Oliveira Carvalho",
+    area: "",
+    role: "software",
+    email: "",
+    picture: "man",
+    bio: "",
+    linkedin: "",
+    github: "",
+    belong:false,
+    lab: {
+      active: false,
+      area: "software",
+    }
+  },
+  {
+    key: "gianmagalhaes",
+    name: "Gian Vitor Oliveira de Magalhães",
+    area: "",
+    role: "software",
+    email: "",
+    picture: "man",
+    bio: "",
+    linkedin: "",
+    github: "",
+    belong:false,
+    lab: {
+      active: false,
+      area: "software",
+    }
+  },
+  {
     key: "hugosilva",
     name: "Hugo Silva de vasconcelos",
     area: "Engenharia de Redes de Comunicação",
