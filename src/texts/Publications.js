@@ -1,5 +1,62 @@
 const Publications = [
+  //2023
+  {
+    year: 2023,
+    title:
+      "HIDS distribuído expans JNIC 2019",
+    authors: [
+      "franciscocaldasf",
+      "samuelalmeida",
+      "robsonalbuquerde",
+      "fabiomendonca"
+    ],
+    type: "journal",
+    name: "",
+    short: "IEEE Access",
+    publication_link: "",
+    download: "",
+    language: "en",
+    published: true
+  }, 
+  
+  //2022
+  {
+    year: 2022,
+    title:
+      "Meta-Semantic Search Engine Method Proposition for Transparent Decision Auditing",
+    authors: [
+      "franciscocaldasf",
+    ],
+    type: "conference",
+    name: "",
+    short: "ICSBT",
+    publication_link: "",
+    download: "",
+    language: "en",
+    published: true
+  }, 
+  {
+    year: 2022,
+    title:
+      "Sistema para a identificação de aglomerações operando em Redes IoT e Fog Computing",
+    authors: [
+      "brunodias",
+      "franciscocaldasf",
+      "ianmello",
+      "fabiomendonca",
+      "rafaelzerbini",
+      "desousa"
+    ],
+    type: "conference",
+    name: "",
+    short: "RISTI",
+    publication_link: "",
+    download: "",
+    language: "pt-br",
+    published: true
+  },  
 
+  //2013 -2021
   {
     year: 2021,
     title:
