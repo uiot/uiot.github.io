@@ -1,0 +1,104 @@
+.team-section {
+  background-color: #6f71bc;
+  color: #ffffff;
+  padding: 6rem 0;
+}
+.team-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+.team-header {
+  margin-bottom: 4rem;
+}
+.team-header h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+.team-header p {
+  font-size: 1.125rem;
+  opacity: 0.9;
+  max-width: 500px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+.team-card {
+  background-color: #ffffff;
+  color: #1e293b;
+  border-radius: 24px;
+  padding: 2.5rem 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+.team-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+.member-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #6f71bc;
+  margin: 0 0 0.25rem 0;
+}
+.member-role,
+.member-status {
+  font-size: 0.9rem;
+  color: #475467;
+  line-height: 1.5;
+  margin: 0 0 0.5rem 0;
+}
+.member-status {
+  min-height: 40px;
+}
+.member-socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.member-socials img {
+  width: 24px;
+  height: 24px;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+.member-socials a:hover img {
+  opacity: 1;
+}
+.see-more-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+.see-more-link:hover {
+  transform: translateX(5px);
+}
+.see-more-link img {
+  width: 32px;
+  height: 32px;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr; /* Força o grid a ter apenas uma coluna */
+  }
+}

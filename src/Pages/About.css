@@ -1,0 +1,79 @@
+.about-hero-section {
+  padding-top: 80px;
+  height: 45vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.about-hero-section h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.about-content-section {
+  background-color: #ffffff;
+}
+
+.about-content-section .container {
+  max-width: 800px;
+  text-align: center;
+}
+
+.about-header h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #6f71bc;
+  margin-bottom: 1rem;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.about-header h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 4px;
+  background-color: #6f71bc;
+  border-radius: 2px;
+}
+
+.about-text {
+  margin-top: 2rem;
+}
+
+.about-text p {
+  color: #475467;
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .about-hero-section {
+    width: 100%;
+    padding-top: 0;
+    height: 35vh;
+  }
+
+  .about-hero-section h1 {
+    font-size: 2.2rem;
+    line-height: 1.3;
+  }
+
+  .about-text p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

@@ -1,0 +1,135 @@
+:root {
+  --navbar-bg-color: #6f71bc;
+  --navbar-text-color: #ffffff;
+  --navbar-hover-color: #5634a4;
+}
+
+.navbar {
+  background-color: var(--navbar-bg-color);
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  padding: 0 1.5rem;
+  position: relative;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-logo img {
+  height: 100px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0 0 0 auto;
+  padding: 0;
+  gap: 2rem;
+}
+
+.nav-item {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: var(--navbar-text-color);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .navbar-logo img {
+    height: 65px;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    transform: translateY(-50%);
+    z-index: 1001;
+    cursor: pointer;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 28px;
+    height: 3px;
+    background-color: var(--navbar-text-color);
+    margin: 5px 0;
+    border-radius: 2px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--navbar-bg-color);
+    z-index: 999;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2rem;
+    padding-top: calc(80px + 2rem);
+  }
+
+  .nav-menu.active::before {
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .nav-item {
+    height: auto;
+  }
+
+  .nav-link {
+    font-size: 1.5rem;
+    padding: 0.75rem 0;
+  }
+}

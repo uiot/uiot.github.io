@@ -1,0 +1,162 @@
+.team-page {
+  padding-top: 80px;
+}
+
+.team-page-header {
+  background-color: #6f71bc;
+  color: #ffffff;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.team-page-header h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.team-page-content {
+  background-color: #6f71bc;
+  color: #ffffff;
+}
+
+.team-category-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  margin-top: 0;
+}
+.team-page-content .container > h2:not(:first-child) {
+  margin-top: 5rem;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.team-list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: #ffffff;
+  color: #1e293b;
+  padding: 1.5rem;
+  border-radius: 20px;
+}
+
+.list-item-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.list-item-info {
+  flex-grow: 1;
+}
+
+.list-item-info p {
+  margin: 0.25rem 0;
+}
+
+.list-item-name {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.list-item-title,
+.list-item-role {
+  font-size: 0.9rem;
+  color: #475467;
+}
+
+.list-item-socials {
+  display: flex;
+  gap: 1rem;
+}
+.list-item-socials img {
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+.list-item-socials a:hover img {
+  opacity: 1;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.team-member-card {
+  background-color: #ffffff;
+  color: #1e293b;
+  border-radius: 24px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.team-member-card:hover {
+  transform: translateY(-8px);
+}
+
+.member-card-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+
+.member-card-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #6f71bc;
+  margin: 0 0 0.25rem 0;
+}
+
+.member-card-role,
+.member-card-status {
+  font-size: 0.9rem;
+  color: #475467;
+  line-height: 1.5;
+  margin: 0 0 0.5rem 0;
+}
+
+.member-card-socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.member-card-socials img {
+  width: 24px;
+  height: 24px;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+.member-card-socials a:hover img {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .team-page-header h1 {
+    font-size: 2.5rem;
+  }
+
+  /* Faz o card de lista empilhar seus elementos */
+  .team-list-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Garante que o grid de membros vire uma coluna */
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}

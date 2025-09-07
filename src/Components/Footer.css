@@ -1,0 +1,116 @@
+.site-footer {
+  background-color: #f9fafb;
+  border-top: 1px solid #eaecf0;
+  padding: 4rem 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  /* ATUALIZADO: Layout de 3 colunas para desktop */
+  grid-template-columns: 2fr 1fr 1.5fr;
+  gap: 2rem;
+  align-items: start; /* Alinha os itens no topo das colunas */
+}
+
+.footer-logo {
+  height: 75px;
+  width: auto;
+  margin-bottom: 1rem;
+}
+
+.footer-column.about p {
+  color: #475467;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.footer-column.links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  /* ATUALIZADO: Espaçamento menor entre os links */
+  gap: 0.75rem;
+}
+
+.footer-column.links a {
+  color: #6f71bc;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-flex; /* Ajuste para melhor alinhamento */
+  align-items: center;
+  gap: 0.75rem;
+  transition: text-decoration 0.2s ease;
+}
+
+.footer-column.links a:hover {
+  text-decoration: underline;
+}
+
+.footer-column.links img {
+  width: 16px;
+  height: 16px;
+}
+
+.footer-column.social h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.footer-column.social .social-icons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-column.social .social-icons img {
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.footer-column.social .social-icons a:hover img {
+  opacity: 1;
+}
+
+/* Layout para Tablets */
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2.5rem;
+  }
+}
+
+/* Layout para Celulares */
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 2.5rem 1rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    row-gap: 2rem;
+  }
+
+  .footer-logo {
+    margin: 0 auto 1rem auto;
+  }
+
+  .footer-column.links ul {
+    align-items: center; /* Centraliza os links no modo de coluna única */
+  }
+
+  .footer-column.social .social-icons {
+    justify-content: center;
+  }
+}

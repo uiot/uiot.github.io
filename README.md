@@ -1,60 +1,12 @@
-[![Logo](http://imgur.com/iQU8c9L.png)]() Website
--------------------------------------------------
+# React + Vite
 
-[![We Use ZenHub](https://raw.githubusercontent.com/ZenHubIO/support/master/zenhub-badge.png)](https://zenhub.com) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Stories in Ready](https://badge.waffle.io/uiot/uiot.github.io.png?label=ready&title=Ready)](http://waffle.io/uiot/uiot.github.io)
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-#### Deploy!
-- [Heroku](https://heroku.com/deploy?template=https://github.com/UIoT/uiot.github.io/tree/master)
-- [Azure](https://azuredeploy.net/)
-- [IBM Bluemix](https://bluemix.net/deploy?repository=https://github.com/UIoT/uiot.github.io)
+Currently, two official plugins are available:
 
-<b>What this repository should be?</b><br>
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-Read Only Repository Containing the UIoT's Development Web Site
+## Expanding the ESLint configuration
 
-----------------------------------------------------
-
-<b>GitHub Pages & Jekyll</b><br>
-
-The New **UIoT** web site uses Jekyll and GitHub Pages and is continuously deployed in a Microsoft Azure WebApp.
-We recommend to you access the site directly from the Micrsooft Azure WebApp (beta.uiot.org) rather than (uiot.github.io) since the Public Configurations and Links are set for the Microsoft Azure WebApp.
-
-----------------------------------------------------
-
-<b>Building Jekyll (Local)</b><br>
-
-To Build the Website simply do those following commands:
-
-<pre>
-bundle install
-bundle exec jekyll build
-</pre>
-
-To Run the Website locally do those commands:
-
-<pre>
-bundle install
-bundle exec jekyll serve
-</pre>
-
-<b>Pre-Requisites to Build</b><br>
-
-* Ruby
-* Need be on the Repository Folder
-* Need be Super User
-
-----------------------------------------------------
-
-<b>Building WebApp on MS Azure</b><br>
-
-* Add a Deployment of the Repository
-* Set in Application Settings `SCM_COMMAND_IDLE_TIMEOUT` to `600`
-* Wait for the Kudu App builds the Repository
-
-----------------------------------------------------
-
-<b>Some Points.:</b><br>
-
-* We added [JekyllAdmin](https://github.com/jekyll/jekyll-admin) into the `_config.yml` BUT it's commented. You can use locally to add new posts.
-* Don't forget to comment the `#Comment on Production` sections if you're deploying it, and putting the right server base uri on `_config.yml`
-* Don't forget to uncomment the `#Uncomment on Development` sections if you're running it locally. 
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

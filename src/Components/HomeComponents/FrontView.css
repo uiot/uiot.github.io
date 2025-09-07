@@ -1,0 +1,76 @@
+.frontview-section {
+  background-color: #6f71bc;
+  color: #ffffff;
+  padding: 6rem 0;
+  display: flex;
+  justify-content: center;
+  padding-top: calc(80px + 6rem);
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+.frontview-container {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 2rem;
+}
+.frontview-content {
+  flex: 1;
+}
+.frontview-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 1.5rem 0;
+  font-family: "Source-Serif-4", sans-serif;
+}
+.frontview-content p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin: 0 0 2.5rem 0;
+  opacity: 0.9;
+}
+.frontview-cta-button {
+  background-color: #5437ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 40px;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+.frontview-cta-button:hover {
+  transform: translateY(-2px);
+}
+.frontview-image-container {
+  flex: 1;
+}
+.frontview-image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .frontview-section {
+    /* Reduz o espaçamento em telas menores para não ocupar tanto espaço vertical */
+    padding-top: calc(80px + 4rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 4rem;
+  }
+
+  .frontview-container {
+    flex-direction: column; /* Empilha o texto e a imagem */
+    text-align: center; /* Centraliza o conteúdo (texto e botão) */
+    gap: 3rem; /* Aumenta o espaço entre a imagem e o texto */
+  }
+
+  .frontview-content h1 {
+    font-size: 2.5rem; /* Ajusta o tamanho da fonte do título para telas menores */
+  }
+}

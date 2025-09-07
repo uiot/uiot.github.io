@@ -1,0 +1,84 @@
+.project-page {
+  background-color: #ffffff;
+}
+
+.project-page-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.project-page-header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #6f71bc;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.project-page-header h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 4px;
+  background-color: #6f71bc;
+  border-radius: 2px;
+}
+
+.project-page-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.project-page-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 2rem;
+  border: 2px solid #6f71bc;
+  border-radius: 24px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.project-page-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(111, 113, 188, 0.2);
+}
+
+.project-page-card .project-card-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+.project-page-card .project-card-content h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #6f71bc;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.project-page-card .project-card-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #475467;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .project-page-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-page-header h1 {
+    font-size: 2.2rem;
+  }
+}
