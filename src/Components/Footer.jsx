@@ -19,7 +19,7 @@ const Footer = () => {
               <br />
               Departamento de Engenharia elétrica
               <br />
-              Email: Uito@uiot.org
+              Email: uioto@uiot.org
             </p>
           </div>
 

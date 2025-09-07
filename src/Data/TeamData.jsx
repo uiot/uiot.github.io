@@ -97,7 +97,7 @@ export const membersData = [
   },
   {
     avatar: IconAvatar,
-    name: "Luis Guilherme Leal",
+    name: "Guilherme Leal",
     role: "Equipe de Software",
     status: "Graduando de Engenharia de Redes",
     socials: {
