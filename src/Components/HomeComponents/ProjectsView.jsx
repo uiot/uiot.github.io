@@ -9,27 +9,22 @@ import iconConteiner from "../../assets/Icons/iconConteiner.svg";
 const projectsData = [
   {
     icon: iconSecurity,
-    title: "Segurança",
+    title: "Segurança Cibernética",
     description:
-      "Esta é a equipe responsável por criar soluções que permitem um tráfego de dados seguro de ponta a ponta",
+      "É um time multidisciplinar de pesquisa dedicado ao estudo, desenvolvimento e aplicação de soluções inovadoras para segurança cibernética em redes de Internet das coisas. O principal foco de pesquisa é a identificação, prevenção e mitigação de ataques cibernéticos que afetam dispositivos conectados, sistemas embarcados e infraestruturas críticas baseadas em IoT",
   },
   {
     icon: iconMiddleware,
     title: "Hardware",
     description:
-      "O setor de hardware do laboratório desenvolve dispositivos para coletar dados do ambiente, utilizando tecnologias como Raspberry Pi, Arduino, sensores e protocolos de comunicação (HTTP, LoRA).",
+      "Projeta e desenvolve dispositivos IoT para coleta e monitoramento de dados, utilizando tecnologias como Raspberry Pi, Arduino e diversos sensores, além de integrar protocolos de comunicação como HTTP e LoRa para garantir conectividade eficiente."
+
   },
   {
     icon: iconSoftware,
     title: "Software",
     description:
-      "Responsáveis por desenvolver o software e a infraestrutura de soluções IoT, desde a coleta de dados dos dispositivos até a interface final para o usuário.",
-  },
-  {
-    icon: iconConteiner,
-    title: "Conteiner",
-    description:
-      "Empacota a aplicação em um ambiente isolado, garantindo sua implantação rápida, consistente e escalável em qualquer infraestrutura.",
+      "Responsáveis pelo desenvolvimento de software e infraestrutura para soluções IoT, abrangendo desde a coleta de dados nos dispositivos até a apresentação intuitiva das informações na interface do usuário."
   },
 ];
 
@@ -40,7 +35,7 @@ const ProjectsView = () => {
         <div className="projects-container">
           <div className="projects-header">
             <h2>Projetos</h2>
-            <p>No Uiot desenvolvemos projetos em diversas áreas</p>
+            <p>No laboratório Uiot desenvolvemos projetos em diversas áreas</p>
           </div>
 
           <div className="projects-grid">

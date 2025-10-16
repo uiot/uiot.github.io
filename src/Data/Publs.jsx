@@ -1,6 +1,30 @@
 export const allPublications = [
   {
     title:
+      "Segurança Universitária Reforçada: Uma solução de IoT para Proteção de Alunos em Campus",
+    authors: "Anna Carolina Ferreira Rosa, Leonardo de Oliveira Almeida, Hugo Silva Vasconcelos, Mateus Romani, Fábio Lúcio Lopes de Mendonça, Francisco Lopes de Caldas Filho",
+    venue: "RIST",
+    year: "2024",
+    url: "https://www.risti.xyz/issues/ristie73.pdf",
+  },
+  {
+    title:
+      "Segurança no Registro de Dispositivos IoT: Implementação de Autenticação Híbrida",
+    authors: "Anna Carolina Ferreira Rosa, Vinicius Salgueiro costa , Awatef ali Yousef Rodrigues Fares, Francisco De caldas filho, Fábio Mendonça",
+    venue: "RIST",
+    year: "2024",
+    url: "https://www.risti.xyz/issues/ristie76.pdf",
+  },
+  {
+    title:
+      "EvacuAI: An Analysis of Escape Routes in Indoor Environments with the Aid of Reinforcement Learning",
+    authors: "Anna Carolina Rosa, Mariana Cabral Falqueiro, Rodrigo Bonacin, Fábio Lúcio Lopes de Mendonça, Geraldo Pereira Rocha Filho, Vinícius Pereira Gonçalves",
+    venue: "Sensors",
+    year: "2023",
+    url: "https://www.mdpi.com/1424-8220/23/21/8892",
+  },
+  {
+    title:
       "Meta-Semantic Search Engine Method Proposition for Transparent Decision Auditing",
     authors: "Francisco de Caldas Filho",
     venue: "ICISRT",

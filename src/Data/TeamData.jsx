@@ -44,9 +44,9 @@ export const coordinatorsData = [
 export const supervisorsData = [
   {
     avatar: IconAvatar,
-    name: "Anna Carolina",
-    title: "Estudante de pos-graduação de Redes",
-    role: "Supervisora da equipe de Software",
+    name: "Anna Carolina Ferreira Rosa",
+    title: "Mestre em Engenharia Elétrica",
+    role: "Supervisora da Equipe de Desenvolvimento de Software",
     socials: {
       linkedin:
         "https://www.linkedin.com/in/anna-carolina-ferreira-rosa-a72731212",
@@ -55,9 +55,142 @@ export const supervisorsData = [
       lattes: "",
     },
   },
+   {
+    avatar: IconAvatar,
+    name: "Mateus Romani",
+    title: "Mestrando em Engenharia Elétrica",
+    role: "Supervisor da Equipe de Segurança Cibernética",
+    socials: {
+      linkedin:
+        "",
+      email: "",
+      github: "",
+      lattes: "",
+    },
+  },
 ];
 
 export const membersData = [
+  {
+    avatar: IconAvatar,
+    name: "Beatriz Silva ",
+    role: "Equipe de Desenvolvimento de Software",
+    status: "Graduando de Engenharia de Redes",
+    socials: {
+      github: "",
+      linkedin: "",
+      lattes: "http://lattes.cnpq.br/4039249040057623",
+      email: "mailto:abeatrizznascimento@gmail.com",
+    },
+  },
+  {
+    avatar: IconAvatar,
+    name: "Caio Soares",
+    role: "Equipe de Desenvolvimento de Software",
+    status: "Graduando de Engenharia de Redes",
+    socials: {
+      github: "",
+      linkedin: "https://www.linkedin.com/in/caio-soares-rodrigues-70b3a3345/",
+      lattes: "",
+      email: "mailto:caiosoaresrodrigues26@gmail.com",
+    },
+  },
+  {
+    avatar: IconAvatar,
+    name: "Clayton Menezes Silva",
+    role: "Equipe de Segurança Cibernética",
+    status: "",
+    socials: {
+      github: "",
+      linkedin: "",
+      lattes: "",
+      email: "",
+    },
+  },
+  {
+    avatar: IconAvatar,
+    name: "Gabriel Filipe de Oliveira Cardoso",
+    role: "Equipe de Segurança Cibernética",
+    status: "Graduando de Engenharia de Redes",
+    socials: {
+      github: "",
+      linkedin: "https://www.linkedin.com/in/gabriel-filipe-55002415a/",
+      lattes: "",
+      email: "mailto:gabriel.cardoso@uiot.org",
+    },
+  },
+  {
+    avatar: IconAvatar,
+    name: "Giovani Braga Oliveira Viana",
+    role: "Equipe de Segurança Cibernética",
+    status: "",
+    socials: {
+      github: "",
+      linkedin: "",
+      lattes: "",
+      email: "",
+    },
+  },
+  {
+    avatar: IconAvatar,
+    name: "Guilherme Leal",
+    role: "Equipe de Desenvolvimento de Software",
+    status: "Graduando de Engenharia de Redes",
+    socials: {
+      github: "https://github.com/Guilherme5342",
+      linkedin: "https://www.linkedin.com/in/guilhermelealmedeiros/",
+      lattes: "",
+      email: "mailto:guilherme.leal.5342@gmail.com",
+    },
+  },
+  {
+    avatar: IconAvatar,
+    name: "Gustavo Pimentel Filgueira",
+    role: "Equipe de Segurança Cibernética",
+    status: "",
+    socials: {
+      github: "",
+      linkedin: "",
+      lattes: "",
+      email: "",
+    },
+  },
+   {
+    avatar: IconAvatar,
+    name: "João Kleber Magalhães dos Santos",
+    role: "Equipe de Segurança Cibernética",
+    status: "",
+    socials: {
+      github: "",
+      linkedin: "",
+      lattes: "",
+      email: "",
+    },
+  },
+   {
+    avatar: IconAvatar,
+    name: "João Victor Machado Santos",
+    role: "Equipe de Segurança Cibernética",
+    status: "",
+    socials: {
+      github: "",
+      linkedin: "",
+      lattes: "",
+      email: "",
+    },
+  },
+  {
+    avatar: IconAvatar,
+    name: "Juan Carlos Cordir",
+    role: "Equipe de Segurança Cibernética",
+    status: "Graduando de Engenharia de Redes",
+    socials: {
+      github: "",
+      linkedin: "https://www.linkedin.com/in/juan-carlos-cordir-silva-905692a7",
+      lattes: "",
+      email: "mailto:cordir@live.com",
+    },
+  },
   {
     avatar: IconAvatar,
     name: "Luis Miguel",
@@ -73,42 +206,6 @@ export const membersData = [
   },
   {
     avatar: IconAvatar,
-    name: "Juan Carlos Cordir",
-    role: "Equipe de Segurança",
-    status: "Graduando de Engenharia de Redes",
-    socials: {
-      github: "",
-      linkedin: "https://www.linkedin.com/in/juan-carlos-cordir-silva-905692a7",
-      lattes: "",
-      email: "mailto:cordir@live.com",
-    },
-  },
-  {
-    avatar: IconAvatar,
-    name: "Beatriz Silva ",
-    role: "Equipe de Container",
-    status: "Graduando de Engenharia de Redes",
-    socials: {
-      github: "",
-      linkedin: "",
-      lattes: "http://lattes.cnpq.br/4039249040057623",
-      email: "mailto:abeatrizznascimento@gmail.com",
-    },
-  },
-  {
-    avatar: IconAvatar,
-    name: "Guilherme Leal",
-    role: "Equipe de Software",
-    status: "Graduando de Engenharia de Redes",
-    socials: {
-      github: "https://github.com/Guilherme5342",
-      linkedin: "https://www.linkedin.com/in/guilhermelealmedeiros/",
-      lattes: "",
-      email: "mailto:guilherme.leal.5342@gmail.com",
-    },
-  },
-  {
-    avatar: IconAvatar,
     name: "Victor Baião Pires ",
     role: "Equipe de Software",
     status: "Graduando de Engenharia de Redes",
@@ -119,28 +216,16 @@ export const membersData = [
       email: "mailto:victorbaiao14@gmail.com",
     },
   },
-  {
+    {
     avatar: IconAvatar,
-    name: "Gabriel Filipe",
-    role: "Equipe de Segurança",
-    status: "Graduando de Engenharia de Redes",
+    name: "Victor Lima Dos Santos",
+    role: "Equipe de Segurança Cibernética",
+    status: "",
     socials: {
       github: "",
-      linkedin: "https://www.linkedin.com/in/gabriel-filipe-55002415a/",
+      linkedin: "",
       lattes: "",
-      email: "mailto:gabriel.cardoso@uiot.org",
-    },
-  },
-  {
-    avatar: IconAvatar,
-    name: "Caio Soares",
-    role: "Equipe de Software",
-    status: "Graduando de Engenharia de Redes",
-    socials: {
-      github: "",
-      linkedin: "https://www.linkedin.com/in/caio-soares-rodrigues-70b3a3345/",
-      lattes: "",
-      email: "mailto:caiosoaresrodrigues26@gmail.com",
+      email: "",
     },
   },
 ];
